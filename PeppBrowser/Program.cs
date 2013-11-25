@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using org.inek.PeppBrowser.GUI;
 
 namespace PeppBrowser {
     static class Program {

@@ -32,7 +32,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -44,15 +51,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmPeppBrowser.cs">
+    <Compile Include="Data\Entities\Cost.cs" />
+    <Compile Include="Data\Entities\CostDomain.cs" />
+    <Compile Include="Data\Entities\PeppInfo.cs" />
+    <Compile Include="Data\Entities\PrimaryDiagnosis.cs" />
+    <Compile Include="Data\Entities\Pepp.cs" />
+    <Compile Include="Data\CsvData.cs" />
+    <Compile Include="Data\Entities\Procedure.cs" />
+    <Compile Include="Data\Entities\SecondaryDiagnosis.cs" />
+    <Compile Include="Data\Entities\StructureCategory.cs" />
+    <Compile Include="GUI\FrmList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPeppBrowser.Designer.cs">
+    <Compile Include="GUI\FrmList.Designer.cs">
+      <DependentUpon>FrmList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmPeppBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmPeppBrowser.Designer.cs">
       <DependentUpon>FrmPeppBrowser.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmPeppBrowser.resx">
+    <EmbeddedResource Include="GUI\FrmList.resx">
+      <DependentUpon>FrmList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmPeppBrowser.resx">
       <DependentUpon>FrmPeppBrowser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -74,13 +99,42 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Content Include="Data\Resources\PeppBr_12_14_Hauptdiagnose.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Resources\PeppBr_12_14_Kopfdaten.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Resources\PeppBr_12_14_Kosten.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Resources\PeppBr_12_14_Kostenbereich.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Resources\PeppBr_12_14_Nebendiagnose.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Resources\PeppBr_12_14_Pepp.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Resources\PeppBr_12_14_Prozeduren.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Resources\PeppBr_12_14_Recherche.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Resources\PeppBr_12_14_Strukturkategorie.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Entities\" />
-    <Folder Include="Resources\" />
+    <ProjectReference Include="..\..\InekControls\InekControls.csproj">
+      <Project>{25475440-D19F-42BC-8D5F-C0DE452526D0}</Project>
+      <Name>InekControls</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,57 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace org.inek.PeppBrowser.Data.Entities {
+    public class Cost {
+        //ko_Pepp;ko_BereichNr;ko_BereichOrder;ko_KArt1;ko_KArt2;ko_KArt3a;ko_KArt3b;ko_KArt3c;ko_KArt3;ko_KArt4a;ko_KArt4b;ko_KArt6a;ko_KArt6b;ko_KArt7;ko_KArt8;ko_Summe
+        [Column("ko_Pepp")]
+        public string PeppCode { get; set; }
+
+        [Column("ko_BereichNr")]
+        public int CostDomain { get; set; }
+
+        //[Column("ko_BereichOrder")]
+        //public int Order { get; set; }
+
+        [Column("ko_KArt1")]
+        public decimal CostType1 { get; set; }
+
+        [Column("ko_KArt2")]
+        public decimal CostType2 { get; set; }
+
+        [Column("ko_KArt3a")]
+        public decimal CostType3a { get; set; }
+
+        [Column("ko_KArt3b")]
+        public decimal CostType3b { get; set; }
+
+        [Column("ko_KArt3c")]
+        public decimal CostType3c { get; set; }
+
+        [Column("ko_KArt4a")]
+        public decimal CostType4a { get; set; }
+
+        [Column("ko_KArt4b")]
+        public decimal CostType4b { get; set; }
+
+        [Column("ko_KArt6a")]
+        public decimal CostType6a { get; set; }
+
+        [Column("ko_KArt6b")]
+        public decimal CostType6b { get; set; }
+
+        [Column("ko_KArt7")]
+        public decimal CostType7 { get; set; }
+
+        [Column("ko_KArt8")]
+        public decimal CostType8 { get; set; }
+
+        [Column("ko_Summe")]
+        public decimal CostSum { get; set; }
+
+    }
+}

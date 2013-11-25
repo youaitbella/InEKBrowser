@@ -1,0 +1,9 @@
+st_Strukturkategorie;st_Order;st_Text;st_PeppAnzahl;st_FaelleAnzahl;st_TageAnzahl
+PRE;1;Prä-Strukturkategorie;6;4237;121298
+PSY;2;Strukturkategorie Psychiatrie, vollstationär;16;124893;3140209
+PKJ;3;Strukturkategorie Kinder- und Jugendpsychiatrie, vollstationär;8;10656;412282
+PSO;4;Strukturkategorie Psychosomatik, vollstationär;6;5448;215923
+FEH;5;Fehler-PEPP und sonstige PEPP;1;8;259
+TPY;6;Strukturkategorie Psychiatrie, teilstationär;4;17919;492338
+TKJ;7;Strukturkategorie Kinder- und Jugendpsychiatrie, teilstationär;2;2690;117978
+TPO;8;Strukturkategorie Psychosomatik, teilstationär;1;1346;40212
