@@ -72,6 +72,12 @@
     <Compile Include="GUI\FrmPeppBrowser.Designer.cs">
       <DependentUpon>FrmPeppBrowser.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Selection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Selection.Designer.cs">
+      <DependentUpon>Selection.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\FrmList.resx">
@@ -79,6 +85,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FrmPeppBrowser.resx">
       <DependentUpon>FrmPeppBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Selection.resx">
+      <DependentUpon>Selection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace org.inek.PeppBrowser.Data.Entities {
     public class Cost {
@@ -48,6 +43,5 @@ namespace org.inek.PeppBrowser.Data.Entities {
 
         [Column("ko_Summe")]
         public decimal CostSum { get; set; }
-
     }
 }

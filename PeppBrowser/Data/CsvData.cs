@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -138,7 +139,7 @@ namespace org.inek.PeppBrowser.Data {
                                 case "Decimal":
                                     decimal decimalNumber = 0;
                                     try {
-                                        decimalNumber = decimal.Parse(tokens[names[name]].Replace(",", "."));
+                                        decimalNumber = decimal.Parse(tokens[names[name]], new CultureInfo("de"));
                                     } catch { }
                                     info.SetValue(obj, decimalNumber);
                                     break;
