@@ -1,9 +1,9 @@
 st_Strukturkategorie;st_Order;st_Text;st_PeppAnzahl;st_FaelleAnzahl;st_TageAnzahl
-PRE;1;Pr‰-Strukturkategorie;6;4237;121298
-PSY;2;Strukturkategorie Psychiatrie, vollstation‰r;16;124893;3140209
-PKJ;3;Strukturkategorie Kinder- und Jugendpsychiatrie, vollstation‰r;8;10656;412282
-PSO;4;Strukturkategorie Psychosomatik, vollstation‰r;6;5448;215923
+PRE;1;Pr√§-Strukturkategorie;6;4237;121298
+PSY;2;Strukturkategorie Psychiatrie, vollstation√§r;16;124893;3140209
+PKJ;3;Strukturkategorie Kinder- und Jugendpsychiatrie, vollstation√§r;8;10656;412282
+PSO;4;Strukturkategorie Psychosomatik, vollstation√§r;6;5448;215923
 FEH;5;Fehler-PEPP und sonstige PEPP;1;8;259
-TPY;6;Strukturkategorie Psychiatrie, teilstation‰r;4;17919;492338
-TKJ;7;Strukturkategorie Kinder- und Jugendpsychiatrie, teilstation‰r;2;2690;117978
-TPO;8;Strukturkategorie Psychosomatik, teilstation‰r;1;1346;40212
+TPY;6;Strukturkategorie Psychiatrie, teilstation√§r;4;17919;492338
+TKJ;7;Strukturkategorie Kinder- und Jugendpsychiatrie, teilstation√§r;2;2690;117978
+TPO;8;Strukturkategorie Psychosomatik, teilstation√§r;1;1346;40212

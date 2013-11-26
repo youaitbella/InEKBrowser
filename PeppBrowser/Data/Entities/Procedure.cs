@@ -10,23 +10,20 @@ namespace org.inek.PeppBrowser.Data.Entities {
         [Column("pr_Pepp")]
         public string PeppCode { get; set; }
 
-        [Column("pr_CodeF")]
-        public string ProcCode { get; set; }
-
         [Column("pr_Code")]
-        public string ProcCodeShort { get; set; }
+        public string ProcCode { get; set; }
 
         [Column("pr_AnzahlFaelle")]
         public int CaseCount { get; set; }
 
         [Column("pr_AnteilFaelle")]
-        public int CaseFraction { get; set; }
+        public decimal CaseFraction { get; set; }
 
         [Column("pr_AnzahlNennungen")]
         public int EntryCount { get; set; }
 
         [Column("pr_AnteilNennungen")]
-        public int EntryFraction { get; set; }
+        public decimal EntryFraction { get; set; }
 
     }
 }

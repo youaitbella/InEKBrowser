@@ -6,16 +6,13 @@ namespace org.inek.PeppBrowser.Data.Entities {
         [Column("hd_Pepp")]
         public string PeppCode { get; set; }
 
-        [Column("hd_CodeF")]
-        public string DiagCode { get; set; }
-
         [Column("hd_Code")]
-        public string DiagCodeShort { get; set; }
+        public string DiagCode { get; set; }
 
         [Column("hd_Anzahl")]
         public int Count { get; set; }
 
-        [Column("kd_Anteil")]
-        public int Fraction { get; set; }
+        [Column("hd_Anteil")]
+        public decimal Fraction { get; set; }
     }
 }

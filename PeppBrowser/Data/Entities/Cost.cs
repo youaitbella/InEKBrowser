@@ -7,15 +7,11 @@ using System.Threading.Tasks;
 
 namespace org.inek.PeppBrowser.Data.Entities {
     public class Cost {
-        //ko_Pepp;ko_BereichNr;ko_BereichOrder;ko_KArt1;ko_KArt2;ko_KArt3a;ko_KArt3b;ko_KArt3c;ko_KArt3;ko_KArt4a;ko_KArt4b;ko_KArt6a;ko_KArt6b;ko_KArt7;ko_KArt8;ko_Summe
         [Column("ko_Pepp")]
         public string PeppCode { get; set; }
 
         [Column("ko_BereichNr")]
         public int CostDomain { get; set; }
-
-        //[Column("ko_BereichOrder")]
-        //public int Order { get; set; }
 
         [Column("ko_KArt1")]
         public decimal CostType1 { get; set; }

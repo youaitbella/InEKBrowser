@@ -42,7 +42,7 @@ namespace org.inek.PeppBrowser.Data {
 
         public IEnumerable<Cost> Costs {
             get {
-                EnsureData(_costs, "PeppBr_12_14_Kosten.csv", "ko_Pepp;ko_BereichNr;ko_BereichOrder;ko_KArt1;ko_KArt2;ko_KArt3a;ko_KArt3b;ko_KArt3c;ko_KArt3;ko_KArt4a;ko_KArt4b;ko_KArt6a;ko_KArt6b;ko_KArt7;ko_KArt8;ko_Summe");
+                EnsureData(_costs, "PeppBr_12_14_Kosten.csv", "ko_Pepp;ko_BereichNr;ko_KArt1;ko_KArt2;ko_KArt3a;ko_KArt3b;ko_KArt3c;ko_KArt3;ko_KArt4a;ko_KArt4b;ko_KArt6a;ko_KArt6b;ko_KArt7;ko_KArt8;ko_Summe");
                 return _costs;
             }
         }
@@ -85,21 +85,21 @@ namespace org.inek.PeppBrowser.Data {
 
         public IEnumerable<Procedure> Procedures {
             get {
-                EnsureData(_procedures, "PeppBr_12_14_Prozeduren.csv", "pr_Pepp;pr_Code;pr_CodeF;pr_AnzahlFaelle;pr_AnteilFaelle;pr_AnzahlNennungen;pr_AnteilNennungen");
-                return Procedures;
+                EnsureData(_procedures, "PeppBr_12_14_Prozeduren.csv", "pr_Pepp;pr_Code;pr_AnzahlFaelle;pr_AnteilFaelle;pr_AnzahlNennungen;pr_AnteilNennungen");
+                return _procedures;
             }
         }
 
         public IEnumerable<PrimaryDiagnosis> PrimaryDiagnoses {
             get {
-                EnsureData(_primaryDiagnoses, "PeppBr_12_14_Hauptdiagnose.csv", "hd_Pepp;hd_Code;hd_CodeF;hd_Anzahl;kd_Anteil");
+                EnsureData(_primaryDiagnoses, "PeppBr_12_14_Hauptdiagnose.csv", "hd_Pepp;hd_Code;hd_Anzahl;hd_Anteil");
                 return _primaryDiagnoses;
             }
         }
 
         public IEnumerable<SecondaryDiagnosis> SecondaryDiagnoses {
             get {
-                EnsureData(_secondaryDiagnoses, "PeppBr_12_14_Nebendiagnose.csv", "nd_Pepp;nd_Code;nd_CodeF;nd_AnzahlFaelle;nd_AnteilFaelle;nd_AnzahlNennungen;nd_AnteilNennungen");
+                EnsureData(_secondaryDiagnoses, "PeppBr_12_14_Nebendiagnose.csv", "nd_Pepp;nd_Code;nd_AnzahlFaelle;nd_AnteilFaelle;nd_AnzahlNennungen;nd_AnteilNennungen");
                 return _secondaryDiagnoses;
             }
         }
@@ -117,12 +117,6 @@ namespace org.inek.PeppBrowser.Data {
                 bool isFirstLine = true;
                 string relativeName = @"Data\Resources\" + filename;
 
-                Dictionary<string, PropertyInfo> infos = new Dictionary<string, PropertyInfo>();
-                foreach (PropertyInfo info in typeof(T).GetProperties()) {
-                    if (!Attribute.IsDefined(info, typeof(ColumnAttribute))) { continue; }
-                    ColumnAttribute columnAttribute = (ColumnAttribute)Attribute.GetCustomAttribute(info, typeof(ColumnAttribute));
-                    infos.Add(columnAttribute.Name, info);
-                }
 
                 foreach (string line in File.ReadLines(relativeName)) {
                     if (isFirstLine) {
@@ -136,14 +130,15 @@ namespace org.inek.PeppBrowser.Data {
                             throw new DataException("Wrong field count");
                         }
                         T obj = Activator.CreateInstance<T>();
-                        foreach (KeyValuePair<string, PropertyInfo> pair in infos) {
-                            string name = pair.Key;
-                            PropertyInfo info = pair.Value;
+                        foreach (PropertyInfo info in typeof(T).GetProperties()) {
+                            if (!Attribute.IsDefined(info, typeof(ColumnAttribute))) { continue; }
+                            ColumnAttribute columnAttribute = (ColumnAttribute)Attribute.GetCustomAttribute(info, typeof(ColumnAttribute));
+                            string name = columnAttribute.Name;
                             switch (info.PropertyType.Name) {
                                 case "Decimal":
                                     decimal decimalNumber = 0;
                                     try {
-                                        decimalNumber = decimal.Parse(tokens[names[name]]);
+                                        decimalNumber = decimal.Parse(tokens[names[name]].Replace(",", "."));
                                     } catch { }
                                     info.SetValue(obj, decimalNumber);
                                     break;
@@ -167,5 +162,6 @@ namespace org.inek.PeppBrowser.Data {
                 }
             }
         }
+
     }
 }
