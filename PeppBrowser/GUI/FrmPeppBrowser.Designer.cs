@@ -42,7 +42,6 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.selection1 = new org.inek.PeppBrowser.GUI.Selection();
-            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.mnuMain.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
@@ -63,7 +62,7 @@
             // mnuFile
             // 
             this.mnuFile.Name = "mnuFile";
-            this.mnuFile.Size = new System.Drawing.Size(46, 20);
+            this.mnuFile.Size = new System.Drawing.Size(44, 20);
             this.mnuFile.Text = "Datei";
             // 
             // mnuData
@@ -78,69 +77,69 @@
             this.mnuCosts,
             this.mnuCostDomains});
             this.mnuData.Name = "mnuData";
-            this.mnuData.Size = new System.Drawing.Size(50, 20);
+            this.mnuData.Size = new System.Drawing.Size(48, 20);
             this.mnuData.Text = "Daten";
             // 
             // mnuStructureCategories
             // 
             this.mnuStructureCategories.Name = "mnuStructureCategories";
-            this.mnuStructureCategories.Size = new System.Drawing.Size(172, 22);
+            this.mnuStructureCategories.Size = new System.Drawing.Size(164, 22);
             this.mnuStructureCategories.Text = "Strukturkategorien";
             this.mnuStructureCategories.Click += new System.EventHandler(this.mnuStructureCategories_Click);
             // 
             // mnuPepp
             // 
             this.mnuPepp.Name = "mnuPepp";
-            this.mnuPepp.Size = new System.Drawing.Size(172, 22);
+            this.mnuPepp.Size = new System.Drawing.Size(164, 22);
             this.mnuPepp.Text = "PEPP";
             this.mnuPepp.Click += new System.EventHandler(this.mnuPepp_Click);
             // 
             // mnuPeppInfo
             // 
             this.mnuPeppInfo.Name = "mnuPeppInfo";
-            this.mnuPeppInfo.Size = new System.Drawing.Size(172, 22);
+            this.mnuPeppInfo.Size = new System.Drawing.Size(164, 22);
             this.mnuPeppInfo.Text = "Kopfdaten";
             this.mnuPeppInfo.Click += new System.EventHandler(this.mnuPeppInfo_Click);
             // 
             // mnuPrimaryDiagnoses
             // 
             this.mnuPrimaryDiagnoses.Name = "mnuPrimaryDiagnoses";
-            this.mnuPrimaryDiagnoses.Size = new System.Drawing.Size(172, 22);
+            this.mnuPrimaryDiagnoses.Size = new System.Drawing.Size(164, 22);
             this.mnuPrimaryDiagnoses.Text = "Hauptdiagnosen";
             this.mnuPrimaryDiagnoses.Click += new System.EventHandler(this.mnuPrimaryDiagnoses_Click);
             // 
             // mnuSecondaryDiagnoses
             // 
             this.mnuSecondaryDiagnoses.Name = "mnuSecondaryDiagnoses";
-            this.mnuSecondaryDiagnoses.Size = new System.Drawing.Size(172, 22);
+            this.mnuSecondaryDiagnoses.Size = new System.Drawing.Size(164, 22);
             this.mnuSecondaryDiagnoses.Text = "Nebendiagnosen";
             this.mnuSecondaryDiagnoses.Click += new System.EventHandler(this.mnuSecondaryDiagnoses_Click);
             // 
             // mnuProcedures
             // 
             this.mnuProcedures.Name = "mnuProcedures";
-            this.mnuProcedures.Size = new System.Drawing.Size(172, 22);
+            this.mnuProcedures.Size = new System.Drawing.Size(164, 22);
             this.mnuProcedures.Text = "Prozeduren";
             this.mnuProcedures.Click += new System.EventHandler(this.mnuProcedures_Click);
             // 
             // mnuCosts
             // 
             this.mnuCosts.Name = "mnuCosts";
-            this.mnuCosts.Size = new System.Drawing.Size(172, 22);
+            this.mnuCosts.Size = new System.Drawing.Size(164, 22);
             this.mnuCosts.Text = "Kosten";
             this.mnuCosts.Click += new System.EventHandler(this.mnuCosts_Click);
             // 
             // mnuCostDomains
             // 
             this.mnuCostDomains.Name = "mnuCostDomains";
-            this.mnuCostDomains.Size = new System.Drawing.Size(172, 22);
+            this.mnuCostDomains.Size = new System.Drawing.Size(164, 22);
             this.mnuCostDomains.Text = "Kostenbereiche";
             this.mnuCostDomains.Click += new System.EventHandler(this.mnuCostDomains_Click);
             // 
             // mnuReport
             // 
             this.mnuReport.Name = "mnuReport";
-            this.mnuReport.Size = new System.Drawing.Size(54, 20);
+            this.mnuReport.Size = new System.Drawing.Size(52, 20);
             this.mnuReport.Text = "Report";
             // 
             // toolStripMenuItem1
@@ -155,14 +154,13 @@
             // mnuManual
             // 
             this.mnuManual.Name = "mnuManual";
-            this.mnuManual.Size = new System.Drawing.Size(152, 22);
+            this.mnuManual.Size = new System.Drawing.Size(122, 22);
             this.mnuManual.Text = "Handbuch";
-            this.mnuManual.Click += new System.EventHandler(this.mnuManual_Click);
             // 
             // mnuInfo
             // 
             this.mnuInfo.Name = "mnuInfo";
-            this.mnuInfo.Size = new System.Drawing.Size(152, 22);
+            this.mnuInfo.Size = new System.Drawing.Size(122, 22);
             this.mnuInfo.Text = "Info";
             // 
             // tabControl1
@@ -170,10 +168,10 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 174);
+            this.tabControl1.Location = new System.Drawing.Point(0, 159);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(906, 328);
+            this.tabControl1.Size = new System.Drawing.Size(906, 343);
             this.tabControl1.TabIndex = 2;
             // 
             // tabPage1
@@ -181,7 +179,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(898, 302);
+            this.tabPage1.Size = new System.Drawing.Size(898, 317);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -201,12 +199,8 @@
             this.selection1.Dock = System.Windows.Forms.DockStyle.Top;
             this.selection1.Location = new System.Drawing.Point(0, 24);
             this.selection1.Name = "selection1";
-            this.selection1.Size = new System.Drawing.Size(906, 150);
+            this.selection1.Size = new System.Drawing.Size(906, 135);
             this.selection1.TabIndex = 1;
-            // 
-            // helpProvider1
-            // 
-            this.helpProvider1.HelpNamespace = "PeppBrowser.chm";
             // 
             // FrmPeppBrowser
             // 
@@ -216,11 +210,8 @@
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.selection1);
             this.Controls.Add(this.mnuMain);
-            this.helpProvider1.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.Topic);
-            this.KeyPreview = true;
             this.MainMenuStrip = this.mnuMain;
             this.Name = "FrmPeppBrowser";
-            this.helpProvider1.SetShowHelp(this, true);
             this.Text = "PEPP-Browser";
             this.mnuMain.ResumeLayout(false);
             this.mnuMain.PerformLayout();
@@ -251,7 +242,6 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }
 

@@ -50,9 +50,140 @@ namespace org.inek.PeppBrowser.Data.Entities {
         [Column("kd_TageAnzahlVgst2")]
         public int DayCountPayLevel2 { get; set; }
 
+        [Column("kd_TageAnzahlVgst3")]
+        public int DayCountPayLevel3 { get; set; }
 
-        //;kd_TageAnzahlVgst3;kd_TageAnzahlVgst4;kd_TageAnzahlVgst5;kd_VwdSummeTage;kd_VwdMw;kd_VwdStd;kd_VwdHK;kd_VwdVonVgst1;kd_VwdBisVgst1;kd_BewertungsrelationTagVgst1;kd_VwdVonVgst2;kd_VwdBisVgst2;kd_BewertungsrelationTagVgst2;kd_VwdVonVgst3;kd_VwdBisVgst3;kd_BewertungsrelationTagVgst3;kd_VwdVonVgst4;kd_VwdBisVgst4;kd_BewertungsrelationTagVgst4;kd_VwdVonVgst5;kd_VwdBisVgst6;kd_BewertungsrelationTagVgst5;kd_GeschlechtM;kd_GeschlechtW;kd_AlterMw;kd_AlterStd;kd_AlterU28T;kd_AlterU01;kd_AlterU03;kd_AlterU06;kd_AlterU10;kd_AlterU16;kd_AlterU18;kd_AlterU30;kd_AlterU40;kd_AlterU50;kd_AlterU55;kd_AlterU60;kd_AlterU65;kd_AlterU75;kd_AlterU80;kd_AlterU99;kd_TageskostenMw;kd_TageskostenStd;kd_TageskostenHK
-        //;3340;0;;7901;90,8161;55,6836;0,6199;1;64;2,6548;65;115;2,1035;116;;1,9958;;;;;;;0,4368;0,5632;14,2414;2,7193;0,00;0,00;0,00;0,0115;0,069;0,5287;0,3908;0,00;0,00;0,00;0,00;0,00;0,00;0,00;0,00;0,00;559,0583;148,5074;0,7901
+        [Column("kd_TageAnzahlVgst4")]
+        public int DayCountPayLevel4 { get; set; }
+
+        [Column("kd_TageAnzahlVgst5")]
+        public int DayCountPayLevel5 { get; set; }
+
+        [Column("kd_VwdSummeTage")]
+        public int LosSumDays { get; set; }
+
+        [Column("kd_VwdMw")]
+        public decimal LosAverage{ get; set; }
+
+        [Column("kd_VwdStd")]
+        public decimal LosHours { get; set; }
+
+        [Column("kd_VwdHK")]
+        public decimal LosHc { get; set; }  // hc = homogeneity coefficient
+
+        [Column("kd_VwdVonVgst1")]
+        public int LosFromPayLevel1 { get; set; }
+
+        [Column("kd_VwdBisVgst1")]
+        public int LosToPayLevel1 { get; set; }
+
+        [Column("kd_BewertungsrelationTagVgst1")]
+        public decimal ValuationRatLevel1 { get; set; }
+
+        [Column("kd_VwdVonVgst2")]
+        public int LosFromPayLevel2 { get; set; }
+
+        [Column("kd_VwdBisVgst2")]
+        public int LosToPayLevel2 { get; set; }
+
+        [Column("kd_BewertungsrelationTagVgst2")]
+        public decimal ValuationRatLevel2 { get; set; }
+
+        [Column("kd_VwdVonVgst3")] 
+        public int LosFromPayLevel3 { get; set; }
+
+        [Column("kd_VwdBisVgst3")]
+        public int LosToPayLevel3 { get; set; }
+
+        [Column("kd_BewertungsrelationTagVgst3")]
+        public decimal ValuationRatLevel3 { get; set; }
+
+        [Column("kd_VwdVonVgst4")]
+        public int LosFromPayLevel4 { get; set; }
+
+        [Column("kd_VwdBisVgst4")]
+        public int LosToPayLevel4 { get; set; }
+
+        [Column("kd_BewertungsrelationTagVgst4")]
+        public decimal ValuationRatLevel4 { get; set; }
+
+        [Column("kd_VwdVonVgst5")]
+        public int LosFromPayLevel5 { get; set; }
+
+        [Column("kd_VwdBisVgst5")]
+        public int LosToPayLevel5 { get; set; }
+
+        [Column("kd_BewertungsrelationTagVgst5")]
+        public decimal ValuationRatLevel5 { get; set; }
+
+        [Column("kd_GeschlechtM")]
+        public decimal GenderMale { get; set; }
+
+        [Column("kd_GeschlechtW")]
+        public decimal GenderFemale { get; set; }
+
+        [Column("kd_AlterMw")]
+        public decimal AgeAverage { get; set; }
+
+        [Column("kd_AlterStd")]
+        public decimal AgeHours { get; set; }
+
+        [Column("kd_AlterU28T")]
+        public decimal AgeBelow28Days { get; set; }
+
+        [Column("kd_AlterU01")]
+        public decimal AgeBelow1Year { get; set; }
+
+        [Column("kd_AlterU03")]
+        public decimal AgeBelow3Years { get; set; }
+
+        [Column("kd_AlterU06")]
+        public decimal AgeBelow6Years { get; set; }
+
+        [Column("kd_AlterU10")]
+        public decimal AgeBelow10Years { get; set; }
+
+        [Column("kd_AlterU16")]
+        public decimal AgeBelow16Years { get; set; }
+
+        [Column("kd_AlterU18")]
+        public decimal AgeBelow18Years { get; set; }
+
+        [Column("kd_AlterU30")]
+        public decimal AgeBelow30Years { get; set; }
+
+        [Column("kd_AlterU40")]
+        public decimal AgeBelow40Years { get; set; }
+
+        [Column("kd_AlterU50")]
+        public decimal AgeBelow50Years { get; set; }
+
+        [Column("kd_AlterU55")]
+        public decimal AgeBelow55Years { get; set; }
+
+        [Column("kd_AlterU60")]
+        public decimal AgeBelow60Years { get; set; }
+
+        [Column("kd_AlterU65")]
+        public decimal AgeBelow65Years { get; set; }
+
+        [Column("kd_AlterU75")]
+        public decimal AgeBelow75Years { get; set; }
+
+        [Column("kd_AlterU80")] 
+        public decimal AgeBelow80Years { get; set; }
+
+        [Column("kd_AlterU99")]
+        public decimal AgeBelow99Years { get; set; }
+
+        [Column("kd_TageskostenMw")]
+        public decimal DayCostsAverage { get; set; }
+
+        [Column("kd_TageskostenStd")]
+        public decimal DayCostsHour { get; set; }
+
+        [Column("kd_TageskostenHK")]
+        public decimal DayCostsHc { get; set; } // hc = homogeneity coefficient
 
     }
 }
