@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XInclude">
+  <topicref type="topic" id="402755696962648" modified="2010-04-07T08:53:45.954Z" icon="0" href="Hinweise_zur_Erstellung">
+    <caption translate="true">Hinweise zur Erstellung</caption>
+  </topicref>
+  <topicref type="topic" id="402752161736847" build="ALL" modified="2010-04-07T08:38:44.674Z" icon="0" href="Introduction">
+    <caption translate="true">Einleitung</caption>
+    <topicref type="topic" id="402753149688023" build="ALL" modified="2010-04-07T08:55:10.750Z" icon="0" href="Background">
+      <caption translate="true">Hintergrund und Bedeutung</caption>
+    </topicref>
+    <topicref type="topic" id="414047110825400" build="ALL" modified="2013-05-10T15:28:39.704Z" icon="0" href="CommonUsage">
+      <caption translate="true">Allgemeine Bedienung</caption>
+    </topicref>
+  </topicref>
+  <topicref type="topic" id="402772762282526" build="ALL" modified="2010-04-09T11:16:58.306Z" icon="0" href="mnuMain">
+    <caption translate="true">Menü</caption>
+    <topicref type="topic" id="415974994408166" build="ALL" modified="2013-11-19T16:55:49.705Z" icon="0" href="Report">
+      <caption translate="true">Report</caption>
+    </topicref>
+  </topicref>
+  <topicref type="topic" id="414353926566340" build="ALL" modified="2013-11-26T09:57:57.237Z" icon="0" href="mainTab">
+    <caption translate="true">Hauptdialog</caption>
+  </topicref>
+</map>

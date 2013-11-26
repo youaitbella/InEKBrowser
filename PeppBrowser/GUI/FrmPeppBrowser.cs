@@ -1,4 +1,6 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Diagnostics;
+using System.Windows.Forms;
 using org.inek.PeppBrowser.Data;
 
 namespace org.inek.PeppBrowser.GUI {
@@ -66,6 +68,15 @@ namespace org.inek.PeppBrowser.GUI {
             dlg.SetDataSource(CsvData.Context().StructureCategories);
             dlg.Text = "Strukturkategorien";
             dlg.Show();
+
+        }
+
+        private void mnuManual_Click(object sender, System.EventArgs e) {
+            try {
+                Process.Start("PeppBrowser.pdf");
+            } catch (Exception) {
+                MessageBox.Show("Kein Handbuch verfügbar.");
+            }
 
         }
     }

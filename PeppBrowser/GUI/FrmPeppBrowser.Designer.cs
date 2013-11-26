@@ -38,10 +38,11 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuManual = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuInfo = new System.Windows.Forms.ToolStripMenuItem();
-            this.selection1 = new org.inek.PeppBrowser.GUI.Selection();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.selection1 = new org.inek.PeppBrowser.GUI.Selection();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.mnuMain.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
@@ -154,22 +155,15 @@
             // mnuManual
             // 
             this.mnuManual.Name = "mnuManual";
-            this.mnuManual.Size = new System.Drawing.Size(130, 22);
+            this.mnuManual.Size = new System.Drawing.Size(152, 22);
             this.mnuManual.Text = "Handbuch";
+            this.mnuManual.Click += new System.EventHandler(this.mnuManual_Click);
             // 
             // mnuInfo
             // 
             this.mnuInfo.Name = "mnuInfo";
-            this.mnuInfo.Size = new System.Drawing.Size(130, 22);
+            this.mnuInfo.Size = new System.Drawing.Size(152, 22);
             this.mnuInfo.Text = "Info";
-            // 
-            // selection1
-            // 
-            this.selection1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.selection1.Location = new System.Drawing.Point(0, 24);
-            this.selection1.Name = "selection1";
-            this.selection1.Size = new System.Drawing.Size(906, 150);
-            this.selection1.TabIndex = 1;
             // 
             // tabControl1
             // 
@@ -197,10 +191,22 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(192, 74);
+            this.tabPage2.Size = new System.Drawing.Size(898, 302);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // selection1
+            // 
+            this.selection1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.selection1.Location = new System.Drawing.Point(0, 24);
+            this.selection1.Name = "selection1";
+            this.selection1.Size = new System.Drawing.Size(906, 150);
+            this.selection1.TabIndex = 1;
+            // 
+            // helpProvider1
+            // 
+            this.helpProvider1.HelpNamespace = "PeppBrowser.chm";
             // 
             // FrmPeppBrowser
             // 
@@ -210,8 +216,11 @@
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.selection1);
             this.Controls.Add(this.mnuMain);
+            this.helpProvider1.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.Topic);
+            this.KeyPreview = true;
             this.MainMenuStrip = this.mnuMain;
             this.Name = "FrmPeppBrowser";
+            this.helpProvider1.SetShowHelp(this, true);
             this.Text = "PEPP-Browser";
             this.mnuMain.ResumeLayout(false);
             this.mnuMain.PerformLayout();
@@ -242,6 +251,7 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }
 

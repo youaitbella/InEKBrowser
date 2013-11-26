@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" lasteditedby="muellermi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Menü</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Menü</text></para>
+    </header>
+    <para styleclass="Normal"><var styleclass="Normal">&lt;%TITLE%&gt;</var><text styleclass="Normal" translate="true"> verfügt über eine einfach geschachtelte Menüstruktur. </text></para>
+    <para styleclass="Normal"></para>
+    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">Datei</text></li>
+      <list id="1" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+        <li styleclass="Normal"><text styleclass="Normal" translate="true">NUB-Anfrage</text><tab /><tab /><tab /><text styleclass="Normal" translate="true">→</text><tab /><text styleclass="Normal" translate="true">Einzelne NUB-Anfrage sichten</text></li>
+        <li styleclass="Normal"><text styleclass="Normal" translate="true">Elemente arrangieren</text><tab /><tab /><text styleclass="Normal" translate="true">→</text><tab /><text styleclass="Normal" translate="true">Bildschirmelemente (&quot;Splitter&quot;) anordnen</text></li>
+        <li styleclass="Normal"><text styleclass="Normal" translate="true">Beenden</text><tab /><tab /><tab /><tab /><text styleclass="Normal" translate="true">→</text><tab /><var styleclass="Normal">&lt;%TITLE%&gt;</var><text styleclass="Normal" translate="true"> beenden</text></li>
+      </list>
+    </list>
+    <para styleclass="Normal"></para>
+    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">Stammdaten</text></li>
+      <list id="1" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+        <li styleclass="Normal"><text styleclass="Normal" translate="true">Behandlungsart</text><tab /><tab /><tab /><text styleclass="Normal" translate="true">→</text><tab /><text styleclass="Normal" translate="true">Behandlungsart editieren (nur für NubBearbeitungMaster)</text></li>
+        <li styleclass="Normal"><text styleclass="Normal" translate="true">Fachgebiet</text><tab /><tab /><tab /><text styleclass="Normal" translate="true">→</text><tab /><text styleclass="Normal" translate="true">Fachgebiet editieren (nur für NubBearbeitungMaster)</text></li>
+        <li styleclass="Normal"><text styleclass="Normal" translate="true">Fußnote</text><tab /><tab /><tab /><tab /><text styleclass="Normal" translate="true">→</text><tab /><text styleclass="Normal" translate="true">Fußnote editieren (nur für NubBearbeitungMaster)</text></li>
+      </list>
+    </list>
+    <para styleclass="Normal"></para>
+    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">Statistik</text></li>
+      <list id="1" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+        <li styleclass="Normal"><text styleclass="Normal" translate="true">Anzahl je Bearbeiter</text><tab /><tab /><text styleclass="Normal" translate="true">→</text><tab /><text styleclass="Normal" translate="true">Kennzahlen wie Anzahl InEK-Verfahren / NUB-Anfragen je Bearbeiter</text></li>
+      </list>
+    </list>
+    <para styleclass="Normal"></para>
+    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">Report</text></li>
+      <list id="1" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+        <li styleclass="Normal"><text styleclass="Normal" translate="true">Aktuelles InEK-Verfahren</text><tab /><tab /><text styleclass="Normal" translate="true">→</text><tab /><text styleclass="Normal" translate="true">Report (z.B. Druck) des aktuell angezeigten InEK-Verfahrens</text></li>
+        <li styleclass="Normal"><text styleclass="Normal" translate="true">Selektierte InEK-Verfahren</text><tab /><text styleclass="Normal" translate="true">→</text><tab /><text styleclass="Normal" translate="true">Report (z.B. Druck) aller InEK-Verfahren gemäß Filter</text></li>
+      </list>
+    </list>
+    <para styleclass="Normal"></para>
+    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">?</text></li>
+      <list id="1" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+        <li styleclass="Normal"><text styleclass="Normal" translate="true">Handbuch</text><tab /><tab /><tab /><tab /><text styleclass="Normal" translate="true">→</text><tab /><text styleclass="Normal" translate="true">Handbuch im PDF-Format anzeigen</text></li>
+      </list>
+    </list>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Die Hauptfunktionen des </text><var styleclass="Normal">&lt;%TITLE%&gt;s</var><text styleclass="Normal" translate="true"> werden direkt in den zugehörigen Registerkarten (siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="mainTab" styleclass="Normal" translate="true">Hauptregister</link><text styleclass="Normal" translate="true">) dargestellt. Insofern beinhaltet das Menü lediglich seltener genutzte bzw. Hilfsfunktionalitäten. </text></para>
+  </body>
+</topic>

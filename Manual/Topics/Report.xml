@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="muellermi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Report</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Report</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Die Report-Funktion bringt die Vorschläge zu Papier - oder in eine ähnlich gestaltete elektronische Form, z.B. Ausgabe als PDF-Dokument. Das Aussehen eines Reports können Sie dabei mittels Report-Designers frei gestalten. Die Report-Funktionen sind mithilfe einer extern entwickelten Komponente, List&amp;Label von Combit, realisiert.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Image Caption"><image src="Report.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Report-Dialog</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Auf der linken Seite des Report-Dialogs finden Sie eine Registerdarstellung. Hier wählen Sie den auszugebenden Report. Dabei stehen Ihnen drei Register zur Verfügung:</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:143px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">Verfahren</text><tab /></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">Auf einem Report wird ein InEK-Verfahren dargestellt. Auch wenn Sie eine größere Anzahl von Verfahren ausgeben, so fängt jeder Vorschlag auf einer neuen Seite an.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; width:143px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">Liste</text><tab /></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">Alle Vorschläge werden in einer Liste ausgegeben. Dies ist insbesondere für die Ausgabe einer Gesamtübersicht interessant.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:143px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">Etiketten</text><tab /></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">Jeder Vorschlag wird als eine Einheit ausgeben, jedoch können auf einer Seite mehrere solcher Einheiten ausgegeben werden. Typischerweise wird dies für Etiketten, z.B. drei Spalten zu je acht Reihen (= 24), genutzt.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Auf der rechten Seite des Dialog befinden sich diverse Schaltflächen mit der nachfolgend beschriebenen Funktionalität. Mit Ausnahme von [Neu] setzen alle Funktionen einen auf der linken Seite angewählten Report voraus.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="6" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:143px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">[Vorschau]</text><tab /></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">Zeigt den Report in der Vorschau. Die Vorschau ist eine Anzeige des Reports auf dem Bildschirm. Aus der Vorschau heraus ist ein Ausdruck oder ein Export, z.B. im PDF-Format, möglich.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; width:143px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">[Drucken]</text><tab /></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">Gibt den Report direkt auf den Drucker aus.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:143px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">[PDF]</text><tab /></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">Erzeugt den Report als ein zusammenhängendes PDF-Dokument. Soweit Seitenzahlen mit ausgegeben werden, wird jeder Vorschlag mit Seite 1 begonnen.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:143px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">[Design]</text></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">Ruft den Designer auf. Damit können Sie in einem grafischen Editor Aussehen und Inhalt des Reports gestalten. Mittels {F1} können Sie eine Hilfe zum Designer aufrufen. Es handelt sich um die vom Hersteller des Report-Generators mitgelieferte Hilfe. Weitere Infos finden Sie auch auf den Seiten des Herstellers des Report-Generators (http://combit.net).</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:143px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">[Neu]</text></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">Erzeugt einen neuen Eintrag im aktuellen Register. Ein neuer Report wird aber erst mittels Designer angelegt. Andernfalls verschwindet der Eintrag mit Schließen des Dialogs wieder.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:143px;">
+        </td>
+        <td>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Mittels Designer bearbeiten Sie die Beschreibung des einzelnen Reports. Diese Beschreibung wird in einer Datei abgelegt und für die Report-Ausgabe genutzt. Die Dateien werden unterhalb des Verzeichnisses W:\Common\Tools\NubTool\Rpt (InEK-Netz) bzw. X:\Common\Tools\NubTool\Rpt (DRG-Netz) abgelegt. Unterhalb dieses Stammverzeichnisses existieren vier Verzeichnisse, ListSingle, List, Label und Card, welche den vier Registern entsprechen.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Die Layoutdateien verfügen über die Endungen &quot;.lbl&quot; für Etiketten, &quot;crd&quot; für Karte bzw. &quot;.lst&quot; für die Übrigen. Der Designer erzeugt darüber hinaus weitere Dateien mit Reportname und abweichender Dateiendung (-~lst, .lsp, .lsv, .~lbl). Diese werden zur Reportausgabe nicht benötigt und können im Bedarfsfall problemlos gelöscht werden.</text></para>
+  </body>
+</topic>

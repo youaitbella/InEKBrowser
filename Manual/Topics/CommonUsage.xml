@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="muellermi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Allgemeine Bedienung</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Allgemeine Bedienung</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Die Bedienung folgt den weitgehend allgemein bekannten Regeln für die Bedienung grafischer Oberflächen unter Windows. Die Bedienung von Menüs, Eingabefeldern, Schaltflächen wird daher in diesem Handbuch nicht erläutert; wohl aber auf produktspezifische Elemente hingewiesen.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Nach dem Start präsentiert das </text><var styleclass="Normal">&lt;%TITLE%&gt;</var><text styleclass="Normal" translate="true"> diesen Dialog:</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Image Caption"></para>
+    <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Startbildschirm</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Dieser Dialog verfügt über ein Menü sowie eine Karteidarstellung mit mehreren Reitern. Diese sind entsprechend den Prozessschritten (Annahme, Zuordnung, Bearbeiten) organisiert. Zwischen diesen Bereichen wird einfach mittels Klick auf den entsprechenden Reitern umgeschaltet. Eine detaillierte Beschreibung von Menü und den beiden Karteielementen folgt in den nächsten Abschnitten.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Um eine - auch bei kleineren Monitoren - optimale Informationsdarstellung zu erhalten, sind die Dialogen in optische Teilbereiche unterteilt. Solche Teilbereiche sind beispielsweise spaltengleiche Eingabefelder, Tabellen oder einfach große Eingabefelder. Diese Bereiche können in ihrer Größe über einen sogenannten Splitter verändert werden. Um das optische Bild nicht zu stören, sind diese Splitter unsichtbar - bis Sie den Mauszeiger darüber bewegen. Der Mauszeiger verwandelt sich über einem Splitter in einen horizontalen oder vertikalen Strich, von dem in beide dazu senkrechten Richtungen ein Pfeil weist. Diese deuten die Verschieberichtung an.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Image Caption"><image src="Splitter1.png" scale="100.00%" styleclass="Image Caption"></image><image src="Spliter2.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE++%&gt;</var><text styleclass="Image Caption" translate="true"> Beispiele für Splitter</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Das </text><var styleclass="Normal">&lt;%TITLE%&gt;</var><text styleclass="Normal" translate="true"> merkt sich die Position dieser Splitter, ebenso wie aktuelle Dialoggröße, Position etc. beim Programmende und stellt diese Angaben beim nächsten Start wieder her. Diese Daten werden je Benutzer individuell gespeichert. Sollten die Bildschirmelemente einmal völlig wirre Größen haben, so können Sie mittels Menü </text><text styleclass="Normal" style="font-style:italic;" translate="true">Elemente anordnen</text><text styleclass="Normal" translate="true"> eine Grundeinstellung abrufen.</text></para>
+  </body>
+</topic>
