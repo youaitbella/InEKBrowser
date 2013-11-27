@@ -24,196 +24,232 @@
         /// </summary>
         private void InitializeComponent() {
             this.grpFilter = new System.Windows.Forms.GroupBox();
-            this.lblDepartment = new System.Windows.Forms.Label();
-            this.cbxMk = new org.inek.controls.CommonControls.ComboField();
-            this.lblMk = new System.Windows.Forms.Label();
-            this.cbxPepp = new org.inek.controls.CommonControls.ComboField();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.pnlSplitter1 = new System.Windows.Forms.Panel();
             this.lblPEPP = new System.Windows.Forms.Label();
-            this.grpProfile = new System.Windows.Forms.GroupBox();
-            this.cbxDepartment = new System.Windows.Forms.ComboBox();
-            this.lblProfile = new System.Windows.Forms.Label();
-            this.cbxProfile = new System.Windows.Forms.ComboBox();
-            this.lblPreDecision = new System.Windows.Forms.Label();
-            this.cbxPreDecision = new org.inek.controls.CommonControls.ComboField();
-            this.lblCode = new System.Windows.Forms.Label();
-            this.cbxCode = new org.inek.controls.CommonControls.ComboField();
+            this.cbxPepp = new org.inek.controls.CommonControls.ComboField();
+            this.lblSk = new System.Windows.Forms.Label();
+            this.cbxMk = new org.inek.controls.CommonControls.ComboField();
+            this.lblMainDiagnosis = new System.Windows.Forms.Label();
+            this.cbxMainDiagnosis = new org.inek.controls.CommonControls.ComboField();
+            this.cbxSecondaryDiagnosis = new org.inek.controls.CommonControls.ComboField();
+            this.lblSecondaryDiagnosis = new System.Windows.Forms.Label();
+            this.cbxProcedure = new org.inek.controls.CommonControls.ComboField();
+            this.lblProcedure = new System.Windows.Forms.Label();
             this.grpFilter.SuspendLayout();
-            this.grpProfile.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
+            this.splitContainer2.Panel1.SuspendLayout();
+            this.splitContainer2.Panel2.SuspendLayout();
+            this.splitContainer2.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpFilter
             // 
-            this.grpFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.grpFilter.Controls.Add(this.cbxDepartment);
-            this.grpFilter.Controls.Add(this.lblDepartment);
-            this.grpFilter.Controls.Add(this.cbxMk);
-            this.grpFilter.Controls.Add(this.lblMk);
-            this.grpFilter.Controls.Add(this.cbxPepp);
-            this.grpFilter.Controls.Add(this.lblPEPP);
-            this.grpFilter.Location = new System.Drawing.Point(3, 3);
+            this.grpFilter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpFilter.BackColor = System.Drawing.Color.Transparent;
+            this.grpFilter.Controls.Add(this.splitContainer1);
+            this.grpFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpFilter.Location = new System.Drawing.Point(3, 4);
             this.grpFilter.Name = "grpFilter";
-            this.grpFilter.Size = new System.Drawing.Size(465, 102);
-            this.grpFilter.TabIndex = 0;
+            this.grpFilter.Size = new System.Drawing.Size(856, 78);
+            this.grpFilter.TabIndex = 2;
             this.grpFilter.TabStop = false;
             this.grpFilter.Text = "Filter";
             // 
-            // lblDepartment
+            // splitContainer1
             // 
-            this.lblDepartment.AutoSize = true;
-            this.lblDepartment.Location = new System.Drawing.Point(6, 73);
-            this.lblDepartment.Name = "lblDepartment";
-            this.lblDepartment.Size = new System.Drawing.Size(54, 13);
-            this.lblDepartment.TabIndex = 10;
-            this.lblDepartment.Text = "Abteilung:";
-            // 
-            // cbxMk
-            // 
-            this.cbxMk.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxMk.Location = new System.Drawing.Point(66, 16);
-            this.cbxMk.MinimumSize = new System.Drawing.Size(100, 21);
-            this.cbxMk.MutltiLine = false;
-            this.cbxMk.Name = "cbxMk";
-            this.cbxMk.ReadOnly = false;
-            this.cbxMk.Size = new System.Drawing.Size(393, 21);
-            this.cbxMk.TabIndex = 9;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 10);
+            this.splitContainer1.Name = "splitContainer1";
             // 
-            // lblMk
+            // splitContainer1.Panel1
             // 
-            this.lblMk.AutoSize = true;
-            this.lblMk.Location = new System.Drawing.Point(6, 20);
-            this.lblMk.Name = "lblMk";
-            this.lblMk.Size = new System.Drawing.Size(26, 13);
-            this.lblMk.TabIndex = 8;
-            this.lblMk.Text = "MK:";
+            this.splitContainer1.Panel1.Controls.Add(this.splitContainer2);
             // 
-            // cbxPepp
+            // splitContainer1.Panel2
             // 
-            this.cbxPepp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.splitContainer1.Panel2.Controls.Add(this.cbxProcedure);
+            this.splitContainer1.Panel2.Controls.Add(this.lblProcedure);
+            this.splitContainer1.Size = new System.Drawing.Size(856, 63);
+            this.splitContainer1.SplitterDistance = 609;
+            this.splitContainer1.TabIndex = 0;
+            // 
+            // splitContainer2
+            // 
+            this.splitContainer2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxPepp.Location = new System.Drawing.Point(66, 43);
-            this.cbxPepp.MinimumSize = new System.Drawing.Size(100, 21);
-            this.cbxPepp.MutltiLine = false;
-            this.cbxPepp.Name = "cbxPepp";
-            this.cbxPepp.ReadOnly = false;
-            this.cbxPepp.Size = new System.Drawing.Size(393, 21);
-            this.cbxPepp.TabIndex = 7;
+            this.splitContainer2.Location = new System.Drawing.Point(0, 2);
+            this.splitContainer2.Name = "splitContainer2";
+            // 
+            // splitContainer2.Panel1
+            // 
+            this.splitContainer2.Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.splitContainer2.Panel1.Controls.Add(this.pnlSplitter1);
+            this.splitContainer2.Panel1.Controls.Add(this.lblPEPP);
+            this.splitContainer2.Panel1.Controls.Add(this.cbxPepp);
+            this.splitContainer2.Panel1.Controls.Add(this.lblSk);
+            this.splitContainer2.Panel1.Controls.Add(this.cbxMk);
+            // 
+            // splitContainer2.Panel2
+            // 
+            this.splitContainer2.Panel2.BackColor = System.Drawing.Color.Transparent;
+            this.splitContainer2.Panel2.Controls.Add(this.lblMainDiagnosis);
+            this.splitContainer2.Panel2.Controls.Add(this.cbxMainDiagnosis);
+            this.splitContainer2.Panel2.Controls.Add(this.cbxSecondaryDiagnosis);
+            this.splitContainer2.Panel2.Controls.Add(this.lblSecondaryDiagnosis);
+            this.splitContainer2.Size = new System.Drawing.Size(606, 58);
+            this.splitContainer2.SplitterDistance = 295;
+            this.splitContainer2.TabIndex = 13;
+            // 
+            // pnlSplitter1
+            // 
+            this.pnlSplitter1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pnlSplitter1.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pnlSplitter1.Enabled = false;
+            this.pnlSplitter1.Location = new System.Drawing.Point(-27, 9);
+            this.pnlSplitter1.Name = "pnlSplitter1";
+            this.pnlSplitter1.Size = new System.Drawing.Size(6, 46);
+            this.pnlSplitter1.TabIndex = 16;
             // 
             // lblPEPP
             // 
             this.lblPEPP.AutoSize = true;
-            this.lblPEPP.Location = new System.Drawing.Point(6, 47);
+            this.lblPEPP.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPEPP.Location = new System.Drawing.Point(3, 36);
             this.lblPEPP.Name = "lblPEPP";
             this.lblPEPP.Size = new System.Drawing.Size(38, 13);
             this.lblPEPP.TabIndex = 6;
             this.lblPEPP.Text = "PEPP:";
             // 
-            // grpProfile
+            // cbxPepp
             // 
-            this.grpProfile.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.grpProfile.Controls.Add(this.cbxCode);
-            this.grpProfile.Controls.Add(this.lblCode);
-            this.grpProfile.Controls.Add(this.cbxPreDecision);
-            this.grpProfile.Controls.Add(this.lblPreDecision);
-            this.grpProfile.Controls.Add(this.cbxProfile);
-            this.grpProfile.Controls.Add(this.lblProfile);
-            this.grpProfile.Location = new System.Drawing.Point(474, 3);
-            this.grpProfile.Name = "grpProfile";
-            this.grpProfile.Size = new System.Drawing.Size(418, 102);
-            this.grpProfile.TabIndex = 1;
-            this.grpProfile.TabStop = false;
-            this.grpProfile.Text = "Profil";
-            // 
-            // cbxDepartment
-            // 
-            this.cbxDepartment.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.cbxPepp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxDepartment.FormattingEnabled = true;
-            this.cbxDepartment.Items.AddRange(new object[] {
-            "Hauptabteilung",
-            "Belegabteilung",
-            "Teilstationär"});
-            this.cbxDepartment.Location = new System.Drawing.Point(66, 70);
-            this.cbxDepartment.Name = "cbxDepartment";
-            this.cbxDepartment.Size = new System.Drawing.Size(393, 21);
-            this.cbxDepartment.TabIndex = 11;
-            this.cbxDepartment.Text = "Hauptdiagnosen";
+            this.cbxPepp.Location = new System.Drawing.Point(63, 32);
+            this.cbxPepp.MinimumSize = new System.Drawing.Size(100, 21);
+            this.cbxPepp.MutltiLine = false;
+            this.cbxPepp.Name = "cbxPepp";
+            this.cbxPepp.ReadOnly = false;
+            this.cbxPepp.Size = new System.Drawing.Size(229, 22);
+            this.cbxPepp.TabIndex = 7;
             // 
-            // lblProfile
+            // lblSk
             // 
-            this.lblProfile.AutoSize = true;
-            this.lblProfile.Location = new System.Drawing.Point(6, 20);
-            this.lblProfile.Name = "lblProfile";
-            this.lblProfile.Size = new System.Drawing.Size(33, 13);
-            this.lblProfile.TabIndex = 0;
-            this.lblProfile.Text = "Profil:";
+            this.lblSk.AutoSize = true;
+            this.lblSk.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSk.Location = new System.Drawing.Point(3, 9);
+            this.lblSk.Name = "lblSk";
+            this.lblSk.Size = new System.Drawing.Size(24, 13);
+            this.lblSk.TabIndex = 8;
+            this.lblSk.Text = "SK:";
             // 
-            // cbxProfile
+            // cbxMk
             // 
-            this.cbxProfile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxProfile.FormattingEnabled = true;
-            this.cbxProfile.Items.AddRange(new object[] {
-            "Hauptdiagnosen (HD)",
-            "Nebendiagnosen (ND)",
-            "Prozeduren (PR)"});
-            this.cbxProfile.Location = new System.Drawing.Point(77, 17);
-            this.cbxProfile.Name = "cbxProfile";
-            this.cbxProfile.Size = new System.Drawing.Size(335, 21);
-            this.cbxProfile.TabIndex = 1;
-            this.cbxProfile.Text = "Hauptdiagnosen (HD)";
+            this.cbxMk.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxMk.Location = new System.Drawing.Point(63, 6);
+            this.cbxMk.MinimumSize = new System.Drawing.Size(100, 21);
+            this.cbxMk.MutltiLine = false;
+            this.cbxMk.Name = "cbxMk";
+            this.cbxMk.ReadOnly = false;
+            this.cbxMk.Size = new System.Drawing.Size(229, 22);
+            this.cbxMk.TabIndex = 9;
             // 
-            // lblPreDecision
+            // lblMainDiagnosis
             // 
-            this.lblPreDecision.AutoSize = true;
-            this.lblPreDecision.Location = new System.Drawing.Point(6, 47);
-            this.lblPreDecision.Name = "lblPreDecision";
-            this.lblPreDecision.Size = new System.Drawing.Size(65, 13);
-            this.lblPreDecision.TabIndex = 2;
-            this.lblPreDecision.Text = "Vorauswahl:";
+            this.lblMainDiagnosis.AutoSize = true;
+            this.lblMainDiagnosis.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMainDiagnosis.Location = new System.Drawing.Point(2, 9);
+            this.lblMainDiagnosis.Name = "lblMainDiagnosis";
+            this.lblMainDiagnosis.Size = new System.Drawing.Size(82, 13);
+            this.lblMainDiagnosis.TabIndex = 1;
+            this.lblMainDiagnosis.Text = "Hauptdiagnose:";
             // 
-            // cbxPreDecision
+            // cbxMainDiagnosis
             // 
-            this.cbxPreDecision.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxPreDecision.Location = new System.Drawing.Point(77, 43);
-            this.cbxPreDecision.MinimumSize = new System.Drawing.Size(100, 21);
-            this.cbxPreDecision.MutltiLine = false;
-            this.cbxPreDecision.Name = "cbxPreDecision";
-            this.cbxPreDecision.ReadOnly = false;
-            this.cbxPreDecision.Size = new System.Drawing.Size(335, 21);
-            this.cbxPreDecision.TabIndex = 3;
+            this.cbxMainDiagnosis.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxMainDiagnosis.Location = new System.Drawing.Point(90, 6);
+            this.cbxMainDiagnosis.MinimumSize = new System.Drawing.Size(100, 21);
+            this.cbxMainDiagnosis.MutltiLine = false;
+            this.cbxMainDiagnosis.Name = "cbxMainDiagnosis";
+            this.cbxMainDiagnosis.ReadOnly = false;
+            this.cbxMainDiagnosis.Size = new System.Drawing.Size(214, 22);
+            this.cbxMainDiagnosis.TabIndex = 0;
             // 
-            // lblCode
+            // cbxSecondaryDiagnosis
             // 
-            this.lblCode.AutoSize = true;
-            this.lblCode.Location = new System.Drawing.Point(6, 73);
-            this.lblCode.Name = "lblCode";
-            this.lblCode.Size = new System.Drawing.Size(35, 13);
-            this.lblCode.TabIndex = 4;
-            this.lblCode.Text = "Kode:";
+            this.cbxSecondaryDiagnosis.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxSecondaryDiagnosis.Location = new System.Drawing.Point(90, 32);
+            this.cbxSecondaryDiagnosis.MinimumSize = new System.Drawing.Size(100, 21);
+            this.cbxSecondaryDiagnosis.MutltiLine = false;
+            this.cbxSecondaryDiagnosis.Name = "cbxSecondaryDiagnosis";
+            this.cbxSecondaryDiagnosis.ReadOnly = false;
+            this.cbxSecondaryDiagnosis.Size = new System.Drawing.Size(214, 22);
+            this.cbxSecondaryDiagnosis.TabIndex = 3;
             // 
-            // cbxCode
+            // lblSecondaryDiagnosis
             // 
-            this.cbxCode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxCode.Location = new System.Drawing.Point(77, 70);
-            this.cbxCode.MinimumSize = new System.Drawing.Size(100, 21);
-            this.cbxCode.MutltiLine = false;
-            this.cbxCode.Name = "cbxCode";
-            this.cbxCode.ReadOnly = false;
-            this.cbxCode.Size = new System.Drawing.Size(335, 21);
-            this.cbxCode.TabIndex = 5;
+            this.lblSecondaryDiagnosis.AutoSize = true;
+            this.lblSecondaryDiagnosis.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSecondaryDiagnosis.Location = new System.Drawing.Point(2, 36);
+            this.lblSecondaryDiagnosis.Name = "lblSecondaryDiagnosis";
+            this.lblSecondaryDiagnosis.Size = new System.Drawing.Size(85, 13);
+            this.lblSecondaryDiagnosis.TabIndex = 2;
+            this.lblSecondaryDiagnosis.Text = "Nebendiagnose:";
+            // 
+            // cbxProcedure
+            // 
+            this.cbxProcedure.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxProcedure.Location = new System.Drawing.Point(62, 9);
+            this.cbxProcedure.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.cbxProcedure.MinimumSize = new System.Drawing.Size(133, 0);
+            this.cbxProcedure.MutltiLine = false;
+            this.cbxProcedure.Name = "cbxProcedure";
+            this.cbxProcedure.ReadOnly = false;
+            this.cbxProcedure.Size = new System.Drawing.Size(174, 22);
+            this.cbxProcedure.TabIndex = 15;
+            // 
+            // lblProcedure
+            // 
+            this.lblProcedure.AutoSize = true;
+            this.lblProcedure.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProcedure.Location = new System.Drawing.Point(3, 11);
+            this.lblProcedure.Name = "lblProcedure";
+            this.lblProcedure.Size = new System.Drawing.Size(52, 13);
+            this.lblProcedure.TabIndex = 14;
+            this.lblProcedure.Text = "Prozedur:";
             // 
             // Selection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.grpProfile);
+            this.BackColor = System.Drawing.Color.SeaGreen;
             this.Controls.Add(this.grpFilter);
             this.Name = "Selection";
-            this.Size = new System.Drawing.Size(895, 111);
+            this.Size = new System.Drawing.Size(862, 86);
             this.grpFilter.ResumeLayout(false);
-            this.grpFilter.PerformLayout();
-            this.grpProfile.ResumeLayout(false);
-            this.grpProfile.PerformLayout();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            this.splitContainer1.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            this.splitContainer2.Panel1.ResumeLayout(false);
+            this.splitContainer2.Panel1.PerformLayout();
+            this.splitContainer2.Panel2.ResumeLayout(false);
+            this.splitContainer2.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
+            this.splitContainer2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -221,19 +257,20 @@
         #endregion
 
         private System.Windows.Forms.GroupBox grpFilter;
-        private System.Windows.Forms.ComboBox cbxDepartment;
-        private System.Windows.Forms.Label lblDepartment;
-        private controls.CommonControls.ComboField cbxMk;
-        private System.Windows.Forms.Label lblMk;
-        private controls.CommonControls.ComboField cbxPepp;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.Label lblPEPP;
-        private System.Windows.Forms.GroupBox grpProfile;
-        private System.Windows.Forms.ComboBox cbxProfile;
-        private System.Windows.Forms.Label lblProfile;
-        private System.Windows.Forms.Label lblCode;
-        private controls.CommonControls.ComboField cbxPreDecision;
-        private System.Windows.Forms.Label lblPreDecision;
-        private controls.CommonControls.ComboField cbxCode;
+        private controls.CommonControls.ComboField cbxPepp;
+        private System.Windows.Forms.Label lblSk;
+        private controls.CommonControls.ComboField cbxMk;
+        private controls.CommonControls.ComboField cbxMainDiagnosis;
+        private controls.CommonControls.ComboField cbxSecondaryDiagnosis;
+        private System.Windows.Forms.Label lblSecondaryDiagnosis;
+        private System.Windows.Forms.Label lblMainDiagnosis;
+        private controls.CommonControls.ComboField cbxProcedure;
+        private System.Windows.Forms.Label lblProcedure;
+        private System.Windows.Forms.Panel pnlSplitter1;
+
 
     }
 }

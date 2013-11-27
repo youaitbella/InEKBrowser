@@ -1,12 +1,28 @@
 ﻿using System;
-using System.Diagnostics;
+using System.Drawing;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using org.inek.PeppBrowser.Data;
 
 namespace org.inek.PeppBrowser.GUI {
     public partial class FrmPeppBrowser : Form {
+
+        /* Use for window moving */
+        private const int WM_NCLBUTTONDOWN  = 0xA1;
+        private const int HT_CAPTION        = 0x2;
+
+        [DllImport("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [DllImport("user32.dll")]
+        public static extern bool ReleaseCapture();
+
+        /* ################## */
+
+
         public FrmPeppBrowser() {
             InitializeComponent();
+            titleBar.TitleBarPanel.MouseMove += FrmPeppBrowser_MouseMove;
+            titleBar.FormStatePanel.MouseMove += FrmPeppBrowser_MouseMove;
         }
 
         private void mnuPepp_Click(object sender, System.EventArgs e) {
@@ -68,16 +84,42 @@ namespace org.inek.PeppBrowser.GUI {
             dlg.SetDataSource(CsvData.Context().StructureCategories);
             dlg.Text = "Strukturkategorien";
             dlg.Show();
-
         }
 
-        private void mnuManual_Click(object sender, System.EventArgs e) {
-            try {
-                Process.Start("PeppBrowser.pdf");
-            } catch (Exception) {
-                MessageBox.Show("Kein Handbuch verfügbar.");
+        private void FrmPeppBrowser_MouseMove(object sender, MouseEventArgs e) {
+            Cursor = DefaultCursor;
+            if (e.Button == MouseButtons.Left) {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
+        }
 
+        private int xPos = 0;
+        private int yPos = 0;
+        private void resizerSE_MouseMove(object sender, MouseEventArgs e) {
+            Cursor = Cursors.SizeNWSE;
+            if (e.Button == MouseButtons.Left) {
+                
+            }
+        }
+
+        private void resizerS_MouseMove(object sender, MouseEventArgs e) {
+            Cursor = Cursors.SizeNS;
+            if (e.Button == MouseButtons.Left) {
+                if (e.Y > yPos)
+                    Height += 1;
+                else if (e.Y < yPos)
+                    Height -= e.Y;
+                yPos = e.Y;
+            }
+        }
+
+        private void resizerSW_MouseMove(object sender, MouseEventArgs e) {
+            Cursor = Cursors.SizeNESW;
+        }
+
+        private void resizerW_MouseMove(object sender, EventArgs e) {
+            Cursor = Cursors.SizeWE;
         }
     }
 }

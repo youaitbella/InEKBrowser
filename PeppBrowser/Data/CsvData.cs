@@ -76,7 +76,7 @@ namespace org.inek.PeppBrowser.Data {
                                                                      "kd_FaelleAnteilVstufe5;kd_TageAnzahlVgst1;kd_TageAnzahlVgst2;kd_TageAnzahlVgst3;kd_TageAnzahlVgst4;kd_TageAnzahlVgst5;" +
                                                                      "kd_VwdSummeTage;kd_VwdMw;kd_VwdStd;kd_VwdHK;kd_VwdVonVgst1;kd_VwdBisVgst1;kd_BewertungsrelationTagVgst1;kd_VwdVonVgst2;" +
                                                                      "kd_VwdBisVgst2;kd_BewertungsrelationTagVgst2;kd_VwdVonVgst3;kd_VwdBisVgst3;kd_BewertungsrelationTagVgst3;kd_VwdVonVgst4;" +
-                                                                     "kd_VwdBisVgst4;kd_BewertungsrelationTagVgst4;kd_VwdVonVgst5;kd_VwdBisVgst6;kd_BewertungsrelationTagVgst5;kd_GeschlechtM;" +
+                                                                     "kd_VwdBisVgst4;kd_BewertungsrelationTagVgst4;kd_VwdVonVgst5;kd_VwdBisVgst5;kd_BewertungsrelationTagVgst5;kd_GeschlechtM;" +
                                                                      "kd_GeschlechtW;kd_AlterMw;kd_AlterStd;kd_AlterU28T;kd_AlterU01;kd_AlterU03;kd_AlterU06;kd_AlterU10;kd_AlterU16;" +
                                                                      "kd_AlterU18;kd_AlterU30;kd_AlterU40;kd_AlterU50;kd_AlterU55;kd_AlterU60;kd_AlterU65;kd_AlterU75;kd_AlterU80;kd_AlterU99;" +
                                                                      "kd_TageskostenMw;kd_TageskostenStd;kd_TageskostenHK");

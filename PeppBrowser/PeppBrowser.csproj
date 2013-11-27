@@ -60,6 +60,12 @@
     <Compile Include="Data\Entities\Procedure.cs" />
     <Compile Include="Data\Entities\SecondaryDiagnosis.cs" />
     <Compile Include="Data\Entities\StructureCategory.cs" />
+    <Compile Include="GUI\Data.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Data.Designer.cs">
+      <DependentUpon>Data.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FrmList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,8 +84,17 @@
     <Compile Include="GUI\Selection.Designer.cs">
       <DependentUpon>Selection.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\TitleBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\TitleBar.Designer.cs">
+      <DependentUpon>TitleBar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\Data.resx">
+      <DependentUpon>Data.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FrmList.resx">
       <DependentUpon>FrmList.cs</DependentUpon>
     </EmbeddedResource>
@@ -88,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Selection.resx">
       <DependentUpon>Selection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\TitleBar.resx">
+      <DependentUpon>TitleBar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
