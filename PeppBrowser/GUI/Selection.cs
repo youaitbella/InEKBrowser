@@ -10,8 +10,16 @@ using System.Windows.Forms;
 
 namespace org.inek.PeppBrowser.GUI {
     public partial class Selection : UserControl {
+        public event EventHandler DataChanged;
+
         public Selection() {
             InitializeComponent();
         }
+
+        private void ChangeData() {
+                if (DataChanged != null) {
+                    DataChanged(this, null);
+                }
+        }   
     }
 }

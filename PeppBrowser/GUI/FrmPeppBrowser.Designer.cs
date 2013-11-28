@@ -58,7 +58,7 @@
             this.mnuMain.Margin = new System.Windows.Forms.Padding(0, 20, 0, 0);
             this.mnuMain.Name = "mnuMain";
             this.mnuMain.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.mnuMain.Size = new System.Drawing.Size(1138, 24);
+            this.mnuMain.Size = new System.Drawing.Size(1254, 24);
             this.mnuMain.TabIndex = 6;
             this.mnuMain.Text = "menuStrip1";
             // 
@@ -91,6 +91,7 @@
             this.mnuStructureCategories.Name = "mnuStructureCategories";
             this.mnuStructureCategories.Size = new System.Drawing.Size(172, 22);
             this.mnuStructureCategories.Text = "Strukturkategorien";
+            this.mnuStructureCategories.Click += new System.EventHandler(this.mnuStructureCategories_Click);
             // 
             // mnuPepp
             // 
@@ -98,6 +99,7 @@
             this.mnuPepp.Name = "mnuPepp";
             this.mnuPepp.Size = new System.Drawing.Size(172, 22);
             this.mnuPepp.Text = "PEPP";
+            this.mnuPepp.Click += new System.EventHandler(this.mnuPepp_Click);
             // 
             // mnuPeppInfo
             // 
@@ -181,7 +183,7 @@
             this.pnlContentBackground.Controls.Add(this.data1);
             this.pnlContentBackground.Location = new System.Drawing.Point(3, 30);
             this.pnlContentBackground.Name = "pnlContentBackground";
-            this.pnlContentBackground.Size = new System.Drawing.Size(1138, 577);
+            this.pnlContentBackground.Size = new System.Drawing.Size(1254, 717);
             this.pnlContentBackground.TabIndex = 8;
             this.pnlContentBackground.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
             // 
@@ -192,7 +194,7 @@
             this.selection.BackColor = System.Drawing.Color.SeaGreen;
             this.selection.Location = new System.Drawing.Point(0, 27);
             this.selection.Name = "selection";
-            this.selection.Size = new System.Drawing.Size(1138, 87);
+            this.selection.Size = new System.Drawing.Size(1254, 87);
             this.selection.TabIndex = 7;
             // 
             // data1
@@ -203,7 +205,7 @@
             this.data1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.data1.Location = new System.Drawing.Point(0, 120);
             this.data1.Name = "data1";
-            this.data1.Size = new System.Drawing.Size(1138, 252);
+            this.data1.Size = new System.Drawing.Size(1254, 252);
             this.data1.TabIndex = 1;
             // 
             // titleBar
@@ -213,7 +215,7 @@
             this.titleBar.BackColor = System.Drawing.Color.Ivory;
             this.titleBar.Location = new System.Drawing.Point(3, 0);
             this.titleBar.Name = "titleBar";
-            this.titleBar.Size = new System.Drawing.Size(1138, 30);
+            this.titleBar.Size = new System.Drawing.Size(1254, 30);
             this.titleBar.TabIndex = 5;
             this.titleBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
             // 
@@ -222,7 +224,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Ivory;
-            this.ClientSize = new System.Drawing.Size(1144, 610);
+            this.ClientSize = new System.Drawing.Size(1260, 750);
             this.Controls.Add(this.pnlContentBackground);
             this.Controls.Add(this.titleBar);
             this.DoubleBuffered = true;
