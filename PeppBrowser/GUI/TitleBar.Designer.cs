@@ -25,16 +25,16 @@
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TitleBar));
             this.pnlTitle = new System.Windows.Forms.Panel();
-            this.pnlFormStates = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.picMinMax = new System.Windows.Forms.PictureBox();
-            this.picExit = new System.Windows.Forms.PictureBox();
+            this.pnlFormStates = new System.Windows.Forms.Panel();
             this.picIconify = new System.Windows.Forms.PictureBox();
+            this.picExit = new System.Windows.Forms.PictureBox();
+            this.picMinMax = new System.Windows.Forms.PictureBox();
             this.pnlTitle.SuspendLayout();
             this.pnlFormStates.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picMinMax)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picIconify)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMinMax)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlTitle
@@ -50,6 +50,17 @@
             this.pnlTitle.Size = new System.Drawing.Size(296, 30);
             this.pnlTitle.TabIndex = 3;
             // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(3, 3);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(220, 25);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "PEPP Offline Browser";
+            // 
             // pnlFormStates
             // 
             this.pnlFormStates.BackColor = System.Drawing.Color.Transparent;
@@ -64,16 +75,29 @@
             this.pnlFormStates.Size = new System.Drawing.Size(197, 30);
             this.pnlFormStates.TabIndex = 0;
             // 
-            // lblTitle
+            // picIconify
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(3, 3);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(220, 25);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "PEPP Offline Browser";
+            this.picIconify.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picIconify.BackgroundImage")));
+            this.picIconify.Location = new System.Drawing.Point(117, 7);
+            this.picIconify.Name = "picIconify";
+            this.picIconify.Size = new System.Drawing.Size(18, 18);
+            this.picIconify.TabIndex = 2;
+            this.picIconify.TabStop = false;
+            this.picIconify.MouseEnter += new System.EventHandler(this.picIconify_MouseEnter);
+            this.picIconify.MouseLeave += new System.EventHandler(this.picIconify_MouseLeave);
+            // 
+            // picExit
+            // 
+            this.picExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picExit.BackgroundImage")));
+            this.picExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picExit.Location = new System.Drawing.Point(166, 7);
+            this.picExit.Name = "picExit";
+            this.picExit.Size = new System.Drawing.Size(18, 18);
+            this.picExit.TabIndex = 1;
+            this.picExit.TabStop = false;
+            this.picExit.Click += new System.EventHandler(this.picExit_Click);
+            this.picExit.MouseEnter += new System.EventHandler(this.picExit_MouseEnter);
+            this.picExit.MouseLeave += new System.EventHandler(this.picExit_MouseLeave);
             // 
             // picMinMax
             // 
@@ -87,34 +111,11 @@
             this.picMinMax.MouseEnter += new System.EventHandler(this.picMinMax_MouseEnter);
             this.picMinMax.MouseLeave += new System.EventHandler(this.picMinMax_MouseLeave);
             // 
-            // picExit
-            // 
-            this.picExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picExit.BackgroundImage")));
-            this.picExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picExit.Location = new System.Drawing.Point(166, 7);
-            this.picExit.Name = "picExit";
-            this.picExit.Size = new System.Drawing.Size(18, 18);
-            this.picExit.TabIndex = 1;
-            this.picExit.TabStop = false;
-            this.picExit.MouseEnter += new System.EventHandler(this.picExit_MouseEnter);
-            this.picExit.MouseLeave += new System.EventHandler(this.picExit_MouseLeave);
-            // 
-            // picIconify
-            // 
-            this.picIconify.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picIconify.BackgroundImage")));
-            this.picIconify.Location = new System.Drawing.Point(117, 7);
-            this.picIconify.Name = "picIconify";
-            this.picIconify.Size = new System.Drawing.Size(18, 18);
-            this.picIconify.TabIndex = 2;
-            this.picIconify.TabStop = false;
-            this.picIconify.MouseEnter += new System.EventHandler(this.picIconify_MouseEnter);
-            this.picIconify.MouseLeave += new System.EventHandler(this.picIconify_MouseLeave);
-            // 
             // TitleBar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Ivory;
+            this.BackColor = System.Drawing.Color.LightYellow;
             this.Controls.Add(this.pnlFormStates);
             this.Controls.Add(this.pnlTitle);
             this.Name = "TitleBar";
@@ -122,9 +123,9 @@
             this.pnlTitle.ResumeLayout(false);
             this.pnlTitle.PerformLayout();
             this.pnlFormStates.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picMinMax)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picIconify)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMinMax)).EndInit();
             this.ResumeLayout(false);
 
         }

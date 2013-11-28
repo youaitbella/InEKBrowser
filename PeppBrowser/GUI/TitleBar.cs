@@ -23,6 +23,8 @@ namespace org.inek.PeppBrowser.GUI {
             get { return lblTitle; }
         }
 
+        public event EventHandler ClickedExit;
+
         public TitleBar() {
             InitializeComponent();
         }
@@ -49,6 +51,12 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void picIconify_MouseLeave(object sender, EventArgs e) {
             picIconify.BackColor = Color.SeaGreen;
+        }
+
+        private void picExit_Click(object sender, EventArgs e) {
+            if (ClickedExit != null) {
+                ClickedExit(picExit, null);
+            }
         }
     }
 }

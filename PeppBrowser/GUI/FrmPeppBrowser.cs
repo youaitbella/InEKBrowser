@@ -9,11 +9,12 @@ namespace org.inek.PeppBrowser.GUI {
     public partial class FrmPeppBrowser : Form {
 
         /* Use for window moving */
-        private const int WM_NCLBUTTONDOWN  = 0xA1;
-        private const int HT_CAPTION        = 0x2;
+        private const int WM_NCLBUTTONDOWN = 0xA1;
+        private const int HT_CAPTION = 0x2;
 
         [DllImport("user32.dll")]
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+
         [DllImport("user32.dll")]
         public static extern bool ReleaseCapture();
 
@@ -25,6 +26,7 @@ namespace org.inek.PeppBrowser.GUI {
             titleBar.TitleBarPanel.MouseMove += FrmPeppBrowser_MouseMove;
             titleBar.FormStatePanel.MouseMove += FrmPeppBrowser_MouseMove;
             titleBar.Title.MouseMove += FrmPeppBrowser_MouseMove;
+
         }
 
         private void mnuPepp_Click(object sender, System.EventArgs e) {
@@ -89,7 +91,6 @@ namespace org.inek.PeppBrowser.GUI {
         }
 
         private void FrmPeppBrowser_MouseMove(object sender, MouseEventArgs e) {
-            Cursor = DefaultCursor;
             if (e.Button == MouseButtons.Left) {
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
@@ -97,49 +98,66 @@ namespace org.inek.PeppBrowser.GUI {
         }
 
 
-        // Handles resize event 
+        //***********************************************************
+        //This gives us the ability to resize the borderless from any borders instead of just the lower right corner
         protected override void WndProc(ref Message m) {
-            const UInt32 WM_NCHITTEST = 0x0084;
-            const UInt32 WM_MOUSEMOVE = 0x0200;
+            const int wmNcHitTest = 0x84;
+            const int htLeft = 10;
+            const int htRight = 11;
+            const int htTop = 12;
+            const int htTopLeft = 13;
+            const int htTopRight = 14;
+            const int htBottom = 15;
+            const int htBottomLeft = 16;
+            const int htBottomRight = 17;
 
-            const UInt32 HTLEFT = 10;
-            const UInt32 HTRIGHT = 11;
-            const UInt32 HTBOTTOMRIGHT = 17;
-            const UInt32 HTBOTTOM = 15;
-            const UInt32 HTBOTTOMLEFT = 16;
-            const UInt32 HTTOP = 12;
-            const UInt32 HTTOPLEFT = 13;
-            const UInt32 HTTOPRIGHT = 14;
-
-            const int RESIZE_HANDLE_SIZE = 10;
-            bool handled = false;
-            if (m.Msg == WM_NCHITTEST || m.Msg == WM_MOUSEMOVE) {
-                Size formSize = this.Size;
-                Point screenPoint = new Point(m.LParam.ToInt32());
-                Point clientPoint = this.PointToClient(screenPoint);
-
-            Dictionary<UInt32, Rectangle> boxes = new Dictionary<UInt32, Rectangle>() {
-            {HTBOTTOMLEFT, new Rectangle(0, formSize.Height - RESIZE_HANDLE_SIZE, RESIZE_HANDLE_SIZE, RESIZE_HANDLE_SIZE)},
-            {HTBOTTOM, new Rectangle(RESIZE_HANDLE_SIZE, formSize.Height - RESIZE_HANDLE_SIZE, formSize.Width - 2*RESIZE_HANDLE_SIZE, RESIZE_HANDLE_SIZE)},
-            {HTBOTTOMRIGHT, new Rectangle(formSize.Width - RESIZE_HANDLE_SIZE, formSize.Height - RESIZE_HANDLE_SIZE, RESIZE_HANDLE_SIZE, RESIZE_HANDLE_SIZE)},
-            {HTRIGHT, new Rectangle(formSize.Width - RESIZE_HANDLE_SIZE, RESIZE_HANDLE_SIZE, RESIZE_HANDLE_SIZE, formSize.Height - 2*RESIZE_HANDLE_SIZE)},
-            {HTTOPRIGHT, new Rectangle(formSize.Width - RESIZE_HANDLE_SIZE, 0, RESIZE_HANDLE_SIZE, RESIZE_HANDLE_SIZE) },
-            {HTTOP, new Rectangle(RESIZE_HANDLE_SIZE, 0, formSize.Width - 2*RESIZE_HANDLE_SIZE, RESIZE_HANDLE_SIZE) },
-            {HTTOPLEFT, new Rectangle(0, 0, RESIZE_HANDLE_SIZE, RESIZE_HANDLE_SIZE) },
-            {HTLEFT, new Rectangle(0, RESIZE_HANDLE_SIZE, RESIZE_HANDLE_SIZE, formSize.Height - 2*RESIZE_HANDLE_SIZE) }
-        };
-
-                foreach (KeyValuePair<UInt32, Rectangle> hitBox in boxes) {
-                    if (hitBox.Value.Contains(clientPoint)) {
-                        m.Result = (IntPtr)hitBox.Key;
-                        handled = true;
-                        break;
-                    }
+            if (m.Msg == wmNcHitTest) {
+                int x = (int)(m.LParam.ToInt64() & 0xFFFF);
+                int y = (int)((m.LParam.ToInt64() & 0xFFFF0000) >> 16);
+                Point pt = pnlContentBackground.PointToClient(new Point(x, y));
+                Size clientSize = pnlContentBackground.ClientSize;
+                ///allow resize on the lower right corner
+                if (pt.X >= clientSize.Width - 16 && pt.Y >= clientSize.Height - 16 && clientSize.Height >= 16) {
+                    m.Result = (IntPtr)(IsMirrored ? htBottomLeft : htBottomRight);
+                    return;
+                }
+                ///allow resize on the lower left corner
+                if (pt.X <= 16 && pt.Y >= clientSize.Height - 16 && clientSize.Height >= 16) {
+                    m.Result = (IntPtr)(IsMirrored ? htBottomRight : htBottomLeft);
+                    return;
+                }
+                ///allow resize on the upper right corner
+                if (pt.X <= 16 && pt.Y <= 16 && clientSize.Height >= 16) {
+                    m.Result = (IntPtr)(IsMirrored ? htTopRight : htTopLeft);
+                    return;
+                }
+                ///allow resize on the upper left corner
+                if (pt.X >= clientSize.Width - 16 && pt.Y <= 16 && clientSize.Height >= 16) {
+                    m.Result = (IntPtr)(IsMirrored ? htTopLeft : htTopRight);
+                    return;
+                }
+                ///allow resize on the top border
+                if (pt.Y <= 16 && clientSize.Height >= 16) {
+                    m.Result = (IntPtr)(htTop);
+                    return;
+                }
+                ///allow resize on the bottom border
+                if (pt.Y >= clientSize.Height - 16 && clientSize.Height >= 16) {
+                    m.Result = (IntPtr)(htBottom);
+                    return;
+                }
+                ///allow resize on the left border
+                if (pt.X <= 16 && clientSize.Height >= 16) {
+                    m.Result = (IntPtr)(htLeft);
+                    return;
+                }
+                ///allow resize on the right border
+                if (pt.X >= clientSize.Width - 16 && clientSize.Height >= 16) {
+                    m.Result = (IntPtr)(htRight);
+                    return;
                 }
             }
-
-            if (!handled)
-                base.WndProc(ref m);
+            base.WndProc(ref m);
         }
 
     }
