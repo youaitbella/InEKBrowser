@@ -190,9 +190,9 @@
             this.selection.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.selection.BackColor = System.Drawing.Color.SeaGreen;
-            this.selection.Location = new System.Drawing.Point(3, 27);
+            this.selection.Location = new System.Drawing.Point(0, 27);
             this.selection.Name = "selection";
-            this.selection.Size = new System.Drawing.Size(1132, 87);
+            this.selection.Size = new System.Drawing.Size(1138, 87);
             this.selection.TabIndex = 7;
             // 
             // data1
@@ -201,9 +201,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.data1.BackColor = System.Drawing.Color.SeaGreen;
             this.data1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.data1.Location = new System.Drawing.Point(3, 120);
+            this.data1.Location = new System.Drawing.Point(0, 120);
             this.data1.Name = "data1";
-            this.data1.Size = new System.Drawing.Size(1132, 252);
+            this.data1.Size = new System.Drawing.Size(1138, 252);
             this.data1.TabIndex = 1;
             // 
             // titleBar

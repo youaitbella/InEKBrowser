@@ -96,6 +96,8 @@ namespace org.inek.PeppBrowser.GUI {
             }
         }
 
+
+        // Handles resize event 
         protected override void WndProc(ref Message m) {
             const UInt32 WM_NCHITTEST = 0x0084;
             const UInt32 WM_MOUSEMOVE = 0x0200;

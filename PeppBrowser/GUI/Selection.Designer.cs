@@ -49,15 +49,14 @@
             // 
             // grpFilter
             // 
-            this.grpFilter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.grpFilter.BackColor = System.Drawing.Color.SeaGreen;
             this.grpFilter.Controls.Add(this.splitContainer1);
+            this.grpFilter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grpFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.grpFilter.ForeColor = System.Drawing.Color.White;
-            this.grpFilter.Location = new System.Drawing.Point(3, 4);
+            this.grpFilter.Location = new System.Drawing.Point(0, 0);
             this.grpFilter.Name = "grpFilter";
-            this.grpFilter.Size = new System.Drawing.Size(856, 78);
+            this.grpFilter.Size = new System.Drawing.Size(862, 77);
             this.grpFilter.TabIndex = 2;
             this.grpFilter.TabStop = false;
             this.grpFilter.Text = "Filter";
@@ -78,8 +77,8 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.cbxProcedure);
             this.splitContainer1.Panel2.Controls.Add(this.lblProcedure);
-            this.splitContainer1.Size = new System.Drawing.Size(844, 60);
-            this.splitContainer1.SplitterDistance = 600;
+            this.splitContainer1.Size = new System.Drawing.Size(850, 60);
+            this.splitContainer1.SplitterDistance = 604;
             this.splitContainer1.TabIndex = 0;
             // 
             // splitContainer2
@@ -105,8 +104,8 @@
             this.splitContainer2.Panel2.Controls.Add(this.cbxMainDiagnosis);
             this.splitContainer2.Panel2.Controls.Add(this.cbxSecondaryDiagnosis);
             this.splitContainer2.Panel2.Controls.Add(this.lblSecondaryDiagnosis);
-            this.splitContainer2.Size = new System.Drawing.Size(597, 54);
-            this.splitContainer2.SplitterDistance = 290;
+            this.splitContainer2.Size = new System.Drawing.Size(601, 54);
+            this.splitContainer2.SplitterDistance = 291;
             this.splitContainer2.TabIndex = 13;
             // 
             // lblPEPP
@@ -128,7 +127,7 @@
             this.cbxPepp.MutltiLine = false;
             this.cbxPepp.Name = "cbxPepp";
             this.cbxPepp.ReadOnly = false;
-            this.cbxPepp.Size = new System.Drawing.Size(224, 23);
+            this.cbxPepp.Size = new System.Drawing.Size(225, 23);
             this.cbxPepp.TabIndex = 7;
             // 
             // lblSk
@@ -150,7 +149,7 @@
             this.cbxMk.MutltiLine = false;
             this.cbxMk.Name = "cbxMk";
             this.cbxMk.ReadOnly = false;
-            this.cbxMk.Size = new System.Drawing.Size(224, 23);
+            this.cbxMk.Size = new System.Drawing.Size(225, 23);
             this.cbxMk.TabIndex = 9;
             // 
             // lblMainDiagnosis
@@ -172,7 +171,7 @@
             this.cbxMainDiagnosis.MutltiLine = false;
             this.cbxMainDiagnosis.Name = "cbxMainDiagnosis";
             this.cbxMainDiagnosis.ReadOnly = false;
-            this.cbxMainDiagnosis.Size = new System.Drawing.Size(210, 23);
+            this.cbxMainDiagnosis.Size = new System.Drawing.Size(213, 23);
             this.cbxMainDiagnosis.TabIndex = 0;
             // 
             // cbxSecondaryDiagnosis
@@ -184,7 +183,7 @@
             this.cbxSecondaryDiagnosis.MutltiLine = false;
             this.cbxSecondaryDiagnosis.Name = "cbxSecondaryDiagnosis";
             this.cbxSecondaryDiagnosis.ReadOnly = false;
-            this.cbxSecondaryDiagnosis.Size = new System.Drawing.Size(210, 23);
+            this.cbxSecondaryDiagnosis.Size = new System.Drawing.Size(213, 23);
             this.cbxSecondaryDiagnosis.TabIndex = 3;
             // 
             // lblSecondaryDiagnosis
@@ -207,7 +206,7 @@
             this.cbxProcedure.MutltiLine = false;
             this.cbxProcedure.Name = "cbxProcedure";
             this.cbxProcedure.ReadOnly = false;
-            this.cbxProcedure.Size = new System.Drawing.Size(171, 23);
+            this.cbxProcedure.Size = new System.Drawing.Size(173, 23);
             this.cbxProcedure.TabIndex = 15;
             // 
             // lblProcedure
@@ -227,7 +226,7 @@
             this.BackColor = System.Drawing.Color.SeaGreen;
             this.Controls.Add(this.grpFilter);
             this.Name = "Selection";
-            this.Size = new System.Drawing.Size(862, 86);
+            this.Size = new System.Drawing.Size(862, 77);
             this.grpFilter.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
