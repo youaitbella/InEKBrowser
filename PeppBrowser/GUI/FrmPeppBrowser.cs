@@ -23,6 +23,7 @@ namespace org.inek.PeppBrowser.GUI {
             InitializeComponent();
             titleBar.TitleBarPanel.MouseMove += FrmPeppBrowser_MouseMove;
             titleBar.FormStatePanel.MouseMove += FrmPeppBrowser_MouseMove;
+            titleBar.Title.MouseMove += FrmPeppBrowser_MouseMove;
         }
 
         private void mnuPepp_Click(object sender, System.EventArgs e) {
@@ -92,34 +93,6 @@ namespace org.inek.PeppBrowser.GUI {
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
-        }
-
-        private int xPos = 0;
-        private int yPos = 0;
-        private void resizerSE_MouseMove(object sender, MouseEventArgs e) {
-            Cursor = Cursors.SizeNWSE;
-            if (e.Button == MouseButtons.Left) {
-                
-            }
-        }
-
-        private void resizerS_MouseMove(object sender, MouseEventArgs e) {
-            Cursor = Cursors.SizeNS;
-            if (e.Button == MouseButtons.Left) {
-                if (e.Y > yPos)
-                    Height += 1;
-                else if (e.Y < yPos)
-                    Height -= e.Y;
-                yPos = e.Y;
-            }
-        }
-
-        private void resizerSW_MouseMove(object sender, MouseEventArgs e) {
-            Cursor = Cursors.SizeNESW;
-        }
-
-        private void resizerW_MouseMove(object sender, EventArgs e) {
-            Cursor = Cursors.SizeWE;
         }
     }
 }

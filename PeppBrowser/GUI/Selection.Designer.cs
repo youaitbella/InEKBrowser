@@ -26,7 +26,6 @@
             this.grpFilter = new System.Windows.Forms.GroupBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.pnlSplitter1 = new System.Windows.Forms.Panel();
             this.lblPEPP = new System.Windows.Forms.Label();
             this.cbxPepp = new org.inek.controls.CommonControls.ComboField();
             this.lblSk = new System.Windows.Forms.Label();
@@ -52,9 +51,10 @@
             // 
             this.grpFilter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.grpFilter.BackColor = System.Drawing.Color.Transparent;
+            this.grpFilter.BackColor = System.Drawing.Color.SeaGreen;
             this.grpFilter.Controls.Add(this.splitContainer1);
-            this.grpFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.grpFilter.ForeColor = System.Drawing.Color.White;
             this.grpFilter.Location = new System.Drawing.Point(3, 4);
             this.grpFilter.Name = "grpFilter";
             this.grpFilter.Size = new System.Drawing.Size(856, 78);
@@ -66,7 +66,8 @@
             // 
             this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.splitContainer1.Location = new System.Drawing.Point(0, 10);
+            this.splitContainer1.BackColor = System.Drawing.Color.SeaGreen;
+            this.splitContainer1.Location = new System.Drawing.Point(6, 13);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -77,8 +78,8 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.cbxProcedure);
             this.splitContainer1.Panel2.Controls.Add(this.lblProcedure);
-            this.splitContainer1.Size = new System.Drawing.Size(856, 63);
-            this.splitContainer1.SplitterDistance = 609;
+            this.splitContainer1.Size = new System.Drawing.Size(844, 60);
+            this.splitContainer1.SplitterDistance = 600;
             this.splitContainer1.TabIndex = 0;
             // 
             // splitContainer2
@@ -86,13 +87,12 @@
             this.splitContainer2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.splitContainer2.Location = new System.Drawing.Point(0, 2);
+            this.splitContainer2.Location = new System.Drawing.Point(0, 3);
             this.splitContainer2.Name = "splitContainer2";
             // 
             // splitContainer2.Panel1
             // 
-            this.splitContainer2.Panel1.BackColor = System.Drawing.Color.Transparent;
-            this.splitContainer2.Panel1.Controls.Add(this.pnlSplitter1);
+            this.splitContainer2.Panel1.BackColor = System.Drawing.Color.SeaGreen;
             this.splitContainer2.Panel1.Controls.Add(this.lblPEPP);
             this.splitContainer2.Panel1.Controls.Add(this.cbxPepp);
             this.splitContainer2.Panel1.Controls.Add(this.lblSk);
@@ -105,19 +105,9 @@
             this.splitContainer2.Panel2.Controls.Add(this.cbxMainDiagnosis);
             this.splitContainer2.Panel2.Controls.Add(this.cbxSecondaryDiagnosis);
             this.splitContainer2.Panel2.Controls.Add(this.lblSecondaryDiagnosis);
-            this.splitContainer2.Size = new System.Drawing.Size(606, 58);
-            this.splitContainer2.SplitterDistance = 295;
+            this.splitContainer2.Size = new System.Drawing.Size(597, 54);
+            this.splitContainer2.SplitterDistance = 290;
             this.splitContainer2.TabIndex = 13;
-            // 
-            // pnlSplitter1
-            // 
-            this.pnlSplitter1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pnlSplitter1.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.pnlSplitter1.Enabled = false;
-            this.pnlSplitter1.Location = new System.Drawing.Point(-27, 9);
-            this.pnlSplitter1.Name = "pnlSplitter1";
-            this.pnlSplitter1.Size = new System.Drawing.Size(6, 46);
-            this.pnlSplitter1.TabIndex = 16;
             // 
             // lblPEPP
             // 
@@ -138,7 +128,7 @@
             this.cbxPepp.MutltiLine = false;
             this.cbxPepp.Name = "cbxPepp";
             this.cbxPepp.ReadOnly = false;
-            this.cbxPepp.Size = new System.Drawing.Size(229, 22);
+            this.cbxPepp.Size = new System.Drawing.Size(224, 23);
             this.cbxPepp.TabIndex = 7;
             // 
             // lblSk
@@ -160,7 +150,7 @@
             this.cbxMk.MutltiLine = false;
             this.cbxMk.Name = "cbxMk";
             this.cbxMk.ReadOnly = false;
-            this.cbxMk.Size = new System.Drawing.Size(229, 22);
+            this.cbxMk.Size = new System.Drawing.Size(224, 23);
             this.cbxMk.TabIndex = 9;
             // 
             // lblMainDiagnosis
@@ -182,7 +172,7 @@
             this.cbxMainDiagnosis.MutltiLine = false;
             this.cbxMainDiagnosis.Name = "cbxMainDiagnosis";
             this.cbxMainDiagnosis.ReadOnly = false;
-            this.cbxMainDiagnosis.Size = new System.Drawing.Size(214, 22);
+            this.cbxMainDiagnosis.Size = new System.Drawing.Size(210, 23);
             this.cbxMainDiagnosis.TabIndex = 0;
             // 
             // cbxSecondaryDiagnosis
@@ -194,7 +184,7 @@
             this.cbxSecondaryDiagnosis.MutltiLine = false;
             this.cbxSecondaryDiagnosis.Name = "cbxSecondaryDiagnosis";
             this.cbxSecondaryDiagnosis.ReadOnly = false;
-            this.cbxSecondaryDiagnosis.Size = new System.Drawing.Size(214, 22);
+            this.cbxSecondaryDiagnosis.Size = new System.Drawing.Size(210, 23);
             this.cbxSecondaryDiagnosis.TabIndex = 3;
             // 
             // lblSecondaryDiagnosis
@@ -217,7 +207,7 @@
             this.cbxProcedure.MutltiLine = false;
             this.cbxProcedure.Name = "cbxProcedure";
             this.cbxProcedure.ReadOnly = false;
-            this.cbxProcedure.Size = new System.Drawing.Size(174, 22);
+            this.cbxProcedure.Size = new System.Drawing.Size(171, 23);
             this.cbxProcedure.TabIndex = 15;
             // 
             // lblProcedure
@@ -269,7 +259,6 @@
         private System.Windows.Forms.Label lblMainDiagnosis;
         private controls.CommonControls.ComboField cbxProcedure;
         private System.Windows.Forms.Label lblProcedure;
-        private System.Windows.Forms.Panel pnlSplitter1;
 
 
     }
