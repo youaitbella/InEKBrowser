@@ -23,10 +23,6 @@ namespace org.inek.PeppBrowser.GUI {
 
         public FrmPeppBrowser() {
             InitializeComponent();
-            titleBar.TitleBarPanel.MouseMove += FrmPeppBrowser_MouseMove;
-            titleBar.FormStatePanel.MouseMove += FrmPeppBrowser_MouseMove;
-            titleBar.Title.MouseMove += FrmPeppBrowser_MouseMove;
-
         }
 
         private void mnuPepp_Click(object sender, System.EventArgs e) {
@@ -114,8 +110,8 @@ namespace org.inek.PeppBrowser.GUI {
             if (m.Msg == wmNcHitTest) {
                 int x = (int)(m.LParam.ToInt64() & 0xFFFF);
                 int y = (int)((m.LParam.ToInt64() & 0xFFFF0000) >> 16);
-                Point pt = pnlContentBackground.PointToClient(new Point(x, y));
-                Size clientSize = pnlContentBackground.ClientSize;
+                Point pt = PointToClient(new Point(x, y));
+                Size clientSize = ClientSize;
                 ///allow resize on the lower right corner
                 if (pt.X >= clientSize.Width - 16 && pt.Y >= clientSize.Height - 16 && clientSize.Height >= 16) {
                     m.Result = (IntPtr)(IsMirrored ? htBottomLeft : htBottomRight);
@@ -158,6 +154,10 @@ namespace org.inek.PeppBrowser.GUI {
                 }
             }
             base.WndProc(ref m);
+        }
+
+        private void titleBar_ClickedExit(object sender, EventArgs e) {
+            Application.Exit();
         }
 
     }

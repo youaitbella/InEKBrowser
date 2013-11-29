@@ -49,6 +49,7 @@
             this.pnlTitle.Name = "pnlTitle";
             this.pnlTitle.Size = new System.Drawing.Size(296, 30);
             this.pnlTitle.TabIndex = 3;
+            this.pnlTitle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlTitle_MouseMove);
             // 
             // lblTitle
             // 
@@ -60,6 +61,7 @@
             this.lblTitle.Size = new System.Drawing.Size(220, 25);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "PEPP Offline Browser";
+            this.lblTitle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblTitle_MouseMove);
             // 
             // pnlFormStates
             // 
@@ -74,6 +76,7 @@
             this.pnlFormStates.Name = "pnlFormStates";
             this.pnlFormStates.Size = new System.Drawing.Size(197, 30);
             this.pnlFormStates.TabIndex = 0;
+            this.pnlFormStates.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlFormStates_MouseMove);
             // 
             // picIconify
             // 
@@ -83,6 +86,7 @@
             this.picIconify.Size = new System.Drawing.Size(18, 18);
             this.picIconify.TabIndex = 2;
             this.picIconify.TabStop = false;
+            this.picIconify.Click += new System.EventHandler(this.picIconify_Click);
             this.picIconify.MouseEnter += new System.EventHandler(this.picIconify_MouseEnter);
             this.picIconify.MouseLeave += new System.EventHandler(this.picIconify_MouseLeave);
             // 
@@ -108,6 +112,7 @@
             this.picMinMax.Size = new System.Drawing.Size(18, 18);
             this.picMinMax.TabIndex = 0;
             this.picMinMax.TabStop = false;
+            this.picMinMax.Click += new System.EventHandler(this.picMinMax_Click);
             this.picMinMax.MouseEnter += new System.EventHandler(this.picMinMax_MouseEnter);
             this.picMinMax.MouseLeave += new System.EventHandler(this.picMinMax_MouseLeave);
             // 

@@ -66,7 +66,7 @@
             // 
             this.mnuFile.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.mnuFile.Name = "mnuFile";
-            this.mnuFile.Size = new System.Drawing.Size(44, 20);
+            this.mnuFile.Size = new System.Drawing.Size(46, 20);
             this.mnuFile.Text = "Datei";
             // 
             // mnuData
@@ -82,14 +82,14 @@
             this.mnuCosts,
             this.mnuCostDomains});
             this.mnuData.Name = "mnuData";
-            this.mnuData.Size = new System.Drawing.Size(48, 20);
+            this.mnuData.Size = new System.Drawing.Size(50, 20);
             this.mnuData.Text = "Daten";
             // 
             // mnuStructureCategories
             // 
             this.mnuStructureCategories.BackColor = System.Drawing.Color.LightGreen;
             this.mnuStructureCategories.Name = "mnuStructureCategories";
-            this.mnuStructureCategories.Size = new System.Drawing.Size(164, 22);
+            this.mnuStructureCategories.Size = new System.Drawing.Size(172, 22);
             this.mnuStructureCategories.Text = "Strukturkategorien";
             this.mnuStructureCategories.Click += new System.EventHandler(this.mnuStructureCategories_Click);
             // 
@@ -97,7 +97,7 @@
             // 
             this.mnuPepp.BackColor = System.Drawing.Color.LightGreen;
             this.mnuPepp.Name = "mnuPepp";
-            this.mnuPepp.Size = new System.Drawing.Size(164, 22);
+            this.mnuPepp.Size = new System.Drawing.Size(172, 22);
             this.mnuPepp.Text = "PEPP";
             this.mnuPepp.Click += new System.EventHandler(this.mnuPepp_Click);
             // 
@@ -105,49 +105,49 @@
             // 
             this.mnuPeppInfo.BackColor = System.Drawing.Color.LightGreen;
             this.mnuPeppInfo.Name = "mnuPeppInfo";
-            this.mnuPeppInfo.Size = new System.Drawing.Size(164, 22);
+            this.mnuPeppInfo.Size = new System.Drawing.Size(172, 22);
             this.mnuPeppInfo.Text = "Kopfdaten";
             // 
             // mnuPrimaryDiagnoses
             // 
             this.mnuPrimaryDiagnoses.BackColor = System.Drawing.Color.LightGreen;
             this.mnuPrimaryDiagnoses.Name = "mnuPrimaryDiagnoses";
-            this.mnuPrimaryDiagnoses.Size = new System.Drawing.Size(164, 22);
+            this.mnuPrimaryDiagnoses.Size = new System.Drawing.Size(172, 22);
             this.mnuPrimaryDiagnoses.Text = "Hauptdiagnosen";
             // 
             // mnuSecondaryDiagnoses
             // 
             this.mnuSecondaryDiagnoses.BackColor = System.Drawing.Color.LightGreen;
             this.mnuSecondaryDiagnoses.Name = "mnuSecondaryDiagnoses";
-            this.mnuSecondaryDiagnoses.Size = new System.Drawing.Size(164, 22);
+            this.mnuSecondaryDiagnoses.Size = new System.Drawing.Size(172, 22);
             this.mnuSecondaryDiagnoses.Text = "Nebendiagnosen";
             // 
             // mnuProcedures
             // 
             this.mnuProcedures.BackColor = System.Drawing.Color.LightGreen;
             this.mnuProcedures.Name = "mnuProcedures";
-            this.mnuProcedures.Size = new System.Drawing.Size(164, 22);
+            this.mnuProcedures.Size = new System.Drawing.Size(172, 22);
             this.mnuProcedures.Text = "Prozeduren";
             // 
             // mnuCosts
             // 
             this.mnuCosts.BackColor = System.Drawing.Color.LightGreen;
             this.mnuCosts.Name = "mnuCosts";
-            this.mnuCosts.Size = new System.Drawing.Size(164, 22);
+            this.mnuCosts.Size = new System.Drawing.Size(172, 22);
             this.mnuCosts.Text = "Kosten";
             // 
             // mnuCostDomains
             // 
             this.mnuCostDomains.BackColor = System.Drawing.Color.LightGreen;
             this.mnuCostDomains.Name = "mnuCostDomains";
-            this.mnuCostDomains.Size = new System.Drawing.Size(164, 22);
+            this.mnuCostDomains.Size = new System.Drawing.Size(172, 22);
             this.mnuCostDomains.Text = "Kostenbereiche";
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(52, 20);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(54, 20);
             this.toolStripMenuItem3.Text = "Report";
             // 
             // toolStripMenuItem1
@@ -163,22 +163,25 @@
             // mnuManual
             // 
             this.mnuManual.Name = "mnuManual";
-            this.mnuManual.Size = new System.Drawing.Size(122, 22);
+            this.mnuManual.Size = new System.Drawing.Size(130, 22);
             this.mnuManual.Text = "Handbuch";
             // 
             // mnuInfo
             // 
             this.mnuInfo.Name = "mnuInfo";
-            this.mnuInfo.Size = new System.Drawing.Size(122, 22);
+            this.mnuInfo.Size = new System.Drawing.Size(130, 22);
             this.mnuInfo.Text = "Info";
             // 
             // pnlContentBackground
             // 
+            this.pnlContentBackground.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlContentBackground.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.pnlContentBackground.Controls.Add(this.mnuMain);
             this.pnlContentBackground.Controls.Add(this.selection);
             this.pnlContentBackground.Controls.Add(this.data1);
-            this.pnlContentBackground.Location = new System.Drawing.Point(6, 30);
+            this.pnlContentBackground.Location = new System.Drawing.Point(3, 30);
             this.pnlContentBackground.Name = "pnlContentBackground";
             this.pnlContentBackground.Size = new System.Drawing.Size(1252, 711);
             this.pnlContentBackground.TabIndex = 8;
@@ -207,11 +210,15 @@
             // 
             // titleBar
             // 
+            this.titleBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.titleBar.BackColor = System.Drawing.Color.LightYellow;
-            this.titleBar.Location = new System.Drawing.Point(6, 0);
+            this.titleBar.Location = new System.Drawing.Point(3, 0);
             this.titleBar.Name = "titleBar";
             this.titleBar.Size = new System.Drawing.Size(1252, 30);
             this.titleBar.TabIndex = 5;
+            this.titleBar.ClickedExit += new System.EventHandler(this.titleBar_ClickedExit);
+            this.titleBar.MouseMoveTitleBar += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
             this.titleBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
             // 
             // FrmPeppBrowser
@@ -219,7 +226,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightYellow;
-            this.ClientSize = new System.Drawing.Size(1264, 746);
+            this.ClientSize = new System.Drawing.Size(1258, 744);
             this.Controls.Add(this.pnlContentBackground);
             this.Controls.Add(this.titleBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

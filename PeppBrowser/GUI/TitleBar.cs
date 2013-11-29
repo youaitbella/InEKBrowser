@@ -24,6 +24,9 @@ namespace org.inek.PeppBrowser.GUI {
         }
 
         public event EventHandler ClickedExit;
+        public event EventHandler ClickedMinMax;
+        public event EventHandler ClickedIconify;
+        public event MouseEventHandler MouseMoveTitleBar;
 
         public TitleBar() {
             InitializeComponent();
@@ -55,7 +58,37 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void picExit_Click(object sender, EventArgs e) {
             if (ClickedExit != null) {
-                ClickedExit(picExit, null);
+                ClickedExit(picExit, e);
+            }
+        }
+
+        private void picMinMax_Click(object sender, EventArgs e) {
+            if (ClickedMinMax != null) {
+                ClickedExit(picMinMax, e);
+            }
+        }
+
+        private void picIconify_Click(object sender, EventArgs e) {
+            if (ClickedIconify != null) {
+                ClickedIconify(picIconify, e);
+            }
+        }
+
+        private void lblTitle_MouseMove(object sender, MouseEventArgs e) {
+            if (MouseMoveTitleBar != null) {
+                MouseMoveTitleBar(lblTitle, e);
+            }
+        }
+
+        private void pnlTitle_MouseMove(object sender, MouseEventArgs e) {
+            if (MouseMoveTitleBar != null) {
+                MouseMoveTitleBar(pnlTitle, e);
+            }
+        }
+
+        private void pnlFormStates_MouseMove(object sender, MouseEventArgs e) {
+            if (MouseMoveTitleBar != null) {
+                MouseMoveTitleBar(pnlFormStates, e);
             }
         }
     }
