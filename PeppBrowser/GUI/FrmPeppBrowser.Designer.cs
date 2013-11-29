@@ -39,9 +39,11 @@
             this.mnuManual = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlContentBackground = new System.Windows.Forms.Panel();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.selection = new org.inek.PeppBrowser.GUI.Selection();
             this.data1 = new org.inek.PeppBrowser.GUI.Data();
             this.titleBar = new org.inek.PeppBrowser.GUI.TitleBar();
+            this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuMain.SuspendLayout();
             this.pnlContentBackground.SuspendLayout();
             this.SuspendLayout();
@@ -161,6 +163,7 @@
             this.toolStripMenuItem1.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuManual,
+            this.mnuHelp,
             this.mnuInfo});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(24, 20);
@@ -193,6 +196,10 @@
             this.pnlContentBackground.Size = new System.Drawing.Size(1252, 711);
             this.pnlContentBackground.TabIndex = 8;
             this.pnlContentBackground.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
+            // 
+            // helpProvider1
+            // 
+            this.helpProvider1.HelpNamespace = "PeppBrowser.chm";
             // 
             // selection
             // 
@@ -228,6 +235,13 @@
             this.titleBar.MouseMoveTitleBar += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
             this.titleBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
             // 
+            // mnuHelp
+            // 
+            this.mnuHelp.Name = "mnuHelp";
+            this.mnuHelp.Size = new System.Drawing.Size(152, 22);
+            this.mnuHelp.Text = "Hilfe";
+            this.mnuHelp.Click += new System.EventHandler(this.mnuHelp_Click);
+            // 
             // FrmPeppBrowser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -237,8 +251,12 @@
             this.Controls.Add(this.pnlContentBackground);
             this.Controls.Add(this.titleBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.helpProvider1.SetHelpKeyword(this, "Introduction.htm");
+            this.helpProvider1.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.Topic);
+            this.KeyPreview = true;
             this.MinimumSize = new System.Drawing.Size(978, 500);
             this.Name = "FrmPeppBrowser";
+            this.helpProvider1.SetShowHelp(this, true);
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "PEPP-Browser";
             this.TransparencyKey = System.Drawing.Color.LightYellow;
@@ -272,6 +290,8 @@
         private Selection selection;
         private System.Windows.Forms.Panel pnlContentBackground;
         private Data data1;
+        private System.Windows.Forms.HelpProvider helpProvider1;
+        private System.Windows.Forms.ToolStripMenuItem mnuHelp;
 
     }
 }

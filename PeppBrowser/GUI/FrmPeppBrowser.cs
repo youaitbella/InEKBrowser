@@ -175,5 +175,14 @@ namespace org.inek.PeppBrowser.GUI {
 
         }
 
+        private void mnuHelp_Click(object sender, EventArgs e) {
+            try {
+                Process.Start("PeppBrowser.chm");
+            } catch (Exception) {
+                MessageBox.Show("Keine Hilfe verfügbar.");
+            }
+
+        }
+
     }
 }
