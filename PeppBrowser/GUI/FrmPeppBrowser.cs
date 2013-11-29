@@ -29,7 +29,8 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void mnuPepp_Click(object sender, System.EventArgs e) {
             FrmList dlg = new FrmList();
-            dlg.SetDataSource(CsvData.Context().Pepps);
+            var q = CsvData.Context().Pepps.Select(p => new {SK = p.StructureCategory, PEPP=p.Code, p.Text});
+            dlg.SetDataSource(q);
             dlg.Text = "PEPPS";
             dlg.Show();
         }
@@ -39,7 +40,7 @@ namespace org.inek.PeppBrowser.GUI {
             var q =
                 CsvData.Context().StructureCategories.OrderBy(sk => sk.Order)
                 .Select(sk => new { SK = sk.Category, sk.Text, PEPPs = sk.PeppCount, Fälle = sk.CaseCount, Tage = sk.DayCount });
-            dlg.SetDataSource(q.ToList());
+            dlg.SetDataSource(q);
             dlg.Text = "Strukturkategorien";
             dlg.Show();
         }
