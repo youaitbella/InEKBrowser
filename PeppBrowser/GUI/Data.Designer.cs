@@ -23,59 +23,27 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            this.components = new System.ComponentModel.Container();
             this.pnlData = new System.Windows.Forms.GroupBox();
+            this.grpBigAge = new System.Windows.Forms.GroupBox();
+            this.txtLT28Days = new System.Windows.Forms.TextBox();
+            this.lblLT28Days = new System.Windows.Forms.Label();
             this.grpGender = new System.Windows.Forms.GroupBox();
-            this.lblGenderFemale = new System.Windows.Forms.Label();
-            this.lblGenderMale = new System.Windows.Forms.Label();
             this.lblFemale = new System.Windows.Forms.Label();
             this.lblMale = new System.Windows.Forms.Label();
             this.grpAge = new System.Windows.Forms.GroupBox();
-            this.lblAgeHomogeneityCoeff = new System.Windows.Forms.Label();
-            this.lblAgeStandardDeviation = new System.Windows.Forms.Label();
-            this.lblAgeAverage = new System.Windows.Forms.Label();
             this.grpDailyCosts = new System.Windows.Forms.GroupBox();
-            this.lblDailyCostsHomogeneityCoeff = new System.Windows.Forms.Label();
-            this.lblDailyCostsStandardDeviation = new System.Windows.Forms.Label();
-            this.lblDailyCostsAverage = new System.Windows.Forms.Label();
             this.lblHomogeneityCoefficient = new System.Windows.Forms.Label();
             this.lblStandardDeviation = new System.Windows.Forms.Label();
             this.lblAverage = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblLosHomogeneityCoeff = new System.Windows.Forms.Label();
-            this.lblLosStandardDeviation = new System.Windows.Forms.Label();
-            this.lblLosAverage = new System.Windows.Forms.Label();
             this.grpCatalog = new System.Windows.Forms.GroupBox();
-            this.lblValuationRatioDay5 = new System.Windows.Forms.Label();
-            this.lblValuationRatioDay4 = new System.Windows.Forms.Label();
-            this.lblValuationRatioDay3 = new System.Windows.Forms.Label();
-            this.lblValuationRatioDay2 = new System.Windows.Forms.Label();
-            this.lblValuationRatioDay1 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblValuationRatioDay = new System.Windows.Forms.Label();
-            this.lblLos5 = new System.Windows.Forms.Label();
-            this.lblLos4 = new System.Windows.Forms.Label();
-            this.lblLos3 = new System.Windows.Forms.Label();
-            this.lblLos2 = new System.Windows.Forms.Label();
-            this.lblLosTo1 = new System.Windows.Forms.Label();
             this.lblLosTo = new System.Windows.Forms.Label();
-            this.lblLosFrom5 = new System.Windows.Forms.Label();
-            this.lblLosFrom4 = new System.Windows.Forms.Label();
-            this.lblLosFrom3 = new System.Windows.Forms.Label();
-            this.lblLosFrom2 = new System.Windows.Forms.Label();
-            this.lblLosFrom1 = new System.Windows.Forms.Label();
             this.lblLosFrom = new System.Windows.Forms.Label();
             this.grpCases = new System.Windows.Forms.GroupBox();
-            this.lblValuePercentagePayLevel5 = new System.Windows.Forms.Label();
-            this.lblValuePercentagePayLevel4 = new System.Windows.Forms.Label();
-            this.lblValuePercentagePayLevel3 = new System.Windows.Forms.Label();
-            this.lblValuePercentagePayLevel2 = new System.Windows.Forms.Label();
-            this.lblValuePercentagePayLevel1 = new System.Windows.Forms.Label();
             this.lblCasesPercentage = new System.Windows.Forms.Label();
-            this.lblValueCasesSummary = new System.Windows.Forms.Label();
-            this.lblValuePayLevel5 = new System.Windows.Forms.Label();
-            this.lblValuePayLevel4 = new System.Windows.Forms.Label();
-            this.lblValuePayLevel3 = new System.Windows.Forms.Label();
-            this.lblValuePayLevel2 = new System.Windows.Forms.Label();
-            this.lblValuePayLevel1 = new System.Windows.Forms.Label();
             this.lblNumCases = new System.Windows.Forms.Label();
             this.lblPayLevel5 = new System.Windows.Forms.Label();
             this.lblPayLevel4 = new System.Windows.Forms.Label();
@@ -84,15 +52,83 @@
             this.lblPayLevel1 = new System.Windows.Forms.Label();
             this.lblSummary = new System.Windows.Forms.Label();
             this.grpLos = new System.Windows.Forms.GroupBox();
-            this.lblLosPayLevel5 = new System.Windows.Forms.Label();
-            this.lblLosPayLevel4 = new System.Windows.Forms.Label();
-            this.lblLosPayLevel3 = new System.Windows.Forms.Label();
-            this.lblLosPayLevel2 = new System.Windows.Forms.Label();
-            this.lblLosPayLevel1 = new System.Windows.Forms.Label();
-            this.lblLosSummary = new System.Windows.Forms.Label();
             this.lblLosNumDays = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.toolTipLT28Days = new System.Windows.Forms.ToolTip(this.components);
+            this.lblBt28Days1Year = new System.Windows.Forms.Label();
+            this.txtBt28Days1Year = new System.Windows.Forms.TextBox();
+            this.txtBt1Year2 = new System.Windows.Forms.TextBox();
+            this.lblBt1Year2 = new System.Windows.Forms.Label();
+            this.txtBt3Year5 = new System.Windows.Forms.TextBox();
+            this.lblBt3Year5 = new System.Windows.Forms.Label();
+            this.txtBt6Year9 = new System.Windows.Forms.TextBox();
+            this.lblBt6Year9 = new System.Windows.Forms.Label();
+            this.txtBt10Year15 = new System.Windows.Forms.TextBox();
+            this.lblBt10Year15 = new System.Windows.Forms.Label();
+            this.txtBt16Year17 = new System.Windows.Forms.TextBox();
+            this.lblBt16Year17 = new System.Windows.Forms.Label();
+            this.txtBt18Year29 = new System.Windows.Forms.TextBox();
+            this.lblBt18Year29 = new System.Windows.Forms.Label();
+            this.txtBt30Year39 = new System.Windows.Forms.TextBox();
+            this.lblBt30Year39 = new System.Windows.Forms.Label();
+            this.txtBt40Year49 = new System.Windows.Forms.TextBox();
+            this.lblBt40Year49 = new System.Windows.Forms.Label();
+            this.txtBt50Year54 = new System.Windows.Forms.TextBox();
+            this.lblBt50Year54 = new System.Windows.Forms.Label();
+            this.txtBt55Year59 = new System.Windows.Forms.TextBox();
+            this.lblBt55Year59 = new System.Windows.Forms.Label();
+            this.txtBt60Year64 = new System.Windows.Forms.TextBox();
+            this.lblBt60Year64 = new System.Windows.Forms.Label();
+            this.txtBt65Year74 = new System.Windows.Forms.TextBox();
+            this.lblBt65Year74 = new System.Windows.Forms.Label();
+            this.txtBt75Year79 = new System.Windows.Forms.TextBox();
+            this.lblBt75Year79 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblGtYear79 = new System.Windows.Forms.Label();
+            this.txtCasesSummary = new System.Windows.Forms.TextBox();
+            this.txtCases1 = new System.Windows.Forms.TextBox();
+            this.txtCases2 = new System.Windows.Forms.TextBox();
+            this.txtCases3 = new System.Windows.Forms.TextBox();
+            this.txtCases4 = new System.Windows.Forms.TextBox();
+            this.txtCases5 = new System.Windows.Forms.TextBox();
+            this.txtCasesP1 = new System.Windows.Forms.TextBox();
+            this.txtCasesP2 = new System.Windows.Forms.TextBox();
+            this.txtCasesP3 = new System.Windows.Forms.TextBox();
+            this.txtCasesP4 = new System.Windows.Forms.TextBox();
+            this.txtCasesP5 = new System.Windows.Forms.TextBox();
+            this.txtDaysSummary = new System.Windows.Forms.TextBox();
+            this.txtDays1 = new System.Windows.Forms.TextBox();
+            this.txtDays2 = new System.Windows.Forms.TextBox();
+            this.txtDays5 = new System.Windows.Forms.TextBox();
+            this.txtDays3 = new System.Windows.Forms.TextBox();
+            this.txtDays4 = new System.Windows.Forms.TextBox();
+            this.txtLosFrom1 = new System.Windows.Forms.TextBox();
+            this.txtLosFrom5 = new System.Windows.Forms.TextBox();
+            this.txtLosFrom4 = new System.Windows.Forms.TextBox();
+            this.txtLosFrom3 = new System.Windows.Forms.TextBox();
+            this.txtLosFrom2 = new System.Windows.Forms.TextBox();
+            this.txtLosTo1 = new System.Windows.Forms.TextBox();
+            this.txtLosTo3 = new System.Windows.Forms.TextBox();
+            this.txtLosTo5 = new System.Windows.Forms.TextBox();
+            this.txtLosTo4 = new System.Windows.Forms.TextBox();
+            this.txtLosTo2 = new System.Windows.Forms.TextBox();
+            this.txtValuationRatio1 = new System.Windows.Forms.TextBox();
+            this.txtValuationRatio2 = new System.Windows.Forms.TextBox();
+            this.txtValuationRatio3 = new System.Windows.Forms.TextBox();
+            this.txtValuationRatio4 = new System.Windows.Forms.TextBox();
+            this.txtValuationRatio5 = new System.Windows.Forms.TextBox();
+            this.txtLosAverage = new System.Windows.Forms.TextBox();
+            this.txtLosStandardDeviation = new System.Windows.Forms.TextBox();
+            this.txtLosHomogeneityCoeff = new System.Windows.Forms.TextBox();
+            this.txtDailyCostsAverage = new System.Windows.Forms.TextBox();
+            this.txtDailyCostsStandardDeviation = new System.Windows.Forms.TextBox();
+            this.txtDailyCostsHomogeneityCoeff = new System.Windows.Forms.TextBox();
+            this.txtAgeAverage = new System.Windows.Forms.TextBox();
+            this.txtAgeStandardDeviation = new System.Windows.Forms.TextBox();
+            this.txtGenderMale = new System.Windows.Forms.TextBox();
+            this.txtGenderFemale = new System.Windows.Forms.TextBox();
+            this.pnlSummaryLine = new System.Windows.Forms.Panel();
             this.pnlData.SuspendLayout();
+            this.grpBigAge.SuspendLayout();
             this.grpGender.SuspendLayout();
             this.grpAge.SuspendLayout();
             this.grpDailyCosts.SuspendLayout();
@@ -104,6 +140,8 @@
             // 
             // pnlData
             // 
+            this.pnlData.Controls.Add(this.pnlSummaryLine);
+            this.pnlData.Controls.Add(this.grpBigAge);
             this.pnlData.Controls.Add(this.grpGender);
             this.pnlData.Controls.Add(this.lblFemale);
             this.pnlData.Controls.Add(this.lblMale);
@@ -127,51 +165,101 @@
             this.pnlData.ForeColor = System.Drawing.Color.White;
             this.pnlData.Location = new System.Drawing.Point(0, 0);
             this.pnlData.Name = "pnlData";
-            this.pnlData.Size = new System.Drawing.Size(1260, 248);
+            this.pnlData.Size = new System.Drawing.Size(1182, 257);
             this.pnlData.TabIndex = 0;
             this.pnlData.TabStop = false;
             this.pnlData.Text = "Daten";
+            // 
+            // grpBigAge
+            // 
+            this.grpBigAge.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.grpBigAge.AutoSize = true;
+            this.grpBigAge.BackColor = System.Drawing.Color.Transparent;
+            this.grpBigAge.Controls.Add(this.textBox1);
+            this.grpBigAge.Controls.Add(this.lblGtYear79);
+            this.grpBigAge.Controls.Add(this.txtBt75Year79);
+            this.grpBigAge.Controls.Add(this.lblBt75Year79);
+            this.grpBigAge.Controls.Add(this.txtBt65Year74);
+            this.grpBigAge.Controls.Add(this.lblBt65Year74);
+            this.grpBigAge.Controls.Add(this.txtBt60Year64);
+            this.grpBigAge.Controls.Add(this.lblBt60Year64);
+            this.grpBigAge.Controls.Add(this.txtBt55Year59);
+            this.grpBigAge.Controls.Add(this.lblBt55Year59);
+            this.grpBigAge.Controls.Add(this.txtBt50Year54);
+            this.grpBigAge.Controls.Add(this.lblBt50Year54);
+            this.grpBigAge.Controls.Add(this.txtBt40Year49);
+            this.grpBigAge.Controls.Add(this.lblBt40Year49);
+            this.grpBigAge.Controls.Add(this.txtBt30Year39);
+            this.grpBigAge.Controls.Add(this.lblBt30Year39);
+            this.grpBigAge.Controls.Add(this.txtBt18Year29);
+            this.grpBigAge.Controls.Add(this.lblBt18Year29);
+            this.grpBigAge.Controls.Add(this.txtBt16Year17);
+            this.grpBigAge.Controls.Add(this.lblBt16Year17);
+            this.grpBigAge.Controls.Add(this.txtBt10Year15);
+            this.grpBigAge.Controls.Add(this.lblBt10Year15);
+            this.grpBigAge.Controls.Add(this.txtBt6Year9);
+            this.grpBigAge.Controls.Add(this.lblBt6Year9);
+            this.grpBigAge.Controls.Add(this.txtBt3Year5);
+            this.grpBigAge.Controls.Add(this.lblBt3Year5);
+            this.grpBigAge.Controls.Add(this.txtBt1Year2);
+            this.grpBigAge.Controls.Add(this.lblBt1Year2);
+            this.grpBigAge.Controls.Add(this.txtBt28Days1Year);
+            this.grpBigAge.Controls.Add(this.lblBt28Days1Year);
+            this.grpBigAge.Controls.Add(this.txtLT28Days);
+            this.grpBigAge.Controls.Add(this.lblLT28Days);
+            this.grpBigAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpBigAge.ForeColor = System.Drawing.Color.White;
+            this.grpBigAge.Location = new System.Drawing.Point(911, 13);
+            this.grpBigAge.Name = "grpBigAge";
+            this.grpBigAge.Size = new System.Drawing.Size(262, 233);
+            this.grpBigAge.TabIndex = 18;
+            this.grpBigAge.TabStop = false;
+            this.grpBigAge.Text = "Alter";
+            // 
+            // txtLT28Days
+            // 
+            this.txtLT28Days.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtLT28Days.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLT28Days.ForeColor = System.Drawing.Color.White;
+            this.txtLT28Days.Location = new System.Drawing.Point(93, 23);
+            this.txtLT28Days.Name = "txtLT28Days";
+            this.txtLT28Days.ReadOnly = true;
+            this.txtLT28Days.Size = new System.Drawing.Size(39, 21);
+            this.txtLT28Days.TabIndex = 1;
+            this.txtLT28Days.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtLT28Days, "Test");
+            // 
+            // lblLT28Days
+            // 
+            this.lblLT28Days.AutoSize = true;
+            this.lblLT28Days.Location = new System.Drawing.Point(6, 25);
+            this.lblLT28Days.Name = "lblLT28Days";
+            this.lblLT28Days.Size = new System.Drawing.Size(35, 15);
+            this.lblLT28Days.TabIndex = 0;
+            this.lblLT28Days.Text = "<28T";
             // 
             // grpGender
             // 
             this.grpGender.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.grpGender.AutoSize = true;
             this.grpGender.BackColor = System.Drawing.Color.Transparent;
-            this.grpGender.Controls.Add(this.lblGenderFemale);
-            this.grpGender.Controls.Add(this.lblGenderMale);
+            this.grpGender.Controls.Add(this.txtGenderFemale);
+            this.grpGender.Controls.Add(this.txtGenderMale);
             this.grpGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpGender.ForeColor = System.Drawing.Color.White;
-            this.grpGender.Location = new System.Drawing.Point(838, 128);
+            this.grpGender.Location = new System.Drawing.Point(689, 141);
             this.grpGender.Name = "grpGender";
-            this.grpGender.Size = new System.Drawing.Size(70, 80);
+            this.grpGender.Size = new System.Drawing.Size(60, 84);
             this.grpGender.TabIndex = 17;
             this.grpGender.TabStop = false;
-            this.grpGender.Text = "Anzahl/Anteil?";
-            // 
-            // lblGenderFemale
-            // 
-            this.lblGenderFemale.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblGenderFemale.Location = new System.Drawing.Point(10, 47);
-            this.lblGenderFemale.Name = "lblGenderFemale";
-            this.lblGenderFemale.Size = new System.Drawing.Size(50, 16);
-            this.lblGenderFemale.TabIndex = 27;
-            this.lblGenderFemale.Text = "0";
-            // 
-            // lblGenderMale
-            // 
-            this.lblGenderMale.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblGenderMale.Location = new System.Drawing.Point(10, 21);
-            this.lblGenderMale.Name = "lblGenderMale";
-            this.lblGenderMale.Size = new System.Drawing.Size(50, 16);
-            this.lblGenderMale.TabIndex = 26;
-            this.lblGenderMale.Text = "0";
+            this.grpGender.Text = "Anteil";
             // 
             // lblFemale
             // 
             this.lblFemale.AutoSize = true;
             this.lblFemale.BackColor = System.Drawing.Color.Transparent;
             this.lblFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFemale.Location = new System.Drawing.Point(670, 175);
+            this.lblFemale.Location = new System.Drawing.Point(580, 185);
             this.lblFemale.Name = "lblFemale";
             this.lblFemale.Size = new System.Drawing.Size(66, 15);
             this.lblFemale.TabIndex = 16;
@@ -182,7 +270,7 @@
             this.lblMale.AutoSize = true;
             this.lblMale.BackColor = System.Drawing.Color.Transparent;
             this.lblMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMale.Location = new System.Drawing.Point(670, 150);
+            this.lblMale.Location = new System.Drawing.Point(580, 160);
             this.lblMale.Name = "lblMale";
             this.lblMale.Size = new System.Drawing.Size(70, 15);
             this.lblMale.TabIndex = 15;
@@ -193,95 +281,40 @@
             this.grpAge.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.grpAge.AutoSize = true;
             this.grpAge.BackColor = System.Drawing.Color.Transparent;
-            this.grpAge.Controls.Add(this.lblAgeHomogeneityCoeff);
-            this.grpAge.Controls.Add(this.lblAgeStandardDeviation);
-            this.grpAge.Controls.Add(this.lblAgeAverage);
+            this.grpAge.Controls.Add(this.txtAgeStandardDeviation);
+            this.grpAge.Controls.Add(this.txtAgeAverage);
             this.grpAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpAge.ForeColor = System.Drawing.Color.White;
-            this.grpAge.Location = new System.Drawing.Point(1038, 22);
+            this.grpAge.Location = new System.Drawing.Point(839, 13);
             this.grpAge.Name = "grpAge";
-            this.grpAge.Size = new System.Drawing.Size(71, 105);
+            this.grpAge.Size = new System.Drawing.Size(59, 109);
             this.grpAge.TabIndex = 14;
             this.grpAge.TabStop = false;
             this.grpAge.Text = "Alter";
-            // 
-            // lblAgeHomogeneityCoeff
-            // 
-            this.lblAgeHomogeneityCoeff.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblAgeHomogeneityCoeff.Location = new System.Drawing.Point(10, 72);
-            this.lblAgeHomogeneityCoeff.Name = "lblAgeHomogeneityCoeff";
-            this.lblAgeHomogeneityCoeff.Size = new System.Drawing.Size(50, 16);
-            this.lblAgeHomogeneityCoeff.TabIndex = 28;
-            this.lblAgeHomogeneityCoeff.Text = "0";
-            // 
-            // lblAgeStandardDeviation
-            // 
-            this.lblAgeStandardDeviation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblAgeStandardDeviation.Location = new System.Drawing.Point(10, 47);
-            this.lblAgeStandardDeviation.Name = "lblAgeStandardDeviation";
-            this.lblAgeStandardDeviation.Size = new System.Drawing.Size(50, 16);
-            this.lblAgeStandardDeviation.TabIndex = 27;
-            this.lblAgeStandardDeviation.Text = "0";
-            // 
-            // lblAgeAverage
-            // 
-            this.lblAgeAverage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblAgeAverage.Location = new System.Drawing.Point(10, 21);
-            this.lblAgeAverage.Name = "lblAgeAverage";
-            this.lblAgeAverage.Size = new System.Drawing.Size(50, 16);
-            this.lblAgeAverage.TabIndex = 26;
-            this.lblAgeAverage.Text = "0";
             // 
             // grpDailyCosts
             // 
             this.grpDailyCosts.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.grpDailyCosts.AutoSize = true;
             this.grpDailyCosts.BackColor = System.Drawing.Color.Transparent;
-            this.grpDailyCosts.Controls.Add(this.lblDailyCostsHomogeneityCoeff);
-            this.grpDailyCosts.Controls.Add(this.lblDailyCostsStandardDeviation);
-            this.grpDailyCosts.Controls.Add(this.lblDailyCostsAverage);
+            this.grpDailyCosts.Controls.Add(this.txtDailyCostsHomogeneityCoeff);
+            this.grpDailyCosts.Controls.Add(this.txtDailyCostsStandardDeviation);
+            this.grpDailyCosts.Controls.Add(this.txtDailyCostsAverage);
             this.grpDailyCosts.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpDailyCosts.ForeColor = System.Drawing.Color.White;
-            this.grpDailyCosts.Location = new System.Drawing.Point(938, 22);
+            this.grpDailyCosts.Location = new System.Drawing.Point(758, 13);
             this.grpDailyCosts.Name = "grpDailyCosts";
-            this.grpDailyCosts.Size = new System.Drawing.Size(94, 105);
+            this.grpDailyCosts.Size = new System.Drawing.Size(75, 109);
             this.grpDailyCosts.TabIndex = 13;
             this.grpDailyCosts.TabStop = false;
-            this.grpDailyCosts.Text = "Tageskosten";
-            // 
-            // lblDailyCostsHomogeneityCoeff
-            // 
-            this.lblDailyCostsHomogeneityCoeff.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblDailyCostsHomogeneityCoeff.Location = new System.Drawing.Point(10, 72);
-            this.lblDailyCostsHomogeneityCoeff.Name = "lblDailyCostsHomogeneityCoeff";
-            this.lblDailyCostsHomogeneityCoeff.Size = new System.Drawing.Size(50, 16);
-            this.lblDailyCostsHomogeneityCoeff.TabIndex = 28;
-            this.lblDailyCostsHomogeneityCoeff.Text = "0";
-            // 
-            // lblDailyCostsStandardDeviation
-            // 
-            this.lblDailyCostsStandardDeviation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblDailyCostsStandardDeviation.Location = new System.Drawing.Point(10, 47);
-            this.lblDailyCostsStandardDeviation.Name = "lblDailyCostsStandardDeviation";
-            this.lblDailyCostsStandardDeviation.Size = new System.Drawing.Size(50, 16);
-            this.lblDailyCostsStandardDeviation.TabIndex = 27;
-            this.lblDailyCostsStandardDeviation.Text = "0";
-            // 
-            // lblDailyCostsAverage
-            // 
-            this.lblDailyCostsAverage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblDailyCostsAverage.Location = new System.Drawing.Point(10, 21);
-            this.lblDailyCostsAverage.Name = "lblDailyCostsAverage";
-            this.lblDailyCostsAverage.Size = new System.Drawing.Size(54, 16);
-            this.lblDailyCostsAverage.TabIndex = 26;
-            this.lblDailyCostsAverage.Text = "1120,00";
+            this.grpDailyCosts.Text = "Tagesk.";
             // 
             // lblHomogeneityCoefficient
             // 
             this.lblHomogeneityCoefficient.AutoSize = true;
             this.lblHomogeneityCoefficient.BackColor = System.Drawing.Color.Transparent;
             this.lblHomogeneityCoefficient.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHomogeneityCoefficient.Location = new System.Drawing.Point(666, 92);
+            this.lblHomogeneityCoefficient.Location = new System.Drawing.Point(576, 83);
             this.lblHomogeneityCoefficient.Name = "lblHomogeneityCoefficient";
             this.lblHomogeneityCoefficient.Size = new System.Drawing.Size(111, 15);
             this.lblHomogeneityCoefficient.TabIndex = 12;
@@ -292,7 +325,7 @@
             this.lblStandardDeviation.AutoSize = true;
             this.lblStandardDeviation.BackColor = System.Drawing.Color.Transparent;
             this.lblStandardDeviation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStandardDeviation.Location = new System.Drawing.Point(666, 68);
+            this.lblStandardDeviation.Location = new System.Drawing.Point(576, 57);
             this.lblStandardDeviation.Name = "lblStandardDeviation";
             this.lblStandardDeviation.Size = new System.Drawing.Size(99, 15);
             this.lblStandardDeviation.TabIndex = 11;
@@ -303,7 +336,7 @@
             this.lblAverage.AutoSize = true;
             this.lblAverage.BackColor = System.Drawing.Color.Transparent;
             this.lblAverage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAverage.Location = new System.Drawing.Point(666, 44);
+            this.lblAverage.Location = new System.Drawing.Point(576, 31);
             this.lblAverage.Name = "lblAverage";
             this.lblAverage.Size = new System.Drawing.Size(74, 15);
             this.lblAverage.TabIndex = 10;
@@ -314,234 +347,83 @@
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.groupBox1.AutoSize = true;
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.lblLosHomogeneityCoeff);
-            this.groupBox1.Controls.Add(this.lblLosStandardDeviation);
-            this.groupBox1.Controls.Add(this.lblLosAverage);
+            this.groupBox1.Controls.Add(this.txtLosHomogeneityCoeff);
+            this.groupBox1.Controls.Add(this.txtLosStandardDeviation);
+            this.groupBox1.Controls.Add(this.txtLosAverage);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(838, 22);
+            this.groupBox1.Location = new System.Drawing.Point(689, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(94, 105);
+            this.groupBox1.Size = new System.Drawing.Size(63, 109);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Verweildauer";
-            // 
-            // lblLosHomogeneityCoeff
-            // 
-            this.lblLosHomogeneityCoeff.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLosHomogeneityCoeff.Location = new System.Drawing.Point(10, 72);
-            this.lblLosHomogeneityCoeff.Name = "lblLosHomogeneityCoeff";
-            this.lblLosHomogeneityCoeff.Size = new System.Drawing.Size(50, 16);
-            this.lblLosHomogeneityCoeff.TabIndex = 28;
-            this.lblLosHomogeneityCoeff.Text = "0";
-            // 
-            // lblLosStandardDeviation
-            // 
-            this.lblLosStandardDeviation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLosStandardDeviation.Location = new System.Drawing.Point(10, 47);
-            this.lblLosStandardDeviation.Name = "lblLosStandardDeviation";
-            this.lblLosStandardDeviation.Size = new System.Drawing.Size(50, 16);
-            this.lblLosStandardDeviation.TabIndex = 27;
-            this.lblLosStandardDeviation.Text = "0";
-            // 
-            // lblLosAverage
-            // 
-            this.lblLosAverage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLosAverage.Location = new System.Drawing.Point(10, 21);
-            this.lblLosAverage.Name = "lblLosAverage";
-            this.lblLosAverage.Size = new System.Drawing.Size(50, 16);
-            this.lblLosAverage.TabIndex = 26;
-            this.lblLosAverage.Text = "0";
+            this.groupBox1.Text = "Vwd.";
             // 
             // grpCatalog
             // 
             this.grpCatalog.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.grpCatalog.AutoSize = true;
             this.grpCatalog.BackColor = System.Drawing.Color.Transparent;
+            this.grpCatalog.Controls.Add(this.txtValuationRatio5);
+            this.grpCatalog.Controls.Add(this.txtValuationRatio4);
+            this.grpCatalog.Controls.Add(this.txtValuationRatio3);
+            this.grpCatalog.Controls.Add(this.txtValuationRatio2);
+            this.grpCatalog.Controls.Add(this.txtValuationRatio1);
+            this.grpCatalog.Controls.Add(this.txtLosTo2);
+            this.grpCatalog.Controls.Add(this.txtLosTo4);
+            this.grpCatalog.Controls.Add(this.txtLosTo5);
+            this.grpCatalog.Controls.Add(this.txtLosTo3);
+            this.grpCatalog.Controls.Add(this.txtLosTo1);
+            this.grpCatalog.Controls.Add(this.txtLosFrom2);
+            this.grpCatalog.Controls.Add(this.txtLosFrom3);
+            this.grpCatalog.Controls.Add(this.txtLosFrom4);
+            this.grpCatalog.Controls.Add(this.txtLosFrom5);
+            this.grpCatalog.Controls.Add(this.txtLosFrom1);
             this.grpCatalog.Controls.Add(this.label1);
-            this.grpCatalog.Controls.Add(this.lblValuationRatioDay5);
-            this.grpCatalog.Controls.Add(this.lblValuationRatioDay4);
-            this.grpCatalog.Controls.Add(this.lblValuationRatioDay3);
-            this.grpCatalog.Controls.Add(this.lblValuationRatioDay2);
-            this.grpCatalog.Controls.Add(this.lblValuationRatioDay1);
             this.grpCatalog.Controls.Add(this.lblValuationRatioDay);
-            this.grpCatalog.Controls.Add(this.lblLos5);
-            this.grpCatalog.Controls.Add(this.lblLos4);
-            this.grpCatalog.Controls.Add(this.lblLos3);
-            this.grpCatalog.Controls.Add(this.lblLos2);
-            this.grpCatalog.Controls.Add(this.lblLosTo1);
             this.grpCatalog.Controls.Add(this.lblLosTo);
-            this.grpCatalog.Controls.Add(this.lblLosFrom5);
-            this.grpCatalog.Controls.Add(this.lblLosFrom4);
-            this.grpCatalog.Controls.Add(this.lblLosFrom3);
-            this.grpCatalog.Controls.Add(this.lblLosFrom2);
-            this.grpCatalog.Controls.Add(this.lblLosFrom1);
             this.grpCatalog.Controls.Add(this.lblLosFrom);
             this.grpCatalog.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpCatalog.ForeColor = System.Drawing.Color.White;
-            this.grpCatalog.Location = new System.Drawing.Point(402, 22);
+            this.grpCatalog.Location = new System.Drawing.Point(375, 13);
             this.grpCatalog.Name = "grpCatalog";
-            this.grpCatalog.Size = new System.Drawing.Size(246, 211);
+            this.grpCatalog.Size = new System.Drawing.Size(199, 212);
             this.grpCatalog.TabIndex = 8;
             this.grpCatalog.TabStop = false;
             this.grpCatalog.Text = "Katalog";
             // 
-            // lblValuationRatioDay5
+            // label1
             // 
-            this.lblValuationRatioDay5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblValuationRatioDay5.Location = new System.Drawing.Point(156, 177);
-            this.lblValuationRatioDay5.Name = "lblValuationRatioDay5";
-            this.lblValuationRatioDay5.Size = new System.Drawing.Size(50, 16);
-            this.lblValuationRatioDay5.TabIndex = 29;
-            this.lblValuationRatioDay5.Text = "0";
-            // 
-            // lblValuationRatioDay4
-            // 
-            this.lblValuationRatioDay4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblValuationRatioDay4.Location = new System.Drawing.Point(156, 154);
-            this.lblValuationRatioDay4.Name = "lblValuationRatioDay4";
-            this.lblValuationRatioDay4.Size = new System.Drawing.Size(50, 16);
-            this.lblValuationRatioDay4.TabIndex = 28;
-            this.lblValuationRatioDay4.Text = "0";
-            // 
-            // lblValuationRatioDay3
-            // 
-            this.lblValuationRatioDay3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblValuationRatioDay3.Location = new System.Drawing.Point(156, 130);
-            this.lblValuationRatioDay3.Name = "lblValuationRatioDay3";
-            this.lblValuationRatioDay3.Size = new System.Drawing.Size(50, 16);
-            this.lblValuationRatioDay3.TabIndex = 27;
-            this.lblValuationRatioDay3.Text = "0";
-            // 
-            // lblValuationRatioDay2
-            // 
-            this.lblValuationRatioDay2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblValuationRatioDay2.Location = new System.Drawing.Point(156, 106);
-            this.lblValuationRatioDay2.Name = "lblValuationRatioDay2";
-            this.lblValuationRatioDay2.Size = new System.Drawing.Size(50, 16);
-            this.lblValuationRatioDay2.TabIndex = 26;
-            this.lblValuationRatioDay2.Text = "0";
-            // 
-            // lblValuationRatioDay1
-            // 
-            this.lblValuationRatioDay1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblValuationRatioDay1.Location = new System.Drawing.Point(156, 79);
-            this.lblValuationRatioDay1.Name = "lblValuationRatioDay1";
-            this.lblValuationRatioDay1.Size = new System.Drawing.Size(50, 16);
-            this.lblValuationRatioDay1.TabIndex = 25;
-            this.lblValuationRatioDay1.Text = "0";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(9, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(91, 15);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "Verweildauer";
             // 
             // lblValuationRatioDay
             // 
             this.lblValuationRatioDay.AutoSize = true;
             this.lblValuationRatioDay.BackColor = System.Drawing.Color.Transparent;
             this.lblValuationRatioDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValuationRatioDay.Location = new System.Drawing.Point(153, 18);
+            this.lblValuationRatioDay.Location = new System.Drawing.Point(106, 18);
             this.lblValuationRatioDay.Name = "lblValuationRatioDay";
             this.lblValuationRatioDay.Size = new System.Drawing.Size(87, 30);
             this.lblValuationRatioDay.TabIndex = 24;
             this.lblValuationRatioDay.Text = "Bewertungs-\r\nrelation/Tag";
-            // 
-            // lblLos5
-            // 
-            this.lblLos5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLos5.Location = new System.Drawing.Point(86, 177);
-            this.lblLos5.Name = "lblLos5";
-            this.lblLos5.Size = new System.Drawing.Size(50, 16);
-            this.lblLos5.TabIndex = 23;
-            this.lblLos5.Text = "0";
-            // 
-            // lblLos4
-            // 
-            this.lblLos4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLos4.Location = new System.Drawing.Point(86, 154);
-            this.lblLos4.Name = "lblLos4";
-            this.lblLos4.Size = new System.Drawing.Size(50, 16);
-            this.lblLos4.TabIndex = 22;
-            this.lblLos4.Text = "0";
-            // 
-            // lblLos3
-            // 
-            this.lblLos3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLos3.Location = new System.Drawing.Point(86, 130);
-            this.lblLos3.Name = "lblLos3";
-            this.lblLos3.Size = new System.Drawing.Size(50, 16);
-            this.lblLos3.TabIndex = 21;
-            this.lblLos3.Text = "0";
-            // 
-            // lblLos2
-            // 
-            this.lblLos2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLos2.Location = new System.Drawing.Point(86, 105);
-            this.lblLos2.Name = "lblLos2";
-            this.lblLos2.Size = new System.Drawing.Size(50, 16);
-            this.lblLos2.TabIndex = 20;
-            this.lblLos2.Text = "0";
-            // 
-            // lblLosTo1
-            // 
-            this.lblLosTo1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLosTo1.Location = new System.Drawing.Point(86, 79);
-            this.lblLosTo1.Name = "lblLosTo1";
-            this.lblLosTo1.Size = new System.Drawing.Size(50, 16);
-            this.lblLosTo1.TabIndex = 19;
-            this.lblLosTo1.Text = "0";
             // 
             // lblLosTo
             // 
             this.lblLosTo.AutoSize = true;
             this.lblLosTo.BackColor = System.Drawing.Color.Transparent;
             this.lblLosTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLosTo.Location = new System.Drawing.Point(86, 46);
+            this.lblLosTo.Location = new System.Drawing.Point(52, 46);
             this.lblLosTo.Name = "lblLosTo";
             this.lblLosTo.Size = new System.Drawing.Size(27, 15);
             this.lblLosTo.TabIndex = 18;
             this.lblLosTo.Text = "Bis";
-            // 
-            // lblLosFrom5
-            // 
-            this.lblLosFrom5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLosFrom5.Location = new System.Drawing.Point(12, 178);
-            this.lblLosFrom5.Name = "lblLosFrom5";
-            this.lblLosFrom5.Size = new System.Drawing.Size(50, 16);
-            this.lblLosFrom5.TabIndex = 17;
-            this.lblLosFrom5.Text = "0";
-            // 
-            // lblLosFrom4
-            // 
-            this.lblLosFrom4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLosFrom4.Location = new System.Drawing.Point(12, 154);
-            this.lblLosFrom4.Name = "lblLosFrom4";
-            this.lblLosFrom4.Size = new System.Drawing.Size(50, 16);
-            this.lblLosFrom4.TabIndex = 16;
-            this.lblLosFrom4.Text = "0";
-            // 
-            // lblLosFrom3
-            // 
-            this.lblLosFrom3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLosFrom3.Location = new System.Drawing.Point(12, 129);
-            this.lblLosFrom3.Name = "lblLosFrom3";
-            this.lblLosFrom3.Size = new System.Drawing.Size(50, 16);
-            this.lblLosFrom3.TabIndex = 15;
-            this.lblLosFrom3.Text = "0";
-            // 
-            // lblLosFrom2
-            // 
-            this.lblLosFrom2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLosFrom2.Location = new System.Drawing.Point(12, 105);
-            this.lblLosFrom2.Name = "lblLosFrom2";
-            this.lblLosFrom2.Size = new System.Drawing.Size(50, 16);
-            this.lblLosFrom2.TabIndex = 14;
-            this.lblLosFrom2.Text = "0";
-            // 
-            // lblLosFrom1
-            // 
-            this.lblLosFrom1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLosFrom1.Location = new System.Drawing.Point(12, 80);
-            this.lblLosFrom1.Name = "lblLosFrom1";
-            this.lblLosFrom1.Size = new System.Drawing.Size(50, 16);
-            this.lblLosFrom1.TabIndex = 13;
-            this.lblLosFrom1.Text = "123";
             // 
             // lblLosFrom
             // 
@@ -559,72 +441,27 @@
             this.grpCases.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.grpCases.AutoSize = true;
             this.grpCases.BackColor = System.Drawing.Color.Transparent;
-            this.grpCases.Controls.Add(this.lblValuePercentagePayLevel5);
-            this.grpCases.Controls.Add(this.lblValuePercentagePayLevel4);
-            this.grpCases.Controls.Add(this.lblValuePercentagePayLevel3);
-            this.grpCases.Controls.Add(this.lblValuePercentagePayLevel2);
-            this.grpCases.Controls.Add(this.lblValuePercentagePayLevel1);
+            this.grpCases.Controls.Add(this.txtCasesP5);
+            this.grpCases.Controls.Add(this.txtCasesP4);
+            this.grpCases.Controls.Add(this.txtCasesP3);
+            this.grpCases.Controls.Add(this.txtCasesP2);
+            this.grpCases.Controls.Add(this.txtCasesP1);
+            this.grpCases.Controls.Add(this.txtCases5);
+            this.grpCases.Controls.Add(this.txtCases4);
+            this.grpCases.Controls.Add(this.txtCases3);
+            this.grpCases.Controls.Add(this.txtCases2);
+            this.grpCases.Controls.Add(this.txtCases1);
+            this.grpCases.Controls.Add(this.txtCasesSummary);
             this.grpCases.Controls.Add(this.lblCasesPercentage);
-            this.grpCases.Controls.Add(this.lblValueCasesSummary);
-            this.grpCases.Controls.Add(this.lblValuePayLevel5);
-            this.grpCases.Controls.Add(this.lblValuePayLevel4);
-            this.grpCases.Controls.Add(this.lblValuePayLevel3);
-            this.grpCases.Controls.Add(this.lblValuePayLevel2);
-            this.grpCases.Controls.Add(this.lblValuePayLevel1);
             this.grpCases.Controls.Add(this.lblNumCases);
             this.grpCases.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpCases.ForeColor = System.Drawing.Color.White;
-            this.grpCases.Location = new System.Drawing.Point(142, 21);
+            this.grpCases.Location = new System.Drawing.Point(142, 12);
             this.grpCases.Name = "grpCases";
-            this.grpCases.Size = new System.Drawing.Size(147, 211);
+            this.grpCases.Size = new System.Drawing.Size(147, 213);
             this.grpCases.TabIndex = 7;
             this.grpCases.TabStop = false;
             this.grpCases.Text = "Fallzahl";
-            // 
-            // lblValuePercentagePayLevel5
-            // 
-            this.lblValuePercentagePayLevel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblValuePercentagePayLevel5.Location = new System.Drawing.Point(75, 179);
-            this.lblValuePercentagePayLevel5.Name = "lblValuePercentagePayLevel5";
-            this.lblValuePercentagePayLevel5.Size = new System.Drawing.Size(50, 15);
-            this.lblValuePercentagePayLevel5.TabIndex = 14;
-            this.lblValuePercentagePayLevel5.Text = "0";
-            // 
-            // lblValuePercentagePayLevel4
-            // 
-            this.lblValuePercentagePayLevel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblValuePercentagePayLevel4.Location = new System.Drawing.Point(75, 155);
-            this.lblValuePercentagePayLevel4.Name = "lblValuePercentagePayLevel4";
-            this.lblValuePercentagePayLevel4.Size = new System.Drawing.Size(50, 15);
-            this.lblValuePercentagePayLevel4.TabIndex = 13;
-            this.lblValuePercentagePayLevel4.Text = "0";
-            // 
-            // lblValuePercentagePayLevel3
-            // 
-            this.lblValuePercentagePayLevel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblValuePercentagePayLevel3.Location = new System.Drawing.Point(75, 131);
-            this.lblValuePercentagePayLevel3.Name = "lblValuePercentagePayLevel3";
-            this.lblValuePercentagePayLevel3.Size = new System.Drawing.Size(50, 15);
-            this.lblValuePercentagePayLevel3.TabIndex = 12;
-            this.lblValuePercentagePayLevel3.Text = "0";
-            // 
-            // lblValuePercentagePayLevel2
-            // 
-            this.lblValuePercentagePayLevel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblValuePercentagePayLevel2.Location = new System.Drawing.Point(75, 107);
-            this.lblValuePercentagePayLevel2.Name = "lblValuePercentagePayLevel2";
-            this.lblValuePercentagePayLevel2.Size = new System.Drawing.Size(50, 15);
-            this.lblValuePercentagePayLevel2.TabIndex = 11;
-            this.lblValuePercentagePayLevel2.Text = "0";
-            // 
-            // lblValuePercentagePayLevel1
-            // 
-            this.lblValuePercentagePayLevel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblValuePercentagePayLevel1.Location = new System.Drawing.Point(75, 81);
-            this.lblValuePercentagePayLevel1.Name = "lblValuePercentagePayLevel1";
-            this.lblValuePercentagePayLevel1.Size = new System.Drawing.Size(47, 15);
-            this.lblValuePercentagePayLevel1.TabIndex = 10;
-            this.lblValuePercentagePayLevel1.Text = "100,00";
             // 
             // lblCasesPercentage
             // 
@@ -636,60 +473,6 @@
             this.lblCasesPercentage.Size = new System.Drawing.Size(69, 15);
             this.lblCasesPercentage.TabIndex = 9;
             this.lblCasesPercentage.Text = "Anteil (%)";
-            // 
-            // lblValueCasesSummary
-            // 
-            this.lblValueCasesSummary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblValueCasesSummary.Location = new System.Drawing.Point(12, 47);
-            this.lblValueCasesSummary.Name = "lblValueCasesSummary";
-            this.lblValueCasesSummary.Size = new System.Drawing.Size(51, 15);
-            this.lblValueCasesSummary.TabIndex = 8;
-            this.lblValueCasesSummary.Text = "100000";
-            // 
-            // lblValuePayLevel5
-            // 
-            this.lblValuePayLevel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblValuePayLevel5.Location = new System.Drawing.Point(12, 179);
-            this.lblValuePayLevel5.Name = "lblValuePayLevel5";
-            this.lblValuePayLevel5.Size = new System.Drawing.Size(50, 15);
-            this.lblValuePayLevel5.TabIndex = 7;
-            this.lblValuePayLevel5.Text = "0";
-            // 
-            // lblValuePayLevel4
-            // 
-            this.lblValuePayLevel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblValuePayLevel4.Location = new System.Drawing.Point(12, 155);
-            this.lblValuePayLevel4.Name = "lblValuePayLevel4";
-            this.lblValuePayLevel4.Size = new System.Drawing.Size(50, 15);
-            this.lblValuePayLevel4.TabIndex = 6;
-            this.lblValuePayLevel4.Text = "0";
-            // 
-            // lblValuePayLevel3
-            // 
-            this.lblValuePayLevel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblValuePayLevel3.Location = new System.Drawing.Point(12, 131);
-            this.lblValuePayLevel3.Name = "lblValuePayLevel3";
-            this.lblValuePayLevel3.Size = new System.Drawing.Size(50, 15);
-            this.lblValuePayLevel3.TabIndex = 5;
-            this.lblValuePayLevel3.Text = "0";
-            // 
-            // lblValuePayLevel2
-            // 
-            this.lblValuePayLevel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblValuePayLevel2.Location = new System.Drawing.Point(12, 107);
-            this.lblValuePayLevel2.Name = "lblValuePayLevel2";
-            this.lblValuePayLevel2.Size = new System.Drawing.Size(50, 15);
-            this.lblValuePayLevel2.TabIndex = 4;
-            this.lblValuePayLevel2.Text = "0";
-            // 
-            // lblValuePayLevel1
-            // 
-            this.lblValuePayLevel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblValuePayLevel1.Location = new System.Drawing.Point(12, 82);
-            this.lblValuePayLevel1.Name = "lblValuePayLevel1";
-            this.lblValuePayLevel1.Size = new System.Drawing.Size(50, 15);
-            this.lblValuePayLevel1.TabIndex = 3;
-            this.lblValuePayLevel1.Text = "0";
             // 
             // lblNumCases
             // 
@@ -707,7 +490,7 @@
             this.lblPayLevel5.AutoSize = true;
             this.lblPayLevel5.BackColor = System.Drawing.Color.Transparent;
             this.lblPayLevel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPayLevel5.Location = new System.Drawing.Point(10, 200);
+            this.lblPayLevel5.Location = new System.Drawing.Point(10, 186);
             this.lblPayLevel5.Name = "lblPayLevel5";
             this.lblPayLevel5.Size = new System.Drawing.Size(130, 15);
             this.lblPayLevel5.TabIndex = 6;
@@ -718,7 +501,7 @@
             this.lblPayLevel4.AutoSize = true;
             this.lblPayLevel4.BackColor = System.Drawing.Color.Transparent;
             this.lblPayLevel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPayLevel4.Location = new System.Drawing.Point(10, 176);
+            this.lblPayLevel4.Location = new System.Drawing.Point(10, 162);
             this.lblPayLevel4.Name = "lblPayLevel4";
             this.lblPayLevel4.Size = new System.Drawing.Size(130, 15);
             this.lblPayLevel4.TabIndex = 5;
@@ -729,7 +512,7 @@
             this.lblPayLevel3.AutoSize = true;
             this.lblPayLevel3.BackColor = System.Drawing.Color.Transparent;
             this.lblPayLevel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPayLevel3.Location = new System.Drawing.Point(10, 152);
+            this.lblPayLevel3.Location = new System.Drawing.Point(10, 138);
             this.lblPayLevel3.Name = "lblPayLevel3";
             this.lblPayLevel3.Size = new System.Drawing.Size(130, 15);
             this.lblPayLevel3.TabIndex = 4;
@@ -740,7 +523,7 @@
             this.lblPayLevel2.AutoSize = true;
             this.lblPayLevel2.BackColor = System.Drawing.Color.Transparent;
             this.lblPayLevel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPayLevel2.Location = new System.Drawing.Point(10, 128);
+            this.lblPayLevel2.Location = new System.Drawing.Point(10, 114);
             this.lblPayLevel2.Name = "lblPayLevel2";
             this.lblPayLevel2.Size = new System.Drawing.Size(130, 15);
             this.lblPayLevel2.TabIndex = 3;
@@ -750,11 +533,11 @@
             // 
             this.lblPayLevel1.AutoSize = true;
             this.lblPayLevel1.BackColor = System.Drawing.Color.Transparent;
-            this.lblPayLevel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPayLevel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPayLevel1.ForeColor = System.Drawing.Color.White;
-            this.lblPayLevel1.Location = new System.Drawing.Point(10, 103);
+            this.lblPayLevel1.Location = new System.Drawing.Point(10, 89);
             this.lblPayLevel1.Name = "lblPayLevel1";
-            this.lblPayLevel1.Size = new System.Drawing.Size(99, 13);
+            this.lblPayLevel1.Size = new System.Drawing.Size(130, 15);
             this.lblPayLevel1.TabIndex = 2;
             this.lblPayLevel1.Text = "1. Vergütungsstufe:";
             // 
@@ -763,7 +546,7 @@
             this.lblSummary.AutoSize = true;
             this.lblSummary.BackColor = System.Drawing.Color.Transparent;
             this.lblSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSummary.Location = new System.Drawing.Point(10, 68);
+            this.lblSummary.Location = new System.Drawing.Point(10, 54);
             this.lblSummary.Name = "lblSummary";
             this.lblSummary.Size = new System.Drawing.Size(60, 15);
             this.lblSummary.TabIndex = 1;
@@ -774,75 +557,21 @@
             this.grpLos.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.grpLos.AutoSize = true;
             this.grpLos.BackColor = System.Drawing.Color.Transparent;
-            this.grpLos.Controls.Add(this.lblLosPayLevel5);
-            this.grpLos.Controls.Add(this.lblLosPayLevel4);
-            this.grpLos.Controls.Add(this.lblLosPayLevel3);
-            this.grpLos.Controls.Add(this.lblLosPayLevel2);
-            this.grpLos.Controls.Add(this.lblLosPayLevel1);
-            this.grpLos.Controls.Add(this.lblLosSummary);
+            this.grpLos.Controls.Add(this.txtDays4);
+            this.grpLos.Controls.Add(this.txtDays3);
+            this.grpLos.Controls.Add(this.txtDays5);
+            this.grpLos.Controls.Add(this.txtDays2);
+            this.grpLos.Controls.Add(this.txtDays1);
+            this.grpLos.Controls.Add(this.txtDaysSummary);
             this.grpLos.Controls.Add(this.lblLosNumDays);
             this.grpLos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpLos.ForeColor = System.Drawing.Color.White;
-            this.grpLos.Location = new System.Drawing.Point(295, 22);
+            this.grpLos.Location = new System.Drawing.Point(295, 13);
             this.grpLos.Name = "grpLos";
-            this.grpLos.Size = new System.Drawing.Size(74, 211);
+            this.grpLos.Size = new System.Drawing.Size(74, 212);
             this.grpLos.TabIndex = 0;
             this.grpLos.TabStop = false;
             this.grpLos.Text = "Vwd.";
-            // 
-            // lblLosPayLevel5
-            // 
-            this.lblLosPayLevel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLosPayLevel5.Location = new System.Drawing.Point(12, 179);
-            this.lblLosPayLevel5.Name = "lblLosPayLevel5";
-            this.lblLosPayLevel5.Size = new System.Drawing.Size(50, 15);
-            this.lblLosPayLevel5.TabIndex = 16;
-            this.lblLosPayLevel5.Text = "0";
-            // 
-            // lblLosPayLevel4
-            // 
-            this.lblLosPayLevel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLosPayLevel4.Location = new System.Drawing.Point(12, 154);
-            this.lblLosPayLevel4.Name = "lblLosPayLevel4";
-            this.lblLosPayLevel4.Size = new System.Drawing.Size(50, 15);
-            this.lblLosPayLevel4.TabIndex = 15;
-            this.lblLosPayLevel4.Text = "0";
-            // 
-            // lblLosPayLevel3
-            // 
-            this.lblLosPayLevel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLosPayLevel3.Location = new System.Drawing.Point(12, 130);
-            this.lblLosPayLevel3.Name = "lblLosPayLevel3";
-            this.lblLosPayLevel3.Size = new System.Drawing.Size(50, 15);
-            this.lblLosPayLevel3.TabIndex = 14;
-            this.lblLosPayLevel3.Text = "0";
-            // 
-            // lblLosPayLevel2
-            // 
-            this.lblLosPayLevel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLosPayLevel2.Location = new System.Drawing.Point(12, 106);
-            this.lblLosPayLevel2.Name = "lblLosPayLevel2";
-            this.lblLosPayLevel2.Size = new System.Drawing.Size(50, 15);
-            this.lblLosPayLevel2.TabIndex = 13;
-            this.lblLosPayLevel2.Text = "0";
-            // 
-            // lblLosPayLevel1
-            // 
-            this.lblLosPayLevel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLosPayLevel1.Location = new System.Drawing.Point(12, 81);
-            this.lblLosPayLevel1.Name = "lblLosPayLevel1";
-            this.lblLosPayLevel1.Size = new System.Drawing.Size(50, 15);
-            this.lblLosPayLevel1.TabIndex = 12;
-            this.lblLosPayLevel1.Text = "0";
-            // 
-            // lblLosSummary
-            // 
-            this.lblLosSummary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLosSummary.Location = new System.Drawing.Point(12, 47);
-            this.lblLosSummary.Name = "lblLosSummary";
-            this.lblLosSummary.Size = new System.Drawing.Size(50, 15);
-            this.lblLosSummary.TabIndex = 11;
-            this.lblLosSummary.Text = "1234";
             // 
             // lblLosNumDays
             // 
@@ -855,16 +584,889 @@
             this.lblLosNumDays.TabIndex = 10;
             this.lblLosNumDays.Text = "Tage";
             // 
-            // label1
+            // lblBt28Days1Year
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 15);
-            this.label1.TabIndex = 30;
-            this.label1.Text = "Verweildauer";
+            this.lblBt28Days1Year.AutoSize = true;
+            this.lblBt28Days1Year.Location = new System.Drawing.Point(6, 49);
+            this.lblBt28Days1Year.Name = "lblBt28Days1Year";
+            this.lblBt28Days1Year.Size = new System.Drawing.Size(81, 15);
+            this.lblBt28Days1Year.TabIndex = 2;
+            this.lblBt28Days1Year.Text = "28 T. < 1 Jahr";
+            // 
+            // txtBt28Days1Year
+            // 
+            this.txtBt28Days1Year.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtBt28Days1Year.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt28Days1Year.ForeColor = System.Drawing.Color.White;
+            this.txtBt28Days1Year.Location = new System.Drawing.Point(93, 47);
+            this.txtBt28Days1Year.Name = "txtBt28Days1Year";
+            this.txtBt28Days1Year.ReadOnly = true;
+            this.txtBt28Days1Year.Size = new System.Drawing.Size(39, 21);
+            this.txtBt28Days1Year.TabIndex = 3;
+            this.txtBt28Days1Year.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtBt28Days1Year, "Test");
+            // 
+            // txtBt1Year2
+            // 
+            this.txtBt1Year2.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtBt1Year2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt1Year2.ForeColor = System.Drawing.Color.White;
+            this.txtBt1Year2.Location = new System.Drawing.Point(93, 71);
+            this.txtBt1Year2.Name = "txtBt1Year2";
+            this.txtBt1Year2.ReadOnly = true;
+            this.txtBt1Year2.Size = new System.Drawing.Size(39, 21);
+            this.txtBt1Year2.TabIndex = 5;
+            this.txtBt1Year2.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtBt1Year2, "Test");
+            // 
+            // lblBt1Year2
+            // 
+            this.lblBt1Year2.AutoSize = true;
+            this.lblBt1Year2.Location = new System.Drawing.Point(6, 73);
+            this.lblBt1Year2.Name = "lblBt1Year2";
+            this.lblBt1Year2.Size = new System.Drawing.Size(59, 15);
+            this.lblBt1Year2.TabIndex = 4;
+            this.lblBt1Year2.Text = "1-2 Jahre";
+            // 
+            // txtBt3Year5
+            // 
+            this.txtBt3Year5.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtBt3Year5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt3Year5.ForeColor = System.Drawing.Color.White;
+            this.txtBt3Year5.Location = new System.Drawing.Point(93, 95);
+            this.txtBt3Year5.Name = "txtBt3Year5";
+            this.txtBt3Year5.ReadOnly = true;
+            this.txtBt3Year5.Size = new System.Drawing.Size(39, 21);
+            this.txtBt3Year5.TabIndex = 7;
+            this.txtBt3Year5.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtBt3Year5, "Test");
+            // 
+            // lblBt3Year5
+            // 
+            this.lblBt3Year5.AutoSize = true;
+            this.lblBt3Year5.Location = new System.Drawing.Point(6, 98);
+            this.lblBt3Year5.Name = "lblBt3Year5";
+            this.lblBt3Year5.Size = new System.Drawing.Size(59, 15);
+            this.lblBt3Year5.TabIndex = 6;
+            this.lblBt3Year5.Text = "3-5 Jahre";
+            // 
+            // txtBt6Year9
+            // 
+            this.txtBt6Year9.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtBt6Year9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt6Year9.ForeColor = System.Drawing.Color.White;
+            this.txtBt6Year9.Location = new System.Drawing.Point(93, 119);
+            this.txtBt6Year9.Name = "txtBt6Year9";
+            this.txtBt6Year9.ReadOnly = true;
+            this.txtBt6Year9.Size = new System.Drawing.Size(39, 21);
+            this.txtBt6Year9.TabIndex = 9;
+            this.txtBt6Year9.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtBt6Year9, "Test");
+            // 
+            // lblBt6Year9
+            // 
+            this.lblBt6Year9.AutoSize = true;
+            this.lblBt6Year9.Location = new System.Drawing.Point(6, 122);
+            this.lblBt6Year9.Name = "lblBt6Year9";
+            this.lblBt6Year9.Size = new System.Drawing.Size(59, 15);
+            this.lblBt6Year9.TabIndex = 8;
+            this.lblBt6Year9.Text = "6-9 Jahre";
+            // 
+            // txtBt10Year15
+            // 
+            this.txtBt10Year15.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtBt10Year15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt10Year15.ForeColor = System.Drawing.Color.White;
+            this.txtBt10Year15.Location = new System.Drawing.Point(93, 143);
+            this.txtBt10Year15.Name = "txtBt10Year15";
+            this.txtBt10Year15.ReadOnly = true;
+            this.txtBt10Year15.Size = new System.Drawing.Size(39, 21);
+            this.txtBt10Year15.TabIndex = 11;
+            this.txtBt10Year15.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtBt10Year15, "Test");
+            // 
+            // lblBt10Year15
+            // 
+            this.lblBt10Year15.AutoSize = true;
+            this.lblBt10Year15.Location = new System.Drawing.Point(6, 146);
+            this.lblBt10Year15.Name = "lblBt10Year15";
+            this.lblBt10Year15.Size = new System.Drawing.Size(73, 15);
+            this.lblBt10Year15.TabIndex = 10;
+            this.lblBt10Year15.Text = "10-15 Jahre";
+            // 
+            // txtBt16Year17
+            // 
+            this.txtBt16Year17.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtBt16Year17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt16Year17.ForeColor = System.Drawing.Color.White;
+            this.txtBt16Year17.Location = new System.Drawing.Point(93, 167);
+            this.txtBt16Year17.Name = "txtBt16Year17";
+            this.txtBt16Year17.ReadOnly = true;
+            this.txtBt16Year17.Size = new System.Drawing.Size(39, 21);
+            this.txtBt16Year17.TabIndex = 13;
+            this.txtBt16Year17.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtBt16Year17, "Test");
+            // 
+            // lblBt16Year17
+            // 
+            this.lblBt16Year17.AutoSize = true;
+            this.lblBt16Year17.Location = new System.Drawing.Point(6, 170);
+            this.lblBt16Year17.Name = "lblBt16Year17";
+            this.lblBt16Year17.Size = new System.Drawing.Size(73, 15);
+            this.lblBt16Year17.TabIndex = 12;
+            this.lblBt16Year17.Text = "16-17 Jahre";
+            // 
+            // txtBt18Year29
+            // 
+            this.txtBt18Year29.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtBt18Year29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt18Year29.ForeColor = System.Drawing.Color.White;
+            this.txtBt18Year29.Location = new System.Drawing.Point(93, 191);
+            this.txtBt18Year29.Name = "txtBt18Year29";
+            this.txtBt18Year29.ReadOnly = true;
+            this.txtBt18Year29.Size = new System.Drawing.Size(39, 21);
+            this.txtBt18Year29.TabIndex = 15;
+            this.txtBt18Year29.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtBt18Year29, "Test");
+            // 
+            // lblBt18Year29
+            // 
+            this.lblBt18Year29.AutoSize = true;
+            this.lblBt18Year29.Location = new System.Drawing.Point(6, 194);
+            this.lblBt18Year29.Name = "lblBt18Year29";
+            this.lblBt18Year29.Size = new System.Drawing.Size(73, 15);
+            this.lblBt18Year29.TabIndex = 14;
+            this.lblBt18Year29.Text = "18-29 Jahre";
+            // 
+            // txtBt30Year39
+            // 
+            this.txtBt30Year39.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtBt30Year39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt30Year39.ForeColor = System.Drawing.Color.White;
+            this.txtBt30Year39.Location = new System.Drawing.Point(212, 23);
+            this.txtBt30Year39.Name = "txtBt30Year39";
+            this.txtBt30Year39.ReadOnly = true;
+            this.txtBt30Year39.Size = new System.Drawing.Size(39, 21);
+            this.txtBt30Year39.TabIndex = 17;
+            this.txtBt30Year39.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtBt30Year39, "Test");
+            // 
+            // lblBt30Year39
+            // 
+            this.lblBt30Year39.AutoSize = true;
+            this.lblBt30Year39.Location = new System.Drawing.Point(138, 25);
+            this.lblBt30Year39.Name = "lblBt30Year39";
+            this.lblBt30Year39.Size = new System.Drawing.Size(73, 15);
+            this.lblBt30Year39.TabIndex = 16;
+            this.lblBt30Year39.Text = "30-39 Jahre";
+            // 
+            // txtBt40Year49
+            // 
+            this.txtBt40Year49.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtBt40Year49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt40Year49.ForeColor = System.Drawing.Color.White;
+            this.txtBt40Year49.Location = new System.Drawing.Point(212, 47);
+            this.txtBt40Year49.Name = "txtBt40Year49";
+            this.txtBt40Year49.ReadOnly = true;
+            this.txtBt40Year49.Size = new System.Drawing.Size(39, 21);
+            this.txtBt40Year49.TabIndex = 19;
+            this.txtBt40Year49.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtBt40Year49, "Test");
+            // 
+            // lblBt40Year49
+            // 
+            this.lblBt40Year49.AutoSize = true;
+            this.lblBt40Year49.Location = new System.Drawing.Point(138, 48);
+            this.lblBt40Year49.Name = "lblBt40Year49";
+            this.lblBt40Year49.Size = new System.Drawing.Size(73, 15);
+            this.lblBt40Year49.TabIndex = 18;
+            this.lblBt40Year49.Text = "40-49 Jahre";
+            // 
+            // txtBt50Year54
+            // 
+            this.txtBt50Year54.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtBt50Year54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt50Year54.ForeColor = System.Drawing.Color.White;
+            this.txtBt50Year54.Location = new System.Drawing.Point(212, 71);
+            this.txtBt50Year54.Name = "txtBt50Year54";
+            this.txtBt50Year54.ReadOnly = true;
+            this.txtBt50Year54.Size = new System.Drawing.Size(39, 21);
+            this.txtBt50Year54.TabIndex = 21;
+            this.txtBt50Year54.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtBt50Year54, "Test");
+            // 
+            // lblBt50Year54
+            // 
+            this.lblBt50Year54.AutoSize = true;
+            this.lblBt50Year54.Location = new System.Drawing.Point(138, 74);
+            this.lblBt50Year54.Name = "lblBt50Year54";
+            this.lblBt50Year54.Size = new System.Drawing.Size(73, 15);
+            this.lblBt50Year54.TabIndex = 20;
+            this.lblBt50Year54.Text = "50-54 Jahre";
+            // 
+            // txtBt55Year59
+            // 
+            this.txtBt55Year59.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtBt55Year59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt55Year59.ForeColor = System.Drawing.Color.White;
+            this.txtBt55Year59.Location = new System.Drawing.Point(212, 95);
+            this.txtBt55Year59.Name = "txtBt55Year59";
+            this.txtBt55Year59.ReadOnly = true;
+            this.txtBt55Year59.Size = new System.Drawing.Size(39, 21);
+            this.txtBt55Year59.TabIndex = 23;
+            this.txtBt55Year59.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtBt55Year59, "Test");
+            // 
+            // lblBt55Year59
+            // 
+            this.lblBt55Year59.AutoSize = true;
+            this.lblBt55Year59.Location = new System.Drawing.Point(138, 98);
+            this.lblBt55Year59.Name = "lblBt55Year59";
+            this.lblBt55Year59.Size = new System.Drawing.Size(73, 15);
+            this.lblBt55Year59.TabIndex = 22;
+            this.lblBt55Year59.Text = "55-59 Jahre";
+            // 
+            // txtBt60Year64
+            // 
+            this.txtBt60Year64.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtBt60Year64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt60Year64.ForeColor = System.Drawing.Color.White;
+            this.txtBt60Year64.Location = new System.Drawing.Point(212, 120);
+            this.txtBt60Year64.Name = "txtBt60Year64";
+            this.txtBt60Year64.ReadOnly = true;
+            this.txtBt60Year64.Size = new System.Drawing.Size(39, 21);
+            this.txtBt60Year64.TabIndex = 25;
+            this.txtBt60Year64.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtBt60Year64, "Test");
+            // 
+            // lblBt60Year64
+            // 
+            this.lblBt60Year64.AutoSize = true;
+            this.lblBt60Year64.Location = new System.Drawing.Point(138, 123);
+            this.lblBt60Year64.Name = "lblBt60Year64";
+            this.lblBt60Year64.Size = new System.Drawing.Size(73, 15);
+            this.lblBt60Year64.TabIndex = 24;
+            this.lblBt60Year64.Text = "60-64 Jahre";
+            // 
+            // txtBt65Year74
+            // 
+            this.txtBt65Year74.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtBt65Year74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt65Year74.ForeColor = System.Drawing.Color.White;
+            this.txtBt65Year74.Location = new System.Drawing.Point(212, 144);
+            this.txtBt65Year74.Name = "txtBt65Year74";
+            this.txtBt65Year74.ReadOnly = true;
+            this.txtBt65Year74.Size = new System.Drawing.Size(39, 21);
+            this.txtBt65Year74.TabIndex = 27;
+            this.txtBt65Year74.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtBt65Year74, "Test");
+            // 
+            // lblBt65Year74
+            // 
+            this.lblBt65Year74.AutoSize = true;
+            this.lblBt65Year74.Location = new System.Drawing.Point(138, 147);
+            this.lblBt65Year74.Name = "lblBt65Year74";
+            this.lblBt65Year74.Size = new System.Drawing.Size(73, 15);
+            this.lblBt65Year74.TabIndex = 26;
+            this.lblBt65Year74.Text = "65-74 Jahre";
+            // 
+            // txtBt75Year79
+            // 
+            this.txtBt75Year79.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtBt75Year79.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt75Year79.ForeColor = System.Drawing.Color.White;
+            this.txtBt75Year79.Location = new System.Drawing.Point(212, 168);
+            this.txtBt75Year79.Name = "txtBt75Year79";
+            this.txtBt75Year79.ReadOnly = true;
+            this.txtBt75Year79.Size = new System.Drawing.Size(39, 21);
+            this.txtBt75Year79.TabIndex = 29;
+            this.txtBt75Year79.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtBt75Year79, "Test");
+            // 
+            // lblBt75Year79
+            // 
+            this.lblBt75Year79.AutoSize = true;
+            this.lblBt75Year79.Location = new System.Drawing.Point(138, 172);
+            this.lblBt75Year79.Name = "lblBt75Year79";
+            this.lblBt75Year79.Size = new System.Drawing.Size(73, 15);
+            this.lblBt75Year79.TabIndex = 28;
+            this.lblBt75Year79.Text = "75-79 Jahre";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.SeaGreen;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.ForeColor = System.Drawing.Color.White;
+            this.textBox1.Location = new System.Drawing.Point(212, 192);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(39, 21);
+            this.textBox1.TabIndex = 31;
+            this.textBox1.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.textBox1, "Test");
+            // 
+            // lblGtYear79
+            // 
+            this.lblGtYear79.AutoSize = true;
+            this.lblGtYear79.Location = new System.Drawing.Point(137, 196);
+            this.lblGtYear79.Name = "lblGtYear79";
+            this.lblGtYear79.Size = new System.Drawing.Size(75, 15);
+            this.lblGtYear79.TabIndex = 30;
+            this.lblGtYear79.Text = " >= 80 Jahre";
+            // 
+            // txtCasesSummary
+            // 
+            this.txtCasesSummary.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtCasesSummary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCasesSummary.ForeColor = System.Drawing.Color.White;
+            this.txtCasesSummary.Location = new System.Drawing.Point(12, 40);
+            this.txtCasesSummary.Name = "txtCasesSummary";
+            this.txtCasesSummary.ReadOnly = true;
+            this.txtCasesSummary.Size = new System.Drawing.Size(51, 21);
+            this.txtCasesSummary.TabIndex = 15;
+            this.txtCasesSummary.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtCasesSummary, "Test");
+            // 
+            // txtCases1
+            // 
+            this.txtCases1.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtCases1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCases1.ForeColor = System.Drawing.Color.White;
+            this.txtCases1.Location = new System.Drawing.Point(12, 75);
+            this.txtCases1.Name = "txtCases1";
+            this.txtCases1.ReadOnly = true;
+            this.txtCases1.Size = new System.Drawing.Size(51, 21);
+            this.txtCases1.TabIndex = 16;
+            this.txtCases1.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtCases1, "Test");
+            // 
+            // txtCases2
+            // 
+            this.txtCases2.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtCases2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCases2.ForeColor = System.Drawing.Color.White;
+            this.txtCases2.Location = new System.Drawing.Point(12, 100);
+            this.txtCases2.Name = "txtCases2";
+            this.txtCases2.ReadOnly = true;
+            this.txtCases2.Size = new System.Drawing.Size(51, 21);
+            this.txtCases2.TabIndex = 17;
+            this.txtCases2.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtCases2, "Test");
+            // 
+            // txtCases3
+            // 
+            this.txtCases3.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtCases3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCases3.ForeColor = System.Drawing.Color.White;
+            this.txtCases3.Location = new System.Drawing.Point(12, 124);
+            this.txtCases3.Name = "txtCases3";
+            this.txtCases3.ReadOnly = true;
+            this.txtCases3.Size = new System.Drawing.Size(51, 21);
+            this.txtCases3.TabIndex = 18;
+            this.txtCases3.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtCases3, "Test");
+            // 
+            // txtCases4
+            // 
+            this.txtCases4.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtCases4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCases4.ForeColor = System.Drawing.Color.White;
+            this.txtCases4.Location = new System.Drawing.Point(12, 148);
+            this.txtCases4.Name = "txtCases4";
+            this.txtCases4.ReadOnly = true;
+            this.txtCases4.Size = new System.Drawing.Size(51, 21);
+            this.txtCases4.TabIndex = 19;
+            this.txtCases4.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtCases4, "Test");
+            // 
+            // txtCases5
+            // 
+            this.txtCases5.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtCases5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCases5.ForeColor = System.Drawing.Color.White;
+            this.txtCases5.Location = new System.Drawing.Point(12, 172);
+            this.txtCases5.Name = "txtCases5";
+            this.txtCases5.ReadOnly = true;
+            this.txtCases5.Size = new System.Drawing.Size(51, 21);
+            this.txtCases5.TabIndex = 20;
+            this.txtCases5.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtCases5, "Test");
+            // 
+            // txtCasesP1
+            // 
+            this.txtCasesP1.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtCasesP1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCasesP1.ForeColor = System.Drawing.Color.White;
+            this.txtCasesP1.Location = new System.Drawing.Point(75, 75);
+            this.txtCasesP1.Name = "txtCasesP1";
+            this.txtCasesP1.ReadOnly = true;
+            this.txtCasesP1.Size = new System.Drawing.Size(51, 21);
+            this.txtCasesP1.TabIndex = 21;
+            this.txtCasesP1.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtCasesP1, "Test");
+            // 
+            // txtCasesP2
+            // 
+            this.txtCasesP2.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtCasesP2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCasesP2.ForeColor = System.Drawing.Color.White;
+            this.txtCasesP2.Location = new System.Drawing.Point(75, 100);
+            this.txtCasesP2.Name = "txtCasesP2";
+            this.txtCasesP2.ReadOnly = true;
+            this.txtCasesP2.Size = new System.Drawing.Size(51, 21);
+            this.txtCasesP2.TabIndex = 22;
+            this.txtCasesP2.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtCasesP2, "Test");
+            // 
+            // txtCasesP3
+            // 
+            this.txtCasesP3.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtCasesP3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCasesP3.ForeColor = System.Drawing.Color.White;
+            this.txtCasesP3.Location = new System.Drawing.Point(75, 124);
+            this.txtCasesP3.Name = "txtCasesP3";
+            this.txtCasesP3.ReadOnly = true;
+            this.txtCasesP3.Size = new System.Drawing.Size(51, 21);
+            this.txtCasesP3.TabIndex = 23;
+            this.txtCasesP3.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtCasesP3, "Test");
+            // 
+            // txtCasesP4
+            // 
+            this.txtCasesP4.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtCasesP4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCasesP4.ForeColor = System.Drawing.Color.White;
+            this.txtCasesP4.Location = new System.Drawing.Point(75, 148);
+            this.txtCasesP4.Name = "txtCasesP4";
+            this.txtCasesP4.ReadOnly = true;
+            this.txtCasesP4.Size = new System.Drawing.Size(51, 21);
+            this.txtCasesP4.TabIndex = 24;
+            this.txtCasesP4.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtCasesP4, "Test");
+            // 
+            // txtCasesP5
+            // 
+            this.txtCasesP5.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtCasesP5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCasesP5.ForeColor = System.Drawing.Color.White;
+            this.txtCasesP5.Location = new System.Drawing.Point(75, 172);
+            this.txtCasesP5.Name = "txtCasesP5";
+            this.txtCasesP5.ReadOnly = true;
+            this.txtCasesP5.Size = new System.Drawing.Size(51, 21);
+            this.txtCasesP5.TabIndex = 25;
+            this.txtCasesP5.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtCasesP5, "Test");
+            // 
+            // txtDaysSummary
+            // 
+            this.txtDaysSummary.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtDaysSummary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDaysSummary.ForeColor = System.Drawing.Color.White;
+            this.txtDaysSummary.Location = new System.Drawing.Point(12, 39);
+            this.txtDaysSummary.Name = "txtDaysSummary";
+            this.txtDaysSummary.ReadOnly = true;
+            this.txtDaysSummary.Size = new System.Drawing.Size(51, 21);
+            this.txtDaysSummary.TabIndex = 22;
+            this.txtDaysSummary.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtDaysSummary, "Test");
+            // 
+            // txtDays1
+            // 
+            this.txtDays1.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtDays1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDays1.ForeColor = System.Drawing.Color.White;
+            this.txtDays1.Location = new System.Drawing.Point(11, 74);
+            this.txtDays1.Name = "txtDays1";
+            this.txtDays1.ReadOnly = true;
+            this.txtDays1.Size = new System.Drawing.Size(51, 21);
+            this.txtDays1.TabIndex = 23;
+            this.txtDays1.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtDays1, "Test");
+            // 
+            // txtDays2
+            // 
+            this.txtDays2.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtDays2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDays2.ForeColor = System.Drawing.Color.White;
+            this.txtDays2.Location = new System.Drawing.Point(11, 99);
+            this.txtDays2.Name = "txtDays2";
+            this.txtDays2.ReadOnly = true;
+            this.txtDays2.Size = new System.Drawing.Size(51, 21);
+            this.txtDays2.TabIndex = 24;
+            this.txtDays2.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtDays2, "Test");
+            // 
+            // txtDays5
+            // 
+            this.txtDays5.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtDays5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDays5.ForeColor = System.Drawing.Color.White;
+            this.txtDays5.Location = new System.Drawing.Point(11, 171);
+            this.txtDays5.Name = "txtDays5";
+            this.txtDays5.ReadOnly = true;
+            this.txtDays5.Size = new System.Drawing.Size(51, 21);
+            this.txtDays5.TabIndex = 25;
+            this.txtDays5.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtDays5, "Test");
+            // 
+            // txtDays3
+            // 
+            this.txtDays3.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtDays3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDays3.ForeColor = System.Drawing.Color.White;
+            this.txtDays3.Location = new System.Drawing.Point(11, 123);
+            this.txtDays3.Name = "txtDays3";
+            this.txtDays3.ReadOnly = true;
+            this.txtDays3.Size = new System.Drawing.Size(51, 21);
+            this.txtDays3.TabIndex = 26;
+            this.txtDays3.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtDays3, "Test");
+            // 
+            // txtDays4
+            // 
+            this.txtDays4.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtDays4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDays4.ForeColor = System.Drawing.Color.White;
+            this.txtDays4.Location = new System.Drawing.Point(11, 147);
+            this.txtDays4.Name = "txtDays4";
+            this.txtDays4.ReadOnly = true;
+            this.txtDays4.Size = new System.Drawing.Size(51, 21);
+            this.txtDays4.TabIndex = 27;
+            this.txtDays4.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtDays4, "Test");
+            // 
+            // txtLosFrom1
+            // 
+            this.txtLosFrom1.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtLosFrom1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosFrom1.ForeColor = System.Drawing.Color.White;
+            this.txtLosFrom1.Location = new System.Drawing.Point(12, 74);
+            this.txtLosFrom1.Name = "txtLosFrom1";
+            this.txtLosFrom1.ReadOnly = true;
+            this.txtLosFrom1.Size = new System.Drawing.Size(34, 21);
+            this.txtLosFrom1.TabIndex = 31;
+            this.txtLosFrom1.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtLosFrom1, "Test");
+            // 
+            // txtLosFrom5
+            // 
+            this.txtLosFrom5.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtLosFrom5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosFrom5.ForeColor = System.Drawing.Color.White;
+            this.txtLosFrom5.Location = new System.Drawing.Point(12, 171);
+            this.txtLosFrom5.Name = "txtLosFrom5";
+            this.txtLosFrom5.ReadOnly = true;
+            this.txtLosFrom5.Size = new System.Drawing.Size(34, 21);
+            this.txtLosFrom5.TabIndex = 32;
+            this.txtLosFrom5.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtLosFrom5, "Test");
+            // 
+            // txtLosFrom4
+            // 
+            this.txtLosFrom4.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtLosFrom4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosFrom4.ForeColor = System.Drawing.Color.White;
+            this.txtLosFrom4.Location = new System.Drawing.Point(12, 147);
+            this.txtLosFrom4.Name = "txtLosFrom4";
+            this.txtLosFrom4.ReadOnly = true;
+            this.txtLosFrom4.Size = new System.Drawing.Size(34, 21);
+            this.txtLosFrom4.TabIndex = 33;
+            this.txtLosFrom4.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtLosFrom4, "Test");
+            // 
+            // txtLosFrom3
+            // 
+            this.txtLosFrom3.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtLosFrom3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosFrom3.ForeColor = System.Drawing.Color.White;
+            this.txtLosFrom3.Location = new System.Drawing.Point(12, 123);
+            this.txtLosFrom3.Name = "txtLosFrom3";
+            this.txtLosFrom3.ReadOnly = true;
+            this.txtLosFrom3.Size = new System.Drawing.Size(34, 21);
+            this.txtLosFrom3.TabIndex = 34;
+            this.txtLosFrom3.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtLosFrom3, "Test");
+            // 
+            // txtLosFrom2
+            // 
+            this.txtLosFrom2.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtLosFrom2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosFrom2.ForeColor = System.Drawing.Color.White;
+            this.txtLosFrom2.Location = new System.Drawing.Point(12, 99);
+            this.txtLosFrom2.Name = "txtLosFrom2";
+            this.txtLosFrom2.ReadOnly = true;
+            this.txtLosFrom2.Size = new System.Drawing.Size(34, 21);
+            this.txtLosFrom2.TabIndex = 35;
+            this.txtLosFrom2.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtLosFrom2, "Test");
+            // 
+            // txtLosTo1
+            // 
+            this.txtLosTo1.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtLosTo1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosTo1.ForeColor = System.Drawing.Color.White;
+            this.txtLosTo1.Location = new System.Drawing.Point(52, 74);
+            this.txtLosTo1.Name = "txtLosTo1";
+            this.txtLosTo1.ReadOnly = true;
+            this.txtLosTo1.Size = new System.Drawing.Size(34, 21);
+            this.txtLosTo1.TabIndex = 36;
+            this.txtLosTo1.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtLosTo1, "Test");
+            // 
+            // txtLosTo3
+            // 
+            this.txtLosTo3.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtLosTo3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosTo3.ForeColor = System.Drawing.Color.White;
+            this.txtLosTo3.Location = new System.Drawing.Point(52, 123);
+            this.txtLosTo3.Name = "txtLosTo3";
+            this.txtLosTo3.ReadOnly = true;
+            this.txtLosTo3.Size = new System.Drawing.Size(34, 21);
+            this.txtLosTo3.TabIndex = 37;
+            this.txtLosTo3.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtLosTo3, "Test");
+            // 
+            // txtLosTo5
+            // 
+            this.txtLosTo5.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtLosTo5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosTo5.ForeColor = System.Drawing.Color.White;
+            this.txtLosTo5.Location = new System.Drawing.Point(52, 171);
+            this.txtLosTo5.Name = "txtLosTo5";
+            this.txtLosTo5.ReadOnly = true;
+            this.txtLosTo5.Size = new System.Drawing.Size(34, 21);
+            this.txtLosTo5.TabIndex = 38;
+            this.txtLosTo5.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtLosTo5, "Test");
+            // 
+            // txtLosTo4
+            // 
+            this.txtLosTo4.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtLosTo4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosTo4.ForeColor = System.Drawing.Color.White;
+            this.txtLosTo4.Location = new System.Drawing.Point(52, 147);
+            this.txtLosTo4.Name = "txtLosTo4";
+            this.txtLosTo4.ReadOnly = true;
+            this.txtLosTo4.Size = new System.Drawing.Size(34, 21);
+            this.txtLosTo4.TabIndex = 39;
+            this.txtLosTo4.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtLosTo4, "Test");
+            // 
+            // txtLosTo2
+            // 
+            this.txtLosTo2.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtLosTo2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosTo2.ForeColor = System.Drawing.Color.White;
+            this.txtLosTo2.Location = new System.Drawing.Point(52, 99);
+            this.txtLosTo2.Name = "txtLosTo2";
+            this.txtLosTo2.ReadOnly = true;
+            this.txtLosTo2.Size = new System.Drawing.Size(34, 21);
+            this.txtLosTo2.TabIndex = 40;
+            this.txtLosTo2.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtLosTo2, "Test");
+            // 
+            // txtValuationRatio1
+            // 
+            this.txtValuationRatio1.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtValuationRatio1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtValuationRatio1.ForeColor = System.Drawing.Color.White;
+            this.txtValuationRatio1.Location = new System.Drawing.Point(109, 74);
+            this.txtValuationRatio1.Name = "txtValuationRatio1";
+            this.txtValuationRatio1.ReadOnly = true;
+            this.txtValuationRatio1.Size = new System.Drawing.Size(51, 21);
+            this.txtValuationRatio1.TabIndex = 41;
+            this.txtValuationRatio1.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtValuationRatio1, "Test");
+            // 
+            // txtValuationRatio2
+            // 
+            this.txtValuationRatio2.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtValuationRatio2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtValuationRatio2.ForeColor = System.Drawing.Color.White;
+            this.txtValuationRatio2.Location = new System.Drawing.Point(109, 99);
+            this.txtValuationRatio2.Name = "txtValuationRatio2";
+            this.txtValuationRatio2.ReadOnly = true;
+            this.txtValuationRatio2.Size = new System.Drawing.Size(51, 21);
+            this.txtValuationRatio2.TabIndex = 42;
+            this.txtValuationRatio2.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtValuationRatio2, "Test");
+            // 
+            // txtValuationRatio3
+            // 
+            this.txtValuationRatio3.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtValuationRatio3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtValuationRatio3.ForeColor = System.Drawing.Color.White;
+            this.txtValuationRatio3.Location = new System.Drawing.Point(109, 123);
+            this.txtValuationRatio3.Name = "txtValuationRatio3";
+            this.txtValuationRatio3.ReadOnly = true;
+            this.txtValuationRatio3.Size = new System.Drawing.Size(51, 21);
+            this.txtValuationRatio3.TabIndex = 43;
+            this.txtValuationRatio3.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtValuationRatio3, "Test");
+            // 
+            // txtValuationRatio4
+            // 
+            this.txtValuationRatio4.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtValuationRatio4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtValuationRatio4.ForeColor = System.Drawing.Color.White;
+            this.txtValuationRatio4.Location = new System.Drawing.Point(109, 147);
+            this.txtValuationRatio4.Name = "txtValuationRatio4";
+            this.txtValuationRatio4.ReadOnly = true;
+            this.txtValuationRatio4.Size = new System.Drawing.Size(51, 21);
+            this.txtValuationRatio4.TabIndex = 44;
+            this.txtValuationRatio4.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtValuationRatio4, "Test");
+            // 
+            // txtValuationRatio5
+            // 
+            this.txtValuationRatio5.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtValuationRatio5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtValuationRatio5.ForeColor = System.Drawing.Color.White;
+            this.txtValuationRatio5.Location = new System.Drawing.Point(109, 171);
+            this.txtValuationRatio5.Name = "txtValuationRatio5";
+            this.txtValuationRatio5.ReadOnly = true;
+            this.txtValuationRatio5.Size = new System.Drawing.Size(51, 21);
+            this.txtValuationRatio5.TabIndex = 45;
+            this.txtValuationRatio5.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtValuationRatio5, "Test");
+            // 
+            // txtLosAverage
+            // 
+            this.txtLosAverage.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtLosAverage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosAverage.ForeColor = System.Drawing.Color.White;
+            this.txtLosAverage.Location = new System.Drawing.Point(10, 20);
+            this.txtLosAverage.Name = "txtLosAverage";
+            this.txtLosAverage.ReadOnly = true;
+            this.txtLosAverage.Size = new System.Drawing.Size(43, 21);
+            this.txtLosAverage.TabIndex = 37;
+            this.txtLosAverage.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtLosAverage, "Test");
+            // 
+            // txtLosStandardDeviation
+            // 
+            this.txtLosStandardDeviation.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtLosStandardDeviation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosStandardDeviation.ForeColor = System.Drawing.Color.White;
+            this.txtLosStandardDeviation.Location = new System.Drawing.Point(10, 44);
+            this.txtLosStandardDeviation.Name = "txtLosStandardDeviation";
+            this.txtLosStandardDeviation.ReadOnly = true;
+            this.txtLosStandardDeviation.Size = new System.Drawing.Size(43, 21);
+            this.txtLosStandardDeviation.TabIndex = 38;
+            this.txtLosStandardDeviation.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtLosStandardDeviation, "Test");
+            // 
+            // txtLosHomogeneityCoeff
+            // 
+            this.txtLosHomogeneityCoeff.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtLosHomogeneityCoeff.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosHomogeneityCoeff.ForeColor = System.Drawing.Color.White;
+            this.txtLosHomogeneityCoeff.Location = new System.Drawing.Point(10, 68);
+            this.txtLosHomogeneityCoeff.Name = "txtLosHomogeneityCoeff";
+            this.txtLosHomogeneityCoeff.ReadOnly = true;
+            this.txtLosHomogeneityCoeff.Size = new System.Drawing.Size(43, 21);
+            this.txtLosHomogeneityCoeff.TabIndex = 39;
+            this.txtLosHomogeneityCoeff.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtLosHomogeneityCoeff, "Test");
+            // 
+            // txtDailyCostsAverage
+            // 
+            this.txtDailyCostsAverage.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtDailyCostsAverage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDailyCostsAverage.ForeColor = System.Drawing.Color.White;
+            this.txtDailyCostsAverage.Location = new System.Drawing.Point(10, 20);
+            this.txtDailyCostsAverage.Name = "txtDailyCostsAverage";
+            this.txtDailyCostsAverage.ReadOnly = true;
+            this.txtDailyCostsAverage.Size = new System.Drawing.Size(54, 21);
+            this.txtDailyCostsAverage.TabIndex = 38;
+            this.txtDailyCostsAverage.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtDailyCostsAverage, "Test");
+            // 
+            // txtDailyCostsStandardDeviation
+            // 
+            this.txtDailyCostsStandardDeviation.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtDailyCostsStandardDeviation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDailyCostsStandardDeviation.ForeColor = System.Drawing.Color.White;
+            this.txtDailyCostsStandardDeviation.Location = new System.Drawing.Point(10, 44);
+            this.txtDailyCostsStandardDeviation.Name = "txtDailyCostsStandardDeviation";
+            this.txtDailyCostsStandardDeviation.ReadOnly = true;
+            this.txtDailyCostsStandardDeviation.Size = new System.Drawing.Size(54, 21);
+            this.txtDailyCostsStandardDeviation.TabIndex = 39;
+            this.txtDailyCostsStandardDeviation.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtDailyCostsStandardDeviation, "Test");
+            // 
+            // txtDailyCostsHomogeneityCoeff
+            // 
+            this.txtDailyCostsHomogeneityCoeff.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtDailyCostsHomogeneityCoeff.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDailyCostsHomogeneityCoeff.ForeColor = System.Drawing.Color.White;
+            this.txtDailyCostsHomogeneityCoeff.Location = new System.Drawing.Point(10, 68);
+            this.txtDailyCostsHomogeneityCoeff.Name = "txtDailyCostsHomogeneityCoeff";
+            this.txtDailyCostsHomogeneityCoeff.ReadOnly = true;
+            this.txtDailyCostsHomogeneityCoeff.Size = new System.Drawing.Size(54, 21);
+            this.txtDailyCostsHomogeneityCoeff.TabIndex = 40;
+            this.txtDailyCostsHomogeneityCoeff.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtDailyCostsHomogeneityCoeff, "Test");
+            // 
+            // txtAgeAverage
+            // 
+            this.txtAgeAverage.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtAgeAverage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAgeAverage.ForeColor = System.Drawing.Color.White;
+            this.txtAgeAverage.Location = new System.Drawing.Point(10, 20);
+            this.txtAgeAverage.Name = "txtAgeAverage";
+            this.txtAgeAverage.ReadOnly = true;
+            this.txtAgeAverage.Size = new System.Drawing.Size(38, 21);
+            this.txtAgeAverage.TabIndex = 40;
+            this.txtAgeAverage.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtAgeAverage, "Test");
+            // 
+            // txtAgeStandardDeviation
+            // 
+            this.txtAgeStandardDeviation.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtAgeStandardDeviation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAgeStandardDeviation.ForeColor = System.Drawing.Color.White;
+            this.txtAgeStandardDeviation.Location = new System.Drawing.Point(10, 44);
+            this.txtAgeStandardDeviation.Name = "txtAgeStandardDeviation";
+            this.txtAgeStandardDeviation.ReadOnly = true;
+            this.txtAgeStandardDeviation.Size = new System.Drawing.Size(38, 21);
+            this.txtAgeStandardDeviation.TabIndex = 41;
+            this.txtAgeStandardDeviation.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtAgeStandardDeviation, "Test");
+            // 
+            // txtGenderMale
+            // 
+            this.txtGenderMale.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtGenderMale.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtGenderMale.ForeColor = System.Drawing.Color.White;
+            this.txtGenderMale.Location = new System.Drawing.Point(10, 18);
+            this.txtGenderMale.Name = "txtGenderMale";
+            this.txtGenderMale.ReadOnly = true;
+            this.txtGenderMale.Size = new System.Drawing.Size(38, 21);
+            this.txtGenderMale.TabIndex = 42;
+            this.txtGenderMale.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtGenderMale, "Test");
+            // 
+            // txtGenderFemale
+            // 
+            this.txtGenderFemale.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtGenderFemale.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtGenderFemale.ForeColor = System.Drawing.Color.White;
+            this.txtGenderFemale.Location = new System.Drawing.Point(10, 42);
+            this.txtGenderFemale.Name = "txtGenderFemale";
+            this.txtGenderFemale.ReadOnly = true;
+            this.txtGenderFemale.Size = new System.Drawing.Size(38, 21);
+            this.txtGenderFemale.TabIndex = 43;
+            this.txtGenderFemale.Text = "0";
+            this.toolTipLT28Days.SetToolTip(this.txtGenderFemale, "Test");
+            // 
+            // pnlSummaryLine
+            // 
+            this.pnlSummaryLine.BackColor = System.Drawing.Color.White;
+            this.pnlSummaryLine.Location = new System.Drawing.Point(13, 76);
+            this.pnlSummaryLine.Name = "pnlSummaryLine";
+            this.pnlSummaryLine.Size = new System.Drawing.Size(559, 3);
+            this.pnlSummaryLine.TabIndex = 19;
             // 
             // Data
             // 
@@ -874,13 +1476,19 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Controls.Add(this.pnlData);
             this.Name = "Data";
-            this.Size = new System.Drawing.Size(1260, 248);
+            this.Size = new System.Drawing.Size(1182, 257);
             this.pnlData.ResumeLayout(false);
             this.pnlData.PerformLayout();
+            this.grpBigAge.ResumeLayout(false);
+            this.grpBigAge.PerformLayout();
             this.grpGender.ResumeLayout(false);
+            this.grpGender.PerformLayout();
             this.grpAge.ResumeLayout(false);
+            this.grpAge.PerformLayout();
             this.grpDailyCosts.ResumeLayout(false);
+            this.grpDailyCosts.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.grpCatalog.ResumeLayout(false);
             this.grpCatalog.PerformLayout();
             this.grpCases.ResumeLayout(false);
@@ -902,65 +1510,99 @@
         private System.Windows.Forms.Label lblPayLevel1;
         private System.Windows.Forms.Label lblSummary;
         private System.Windows.Forms.GroupBox grpCases;
-        private System.Windows.Forms.Label lblValuePayLevel5;
-        private System.Windows.Forms.Label lblValuePayLevel4;
-        private System.Windows.Forms.Label lblValuePayLevel3;
-        private System.Windows.Forms.Label lblValuePayLevel2;
-        private System.Windows.Forms.Label lblValuePayLevel1;
         private System.Windows.Forms.Label lblNumCases;
-        private System.Windows.Forms.Label lblValuePercentagePayLevel5;
-        private System.Windows.Forms.Label lblValuePercentagePayLevel4;
-        private System.Windows.Forms.Label lblValuePercentagePayLevel3;
-        private System.Windows.Forms.Label lblValuePercentagePayLevel2;
-        private System.Windows.Forms.Label lblValuePercentagePayLevel1;
         private System.Windows.Forms.Label lblCasesPercentage;
-        private System.Windows.Forms.Label lblValueCasesSummary;
         private System.Windows.Forms.Label lblLosNumDays;
-        private System.Windows.Forms.Label lblLosSummary;
-        private System.Windows.Forms.Label lblLosPayLevel5;
-        private System.Windows.Forms.Label lblLosPayLevel4;
-        private System.Windows.Forms.Label lblLosPayLevel3;
-        private System.Windows.Forms.Label lblLosPayLevel2;
-        private System.Windows.Forms.Label lblLosPayLevel1;
         private System.Windows.Forms.GroupBox grpCatalog;
-        private System.Windows.Forms.Label lblLosFrom1;
         private System.Windows.Forms.Label lblLosFrom;
         private System.Windows.Forms.Label lblLosTo;
-        private System.Windows.Forms.Label lblLosFrom5;
-        private System.Windows.Forms.Label lblLosFrom4;
-        private System.Windows.Forms.Label lblLosFrom3;
-        private System.Windows.Forms.Label lblLosFrom2;
-        private System.Windows.Forms.Label lblLos5;
-        private System.Windows.Forms.Label lblLos4;
-        private System.Windows.Forms.Label lblLos3;
-        private System.Windows.Forms.Label lblLos2;
-        private System.Windows.Forms.Label lblLosTo1;
-        private System.Windows.Forms.Label lblValuationRatioDay1;
         private System.Windows.Forms.Label lblValuationRatioDay;
-        private System.Windows.Forms.Label lblValuationRatioDay5;
-        private System.Windows.Forms.Label lblValuationRatioDay4;
-        private System.Windows.Forms.Label lblValuationRatioDay3;
-        private System.Windows.Forms.Label lblValuationRatioDay2;
         private System.Windows.Forms.Label lblAverage;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label lblLosAverage;
         private System.Windows.Forms.Label lblStandardDeviation;
-        private System.Windows.Forms.Label lblLosStandardDeviation;
         private System.Windows.Forms.GroupBox grpDailyCosts;
-        private System.Windows.Forms.Label lblDailyCostsHomogeneityCoeff;
-        private System.Windows.Forms.Label lblDailyCostsStandardDeviation;
-        private System.Windows.Forms.Label lblDailyCostsAverage;
         private System.Windows.Forms.Label lblHomogeneityCoefficient;
-        private System.Windows.Forms.Label lblLosHomogeneityCoeff;
         private System.Windows.Forms.GroupBox grpAge;
-        private System.Windows.Forms.Label lblAgeHomogeneityCoeff;
-        private System.Windows.Forms.Label lblAgeStandardDeviation;
-        private System.Windows.Forms.Label lblAgeAverage;
         private System.Windows.Forms.GroupBox grpGender;
-        private System.Windows.Forms.Label lblGenderFemale;
-        private System.Windows.Forms.Label lblGenderMale;
         private System.Windows.Forms.Label lblFemale;
         private System.Windows.Forms.Label lblMale;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox grpBigAge;
+        private System.Windows.Forms.TextBox txtLT28Days;
+        private System.Windows.Forms.Label lblLT28Days;
+        private System.Windows.Forms.ToolTip toolTipLT28Days;
+        private System.Windows.Forms.TextBox txtBt1Year2;
+        private System.Windows.Forms.Label lblBt1Year2;
+        private System.Windows.Forms.TextBox txtBt28Days1Year;
+        private System.Windows.Forms.Label lblBt28Days1Year;
+        private System.Windows.Forms.TextBox txtBt3Year5;
+        private System.Windows.Forms.Label lblBt3Year5;
+        private System.Windows.Forms.TextBox txtBt6Year9;
+        private System.Windows.Forms.Label lblBt6Year9;
+        private System.Windows.Forms.TextBox txtBt10Year15;
+        private System.Windows.Forms.Label lblBt10Year15;
+        private System.Windows.Forms.TextBox txtBt16Year17;
+        private System.Windows.Forms.Label lblBt16Year17;
+        private System.Windows.Forms.TextBox txtBt60Year64;
+        private System.Windows.Forms.Label lblBt60Year64;
+        private System.Windows.Forms.TextBox txtBt55Year59;
+        private System.Windows.Forms.Label lblBt55Year59;
+        private System.Windows.Forms.TextBox txtBt50Year54;
+        private System.Windows.Forms.Label lblBt50Year54;
+        private System.Windows.Forms.TextBox txtBt40Year49;
+        private System.Windows.Forms.Label lblBt40Year49;
+        private System.Windows.Forms.TextBox txtBt30Year39;
+        private System.Windows.Forms.Label lblBt30Year39;
+        private System.Windows.Forms.TextBox txtBt18Year29;
+        private System.Windows.Forms.Label lblBt18Year29;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblGtYear79;
+        private System.Windows.Forms.TextBox txtBt75Year79;
+        private System.Windows.Forms.Label lblBt75Year79;
+        private System.Windows.Forms.TextBox txtBt65Year74;
+        private System.Windows.Forms.Label lblBt65Year74;
+        private System.Windows.Forms.TextBox txtGenderFemale;
+        private System.Windows.Forms.TextBox txtGenderMale;
+        private System.Windows.Forms.TextBox txtAgeStandardDeviation;
+        private System.Windows.Forms.TextBox txtAgeAverage;
+        private System.Windows.Forms.TextBox txtDailyCostsHomogeneityCoeff;
+        private System.Windows.Forms.TextBox txtDailyCostsStandardDeviation;
+        private System.Windows.Forms.TextBox txtDailyCostsAverage;
+        private System.Windows.Forms.TextBox txtLosHomogeneityCoeff;
+        private System.Windows.Forms.TextBox txtLosStandardDeviation;
+        private System.Windows.Forms.TextBox txtLosAverage;
+        private System.Windows.Forms.TextBox txtValuationRatio5;
+        private System.Windows.Forms.TextBox txtValuationRatio4;
+        private System.Windows.Forms.TextBox txtValuationRatio3;
+        private System.Windows.Forms.TextBox txtValuationRatio2;
+        private System.Windows.Forms.TextBox txtValuationRatio1;
+        private System.Windows.Forms.TextBox txtLosTo2;
+        private System.Windows.Forms.TextBox txtLosTo4;
+        private System.Windows.Forms.TextBox txtLosTo5;
+        private System.Windows.Forms.TextBox txtLosTo3;
+        private System.Windows.Forms.TextBox txtLosTo1;
+        private System.Windows.Forms.TextBox txtLosFrom2;
+        private System.Windows.Forms.TextBox txtLosFrom3;
+        private System.Windows.Forms.TextBox txtLosFrom4;
+        private System.Windows.Forms.TextBox txtLosFrom5;
+        private System.Windows.Forms.TextBox txtLosFrom1;
+        private System.Windows.Forms.TextBox txtCasesP5;
+        private System.Windows.Forms.TextBox txtCasesP4;
+        private System.Windows.Forms.TextBox txtCasesP3;
+        private System.Windows.Forms.TextBox txtCasesP2;
+        private System.Windows.Forms.TextBox txtCasesP1;
+        private System.Windows.Forms.TextBox txtCases5;
+        private System.Windows.Forms.TextBox txtCases4;
+        private System.Windows.Forms.TextBox txtCases3;
+        private System.Windows.Forms.TextBox txtCases2;
+        private System.Windows.Forms.TextBox txtCases1;
+        private System.Windows.Forms.TextBox txtCasesSummary;
+        private System.Windows.Forms.TextBox txtDays4;
+        private System.Windows.Forms.TextBox txtDays3;
+        private System.Windows.Forms.TextBox txtDays5;
+        private System.Windows.Forms.TextBox txtDays2;
+        private System.Windows.Forms.TextBox txtDays1;
+        private System.Windows.Forms.TextBox txtDaysSummary;
+        private System.Windows.Forms.Panel pnlSummaryLine;
     }
 }

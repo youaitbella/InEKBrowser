@@ -7,21 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Office.Interop.Excel;
 
 namespace org.inek.PeppBrowser.GUI {
     public partial class TitleBar : UserControl {
-        
-        public Panel TitleBarPanel {
-            get { return pnlTitle; }
-        }
 
-        public Panel FormStatePanel {
-            get { return pnlFormStates; }
-        }
-
-        public Label Title {
-            get { return lblTitle; }
-        }
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TitleBar));
 
         public event EventHandler ClickedExit;
         public event EventHandler ClickedMinMax;
@@ -64,7 +55,7 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void picMinMax_Click(object sender, EventArgs e) {
             if (ClickedMinMax != null) {
-                ClickedExit(picMinMax, e);
+                ClickedMinMax(picMinMax, e);
             }
         }
 

@@ -166,6 +166,18 @@ namespace org.inek.PeppBrowser.GUI {
             Application.Exit();
         }
 
+        private void titleBar_ClickedIconify(object sender, EventArgs e) {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void titleBar_ClickedMinMax(object sender, EventArgs e) {
+            if (WindowState == FormWindowState.Normal) {
+                WindowState = FormWindowState.Maximized;
+            } else {
+                WindowState = FormWindowState.Normal;
+            }
+        }
+
         private void mnuManual_Click(object sender, EventArgs e) {
             try {
                 Process.Start("PeppBrowser.pdf");

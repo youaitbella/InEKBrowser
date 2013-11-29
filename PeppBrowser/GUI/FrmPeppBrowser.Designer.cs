@@ -60,7 +60,7 @@
             this.mnuMain.Margin = new System.Windows.Forms.Padding(0, 20, 0, 0);
             this.mnuMain.Name = "mnuMain";
             this.mnuMain.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.mnuMain.Size = new System.Drawing.Size(1252, 24);
+            this.mnuMain.Size = new System.Drawing.Size(1182, 24);
             this.mnuMain.TabIndex = 6;
             this.mnuMain.Text = "menuStrip1";
             // 
@@ -193,7 +193,7 @@
             this.pnlContentBackground.Controls.Add(this.data1);
             this.pnlContentBackground.Location = new System.Drawing.Point(3, 30);
             this.pnlContentBackground.Name = "pnlContentBackground";
-            this.pnlContentBackground.Size = new System.Drawing.Size(1252, 711);
+            this.pnlContentBackground.Size = new System.Drawing.Size(1182, 711);
             this.pnlContentBackground.TabIndex = 8;
             this.pnlContentBackground.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
             // 
@@ -208,7 +208,7 @@
             this.selection.BackColor = System.Drawing.Color.SeaGreen;
             this.selection.Location = new System.Drawing.Point(0, 27);
             this.selection.Name = "selection";
-            this.selection.Size = new System.Drawing.Size(1252, 87);
+            this.selection.Size = new System.Drawing.Size(1182, 87);
             this.selection.TabIndex = 7;
             // 
             // data1
@@ -219,7 +219,7 @@
             this.data1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.data1.Location = new System.Drawing.Point(0, 120);
             this.data1.Name = "data1";
-            this.data1.Size = new System.Drawing.Size(1252, 252);
+            this.data1.Size = new System.Drawing.Size(1182, 252);
             this.data1.TabIndex = 1;
             // 
             // titleBar
@@ -229,9 +229,11 @@
             this.titleBar.BackColor = System.Drawing.Color.LightYellow;
             this.titleBar.Location = new System.Drawing.Point(3, 0);
             this.titleBar.Name = "titleBar";
-            this.titleBar.Size = new System.Drawing.Size(1252, 30);
+            this.titleBar.Size = new System.Drawing.Size(1182, 30);
             this.titleBar.TabIndex = 5;
             this.titleBar.ClickedExit += new System.EventHandler(this.titleBar_ClickedExit);
+            this.titleBar.ClickedMinMax += new System.EventHandler(this.titleBar_ClickedMinMax);
+            this.titleBar.ClickedIconify += new System.EventHandler(this.titleBar_ClickedIconify);
             this.titleBar.MouseMoveTitleBar += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
             this.titleBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
             // 
@@ -247,10 +249,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightYellow;
-            this.ClientSize = new System.Drawing.Size(1258, 744);
+            this.ClientSize = new System.Drawing.Size(1188, 744);
             this.Controls.Add(this.pnlContentBackground);
             this.Controls.Add(this.titleBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MinimumSize = new System.Drawing.Size(1188, 500);
             this.helpProvider1.SetHelpKeyword(this, "Introduction.htm");
             this.helpProvider1.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.Topic);
             this.KeyPreview = true;
