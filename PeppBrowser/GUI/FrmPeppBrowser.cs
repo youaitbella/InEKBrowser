@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
+using System.Linq;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using org.inek.PeppBrowser.Data;
@@ -34,7 +36,10 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void mnuStructureCategories_Click(object sender, System.EventArgs e) {
             FrmList dlg = new FrmList();
-            dlg.SetDataSource(CsvData.Context().StructureCategories);
+            var q =
+                CsvData.Context().StructureCategories.OrderBy(sk => sk.Order)
+                .Select(sk => new { SK = sk.Category, sk.Text, PEPPs = sk.PeppCount, Fälle = sk.CaseCount, Tage = sk.DayCount });
+            dlg.SetDataSource(q.ToList());
             dlg.Text = "Strukturkategorien";
             dlg.Show();
         }
@@ -158,6 +163,15 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void titleBar_ClickedExit(object sender, EventArgs e) {
             Application.Exit();
+        }
+
+        private void mnuManual_Click(object sender, EventArgs e) {
+            try {
+                Process.Start("PeppBrowser.pdf");
+            } catch (Exception) {
+                MessageBox.Show("Kein Handbuch verfügbar.");
+            }
+
         }
 
     }

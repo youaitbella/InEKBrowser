@@ -107,6 +107,7 @@
             this.mnuPeppInfo.Name = "mnuPeppInfo";
             this.mnuPeppInfo.Size = new System.Drawing.Size(172, 22);
             this.mnuPeppInfo.Text = "Kopfdaten";
+            this.mnuPeppInfo.Click += new System.EventHandler(this.mnuPeppInfo_Click);
             // 
             // mnuPrimaryDiagnoses
             // 
@@ -114,6 +115,7 @@
             this.mnuPrimaryDiagnoses.Name = "mnuPrimaryDiagnoses";
             this.mnuPrimaryDiagnoses.Size = new System.Drawing.Size(172, 22);
             this.mnuPrimaryDiagnoses.Text = "Hauptdiagnosen";
+            this.mnuPrimaryDiagnoses.Click += new System.EventHandler(this.mnuPrimaryDiagnoses_Click);
             // 
             // mnuSecondaryDiagnoses
             // 
@@ -121,6 +123,7 @@
             this.mnuSecondaryDiagnoses.Name = "mnuSecondaryDiagnoses";
             this.mnuSecondaryDiagnoses.Size = new System.Drawing.Size(172, 22);
             this.mnuSecondaryDiagnoses.Text = "Nebendiagnosen";
+            this.mnuSecondaryDiagnoses.Click += new System.EventHandler(this.mnuSecondaryDiagnoses_Click);
             // 
             // mnuProcedures
             // 
@@ -128,6 +131,7 @@
             this.mnuProcedures.Name = "mnuProcedures";
             this.mnuProcedures.Size = new System.Drawing.Size(172, 22);
             this.mnuProcedures.Text = "Prozeduren";
+            this.mnuProcedures.Click += new System.EventHandler(this.mnuProcedures_Click);
             // 
             // mnuCosts
             // 
@@ -135,6 +139,7 @@
             this.mnuCosts.Name = "mnuCosts";
             this.mnuCosts.Size = new System.Drawing.Size(172, 22);
             this.mnuCosts.Text = "Kosten";
+            this.mnuCosts.Click += new System.EventHandler(this.mnuCosts_Click);
             // 
             // mnuCostDomains
             // 
@@ -142,6 +147,7 @@
             this.mnuCostDomains.Name = "mnuCostDomains";
             this.mnuCostDomains.Size = new System.Drawing.Size(172, 22);
             this.mnuCostDomains.Text = "Kostenbereiche";
+            this.mnuCostDomains.Click += new System.EventHandler(this.mnuCostDomains_Click);
             // 
             // toolStripMenuItem3
             // 
@@ -163,13 +169,14 @@
             // mnuManual
             // 
             this.mnuManual.Name = "mnuManual";
-            this.mnuManual.Size = new System.Drawing.Size(130, 22);
+            this.mnuManual.Size = new System.Drawing.Size(152, 22);
             this.mnuManual.Text = "Handbuch";
+            this.mnuManual.Click += new System.EventHandler(this.mnuManual_Click);
             // 
             // mnuInfo
             // 
             this.mnuInfo.Name = "mnuInfo";
-            this.mnuInfo.Size = new System.Drawing.Size(130, 22);
+            this.mnuInfo.Size = new System.Drawing.Size(152, 22);
             this.mnuInfo.Text = "Info";
             // 
             // pnlContentBackground
