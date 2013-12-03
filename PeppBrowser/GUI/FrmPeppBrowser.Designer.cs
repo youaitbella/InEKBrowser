@@ -37,15 +37,30 @@
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuManual = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlContentBackground = new System.Windows.Forms.Panel();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.tabControl = new System.Windows.Forms.TabControl();
+            this.tabMainDiagnosis = new System.Windows.Forms.TabPage();
+            this.tabSecondaryDiagnosis = new System.Windows.Forms.TabPage();
+            this.tabProcedures = new System.Windows.Forms.TabPage();
+            this.tabDailyCosts = new System.Windows.Forms.TabPage();
             this.selection = new org.inek.PeppBrowser.GUI.Selection();
-            this.data1 = new org.inek.PeppBrowser.GUI.Data();
+            this.data = new org.inek.PeppBrowser.GUI.Data();
             this.titleBar = new org.inek.PeppBrowser.GUI.TitleBar();
-            this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.gridMainDiagnosis = new System.Windows.Forms.DataGridView();
+            this.gridSecondaryDiagnosis = new System.Windows.Forms.DataGridView();
+            this.gridProcedures = new System.Windows.Forms.DataGridView();
             this.mnuMain.SuspendLayout();
             this.pnlContentBackground.SuspendLayout();
+            this.tabControl.SuspendLayout();
+            this.tabMainDiagnosis.SuspendLayout();
+            this.tabSecondaryDiagnosis.SuspendLayout();
+            this.tabProcedures.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridMainDiagnosis)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSecondaryDiagnosis)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridProcedures)).BeginInit();
             this.SuspendLayout();
             // 
             // mnuMain
@@ -172,14 +187,21 @@
             // mnuManual
             // 
             this.mnuManual.Name = "mnuManual";
-            this.mnuManual.Size = new System.Drawing.Size(152, 22);
+            this.mnuManual.Size = new System.Drawing.Size(130, 22);
             this.mnuManual.Text = "Handbuch";
             this.mnuManual.Click += new System.EventHandler(this.mnuManual_Click);
+            // 
+            // mnuHelp
+            // 
+            this.mnuHelp.Name = "mnuHelp";
+            this.mnuHelp.Size = new System.Drawing.Size(130, 22);
+            this.mnuHelp.Text = "Hilfe";
+            this.mnuHelp.Click += new System.EventHandler(this.mnuHelp_Click);
             // 
             // mnuInfo
             // 
             this.mnuInfo.Name = "mnuInfo";
-            this.mnuInfo.Size = new System.Drawing.Size(152, 22);
+            this.mnuInfo.Size = new System.Drawing.Size(130, 22);
             this.mnuInfo.Text = "Info";
             // 
             // pnlContentBackground
@@ -188,9 +210,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlContentBackground.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pnlContentBackground.Controls.Add(this.tabControl);
             this.pnlContentBackground.Controls.Add(this.mnuMain);
             this.pnlContentBackground.Controls.Add(this.selection);
-            this.pnlContentBackground.Controls.Add(this.data1);
+            this.pnlContentBackground.Controls.Add(this.data);
             this.pnlContentBackground.Location = new System.Drawing.Point(3, 30);
             this.pnlContentBackground.Name = "pnlContentBackground";
             this.pnlContentBackground.Size = new System.Drawing.Size(1182, 711);
@@ -200,6 +223,64 @@
             // helpProvider1
             // 
             this.helpProvider1.HelpNamespace = "PeppBrowser.chm";
+            // 
+            // tabControl
+            // 
+            this.tabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl.Controls.Add(this.tabMainDiagnosis);
+            this.tabControl.Controls.Add(this.tabSecondaryDiagnosis);
+            this.tabControl.Controls.Add(this.tabProcedures);
+            this.tabControl.Controls.Add(this.tabDailyCosts);
+            this.tabControl.Location = new System.Drawing.Point(3, 378);
+            this.tabControl.Name = "tabControl";
+            this.tabControl.SelectedIndex = 0;
+            this.tabControl.Size = new System.Drawing.Size(1176, 330);
+            this.tabControl.TabIndex = 8;
+            // 
+            // tabMainDiagnosis
+            // 
+            this.tabMainDiagnosis.Controls.Add(this.gridMainDiagnosis);
+            this.tabMainDiagnosis.Location = new System.Drawing.Point(4, 22);
+            this.tabMainDiagnosis.Name = "tabMainDiagnosis";
+            this.tabMainDiagnosis.Padding = new System.Windows.Forms.Padding(3);
+            this.tabMainDiagnosis.Size = new System.Drawing.Size(1168, 304);
+            this.tabMainDiagnosis.TabIndex = 0;
+            this.tabMainDiagnosis.Text = "Hauptdiagnosen";
+            this.tabMainDiagnosis.UseVisualStyleBackColor = true;
+            // 
+            // tabSecondaryDiagnosis
+            // 
+            this.tabSecondaryDiagnosis.Controls.Add(this.gridSecondaryDiagnosis);
+            this.tabSecondaryDiagnosis.Location = new System.Drawing.Point(4, 22);
+            this.tabSecondaryDiagnosis.Name = "tabSecondaryDiagnosis";
+            this.tabSecondaryDiagnosis.Padding = new System.Windows.Forms.Padding(3);
+            this.tabSecondaryDiagnosis.Size = new System.Drawing.Size(1168, 304);
+            this.tabSecondaryDiagnosis.TabIndex = 1;
+            this.tabSecondaryDiagnosis.Text = "Nebendiagnosen";
+            this.tabSecondaryDiagnosis.UseVisualStyleBackColor = true;
+            // 
+            // tabProcedures
+            // 
+            this.tabProcedures.Controls.Add(this.gridProcedures);
+            this.tabProcedures.Location = new System.Drawing.Point(4, 22);
+            this.tabProcedures.Name = "tabProcedures";
+            this.tabProcedures.Padding = new System.Windows.Forms.Padding(3);
+            this.tabProcedures.Size = new System.Drawing.Size(1168, 304);
+            this.tabProcedures.TabIndex = 2;
+            this.tabProcedures.Text = "Prozeduren";
+            this.tabProcedures.UseVisualStyleBackColor = true;
+            // 
+            // tabDailyCosts
+            // 
+            this.tabDailyCosts.BackColor = System.Drawing.Color.Transparent;
+            this.tabDailyCosts.Location = new System.Drawing.Point(4, 22);
+            this.tabDailyCosts.Name = "tabDailyCosts";
+            this.tabDailyCosts.Padding = new System.Windows.Forms.Padding(3);
+            this.tabDailyCosts.Size = new System.Drawing.Size(1168, 304);
+            this.tabDailyCosts.TabIndex = 3;
+            this.tabDailyCosts.Text = "Tageskosten";
             // 
             // selection
             // 
@@ -211,16 +292,16 @@
             this.selection.Size = new System.Drawing.Size(1182, 87);
             this.selection.TabIndex = 7;
             // 
-            // data1
+            // data
             // 
-            this.data1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.data.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.data1.BackColor = System.Drawing.Color.SeaGreen;
-            this.data1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.data1.Location = new System.Drawing.Point(0, 120);
-            this.data1.Name = "data1";
-            this.data1.Size = new System.Drawing.Size(1182, 252);
-            this.data1.TabIndex = 1;
+            this.data.BackColor = System.Drawing.Color.SeaGreen;
+            this.data.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.data.Location = new System.Drawing.Point(0, 120);
+            this.data.Name = "data";
+            this.data.Size = new System.Drawing.Size(1182, 252);
+            this.data.TabIndex = 1;
             // 
             // titleBar
             // 
@@ -237,12 +318,32 @@
             this.titleBar.MouseMoveTitleBar += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
             this.titleBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
             // 
-            // mnuHelp
+            // gridMainDiagnosis
             // 
-            this.mnuHelp.Name = "mnuHelp";
-            this.mnuHelp.Size = new System.Drawing.Size(152, 22);
-            this.mnuHelp.Text = "Hilfe";
-            this.mnuHelp.Click += new System.EventHandler(this.mnuHelp_Click);
+            this.gridMainDiagnosis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridMainDiagnosis.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridMainDiagnosis.Location = new System.Drawing.Point(3, 3);
+            this.gridMainDiagnosis.Name = "gridMainDiagnosis";
+            this.gridMainDiagnosis.Size = new System.Drawing.Size(1162, 298);
+            this.gridMainDiagnosis.TabIndex = 0;
+            // 
+            // gridSecondaryDiagnosis
+            // 
+            this.gridSecondaryDiagnosis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridSecondaryDiagnosis.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridSecondaryDiagnosis.Location = new System.Drawing.Point(3, 3);
+            this.gridSecondaryDiagnosis.Name = "gridSecondaryDiagnosis";
+            this.gridSecondaryDiagnosis.Size = new System.Drawing.Size(1162, 298);
+            this.gridSecondaryDiagnosis.TabIndex = 1;
+            // 
+            // gridProcedures
+            // 
+            this.gridProcedures.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridProcedures.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridProcedures.Location = new System.Drawing.Point(3, 3);
+            this.gridProcedures.Name = "gridProcedures";
+            this.gridProcedures.Size = new System.Drawing.Size(1162, 298);
+            this.gridProcedures.TabIndex = 2;
             // 
             // FrmPeppBrowser
             // 
@@ -253,7 +354,6 @@
             this.Controls.Add(this.pnlContentBackground);
             this.Controls.Add(this.titleBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MinimumSize = new System.Drawing.Size(1188, 500);
             this.helpProvider1.SetHelpKeyword(this, "Introduction.htm");
             this.helpProvider1.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.Topic);
             this.KeyPreview = true;
@@ -268,6 +368,13 @@
             this.mnuMain.PerformLayout();
             this.pnlContentBackground.ResumeLayout(false);
             this.pnlContentBackground.PerformLayout();
+            this.tabControl.ResumeLayout(false);
+            this.tabMainDiagnosis.ResumeLayout(false);
+            this.tabSecondaryDiagnosis.ResumeLayout(false);
+            this.tabProcedures.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridMainDiagnosis)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSecondaryDiagnosis)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridProcedures)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -292,9 +399,17 @@
         private System.Windows.Forms.ToolStripMenuItem mnuInfo;
         private Selection selection;
         private System.Windows.Forms.Panel pnlContentBackground;
-        private Data data1;
+        private Data data;
         private System.Windows.Forms.HelpProvider helpProvider1;
         private System.Windows.Forms.ToolStripMenuItem mnuHelp;
+        private System.Windows.Forms.TabControl tabControl;
+        private System.Windows.Forms.TabPage tabMainDiagnosis;
+        private System.Windows.Forms.TabPage tabSecondaryDiagnosis;
+        private System.Windows.Forms.TabPage tabProcedures;
+        private System.Windows.Forms.TabPage tabDailyCosts;
+        private System.Windows.Forms.DataGridView gridMainDiagnosis;
+        private System.Windows.Forms.DataGridView gridSecondaryDiagnosis;
+        private System.Windows.Forms.DataGridView gridProcedures;
 
     }
 }

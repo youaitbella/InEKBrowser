@@ -29,7 +29,7 @@
             this.lblPEPP = new System.Windows.Forms.Label();
             this.cbxPepp = new org.inek.controls.CommonControls.ComboField();
             this.lblSk = new System.Windows.Forms.Label();
-            this.cbxMk = new org.inek.controls.CommonControls.ComboField();
+            this.cbxSk = new org.inek.controls.CommonControls.ComboField();
             this.lblMainDiagnosis = new System.Windows.Forms.Label();
             this.cbxMainDiagnosis = new org.inek.controls.CommonControls.ComboField();
             this.cbxSecondaryDiagnosis = new org.inek.controls.CommonControls.ComboField();
@@ -78,7 +78,7 @@
             this.splitContainer1.Panel2.Controls.Add(this.cbxProcedure);
             this.splitContainer1.Panel2.Controls.Add(this.lblProcedure);
             this.splitContainer1.Size = new System.Drawing.Size(850, 60);
-            this.splitContainer1.SplitterDistance = 647;
+            this.splitContainer1.SplitterDistance = 654;
             this.splitContainer1.TabIndex = 0;
             // 
             // splitContainer2
@@ -95,7 +95,7 @@
             this.splitContainer2.Panel1.Controls.Add(this.lblPEPP);
             this.splitContainer2.Panel1.Controls.Add(this.cbxPepp);
             this.splitContainer2.Panel1.Controls.Add(this.lblSk);
-            this.splitContainer2.Panel1.Controls.Add(this.cbxMk);
+            this.splitContainer2.Panel1.Controls.Add(this.cbxSk);
             // 
             // splitContainer2.Panel2
             // 
@@ -104,8 +104,8 @@
             this.splitContainer2.Panel2.Controls.Add(this.cbxMainDiagnosis);
             this.splitContainer2.Panel2.Controls.Add(this.cbxSecondaryDiagnosis);
             this.splitContainer2.Panel2.Controls.Add(this.lblSecondaryDiagnosis);
-            this.splitContainer2.Size = new System.Drawing.Size(644, 54);
-            this.splitContainer2.SplitterDistance = 381;
+            this.splitContainer2.Size = new System.Drawing.Size(651, 54);
+            this.splitContainer2.SplitterDistance = 397;
             this.splitContainer2.TabIndex = 13;
             // 
             // lblPEPP
@@ -122,13 +122,14 @@
             // 
             this.cbxPepp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxPepp.Location = new System.Drawing.Point(63, 32);
+            this.cbxPepp.Location = new System.Drawing.Point(100, 32);
             this.cbxPepp.MinimumSize = new System.Drawing.Size(100, 21);
             this.cbxPepp.MutltiLine = false;
             this.cbxPepp.Name = "cbxPepp";
             this.cbxPepp.ReadOnly = false;
-            this.cbxPepp.Size = new System.Drawing.Size(315, 23);
+            this.cbxPepp.Size = new System.Drawing.Size(294, 21);
             this.cbxPepp.TabIndex = 7;
+            this.cbxPepp.ButtonClicked += new System.EventHandler(this.cbxPepp_ButtonClicked);
             // 
             // lblSk
             // 
@@ -136,21 +137,22 @@
             this.lblSk.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSk.Location = new System.Drawing.Point(3, 9);
             this.lblSk.Name = "lblSk";
-            this.lblSk.Size = new System.Drawing.Size(24, 13);
+            this.lblSk.Size = new System.Drawing.Size(91, 13);
             this.lblSk.TabIndex = 8;
-            this.lblSk.Text = "SK:";
+            this.lblSk.Text = "Strukturkategorie:";
             // 
-            // cbxMk
+            // cbxSk
             // 
-            this.cbxMk.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.cbxSk.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxMk.Location = new System.Drawing.Point(63, 6);
-            this.cbxMk.MinimumSize = new System.Drawing.Size(100, 21);
-            this.cbxMk.MutltiLine = false;
-            this.cbxMk.Name = "cbxMk";
-            this.cbxMk.ReadOnly = false;
-            this.cbxMk.Size = new System.Drawing.Size(315, 23);
-            this.cbxMk.TabIndex = 9;
+            this.cbxSk.Location = new System.Drawing.Point(100, 6);
+            this.cbxSk.MinimumSize = new System.Drawing.Size(100, 21);
+            this.cbxSk.MutltiLine = false;
+            this.cbxSk.Name = "cbxSk";
+            this.cbxSk.ReadOnly = false;
+            this.cbxSk.Size = new System.Drawing.Size(294, 21);
+            this.cbxSk.TabIndex = 9;
+            this.cbxSk.ButtonClicked += new System.EventHandler(this.cbxSk_ButtonClicked);
             // 
             // lblMainDiagnosis
             // 
@@ -171,8 +173,9 @@
             this.cbxMainDiagnosis.MutltiLine = false;
             this.cbxMainDiagnosis.Name = "cbxMainDiagnosis";
             this.cbxMainDiagnosis.ReadOnly = false;
-            this.cbxMainDiagnosis.Size = new System.Drawing.Size(166, 23);
+            this.cbxMainDiagnosis.Size = new System.Drawing.Size(157, 21);
             this.cbxMainDiagnosis.TabIndex = 0;
+            this.cbxMainDiagnosis.ButtonClicked += new System.EventHandler(this.cbxMainDiagnosis_ButtonClicked);
             // 
             // cbxSecondaryDiagnosis
             // 
@@ -183,8 +186,9 @@
             this.cbxSecondaryDiagnosis.MutltiLine = false;
             this.cbxSecondaryDiagnosis.Name = "cbxSecondaryDiagnosis";
             this.cbxSecondaryDiagnosis.ReadOnly = false;
-            this.cbxSecondaryDiagnosis.Size = new System.Drawing.Size(166, 23);
+            this.cbxSecondaryDiagnosis.Size = new System.Drawing.Size(157, 21);
             this.cbxSecondaryDiagnosis.TabIndex = 3;
+            this.cbxSecondaryDiagnosis.ButtonClicked += new System.EventHandler(this.cbxSecondaryDiagnosis_ButtonClicked);
             // 
             // lblSecondaryDiagnosis
             // 
@@ -206,8 +210,9 @@
             this.cbxProcedure.MutltiLine = false;
             this.cbxProcedure.Name = "cbxProcedure";
             this.cbxProcedure.ReadOnly = false;
-            this.cbxProcedure.Size = new System.Drawing.Size(133, 23);
+            this.cbxProcedure.Size = new System.Drawing.Size(133, 21);
             this.cbxProcedure.TabIndex = 15;
+            this.cbxProcedure.ButtonClicked += new System.EventHandler(this.cbxProcedure_ButtonClicked);
             // 
             // lblProcedure
             // 
@@ -251,7 +256,7 @@
         private System.Windows.Forms.Label lblPEPP;
         private controls.CommonControls.ComboField cbxPepp;
         private System.Windows.Forms.Label lblSk;
-        private controls.CommonControls.ComboField cbxMk;
+        private controls.CommonControls.ComboField cbxSk;
         private controls.CommonControls.ComboField cbxMainDiagnosis;
         private controls.CommonControls.ComboField cbxSecondaryDiagnosis;
         private System.Windows.Forms.Label lblSecondaryDiagnosis;

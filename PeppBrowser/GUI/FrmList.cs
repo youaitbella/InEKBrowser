@@ -10,10 +10,21 @@ using System.Windows.Forms;
 
 namespace org.inek.PeppBrowser.GUI {
     public partial class FrmList : Form {
+        public event EventHandler ClickedOk;
+        public event MouseEventHandler DoubleClicked;
+
         public FrmList() {
             InitializeComponent();
             MaxColWitdh = 250;
             VisibleRows = 20;
+        }
+
+        public string SelectedItem {
+            get; set;
+        }
+
+        public int DisplayCellValues {
+            get; set;
         }
 
         /// <summary>
@@ -58,6 +69,21 @@ namespace org.inek.PeppBrowser.GUI {
                 }
             } catch (Exception ex) {
                 Console.WriteLine(ex.Message);
+            }
+        }
+
+        private void btnOk_Click(object sender, EventArgs e) {
+            if (ClickedOk != null) {
+                if (grdData.SelectedRows.Count == 1) {
+                    for (int i = 0; i < DisplayCellValues; i++) {
+                        SelectedItem += grdData.SelectedRows[0].Cells[i].Value + "  ";
+                    }
+                    SelectedItem = SelectedItem.TrimEnd();
+                    ClickedOk(this, e);
+                    Dispose();
+                } else {
+                    MessageBox.Show(this, "Bitte wählen Sie ein Element aus der Liste aus.", "Element auswählen", MessageBoxButtons.OK);
+                }
             }
         }
 

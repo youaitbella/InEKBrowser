@@ -39,11 +39,12 @@
             this.grdData.FormatDecimal = "#,##0.00";
             this.grdData.FormatInteger = "#";
             this.grdData.FrozenCols = 0;
+            this.grdData.KeepFilter = false;
             this.grdData.KeyColumns = null;
             this.grdData.Location = new System.Drawing.Point(12, 12);
             this.grdData.MaxColSize = 0;
             this.grdData.MinimizeColumns = false;
-            this.grdData.MultiSelect = true;
+            this.grdData.MultiSelect = false;
             this.grdData.Name = "grdData";
             this.grdData.RowHeadersVisible = true;
             this.grdData.RowHeight = 18;
@@ -59,8 +60,9 @@
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(75, 23);
             this.btnOk.TabIndex = 1;
-            this.btnOk.Text = "Ok";
+            this.btnOk.Text = "OK";
             this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // FrmList
             // 
@@ -70,6 +72,7 @@
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.grdData);
             this.Name = "FrmList";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FrmList";
             this.Load += new System.EventHandler(this.FormLoad);
             this.ResumeLayout(false);
