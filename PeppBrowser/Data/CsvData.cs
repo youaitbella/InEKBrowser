@@ -8,6 +8,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Markup;
 using org.inek.PeppBrowser.Data.Entities;
 using org.inek.controls.helper;
 
@@ -30,6 +31,7 @@ namespace org.inek.PeppBrowser.Data {
         private readonly List<Procedure> _procedures = new List<Procedure>();
         private readonly List<SecondaryDiagnosis> _secondaryDiagnoses = new List<SecondaryDiagnosis>();
         private readonly List<StructureCategory> _structureCategories = new List<StructureCategory>();
+        private readonly List<Recherche> _recherche = new List<Recherche>(); 
 
         private CsvData() {
         }
@@ -104,6 +106,13 @@ namespace org.inek.PeppBrowser.Data {
                 return _secondaryDiagnoses;
             }
         }
+
+        public IEnumerable<Recherche> Recherche {
+            get {
+                EnsureData(_recherche, "PeppBr_12_14_Recherche.csv", "re_Code;re_Text;re_Hauptdiagnose;re_Nebendiagnose;re_Prozedur");
+                return _recherche;
+            }
+        } 
 
 
         private void EnsureData<T>(List<T> list, string filename, string headline) {

@@ -76,7 +76,7 @@ namespace org.inek.PeppBrowser.GUI {
             if (ClickedOk != null) {
                 if (grdData.SelectedRows.Count == 1) {
                     for (int i = 0; i < DisplayCellValues; i++) {
-                        SelectedItem += grdData.SelectedRows[0].Cells[i].Value + "  ";
+                        SelectedItem += grdData.SelectedRows[0].Cells[i].Value + "#";
                     }
                     SelectedItem = SelectedItem.TrimEnd();
                     ClickedOk(this, e);

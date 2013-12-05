@@ -66,7 +66,7 @@ namespace org.inek.PeppBrowser.Data.Entities {
         public decimal LosAverage{ get; set; }
 
         [Column("kd_VwdStd")]
-        public decimal LosHours { get; set; }
+        public decimal LosStandard { get; set; }
 
         [Column("kd_VwdHK")]
         public decimal LosHc { get; set; }  // hc = homogeneity coefficient
@@ -126,7 +126,7 @@ namespace org.inek.PeppBrowser.Data.Entities {
         public decimal AgeAverage { get; set; }
 
         [Column("kd_AlterStd")]
-        public decimal AgeHours { get; set; }
+        public decimal AgeStandard { get; set; }
 
         [Column("kd_AlterU28T")]
         public decimal AgeBelow28Days { get; set; }
@@ -180,7 +180,7 @@ namespace org.inek.PeppBrowser.Data.Entities {
         public decimal DayCostsAverage { get; set; }
 
         [Column("kd_TageskostenStd")]
-        public decimal DayCostsHour { get; set; }
+        public decimal DayCostsStandard { get; set; }
 
         [Column("kd_TageskostenHK")]
         public decimal DayCostsHc { get; set; } // hc = homogeneity coefficient

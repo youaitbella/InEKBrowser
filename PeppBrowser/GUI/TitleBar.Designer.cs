@@ -58,9 +58,9 @@
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(3, 3);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(220, 25);
+            this.lblTitle.Size = new System.Drawing.Size(152, 25);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "PEPP Offline Browser";
+            this.lblTitle.Text = "PEPP Browser";
             this.lblTitle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblTitle_MouseMove);
             // 
             // pnlFormStates
@@ -81,6 +81,7 @@
             // picIconify
             // 
             this.picIconify.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picIconify.BackgroundImage")));
+            this.picIconify.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picIconify.Location = new System.Drawing.Point(117, 7);
             this.picIconify.Name = "picIconify";
             this.picIconify.Size = new System.Drawing.Size(18, 18);
@@ -94,6 +95,7 @@
             // 
             this.picExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picExit.BackgroundImage")));
             this.picExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picExit.Location = new System.Drawing.Point(166, 7);
             this.picExit.Name = "picExit";
             this.picExit.Size = new System.Drawing.Size(18, 18);
@@ -107,6 +109,7 @@
             // 
             this.picMinMax.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picMinMax.BackgroundImage")));
             this.picMinMax.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picMinMax.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picMinMax.Location = new System.Drawing.Point(141, 7);
             this.picMinMax.Name = "picMinMax";
             this.picMinMax.Size = new System.Drawing.Size(18, 18);
@@ -120,7 +123,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightYellow;
+            this.BackColor = System.Drawing.Color.SeaGreen;
             this.Controls.Add(this.pnlFormStates);
             this.Controls.Add(this.pnlTitle);
             this.Name = "TitleBar";

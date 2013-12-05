@@ -37,6 +37,7 @@
             this.grdData.EnableInfo = false;
             this.grdData.ExtendColumns = false;
             this.grdData.FormatDecimal = "#,##0.00";
+            this.grdData.FormatDouble = "#,##0";
             this.grdData.FormatInteger = "#";
             this.grdData.FrozenCols = 0;
             this.grdData.KeepFilter = false;
@@ -46,6 +47,7 @@
             this.grdData.MinimizeColumns = false;
             this.grdData.MultiSelect = false;
             this.grdData.Name = "grdData";
+            this.grdData.ReadOnly = true;
             this.grdData.RowHeadersVisible = true;
             this.grdData.RowHeight = 18;
             this.grdData.Size = new System.Drawing.Size(458, 237);

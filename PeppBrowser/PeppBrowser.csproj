@@ -58,6 +58,7 @@
     <Compile Include="Data\Entities\Pepp.cs" />
     <Compile Include="Data\CsvData.cs" />
     <Compile Include="Data\Entities\Procedure.cs" />
+    <Compile Include="Data\Entities\Recherche.cs" />
     <Compile Include="Data\Entities\SecondaryDiagnosis.cs" />
     <Compile Include="Data\Entities\StructureCategory.cs" />
     <Compile Include="GUI\Data.cs">
