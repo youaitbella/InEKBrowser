@@ -61,14 +61,14 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(86, 16);
+            this.label1.Location = new System.Drawing.Point(2, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 48);
+            this.label1.Size = new System.Drawing.Size(278, 48);
             this.label1.TabIndex = 2;
             this.label1.Text = "PEPP Browser\r\nVersion 2013.1\r\n© InEK GmbH";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
@@ -107,7 +107,7 @@
             this.lblProgressState.Name = "lblProgressState";
             this.lblProgressState.Size = new System.Drawing.Size(284, 23);
             this.lblProgressState.TabIndex = 5;
-            this.lblProgressState.Text = "Lade Kostenbereich.csv...";
+            this.lblProgressState.Text = "Lade Kostenbereich...";
             this.lblProgressState.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // titleBar
@@ -120,6 +120,8 @@
             this.titleBar.ShowMinMax = false;
             this.titleBar.Size = new System.Drawing.Size(309, 30);
             this.titleBar.TabIndex = 2;
+            this.titleBar.ClickedExit += new System.EventHandler(this.titleBar_ClickedExit);
+            this.titleBar.MouseMoveTitleBar += new System.Windows.Forms.MouseEventHandler(this.titleBar_MouseMove);
             this.titleBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.titleBar_MouseMove);
             // 
             // FrmSplash
@@ -137,7 +139,6 @@
             this.Shown += new System.EventHandler(this.FrmSplash_Shown);
             this.grpPanel.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

@@ -450,6 +450,7 @@
             this.Name = "FrmPeppBrowser";
             this.helpProvider1.SetShowHelp(this, true);
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PEPP-Browser";
             this.TransparencyKey = System.Drawing.Color.Pink;
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);

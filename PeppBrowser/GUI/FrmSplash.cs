@@ -99,5 +99,9 @@ namespace org.inek.PeppBrowser.GUI {
                 this.Visible = false;
             }
         }
+
+        private void titleBar_ClickedExit(object sender, EventArgs e) {
+            Application.Exit();
+        }
     }
 }
