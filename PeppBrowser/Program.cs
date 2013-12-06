@@ -14,7 +14,7 @@ namespace PeppBrowser {
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmPeppBrowser());
+            Application.Run(new FrmSplash());
         }
     }
 }

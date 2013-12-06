@@ -45,14 +45,14 @@ namespace org.inek.PeppBrowser.Data {
 
         public IEnumerable<Cost> Costs {
             get {
-                EnsureData(_costs, "PeppBr_12_14_Kosten.csv", "ko_Pepp;ko_BereichNr;ko_KArt1;ko_KArt2;ko_KArt3a;ko_KArt3b;ko_KArt3c;ko_KArt3;ko_KArt4a;ko_KArt4b;ko_KArt6a;ko_KArt6b;ko_KArt7;ko_KArt8;ko_Summe");
+                EnsureData(_costs, "PeppBr_12_14_Kosten.csv","ko_Pepp;ko_BereichNr;ko_KArt1;ko_KArt2;ko_KArt3a;ko_KArt3b;ko_KArt3c;ko_KArt3;ko_KArt4a;ko_KArt4b;ko_KArt5;ko_KArt6a;ko_KArt6b;ko_KArt7;ko_KArt8");
                 return _costs;
             }
         }
 
         public IEnumerable<CostDomain> CostDomains {
             get {
-                EnsureData(_costDomains, "PeppBr_12_14_Kostenbereich.csv", "kb_Nr;kb_Bereich;kb_BereichOrder");
+                EnsureData(_costDomains, "PeppBr_12_14_Kostenbereich.csv", "kb_Nr;kb_BereichOrder;kb_Bereich");
                 return _costDomains;
             }
         }

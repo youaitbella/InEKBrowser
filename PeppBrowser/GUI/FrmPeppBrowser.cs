@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 using org.inek.controls.FilteredDataGridView;
 using org.inek.controls.helper;
 using org.inek.PeppBrowser.Data;
@@ -37,6 +38,7 @@ namespace org.inek.PeppBrowser.GUI {
 
         public FrmPeppBrowser() {
             InitializeComponent();
+            Selection.Parent = this;
         }
 
         private void mnuPepp_Click(object sender, System.EventArgs e) {
@@ -320,25 +322,25 @@ namespace org.inek.PeppBrowser.GUI {
             data.GenderFemale = q.Select(p => Math.Round((p.GenderFemale*100), 2).ToString()).ElementAt(0);     // Prozent
             data.AgeAverage = q.Select(p => Math.Round(p.AgeAverage, 1).ToString()).ElementAt(0);               // einstellig Dezimal
             data.AgeStandardDeviation = q.Select(p => Math.Round(p.AgeStandard,1).ToString()).ElementAt(0);     // einstellig Dezimal
-            data.LT28Days = q.Select(p => p.AgeBelow28Days.ToString()).ElementAt(0);
-            data.Bt28Days1Year = q.Select(p => p.AgeBelow1Year.ToString()).ElementAt(0);
-            data.Bt1Year2 = q.Select(p => p.AgeBelow3Years.ToString()).ElementAt(0);
-            data.Bt3Year5 = q.Select(p => p.AgeBelow6Years.ToString()).ElementAt(0);
-            data.Bt6Year9 = q.Select(p => p.AgeBelow10Years.ToString()).ElementAt(0);
-            data.Bt10Year15 = q.Select(p => p.AgeBelow16Years.ToString()).ElementAt(0);
-            data.Bt16Year17 = q.Select(p => p.AgeBelow18Years.ToString()).ElementAt(0);
-            data.Bt18Year29 = q.Select(p => p.AgeBelow30Years.ToString()).ElementAt(0);
-            data.Bt30Year39 = q.Select(p => p.AgeBelow40Years.ToString()).ElementAt(0);
-            data.Bt40Year49 = q.Select(p => p.AgeBelow50Years.ToString()).ElementAt(0);
-            data.Bt50Year54 = q.Select(p => p.AgeBelow55Years.ToString()).ElementAt(0);
-            data.Bt55Year59 = q.Select(p => p.AgeBelow60Years.ToString()).ElementAt(0);
-            data.Bt60Year64 = q.Select(p => p.AgeBelow65Years.ToString()).ElementAt(0);
-            data.Bt65Year74 = q.Select(p => p.AgeBelow75Years.ToString()).ElementAt(0);
-            data.Bt75Year79 = q.Select(p => p.AgeBelow80Years.ToString()).ElementAt(0);
-            data.Gt79Year = q.Select(p => p.AgeBelow99Years.ToString()).ElementAt(0);
+            data.LT28Days = q.Select(p => Math.Round((p.AgeBelow28Days*100),2).ToString()).ElementAt(0);        // Prozent
+            data.Bt28Days1Year = q.Select(p => Math.Round((p.AgeBelow1Year*100),2).ToString()).ElementAt(0);    // Prozent
+            data.Bt1Year2 = q.Select(p => Math.Round((p.AgeBelow3Years*100),2).ToString()).ElementAt(0);        // Prozent
+            data.Bt3Year5 = q.Select(p => Math.Round((p.AgeBelow6Years*100),2).ToString()).ElementAt(0);        // Prozent
+            data.Bt6Year9 = q.Select(p => Math.Round((p.AgeBelow10Years*100),2).ToString()).ElementAt(0);       // Prozent
+            data.Bt10Year15 = q.Select(p => Math.Round((p.AgeBelow16Years*100),2).ToString()).ElementAt(0);     // Prozent
+            data.Bt16Year17 = q.Select(p => Math.Round((p.AgeBelow18Years*100),2).ToString()).ElementAt(0);     // Prozent
+            data.Bt18Year29 = q.Select(p => Math.Round((p.AgeBelow30Years*100),2).ToString()).ElementAt(0);     // Prozent
+            data.Bt30Year39 = q.Select(p => Math.Round((p.AgeBelow40Years*100),2).ToString()).ElementAt(0);     // Prozent
+            data.Bt40Year49 = q.Select(p => Math.Round((p.AgeBelow50Years*100),2).ToString()).ElementAt(0);     // Prozent
+            data.Bt50Year54 = q.Select(p => Math.Round((p.AgeBelow55Years*100),2).ToString()).ElementAt(0);     // Prozent
+            data.Bt55Year59 = q.Select(p => Math.Round((p.AgeBelow60Years*100),2).ToString()).ElementAt(0);     // Prozent
+            data.Bt60Year64 = q.Select(p => Math.Round((p.AgeBelow65Years*100),2).ToString()).ElementAt(0);     // Prozent
+            data.Bt65Year74 = q.Select(p => Math.Round((p.AgeBelow75Years*100),2).ToString()).ElementAt(0);     // Prozent
+            data.Bt75Year79 = q.Select(p => Math.Round((p.AgeBelow80Years*100),2).ToString()).ElementAt(0);     // Prozent
+            data.Gt79Year = q.Select(p => Math.Round((p.AgeBelow99Years*100),2).ToString()).ElementAt(0);       // Prozent
             data.DailyCostsAverage = q.Select(p => Math.Round(p.DayCostsAverage, 2).ToString()).ElementAt(0);   // zweistellig Dezimal (money)
             data.DailyCostsStandardDeviation = q.Select(p => Math.Round(p.DayCostsStandard, 2).ToString()).ElementAt(0);    // zweistellig Dezimal (money)
-            data.DailyCostsHomogeneityCoeff = q.Select(p => p.DayCostsHc.ToString()).ElementAt(0);
+            data.DailyCostsHomogeneityCoeff = q.Select(p => Math.Round((p.DayCostsHc*100),2).ToString()).ElementAt(0);  // Prozent
             data.TitlePEPP = "PEPP - " + PEPP;
         }
 

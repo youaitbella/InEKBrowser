@@ -19,6 +19,16 @@ namespace org.inek.PeppBrowser.GUI {
         public event EventHandler ClickedIconify;
         public event MouseEventHandler MouseMoveTitleBar;
 
+        public bool ShowIconify {
+            get { return picIconify.Visible; }
+            set { picIconify.Visible = value; }
+        }
+
+        public bool ShowMinMax {
+            get { return picMinMax.Visible; }
+            set { picMinMax.Visible = value; }
+        }
+
         public TitleBar() {
             InitializeComponent();
         }

@@ -47,7 +47,7 @@
             this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlTitle.Location = new System.Drawing.Point(0, 0);
             this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(296, 30);
+            this.pnlTitle.Size = new System.Drawing.Size(157, 30);
             this.pnlTitle.TabIndex = 3;
             this.pnlTitle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlTitle_MouseMove);
             // 
@@ -72,9 +72,9 @@
             this.pnlFormStates.Controls.Add(this.picExit);
             this.pnlFormStates.Controls.Add(this.picMinMax);
             this.pnlFormStates.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlFormStates.Location = new System.Drawing.Point(671, 0);
+            this.pnlFormStates.Location = new System.Drawing.Point(781, 0);
             this.pnlFormStates.Name = "pnlFormStates";
-            this.pnlFormStates.Size = new System.Drawing.Size(197, 30);
+            this.pnlFormStates.Size = new System.Drawing.Size(87, 30);
             this.pnlFormStates.TabIndex = 0;
             this.pnlFormStates.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlFormStates_MouseMove);
             // 
@@ -82,7 +82,7 @@
             // 
             this.picIconify.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picIconify.BackgroundImage")));
             this.picIconify.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picIconify.Location = new System.Drawing.Point(117, 7);
+            this.picIconify.Location = new System.Drawing.Point(13, 7);
             this.picIconify.Name = "picIconify";
             this.picIconify.Size = new System.Drawing.Size(18, 18);
             this.picIconify.TabIndex = 2;
@@ -96,7 +96,7 @@
             this.picExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picExit.BackgroundImage")));
             this.picExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picExit.Location = new System.Drawing.Point(166, 7);
+            this.picExit.Location = new System.Drawing.Point(62, 7);
             this.picExit.Name = "picExit";
             this.picExit.Size = new System.Drawing.Size(18, 18);
             this.picExit.TabIndex = 1;
@@ -110,7 +110,7 @@
             this.picMinMax.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picMinMax.BackgroundImage")));
             this.picMinMax.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picMinMax.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picMinMax.Location = new System.Drawing.Point(141, 7);
+            this.picMinMax.Location = new System.Drawing.Point(37, 7);
             this.picMinMax.Name = "picMinMax";
             this.picMinMax.Size = new System.Drawing.Size(18, 18);
             this.picMinMax.TabIndex = 0;
