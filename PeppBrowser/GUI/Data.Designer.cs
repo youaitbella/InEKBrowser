@@ -127,6 +127,9 @@
             this.txtDaysSummary = new System.Windows.Forms.TextBox();
             this.lblLosNumDays = new System.Windows.Forms.Label();
             this.toolTipLT28Days = new System.Windows.Forms.ToolTip(this.components);
+            this.lblVwdDaysSmall = new System.Windows.Forms.Label();
+            this.lblDayCostsEuro = new System.Windows.Forms.Label();
+            this.lblYears = new System.Windows.Forms.Label();
             this.pnlData.SuspendLayout();
             this.grpBigAge.SuspendLayout();
             this.grpGender.SuspendLayout();
@@ -172,6 +175,8 @@
             // 
             // pnlSummaryLine
             // 
+            this.pnlSummaryLine.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlSummaryLine.BackColor = System.Drawing.Color.White;
             this.pnlSummaryLine.Location = new System.Drawing.Point(13, 76);
             this.pnlSummaryLine.Name = "pnlSummaryLine";
@@ -180,7 +185,7 @@
             // 
             // grpBigAge
             // 
-            this.grpBigAge.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.grpBigAge.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.grpBigAge.AutoSize = true;
             this.grpBigAge.BackColor = System.Drawing.Color.Transparent;
             this.grpBigAge.Controls.Add(this.txtGt79Year);
@@ -222,7 +227,7 @@
             this.grpBigAge.Size = new System.Drawing.Size(262, 233);
             this.grpBigAge.TabIndex = 18;
             this.grpBigAge.TabStop = false;
-            this.grpBigAge.Text = "Alter";
+            this.grpBigAge.Text = "Alter (%)";
             // 
             // txtGt79Year
             // 
@@ -578,19 +583,19 @@
             // 
             // grpGender
             // 
-            this.grpGender.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.grpGender.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.grpGender.AutoSize = true;
             this.grpGender.BackColor = System.Drawing.Color.Transparent;
             this.grpGender.Controls.Add(this.txtGenderFemale);
             this.grpGender.Controls.Add(this.txtGenderMale);
             this.grpGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpGender.ForeColor = System.Drawing.Color.White;
-            this.grpGender.Location = new System.Drawing.Point(689, 141);
+            this.grpGender.Location = new System.Drawing.Point(689, 162);
             this.grpGender.Name = "grpGender";
-            this.grpGender.Size = new System.Drawing.Size(60, 84);
+            this.grpGender.Size = new System.Drawing.Size(73, 84);
             this.grpGender.TabIndex = 17;
             this.grpGender.TabStop = false;
-            this.grpGender.Text = "Anteil";
+            this.grpGender.Text = "Anteil (%)";
             // 
             // txtGenderFemale
             // 
@@ -600,7 +605,7 @@
             this.txtGenderFemale.Location = new System.Drawing.Point(10, 42);
             this.txtGenderFemale.Name = "txtGenderFemale";
             this.txtGenderFemale.ReadOnly = true;
-            this.txtGenderFemale.Size = new System.Drawing.Size(38, 21);
+            this.txtGenderFemale.Size = new System.Drawing.Size(51, 21);
             this.txtGenderFemale.TabIndex = 43;
             this.txtGenderFemale.Text = "0";
             this.toolTipLT28Days.SetToolTip(this.txtGenderFemale, "Test");
@@ -613,17 +618,18 @@
             this.txtGenderMale.Location = new System.Drawing.Point(10, 18);
             this.txtGenderMale.Name = "txtGenderMale";
             this.txtGenderMale.ReadOnly = true;
-            this.txtGenderMale.Size = new System.Drawing.Size(38, 21);
+            this.txtGenderMale.Size = new System.Drawing.Size(51, 21);
             this.txtGenderMale.TabIndex = 42;
             this.txtGenderMale.Text = "0";
             this.toolTipLT28Days.SetToolTip(this.txtGenderMale, "Test");
             // 
             // lblFemale
             // 
+            this.lblFemale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFemale.AutoSize = true;
             this.lblFemale.BackColor = System.Drawing.Color.Transparent;
             this.lblFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFemale.Location = new System.Drawing.Point(580, 185);
+            this.lblFemale.Location = new System.Drawing.Point(580, 206);
             this.lblFemale.Name = "lblFemale";
             this.lblFemale.Size = new System.Drawing.Size(66, 15);
             this.lblFemale.TabIndex = 16;
@@ -631,10 +637,11 @@
             // 
             // lblMale
             // 
+            this.lblMale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblMale.AutoSize = true;
             this.lblMale.BackColor = System.Drawing.Color.Transparent;
             this.lblMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMale.Location = new System.Drawing.Point(580, 160);
+            this.lblMale.Location = new System.Drawing.Point(580, 181);
             this.lblMale.Name = "lblMale";
             this.lblMale.Size = new System.Drawing.Size(70, 15);
             this.lblMale.TabIndex = 15;
@@ -642,16 +649,17 @@
             // 
             // grpAge
             // 
-            this.grpAge.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.grpAge.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.grpAge.AutoSize = true;
             this.grpAge.BackColor = System.Drawing.Color.Transparent;
+            this.grpAge.Controls.Add(this.lblYears);
             this.grpAge.Controls.Add(this.txtAgeStandardDeviation);
             this.grpAge.Controls.Add(this.txtAgeAverage);
             this.grpAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpAge.ForeColor = System.Drawing.Color.White;
-            this.grpAge.Location = new System.Drawing.Point(839, 13);
+            this.grpAge.Location = new System.Drawing.Point(842, 13);
             this.grpAge.Name = "grpAge";
-            this.grpAge.Size = new System.Drawing.Size(59, 109);
+            this.grpAge.Size = new System.Drawing.Size(59, 138);
             this.grpAge.TabIndex = 14;
             this.grpAge.TabStop = false;
             this.grpAge.Text = "Alter";
@@ -661,7 +669,7 @@
             this.txtAgeStandardDeviation.BackColor = System.Drawing.Color.SeaGreen;
             this.txtAgeStandardDeviation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAgeStandardDeviation.ForeColor = System.Drawing.Color.White;
-            this.txtAgeStandardDeviation.Location = new System.Drawing.Point(10, 44);
+            this.txtAgeStandardDeviation.Location = new System.Drawing.Point(10, 73);
             this.txtAgeStandardDeviation.Name = "txtAgeStandardDeviation";
             this.txtAgeStandardDeviation.ReadOnly = true;
             this.txtAgeStandardDeviation.Size = new System.Drawing.Size(38, 21);
@@ -674,7 +682,7 @@
             this.txtAgeAverage.BackColor = System.Drawing.Color.SeaGreen;
             this.txtAgeAverage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAgeAverage.ForeColor = System.Drawing.Color.White;
-            this.txtAgeAverage.Location = new System.Drawing.Point(10, 20);
+            this.txtAgeAverage.Location = new System.Drawing.Point(10, 49);
             this.txtAgeAverage.Name = "txtAgeAverage";
             this.txtAgeAverage.ReadOnly = true;
             this.txtAgeAverage.Size = new System.Drawing.Size(38, 21);
@@ -684,17 +692,18 @@
             // 
             // grpDailyCosts
             // 
-            this.grpDailyCosts.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.grpDailyCosts.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.grpDailyCosts.AutoSize = true;
             this.grpDailyCosts.BackColor = System.Drawing.Color.Transparent;
+            this.grpDailyCosts.Controls.Add(this.lblDayCostsEuro);
             this.grpDailyCosts.Controls.Add(this.txtDailyCostsHomogeneityCoeff);
             this.grpDailyCosts.Controls.Add(this.txtDailyCostsStandardDeviation);
             this.grpDailyCosts.Controls.Add(this.txtDailyCostsAverage);
             this.grpDailyCosts.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpDailyCosts.ForeColor = System.Drawing.Color.White;
-            this.grpDailyCosts.Location = new System.Drawing.Point(758, 13);
+            this.grpDailyCosts.Location = new System.Drawing.Point(764, 13);
             this.grpDailyCosts.Name = "grpDailyCosts";
-            this.grpDailyCosts.Size = new System.Drawing.Size(75, 109);
+            this.grpDailyCosts.Size = new System.Drawing.Size(75, 138);
             this.grpDailyCosts.TabIndex = 13;
             this.grpDailyCosts.TabStop = false;
             this.grpDailyCosts.Text = "Tagesk.";
@@ -704,7 +713,7 @@
             this.txtDailyCostsHomogeneityCoeff.BackColor = System.Drawing.Color.SeaGreen;
             this.txtDailyCostsHomogeneityCoeff.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDailyCostsHomogeneityCoeff.ForeColor = System.Drawing.Color.White;
-            this.txtDailyCostsHomogeneityCoeff.Location = new System.Drawing.Point(10, 68);
+            this.txtDailyCostsHomogeneityCoeff.Location = new System.Drawing.Point(10, 97);
             this.txtDailyCostsHomogeneityCoeff.Name = "txtDailyCostsHomogeneityCoeff";
             this.txtDailyCostsHomogeneityCoeff.ReadOnly = true;
             this.txtDailyCostsHomogeneityCoeff.Size = new System.Drawing.Size(54, 21);
@@ -717,7 +726,7 @@
             this.txtDailyCostsStandardDeviation.BackColor = System.Drawing.Color.SeaGreen;
             this.txtDailyCostsStandardDeviation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDailyCostsStandardDeviation.ForeColor = System.Drawing.Color.White;
-            this.txtDailyCostsStandardDeviation.Location = new System.Drawing.Point(10, 44);
+            this.txtDailyCostsStandardDeviation.Location = new System.Drawing.Point(10, 73);
             this.txtDailyCostsStandardDeviation.Name = "txtDailyCostsStandardDeviation";
             this.txtDailyCostsStandardDeviation.ReadOnly = true;
             this.txtDailyCostsStandardDeviation.Size = new System.Drawing.Size(54, 21);
@@ -730,7 +739,7 @@
             this.txtDailyCostsAverage.BackColor = System.Drawing.Color.SeaGreen;
             this.txtDailyCostsAverage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDailyCostsAverage.ForeColor = System.Drawing.Color.White;
-            this.txtDailyCostsAverage.Location = new System.Drawing.Point(10, 20);
+            this.txtDailyCostsAverage.Location = new System.Drawing.Point(10, 49);
             this.txtDailyCostsAverage.Name = "txtDailyCostsAverage";
             this.txtDailyCostsAverage.ReadOnly = true;
             this.txtDailyCostsAverage.Size = new System.Drawing.Size(54, 21);
@@ -740,10 +749,11 @@
             // 
             // lblHomogeneityCoefficient
             // 
+            this.lblHomogeneityCoefficient.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHomogeneityCoefficient.AutoSize = true;
             this.lblHomogeneityCoefficient.BackColor = System.Drawing.Color.Transparent;
             this.lblHomogeneityCoefficient.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHomogeneityCoefficient.Location = new System.Drawing.Point(576, 83);
+            this.lblHomogeneityCoefficient.Location = new System.Drawing.Point(576, 112);
             this.lblHomogeneityCoefficient.Name = "lblHomogeneityCoefficient";
             this.lblHomogeneityCoefficient.Size = new System.Drawing.Size(111, 15);
             this.lblHomogeneityCoefficient.TabIndex = 12;
@@ -751,10 +761,11 @@
             // 
             // lblStandardDeviation
             // 
+            this.lblStandardDeviation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStandardDeviation.AutoSize = true;
             this.lblStandardDeviation.BackColor = System.Drawing.Color.Transparent;
             this.lblStandardDeviation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStandardDeviation.Location = new System.Drawing.Point(576, 57);
+            this.lblStandardDeviation.Location = new System.Drawing.Point(576, 86);
             this.lblStandardDeviation.Name = "lblStandardDeviation";
             this.lblStandardDeviation.Size = new System.Drawing.Size(99, 15);
             this.lblStandardDeviation.TabIndex = 11;
@@ -762,10 +773,11 @@
             // 
             // lblAverage
             // 
+            this.lblAverage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAverage.AutoSize = true;
             this.lblAverage.BackColor = System.Drawing.Color.Transparent;
             this.lblAverage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAverage.Location = new System.Drawing.Point(576, 31);
+            this.lblAverage.Location = new System.Drawing.Point(576, 60);
             this.lblAverage.Name = "lblAverage";
             this.lblAverage.Size = new System.Drawing.Size(74, 15);
             this.lblAverage.TabIndex = 10;
@@ -773,9 +785,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.AutoSize = true;
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.lblVwdDaysSmall);
             this.groupBox1.Controls.Add(this.txtLosHomogeneityCoeff);
             this.groupBox1.Controls.Add(this.txtLosStandardDeviation);
             this.groupBox1.Controls.Add(this.txtLosAverage);
@@ -783,7 +796,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(689, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(63, 109);
+            this.groupBox1.Size = new System.Drawing.Size(72, 138);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Vwd.";
@@ -793,10 +806,10 @@
             this.txtLosHomogeneityCoeff.BackColor = System.Drawing.Color.SeaGreen;
             this.txtLosHomogeneityCoeff.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLosHomogeneityCoeff.ForeColor = System.Drawing.Color.White;
-            this.txtLosHomogeneityCoeff.Location = new System.Drawing.Point(10, 68);
+            this.txtLosHomogeneityCoeff.Location = new System.Drawing.Point(10, 97);
             this.txtLosHomogeneityCoeff.Name = "txtLosHomogeneityCoeff";
             this.txtLosHomogeneityCoeff.ReadOnly = true;
-            this.txtLosHomogeneityCoeff.Size = new System.Drawing.Size(43, 21);
+            this.txtLosHomogeneityCoeff.Size = new System.Drawing.Size(51, 21);
             this.txtLosHomogeneityCoeff.TabIndex = 39;
             this.txtLosHomogeneityCoeff.Text = "0";
             this.toolTipLT28Days.SetToolTip(this.txtLosHomogeneityCoeff, "Test");
@@ -806,10 +819,10 @@
             this.txtLosStandardDeviation.BackColor = System.Drawing.Color.SeaGreen;
             this.txtLosStandardDeviation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLosStandardDeviation.ForeColor = System.Drawing.Color.White;
-            this.txtLosStandardDeviation.Location = new System.Drawing.Point(10, 44);
+            this.txtLosStandardDeviation.Location = new System.Drawing.Point(10, 73);
             this.txtLosStandardDeviation.Name = "txtLosStandardDeviation";
             this.txtLosStandardDeviation.ReadOnly = true;
-            this.txtLosStandardDeviation.Size = new System.Drawing.Size(43, 21);
+            this.txtLosStandardDeviation.Size = new System.Drawing.Size(51, 21);
             this.txtLosStandardDeviation.TabIndex = 38;
             this.txtLosStandardDeviation.Text = "0";
             this.toolTipLT28Days.SetToolTip(this.txtLosStandardDeviation, "Test");
@@ -819,17 +832,17 @@
             this.txtLosAverage.BackColor = System.Drawing.Color.SeaGreen;
             this.txtLosAverage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLosAverage.ForeColor = System.Drawing.Color.White;
-            this.txtLosAverage.Location = new System.Drawing.Point(10, 20);
+            this.txtLosAverage.Location = new System.Drawing.Point(10, 49);
             this.txtLosAverage.Name = "txtLosAverage";
             this.txtLosAverage.ReadOnly = true;
-            this.txtLosAverage.Size = new System.Drawing.Size(43, 21);
+            this.txtLosAverage.Size = new System.Drawing.Size(51, 21);
             this.txtLosAverage.TabIndex = 37;
             this.txtLosAverage.Text = "0";
             this.toolTipLT28Days.SetToolTip(this.txtLosAverage, "Test");
             // 
             // grpCatalog
             // 
-            this.grpCatalog.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.grpCatalog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.grpCatalog.AutoSize = true;
             this.grpCatalog.BackColor = System.Drawing.Color.Transparent;
             this.grpCatalog.Controls.Add(this.txtValuationRatio5);
@@ -1101,7 +1114,7 @@
             // 
             // grpCases
             // 
-            this.grpCases.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.grpCases.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.grpCases.AutoSize = true;
             this.grpCases.BackColor = System.Drawing.Color.Transparent;
             this.grpCases.Controls.Add(this.txtCasesP5);
@@ -1128,6 +1141,7 @@
             // 
             // txtCasesP5
             // 
+            this.txtCasesP5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txtCasesP5.BackColor = System.Drawing.Color.SeaGreen;
             this.txtCasesP5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCasesP5.ForeColor = System.Drawing.Color.White;
@@ -1141,6 +1155,7 @@
             // 
             // txtCasesP4
             // 
+            this.txtCasesP4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txtCasesP4.BackColor = System.Drawing.Color.SeaGreen;
             this.txtCasesP4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCasesP4.ForeColor = System.Drawing.Color.White;
@@ -1154,6 +1169,7 @@
             // 
             // txtCasesP3
             // 
+            this.txtCasesP3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txtCasesP3.BackColor = System.Drawing.Color.SeaGreen;
             this.txtCasesP3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCasesP3.ForeColor = System.Drawing.Color.White;
@@ -1167,6 +1183,7 @@
             // 
             // txtCasesP2
             // 
+            this.txtCasesP2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txtCasesP2.BackColor = System.Drawing.Color.SeaGreen;
             this.txtCasesP2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCasesP2.ForeColor = System.Drawing.Color.White;
@@ -1180,6 +1197,7 @@
             // 
             // txtCasesP1
             // 
+            this.txtCasesP1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txtCasesP1.BackColor = System.Drawing.Color.SeaGreen;
             this.txtCasesP1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCasesP1.ForeColor = System.Drawing.Color.White;
@@ -1193,6 +1211,7 @@
             // 
             // txtCases5
             // 
+            this.txtCases5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCases5.BackColor = System.Drawing.Color.SeaGreen;
             this.txtCases5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCases5.ForeColor = System.Drawing.Color.White;
@@ -1206,6 +1225,7 @@
             // 
             // txtCases4
             // 
+            this.txtCases4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCases4.BackColor = System.Drawing.Color.SeaGreen;
             this.txtCases4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCases4.ForeColor = System.Drawing.Color.White;
@@ -1219,6 +1239,7 @@
             // 
             // txtCases3
             // 
+            this.txtCases3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCases3.BackColor = System.Drawing.Color.SeaGreen;
             this.txtCases3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCases3.ForeColor = System.Drawing.Color.White;
@@ -1232,6 +1253,7 @@
             // 
             // txtCases2
             // 
+            this.txtCases2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCases2.BackColor = System.Drawing.Color.SeaGreen;
             this.txtCases2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCases2.ForeColor = System.Drawing.Color.White;
@@ -1245,6 +1267,7 @@
             // 
             // txtCases1
             // 
+            this.txtCases1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCases1.BackColor = System.Drawing.Color.SeaGreen;
             this.txtCases1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCases1.ForeColor = System.Drawing.Color.White;
@@ -1258,6 +1281,7 @@
             // 
             // txtCasesSummary
             // 
+            this.txtCasesSummary.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCasesSummary.BackColor = System.Drawing.Color.SeaGreen;
             this.txtCasesSummary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCasesSummary.ForeColor = System.Drawing.Color.White;
@@ -1360,7 +1384,7 @@
             // 
             // grpLos
             // 
-            this.grpLos.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.grpLos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.grpLos.AutoSize = true;
             this.grpLos.BackColor = System.Drawing.Color.Transparent;
             this.grpLos.Controls.Add(this.txtDays4);
@@ -1467,6 +1491,39 @@
             this.lblLosNumDays.Size = new System.Drawing.Size(39, 15);
             this.lblLosNumDays.TabIndex = 10;
             this.lblLosNumDays.Text = "Tage";
+            // 
+            // lblVwdDaysSmall
+            // 
+            this.lblVwdDaysSmall.AutoSize = true;
+            this.lblVwdDaysSmall.BackColor = System.Drawing.Color.Transparent;
+            this.lblVwdDaysSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVwdDaysSmall.Location = new System.Drawing.Point(7, 22);
+            this.lblVwdDaysSmall.Name = "lblVwdDaysSmall";
+            this.lblVwdDaysSmall.Size = new System.Drawing.Size(39, 15);
+            this.lblVwdDaysSmall.TabIndex = 40;
+            this.lblVwdDaysSmall.Text = "Tage";
+            // 
+            // lblDayCostsEuro
+            // 
+            this.lblDayCostsEuro.AutoSize = true;
+            this.lblDayCostsEuro.BackColor = System.Drawing.Color.Transparent;
+            this.lblDayCostsEuro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDayCostsEuro.Location = new System.Drawing.Point(7, 22);
+            this.lblDayCostsEuro.Name = "lblDayCostsEuro";
+            this.lblDayCostsEuro.Size = new System.Drawing.Size(37, 15);
+            this.lblDayCostsEuro.TabIndex = 41;
+            this.lblDayCostsEuro.Text = "Euro";
+            // 
+            // lblYears
+            // 
+            this.lblYears.AutoSize = true;
+            this.lblYears.BackColor = System.Drawing.Color.Transparent;
+            this.lblYears.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYears.Location = new System.Drawing.Point(7, 22);
+            this.lblYears.Name = "lblYears";
+            this.lblYears.Size = new System.Drawing.Size(43, 15);
+            this.lblYears.TabIndex = 42;
+            this.lblYears.Text = "Jahre";
             // 
             // Data
             // 
@@ -1604,5 +1661,8 @@
         private System.Windows.Forms.TextBox txtDays1;
         private System.Windows.Forms.TextBox txtDaysSummary;
         private System.Windows.Forms.Panel pnlSummaryLine;
+        private System.Windows.Forms.Label lblYears;
+        private System.Windows.Forms.Label lblDayCostsEuro;
+        private System.Windows.Forms.Label lblVwdDaysSmall;
     }
 }
