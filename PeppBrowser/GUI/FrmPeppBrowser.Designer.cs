@@ -46,6 +46,7 @@
             this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlContentBackground = new System.Windows.Forms.Panel();
+            this.selection = new org.inek.PeppBrowser.GUI.Selection();
             this.lblPEPP = new System.Windows.Forms.Label();
             this.cbxPepp = new org.inek.controls.CommonControls.ComboField();
             this.tabControl = new System.Windows.Forms.TabControl();
@@ -56,10 +57,11 @@
             this.tabProcedures = new System.Windows.Forms.TabPage();
             this.grdProcedures = new System.Windows.Forms.DataGridView();
             this.tabDailyCosts = new System.Windows.Forms.TabPage();
-            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
-            this.selection = new org.inek.PeppBrowser.GUI.Selection();
             this.data = new org.inek.PeppBrowser.GUI.Data();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.titleBar = new org.inek.PeppBrowser.GUI.TitleBar();
+            this.beendenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.druckenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuMain.SuspendLayout();
             this.pnlContentBackground.SuspendLayout();
             this.tabControl.SuspendLayout();
@@ -90,6 +92,8 @@
             // mnuFile
             // 
             this.mnuFile.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.mnuFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.beendenToolStripMenuItem});
             this.mnuFile.Name = "mnuFile";
             this.mnuFile.Size = new System.Drawing.Size(46, 20);
             this.mnuFile.Text = "Datei";
@@ -177,6 +181,8 @@
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.toolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.druckenToolStripMenuItem});
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.Size = new System.Drawing.Size(54, 20);
             this.toolStripMenuItem3.Text = "Report";
@@ -229,6 +235,16 @@
             this.pnlContentBackground.Size = new System.Drawing.Size(1182, 711);
             this.pnlContentBackground.TabIndex = 8;
             this.pnlContentBackground.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
+            // 
+            // selection
+            // 
+            this.selection.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.selection.BackColor = System.Drawing.Color.SeaGreen;
+            this.selection.Location = new System.Drawing.Point(0, 27);
+            this.selection.Name = "selection";
+            this.selection.Size = new System.Drawing.Size(1182, 52);
+            this.selection.TabIndex = 11;
             // 
             // lblPEPP
             // 
@@ -392,20 +408,6 @@
             this.tabDailyCosts.TabIndex = 3;
             this.tabDailyCosts.Text = "Tageskosten";
             // 
-            // helpProvider1
-            // 
-            this.helpProvider1.HelpNamespace = "PeppBrowser.chm";
-            // 
-            // selection
-            // 
-            this.selection.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.selection.BackColor = System.Drawing.Color.SeaGreen;
-            this.selection.Location = new System.Drawing.Point(0, 27);
-            this.selection.Name = "selection";
-            this.selection.Size = new System.Drawing.Size(1182, 52);
-            this.selection.TabIndex = 11;
-            // 
             // data
             // 
             this.data.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -416,6 +418,10 @@
             this.data.Name = "data";
             this.data.Size = new System.Drawing.Size(1182, 258);
             this.data.TabIndex = 1;
+            // 
+            // helpProvider1
+            // 
+            this.helpProvider1.HelpNamespace = "PeppBrowser.chm";
             // 
             // titleBar
             // 
@@ -433,6 +439,18 @@
             this.titleBar.ClickedIconify += new System.EventHandler(this.titleBar_ClickedIconify);
             this.titleBar.MouseMoveTitleBar += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
             this.titleBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
+            // 
+            // beendenToolStripMenuItem
+            // 
+            this.beendenToolStripMenuItem.Name = "beendenToolStripMenuItem";
+            this.beendenToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.beendenToolStripMenuItem.Text = "Beenden";
+            // 
+            // druckenToolStripMenuItem
+            // 
+            this.druckenToolStripMenuItem.Name = "druckenToolStripMenuItem";
+            this.druckenToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.druckenToolStripMenuItem.Text = "Drucken";
             // 
             // FrmPeppBrowser
             // 
@@ -502,6 +520,8 @@
         private controls.CommonControls.ComboField cbxPepp;
         private System.Windows.Forms.DataGridView grdMainDiagnosis;
         private Selection selection;
+        private System.Windows.Forms.ToolStripMenuItem beendenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem druckenToolStripMenuItem;
 
     }
 }
