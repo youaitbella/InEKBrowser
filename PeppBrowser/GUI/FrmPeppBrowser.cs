@@ -284,7 +284,7 @@ namespace org.inek.PeppBrowser.GUI {
         private void FillHeadData() {
             var q = CsvData.Context().PeppInfos.Where(pepp => pepp.Code == PEPP);
             data.CasesNumSummary = q.Select(p => p.CaseCount.ToString()).ElementAt(0);
-            data.Cases1 = q.Select(p => p.CaseCountPayLevel1.ToString()).ElementAt(0);
+            data.Cases1 = q.Select(p => p.CaseCountPayLevel1.ToString("N1")).ElementAt(0);
             data.Cases2 = q.Select(p => p.CaseCountPayLevel2.ToString()).ElementAt(0);
             data.Cases3 = q.Select(p => p.CaseCountPayLevel3.ToString()).ElementAt(0);
             data.Cases4 = q.Select(p => p.CaseCountPayLevel4.ToString()).ElementAt(0);
