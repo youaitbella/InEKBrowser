@@ -13,16 +13,16 @@ namespace org.inek.PeppBrowser.Data.Entities {
         [Column("nd_Code")]
         public string DiagCode { get; set; }
 
-        [Column("nd_AnzahlFaelle")]
+        [Column("nd_FaelleAnzahl")]
         public int CaseCount { get; set; }
 
-        [Column("nd_AnteilFaelle")]
+        [Column("nd_FaelleAnteil")]
         public decimal CaseFraction { get; set; }
 
-        [Column("nd_AnzahlNennungen")]
+        [Column("nd_NennungenAnzahl")]
         public int EntryCount { get; set; }
 
-        [Column("nd_AnteilNennungen")]
+        [Column("nd_NennungenAnteil")]
         public decimal EntryFraction { get; set; }
 
 

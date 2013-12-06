@@ -40,8 +40,5 @@ namespace org.inek.PeppBrowser.Data.Entities {
 
         [Column("ko_KArt8")]
         public decimal CostType8 { get; set; }
-
-        [Column("ko_Summe")]
-        public decimal CostSum { get; set; }
     }
 }

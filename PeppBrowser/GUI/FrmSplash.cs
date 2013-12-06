@@ -79,7 +79,7 @@ namespace org.inek.PeppBrowser.GUI {
                     lblProgressState.Text = "Lade Hauptdiagnosen...";
                     break;
                 case 50:
-                    lblProgressState.Text = "Lade Sekundärdiagnosen...";
+                    lblProgressState.Text = "Lade Nebendiagnosen...";
                     break;
                 case 60:
                     lblProgressState.Text = "Lade Prozeduren...";

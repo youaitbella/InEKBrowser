@@ -9,10 +9,10 @@ namespace org.inek.PeppBrowser.Data.Entities {
         [Column("hd_Code")]
         public string DiagCode { get; set; }
 
-        [Column("hd_Anzahl")]
+        [Column("hd_FaelleAnzahl")]
         public int Count { get; set; }
 
-        [Column("hd_Anteil")]
+        [Column("hd_FaelleAnteil")]
         public decimal Fraction { get; set; }
     }
 }

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using System.Windows.Markup;
 using org.inek.PeppBrowser.Data.Entities;
 using org.inek.controls.helper;
@@ -139,19 +140,25 @@ namespace org.inek.PeppBrowser.Data {
                             if (!Attribute.IsDefined(info, typeof(ColumnAttribute))) { continue; }
                             ColumnAttribute columnAttribute = (ColumnAttribute)Attribute.GetCustomAttribute(info, typeof(ColumnAttribute));
                             string name = columnAttribute.Name;
+                            if (tokens[names[name]] == null)
+                                continue;
                             switch (info.PropertyType.Name) {
                                 case "Decimal":
                                     decimal decimalNumber = 0;
                                     try {
                                         decimalNumber = decimal.Parse(tokens[names[name]], new CultureInfo("de"));
-                                    } catch { }
+                                    } catch {
+                                        
+                                    }
                                     info.SetValue(obj, decimalNumber);
                                     break;
                                 case "Int32":
                                     int number = 0;
                                     try {
                                         number = int.Parse(tokens[names[name]]);
-                                    } catch { }
+                                    } catch {
+                                        
+                                    }
                                     info.SetValue(obj, number);
                                     break;
                                 case "String":
