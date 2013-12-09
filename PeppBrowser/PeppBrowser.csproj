@@ -35,6 +35,10 @@
     <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="combit.ListLabel18, Version=18.0.4674.12587, Culture=neutral, PublicKeyToken=a7a30592cb4a94be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\combit\LL18\Redistributable Files\x64\combit.ListLabel18.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
@@ -61,6 +65,7 @@
     <Compile Include="Data\Entities\Recherche.cs" />
     <Compile Include="Data\Entities\SecondaryDiagnosis.cs" />
     <Compile Include="Data\Entities\StructureCategory.cs" />
+    <Compile Include="Data\Reporter.cs" />
     <Compile Include="GUI\Data.cs">
       <SubType>UserControl</SubType>
     </Compile>

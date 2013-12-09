@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using combit.ListLabel18;
 using org.inek.controls.FilteredDataGridView;
 using org.inek.controls.helper;
 using org.inek.PeppBrowser.Data;
@@ -341,11 +342,33 @@ namespace org.inek.PeppBrowser.GUI {
             data.DailyCostsAverage = q.Select(p => Math.Round(p.DayCostsAverage, 2).ToString()).ElementAt(0);   // zweistellig Dezimal (money)
             data.DailyCostsStandardDeviation = q.Select(p => Math.Round(p.DayCostsStandard, 2).ToString()).ElementAt(0);    // zweistellig Dezimal (money)
             data.DailyCostsHomogeneityCoeff = q.Select(p => Math.Round((p.DayCostsHc*100),2).ToString()).ElementAt(0);  // Prozent
-            data.TitlePEPP = "PEPP - " + PEPP;
+            data.TitlePEPP = "Kennzahlen - " + PEPP;
         }
 
         private void tabControl_SelectedIndexChanged(object sender, EventArgs e) {
             FillActiveTab(ActiveGrid());
+        }
+
+
+        private void beendenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+
+        private void druckenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //ToDO: Datenobjekt übergeben!
+            Reporter reporter = new Reporter();
+            reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Print, "peppDruck","" , "PEPP Report");
+        }
+
+
+        private void designerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //ToDO: Datenobjekt übergeben!
+            Reporter reporter = new Reporter();
+            reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Design, "peppDruck", "", "PEPP Report");
         }
     }
 }

@@ -60,14 +60,17 @@
             this.txtLT28Days = new System.Windows.Forms.TextBox();
             this.lblLT28Days = new System.Windows.Forms.Label();
             this.grpGender = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtGenderFemale = new System.Windows.Forms.TextBox();
             this.txtGenderMale = new System.Windows.Forms.TextBox();
             this.lblFemale = new System.Windows.Forms.Label();
             this.lblMale = new System.Windows.Forms.Label();
             this.grpAge = new System.Windows.Forms.GroupBox();
+            this.lblYears = new System.Windows.Forms.Label();
             this.txtAgeStandardDeviation = new System.Windows.Forms.TextBox();
             this.txtAgeAverage = new System.Windows.Forms.TextBox();
             this.grpDailyCosts = new System.Windows.Forms.GroupBox();
+            this.lblDayCostsEuro = new System.Windows.Forms.Label();
             this.txtDailyCostsHomogeneityCoeff = new System.Windows.Forms.TextBox();
             this.txtDailyCostsStandardDeviation = new System.Windows.Forms.TextBox();
             this.txtDailyCostsAverage = new System.Windows.Forms.TextBox();
@@ -75,6 +78,7 @@
             this.lblStandardDeviation = new System.Windows.Forms.Label();
             this.lblAverage = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblVwdDaysSmall = new System.Windows.Forms.Label();
             this.txtLosHomogeneityCoeff = new System.Windows.Forms.TextBox();
             this.txtLosStandardDeviation = new System.Windows.Forms.TextBox();
             this.txtLosAverage = new System.Windows.Forms.TextBox();
@@ -127,9 +131,6 @@
             this.txtDaysSummary = new System.Windows.Forms.TextBox();
             this.lblLosNumDays = new System.Windows.Forms.Label();
             this.toolTipLT28Days = new System.Windows.Forms.ToolTip(this.components);
-            this.lblVwdDaysSmall = new System.Windows.Forms.Label();
-            this.lblDayCostsEuro = new System.Windows.Forms.Label();
-            this.lblYears = new System.Windows.Forms.Label();
             this.pnlData.SuspendLayout();
             this.grpBigAge.SuspendLayout();
             this.grpGender.SuspendLayout();
@@ -168,25 +169,24 @@
             this.pnlData.ForeColor = System.Drawing.Color.White;
             this.pnlData.Location = new System.Drawing.Point(0, 0);
             this.pnlData.Name = "pnlData";
-            this.pnlData.Size = new System.Drawing.Size(1182, 257);
+            this.pnlData.Size = new System.Drawing.Size(1182, 272);
             this.pnlData.TabIndex = 0;
             this.pnlData.TabStop = false;
-            this.pnlData.Text = "PEPP";
+            this.pnlData.Text = "Kennzahlen";
             // 
             // pnlSummaryLine
             // 
             this.pnlSummaryLine.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlSummaryLine.BackColor = System.Drawing.Color.White;
-            this.pnlSummaryLine.Location = new System.Drawing.Point(13, 76);
+            this.pnlSummaryLine.Location = new System.Drawing.Point(8, 88);
             this.pnlSummaryLine.Name = "pnlSummaryLine";
-            this.pnlSummaryLine.Size = new System.Drawing.Size(559, 3);
+            this.pnlSummaryLine.Size = new System.Drawing.Size(550, 3);
             this.pnlSummaryLine.TabIndex = 19;
             // 
             // grpBigAge
             // 
             this.grpBigAge.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.grpBigAge.AutoSize = true;
             this.grpBigAge.BackColor = System.Drawing.Color.Transparent;
             this.grpBigAge.Controls.Add(this.txtGt79Year);
             this.grpBigAge.Controls.Add(this.lblGtYear79);
@@ -220,11 +220,11 @@
             this.grpBigAge.Controls.Add(this.lblBt28Days1Year);
             this.grpBigAge.Controls.Add(this.txtLT28Days);
             this.grpBigAge.Controls.Add(this.lblLT28Days);
-            this.grpBigAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpBigAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBigAge.ForeColor = System.Drawing.Color.White;
-            this.grpBigAge.Location = new System.Drawing.Point(911, 13);
+            this.grpBigAge.Location = new System.Drawing.Point(914, 21);
             this.grpBigAge.Name = "grpBigAge";
-            this.grpBigAge.Size = new System.Drawing.Size(262, 233);
+            this.grpBigAge.Size = new System.Drawing.Size(262, 240);
             this.grpBigAge.TabIndex = 18;
             this.grpBigAge.TabStop = false;
             this.grpBigAge.Text = "Alter (%)";
@@ -233,8 +233,9 @@
             // 
             this.txtGt79Year.BackColor = System.Drawing.Color.SeaGreen;
             this.txtGt79Year.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtGt79Year.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGt79Year.ForeColor = System.Drawing.Color.White;
-            this.txtGt79Year.Location = new System.Drawing.Point(212, 192);
+            this.txtGt79Year.Location = new System.Drawing.Point(217, 204);
             this.txtGt79Year.Name = "txtGt79Year";
             this.txtGt79Year.ReadOnly = true;
             this.txtGt79Year.Size = new System.Drawing.Size(39, 21);
@@ -245,7 +246,8 @@
             // lblGtYear79
             // 
             this.lblGtYear79.AutoSize = true;
-            this.lblGtYear79.Location = new System.Drawing.Point(137, 196);
+            this.lblGtYear79.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGtYear79.Location = new System.Drawing.Point(137, 206);
             this.lblGtYear79.Name = "lblGtYear79";
             this.lblGtYear79.Size = new System.Drawing.Size(75, 15);
             this.lblGtYear79.TabIndex = 30;
@@ -255,8 +257,9 @@
             // 
             this.txtBt75Year79.BackColor = System.Drawing.Color.SeaGreen;
             this.txtBt75Year79.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt75Year79.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBt75Year79.ForeColor = System.Drawing.Color.White;
-            this.txtBt75Year79.Location = new System.Drawing.Point(212, 168);
+            this.txtBt75Year79.Location = new System.Drawing.Point(217, 177);
             this.txtBt75Year79.Name = "txtBt75Year79";
             this.txtBt75Year79.ReadOnly = true;
             this.txtBt75Year79.Size = new System.Drawing.Size(39, 21);
@@ -267,7 +270,8 @@
             // lblBt75Year79
             // 
             this.lblBt75Year79.AutoSize = true;
-            this.lblBt75Year79.Location = new System.Drawing.Point(138, 172);
+            this.lblBt75Year79.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBt75Year79.Location = new System.Drawing.Point(139, 179);
             this.lblBt75Year79.Name = "lblBt75Year79";
             this.lblBt75Year79.Size = new System.Drawing.Size(73, 15);
             this.lblBt75Year79.TabIndex = 28;
@@ -277,8 +281,9 @@
             // 
             this.txtBt65Year74.BackColor = System.Drawing.Color.SeaGreen;
             this.txtBt65Year74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt65Year74.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBt65Year74.ForeColor = System.Drawing.Color.White;
-            this.txtBt65Year74.Location = new System.Drawing.Point(212, 144);
+            this.txtBt65Year74.Location = new System.Drawing.Point(217, 150);
             this.txtBt65Year74.Name = "txtBt65Year74";
             this.txtBt65Year74.ReadOnly = true;
             this.txtBt65Year74.Size = new System.Drawing.Size(39, 21);
@@ -289,7 +294,8 @@
             // lblBt65Year74
             // 
             this.lblBt65Year74.AutoSize = true;
-            this.lblBt65Year74.Location = new System.Drawing.Point(138, 147);
+            this.lblBt65Year74.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBt65Year74.Location = new System.Drawing.Point(139, 152);
             this.lblBt65Year74.Name = "lblBt65Year74";
             this.lblBt65Year74.Size = new System.Drawing.Size(73, 15);
             this.lblBt65Year74.TabIndex = 26;
@@ -299,8 +305,9 @@
             // 
             this.txtBt60Year64.BackColor = System.Drawing.Color.SeaGreen;
             this.txtBt60Year64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt60Year64.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBt60Year64.ForeColor = System.Drawing.Color.White;
-            this.txtBt60Year64.Location = new System.Drawing.Point(212, 120);
+            this.txtBt60Year64.Location = new System.Drawing.Point(217, 123);
             this.txtBt60Year64.Name = "txtBt60Year64";
             this.txtBt60Year64.ReadOnly = true;
             this.txtBt60Year64.Size = new System.Drawing.Size(39, 21);
@@ -311,7 +318,8 @@
             // lblBt60Year64
             // 
             this.lblBt60Year64.AutoSize = true;
-            this.lblBt60Year64.Location = new System.Drawing.Point(138, 123);
+            this.lblBt60Year64.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBt60Year64.Location = new System.Drawing.Point(139, 125);
             this.lblBt60Year64.Name = "lblBt60Year64";
             this.lblBt60Year64.Size = new System.Drawing.Size(73, 15);
             this.lblBt60Year64.TabIndex = 24;
@@ -321,8 +329,9 @@
             // 
             this.txtBt55Year59.BackColor = System.Drawing.Color.SeaGreen;
             this.txtBt55Year59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt55Year59.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBt55Year59.ForeColor = System.Drawing.Color.White;
-            this.txtBt55Year59.Location = new System.Drawing.Point(212, 95);
+            this.txtBt55Year59.Location = new System.Drawing.Point(217, 96);
             this.txtBt55Year59.Name = "txtBt55Year59";
             this.txtBt55Year59.ReadOnly = true;
             this.txtBt55Year59.Size = new System.Drawing.Size(39, 21);
@@ -333,7 +342,8 @@
             // lblBt55Year59
             // 
             this.lblBt55Year59.AutoSize = true;
-            this.lblBt55Year59.Location = new System.Drawing.Point(138, 98);
+            this.lblBt55Year59.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBt55Year59.Location = new System.Drawing.Point(139, 98);
             this.lblBt55Year59.Name = "lblBt55Year59";
             this.lblBt55Year59.Size = new System.Drawing.Size(73, 15);
             this.lblBt55Year59.TabIndex = 22;
@@ -343,8 +353,9 @@
             // 
             this.txtBt50Year54.BackColor = System.Drawing.Color.SeaGreen;
             this.txtBt50Year54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt50Year54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBt50Year54.ForeColor = System.Drawing.Color.White;
-            this.txtBt50Year54.Location = new System.Drawing.Point(212, 71);
+            this.txtBt50Year54.Location = new System.Drawing.Point(217, 69);
             this.txtBt50Year54.Name = "txtBt50Year54";
             this.txtBt50Year54.ReadOnly = true;
             this.txtBt50Year54.Size = new System.Drawing.Size(39, 21);
@@ -355,7 +366,8 @@
             // lblBt50Year54
             // 
             this.lblBt50Year54.AutoSize = true;
-            this.lblBt50Year54.Location = new System.Drawing.Point(138, 74);
+            this.lblBt50Year54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBt50Year54.Location = new System.Drawing.Point(138, 72);
             this.lblBt50Year54.Name = "lblBt50Year54";
             this.lblBt50Year54.Size = new System.Drawing.Size(73, 15);
             this.lblBt50Year54.TabIndex = 20;
@@ -365,8 +377,9 @@
             // 
             this.txtBt40Year49.BackColor = System.Drawing.Color.SeaGreen;
             this.txtBt40Year49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt40Year49.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBt40Year49.ForeColor = System.Drawing.Color.White;
-            this.txtBt40Year49.Location = new System.Drawing.Point(212, 47);
+            this.txtBt40Year49.Location = new System.Drawing.Point(217, 42);
             this.txtBt40Year49.Name = "txtBt40Year49";
             this.txtBt40Year49.ReadOnly = true;
             this.txtBt40Year49.Size = new System.Drawing.Size(39, 21);
@@ -377,7 +390,8 @@
             // lblBt40Year49
             // 
             this.lblBt40Year49.AutoSize = true;
-            this.lblBt40Year49.Location = new System.Drawing.Point(138, 48);
+            this.lblBt40Year49.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBt40Year49.Location = new System.Drawing.Point(138, 44);
             this.lblBt40Year49.Name = "lblBt40Year49";
             this.lblBt40Year49.Size = new System.Drawing.Size(73, 15);
             this.lblBt40Year49.TabIndex = 18;
@@ -387,8 +401,9 @@
             // 
             this.txtBt30Year39.BackColor = System.Drawing.Color.SeaGreen;
             this.txtBt30Year39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt30Year39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBt30Year39.ForeColor = System.Drawing.Color.White;
-            this.txtBt30Year39.Location = new System.Drawing.Point(212, 23);
+            this.txtBt30Year39.Location = new System.Drawing.Point(217, 15);
             this.txtBt30Year39.Name = "txtBt30Year39";
             this.txtBt30Year39.ReadOnly = true;
             this.txtBt30Year39.Size = new System.Drawing.Size(39, 21);
@@ -399,7 +414,8 @@
             // lblBt30Year39
             // 
             this.lblBt30Year39.AutoSize = true;
-            this.lblBt30Year39.Location = new System.Drawing.Point(138, 25);
+            this.lblBt30Year39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBt30Year39.Location = new System.Drawing.Point(139, 17);
             this.lblBt30Year39.Name = "lblBt30Year39";
             this.lblBt30Year39.Size = new System.Drawing.Size(73, 15);
             this.lblBt30Year39.TabIndex = 16;
@@ -409,8 +425,9 @@
             // 
             this.txtBt18Year29.BackColor = System.Drawing.Color.SeaGreen;
             this.txtBt18Year29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt18Year29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBt18Year29.ForeColor = System.Drawing.Color.White;
-            this.txtBt18Year29.Location = new System.Drawing.Point(93, 191);
+            this.txtBt18Year29.Location = new System.Drawing.Point(92, 204);
             this.txtBt18Year29.Name = "txtBt18Year29";
             this.txtBt18Year29.ReadOnly = true;
             this.txtBt18Year29.Size = new System.Drawing.Size(39, 21);
@@ -421,7 +438,8 @@
             // lblBt18Year29
             // 
             this.lblBt18Year29.AutoSize = true;
-            this.lblBt18Year29.Location = new System.Drawing.Point(6, 194);
+            this.lblBt18Year29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBt18Year29.Location = new System.Drawing.Point(6, 206);
             this.lblBt18Year29.Name = "lblBt18Year29";
             this.lblBt18Year29.Size = new System.Drawing.Size(73, 15);
             this.lblBt18Year29.TabIndex = 14;
@@ -431,8 +449,9 @@
             // 
             this.txtBt16Year17.BackColor = System.Drawing.Color.SeaGreen;
             this.txtBt16Year17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt16Year17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBt16Year17.ForeColor = System.Drawing.Color.White;
-            this.txtBt16Year17.Location = new System.Drawing.Point(93, 167);
+            this.txtBt16Year17.Location = new System.Drawing.Point(92, 177);
             this.txtBt16Year17.Name = "txtBt16Year17";
             this.txtBt16Year17.ReadOnly = true;
             this.txtBt16Year17.Size = new System.Drawing.Size(39, 21);
@@ -443,7 +462,8 @@
             // lblBt16Year17
             // 
             this.lblBt16Year17.AutoSize = true;
-            this.lblBt16Year17.Location = new System.Drawing.Point(6, 170);
+            this.lblBt16Year17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBt16Year17.Location = new System.Drawing.Point(6, 179);
             this.lblBt16Year17.Name = "lblBt16Year17";
             this.lblBt16Year17.Size = new System.Drawing.Size(73, 15);
             this.lblBt16Year17.TabIndex = 12;
@@ -453,8 +473,9 @@
             // 
             this.txtBt10Year15.BackColor = System.Drawing.Color.SeaGreen;
             this.txtBt10Year15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt10Year15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBt10Year15.ForeColor = System.Drawing.Color.White;
-            this.txtBt10Year15.Location = new System.Drawing.Point(93, 143);
+            this.txtBt10Year15.Location = new System.Drawing.Point(93, 150);
             this.txtBt10Year15.Name = "txtBt10Year15";
             this.txtBt10Year15.ReadOnly = true;
             this.txtBt10Year15.Size = new System.Drawing.Size(39, 21);
@@ -465,7 +486,8 @@
             // lblBt10Year15
             // 
             this.lblBt10Year15.AutoSize = true;
-            this.lblBt10Year15.Location = new System.Drawing.Point(6, 146);
+            this.lblBt10Year15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBt10Year15.Location = new System.Drawing.Point(6, 152);
             this.lblBt10Year15.Name = "lblBt10Year15";
             this.lblBt10Year15.Size = new System.Drawing.Size(73, 15);
             this.lblBt10Year15.TabIndex = 10;
@@ -475,8 +497,9 @@
             // 
             this.txtBt6Year9.BackColor = System.Drawing.Color.SeaGreen;
             this.txtBt6Year9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt6Year9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBt6Year9.ForeColor = System.Drawing.Color.White;
-            this.txtBt6Year9.Location = new System.Drawing.Point(93, 119);
+            this.txtBt6Year9.Location = new System.Drawing.Point(93, 123);
             this.txtBt6Year9.Name = "txtBt6Year9";
             this.txtBt6Year9.ReadOnly = true;
             this.txtBt6Year9.Size = new System.Drawing.Size(39, 21);
@@ -487,7 +510,8 @@
             // lblBt6Year9
             // 
             this.lblBt6Year9.AutoSize = true;
-            this.lblBt6Year9.Location = new System.Drawing.Point(6, 122);
+            this.lblBt6Year9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBt6Year9.Location = new System.Drawing.Point(6, 125);
             this.lblBt6Year9.Name = "lblBt6Year9";
             this.lblBt6Year9.Size = new System.Drawing.Size(59, 15);
             this.lblBt6Year9.TabIndex = 8;
@@ -497,8 +521,9 @@
             // 
             this.txtBt3Year5.BackColor = System.Drawing.Color.SeaGreen;
             this.txtBt3Year5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt3Year5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBt3Year5.ForeColor = System.Drawing.Color.White;
-            this.txtBt3Year5.Location = new System.Drawing.Point(93, 95);
+            this.txtBt3Year5.Location = new System.Drawing.Point(93, 96);
             this.txtBt3Year5.Name = "txtBt3Year5";
             this.txtBt3Year5.ReadOnly = true;
             this.txtBt3Year5.Size = new System.Drawing.Size(39, 21);
@@ -509,6 +534,7 @@
             // lblBt3Year5
             // 
             this.lblBt3Year5.AutoSize = true;
+            this.lblBt3Year5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBt3Year5.Location = new System.Drawing.Point(6, 98);
             this.lblBt3Year5.Name = "lblBt3Year5";
             this.lblBt3Year5.Size = new System.Drawing.Size(59, 15);
@@ -519,8 +545,9 @@
             // 
             this.txtBt1Year2.BackColor = System.Drawing.Color.SeaGreen;
             this.txtBt1Year2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt1Year2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBt1Year2.ForeColor = System.Drawing.Color.White;
-            this.txtBt1Year2.Location = new System.Drawing.Point(93, 71);
+            this.txtBt1Year2.Location = new System.Drawing.Point(93, 69);
             this.txtBt1Year2.Name = "txtBt1Year2";
             this.txtBt1Year2.ReadOnly = true;
             this.txtBt1Year2.Size = new System.Drawing.Size(39, 21);
@@ -531,7 +558,8 @@
             // lblBt1Year2
             // 
             this.lblBt1Year2.AutoSize = true;
-            this.lblBt1Year2.Location = new System.Drawing.Point(6, 73);
+            this.lblBt1Year2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBt1Year2.Location = new System.Drawing.Point(6, 71);
             this.lblBt1Year2.Name = "lblBt1Year2";
             this.lblBt1Year2.Size = new System.Drawing.Size(59, 15);
             this.lblBt1Year2.TabIndex = 4;
@@ -541,8 +569,9 @@
             // 
             this.txtBt28Days1Year.BackColor = System.Drawing.Color.SeaGreen;
             this.txtBt28Days1Year.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBt28Days1Year.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBt28Days1Year.ForeColor = System.Drawing.Color.White;
-            this.txtBt28Days1Year.Location = new System.Drawing.Point(93, 47);
+            this.txtBt28Days1Year.Location = new System.Drawing.Point(93, 42);
             this.txtBt28Days1Year.Name = "txtBt28Days1Year";
             this.txtBt28Days1Year.ReadOnly = true;
             this.txtBt28Days1Year.Size = new System.Drawing.Size(39, 21);
@@ -553,7 +582,8 @@
             // lblBt28Days1Year
             // 
             this.lblBt28Days1Year.AutoSize = true;
-            this.lblBt28Days1Year.Location = new System.Drawing.Point(6, 49);
+            this.lblBt28Days1Year.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBt28Days1Year.Location = new System.Drawing.Point(6, 44);
             this.lblBt28Days1Year.Name = "lblBt28Days1Year";
             this.lblBt28Days1Year.Size = new System.Drawing.Size(81, 15);
             this.lblBt28Days1Year.TabIndex = 2;
@@ -563,8 +593,9 @@
             // 
             this.txtLT28Days.BackColor = System.Drawing.Color.SeaGreen;
             this.txtLT28Days.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLT28Days.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLT28Days.ForeColor = System.Drawing.Color.White;
-            this.txtLT28Days.Location = new System.Drawing.Point(93, 23);
+            this.txtLT28Days.Location = new System.Drawing.Point(93, 15);
             this.txtLT28Days.Name = "txtLT28Days";
             this.txtLT28Days.ReadOnly = true;
             this.txtLT28Days.Size = new System.Drawing.Size(39, 21);
@@ -575,7 +606,8 @@
             // lblLT28Days
             // 
             this.lblLT28Days.AutoSize = true;
-            this.lblLT28Days.Location = new System.Drawing.Point(6, 25);
+            this.lblLT28Days.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLT28Days.Location = new System.Drawing.Point(6, 17);
             this.lblLT28Days.Name = "lblLT28Days";
             this.lblLT28Days.Size = new System.Drawing.Size(35, 15);
             this.lblLT28Days.TabIndex = 0;
@@ -584,25 +616,37 @@
             // grpGender
             // 
             this.grpGender.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.grpGender.AutoSize = true;
             this.grpGender.BackColor = System.Drawing.Color.Transparent;
+            this.grpGender.Controls.Add(this.label2);
             this.grpGender.Controls.Add(this.txtGenderFemale);
             this.grpGender.Controls.Add(this.txtGenderMale);
-            this.grpGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpGender.ForeColor = System.Drawing.Color.White;
-            this.grpGender.Location = new System.Drawing.Point(689, 162);
+            this.grpGender.Location = new System.Drawing.Point(689, 161);
             this.grpGender.Name = "grpGender";
-            this.grpGender.Size = new System.Drawing.Size(73, 84);
+            this.grpGender.Size = new System.Drawing.Size(72, 100);
             this.grpGender.TabIndex = 17;
             this.grpGender.TabStop = false;
-            this.grpGender.Text = "Anteil (%)";
+            this.grpGender.Text = "Geschl.";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 17);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 15);
+            this.label2.TabIndex = 41;
+            this.label2.Text = "Anteil (%)";
             // 
             // txtGenderFemale
             // 
             this.txtGenderFemale.BackColor = System.Drawing.Color.SeaGreen;
             this.txtGenderFemale.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtGenderFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGenderFemale.ForeColor = System.Drawing.Color.White;
-            this.txtGenderFemale.Location = new System.Drawing.Point(10, 42);
+            this.txtGenderFemale.Location = new System.Drawing.Point(9, 64);
             this.txtGenderFemale.Name = "txtGenderFemale";
             this.txtGenderFemale.ReadOnly = true;
             this.txtGenderFemale.Size = new System.Drawing.Size(51, 21);
@@ -614,8 +658,9 @@
             // 
             this.txtGenderMale.BackColor = System.Drawing.Color.SeaGreen;
             this.txtGenderMale.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtGenderMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGenderMale.ForeColor = System.Drawing.Color.White;
-            this.txtGenderMale.Location = new System.Drawing.Point(10, 18);
+            this.txtGenderMale.Location = new System.Drawing.Point(9, 37);
             this.txtGenderMale.Name = "txtGenderMale";
             this.txtGenderMale.ReadOnly = true;
             this.txtGenderMale.Size = new System.Drawing.Size(51, 21);
@@ -628,10 +673,10 @@
             this.lblFemale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFemale.AutoSize = true;
             this.lblFemale.BackColor = System.Drawing.Color.Transparent;
-            this.lblFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFemale.Location = new System.Drawing.Point(580, 206);
+            this.lblFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFemale.Location = new System.Drawing.Point(587, 227);
             this.lblFemale.Name = "lblFemale";
-            this.lblFemale.Size = new System.Drawing.Size(66, 15);
+            this.lblFemale.Size = new System.Drawing.Size(57, 15);
             this.lblFemale.TabIndex = 16;
             this.lblFemale.Text = "Weiblich:";
             // 
@@ -640,36 +685,47 @@
             this.lblMale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblMale.AutoSize = true;
             this.lblMale.BackColor = System.Drawing.Color.Transparent;
-            this.lblMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMale.Location = new System.Drawing.Point(580, 181);
+            this.lblMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMale.Location = new System.Drawing.Point(587, 200);
             this.lblMale.Name = "lblMale";
-            this.lblMale.Size = new System.Drawing.Size(70, 15);
+            this.lblMale.Size = new System.Drawing.Size(61, 15);
             this.lblMale.TabIndex = 15;
             this.lblMale.Text = "Männlich:";
             // 
             // grpAge
             // 
             this.grpAge.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.grpAge.AutoSize = true;
             this.grpAge.BackColor = System.Drawing.Color.Transparent;
             this.grpAge.Controls.Add(this.lblYears);
             this.grpAge.Controls.Add(this.txtAgeStandardDeviation);
             this.grpAge.Controls.Add(this.txtAgeAverage);
-            this.grpAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpAge.ForeColor = System.Drawing.Color.White;
-            this.grpAge.Location = new System.Drawing.Point(842, 13);
+            this.grpAge.Location = new System.Drawing.Point(845, 21);
             this.grpAge.Name = "grpAge";
-            this.grpAge.Size = new System.Drawing.Size(59, 138);
+            this.grpAge.Size = new System.Drawing.Size(59, 134);
             this.grpAge.TabIndex = 14;
             this.grpAge.TabStop = false;
             this.grpAge.Text = "Alter";
+            // 
+            // lblYears
+            // 
+            this.lblYears.AutoSize = true;
+            this.lblYears.BackColor = System.Drawing.Color.Transparent;
+            this.lblYears.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYears.Location = new System.Drawing.Point(6, 17);
+            this.lblYears.Name = "lblYears";
+            this.lblYears.Size = new System.Drawing.Size(38, 15);
+            this.lblYears.TabIndex = 42;
+            this.lblYears.Text = "Jahre";
             // 
             // txtAgeStandardDeviation
             // 
             this.txtAgeStandardDeviation.BackColor = System.Drawing.Color.SeaGreen;
             this.txtAgeStandardDeviation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAgeStandardDeviation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAgeStandardDeviation.ForeColor = System.Drawing.Color.White;
-            this.txtAgeStandardDeviation.Location = new System.Drawing.Point(10, 73);
+            this.txtAgeStandardDeviation.Location = new System.Drawing.Point(9, 69);
             this.txtAgeStandardDeviation.Name = "txtAgeStandardDeviation";
             this.txtAgeStandardDeviation.ReadOnly = true;
             this.txtAgeStandardDeviation.Size = new System.Drawing.Size(38, 21);
@@ -681,8 +737,9 @@
             // 
             this.txtAgeAverage.BackColor = System.Drawing.Color.SeaGreen;
             this.txtAgeAverage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAgeAverage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAgeAverage.ForeColor = System.Drawing.Color.White;
-            this.txtAgeAverage.Location = new System.Drawing.Point(10, 49);
+            this.txtAgeAverage.Location = new System.Drawing.Point(9, 42);
             this.txtAgeAverage.Name = "txtAgeAverage";
             this.txtAgeAverage.ReadOnly = true;
             this.txtAgeAverage.Size = new System.Drawing.Size(38, 21);
@@ -693,27 +750,38 @@
             // grpDailyCosts
             // 
             this.grpDailyCosts.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.grpDailyCosts.AutoSize = true;
             this.grpDailyCosts.BackColor = System.Drawing.Color.Transparent;
             this.grpDailyCosts.Controls.Add(this.lblDayCostsEuro);
             this.grpDailyCosts.Controls.Add(this.txtDailyCostsHomogeneityCoeff);
             this.grpDailyCosts.Controls.Add(this.txtDailyCostsStandardDeviation);
             this.grpDailyCosts.Controls.Add(this.txtDailyCostsAverage);
-            this.grpDailyCosts.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpDailyCosts.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpDailyCosts.ForeColor = System.Drawing.Color.White;
-            this.grpDailyCosts.Location = new System.Drawing.Point(764, 13);
+            this.grpDailyCosts.Location = new System.Drawing.Point(767, 21);
             this.grpDailyCosts.Name = "grpDailyCosts";
-            this.grpDailyCosts.Size = new System.Drawing.Size(75, 138);
+            this.grpDailyCosts.Size = new System.Drawing.Size(75, 134);
             this.grpDailyCosts.TabIndex = 13;
             this.grpDailyCosts.TabStop = false;
             this.grpDailyCosts.Text = "Tagesk.";
+            // 
+            // lblDayCostsEuro
+            // 
+            this.lblDayCostsEuro.AutoSize = true;
+            this.lblDayCostsEuro.BackColor = System.Drawing.Color.Transparent;
+            this.lblDayCostsEuro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDayCostsEuro.Location = new System.Drawing.Point(6, 17);
+            this.lblDayCostsEuro.Name = "lblDayCostsEuro";
+            this.lblDayCostsEuro.Size = new System.Drawing.Size(33, 15);
+            this.lblDayCostsEuro.TabIndex = 41;
+            this.lblDayCostsEuro.Text = "Euro";
             // 
             // txtDailyCostsHomogeneityCoeff
             // 
             this.txtDailyCostsHomogeneityCoeff.BackColor = System.Drawing.Color.SeaGreen;
             this.txtDailyCostsHomogeneityCoeff.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDailyCostsHomogeneityCoeff.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDailyCostsHomogeneityCoeff.ForeColor = System.Drawing.Color.White;
-            this.txtDailyCostsHomogeneityCoeff.Location = new System.Drawing.Point(10, 97);
+            this.txtDailyCostsHomogeneityCoeff.Location = new System.Drawing.Point(9, 96);
             this.txtDailyCostsHomogeneityCoeff.Name = "txtDailyCostsHomogeneityCoeff";
             this.txtDailyCostsHomogeneityCoeff.ReadOnly = true;
             this.txtDailyCostsHomogeneityCoeff.Size = new System.Drawing.Size(54, 21);
@@ -725,8 +793,9 @@
             // 
             this.txtDailyCostsStandardDeviation.BackColor = System.Drawing.Color.SeaGreen;
             this.txtDailyCostsStandardDeviation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDailyCostsStandardDeviation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDailyCostsStandardDeviation.ForeColor = System.Drawing.Color.White;
-            this.txtDailyCostsStandardDeviation.Location = new System.Drawing.Point(10, 73);
+            this.txtDailyCostsStandardDeviation.Location = new System.Drawing.Point(9, 69);
             this.txtDailyCostsStandardDeviation.Name = "txtDailyCostsStandardDeviation";
             this.txtDailyCostsStandardDeviation.ReadOnly = true;
             this.txtDailyCostsStandardDeviation.Size = new System.Drawing.Size(54, 21);
@@ -738,8 +807,9 @@
             // 
             this.txtDailyCostsAverage.BackColor = System.Drawing.Color.SeaGreen;
             this.txtDailyCostsAverage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDailyCostsAverage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDailyCostsAverage.ForeColor = System.Drawing.Color.White;
-            this.txtDailyCostsAverage.Location = new System.Drawing.Point(10, 49);
+            this.txtDailyCostsAverage.Location = new System.Drawing.Point(9, 42);
             this.txtDailyCostsAverage.Name = "txtDailyCostsAverage";
             this.txtDailyCostsAverage.ReadOnly = true;
             this.txtDailyCostsAverage.Size = new System.Drawing.Size(54, 21);
@@ -752,10 +822,10 @@
             this.lblHomogeneityCoefficient.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHomogeneityCoefficient.AutoSize = true;
             this.lblHomogeneityCoefficient.BackColor = System.Drawing.Color.Transparent;
-            this.lblHomogeneityCoefficient.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHomogeneityCoefficient.Location = new System.Drawing.Point(576, 112);
+            this.lblHomogeneityCoefficient.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHomogeneityCoefficient.Location = new System.Drawing.Point(587, 119);
             this.lblHomogeneityCoefficient.Name = "lblHomogeneityCoefficient";
-            this.lblHomogeneityCoefficient.Size = new System.Drawing.Size(111, 15);
+            this.lblHomogeneityCoefficient.Size = new System.Drawing.Size(96, 15);
             this.lblHomogeneityCoefficient.TabIndex = 12;
             this.lblHomogeneityCoefficient.Text = "Homogenitätsk.:";
             // 
@@ -764,10 +834,10 @@
             this.lblStandardDeviation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStandardDeviation.AutoSize = true;
             this.lblStandardDeviation.BackColor = System.Drawing.Color.Transparent;
-            this.lblStandardDeviation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStandardDeviation.Location = new System.Drawing.Point(576, 86);
+            this.lblStandardDeviation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStandardDeviation.Location = new System.Drawing.Point(587, 92);
             this.lblStandardDeviation.Name = "lblStandardDeviation";
-            this.lblStandardDeviation.Size = new System.Drawing.Size(99, 15);
+            this.lblStandardDeviation.Size = new System.Drawing.Size(86, 15);
             this.lblStandardDeviation.TabIndex = 11;
             this.lblStandardDeviation.Text = "Standardabw.:";
             // 
@@ -776,37 +846,48 @@
             this.lblAverage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAverage.AutoSize = true;
             this.lblAverage.BackColor = System.Drawing.Color.Transparent;
-            this.lblAverage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAverage.Location = new System.Drawing.Point(576, 60);
+            this.lblAverage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAverage.Location = new System.Drawing.Point(587, 65);
             this.lblAverage.Name = "lblAverage";
-            this.lblAverage.Size = new System.Drawing.Size(74, 15);
+            this.lblAverage.Size = new System.Drawing.Size(63, 15);
             this.lblAverage.TabIndex = 10;
             this.lblAverage.Text = "Mittelwert:";
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.AutoSize = true;
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.lblVwdDaysSmall);
             this.groupBox1.Controls.Add(this.txtLosHomogeneityCoeff);
             this.groupBox1.Controls.Add(this.txtLosStandardDeviation);
             this.groupBox1.Controls.Add(this.txtLosAverage);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(689, 13);
+            this.groupBox1.Location = new System.Drawing.Point(689, 21);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(72, 138);
+            this.groupBox1.Size = new System.Drawing.Size(72, 134);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Vwd.";
+            // 
+            // lblVwdDaysSmall
+            // 
+            this.lblVwdDaysSmall.AutoSize = true;
+            this.lblVwdDaysSmall.BackColor = System.Drawing.Color.Transparent;
+            this.lblVwdDaysSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVwdDaysSmall.Location = new System.Drawing.Point(6, 17);
+            this.lblVwdDaysSmall.Name = "lblVwdDaysSmall";
+            this.lblVwdDaysSmall.Size = new System.Drawing.Size(35, 15);
+            this.lblVwdDaysSmall.TabIndex = 40;
+            this.lblVwdDaysSmall.Text = "Tage";
             // 
             // txtLosHomogeneityCoeff
             // 
             this.txtLosHomogeneityCoeff.BackColor = System.Drawing.Color.SeaGreen;
             this.txtLosHomogeneityCoeff.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosHomogeneityCoeff.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLosHomogeneityCoeff.ForeColor = System.Drawing.Color.White;
-            this.txtLosHomogeneityCoeff.Location = new System.Drawing.Point(10, 97);
+            this.txtLosHomogeneityCoeff.Location = new System.Drawing.Point(9, 96);
             this.txtLosHomogeneityCoeff.Name = "txtLosHomogeneityCoeff";
             this.txtLosHomogeneityCoeff.ReadOnly = true;
             this.txtLosHomogeneityCoeff.Size = new System.Drawing.Size(51, 21);
@@ -818,8 +899,9 @@
             // 
             this.txtLosStandardDeviation.BackColor = System.Drawing.Color.SeaGreen;
             this.txtLosStandardDeviation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosStandardDeviation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLosStandardDeviation.ForeColor = System.Drawing.Color.White;
-            this.txtLosStandardDeviation.Location = new System.Drawing.Point(10, 73);
+            this.txtLosStandardDeviation.Location = new System.Drawing.Point(9, 69);
             this.txtLosStandardDeviation.Name = "txtLosStandardDeviation";
             this.txtLosStandardDeviation.ReadOnly = true;
             this.txtLosStandardDeviation.Size = new System.Drawing.Size(51, 21);
@@ -831,8 +913,9 @@
             // 
             this.txtLosAverage.BackColor = System.Drawing.Color.SeaGreen;
             this.txtLosAverage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosAverage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLosAverage.ForeColor = System.Drawing.Color.White;
-            this.txtLosAverage.Location = new System.Drawing.Point(10, 49);
+            this.txtLosAverage.Location = new System.Drawing.Point(9, 42);
             this.txtLosAverage.Name = "txtLosAverage";
             this.txtLosAverage.ReadOnly = true;
             this.txtLosAverage.Size = new System.Drawing.Size(51, 21);
@@ -864,11 +947,11 @@
             this.grpCatalog.Controls.Add(this.lblValuationRatioDay);
             this.grpCatalog.Controls.Add(this.lblLosTo);
             this.grpCatalog.Controls.Add(this.lblLosFrom);
-            this.grpCatalog.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpCatalog.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpCatalog.ForeColor = System.Drawing.Color.White;
-            this.grpCatalog.Location = new System.Drawing.Point(375, 13);
+            this.grpCatalog.Location = new System.Drawing.Point(375, 21);
             this.grpCatalog.Name = "grpCatalog";
-            this.grpCatalog.Size = new System.Drawing.Size(199, 212);
+            this.grpCatalog.Size = new System.Drawing.Size(185, 240);
             this.grpCatalog.TabIndex = 8;
             this.grpCatalog.TabStop = false;
             this.grpCatalog.Text = "Katalog";
@@ -877,8 +960,9 @@
             // 
             this.txtValuationRatio5.BackColor = System.Drawing.Color.SeaGreen;
             this.txtValuationRatio5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtValuationRatio5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtValuationRatio5.ForeColor = System.Drawing.Color.White;
-            this.txtValuationRatio5.Location = new System.Drawing.Point(109, 171);
+            this.txtValuationRatio5.Location = new System.Drawing.Point(106, 182);
             this.txtValuationRatio5.Name = "txtValuationRatio5";
             this.txtValuationRatio5.ReadOnly = true;
             this.txtValuationRatio5.Size = new System.Drawing.Size(51, 21);
@@ -890,8 +974,9 @@
             // 
             this.txtValuationRatio4.BackColor = System.Drawing.Color.SeaGreen;
             this.txtValuationRatio4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtValuationRatio4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtValuationRatio4.ForeColor = System.Drawing.Color.White;
-            this.txtValuationRatio4.Location = new System.Drawing.Point(109, 147);
+            this.txtValuationRatio4.Location = new System.Drawing.Point(106, 155);
             this.txtValuationRatio4.Name = "txtValuationRatio4";
             this.txtValuationRatio4.ReadOnly = true;
             this.txtValuationRatio4.Size = new System.Drawing.Size(51, 21);
@@ -903,8 +988,9 @@
             // 
             this.txtValuationRatio3.BackColor = System.Drawing.Color.SeaGreen;
             this.txtValuationRatio3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtValuationRatio3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtValuationRatio3.ForeColor = System.Drawing.Color.White;
-            this.txtValuationRatio3.Location = new System.Drawing.Point(109, 123);
+            this.txtValuationRatio3.Location = new System.Drawing.Point(106, 128);
             this.txtValuationRatio3.Name = "txtValuationRatio3";
             this.txtValuationRatio3.ReadOnly = true;
             this.txtValuationRatio3.Size = new System.Drawing.Size(51, 21);
@@ -916,8 +1002,9 @@
             // 
             this.txtValuationRatio2.BackColor = System.Drawing.Color.SeaGreen;
             this.txtValuationRatio2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtValuationRatio2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtValuationRatio2.ForeColor = System.Drawing.Color.White;
-            this.txtValuationRatio2.Location = new System.Drawing.Point(109, 99);
+            this.txtValuationRatio2.Location = new System.Drawing.Point(106, 101);
             this.txtValuationRatio2.Name = "txtValuationRatio2";
             this.txtValuationRatio2.ReadOnly = true;
             this.txtValuationRatio2.Size = new System.Drawing.Size(51, 21);
@@ -929,8 +1016,9 @@
             // 
             this.txtValuationRatio1.BackColor = System.Drawing.Color.SeaGreen;
             this.txtValuationRatio1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtValuationRatio1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtValuationRatio1.ForeColor = System.Drawing.Color.White;
-            this.txtValuationRatio1.Location = new System.Drawing.Point(109, 74);
+            this.txtValuationRatio1.Location = new System.Drawing.Point(106, 74);
             this.txtValuationRatio1.Name = "txtValuationRatio1";
             this.txtValuationRatio1.ReadOnly = true;
             this.txtValuationRatio1.Size = new System.Drawing.Size(51, 21);
@@ -942,8 +1030,9 @@
             // 
             this.txtLosTo2.BackColor = System.Drawing.Color.SeaGreen;
             this.txtLosTo2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosTo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLosTo2.ForeColor = System.Drawing.Color.White;
-            this.txtLosTo2.Location = new System.Drawing.Point(52, 99);
+            this.txtLosTo2.Location = new System.Drawing.Point(49, 101);
             this.txtLosTo2.Name = "txtLosTo2";
             this.txtLosTo2.ReadOnly = true;
             this.txtLosTo2.Size = new System.Drawing.Size(34, 21);
@@ -955,8 +1044,9 @@
             // 
             this.txtLosTo4.BackColor = System.Drawing.Color.SeaGreen;
             this.txtLosTo4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosTo4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLosTo4.ForeColor = System.Drawing.Color.White;
-            this.txtLosTo4.Location = new System.Drawing.Point(52, 147);
+            this.txtLosTo4.Location = new System.Drawing.Point(49, 155);
             this.txtLosTo4.Name = "txtLosTo4";
             this.txtLosTo4.ReadOnly = true;
             this.txtLosTo4.Size = new System.Drawing.Size(34, 21);
@@ -968,8 +1058,9 @@
             // 
             this.txtLosTo5.BackColor = System.Drawing.Color.SeaGreen;
             this.txtLosTo5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosTo5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLosTo5.ForeColor = System.Drawing.Color.White;
-            this.txtLosTo5.Location = new System.Drawing.Point(52, 171);
+            this.txtLosTo5.Location = new System.Drawing.Point(49, 183);
             this.txtLosTo5.Name = "txtLosTo5";
             this.txtLosTo5.ReadOnly = true;
             this.txtLosTo5.Size = new System.Drawing.Size(34, 21);
@@ -981,8 +1072,9 @@
             // 
             this.txtLosTo3.BackColor = System.Drawing.Color.SeaGreen;
             this.txtLosTo3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosTo3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLosTo3.ForeColor = System.Drawing.Color.White;
-            this.txtLosTo3.Location = new System.Drawing.Point(52, 123);
+            this.txtLosTo3.Location = new System.Drawing.Point(49, 128);
             this.txtLosTo3.Name = "txtLosTo3";
             this.txtLosTo3.ReadOnly = true;
             this.txtLosTo3.Size = new System.Drawing.Size(34, 21);
@@ -994,8 +1086,9 @@
             // 
             this.txtLosTo1.BackColor = System.Drawing.Color.SeaGreen;
             this.txtLosTo1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosTo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLosTo1.ForeColor = System.Drawing.Color.White;
-            this.txtLosTo1.Location = new System.Drawing.Point(52, 74);
+            this.txtLosTo1.Location = new System.Drawing.Point(49, 74);
             this.txtLosTo1.Name = "txtLosTo1";
             this.txtLosTo1.ReadOnly = true;
             this.txtLosTo1.Size = new System.Drawing.Size(34, 21);
@@ -1007,8 +1100,9 @@
             // 
             this.txtLosFrom2.BackColor = System.Drawing.Color.SeaGreen;
             this.txtLosFrom2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosFrom2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLosFrom2.ForeColor = System.Drawing.Color.White;
-            this.txtLosFrom2.Location = new System.Drawing.Point(12, 99);
+            this.txtLosFrom2.Location = new System.Drawing.Point(9, 101);
             this.txtLosFrom2.Name = "txtLosFrom2";
             this.txtLosFrom2.ReadOnly = true;
             this.txtLosFrom2.Size = new System.Drawing.Size(34, 21);
@@ -1020,8 +1114,9 @@
             // 
             this.txtLosFrom3.BackColor = System.Drawing.Color.SeaGreen;
             this.txtLosFrom3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosFrom3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLosFrom3.ForeColor = System.Drawing.Color.White;
-            this.txtLosFrom3.Location = new System.Drawing.Point(12, 123);
+            this.txtLosFrom3.Location = new System.Drawing.Point(9, 128);
             this.txtLosFrom3.Name = "txtLosFrom3";
             this.txtLosFrom3.ReadOnly = true;
             this.txtLosFrom3.Size = new System.Drawing.Size(34, 21);
@@ -1033,8 +1128,9 @@
             // 
             this.txtLosFrom4.BackColor = System.Drawing.Color.SeaGreen;
             this.txtLosFrom4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosFrom4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLosFrom4.ForeColor = System.Drawing.Color.White;
-            this.txtLosFrom4.Location = new System.Drawing.Point(12, 147);
+            this.txtLosFrom4.Location = new System.Drawing.Point(9, 155);
             this.txtLosFrom4.Name = "txtLosFrom4";
             this.txtLosFrom4.ReadOnly = true;
             this.txtLosFrom4.Size = new System.Drawing.Size(34, 21);
@@ -1046,8 +1142,9 @@
             // 
             this.txtLosFrom5.BackColor = System.Drawing.Color.SeaGreen;
             this.txtLosFrom5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosFrom5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLosFrom5.ForeColor = System.Drawing.Color.White;
-            this.txtLosFrom5.Location = new System.Drawing.Point(12, 171);
+            this.txtLosFrom5.Location = new System.Drawing.Point(9, 183);
             this.txtLosFrom5.Name = "txtLosFrom5";
             this.txtLosFrom5.ReadOnly = true;
             this.txtLosFrom5.Size = new System.Drawing.Size(34, 21);
@@ -1059,8 +1156,9 @@
             // 
             this.txtLosFrom1.BackColor = System.Drawing.Color.SeaGreen;
             this.txtLosFrom1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosFrom1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLosFrom1.ForeColor = System.Drawing.Color.White;
-            this.txtLosFrom1.Location = new System.Drawing.Point(12, 74);
+            this.txtLosFrom1.Location = new System.Drawing.Point(9, 74);
             this.txtLosFrom1.Name = "txtLosFrom1";
             this.txtLosFrom1.ReadOnly = true;
             this.txtLosFrom1.Size = new System.Drawing.Size(34, 21);
@@ -1072,10 +1170,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 22);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 15);
+            this.label1.Size = new System.Drawing.Size(79, 15);
             this.label1.TabIndex = 30;
             this.label1.Text = "Verweildauer";
             // 
@@ -1083,10 +1181,10 @@
             // 
             this.lblValuationRatioDay.AutoSize = true;
             this.lblValuationRatioDay.BackColor = System.Drawing.Color.Transparent;
-            this.lblValuationRatioDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValuationRatioDay.Location = new System.Drawing.Point(106, 18);
+            this.lblValuationRatioDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValuationRatioDay.Location = new System.Drawing.Point(103, 17);
             this.lblValuationRatioDay.Name = "lblValuationRatioDay";
-            this.lblValuationRatioDay.Size = new System.Drawing.Size(87, 30);
+            this.lblValuationRatioDay.Size = new System.Drawing.Size(76, 30);
             this.lblValuationRatioDay.TabIndex = 24;
             this.lblValuationRatioDay.Text = "Bewertungs-\r\nrelation/Tag";
             // 
@@ -1094,10 +1192,10 @@
             // 
             this.lblLosTo.AutoSize = true;
             this.lblLosTo.BackColor = System.Drawing.Color.Transparent;
-            this.lblLosTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLosTo.Location = new System.Drawing.Point(52, 46);
+            this.lblLosTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLosTo.Location = new System.Drawing.Point(46, 44);
             this.lblLosTo.Name = "lblLosTo";
-            this.lblLosTo.Size = new System.Drawing.Size(27, 15);
+            this.lblLosTo.Size = new System.Drawing.Size(24, 15);
             this.lblLosTo.TabIndex = 18;
             this.lblLosTo.Text = "Bis";
             // 
@@ -1105,16 +1203,17 @@
             // 
             this.lblLosFrom.AutoSize = true;
             this.lblLosFrom.BackColor = System.Drawing.Color.Transparent;
-            this.lblLosFrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLosFrom.Location = new System.Drawing.Point(15, 46);
+            this.lblLosFrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLosFrom.Location = new System.Drawing.Point(6, 44);
             this.lblLosFrom.Name = "lblLosFrom";
-            this.lblLosFrom.Size = new System.Drawing.Size(31, 15);
+            this.lblLosFrom.Size = new System.Drawing.Size(28, 15);
             this.lblLosFrom.TabIndex = 11;
             this.lblLosFrom.Text = "Von";
             // 
             // grpCases
             // 
-            this.grpCases.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpCases.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.grpCases.AutoSize = true;
             this.grpCases.BackColor = System.Drawing.Color.Transparent;
             this.grpCases.Controls.Add(this.txtCasesP5);
@@ -1130,22 +1229,24 @@
             this.grpCases.Controls.Add(this.txtCasesSummary);
             this.grpCases.Controls.Add(this.lblCasesPercentage);
             this.grpCases.Controls.Add(this.lblNumCases);
-            this.grpCases.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpCases.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpCases.ForeColor = System.Drawing.Color.White;
-            this.grpCases.Location = new System.Drawing.Point(142, 12);
+            this.grpCases.Location = new System.Drawing.Point(142, 21);
             this.grpCases.Name = "grpCases";
-            this.grpCases.Size = new System.Drawing.Size(147, 213);
+            this.grpCases.Size = new System.Drawing.Size(147, 240);
             this.grpCases.TabIndex = 7;
             this.grpCases.TabStop = false;
             this.grpCases.Text = "Fallzahl";
             // 
             // txtCasesP5
             // 
-            this.txtCasesP5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txtCasesP5.BackColor = System.Drawing.Color.SeaGreen;
             this.txtCasesP5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCasesP5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCasesP5.ForeColor = System.Drawing.Color.White;
-            this.txtCasesP5.Location = new System.Drawing.Point(75, 172);
+            this.txtCasesP5.Location = new System.Drawing.Point(75, 182);
+            this.txtCasesP5.MaximumSize = new System.Drawing.Size(150, 21);
+            this.txtCasesP5.MinimumSize = new System.Drawing.Size(51, 21);
             this.txtCasesP5.Name = "txtCasesP5";
             this.txtCasesP5.ReadOnly = true;
             this.txtCasesP5.Size = new System.Drawing.Size(51, 21);
@@ -1155,11 +1256,13 @@
             // 
             // txtCasesP4
             // 
-            this.txtCasesP4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txtCasesP4.BackColor = System.Drawing.Color.SeaGreen;
             this.txtCasesP4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCasesP4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCasesP4.ForeColor = System.Drawing.Color.White;
-            this.txtCasesP4.Location = new System.Drawing.Point(75, 148);
+            this.txtCasesP4.Location = new System.Drawing.Point(75, 155);
+            this.txtCasesP4.MaximumSize = new System.Drawing.Size(150, 21);
+            this.txtCasesP4.MinimumSize = new System.Drawing.Size(51, 21);
             this.txtCasesP4.Name = "txtCasesP4";
             this.txtCasesP4.ReadOnly = true;
             this.txtCasesP4.Size = new System.Drawing.Size(51, 21);
@@ -1169,11 +1272,13 @@
             // 
             // txtCasesP3
             // 
-            this.txtCasesP3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txtCasesP3.BackColor = System.Drawing.Color.SeaGreen;
             this.txtCasesP3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCasesP3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCasesP3.ForeColor = System.Drawing.Color.White;
-            this.txtCasesP3.Location = new System.Drawing.Point(75, 124);
+            this.txtCasesP3.Location = new System.Drawing.Point(75, 128);
+            this.txtCasesP3.MaximumSize = new System.Drawing.Size(150, 21);
+            this.txtCasesP3.MinimumSize = new System.Drawing.Size(51, 21);
             this.txtCasesP3.Name = "txtCasesP3";
             this.txtCasesP3.ReadOnly = true;
             this.txtCasesP3.Size = new System.Drawing.Size(51, 21);
@@ -1183,11 +1288,13 @@
             // 
             // txtCasesP2
             // 
-            this.txtCasesP2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txtCasesP2.BackColor = System.Drawing.Color.SeaGreen;
             this.txtCasesP2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCasesP2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCasesP2.ForeColor = System.Drawing.Color.White;
-            this.txtCasesP2.Location = new System.Drawing.Point(75, 100);
+            this.txtCasesP2.Location = new System.Drawing.Point(75, 101);
+            this.txtCasesP2.MaximumSize = new System.Drawing.Size(150, 21);
+            this.txtCasesP2.MinimumSize = new System.Drawing.Size(51, 21);
             this.txtCasesP2.Name = "txtCasesP2";
             this.txtCasesP2.ReadOnly = true;
             this.txtCasesP2.Size = new System.Drawing.Size(51, 21);
@@ -1197,11 +1304,13 @@
             // 
             // txtCasesP1
             // 
-            this.txtCasesP1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txtCasesP1.BackColor = System.Drawing.Color.SeaGreen;
             this.txtCasesP1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCasesP1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCasesP1.ForeColor = System.Drawing.Color.White;
-            this.txtCasesP1.Location = new System.Drawing.Point(75, 75);
+            this.txtCasesP1.Location = new System.Drawing.Point(75, 74);
+            this.txtCasesP1.MaximumSize = new System.Drawing.Size(150, 21);
+            this.txtCasesP1.MinimumSize = new System.Drawing.Size(51, 21);
             this.txtCasesP1.Name = "txtCasesP1";
             this.txtCasesP1.ReadOnly = true;
             this.txtCasesP1.Size = new System.Drawing.Size(51, 21);
@@ -1211,11 +1320,13 @@
             // 
             // txtCases5
             // 
-            this.txtCases5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCases5.BackColor = System.Drawing.Color.SeaGreen;
             this.txtCases5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCases5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCases5.ForeColor = System.Drawing.Color.White;
-            this.txtCases5.Location = new System.Drawing.Point(12, 172);
+            this.txtCases5.Location = new System.Drawing.Point(6, 182);
+            this.txtCases5.MaximumSize = new System.Drawing.Size(150, 21);
+            this.txtCases5.MinimumSize = new System.Drawing.Size(51, 21);
             this.txtCases5.Name = "txtCases5";
             this.txtCases5.ReadOnly = true;
             this.txtCases5.Size = new System.Drawing.Size(51, 21);
@@ -1225,11 +1336,13 @@
             // 
             // txtCases4
             // 
-            this.txtCases4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCases4.BackColor = System.Drawing.Color.SeaGreen;
             this.txtCases4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCases4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCases4.ForeColor = System.Drawing.Color.White;
-            this.txtCases4.Location = new System.Drawing.Point(12, 148);
+            this.txtCases4.Location = new System.Drawing.Point(6, 155);
+            this.txtCases4.MaximumSize = new System.Drawing.Size(150, 21);
+            this.txtCases4.MinimumSize = new System.Drawing.Size(51, 21);
             this.txtCases4.Name = "txtCases4";
             this.txtCases4.ReadOnly = true;
             this.txtCases4.Size = new System.Drawing.Size(51, 21);
@@ -1239,11 +1352,13 @@
             // 
             // txtCases3
             // 
-            this.txtCases3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCases3.BackColor = System.Drawing.Color.SeaGreen;
             this.txtCases3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCases3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCases3.ForeColor = System.Drawing.Color.White;
-            this.txtCases3.Location = new System.Drawing.Point(12, 124);
+            this.txtCases3.Location = new System.Drawing.Point(6, 128);
+            this.txtCases3.MaximumSize = new System.Drawing.Size(150, 21);
+            this.txtCases3.MinimumSize = new System.Drawing.Size(51, 21);
             this.txtCases3.Name = "txtCases3";
             this.txtCases3.ReadOnly = true;
             this.txtCases3.Size = new System.Drawing.Size(51, 21);
@@ -1253,11 +1368,13 @@
             // 
             // txtCases2
             // 
-            this.txtCases2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCases2.BackColor = System.Drawing.Color.SeaGreen;
             this.txtCases2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCases2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCases2.ForeColor = System.Drawing.Color.White;
-            this.txtCases2.Location = new System.Drawing.Point(12, 100);
+            this.txtCases2.Location = new System.Drawing.Point(6, 101);
+            this.txtCases2.MaximumSize = new System.Drawing.Size(150, 21);
+            this.txtCases2.MinimumSize = new System.Drawing.Size(51, 21);
             this.txtCases2.Name = "txtCases2";
             this.txtCases2.ReadOnly = true;
             this.txtCases2.Size = new System.Drawing.Size(51, 21);
@@ -1267,11 +1384,13 @@
             // 
             // txtCases1
             // 
-            this.txtCases1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCases1.BackColor = System.Drawing.Color.SeaGreen;
             this.txtCases1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCases1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCases1.ForeColor = System.Drawing.Color.White;
-            this.txtCases1.Location = new System.Drawing.Point(12, 75);
+            this.txtCases1.Location = new System.Drawing.Point(6, 74);
+            this.txtCases1.MaximumSize = new System.Drawing.Size(150, 21);
+            this.txtCases1.MinimumSize = new System.Drawing.Size(51, 21);
             this.txtCases1.Name = "txtCases1";
             this.txtCases1.ReadOnly = true;
             this.txtCases1.Size = new System.Drawing.Size(51, 21);
@@ -1281,11 +1400,13 @@
             // 
             // txtCasesSummary
             // 
-            this.txtCasesSummary.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCasesSummary.BackColor = System.Drawing.Color.SeaGreen;
             this.txtCasesSummary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCasesSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCasesSummary.ForeColor = System.Drawing.Color.White;
-            this.txtCasesSummary.Location = new System.Drawing.Point(12, 40);
+            this.txtCasesSummary.Location = new System.Drawing.Point(6, 42);
+            this.txtCasesSummary.MaximumSize = new System.Drawing.Size(150, 21);
+            this.txtCasesSummary.MinimumSize = new System.Drawing.Size(51, 21);
             this.txtCasesSummary.Name = "txtCasesSummary";
             this.txtCasesSummary.ReadOnly = true;
             this.txtCasesSummary.Size = new System.Drawing.Size(51, 21);
@@ -1297,10 +1418,10 @@
             // 
             this.lblCasesPercentage.AutoSize = true;
             this.lblCasesPercentage.BackColor = System.Drawing.Color.Transparent;
-            this.lblCasesPercentage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCasesPercentage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCasesPercentage.Location = new System.Drawing.Point(72, 17);
             this.lblCasesPercentage.Name = "lblCasesPercentage";
-            this.lblCasesPercentage.Size = new System.Drawing.Size(69, 15);
+            this.lblCasesPercentage.Size = new System.Drawing.Size(59, 15);
             this.lblCasesPercentage.TabIndex = 9;
             this.lblCasesPercentage.Text = "Anteil (%)";
             // 
@@ -1308,10 +1429,10 @@
             // 
             this.lblNumCases.AutoSize = true;
             this.lblNumCases.BackColor = System.Drawing.Color.Transparent;
-            this.lblNumCases.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumCases.Location = new System.Drawing.Point(12, 17);
+            this.lblNumCases.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumCases.Location = new System.Drawing.Point(6, 17);
             this.lblNumCases.Name = "lblNumCases";
-            this.lblNumCases.Size = new System.Drawing.Size(50, 15);
+            this.lblNumCases.Size = new System.Drawing.Size(44, 15);
             this.lblNumCases.TabIndex = 2;
             this.lblNumCases.Text = "Anzahl";
             // 
@@ -1319,10 +1440,10 @@
             // 
             this.lblPayLevel5.AutoSize = true;
             this.lblPayLevel5.BackColor = System.Drawing.Color.Transparent;
-            this.lblPayLevel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPayLevel5.Location = new System.Drawing.Point(10, 186);
+            this.lblPayLevel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPayLevel5.Location = new System.Drawing.Point(6, 205);
             this.lblPayLevel5.Name = "lblPayLevel5";
-            this.lblPayLevel5.Size = new System.Drawing.Size(130, 15);
+            this.lblPayLevel5.Size = new System.Drawing.Size(111, 15);
             this.lblPayLevel5.TabIndex = 6;
             this.lblPayLevel5.Text = "5. Vergütungsstufe:";
             // 
@@ -1330,10 +1451,10 @@
             // 
             this.lblPayLevel4.AutoSize = true;
             this.lblPayLevel4.BackColor = System.Drawing.Color.Transparent;
-            this.lblPayLevel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPayLevel4.Location = new System.Drawing.Point(10, 162);
+            this.lblPayLevel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPayLevel4.Location = new System.Drawing.Point(6, 178);
             this.lblPayLevel4.Name = "lblPayLevel4";
-            this.lblPayLevel4.Size = new System.Drawing.Size(130, 15);
+            this.lblPayLevel4.Size = new System.Drawing.Size(111, 15);
             this.lblPayLevel4.TabIndex = 5;
             this.lblPayLevel4.Text = "4. Vergütungsstufe:";
             // 
@@ -1341,10 +1462,10 @@
             // 
             this.lblPayLevel3.AutoSize = true;
             this.lblPayLevel3.BackColor = System.Drawing.Color.Transparent;
-            this.lblPayLevel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPayLevel3.Location = new System.Drawing.Point(10, 138);
+            this.lblPayLevel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPayLevel3.Location = new System.Drawing.Point(6, 151);
             this.lblPayLevel3.Name = "lblPayLevel3";
-            this.lblPayLevel3.Size = new System.Drawing.Size(130, 15);
+            this.lblPayLevel3.Size = new System.Drawing.Size(111, 15);
             this.lblPayLevel3.TabIndex = 4;
             this.lblPayLevel3.Text = "3. Vergütungsstufe:";
             // 
@@ -1352,10 +1473,10 @@
             // 
             this.lblPayLevel2.AutoSize = true;
             this.lblPayLevel2.BackColor = System.Drawing.Color.Transparent;
-            this.lblPayLevel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPayLevel2.Location = new System.Drawing.Point(10, 114);
+            this.lblPayLevel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPayLevel2.Location = new System.Drawing.Point(6, 124);
             this.lblPayLevel2.Name = "lblPayLevel2";
-            this.lblPayLevel2.Size = new System.Drawing.Size(130, 15);
+            this.lblPayLevel2.Size = new System.Drawing.Size(111, 15);
             this.lblPayLevel2.TabIndex = 3;
             this.lblPayLevel2.Text = "2. Vergütungsstufe:";
             // 
@@ -1363,11 +1484,11 @@
             // 
             this.lblPayLevel1.AutoSize = true;
             this.lblPayLevel1.BackColor = System.Drawing.Color.Transparent;
-            this.lblPayLevel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPayLevel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPayLevel1.ForeColor = System.Drawing.Color.White;
-            this.lblPayLevel1.Location = new System.Drawing.Point(10, 89);
+            this.lblPayLevel1.Location = new System.Drawing.Point(6, 97);
             this.lblPayLevel1.Name = "lblPayLevel1";
-            this.lblPayLevel1.Size = new System.Drawing.Size(130, 15);
+            this.lblPayLevel1.Size = new System.Drawing.Size(111, 15);
             this.lblPayLevel1.TabIndex = 2;
             this.lblPayLevel1.Text = "1. Vergütungsstufe:";
             // 
@@ -1375,10 +1496,10 @@
             // 
             this.lblSummary.AutoSize = true;
             this.lblSummary.BackColor = System.Drawing.Color.Transparent;
-            this.lblSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSummary.Location = new System.Drawing.Point(10, 54);
+            this.lblSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSummary.Location = new System.Drawing.Point(6, 65);
             this.lblSummary.Name = "lblSummary";
-            this.lblSummary.Size = new System.Drawing.Size(60, 15);
+            this.lblSummary.Size = new System.Drawing.Size(53, 15);
             this.lblSummary.TabIndex = 1;
             this.lblSummary.Text = "Gesamt:";
             // 
@@ -1394,11 +1515,11 @@
             this.grpLos.Controls.Add(this.txtDays1);
             this.grpLos.Controls.Add(this.txtDaysSummary);
             this.grpLos.Controls.Add(this.lblLosNumDays);
-            this.grpLos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpLos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpLos.ForeColor = System.Drawing.Color.White;
-            this.grpLos.Location = new System.Drawing.Point(295, 13);
+            this.grpLos.Location = new System.Drawing.Point(295, 21);
             this.grpLos.Name = "grpLos";
-            this.grpLos.Size = new System.Drawing.Size(74, 212);
+            this.grpLos.Size = new System.Drawing.Size(74, 240);
             this.grpLos.TabIndex = 0;
             this.grpLos.TabStop = false;
             this.grpLos.Text = "Vwd.";
@@ -1407,8 +1528,9 @@
             // 
             this.txtDays4.BackColor = System.Drawing.Color.SeaGreen;
             this.txtDays4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDays4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDays4.ForeColor = System.Drawing.Color.White;
-            this.txtDays4.Location = new System.Drawing.Point(11, 147);
+            this.txtDays4.Location = new System.Drawing.Point(8, 155);
             this.txtDays4.Name = "txtDays4";
             this.txtDays4.ReadOnly = true;
             this.txtDays4.Size = new System.Drawing.Size(51, 21);
@@ -1420,8 +1542,9 @@
             // 
             this.txtDays3.BackColor = System.Drawing.Color.SeaGreen;
             this.txtDays3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDays3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDays3.ForeColor = System.Drawing.Color.White;
-            this.txtDays3.Location = new System.Drawing.Point(11, 123);
+            this.txtDays3.Location = new System.Drawing.Point(8, 128);
             this.txtDays3.Name = "txtDays3";
             this.txtDays3.ReadOnly = true;
             this.txtDays3.Size = new System.Drawing.Size(51, 21);
@@ -1433,8 +1556,9 @@
             // 
             this.txtDays5.BackColor = System.Drawing.Color.SeaGreen;
             this.txtDays5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDays5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDays5.ForeColor = System.Drawing.Color.White;
-            this.txtDays5.Location = new System.Drawing.Point(11, 171);
+            this.txtDays5.Location = new System.Drawing.Point(8, 182);
             this.txtDays5.Name = "txtDays5";
             this.txtDays5.ReadOnly = true;
             this.txtDays5.Size = new System.Drawing.Size(51, 21);
@@ -1446,8 +1570,9 @@
             // 
             this.txtDays2.BackColor = System.Drawing.Color.SeaGreen;
             this.txtDays2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDays2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDays2.ForeColor = System.Drawing.Color.White;
-            this.txtDays2.Location = new System.Drawing.Point(11, 99);
+            this.txtDays2.Location = new System.Drawing.Point(9, 101);
             this.txtDays2.Name = "txtDays2";
             this.txtDays2.ReadOnly = true;
             this.txtDays2.Size = new System.Drawing.Size(51, 21);
@@ -1459,8 +1584,9 @@
             // 
             this.txtDays1.BackColor = System.Drawing.Color.SeaGreen;
             this.txtDays1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDays1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDays1.ForeColor = System.Drawing.Color.White;
-            this.txtDays1.Location = new System.Drawing.Point(11, 74);
+            this.txtDays1.Location = new System.Drawing.Point(8, 74);
             this.txtDays1.Name = "txtDays1";
             this.txtDays1.ReadOnly = true;
             this.txtDays1.Size = new System.Drawing.Size(51, 21);
@@ -1472,8 +1598,9 @@
             // 
             this.txtDaysSummary.BackColor = System.Drawing.Color.SeaGreen;
             this.txtDaysSummary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDaysSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDaysSummary.ForeColor = System.Drawing.Color.White;
-            this.txtDaysSummary.Location = new System.Drawing.Point(12, 39);
+            this.txtDaysSummary.Location = new System.Drawing.Point(9, 42);
             this.txtDaysSummary.Name = "txtDaysSummary";
             this.txtDaysSummary.ReadOnly = true;
             this.txtDaysSummary.Size = new System.Drawing.Size(51, 21);
@@ -1485,45 +1612,12 @@
             // 
             this.lblLosNumDays.AutoSize = true;
             this.lblLosNumDays.BackColor = System.Drawing.Color.Transparent;
-            this.lblLosNumDays.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLosNumDays.Location = new System.Drawing.Point(9, 18);
+            this.lblLosNumDays.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLosNumDays.Location = new System.Drawing.Point(6, 17);
             this.lblLosNumDays.Name = "lblLosNumDays";
-            this.lblLosNumDays.Size = new System.Drawing.Size(39, 15);
+            this.lblLosNumDays.Size = new System.Drawing.Size(35, 15);
             this.lblLosNumDays.TabIndex = 10;
             this.lblLosNumDays.Text = "Tage";
-            // 
-            // lblVwdDaysSmall
-            // 
-            this.lblVwdDaysSmall.AutoSize = true;
-            this.lblVwdDaysSmall.BackColor = System.Drawing.Color.Transparent;
-            this.lblVwdDaysSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVwdDaysSmall.Location = new System.Drawing.Point(7, 22);
-            this.lblVwdDaysSmall.Name = "lblVwdDaysSmall";
-            this.lblVwdDaysSmall.Size = new System.Drawing.Size(39, 15);
-            this.lblVwdDaysSmall.TabIndex = 40;
-            this.lblVwdDaysSmall.Text = "Tage";
-            // 
-            // lblDayCostsEuro
-            // 
-            this.lblDayCostsEuro.AutoSize = true;
-            this.lblDayCostsEuro.BackColor = System.Drawing.Color.Transparent;
-            this.lblDayCostsEuro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDayCostsEuro.Location = new System.Drawing.Point(7, 22);
-            this.lblDayCostsEuro.Name = "lblDayCostsEuro";
-            this.lblDayCostsEuro.Size = new System.Drawing.Size(37, 15);
-            this.lblDayCostsEuro.TabIndex = 41;
-            this.lblDayCostsEuro.Text = "Euro";
-            // 
-            // lblYears
-            // 
-            this.lblYears.AutoSize = true;
-            this.lblYears.BackColor = System.Drawing.Color.Transparent;
-            this.lblYears.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYears.Location = new System.Drawing.Point(7, 22);
-            this.lblYears.Name = "lblYears";
-            this.lblYears.Size = new System.Drawing.Size(43, 15);
-            this.lblYears.TabIndex = 42;
-            this.lblYears.Text = "Jahre";
             // 
             // Data
             // 
@@ -1533,7 +1627,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Controls.Add(this.pnlData);
             this.Name = "Data";
-            this.Size = new System.Drawing.Size(1182, 257);
+            this.Size = new System.Drawing.Size(1182, 272);
             this.pnlData.ResumeLayout(false);
             this.pnlData.PerformLayout();
             this.grpBigAge.ResumeLayout(false);
@@ -1664,5 +1758,6 @@
         private System.Windows.Forms.Label lblYears;
         private System.Windows.Forms.Label lblDayCostsEuro;
         private System.Windows.Forms.Label lblVwdDaysSmall;
+        private System.Windows.Forms.Label label2;
     }
 }
