@@ -4,7 +4,9 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices;
+using System.Runtime.Remoting.Messaging;
 using System.Windows.Forms;
 using combit.ListLabel18;
 using org.inek.controls.gui;
@@ -27,6 +29,7 @@ namespace org.inek.PeppBrowser.GUI {
         /* ################## */
 
         private FrmList dlg;
+        private bool matrixLoaded = false;
 
         public static string PEPP {
             get; set;
@@ -39,6 +42,7 @@ namespace org.inek.PeppBrowser.GUI {
         public FrmPeppBrowser() {
             InitializeComponent();
             Selection.Parent = this;
+            cbxPepp.InputField.Click += cbxPepp_ButtonClicked;
         }
 
         private void mnuPepp_Click(object sender, System.EventArgs e) {
@@ -251,22 +255,44 @@ namespace org.inek.PeppBrowser.GUI {
                 PEPP = cells[0].ToString();
                 cbxPepp.Text = cells[1].ToString();
                 FillHeadData();
+                matrixLoaded = false;
                 FillActiveTab(ActiveGrid());
             }
         }
 
         private void FillActiveTab(DataGridView grid) {
             if (grid == grdMainDiagnosis) {
-                grid.DataSource = Helper.ConvertToDataTable(CsvData.Context().PrimaryDiagnoses.Where(pepp => pepp.PeppCode == PEPP)
-                    .Select(pepp => new { PEPP = pepp.PeppCode, Hauptdiagnose = pepp.DiagCode, AnzahlFälle = pepp.Count, AnteilFälle = pepp.Fraction }));
+                //List<string> codes =
+                //    CsvData.Context().PrimaryDiagnoses.Where(pepp => pepp.PeppCode == PEPP).Select(c => c.DiagCode).ToList();
+                //List<string> y =
+                //    CsvData.Context()
+                //        .Recherche.Where(c => codes.Contains(c.Code) && c.PrimaryDaignosis == 1)
+                //        .Select(c => c.Text).ToDictionary();
+                //var x = CsvData.Context().PrimaryDiagnoses.Where(pepp => pepp.PeppCode == PEPP)
+                //    .Select(
+                //        pepp =>
+                //            new {
+                //                    PEPP = pepp.PeppCode,
+                //                    Hauptdiagnose = pepp.DiagCode,
+                //                    AnzahlFälle = pepp.Count,
+                //                    AnteilFälle = pepp.Fraction
+                //                });
+                //grdMainDiagnosis.DataSource = Helper.ConvertToDataTable(x);
+                //grdMainDiagnosis.Columns.Add("Text", "Text");
+                //int index = grdMainDiagnosis.Columns["Text"].Index;
+                //for (int i = 0; i < grid.Rows.Count; i++) {
+                //    grdMainDiagnosis.Rows[i].Cells[index].Value = y[i];
+                //}
+                //grdMainDiagnosis.Columns[index].DisplayIndex = 2;
             } else if (grid == grdSecondaryDiagnosis) {
                 grid.DataSource = Helper.ConvertToDataTable(CsvData.Context().SecondaryDiagnoses.Where(pepp => pepp.PeppCode == PEPP)
                     .Select(pepp => new { PEPP = pepp.PeppCode, Nebendiagnose = pepp.DiagCode, AnzahlFälle = pepp.CaseCount, AnteilFälle = pepp.CaseFraction, AnzahlNennungen = pepp.EntryCount, AnteilNennungen = pepp.EntryFraction }));   
             } else if (grid == grdProcedures) {
                 grid.DataSource = Helper.ConvertToDataTable(CsvData.Context().Procedures.Where(pepp => pepp.PeppCode == PEPP)
                     .Select(pepp => new { PEPP = pepp.PeppCode, Prozedur = pepp.ProcCode, AnzahlFälle = pepp.CaseCount, AnteilFälle = pepp.CaseFraction, AnzahlNennungen = pepp.EntryCount, AnteilNennungen = pepp.EntryFraction }));   
-            } else if (grid == grdCosts) {
+            } else if (grid == grdCosts && !matrixLoaded) {
                 BuildCostMatrix();
+                matrixLoaded = true;
             }
             if (grid != null) {
                 if (((DataTable)grid.DataSource).Rows.Count == 0) {
@@ -282,18 +308,124 @@ namespace org.inek.PeppBrowser.GUI {
                 CsvData.Context()
                     .Costs.Where(pepp => pepp.PeppCode == PEPP)
                     .Select(c => new {
-                                         KostenArt1 = c.CostType1, KostenArt2 = c.CostType2, KostenArt3a = c.CostType3a, KostenArt3b = c.CostType3b,
-                                         KostenArt3c = c.CostType3c, KostenArt4a = c.CostType4a, KostenArt4b = c.CostType4b, KostenArt6a = c.CostType6a,
-                                         KostenArt6b = c.CostType6b, KostenArt7 = c.CostType7, KostenArt8 = c.CostType8
+                                         KostenArt1 = c.CostType1.ToString(), KostenArt2 = c.CostType2.ToString(), KostenArt3a = c.CostType3a.ToString(), KostenArt3b = c.CostType3b.ToString(),
+                                         KostenArt3c = c.CostType3c.ToString(), KostenArt4a = c.CostType4a.ToString(), KostenArt4b = c.CostType4b.ToString(), KostenArt6a = c.CostType6a.ToString(),
+                                         KostenArt6b = c.CostType6b.ToString(), KostenArt7 = c.CostType7.ToString(), KostenArt8 = c.CostType8.ToString()
                                      });
             grdCosts.DataSource = Helper.ConvertToDataTable(q);
-            BuildCostMatrixColHeader();
+            List<int> rowIds = CsvData.Context()
+                .Costs.Where(pepp => pepp.PeppCode == PEPP)
+                .Select(ri => ri.CostDomain).ToList();
+            BuildCostMatrixColHeaders(Color.LightGreen);
+            BuildCostMatrixRowHeaders(rowIds, Color.LightGreen);
+            decimal sum = 0;
+            BuildCostMatrixColSum(Color.MediumSeaGreen, ref sum);
+            BuildCostMatrixRowSum(Color.MediumSeaGreen, ref sum);
+            MessageBox.Show(sum.ToString());
         }
 
-        private void BuildCostMatrixColHeader() {
-            DataRow header = new DataRow();
-            ((DataTable)grdCosts.DataSource).Rows.InsertAt(null, 0);
-           
+        private void BuildCostMatrixRowSum(Color sumColor, ref decimal sumsum) {
+            DataGridViewCellStyle cellStyle = new DataGridViewCellStyle();
+            cellStyle.BackColor = sumColor;
+            DataTable table = ((DataTable)grdCosts.DataSource);
+            DataRow row = table.NewRow();
+            table.Rows.Add(row);
+            int sumRow = table.Rows.Count - 1;
+            decimal sum = 0;
+            int colStart = grdCosts.Columns["KostenArt1"].Index;
+            int colEnd = grdCosts.Columns["KostenArt8"].Index;
+            for (int cols = colStart; cols <= colEnd; cols++) {
+                for (int rows = 1; rows < grdCosts.Rows.Count-1; rows++) {
+                    sum += decimal.Parse(grdCosts.Rows[rows].Cells[cols].Value.ToString());
+                }
+                grdCosts.Rows[sumRow].Cells[cols].Value = sum.ToString();
+                grdCosts.Rows[sumRow].Cells[cols].Style = cellStyle;
+                sumsum += sum;
+                sum = 0;
+            }
+            int sumCell = grdCosts.Columns["rowHeaders"].Index;
+            grdCosts.Rows[sumRow].Cells[sumCell].Value = "Summe";
+            grdCosts.Rows[sumRow].Cells[sumCell].Style = cellStyle;
+        }
+
+        private void BuildCostMatrixColSum(Color sumColor, ref decimal sumsum) {
+            DataGridViewCellStyle cellStyle = new DataGridViewCellStyle();
+            cellStyle.BackColor = sumColor;
+            int sumCol = 1;
+            if (!grdCosts.Columns.Contains("rowSums")) {
+                grdCosts.Columns.Add("rowSums", "");
+                sumCol = grdCosts.Columns.Count - 1;
+            }
+            grdCosts.Rows[0].Cells[sumCol].Value = "Summe";
+            grdCosts.Rows[0].Cells[sumCol].Style = cellStyle;
+            decimal sum = 0;
+            int colStart = grdCosts.Columns["KostenArt1"].Index;
+            int colEnd = grdCosts.Columns["KostenArt8"].Index;
+            for (int rows = 1; rows < grdCosts.Rows.Count; rows++) {
+                for (int cols = colStart; cols <= colEnd; cols++) {
+                    sum += decimal.Parse(grdCosts.Rows[rows].Cells[cols].Value.ToString());
+                }
+                grdCosts.Rows[rows].Cells[sumCol].Value = sum.ToString();
+                grdCosts.Rows[rows].Cells[sumCol].Style = cellStyle;
+                sumsum += sum;
+                sum = 0;
+            }
+        }
+
+        private void BuildCostMatrixRowHeaders(List<int> rowIds, Color headColor) {
+            int colHeaderId = 0;
+            if (!grdCosts.Columns.Contains("rowHeaders")) {
+                grdCosts.Columns.Add("rowHeaders", "");
+                colHeaderId = grdCosts.Columns.Count - 1;
+                grdCosts.Columns[colHeaderId].MinimumWidth = 280;
+                grdCosts.Columns[colHeaderId].DisplayIndex = 0;
+            }
+            var rowMap = CreateCostCenterMap();
+            DataGridViewCellStyle headerStyle = new DataGridViewCellStyle();
+            headerStyle.BackColor = headColor;
+            for (int i = 0; i < grdCosts.Rows.Count - 1; i++) {
+                if (i == grdCosts.Rows.Count - 2) {
+                    grdCosts.Rows[i + 1].Cells[colHeaderId].Style = headerStyle;
+                }
+                grdCosts.Rows[i].Cells[colHeaderId].Style = headerStyle;
+                grdCosts.Rows[i + 1].Cells[colHeaderId].Value = rowMap[rowIds[i]];
+            }
+        }
+
+        private static Dictionary<int, string> CreateCostCenterMap() {
+            Dictionary<int, string> rowMap = new Dictionary<int, string>();
+            rowMap.Add(21, "21. Station - Regelbehandlung");
+            rowMap.Add(22, "22. Station - Intensivbehandlung");
+            rowMap.Add(23, "23. Psychotherapie");
+            rowMap.Add(24, "24. Physikalische Therapie");
+            rowMap.Add(25, "25. Ergotherapie");
+            rowMap.Add(26, "26. Andere Therapie");
+            rowMap.Add(4, "04. OP-Bereich");
+            rowMap.Add(5, "05. Anästhesie");
+            rowMap.Add(7, "07. Kardiologische Diagnostik / Therapie");
+            rowMap.Add(8, "08. Endoskopische Diagnostik / Therapie");
+            rowMap.Add(9, "09. Radiologie");
+            rowMap.Add(10, "10. Laboratorien");
+            rowMap.Add(11, "11. Übrige diagnostische und therapeutische Bereiche");
+            return rowMap;
+        }
+
+        private void BuildCostMatrixColHeaders(Color headColor) {
+            DataTable table = ((DataTable) grdCosts.DataSource);
+            DataRow row = table.NewRow();
+            string[] headers = {
+                      "Ärztlicher Dienst\n1", "Pflege-/ Erziehungsdienst\n2", "Psychologen\n3a", "Sozialarbeiter/ Sozial-/Heilpädagogen\n3b", "Spezialtherapeuten\n3c", "Med.-techn. Dienst/ Funktionsdienst\n3",
+                      "Arzneimittel\n4a  4b", "Implantate/ Transplantate\n5", "Übriger medizinischer Bedarf\n6a  6b","med. Infrastruktur\n7", "nicht med. Infrastruktur\n8"
+                  };
+            for (int i = 0; i < row.Table.Columns.Count; i++) {
+                row[i] = headers[i];
+            }
+            table.Rows.InsertAt(row, 0);
+            DataGridViewCellStyle headerStyle = new DataGridViewCellStyle();
+            headerStyle.BackColor = headColor;
+            for (int i = 0; i < grdCosts.Columns.Count; i++) {
+                grdCosts.Rows[0].Cells[i].Style = headerStyle;
+            }
         }
 
         private DataGridView ActiveGrid() {
@@ -380,7 +512,7 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void beendenToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Close();
+            Application.Exit();
         }
 
 

@@ -45,6 +45,10 @@ namespace org.inek.PeppBrowser.GUI {
             PD = "";
             SD = "";
             Procedure = "";
+            cbxSk.InputField.Click += cbxSk_ButtonClicked;
+            cbxMainDiagnosis.InputField.Click += cbxMainDiagnosis_ButtonClicked;
+            cbxSecondaryDiagnosis.InputField.Click += cbxSecondaryDiagnosis_ButtonClicked;
+            cbxProcedure.InputField.Click += cbxProcedure_ButtonClicked;
         }
 
         private void cbxSk_ButtonClicked(object sender, EventArgs e) {
@@ -60,6 +64,7 @@ namespace org.inek.PeppBrowser.GUI {
                 List<object> cells = (List<object>) dlg.Id;
                 cbxSk.Text = cells[1].ToString();
                 SK = cells[0].ToString();
+                picClearSk.Visible = true;
             }
 
         }
@@ -81,6 +86,9 @@ namespace org.inek.PeppBrowser.GUI {
                 SD = "";
                 cbxMainDiagnosis.Text = dlg.Id.ToString();
                 PD = dlg.Id.ToString();
+                picClearHd.Visible = true;
+                picClearSd.Visible = false;
+                picClearProc.Visible = false;
             }
         }
 
@@ -102,6 +110,9 @@ namespace org.inek.PeppBrowser.GUI {
                 Procedure = "";
                 cbxSecondaryDiagnosis.Text = dlg.Id.ToString();
                 SD = dlg.Id.ToString();
+                picClearSd.Visible = true;
+                picClearHd.Visible = false;
+                picClearProc.Visible = false;
             }
         }
 
@@ -123,7 +134,34 @@ namespace org.inek.PeppBrowser.GUI {
                 SD = "";
                 cbxProcedure.Text = dlg.Id.ToString();
                 Procedure = dlg.Id.ToString();
+                picClearProc.Visible = true;
+                picClearHd.Visible = false;
+                picClearSd.Visible = false;
             }
+        }
+
+        private void picClearSk_Click(object sender, EventArgs e) {
+            SK = "";
+            cbxSk.Text = "";
+            picClearSk.Visible = false;
+        }
+
+        private void picClearHd_Click(object sender, EventArgs e) {
+            cbxMainDiagnosis.Text = "";
+            PD = "";
+            picClearHd.Visible = false;
+        }
+
+        private void picClearSd_Click(object sender, EventArgs e) {
+            cbxSecondaryDiagnosis.Text = "";
+            SD = "";
+            picClearSd.Visible = false;
+        }
+
+        private void picClearProc_Click(object sender, EventArgs e) {
+            cbxProcedure.Text = "";
+            Procedure = "";
+            picClearProc.Visible = false;
         }
     }
 }

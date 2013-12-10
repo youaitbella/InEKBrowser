@@ -104,6 +104,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Resources\peppo_exit.png" />
     <None Include="Resources\peppo_minimize.png" />
     <EmbeddedResource Include="GUI\Data.resx">
       <DependentUpon>Data.cs</DependentUpon>
