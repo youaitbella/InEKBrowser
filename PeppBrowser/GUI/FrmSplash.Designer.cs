@@ -25,12 +25,12 @@
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSplash));
             this.grpPanel = new System.Windows.Forms.GroupBox();
+            this.lblProgressState = new System.Windows.Forms.Label();
+            this.prgBar = new System.Windows.Forms.ProgressBar();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.prgBar = new System.Windows.Forms.ProgressBar();
             this.worker = new System.ComponentModel.BackgroundWorker();
-            this.lblProgressState = new System.Windows.Forms.Label();
             this.titleBar = new org.inek.PeppBrowser.GUI.TitleBar();
             this.grpPanel.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -50,6 +50,29 @@
             this.grpPanel.TabIndex = 3;
             this.grpPanel.TabStop = false;
             // 
+            // lblProgressState
+            // 
+            this.lblProgressState.BackColor = System.Drawing.Color.Transparent;
+            this.lblProgressState.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProgressState.ForeColor = System.Drawing.Color.White;
+            this.lblProgressState.Location = new System.Drawing.Point(12, 408);
+            this.lblProgressState.Name = "lblProgressState";
+            this.lblProgressState.Size = new System.Drawing.Size(284, 23);
+            this.lblProgressState.TabIndex = 5;
+            this.lblProgressState.Text = "Lade Kostenbereich...";
+            this.lblProgressState.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // prgBar
+            // 
+            this.prgBar.BackColor = System.Drawing.SystemColors.Control;
+            this.prgBar.ForeColor = System.Drawing.SystemColors.Control;
+            this.prgBar.Location = new System.Drawing.Point(13, 434);
+            this.prgBar.Maximum = 90;
+            this.prgBar.Name = "prgBar";
+            this.prgBar.Size = new System.Drawing.Size(284, 23);
+            this.prgBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.prgBar.TabIndex = 4;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label1);
@@ -67,7 +90,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(278, 48);
             this.label1.TabIndex = 2;
-            this.label1.Text = "PEPP Browser\r\nVersion 2013.1\r\n© InEK GmbH";
+            this.label1.Text = "PEPP Browser\r\nVersion 2014.1\r\n© InEK GmbH";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
@@ -80,35 +103,12 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // prgBar
-            // 
-            this.prgBar.BackColor = System.Drawing.SystemColors.Control;
-            this.prgBar.ForeColor = System.Drawing.SystemColors.Control;
-            this.prgBar.Location = new System.Drawing.Point(13, 434);
-            this.prgBar.Maximum = 90;
-            this.prgBar.Name = "prgBar";
-            this.prgBar.Size = new System.Drawing.Size(284, 23);
-            this.prgBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.prgBar.TabIndex = 4;
-            // 
             // worker
             // 
             this.worker.WorkerReportsProgress = true;
             this.worker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.worker_DoWork);
             this.worker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.worker_ProgressChanged);
             this.worker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.worker_RunWorkerCompleted);
-            // 
-            // lblProgressState
-            // 
-            this.lblProgressState.BackColor = System.Drawing.Color.Transparent;
-            this.lblProgressState.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProgressState.ForeColor = System.Drawing.Color.White;
-            this.lblProgressState.Location = new System.Drawing.Point(12, 408);
-            this.lblProgressState.Name = "lblProgressState";
-            this.lblProgressState.Size = new System.Drawing.Size(284, 23);
-            this.lblProgressState.TabIndex = 5;
-            this.lblProgressState.Text = "Lade Kostenbereich...";
-            this.lblProgressState.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // titleBar
             // 

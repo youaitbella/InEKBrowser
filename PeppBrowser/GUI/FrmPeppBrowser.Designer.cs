@@ -23,12 +23,6 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.mnuMain = new System.Windows.Forms.MenuStrip();
             this.mnuFile = new System.Windows.Forms.ToolStripMenuItem();
             this.beendenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,7 +43,6 @@
             this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlContentBackground = new System.Windows.Forms.Panel();
-            this.selection = new org.inek.PeppBrowser.GUI.Selection();
             this.lblPEPP = new System.Windows.Forms.Label();
             this.cbxPepp = new org.inek.controls.CommonControls.ComboField();
             this.tabControl = new System.Windows.Forms.TabControl();
@@ -60,8 +53,10 @@
             this.tabProcedures = new System.Windows.Forms.TabPage();
             this.grdProcedures = new System.Windows.Forms.DataGridView();
             this.tabDailyCosts = new System.Windows.Forms.TabPage();
-            this.data = new org.inek.PeppBrowser.GUI.Data();
+            this.grdCosts = new System.Windows.Forms.DataGridView();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.selection = new org.inek.PeppBrowser.GUI.Selection();
+            this.data = new org.inek.PeppBrowser.GUI.Data();
             this.titleBar = new org.inek.PeppBrowser.GUI.TitleBar();
             this.mnuMain.SuspendLayout();
             this.pnlContentBackground.SuspendLayout();
@@ -72,6 +67,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.grdSecondaryDiagnosis)).BeginInit();
             this.tabProcedures.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdProcedures)).BeginInit();
+            this.tabDailyCosts.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdCosts)).BeginInit();
             this.SuspendLayout();
             // 
             // mnuMain
@@ -259,16 +256,6 @@
             this.pnlContentBackground.TabIndex = 8;
             this.pnlContentBackground.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
             // 
-            // selection
-            // 
-            this.selection.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.selection.BackColor = System.Drawing.Color.SeaGreen;
-            this.selection.Location = new System.Drawing.Point(0, 27);
-            this.selection.Name = "selection";
-            this.selection.Size = new System.Drawing.Size(1182, 52);
-            this.selection.TabIndex = 11;
-            // 
             // lblPEPP
             // 
             this.lblPEPP.AutoSize = true;
@@ -284,9 +271,9 @@
             // 
             this.cbxPepp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxPepp.Location = new System.Drawing.Point(105, 86);
+            this.cbxPepp.Location = new System.Drawing.Point(107, 88);
             this.cbxPepp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbxPepp.MinimumSize = new System.Drawing.Size(100, 21);
+            this.cbxPepp.MinimumSize = new System.Drawing.Size(40, 21);
             this.cbxPepp.MutltiLine = false;
             this.cbxPepp.Name = "cbxPepp";
             this.cbxPepp.ReadOnly = true;
@@ -323,13 +310,21 @@
             // 
             // grdMainDiagnosis
             // 
+            this.grdMainDiagnosis.AllowUserToAddRows = false;
+            this.grdMainDiagnosis.AllowUserToDeleteRows = false;
+            this.grdMainDiagnosis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdMainDiagnosis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdMainDiagnosis.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grdMainDiagnosis.Location = new System.Drawing.Point(3, 3);
+            this.grdMainDiagnosis.MultiSelect = false;
             this.grdMainDiagnosis.Name = "grdMainDiagnosis";
             this.grdMainDiagnosis.ReadOnly = true;
+            this.grdMainDiagnosis.RowHeadersVisible = false;
+            this.grdMainDiagnosis.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdMainDiagnosis.Size = new System.Drawing.Size(1162, 312);
             this.grdMainDiagnosis.TabIndex = 0;
+            this.grdMainDiagnosis.Visible = false;
+            this.grdMainDiagnosis.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdMainDiagnosis_CellDoubleClick);
             // 
             // tabSecondaryDiagnosis
             // 
@@ -337,44 +332,27 @@
             this.tabSecondaryDiagnosis.Location = new System.Drawing.Point(4, 22);
             this.tabSecondaryDiagnosis.Name = "tabSecondaryDiagnosis";
             this.tabSecondaryDiagnosis.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSecondaryDiagnosis.Size = new System.Drawing.Size(1168, 330);
+            this.tabSecondaryDiagnosis.Size = new System.Drawing.Size(1168, 318);
             this.tabSecondaryDiagnosis.TabIndex = 1;
             this.tabSecondaryDiagnosis.Text = "Nebendiagnosen";
             this.tabSecondaryDiagnosis.UseVisualStyleBackColor = true;
             // 
             // grdSecondaryDiagnosis
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdSecondaryDiagnosis.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.grdSecondaryDiagnosis.AllowUserToAddRows = false;
+            this.grdSecondaryDiagnosis.AllowUserToDeleteRows = false;
+            this.grdSecondaryDiagnosis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdSecondaryDiagnosis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grdSecondaryDiagnosis.DefaultCellStyle = dataGridViewCellStyle2;
             this.grdSecondaryDiagnosis.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grdSecondaryDiagnosis.Location = new System.Drawing.Point(3, 3);
+            this.grdSecondaryDiagnosis.MultiSelect = false;
             this.grdSecondaryDiagnosis.Name = "grdSecondaryDiagnosis";
             this.grdSecondaryDiagnosis.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdSecondaryDiagnosis.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.grdSecondaryDiagnosis.Size = new System.Drawing.Size(1162, 324);
+            this.grdSecondaryDiagnosis.RowHeadersVisible = false;
+            this.grdSecondaryDiagnosis.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grdSecondaryDiagnosis.Size = new System.Drawing.Size(1162, 312);
             this.grdSecondaryDiagnosis.TabIndex = 1;
+            this.grdSecondaryDiagnosis.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdSecondaryDiagnosis_CellDoubleClick);
             // 
             // tabProcedures
             // 
@@ -382,54 +360,69 @@
             this.tabProcedures.Location = new System.Drawing.Point(4, 22);
             this.tabProcedures.Name = "tabProcedures";
             this.tabProcedures.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProcedures.Size = new System.Drawing.Size(1168, 330);
+            this.tabProcedures.Size = new System.Drawing.Size(1168, 318);
             this.tabProcedures.TabIndex = 2;
             this.tabProcedures.Text = "Prozeduren";
             this.tabProcedures.UseVisualStyleBackColor = true;
             // 
             // grdProcedures
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdProcedures.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.grdProcedures.AllowUserToAddRows = false;
+            this.grdProcedures.AllowUserToDeleteRows = false;
+            this.grdProcedures.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdProcedures.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grdProcedures.DefaultCellStyle = dataGridViewCellStyle5;
             this.grdProcedures.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grdProcedures.Location = new System.Drawing.Point(3, 3);
+            this.grdProcedures.MultiSelect = false;
             this.grdProcedures.Name = "grdProcedures";
             this.grdProcedures.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdProcedures.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.grdProcedures.Size = new System.Drawing.Size(1162, 324);
+            this.grdProcedures.RowHeadersVisible = false;
+            this.grdProcedures.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grdProcedures.Size = new System.Drawing.Size(1162, 312);
             this.grdProcedures.TabIndex = 2;
+            this.grdProcedures.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdProcedures_CellDoubleClick);
             // 
             // tabDailyCosts
             // 
             this.tabDailyCosts.BackColor = System.Drawing.Color.Transparent;
+            this.tabDailyCosts.Controls.Add(this.grdCosts);
             this.tabDailyCosts.Location = new System.Drawing.Point(4, 22);
             this.tabDailyCosts.Name = "tabDailyCosts";
             this.tabDailyCosts.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDailyCosts.Size = new System.Drawing.Size(1168, 330);
+            this.tabDailyCosts.Size = new System.Drawing.Size(1168, 318);
             this.tabDailyCosts.TabIndex = 3;
             this.tabDailyCosts.Text = "Tageskosten";
+            // 
+            // grdCosts
+            // 
+            this.grdCosts.AllowUserToAddRows = false;
+            this.grdCosts.AllowUserToDeleteRows = false;
+            this.grdCosts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grdCosts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdCosts.ColumnHeadersVisible = false;
+            this.grdCosts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grdCosts.Location = new System.Drawing.Point(3, 3);
+            this.grdCosts.MultiSelect = false;
+            this.grdCosts.Name = "grdCosts";
+            this.grdCosts.ReadOnly = true;
+            this.grdCosts.RowHeadersVisible = false;
+            this.grdCosts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grdCosts.Size = new System.Drawing.Size(1162, 312);
+            this.grdCosts.TabIndex = 3;
+            // 
+            // helpProvider1
+            // 
+            this.helpProvider1.HelpNamespace = "PeppBrowser.chm";
+            // 
+            // selection
+            // 
+            this.selection.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.selection.BackColor = System.Drawing.Color.SeaGreen;
+            this.selection.Location = new System.Drawing.Point(0, 27);
+            this.selection.Name = "selection";
+            this.selection.Size = new System.Drawing.Size(1182, 52);
+            this.selection.TabIndex = 11;
             // 
             // data
             // 
@@ -441,10 +434,6 @@
             this.data.Name = "data";
             this.data.Size = new System.Drawing.Size(1182, 270);
             this.data.TabIndex = 1;
-            // 
-            // helpProvider1
-            // 
-            this.helpProvider1.HelpNamespace = "PeppBrowser.chm";
             // 
             // titleBar
             // 
@@ -494,6 +483,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.grdSecondaryDiagnosis)).EndInit();
             this.tabProcedures.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdProcedures)).EndInit();
+            this.tabDailyCosts.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.grdCosts)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -525,15 +516,16 @@
         private System.Windows.Forms.TabPage tabSecondaryDiagnosis;
         private System.Windows.Forms.TabPage tabProcedures;
         private System.Windows.Forms.TabPage tabDailyCosts;
-        private System.Windows.Forms.DataGridView grdSecondaryDiagnosis;
-        private System.Windows.Forms.DataGridView grdProcedures;
         private System.Windows.Forms.Label lblPEPP;
         private controls.CommonControls.ComboField cbxPepp;
         private System.Windows.Forms.DataGridView grdMainDiagnosis;
         private Selection selection;
+        private System.Windows.Forms.DataGridView grdSecondaryDiagnosis;
+        private System.Windows.Forms.DataGridView grdProcedures;
         private System.Windows.Forms.ToolStripMenuItem beendenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem druckenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem designerToolStripMenuItem;
+        private System.Windows.Forms.DataGridView grdCosts;
 
     }
 }

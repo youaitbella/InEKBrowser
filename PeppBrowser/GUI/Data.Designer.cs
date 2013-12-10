@@ -222,9 +222,9 @@
             this.grpBigAge.Controls.Add(this.lblLT28Days);
             this.grpBigAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBigAge.ForeColor = System.Drawing.Color.White;
-            this.grpBigAge.Location = new System.Drawing.Point(914, 21);
+            this.grpBigAge.Location = new System.Drawing.Point(894, 21);
             this.grpBigAge.Name = "grpBigAge";
-            this.grpBigAge.Size = new System.Drawing.Size(262, 240);
+            this.grpBigAge.Size = new System.Drawing.Size(282, 240);
             this.grpBigAge.TabIndex = 18;
             this.grpBigAge.TabStop = false;
             this.grpBigAge.Text = "Alter (%)";
@@ -235,10 +235,10 @@
             this.txtGt79Year.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtGt79Year.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGt79Year.ForeColor = System.Drawing.Color.White;
-            this.txtGt79Year.Location = new System.Drawing.Point(217, 204);
+            this.txtGt79Year.Location = new System.Drawing.Point(228, 204);
             this.txtGt79Year.Name = "txtGt79Year";
             this.txtGt79Year.ReadOnly = true;
-            this.txtGt79Year.Size = new System.Drawing.Size(39, 21);
+            this.txtGt79Year.Size = new System.Drawing.Size(46, 21);
             this.txtGt79Year.TabIndex = 31;
             this.txtGt79Year.Text = "0";
             this.toolTipLT28Days.SetToolTip(this.txtGt79Year, "Test");
@@ -247,7 +247,7 @@
             // 
             this.lblGtYear79.AutoSize = true;
             this.lblGtYear79.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGtYear79.Location = new System.Drawing.Point(137, 206);
+            this.lblGtYear79.Location = new System.Drawing.Point(148, 206);
             this.lblGtYear79.Name = "lblGtYear79";
             this.lblGtYear79.Size = new System.Drawing.Size(75, 15);
             this.lblGtYear79.TabIndex = 30;
@@ -259,10 +259,10 @@
             this.txtBt75Year79.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBt75Year79.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBt75Year79.ForeColor = System.Drawing.Color.White;
-            this.txtBt75Year79.Location = new System.Drawing.Point(217, 177);
+            this.txtBt75Year79.Location = new System.Drawing.Point(228, 177);
             this.txtBt75Year79.Name = "txtBt75Year79";
             this.txtBt75Year79.ReadOnly = true;
-            this.txtBt75Year79.Size = new System.Drawing.Size(39, 21);
+            this.txtBt75Year79.Size = new System.Drawing.Size(46, 21);
             this.txtBt75Year79.TabIndex = 29;
             this.txtBt75Year79.Text = "0";
             this.toolTipLT28Days.SetToolTip(this.txtBt75Year79, "Test");
@@ -271,7 +271,7 @@
             // 
             this.lblBt75Year79.AutoSize = true;
             this.lblBt75Year79.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBt75Year79.Location = new System.Drawing.Point(139, 179);
+            this.lblBt75Year79.Location = new System.Drawing.Point(150, 179);
             this.lblBt75Year79.Name = "lblBt75Year79";
             this.lblBt75Year79.Size = new System.Drawing.Size(73, 15);
             this.lblBt75Year79.TabIndex = 28;
@@ -283,10 +283,10 @@
             this.txtBt65Year74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBt65Year74.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBt65Year74.ForeColor = System.Drawing.Color.White;
-            this.txtBt65Year74.Location = new System.Drawing.Point(217, 150);
+            this.txtBt65Year74.Location = new System.Drawing.Point(228, 150);
             this.txtBt65Year74.Name = "txtBt65Year74";
             this.txtBt65Year74.ReadOnly = true;
-            this.txtBt65Year74.Size = new System.Drawing.Size(39, 21);
+            this.txtBt65Year74.Size = new System.Drawing.Size(46, 21);
             this.txtBt65Year74.TabIndex = 27;
             this.txtBt65Year74.Text = "0";
             this.toolTipLT28Days.SetToolTip(this.txtBt65Year74, "Test");
@@ -295,7 +295,7 @@
             // 
             this.lblBt65Year74.AutoSize = true;
             this.lblBt65Year74.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBt65Year74.Location = new System.Drawing.Point(139, 152);
+            this.lblBt65Year74.Location = new System.Drawing.Point(150, 152);
             this.lblBt65Year74.Name = "lblBt65Year74";
             this.lblBt65Year74.Size = new System.Drawing.Size(73, 15);
             this.lblBt65Year74.TabIndex = 26;
@@ -307,10 +307,10 @@
             this.txtBt60Year64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBt60Year64.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBt60Year64.ForeColor = System.Drawing.Color.White;
-            this.txtBt60Year64.Location = new System.Drawing.Point(217, 123);
+            this.txtBt60Year64.Location = new System.Drawing.Point(228, 123);
             this.txtBt60Year64.Name = "txtBt60Year64";
             this.txtBt60Year64.ReadOnly = true;
-            this.txtBt60Year64.Size = new System.Drawing.Size(39, 21);
+            this.txtBt60Year64.Size = new System.Drawing.Size(46, 21);
             this.txtBt60Year64.TabIndex = 25;
             this.txtBt60Year64.Text = "0";
             this.toolTipLT28Days.SetToolTip(this.txtBt60Year64, "Test");
@@ -319,7 +319,7 @@
             // 
             this.lblBt60Year64.AutoSize = true;
             this.lblBt60Year64.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBt60Year64.Location = new System.Drawing.Point(139, 125);
+            this.lblBt60Year64.Location = new System.Drawing.Point(150, 125);
             this.lblBt60Year64.Name = "lblBt60Year64";
             this.lblBt60Year64.Size = new System.Drawing.Size(73, 15);
             this.lblBt60Year64.TabIndex = 24;
@@ -331,10 +331,10 @@
             this.txtBt55Year59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBt55Year59.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBt55Year59.ForeColor = System.Drawing.Color.White;
-            this.txtBt55Year59.Location = new System.Drawing.Point(217, 96);
+            this.txtBt55Year59.Location = new System.Drawing.Point(228, 96);
             this.txtBt55Year59.Name = "txtBt55Year59";
             this.txtBt55Year59.ReadOnly = true;
-            this.txtBt55Year59.Size = new System.Drawing.Size(39, 21);
+            this.txtBt55Year59.Size = new System.Drawing.Size(46, 21);
             this.txtBt55Year59.TabIndex = 23;
             this.txtBt55Year59.Text = "0";
             this.toolTipLT28Days.SetToolTip(this.txtBt55Year59, "Test");
@@ -343,7 +343,7 @@
             // 
             this.lblBt55Year59.AutoSize = true;
             this.lblBt55Year59.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBt55Year59.Location = new System.Drawing.Point(139, 98);
+            this.lblBt55Year59.Location = new System.Drawing.Point(150, 98);
             this.lblBt55Year59.Name = "lblBt55Year59";
             this.lblBt55Year59.Size = new System.Drawing.Size(73, 15);
             this.lblBt55Year59.TabIndex = 22;
@@ -355,10 +355,10 @@
             this.txtBt50Year54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBt50Year54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBt50Year54.ForeColor = System.Drawing.Color.White;
-            this.txtBt50Year54.Location = new System.Drawing.Point(217, 69);
+            this.txtBt50Year54.Location = new System.Drawing.Point(228, 69);
             this.txtBt50Year54.Name = "txtBt50Year54";
             this.txtBt50Year54.ReadOnly = true;
-            this.txtBt50Year54.Size = new System.Drawing.Size(39, 21);
+            this.txtBt50Year54.Size = new System.Drawing.Size(46, 21);
             this.txtBt50Year54.TabIndex = 21;
             this.txtBt50Year54.Text = "0";
             this.toolTipLT28Days.SetToolTip(this.txtBt50Year54, "Test");
@@ -367,7 +367,7 @@
             // 
             this.lblBt50Year54.AutoSize = true;
             this.lblBt50Year54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBt50Year54.Location = new System.Drawing.Point(138, 72);
+            this.lblBt50Year54.Location = new System.Drawing.Point(149, 72);
             this.lblBt50Year54.Name = "lblBt50Year54";
             this.lblBt50Year54.Size = new System.Drawing.Size(73, 15);
             this.lblBt50Year54.TabIndex = 20;
@@ -379,10 +379,10 @@
             this.txtBt40Year49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBt40Year49.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBt40Year49.ForeColor = System.Drawing.Color.White;
-            this.txtBt40Year49.Location = new System.Drawing.Point(217, 42);
+            this.txtBt40Year49.Location = new System.Drawing.Point(228, 42);
             this.txtBt40Year49.Name = "txtBt40Year49";
             this.txtBt40Year49.ReadOnly = true;
-            this.txtBt40Year49.Size = new System.Drawing.Size(39, 21);
+            this.txtBt40Year49.Size = new System.Drawing.Size(46, 21);
             this.txtBt40Year49.TabIndex = 19;
             this.txtBt40Year49.Text = "0";
             this.toolTipLT28Days.SetToolTip(this.txtBt40Year49, "Test");
@@ -391,7 +391,7 @@
             // 
             this.lblBt40Year49.AutoSize = true;
             this.lblBt40Year49.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBt40Year49.Location = new System.Drawing.Point(138, 44);
+            this.lblBt40Year49.Location = new System.Drawing.Point(149, 44);
             this.lblBt40Year49.Name = "lblBt40Year49";
             this.lblBt40Year49.Size = new System.Drawing.Size(73, 15);
             this.lblBt40Year49.TabIndex = 18;
@@ -403,10 +403,10 @@
             this.txtBt30Year39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBt30Year39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBt30Year39.ForeColor = System.Drawing.Color.White;
-            this.txtBt30Year39.Location = new System.Drawing.Point(217, 15);
+            this.txtBt30Year39.Location = new System.Drawing.Point(228, 15);
             this.txtBt30Year39.Name = "txtBt30Year39";
             this.txtBt30Year39.ReadOnly = true;
-            this.txtBt30Year39.Size = new System.Drawing.Size(39, 21);
+            this.txtBt30Year39.Size = new System.Drawing.Size(46, 21);
             this.txtBt30Year39.TabIndex = 17;
             this.txtBt30Year39.Text = "0";
             this.toolTipLT28Days.SetToolTip(this.txtBt30Year39, "Test");
@@ -415,7 +415,7 @@
             // 
             this.lblBt30Year39.AutoSize = true;
             this.lblBt30Year39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBt30Year39.Location = new System.Drawing.Point(139, 17);
+            this.lblBt30Year39.Location = new System.Drawing.Point(150, 17);
             this.lblBt30Year39.Name = "lblBt30Year39";
             this.lblBt30Year39.Size = new System.Drawing.Size(73, 15);
             this.lblBt30Year39.TabIndex = 16;
@@ -430,7 +430,7 @@
             this.txtBt18Year29.Location = new System.Drawing.Point(92, 204);
             this.txtBt18Year29.Name = "txtBt18Year29";
             this.txtBt18Year29.ReadOnly = true;
-            this.txtBt18Year29.Size = new System.Drawing.Size(39, 21);
+            this.txtBt18Year29.Size = new System.Drawing.Size(47, 21);
             this.txtBt18Year29.TabIndex = 15;
             this.txtBt18Year29.Text = "0";
             this.toolTipLT28Days.SetToolTip(this.txtBt18Year29, "Test");
@@ -454,7 +454,7 @@
             this.txtBt16Year17.Location = new System.Drawing.Point(92, 177);
             this.txtBt16Year17.Name = "txtBt16Year17";
             this.txtBt16Year17.ReadOnly = true;
-            this.txtBt16Year17.Size = new System.Drawing.Size(39, 21);
+            this.txtBt16Year17.Size = new System.Drawing.Size(47, 21);
             this.txtBt16Year17.TabIndex = 13;
             this.txtBt16Year17.Text = "0";
             this.toolTipLT28Days.SetToolTip(this.txtBt16Year17, "Test");
@@ -478,7 +478,7 @@
             this.txtBt10Year15.Location = new System.Drawing.Point(93, 150);
             this.txtBt10Year15.Name = "txtBt10Year15";
             this.txtBt10Year15.ReadOnly = true;
-            this.txtBt10Year15.Size = new System.Drawing.Size(39, 21);
+            this.txtBt10Year15.Size = new System.Drawing.Size(47, 21);
             this.txtBt10Year15.TabIndex = 11;
             this.txtBt10Year15.Text = "0";
             this.toolTipLT28Days.SetToolTip(this.txtBt10Year15, "Test");
@@ -502,7 +502,7 @@
             this.txtBt6Year9.Location = new System.Drawing.Point(93, 123);
             this.txtBt6Year9.Name = "txtBt6Year9";
             this.txtBt6Year9.ReadOnly = true;
-            this.txtBt6Year9.Size = new System.Drawing.Size(39, 21);
+            this.txtBt6Year9.Size = new System.Drawing.Size(47, 21);
             this.txtBt6Year9.TabIndex = 9;
             this.txtBt6Year9.Text = "0";
             this.toolTipLT28Days.SetToolTip(this.txtBt6Year9, "Test");
@@ -526,7 +526,7 @@
             this.txtBt3Year5.Location = new System.Drawing.Point(93, 96);
             this.txtBt3Year5.Name = "txtBt3Year5";
             this.txtBt3Year5.ReadOnly = true;
-            this.txtBt3Year5.Size = new System.Drawing.Size(39, 21);
+            this.txtBt3Year5.Size = new System.Drawing.Size(47, 21);
             this.txtBt3Year5.TabIndex = 7;
             this.txtBt3Year5.Text = "0";
             this.toolTipLT28Days.SetToolTip(this.txtBt3Year5, "Test");
@@ -550,7 +550,7 @@
             this.txtBt1Year2.Location = new System.Drawing.Point(93, 69);
             this.txtBt1Year2.Name = "txtBt1Year2";
             this.txtBt1Year2.ReadOnly = true;
-            this.txtBt1Year2.Size = new System.Drawing.Size(39, 21);
+            this.txtBt1Year2.Size = new System.Drawing.Size(47, 21);
             this.txtBt1Year2.TabIndex = 5;
             this.txtBt1Year2.Text = "0";
             this.toolTipLT28Days.SetToolTip(this.txtBt1Year2, "Test");
@@ -574,7 +574,7 @@
             this.txtBt28Days1Year.Location = new System.Drawing.Point(93, 42);
             this.txtBt28Days1Year.Name = "txtBt28Days1Year";
             this.txtBt28Days1Year.ReadOnly = true;
-            this.txtBt28Days1Year.Size = new System.Drawing.Size(39, 21);
+            this.txtBt28Days1Year.Size = new System.Drawing.Size(47, 21);
             this.txtBt28Days1Year.TabIndex = 3;
             this.txtBt28Days1Year.Text = "0";
             this.toolTipLT28Days.SetToolTip(this.txtBt28Days1Year, "Test");
@@ -598,7 +598,7 @@
             this.txtLT28Days.Location = new System.Drawing.Point(93, 15);
             this.txtLT28Days.Name = "txtLT28Days";
             this.txtLT28Days.ReadOnly = true;
-            this.txtLT28Days.Size = new System.Drawing.Size(39, 21);
+            this.txtLT28Days.Size = new System.Drawing.Size(47, 21);
             this.txtLT28Days.TabIndex = 1;
             this.txtLT28Days.Text = "0";
             this.toolTipLT28Days.SetToolTip(this.txtLT28Days, "Test");
@@ -622,7 +622,7 @@
             this.grpGender.Controls.Add(this.txtGenderMale);
             this.grpGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpGender.ForeColor = System.Drawing.Color.White;
-            this.grpGender.Location = new System.Drawing.Point(689, 161);
+            this.grpGender.Location = new System.Drawing.Point(669, 161);
             this.grpGender.Name = "grpGender";
             this.grpGender.Size = new System.Drawing.Size(72, 100);
             this.grpGender.TabIndex = 17;
@@ -674,7 +674,7 @@
             this.lblFemale.AutoSize = true;
             this.lblFemale.BackColor = System.Drawing.Color.Transparent;
             this.lblFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFemale.Location = new System.Drawing.Point(587, 227);
+            this.lblFemale.Location = new System.Drawing.Point(567, 227);
             this.lblFemale.Name = "lblFemale";
             this.lblFemale.Size = new System.Drawing.Size(57, 15);
             this.lblFemale.TabIndex = 16;
@@ -686,7 +686,7 @@
             this.lblMale.AutoSize = true;
             this.lblMale.BackColor = System.Drawing.Color.Transparent;
             this.lblMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMale.Location = new System.Drawing.Point(587, 200);
+            this.lblMale.Location = new System.Drawing.Point(567, 200);
             this.lblMale.Name = "lblMale";
             this.lblMale.Size = new System.Drawing.Size(61, 15);
             this.lblMale.TabIndex = 15;
@@ -701,7 +701,7 @@
             this.grpAge.Controls.Add(this.txtAgeAverage);
             this.grpAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpAge.ForeColor = System.Drawing.Color.White;
-            this.grpAge.Location = new System.Drawing.Point(845, 21);
+            this.grpAge.Location = new System.Drawing.Point(825, 21);
             this.grpAge.Name = "grpAge";
             this.grpAge.Size = new System.Drawing.Size(59, 134);
             this.grpAge.TabIndex = 14;
@@ -757,7 +757,7 @@
             this.grpDailyCosts.Controls.Add(this.txtDailyCostsAverage);
             this.grpDailyCosts.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpDailyCosts.ForeColor = System.Drawing.Color.White;
-            this.grpDailyCosts.Location = new System.Drawing.Point(767, 21);
+            this.grpDailyCosts.Location = new System.Drawing.Point(747, 21);
             this.grpDailyCosts.Name = "grpDailyCosts";
             this.grpDailyCosts.Size = new System.Drawing.Size(75, 134);
             this.grpDailyCosts.TabIndex = 13;
@@ -823,7 +823,7 @@
             this.lblHomogeneityCoefficient.AutoSize = true;
             this.lblHomogeneityCoefficient.BackColor = System.Drawing.Color.Transparent;
             this.lblHomogeneityCoefficient.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHomogeneityCoefficient.Location = new System.Drawing.Point(587, 119);
+            this.lblHomogeneityCoefficient.Location = new System.Drawing.Point(567, 119);
             this.lblHomogeneityCoefficient.Name = "lblHomogeneityCoefficient";
             this.lblHomogeneityCoefficient.Size = new System.Drawing.Size(96, 15);
             this.lblHomogeneityCoefficient.TabIndex = 12;
@@ -835,7 +835,7 @@
             this.lblStandardDeviation.AutoSize = true;
             this.lblStandardDeviation.BackColor = System.Drawing.Color.Transparent;
             this.lblStandardDeviation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStandardDeviation.Location = new System.Drawing.Point(587, 92);
+            this.lblStandardDeviation.Location = new System.Drawing.Point(567, 92);
             this.lblStandardDeviation.Name = "lblStandardDeviation";
             this.lblStandardDeviation.Size = new System.Drawing.Size(86, 15);
             this.lblStandardDeviation.TabIndex = 11;
@@ -847,7 +847,7 @@
             this.lblAverage.AutoSize = true;
             this.lblAverage.BackColor = System.Drawing.Color.Transparent;
             this.lblAverage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAverage.Location = new System.Drawing.Point(587, 65);
+            this.lblAverage.Location = new System.Drawing.Point(567, 65);
             this.lblAverage.Name = "lblAverage";
             this.lblAverage.Size = new System.Drawing.Size(63, 15);
             this.lblAverage.TabIndex = 10;
@@ -863,7 +863,7 @@
             this.groupBox1.Controls.Add(this.txtLosAverage);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(689, 21);
+            this.groupBox1.Location = new System.Drawing.Point(669, 21);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(72, 134);
             this.groupBox1.TabIndex = 9;

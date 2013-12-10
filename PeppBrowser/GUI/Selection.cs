@@ -75,6 +75,10 @@ namespace org.inek.PeppBrowser.GUI {
             dlg.KeyColumns = new[] {"Hauptdiagnose"};
             if (dlg.ShowDialog() == DialogResult.OK) {
                 Parent.TextPEPP = "";
+                cbxProcedure.Text = "";
+                Procedure = "";
+                cbxSecondaryDiagnosis.Text = "";
+                SD = "";
                 cbxMainDiagnosis.Text = dlg.Id.ToString();
                 PD = dlg.Id.ToString();
             }
@@ -92,6 +96,10 @@ namespace org.inek.PeppBrowser.GUI {
             dlg.KeyColumns = new[] {"Sekundärdiagnose"};
             if (dlg.ShowDialog() == DialogResult.OK) {
                 Parent.TextPEPP = "";
+                cbxMainDiagnosis.Text = "";
+                PD = "";
+                cbxProcedure.Text = "";
+                Procedure = "";
                 cbxSecondaryDiagnosis.Text = dlg.Id.ToString();
                 SD = dlg.Id.ToString();
             }
@@ -109,6 +117,10 @@ namespace org.inek.PeppBrowser.GUI {
             dlg.KeyColumns = new[] {"Prozedur"};
             if (dlg.ShowDialog() == DialogResult.OK) {
                 Parent.TextPEPP = "";
+                cbxMainDiagnosis.Text = "";
+                PD = "";
+                cbxSecondaryDiagnosis.Text = "";
+                SD = "";
                 cbxProcedure.Text = dlg.Id.ToString();
                 Procedure = dlg.Id.ToString();
             }

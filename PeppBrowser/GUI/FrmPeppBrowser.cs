@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using System.Windows.Forms.VisualStyles;
 using combit.ListLabel18;
-using org.inek.controls.FilteredDataGridView;
+using org.inek.controls.gui;
 using org.inek.controls.helper;
 using org.inek.PeppBrowser.Data;
-using org.inek.PeppBrowser.Data.Entities;
 
 namespace org.inek.PeppBrowser.GUI {
     public partial class FrmPeppBrowser : Form {
@@ -212,7 +211,7 @@ namespace org.inek.PeppBrowser.GUI {
         }
 
         private void cbxPepp_ButtonClicked(object sender, EventArgs e) {
-            dlg = new FrmList();
+            FrmSearch dlg = new FrmSearch(cbxPepp);
             var q = CsvData.Context().Pepps.Select(pepp => new {Strukturkategorie = pepp.StructureCategory, PEPP = pepp.Code, Text = pepp.Text});
             if (Selection.SK != "") {
                 q = q.Where(pepp => pepp.Strukturkategorie == Selection.SK);
@@ -245,29 +244,56 @@ namespace org.inek.PeppBrowser.GUI {
                 return;
             }
             dlg.SetDataSource(q);
-            dlg.DisplayCellValues = 3;
-            dlg.ClickedOk += dlg_ClickedOkPepp;
-            dlg.Show(this);
-        }
-
-        void dlg_ClickedOkPepp(object sender, EventArgs e) {
-            PEPP = dlg.SelectedItem.Split('#')[1];
-            cbxPepp.Text = dlg.SelectedItem.Split('#')[2];
-            FillHeadData();
-            FillActiveTab(ActiveGrid());
+            dlg.KeyColumns = new[] {"PEPP", "Text"};
+            dlg.ButtonShowIsVisible = false;
+            if (dlg.ShowDialog() == DialogResult.OK) {
+                List<object> cells = (List<object>)dlg.Id;
+                PEPP = cells[0].ToString();
+                cbxPepp.Text = cells[1].ToString();
+                FillHeadData();
+                FillActiveTab(ActiveGrid());
+            }
         }
 
         private void FillActiveTab(DataGridView grid) {
             if (grid == grdMainDiagnosis) {
                 grid.DataSource = Helper.ConvertToDataTable(CsvData.Context().PrimaryDiagnoses.Where(pepp => pepp.PeppCode == PEPP)
-                    .Select(pepp => new { PEPP = pepp.PeppCode, Hauptdiagnose = pepp.DiagCode, Anzahl = pepp.Count, Anteil = pepp.Fraction }));
+                    .Select(pepp => new { PEPP = pepp.PeppCode, Hauptdiagnose = pepp.DiagCode, AnzahlFälle = pepp.Count, AnteilFälle = pepp.Fraction }));
             } else if (grid == grdSecondaryDiagnosis) {
                 grid.DataSource = Helper.ConvertToDataTable(CsvData.Context().SecondaryDiagnoses.Where(pepp => pepp.PeppCode == PEPP)
                     .Select(pepp => new { PEPP = pepp.PeppCode, Nebendiagnose = pepp.DiagCode, AnzahlFälle = pepp.CaseCount, AnteilFälle = pepp.CaseFraction, AnzahlNennungen = pepp.EntryCount, AnteilNennungen = pepp.EntryFraction }));   
             } else if (grid == grdProcedures) {
                 grid.DataSource = Helper.ConvertToDataTable(CsvData.Context().Procedures.Where(pepp => pepp.PeppCode == PEPP)
                     .Select(pepp => new { PEPP = pepp.PeppCode, Prozedur = pepp.ProcCode, AnzahlFälle = pepp.CaseCount, AnteilFälle = pepp.CaseFraction, AnzahlNennungen = pepp.EntryCount, AnteilNennungen = pepp.EntryFraction }));   
+            } else if (grid == grdCosts) {
+                BuildCostMatrix();
             }
+            if (grid != null) {
+                if (((DataTable)grid.DataSource).Rows.Count == 0) {
+                    grid.Visible = false;
+                } else {
+                    grid.Visible = true;
+                }   
+            }
+        }
+
+        private void BuildCostMatrix() {
+            var q =
+                CsvData.Context()
+                    .Costs.Where(pepp => pepp.PeppCode == PEPP)
+                    .Select(c => new {
+                                         KostenArt1 = c.CostType1, KostenArt2 = c.CostType2, KostenArt3a = c.CostType3a, KostenArt3b = c.CostType3b,
+                                         KostenArt3c = c.CostType3c, KostenArt4a = c.CostType4a, KostenArt4b = c.CostType4b, KostenArt6a = c.CostType6a,
+                                         KostenArt6b = c.CostType6b, KostenArt7 = c.CostType7, KostenArt8 = c.CostType8
+                                     });
+            grdCosts.DataSource = Helper.ConvertToDataTable(q);
+            BuildCostMatrixColHeader();
+        }
+
+        private void BuildCostMatrixColHeader() {
+            DataRow header = new DataRow();
+            ((DataTable)grdCosts.DataSource).Rows.InsertAt(null, 0);
+           
         }
 
         private DataGridView ActiveGrid() {
@@ -278,6 +304,8 @@ namespace org.inek.PeppBrowser.GUI {
                     return grdSecondaryDiagnosis;
                 case 2:
                     return grdProcedures;
+                case 3:
+                    return grdCosts;
             }
             return null;
         } 
@@ -285,16 +313,16 @@ namespace org.inek.PeppBrowser.GUI {
         private void FillHeadData() {
             var q = CsvData.Context().PeppInfos.Where(pepp => pepp.Code == PEPP);
             data.CasesNumSummary = q.Select(p => p.CaseCount.ToString()).ElementAt(0);
-            data.Cases1 = q.Select(p => p.CaseCountPayLevel1.ToString("N1")).ElementAt(0);
+            data.Cases1 = q.Select(p => p.CaseCountPayLevel1.ToString()).ElementAt(0);
             data.Cases2 = q.Select(p => p.CaseCountPayLevel2.ToString()).ElementAt(0);
             data.Cases3 = q.Select(p => p.CaseCountPayLevel3.ToString()).ElementAt(0);
             data.Cases4 = q.Select(p => p.CaseCountPayLevel4.ToString()).ElementAt(0);
             data.Cases5 = q.Select(p => p.CaseCountPayLevel5.ToString()).ElementAt(0);
-            data.CasesP1 = q.Select(p => Math.Round((p.CaseFractionPayLevel1*100), 2).ToString()).ElementAt(0); // Prozent
-            data.CasesP2 = q.Select(p => Math.Round((p.CaseFractionPayLevel2*100), 2).ToString()).ElementAt(0); // Prozent
-            data.CasesP3 = q.Select(p => Math.Round((p.CaseFractionPayLevel3*100), 2).ToString()).ElementAt(0); // Prozent
-            data.CasesP4 = q.Select(p => Math.Round((p.CaseFractionPayLevel4*100), 2).ToString()).ElementAt(0); // Prozent
-            data.CasesP5 = q.Select(p => Math.Round((p.CaseFractionPayLevel5*100), 2).ToString()).ElementAt(0); // Prozent
+            data.CasesP1 = q.Select(p => Math.Round((p.CaseFractionPayLevel1 * 100), 2).ToString()+"%").ElementAt(0); // Prozent
+            data.CasesP2 = q.Select(p => Math.Round((p.CaseFractionPayLevel2 * 100), 2).ToString()+"%").ElementAt(0); // Prozent
+            data.CasesP3 = q.Select(p => Math.Round((p.CaseFractionPayLevel3 * 100), 2).ToString()+"%").ElementAt(0); // Prozent
+            data.CasesP4 = q.Select(p => Math.Round((p.CaseFractionPayLevel4 * 100), 2).ToString()+"%").ElementAt(0); // Prozent
+            data.CasesP5 = q.Select(p => Math.Round((p.CaseFractionPayLevel5*100), 2).ToString()+"%").ElementAt(0); // Prozent
             data.DaysSummary = q.Select(p => p.LosSumDays.ToString()).ElementAt(0);
             data.Days1 = q.Select(p => p.DayCountPayLevel1.ToString()).ElementAt(0);
             data.Days2 = q.Select(p => p.DayCountPayLevel2.ToString()).ElementAt(0);
@@ -303,7 +331,7 @@ namespace org.inek.PeppBrowser.GUI {
             data.Days5 = q.Select(p => p.DayCountPayLevel5.ToString()).ElementAt(0);
             data.LosAverage = q.Select(p => Math.Round(p.LosAverage, 1).ToString()).ElementAt(0);               // einstellig Dezimal
             data.LosStandardDeviation = q.Select(p => Math.Round(p.LosStandard, 1).ToString()).ElementAt(0);    // einstellig Dezimal
-            data.LosHomogeneityCoeff = q.Select(p => Math.Round((p.LosHc*100),2).ToString()).ElementAt(0);      // Prozent
+            data.LosHomogeneityCoeff = q.Select(p => Math.Round((p.LosHc),2).ToString()+"%").ElementAt(0);      // Prozent
             data.LosFrom1 = q.Select(p => p.LosFromPayLevel1.ToString()).ElementAt(0);
             data.LosFrom2 = q.Select(p => p.LosFromPayLevel2.ToString()).ElementAt(0);
             data.LosFrom3 = q.Select(p => p.LosFromPayLevel3.ToString()).ElementAt(0);
@@ -319,29 +347,29 @@ namespace org.inek.PeppBrowser.GUI {
             data.ValuationRatio3 = q.Select(p => Math.Round(p.ValuationRatLevel3, 4).ToString()).ElementAt(0);  // vierstellig Dezimal
             data.ValuationRatio4 = q.Select(p => Math.Round(p.ValuationRatLevel4, 4).ToString()).ElementAt(0);  // vierstellig Dezimal
             data.ValuationRatio5 = q.Select(p => Math.Round(p.ValuationRatLevel5, 4).ToString()).ElementAt(0);  // vierstellig Dezimal
-            data.GenderMale = q.Select(p => Math.Round((p.GenderMale*100), 2).ToString()).ElementAt(0);         // Prozent
-            data.GenderFemale = q.Select(p => Math.Round((p.GenderFemale*100), 2).ToString()).ElementAt(0);     // Prozent
+            data.GenderMale = q.Select(p => Math.Round((p.GenderMale * 100), 2).ToString()+"%").ElementAt(0);         // Prozent
+            data.GenderFemale = q.Select(p => Math.Round((p.GenderFemale * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
             data.AgeAverage = q.Select(p => Math.Round(p.AgeAverage, 1).ToString()).ElementAt(0);               // einstellig Dezimal
-            data.AgeStandardDeviation = q.Select(p => Math.Round(p.AgeStandard,1).ToString()).ElementAt(0);     // einstellig Dezimal
-            data.LT28Days = q.Select(p => Math.Round((p.AgeBelow28Days*100),2).ToString()).ElementAt(0);        // Prozent
-            data.Bt28Days1Year = q.Select(p => Math.Round((p.AgeBelow1Year*100),2).ToString()).ElementAt(0);    // Prozent
-            data.Bt1Year2 = q.Select(p => Math.Round((p.AgeBelow3Years*100),2).ToString()).ElementAt(0);        // Prozent
-            data.Bt3Year5 = q.Select(p => Math.Round((p.AgeBelow6Years*100),2).ToString()).ElementAt(0);        // Prozent
-            data.Bt6Year9 = q.Select(p => Math.Round((p.AgeBelow10Years*100),2).ToString()).ElementAt(0);       // Prozent
-            data.Bt10Year15 = q.Select(p => Math.Round((p.AgeBelow16Years*100),2).ToString()).ElementAt(0);     // Prozent
-            data.Bt16Year17 = q.Select(p => Math.Round((p.AgeBelow18Years*100),2).ToString()).ElementAt(0);     // Prozent
-            data.Bt18Year29 = q.Select(p => Math.Round((p.AgeBelow30Years*100),2).ToString()).ElementAt(0);     // Prozent
-            data.Bt30Year39 = q.Select(p => Math.Round((p.AgeBelow40Years*100),2).ToString()).ElementAt(0);     // Prozent
-            data.Bt40Year49 = q.Select(p => Math.Round((p.AgeBelow50Years*100),2).ToString()).ElementAt(0);     // Prozent
-            data.Bt50Year54 = q.Select(p => Math.Round((p.AgeBelow55Years*100),2).ToString()).ElementAt(0);     // Prozent
-            data.Bt55Year59 = q.Select(p => Math.Round((p.AgeBelow60Years*100),2).ToString()).ElementAt(0);     // Prozent
-            data.Bt60Year64 = q.Select(p => Math.Round((p.AgeBelow65Years*100),2).ToString()).ElementAt(0);     // Prozent
-            data.Bt65Year74 = q.Select(p => Math.Round((p.AgeBelow75Years*100),2).ToString()).ElementAt(0);     // Prozent
-            data.Bt75Year79 = q.Select(p => Math.Round((p.AgeBelow80Years*100),2).ToString()).ElementAt(0);     // Prozent
-            data.Gt79Year = q.Select(p => Math.Round((p.AgeBelow99Years*100),2).ToString()).ElementAt(0);       // Prozent
+            data.AgeStandardDeviation = q.Select(p => Math.Round(p.AgeStandard,1).ToString()+"%").ElementAt(0);     // einstellig Dezimal
+            data.LT28Days = q.Select(p => Math.Round((p.AgeBelow28Days * 100), 2).ToString()+"%").ElementAt(0);        // Prozent
+            data.Bt28Days1Year = q.Select(p => Math.Round((p.AgeBelow1Year * 100), 2).ToString()+"%").ElementAt(0);    // Prozent
+            data.Bt1Year2 = q.Select(p => Math.Round((p.AgeBelow3Years * 100), 2).ToString()+"%").ElementAt(0);        // Prozent
+            data.Bt3Year5 = q.Select(p => Math.Round((p.AgeBelow6Years * 100), 2).ToString()+"%").ElementAt(0);        // Prozent
+            data.Bt6Year9 = q.Select(p => Math.Round((p.AgeBelow10Years * 100), 2).ToString()+"%").ElementAt(0);       // Prozent
+            data.Bt10Year15 = q.Select(p => Math.Round((p.AgeBelow16Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
+            data.Bt16Year17 = q.Select(p => Math.Round((p.AgeBelow18Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
+            data.Bt18Year29 = q.Select(p => Math.Round((p.AgeBelow30Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
+            data.Bt30Year39 = q.Select(p => Math.Round((p.AgeBelow40Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
+            data.Bt40Year49 = q.Select(p => Math.Round((p.AgeBelow50Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
+            data.Bt50Year54 = q.Select(p => Math.Round((p.AgeBelow55Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
+            data.Bt55Year59 = q.Select(p => Math.Round((p.AgeBelow60Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
+            data.Bt60Year64 = q.Select(p => Math.Round((p.AgeBelow65Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
+            data.Bt65Year74 = q.Select(p => Math.Round((p.AgeBelow75Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
+            data.Bt75Year79 = q.Select(p => Math.Round((p.AgeBelow80Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
+            data.Gt79Year = q.Select(p => Math.Round((p.AgeBelow99Years * 100), 2).ToString()+"%").ElementAt(0);       // Prozent
             data.DailyCostsAverage = q.Select(p => Math.Round(p.DayCostsAverage, 2).ToString()).ElementAt(0);   // zweistellig Dezimal (money)
             data.DailyCostsStandardDeviation = q.Select(p => Math.Round(p.DayCostsStandard, 2).ToString()).ElementAt(0);    // zweistellig Dezimal (money)
-            data.DailyCostsHomogeneityCoeff = q.Select(p => Math.Round((p.DayCostsHc*100),2).ToString()).ElementAt(0);  // Prozent
+            data.DailyCostsHomogeneityCoeff = q.Select(p => Math.Round((p.DayCostsHc * 100), 2).ToString()+"%").ElementAt(0);  // Prozent
             data.TitlePEPP = "Kennzahlen - " + PEPP;
         }
 
@@ -369,6 +397,66 @@ namespace org.inek.PeppBrowser.GUI {
             //ToDO: Datenobjekt übergeben!
             Reporter reporter = new Reporter();
             reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Design, "peppDruck", "", "PEPP Report");
+        }
+
+        private void grdMainDiagnosis_CellDoubleClick(object sender, DataGridViewCellEventArgs e) {
+            if (grdMainDiagnosis.SelectedRows.Count > 0) {
+                string hd = grdMainDiagnosis.SelectedRows[0].Cells[1].Value.ToString();
+                List<string> pepps =
+                    CsvData.Context()
+                        .PrimaryDiagnoses
+                        .Where(pepp => pepp.DiagCode == hd)
+                        .Select(pepp => pepp.PeppCode)
+                        .ToList();
+                var q = CsvData.Context().PrimaryDiagnoses.Where(pd => pepps.Contains(pd.PeppCode) && pd.DiagCode == hd);
+                FrmSearch search = new FrmSearch(this);
+                search.Text = "PEPPs zu Hauptdiagnosen";
+                search.ButtonShowIsVisible = false;
+                search.SetDataSource(q);
+                if (search.ShowDialog() == DialogResult.OK) {
+                    // TODO
+                }
+            }
+        }
+
+        private void grdSecondaryDiagnosis_CellDoubleClick(object sender, DataGridViewCellEventArgs e) {
+            if (grdSecondaryDiagnosis.SelectedRows.Count > 0) {
+                string sd = grdSecondaryDiagnosis.SelectedRows[0].Cells[1].Value.ToString();
+                List<string> pepps =
+                    CsvData.Context()
+                        .SecondaryDiagnoses
+                        .Where(pepp => pepp.DiagCode == sd)
+                        .Select(pepp => pepp.PeppCode)
+                        .ToList();
+                var q = CsvData.Context().SecondaryDiagnoses.Where(pd => pepps.Contains(pd.PeppCode) && pd.DiagCode == sd);
+                FrmSearch search = new FrmSearch(this);
+                search.Text = "PEPPs zu Nebendiagnosen";
+                search.ButtonShowIsVisible = false;
+                search.SetDataSource(q);
+                if (search.ShowDialog() == DialogResult.OK) {
+                    // TODO
+                }
+            }
+        }
+
+        private void grdProcedures_CellDoubleClick(object sender, DataGridViewCellEventArgs e) {
+            if (grdProcedures.SelectedRows.Count > 0) {
+                string proc = grdProcedures.SelectedRows[0].Cells[1].Value.ToString();
+                List<string> pepps =
+                    CsvData.Context()
+                        .Procedures
+                        .Where(pepp => pepp.ProcCode == proc)
+                        .Select(pepp => pepp.PeppCode)
+                        .ToList();
+                var q = CsvData.Context().Procedures.Where(pd => pepps.Contains(pd.PeppCode) && pd.ProcCode == proc);
+                FrmSearch search = new FrmSearch(this);
+                search.Text = "PEPPs zu Prozeduren";
+                search.ButtonShowIsVisible = false;
+                search.SetDataSource(q);
+                if (search.ShowDialog() == DialogResult.OK) {
+                    // TODO
+                }
+            }
         }
     }
 }
