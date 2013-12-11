@@ -49,6 +49,12 @@ namespace org.inek.PeppBrowser.Data {
             Perform(projectType, mastermode, outputType, layoutFile, provider, dataMember, fileName, outputPath);
         }
 
+        public void Perform(LlProject projectType, LlAutoMasterMode mastermode, OutputType outputType, string layoutFile, object data, string dataMember, string fileName = "", string outputPath = "") {
+            ObjectDataProvider provider = new ObjectDataProvider(data, 2);
+            provider.RootTableName = data.GetType().Name;
+            Perform(projectType, mastermode, outputType, layoutFile, provider, dataMember, fileName, outputPath);
+        }
+
         public void Perform(LlProject projectType, LlAutoMasterMode mastermode, OutputType outputType, string layoutFile, DataSet dataSet, string dataMember, string fileName = "", string outputPath = "") {
             AdoDataProvider provider = new AdoDataProvider(dataSet);
             Perform(projectType, mastermode, outputType, layoutFile, provider, dataMember, fileName, outputPath);

@@ -65,6 +65,7 @@
     <Compile Include="Data\Entities\Recherche.cs" />
     <Compile Include="Data\Entities\SecondaryDiagnosis.cs" />
     <Compile Include="Data\Entities\StructureCategory.cs" />
+    <Compile Include="Data\PeppData.cs" />
     <Compile Include="Data\Reporter.cs" />
     <Compile Include="GUI\Data.cs">
       <SubType>UserControl</SubType>

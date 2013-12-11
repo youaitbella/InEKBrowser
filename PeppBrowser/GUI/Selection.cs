@@ -12,6 +12,10 @@ namespace org.inek.PeppBrowser.GUI {
             get; set;
         }
 
+        public static string SKTxt {
+            get; set;
+        }
+
         public static string PEPP {
             get; set;
         }
@@ -35,6 +39,7 @@ namespace org.inek.PeppBrowser.GUI {
         public Selection() {
             InitializeComponent();
             SK = "";
+            SKTxt = "";
             PEPP = "";
             PD = "";
             SD = "";
@@ -70,6 +75,7 @@ namespace org.inek.PeppBrowser.GUI {
                 Parent.TextPEPP = "";
                 List<object> cells = (List<object>) dlg.Id;
                 cbxSk.Text = cells[1].ToString();
+                SKTxt = cbxSk.Text;
                 SK = cells[0].ToString();
                 picClearSk.Visible = true;
             }
