@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Runtime.Remoting.Messaging;
 using System.Windows.Forms;
 using combit.ListLabel18;
+using org.inek.PeppBrowser.Data.Entities;
 using org.inek.controls.gui;
 using org.inek.controls.helper;
 using org.inek.PeppBrowser.Data;
@@ -589,17 +590,23 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void druckenToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //ToDO: Datenobjekt übergeben!
+            /*
             Reporter reporter = new Reporter();
-            reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Print, "peppDruck","" , "PEPP Report");
+            reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Print, "peppDruck", setReportData(PEPP), "data");
+             */
         }
 
 
         private void designerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //ToDO: Datenobjekt übergeben!
-            Reporter reporter = new Reporter();
-            reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Design, "peppDruck", "", "PEPP Report");
+            if(PEPP == "" || PEPP == null){
+                MessageBox.Show("Keine PEPP gewählt. Druck nicht möglich!");
+            }
+            else{
+                Reporter reporter = new Reporter();
+                reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Design, "peppDruck", setReportData(PEPP), "data");    
+            }
+            
         }
 
         private void grdMainDiagnosis_CellDoubleClick(object sender, DataGridViewCellEventArgs e) {
@@ -664,6 +671,21 @@ namespace org.inek.PeppBrowser.GUI {
                 }
             }
         }
+
+        private List<PeppData> setReportData(string pepp)
+        {
+            PeppInfo info = CsvData.Context().PeppInfos.Single(p => p.Code == pepp);
+            PeppData data = new PeppData(info);
+            data.StructCat = CsvData.Context().StructureCategories.Single(p => p.Text == Selection.SKTxt);
+            data.PDX = CsvData.Context().PrimaryDiagnoses.Where(p => p.PeppCode == pepp).ToList();
+            data.DDX = CsvData.Context().SecondaryDiagnoses.Where(p => p.PeppCode == pepp).ToList();
+            data.Proc = CsvData.Context().Procedures.Where(p => p.PeppCode == pepp).ToList();
+            List<PeppData> dataSet = new List<PeppData>();
+            dataSet.Add(data);
+
+            return dataSet;
+        }
+
 
         private void LoadPeppByTabControl(FrmSearch search) {
             selection.ClearSelection();
