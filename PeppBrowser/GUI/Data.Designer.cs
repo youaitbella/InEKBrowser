@@ -130,7 +130,7 @@
             this.txtDays1 = new System.Windows.Forms.TextBox();
             this.txtDaysSummary = new System.Windows.Forms.TextBox();
             this.lblLosNumDays = new System.Windows.Forms.Label();
-            this.toolTipLT28Days = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.pnlData.SuspendLayout();
             this.grpBigAge.SuspendLayout();
             this.grpGender.SuspendLayout();
@@ -238,10 +238,10 @@
             this.txtGt79Year.Location = new System.Drawing.Point(228, 204);
             this.txtGt79Year.Name = "txtGt79Year";
             this.txtGt79Year.ReadOnly = true;
+            this.txtGt79Year.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtGt79Year.Size = new System.Drawing.Size(46, 21);
             this.txtGt79Year.TabIndex = 31;
             this.txtGt79Year.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtGt79Year, "Test");
             // 
             // lblGtYear79
             // 
@@ -262,10 +262,10 @@
             this.txtBt75Year79.Location = new System.Drawing.Point(228, 177);
             this.txtBt75Year79.Name = "txtBt75Year79";
             this.txtBt75Year79.ReadOnly = true;
+            this.txtBt75Year79.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtBt75Year79.Size = new System.Drawing.Size(46, 21);
             this.txtBt75Year79.TabIndex = 29;
             this.txtBt75Year79.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtBt75Year79, "Test");
             // 
             // lblBt75Year79
             // 
@@ -286,10 +286,10 @@
             this.txtBt65Year74.Location = new System.Drawing.Point(228, 150);
             this.txtBt65Year74.Name = "txtBt65Year74";
             this.txtBt65Year74.ReadOnly = true;
+            this.txtBt65Year74.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtBt65Year74.Size = new System.Drawing.Size(46, 21);
             this.txtBt65Year74.TabIndex = 27;
             this.txtBt65Year74.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtBt65Year74, "Test");
             // 
             // lblBt65Year74
             // 
@@ -310,10 +310,10 @@
             this.txtBt60Year64.Location = new System.Drawing.Point(228, 123);
             this.txtBt60Year64.Name = "txtBt60Year64";
             this.txtBt60Year64.ReadOnly = true;
+            this.txtBt60Year64.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtBt60Year64.Size = new System.Drawing.Size(46, 21);
             this.txtBt60Year64.TabIndex = 25;
             this.txtBt60Year64.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtBt60Year64, "Test");
             // 
             // lblBt60Year64
             // 
@@ -334,10 +334,10 @@
             this.txtBt55Year59.Location = new System.Drawing.Point(228, 96);
             this.txtBt55Year59.Name = "txtBt55Year59";
             this.txtBt55Year59.ReadOnly = true;
+            this.txtBt55Year59.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtBt55Year59.Size = new System.Drawing.Size(46, 21);
             this.txtBt55Year59.TabIndex = 23;
             this.txtBt55Year59.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtBt55Year59, "Test");
             // 
             // lblBt55Year59
             // 
@@ -358,10 +358,10 @@
             this.txtBt50Year54.Location = new System.Drawing.Point(228, 69);
             this.txtBt50Year54.Name = "txtBt50Year54";
             this.txtBt50Year54.ReadOnly = true;
+            this.txtBt50Year54.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtBt50Year54.Size = new System.Drawing.Size(46, 21);
             this.txtBt50Year54.TabIndex = 21;
             this.txtBt50Year54.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtBt50Year54, "Test");
             // 
             // lblBt50Year54
             // 
@@ -382,10 +382,10 @@
             this.txtBt40Year49.Location = new System.Drawing.Point(228, 42);
             this.txtBt40Year49.Name = "txtBt40Year49";
             this.txtBt40Year49.ReadOnly = true;
+            this.txtBt40Year49.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtBt40Year49.Size = new System.Drawing.Size(46, 21);
             this.txtBt40Year49.TabIndex = 19;
             this.txtBt40Year49.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtBt40Year49, "Test");
             // 
             // lblBt40Year49
             // 
@@ -406,10 +406,10 @@
             this.txtBt30Year39.Location = new System.Drawing.Point(228, 15);
             this.txtBt30Year39.Name = "txtBt30Year39";
             this.txtBt30Year39.ReadOnly = true;
+            this.txtBt30Year39.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtBt30Year39.Size = new System.Drawing.Size(46, 21);
             this.txtBt30Year39.TabIndex = 17;
             this.txtBt30Year39.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtBt30Year39, "Test");
             // 
             // lblBt30Year39
             // 
@@ -430,10 +430,10 @@
             this.txtBt18Year29.Location = new System.Drawing.Point(92, 204);
             this.txtBt18Year29.Name = "txtBt18Year29";
             this.txtBt18Year29.ReadOnly = true;
+            this.txtBt18Year29.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtBt18Year29.Size = new System.Drawing.Size(47, 21);
             this.txtBt18Year29.TabIndex = 15;
             this.txtBt18Year29.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtBt18Year29, "Test");
             // 
             // lblBt18Year29
             // 
@@ -454,10 +454,10 @@
             this.txtBt16Year17.Location = new System.Drawing.Point(92, 177);
             this.txtBt16Year17.Name = "txtBt16Year17";
             this.txtBt16Year17.ReadOnly = true;
+            this.txtBt16Year17.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtBt16Year17.Size = new System.Drawing.Size(47, 21);
             this.txtBt16Year17.TabIndex = 13;
             this.txtBt16Year17.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtBt16Year17, "Test");
             // 
             // lblBt16Year17
             // 
@@ -478,10 +478,10 @@
             this.txtBt10Year15.Location = new System.Drawing.Point(93, 150);
             this.txtBt10Year15.Name = "txtBt10Year15";
             this.txtBt10Year15.ReadOnly = true;
+            this.txtBt10Year15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtBt10Year15.Size = new System.Drawing.Size(47, 21);
             this.txtBt10Year15.TabIndex = 11;
             this.txtBt10Year15.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtBt10Year15, "Test");
             // 
             // lblBt10Year15
             // 
@@ -502,10 +502,10 @@
             this.txtBt6Year9.Location = new System.Drawing.Point(93, 123);
             this.txtBt6Year9.Name = "txtBt6Year9";
             this.txtBt6Year9.ReadOnly = true;
+            this.txtBt6Year9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtBt6Year9.Size = new System.Drawing.Size(47, 21);
             this.txtBt6Year9.TabIndex = 9;
             this.txtBt6Year9.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtBt6Year9, "Test");
             // 
             // lblBt6Year9
             // 
@@ -526,10 +526,10 @@
             this.txtBt3Year5.Location = new System.Drawing.Point(93, 96);
             this.txtBt3Year5.Name = "txtBt3Year5";
             this.txtBt3Year5.ReadOnly = true;
+            this.txtBt3Year5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtBt3Year5.Size = new System.Drawing.Size(47, 21);
             this.txtBt3Year5.TabIndex = 7;
             this.txtBt3Year5.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtBt3Year5, "Test");
             // 
             // lblBt3Year5
             // 
@@ -550,10 +550,10 @@
             this.txtBt1Year2.Location = new System.Drawing.Point(93, 69);
             this.txtBt1Year2.Name = "txtBt1Year2";
             this.txtBt1Year2.ReadOnly = true;
+            this.txtBt1Year2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtBt1Year2.Size = new System.Drawing.Size(47, 21);
             this.txtBt1Year2.TabIndex = 5;
             this.txtBt1Year2.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtBt1Year2, "Test");
             // 
             // lblBt1Year2
             // 
@@ -574,10 +574,10 @@
             this.txtBt28Days1Year.Location = new System.Drawing.Point(93, 42);
             this.txtBt28Days1Year.Name = "txtBt28Days1Year";
             this.txtBt28Days1Year.ReadOnly = true;
+            this.txtBt28Days1Year.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtBt28Days1Year.Size = new System.Drawing.Size(47, 21);
             this.txtBt28Days1Year.TabIndex = 3;
             this.txtBt28Days1Year.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtBt28Days1Year, "Test");
             // 
             // lblBt28Days1Year
             // 
@@ -585,9 +585,10 @@
             this.lblBt28Days1Year.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBt28Days1Year.Location = new System.Drawing.Point(6, 44);
             this.lblBt28Days1Year.Name = "lblBt28Days1Year";
-            this.lblBt28Days1Year.Size = new System.Drawing.Size(81, 15);
+            this.lblBt28Days1Year.Size = new System.Drawing.Size(72, 15);
             this.lblBt28Days1Year.TabIndex = 2;
-            this.lblBt28Days1Year.Text = "28 T. < 1 Jahr";
+            this.lblBt28Days1Year.Text = "28 T.-1 Jahr";
+            this.toolTip.SetToolTip(this.lblBt28Days1Year, "28 Tage - 1 Jahr");
             // 
             // txtLT28Days
             // 
@@ -598,10 +599,10 @@
             this.txtLT28Days.Location = new System.Drawing.Point(93, 15);
             this.txtLT28Days.Name = "txtLT28Days";
             this.txtLT28Days.ReadOnly = true;
+            this.txtLT28Days.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtLT28Days.Size = new System.Drawing.Size(47, 21);
             this.txtLT28Days.TabIndex = 1;
             this.txtLT28Days.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtLT28Days, "Test");
             // 
             // lblLT28Days
             // 
@@ -609,9 +610,9 @@
             this.lblLT28Days.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLT28Days.Location = new System.Drawing.Point(6, 17);
             this.lblLT28Days.Name = "lblLT28Days";
-            this.lblLT28Days.Size = new System.Drawing.Size(35, 15);
+            this.lblLT28Days.Size = new System.Drawing.Size(62, 15);
             this.lblLT28Days.TabIndex = 0;
-            this.lblLT28Days.Text = "<28T";
+            this.lblLT28Days.Text = "< 28 Tage";
             // 
             // grpGender
             // 
@@ -628,6 +629,7 @@
             this.grpGender.TabIndex = 17;
             this.grpGender.TabStop = false;
             this.grpGender.Text = "Geschl.";
+            this.toolTip.SetToolTip(this.grpGender, "Geschlecht");
             // 
             // label2
             // 
@@ -649,10 +651,10 @@
             this.txtGenderFemale.Location = new System.Drawing.Point(9, 64);
             this.txtGenderFemale.Name = "txtGenderFemale";
             this.txtGenderFemale.ReadOnly = true;
+            this.txtGenderFemale.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtGenderFemale.Size = new System.Drawing.Size(51, 21);
             this.txtGenderFemale.TabIndex = 43;
             this.txtGenderFemale.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtGenderFemale, "Test");
             // 
             // txtGenderMale
             // 
@@ -663,10 +665,10 @@
             this.txtGenderMale.Location = new System.Drawing.Point(9, 37);
             this.txtGenderMale.Name = "txtGenderMale";
             this.txtGenderMale.ReadOnly = true;
+            this.txtGenderMale.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtGenderMale.Size = new System.Drawing.Size(51, 21);
             this.txtGenderMale.TabIndex = 42;
             this.txtGenderMale.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtGenderMale, "Test");
             // 
             // lblFemale
             // 
@@ -728,10 +730,10 @@
             this.txtAgeStandardDeviation.Location = new System.Drawing.Point(9, 69);
             this.txtAgeStandardDeviation.Name = "txtAgeStandardDeviation";
             this.txtAgeStandardDeviation.ReadOnly = true;
+            this.txtAgeStandardDeviation.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtAgeStandardDeviation.Size = new System.Drawing.Size(38, 21);
             this.txtAgeStandardDeviation.TabIndex = 41;
             this.txtAgeStandardDeviation.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtAgeStandardDeviation, "Test");
             // 
             // txtAgeAverage
             // 
@@ -742,10 +744,10 @@
             this.txtAgeAverage.Location = new System.Drawing.Point(9, 42);
             this.txtAgeAverage.Name = "txtAgeAverage";
             this.txtAgeAverage.ReadOnly = true;
+            this.txtAgeAverage.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtAgeAverage.Size = new System.Drawing.Size(38, 21);
             this.txtAgeAverage.TabIndex = 40;
             this.txtAgeAverage.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtAgeAverage, "Test");
             // 
             // grpDailyCosts
             // 
@@ -763,6 +765,7 @@
             this.grpDailyCosts.TabIndex = 13;
             this.grpDailyCosts.TabStop = false;
             this.grpDailyCosts.Text = "Tagesk.";
+            this.toolTip.SetToolTip(this.grpDailyCosts, "Tageskosten");
             // 
             // lblDayCostsEuro
             // 
@@ -784,10 +787,10 @@
             this.txtDailyCostsHomogeneityCoeff.Location = new System.Drawing.Point(9, 96);
             this.txtDailyCostsHomogeneityCoeff.Name = "txtDailyCostsHomogeneityCoeff";
             this.txtDailyCostsHomogeneityCoeff.ReadOnly = true;
+            this.txtDailyCostsHomogeneityCoeff.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtDailyCostsHomogeneityCoeff.Size = new System.Drawing.Size(54, 21);
             this.txtDailyCostsHomogeneityCoeff.TabIndex = 40;
             this.txtDailyCostsHomogeneityCoeff.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtDailyCostsHomogeneityCoeff, "Test");
             // 
             // txtDailyCostsStandardDeviation
             // 
@@ -798,10 +801,10 @@
             this.txtDailyCostsStandardDeviation.Location = new System.Drawing.Point(9, 69);
             this.txtDailyCostsStandardDeviation.Name = "txtDailyCostsStandardDeviation";
             this.txtDailyCostsStandardDeviation.ReadOnly = true;
+            this.txtDailyCostsStandardDeviation.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtDailyCostsStandardDeviation.Size = new System.Drawing.Size(54, 21);
             this.txtDailyCostsStandardDeviation.TabIndex = 39;
             this.txtDailyCostsStandardDeviation.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtDailyCostsStandardDeviation, "Test");
             // 
             // txtDailyCostsAverage
             // 
@@ -812,10 +815,10 @@
             this.txtDailyCostsAverage.Location = new System.Drawing.Point(9, 42);
             this.txtDailyCostsAverage.Name = "txtDailyCostsAverage";
             this.txtDailyCostsAverage.ReadOnly = true;
+            this.txtDailyCostsAverage.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtDailyCostsAverage.Size = new System.Drawing.Size(54, 21);
             this.txtDailyCostsAverage.TabIndex = 38;
             this.txtDailyCostsAverage.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtDailyCostsAverage, "Test");
             // 
             // lblHomogeneityCoefficient
             // 
@@ -828,6 +831,7 @@
             this.lblHomogeneityCoefficient.Size = new System.Drawing.Size(96, 15);
             this.lblHomogeneityCoefficient.TabIndex = 12;
             this.lblHomogeneityCoefficient.Text = "Homogenitätsk.:";
+            this.toolTip.SetToolTip(this.lblHomogeneityCoefficient, "Homogenitätskoeffizient");
             // 
             // lblStandardDeviation
             // 
@@ -840,6 +844,7 @@
             this.lblStandardDeviation.Size = new System.Drawing.Size(86, 15);
             this.lblStandardDeviation.TabIndex = 11;
             this.lblStandardDeviation.Text = "Standardabw.:";
+            this.toolTip.SetToolTip(this.lblStandardDeviation, "Standardabweichung");
             // 
             // lblAverage
             // 
@@ -869,6 +874,7 @@
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Vwd.";
+            this.toolTip.SetToolTip(this.groupBox1, "Verweildauer");
             // 
             // lblVwdDaysSmall
             // 
@@ -890,10 +896,10 @@
             this.txtLosHomogeneityCoeff.Location = new System.Drawing.Point(9, 96);
             this.txtLosHomogeneityCoeff.Name = "txtLosHomogeneityCoeff";
             this.txtLosHomogeneityCoeff.ReadOnly = true;
+            this.txtLosHomogeneityCoeff.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtLosHomogeneityCoeff.Size = new System.Drawing.Size(51, 21);
             this.txtLosHomogeneityCoeff.TabIndex = 39;
             this.txtLosHomogeneityCoeff.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtLosHomogeneityCoeff, "Test");
             // 
             // txtLosStandardDeviation
             // 
@@ -904,10 +910,10 @@
             this.txtLosStandardDeviation.Location = new System.Drawing.Point(9, 69);
             this.txtLosStandardDeviation.Name = "txtLosStandardDeviation";
             this.txtLosStandardDeviation.ReadOnly = true;
+            this.txtLosStandardDeviation.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtLosStandardDeviation.Size = new System.Drawing.Size(51, 21);
             this.txtLosStandardDeviation.TabIndex = 38;
             this.txtLosStandardDeviation.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtLosStandardDeviation, "Test");
             // 
             // txtLosAverage
             // 
@@ -918,10 +924,10 @@
             this.txtLosAverage.Location = new System.Drawing.Point(9, 42);
             this.txtLosAverage.Name = "txtLosAverage";
             this.txtLosAverage.ReadOnly = true;
+            this.txtLosAverage.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtLosAverage.Size = new System.Drawing.Size(51, 21);
             this.txtLosAverage.TabIndex = 37;
             this.txtLosAverage.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtLosAverage, "Test");
             // 
             // grpCatalog
             // 
@@ -965,10 +971,10 @@
             this.txtValuationRatio5.Location = new System.Drawing.Point(106, 182);
             this.txtValuationRatio5.Name = "txtValuationRatio5";
             this.txtValuationRatio5.ReadOnly = true;
+            this.txtValuationRatio5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtValuationRatio5.Size = new System.Drawing.Size(51, 21);
             this.txtValuationRatio5.TabIndex = 45;
             this.txtValuationRatio5.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtValuationRatio5, "Test");
             // 
             // txtValuationRatio4
             // 
@@ -979,10 +985,10 @@
             this.txtValuationRatio4.Location = new System.Drawing.Point(106, 155);
             this.txtValuationRatio4.Name = "txtValuationRatio4";
             this.txtValuationRatio4.ReadOnly = true;
+            this.txtValuationRatio4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtValuationRatio4.Size = new System.Drawing.Size(51, 21);
             this.txtValuationRatio4.TabIndex = 44;
             this.txtValuationRatio4.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtValuationRatio4, "Test");
             // 
             // txtValuationRatio3
             // 
@@ -993,10 +999,10 @@
             this.txtValuationRatio3.Location = new System.Drawing.Point(106, 128);
             this.txtValuationRatio3.Name = "txtValuationRatio3";
             this.txtValuationRatio3.ReadOnly = true;
+            this.txtValuationRatio3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtValuationRatio3.Size = new System.Drawing.Size(51, 21);
             this.txtValuationRatio3.TabIndex = 43;
             this.txtValuationRatio3.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtValuationRatio3, "Test");
             // 
             // txtValuationRatio2
             // 
@@ -1007,10 +1013,10 @@
             this.txtValuationRatio2.Location = new System.Drawing.Point(106, 101);
             this.txtValuationRatio2.Name = "txtValuationRatio2";
             this.txtValuationRatio2.ReadOnly = true;
+            this.txtValuationRatio2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtValuationRatio2.Size = new System.Drawing.Size(51, 21);
             this.txtValuationRatio2.TabIndex = 42;
             this.txtValuationRatio2.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtValuationRatio2, "Test");
             // 
             // txtValuationRatio1
             // 
@@ -1021,10 +1027,10 @@
             this.txtValuationRatio1.Location = new System.Drawing.Point(106, 74);
             this.txtValuationRatio1.Name = "txtValuationRatio1";
             this.txtValuationRatio1.ReadOnly = true;
+            this.txtValuationRatio1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtValuationRatio1.Size = new System.Drawing.Size(51, 21);
             this.txtValuationRatio1.TabIndex = 41;
             this.txtValuationRatio1.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtValuationRatio1, "Test");
             // 
             // txtLosTo2
             // 
@@ -1035,10 +1041,10 @@
             this.txtLosTo2.Location = new System.Drawing.Point(49, 101);
             this.txtLosTo2.Name = "txtLosTo2";
             this.txtLosTo2.ReadOnly = true;
+            this.txtLosTo2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtLosTo2.Size = new System.Drawing.Size(34, 21);
             this.txtLosTo2.TabIndex = 40;
             this.txtLosTo2.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtLosTo2, "Test");
             // 
             // txtLosTo4
             // 
@@ -1049,10 +1055,10 @@
             this.txtLosTo4.Location = new System.Drawing.Point(49, 155);
             this.txtLosTo4.Name = "txtLosTo4";
             this.txtLosTo4.ReadOnly = true;
+            this.txtLosTo4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtLosTo4.Size = new System.Drawing.Size(34, 21);
             this.txtLosTo4.TabIndex = 39;
             this.txtLosTo4.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtLosTo4, "Test");
             // 
             // txtLosTo5
             // 
@@ -1063,10 +1069,10 @@
             this.txtLosTo5.Location = new System.Drawing.Point(49, 183);
             this.txtLosTo5.Name = "txtLosTo5";
             this.txtLosTo5.ReadOnly = true;
+            this.txtLosTo5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtLosTo5.Size = new System.Drawing.Size(34, 21);
             this.txtLosTo5.TabIndex = 38;
             this.txtLosTo5.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtLosTo5, "Test");
             // 
             // txtLosTo3
             // 
@@ -1077,10 +1083,10 @@
             this.txtLosTo3.Location = new System.Drawing.Point(49, 128);
             this.txtLosTo3.Name = "txtLosTo3";
             this.txtLosTo3.ReadOnly = true;
+            this.txtLosTo3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtLosTo3.Size = new System.Drawing.Size(34, 21);
             this.txtLosTo3.TabIndex = 37;
             this.txtLosTo3.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtLosTo3, "Test");
             // 
             // txtLosTo1
             // 
@@ -1091,10 +1097,10 @@
             this.txtLosTo1.Location = new System.Drawing.Point(49, 74);
             this.txtLosTo1.Name = "txtLosTo1";
             this.txtLosTo1.ReadOnly = true;
+            this.txtLosTo1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtLosTo1.Size = new System.Drawing.Size(34, 21);
             this.txtLosTo1.TabIndex = 36;
             this.txtLosTo1.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtLosTo1, "Test");
             // 
             // txtLosFrom2
             // 
@@ -1105,10 +1111,10 @@
             this.txtLosFrom2.Location = new System.Drawing.Point(9, 101);
             this.txtLosFrom2.Name = "txtLosFrom2";
             this.txtLosFrom2.ReadOnly = true;
+            this.txtLosFrom2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtLosFrom2.Size = new System.Drawing.Size(34, 21);
             this.txtLosFrom2.TabIndex = 35;
             this.txtLosFrom2.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtLosFrom2, "Test");
             // 
             // txtLosFrom3
             // 
@@ -1119,10 +1125,10 @@
             this.txtLosFrom3.Location = new System.Drawing.Point(9, 128);
             this.txtLosFrom3.Name = "txtLosFrom3";
             this.txtLosFrom3.ReadOnly = true;
+            this.txtLosFrom3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtLosFrom3.Size = new System.Drawing.Size(34, 21);
             this.txtLosFrom3.TabIndex = 34;
             this.txtLosFrom3.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtLosFrom3, "Test");
             // 
             // txtLosFrom4
             // 
@@ -1133,10 +1139,10 @@
             this.txtLosFrom4.Location = new System.Drawing.Point(9, 155);
             this.txtLosFrom4.Name = "txtLosFrom4";
             this.txtLosFrom4.ReadOnly = true;
+            this.txtLosFrom4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtLosFrom4.Size = new System.Drawing.Size(34, 21);
             this.txtLosFrom4.TabIndex = 33;
             this.txtLosFrom4.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtLosFrom4, "Test");
             // 
             // txtLosFrom5
             // 
@@ -1147,10 +1153,10 @@
             this.txtLosFrom5.Location = new System.Drawing.Point(9, 183);
             this.txtLosFrom5.Name = "txtLosFrom5";
             this.txtLosFrom5.ReadOnly = true;
+            this.txtLosFrom5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtLosFrom5.Size = new System.Drawing.Size(34, 21);
             this.txtLosFrom5.TabIndex = 32;
             this.txtLosFrom5.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtLosFrom5, "Test");
             // 
             // txtLosFrom1
             // 
@@ -1161,10 +1167,10 @@
             this.txtLosFrom1.Location = new System.Drawing.Point(9, 74);
             this.txtLosFrom1.Name = "txtLosFrom1";
             this.txtLosFrom1.ReadOnly = true;
+            this.txtLosFrom1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtLosFrom1.Size = new System.Drawing.Size(34, 21);
             this.txtLosFrom1.TabIndex = 31;
             this.txtLosFrom1.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtLosFrom1, "Test");
             // 
             // label1
             // 
@@ -1212,8 +1218,7 @@
             // 
             // grpCases
             // 
-            this.grpCases.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpCases.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.grpCases.AutoSize = true;
             this.grpCases.BackColor = System.Drawing.Color.Transparent;
             this.grpCases.Controls.Add(this.txtCasesP5);
@@ -1249,10 +1254,10 @@
             this.txtCasesP5.MinimumSize = new System.Drawing.Size(51, 21);
             this.txtCasesP5.Name = "txtCasesP5";
             this.txtCasesP5.ReadOnly = true;
+            this.txtCasesP5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtCasesP5.Size = new System.Drawing.Size(51, 21);
             this.txtCasesP5.TabIndex = 25;
             this.txtCasesP5.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtCasesP5, "Test");
             // 
             // txtCasesP4
             // 
@@ -1265,10 +1270,10 @@
             this.txtCasesP4.MinimumSize = new System.Drawing.Size(51, 21);
             this.txtCasesP4.Name = "txtCasesP4";
             this.txtCasesP4.ReadOnly = true;
+            this.txtCasesP4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtCasesP4.Size = new System.Drawing.Size(51, 21);
             this.txtCasesP4.TabIndex = 24;
             this.txtCasesP4.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtCasesP4, "Test");
             // 
             // txtCasesP3
             // 
@@ -1281,10 +1286,10 @@
             this.txtCasesP3.MinimumSize = new System.Drawing.Size(51, 21);
             this.txtCasesP3.Name = "txtCasesP3";
             this.txtCasesP3.ReadOnly = true;
+            this.txtCasesP3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtCasesP3.Size = new System.Drawing.Size(51, 21);
             this.txtCasesP3.TabIndex = 23;
             this.txtCasesP3.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtCasesP3, "Test");
             // 
             // txtCasesP2
             // 
@@ -1297,10 +1302,10 @@
             this.txtCasesP2.MinimumSize = new System.Drawing.Size(51, 21);
             this.txtCasesP2.Name = "txtCasesP2";
             this.txtCasesP2.ReadOnly = true;
+            this.txtCasesP2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtCasesP2.Size = new System.Drawing.Size(51, 21);
             this.txtCasesP2.TabIndex = 22;
             this.txtCasesP2.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtCasesP2, "Test");
             // 
             // txtCasesP1
             // 
@@ -1313,10 +1318,10 @@
             this.txtCasesP1.MinimumSize = new System.Drawing.Size(51, 21);
             this.txtCasesP1.Name = "txtCasesP1";
             this.txtCasesP1.ReadOnly = true;
+            this.txtCasesP1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtCasesP1.Size = new System.Drawing.Size(51, 21);
             this.txtCasesP1.TabIndex = 21;
             this.txtCasesP1.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtCasesP1, "Test");
             // 
             // txtCases5
             // 
@@ -1329,10 +1334,10 @@
             this.txtCases5.MinimumSize = new System.Drawing.Size(51, 21);
             this.txtCases5.Name = "txtCases5";
             this.txtCases5.ReadOnly = true;
+            this.txtCases5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtCases5.Size = new System.Drawing.Size(51, 21);
             this.txtCases5.TabIndex = 20;
             this.txtCases5.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtCases5, "Test");
             // 
             // txtCases4
             // 
@@ -1345,10 +1350,10 @@
             this.txtCases4.MinimumSize = new System.Drawing.Size(51, 21);
             this.txtCases4.Name = "txtCases4";
             this.txtCases4.ReadOnly = true;
+            this.txtCases4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtCases4.Size = new System.Drawing.Size(51, 21);
             this.txtCases4.TabIndex = 19;
             this.txtCases4.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtCases4, "Test");
             // 
             // txtCases3
             // 
@@ -1361,10 +1366,10 @@
             this.txtCases3.MinimumSize = new System.Drawing.Size(51, 21);
             this.txtCases3.Name = "txtCases3";
             this.txtCases3.ReadOnly = true;
+            this.txtCases3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtCases3.Size = new System.Drawing.Size(51, 21);
             this.txtCases3.TabIndex = 18;
             this.txtCases3.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtCases3, "Test");
             // 
             // txtCases2
             // 
@@ -1377,10 +1382,10 @@
             this.txtCases2.MinimumSize = new System.Drawing.Size(51, 21);
             this.txtCases2.Name = "txtCases2";
             this.txtCases2.ReadOnly = true;
+            this.txtCases2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtCases2.Size = new System.Drawing.Size(51, 21);
             this.txtCases2.TabIndex = 17;
             this.txtCases2.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtCases2, "Test");
             // 
             // txtCases1
             // 
@@ -1393,10 +1398,10 @@
             this.txtCases1.MinimumSize = new System.Drawing.Size(51, 21);
             this.txtCases1.Name = "txtCases1";
             this.txtCases1.ReadOnly = true;
+            this.txtCases1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtCases1.Size = new System.Drawing.Size(51, 21);
             this.txtCases1.TabIndex = 16;
             this.txtCases1.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtCases1, "Test");
             // 
             // txtCasesSummary
             // 
@@ -1409,10 +1414,10 @@
             this.txtCasesSummary.MinimumSize = new System.Drawing.Size(51, 21);
             this.txtCasesSummary.Name = "txtCasesSummary";
             this.txtCasesSummary.ReadOnly = true;
+            this.txtCasesSummary.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtCasesSummary.Size = new System.Drawing.Size(51, 21);
             this.txtCasesSummary.TabIndex = 15;
             this.txtCasesSummary.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtCasesSummary, "Test");
             // 
             // lblCasesPercentage
             // 
@@ -1523,6 +1528,7 @@
             this.grpLos.TabIndex = 0;
             this.grpLos.TabStop = false;
             this.grpLos.Text = "Vwd.";
+            this.toolTip.SetToolTip(this.grpLos, "Verweildauer");
             // 
             // txtDays4
             // 
@@ -1533,10 +1539,10 @@
             this.txtDays4.Location = new System.Drawing.Point(8, 155);
             this.txtDays4.Name = "txtDays4";
             this.txtDays4.ReadOnly = true;
+            this.txtDays4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtDays4.Size = new System.Drawing.Size(51, 21);
             this.txtDays4.TabIndex = 27;
             this.txtDays4.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtDays4, "Test");
             // 
             // txtDays3
             // 
@@ -1547,10 +1553,10 @@
             this.txtDays3.Location = new System.Drawing.Point(8, 128);
             this.txtDays3.Name = "txtDays3";
             this.txtDays3.ReadOnly = true;
+            this.txtDays3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtDays3.Size = new System.Drawing.Size(51, 21);
             this.txtDays3.TabIndex = 26;
             this.txtDays3.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtDays3, "Test");
             // 
             // txtDays5
             // 
@@ -1561,10 +1567,10 @@
             this.txtDays5.Location = new System.Drawing.Point(8, 182);
             this.txtDays5.Name = "txtDays5";
             this.txtDays5.ReadOnly = true;
+            this.txtDays5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtDays5.Size = new System.Drawing.Size(51, 21);
             this.txtDays5.TabIndex = 25;
             this.txtDays5.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtDays5, "Test");
             // 
             // txtDays2
             // 
@@ -1575,10 +1581,10 @@
             this.txtDays2.Location = new System.Drawing.Point(9, 101);
             this.txtDays2.Name = "txtDays2";
             this.txtDays2.ReadOnly = true;
+            this.txtDays2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtDays2.Size = new System.Drawing.Size(51, 21);
             this.txtDays2.TabIndex = 24;
             this.txtDays2.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtDays2, "Test");
             // 
             // txtDays1
             // 
@@ -1589,10 +1595,10 @@
             this.txtDays1.Location = new System.Drawing.Point(8, 74);
             this.txtDays1.Name = "txtDays1";
             this.txtDays1.ReadOnly = true;
+            this.txtDays1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtDays1.Size = new System.Drawing.Size(51, 21);
             this.txtDays1.TabIndex = 23;
             this.txtDays1.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtDays1, "Test");
             // 
             // txtDaysSummary
             // 
@@ -1603,10 +1609,10 @@
             this.txtDaysSummary.Location = new System.Drawing.Point(9, 42);
             this.txtDaysSummary.Name = "txtDaysSummary";
             this.txtDaysSummary.ReadOnly = true;
+            this.txtDaysSummary.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtDaysSummary.Size = new System.Drawing.Size(51, 21);
             this.txtDaysSummary.TabIndex = 22;
             this.txtDaysSummary.Text = "0";
-            this.toolTipLT28Days.SetToolTip(this.txtDaysSummary, "Test");
             // 
             // lblLosNumDays
             // 
@@ -1618,6 +1624,13 @@
             this.lblLosNumDays.Size = new System.Drawing.Size(35, 15);
             this.lblLosNumDays.TabIndex = 10;
             this.lblLosNumDays.Text = "Tage";
+            // 
+            // toolTip
+            // 
+            this.toolTip.AutomaticDelay = 200;
+            this.toolTip.AutoPopDelay = 5000;
+            this.toolTip.InitialDelay = 200;
+            this.toolTip.ReshowDelay = 40;
             // 
             // Data
             // 
@@ -1681,7 +1694,7 @@
         private System.Windows.Forms.GroupBox grpBigAge;
         private System.Windows.Forms.TextBox txtLT28Days;
         private System.Windows.Forms.Label lblLT28Days;
-        private System.Windows.Forms.ToolTip toolTipLT28Days;
+        private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.TextBox txtBt1Year2;
         private System.Windows.Forms.Label lblBt1Year2;
         private System.Windows.Forms.TextBox txtBt28Days1Year;

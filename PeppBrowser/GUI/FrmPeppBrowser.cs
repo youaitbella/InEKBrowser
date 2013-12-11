@@ -216,6 +216,8 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void cbxPepp_ButtonClicked(object sender, EventArgs e) {
             FrmSearch dlg = new FrmSearch(cbxPepp);
+            dlg.StartPosition = FormStartPosition.CenterParent;
+            dlg.Text = "PEPP-Suche";
             var q = CsvData.Context().Pepps.Select(pepp => new {Strukturkategorie = pepp.StructureCategory, PEPP = pepp.Code, Text = pepp.Text});
             if (Selection.SK != "") {
                 q = q.Where(pepp => pepp.Strukturkategorie == Selection.SK);
@@ -243,7 +245,7 @@ namespace org.inek.PeppBrowser.GUI {
                 q = q.Where(pepp => pepps.Contains(pepp.PEPP));
             }
             if (!q.Any()) {
-                MessageBox.Show(pnlContentBackground, "Es gibt keine PEPP zu Ihren Filtereinstellungen.", "Keine Pepp",
+                MessageBox.Show(this, "Es gibt keine PEPP zu Ihren Filtereinstellungen.", "Keine Pepp",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -254,42 +256,57 @@ namespace org.inek.PeppBrowser.GUI {
                 List<object> cells = (List<object>)dlg.Id;
                 PEPP = cells[0].ToString();
                 cbxPepp.Text = cells[1].ToString();
-                FillHeadData();
-                matrixLoaded = false;
-                FillActiveTab(ActiveGrid());
+                LoadPeppData();
             }
         }
 
+        private void LoadPeppData() {
+            tabControl.Enabled = true;
+            FillHeadData();
+            matrixLoaded = false;
+            FillActiveTab(ActiveGrid());
+        }
+
         private void FillActiveTab(DataGridView grid) {
+            CsvData context = CsvData.Context();
             if (grid == grdMainDiagnosis) {
-                //List<string> codes =
-                //    CsvData.Context().PrimaryDiagnoses.Where(pepp => pepp.PeppCode == PEPP).Select(c => c.DiagCode).ToList();
-                //List<string> y =
-                //    CsvData.Context()
-                //        .Recherche.Where(c => codes.Contains(c.Code) && c.PrimaryDaignosis == 1)
-                //        .Select(c => c.Text).ToDictionary();
-                //var x = CsvData.Context().PrimaryDiagnoses.Where(pepp => pepp.PeppCode == PEPP)
-                //    .Select(
-                //        pepp =>
-                //            new {
-                //                    PEPP = pepp.PeppCode,
-                //                    Hauptdiagnose = pepp.DiagCode,
-                //                    AnzahlFälle = pepp.Count,
-                //                    AnteilFälle = pepp.Fraction
-                //                });
-                //grdMainDiagnosis.DataSource = Helper.ConvertToDataTable(x);
-                //grdMainDiagnosis.Columns.Add("Text", "Text");
-                //int index = grdMainDiagnosis.Columns["Text"].Index;
-                //for (int i = 0; i < grid.Rows.Count; i++) {
-                //    grdMainDiagnosis.Rows[i].Cells[index].Value = y[i];
-                //}
-                //grdMainDiagnosis.Columns[index].DisplayIndex = 2;
+                var q =
+                    context.PrimaryDiagnoses.Where(d => d.PeppCode == PEPP)
+                        .Join(context.Recherche.Where(r => r.PrimaryDaignosis == 1), d => d.DiagCode, r => r.Code,
+                            (d, r) => new {
+                                              PEPP = d.PeppCode,
+                                              SD = d.DiagCode,
+                                              Hauptdiagnose = r.Text,
+                                              AnzahlFälle = d.Count,
+                                              AnteilFälle = d.Fraction
+                                          });
+                grdMainDiagnosis.DataSource = Helper.ConvertToDataTable(q);
             } else if (grid == grdSecondaryDiagnosis) {
-                grid.DataSource = Helper.ConvertToDataTable(CsvData.Context().SecondaryDiagnoses.Where(pepp => pepp.PeppCode == PEPP)
-                    .Select(pepp => new { PEPP = pepp.PeppCode, Nebendiagnose = pepp.DiagCode, AnzahlFälle = pepp.CaseCount, AnteilFälle = pepp.CaseFraction, AnzahlNennungen = pepp.EntryCount, AnteilNennungen = pepp.EntryFraction }));   
+                var q = context.SecondaryDiagnoses.Where(d => d.PeppCode == PEPP)
+                        .Join(context.Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
+                            (d, r) => new {
+                                PEPP = d.PeppCode,
+                                SD = d.DiagCode,
+                                Nebendiagnose = r.Text,
+                                AnzahlFälle = d.CaseCount,
+                                AnteilFälle = d.CaseFraction,
+                                AnzahlNennungen = d.EntryCount,
+                                AnteilNennungen = d.EntryFraction
+                            });
+                grdSecondaryDiagnosis.DataSource = Helper.ConvertToDataTable(q);              
             } else if (grid == grdProcedures) {
-                grid.DataSource = Helper.ConvertToDataTable(CsvData.Context().Procedures.Where(pepp => pepp.PeppCode == PEPP)
-                    .Select(pepp => new { PEPP = pepp.PeppCode, Prozedur = pepp.ProcCode, AnzahlFälle = pepp.CaseCount, AnteilFälle = pepp.CaseFraction, AnzahlNennungen = pepp.EntryCount, AnteilNennungen = pepp.EntryFraction }));   
+                var q = context.Procedures.Where(d => d.PeppCode == PEPP)
+                        .Join(context.Recherche.Where(r => r.Procedure == 1), d => d.ProcCode, r => r.Code,
+                            (d, r) => new {
+                                PEPP = d.PeppCode,
+                                ProzedurKode = d.ProcCode,
+                                Prozedur = r.Text,
+                                AnzahlFälle = d.CaseCount,
+                                AnteilFälle = d.CaseFraction,
+                                AnzahlNennungen = d.EntryCount,
+                                AnteilNennungen = d.EntryFraction
+                            });
+                grdProcedures.DataSource = Helper.ConvertToDataTable(q);
             } else if (grid == grdCosts && !matrixLoaded) {
                 BuildCostMatrix();
                 matrixLoaded = true;
@@ -309,7 +326,7 @@ namespace org.inek.PeppBrowser.GUI {
                     .Costs.Where(pepp => pepp.PeppCode == PEPP)
                     .Select(c => new {
                                          KostenArt1 = c.CostType1.ToString(), KostenArt2 = c.CostType2.ToString(), KostenArt3a = c.CostType3a.ToString(), KostenArt3b = c.CostType3b.ToString(),
-                                         KostenArt3c = c.CostType3c.ToString(), KostenArt4a = c.CostType4a.ToString(), KostenArt4b = c.CostType4b.ToString(), KostenArt6a = c.CostType6a.ToString(),
+                                         KostenArt3c = c.CostType3c.ToString(), KostenArt3 = c.CostType3.ToString(), KostenArt4a = c.CostType4a.ToString(), KostenArt4b = c.CostType4b.ToString(), KostenArt5 = c.CostType5.ToString(), KostenArt6a = c.CostType6a.ToString(),
                                          KostenArt6b = c.CostType6b.ToString(), KostenArt7 = c.CostType7.ToString(), KostenArt8 = c.CostType8.ToString()
                                      });
             grdCosts.DataSource = Helper.ConvertToDataTable(q);
@@ -318,15 +335,25 @@ namespace org.inek.PeppBrowser.GUI {
                 .Select(ri => ri.CostDomain).ToList();
             BuildCostMatrixColHeaders(Color.LightGreen);
             BuildCostMatrixRowHeaders(rowIds, Color.LightGreen);
+            BuildCostMatrixColSum(Color.MediumSeaGreen);
             decimal sum = 0;
-            BuildCostMatrixColSum(Color.MediumSeaGreen, ref sum);
             BuildCostMatrixRowSum(Color.MediumSeaGreen, ref sum);
-            MessageBox.Show(sum.ToString());
+            BuildCostMatrixMasterSum(Color.White, Color.SeaGreen, sum);
         }
 
-        private void BuildCostMatrixRowSum(Color sumColor, ref decimal sumsum) {
+        private void BuildCostMatrixMasterSum(Color fontColor, Color backColor, decimal sum) {
             DataGridViewCellStyle cellStyle = new DataGridViewCellStyle();
-            cellStyle.BackColor = sumColor;
+            cellStyle.ForeColor = fontColor;
+            cellStyle.BackColor = backColor;
+            cellStyle.Font = new Font(grdCosts.Font, FontStyle.Bold | FontStyle.Underline);
+            int cellCol = grdCosts.Columns["rowSums"].Index;
+            grdCosts.Rows[grdCosts.Rows.Count - 1].Cells[cellCol].Value = sum.ToString();
+            grdCosts.Rows[grdCosts.Rows.Count - 1].Cells[cellCol].Style = cellStyle;
+        }
+
+        private void BuildCostMatrixRowSum(Color backColor, ref decimal sumsum) {
+            DataGridViewCellStyle cellStyle = new DataGridViewCellStyle();
+            cellStyle.BackColor = backColor;
             DataTable table = ((DataTable)grdCosts.DataSource);
             DataRow row = table.NewRow();
             table.Rows.Add(row);
@@ -348,7 +375,7 @@ namespace org.inek.PeppBrowser.GUI {
             grdCosts.Rows[sumRow].Cells[sumCell].Style = cellStyle;
         }
 
-        private void BuildCostMatrixColSum(Color sumColor, ref decimal sumsum) {
+        private void BuildCostMatrixColSum(Color sumColor) {
             DataGridViewCellStyle cellStyle = new DataGridViewCellStyle();
             cellStyle.BackColor = sumColor;
             int sumCol = 1;
@@ -367,7 +394,6 @@ namespace org.inek.PeppBrowser.GUI {
                 }
                 grdCosts.Rows[rows].Cells[sumCol].Value = sum.ToString();
                 grdCosts.Rows[rows].Cells[sumCol].Style = cellStyle;
-                sumsum += sum;
                 sum = 0;
             }
         }
@@ -414,10 +440,10 @@ namespace org.inek.PeppBrowser.GUI {
             DataTable table = ((DataTable) grdCosts.DataSource);
             DataRow row = table.NewRow();
             string[] headers = {
-                      "Ärztlicher Dienst\n1", "Pflege-/ Erziehungsdienst\n2", "Psychologen\n3a", "Sozialarbeiter/ Sozial-/Heilpädagogen\n3b", "Spezialtherapeuten\n3c", "Med.-techn. Dienst/ Funktionsdienst\n3",
-                      "Arzneimittel\n4a  4b", "Implantate/ Transplantate\n5", "Übriger medizinischer Bedarf\n6a  6b","med. Infrastruktur\n7", "nicht med. Infrastruktur\n8"
+                      "1", "2", "3a", "3b", "3c", "3",
+                      "4a", "4b", "5", "6a", "6b", "7", "8"
                   };
-            for (int i = 0; i < row.Table.Columns.Count; i++) {
+            for (int i = 0; i < 13; i++) {
                 row[i] = headers[i];
             }
             table.Rows.InsertAt(row, 0);
@@ -425,6 +451,51 @@ namespace org.inek.PeppBrowser.GUI {
             headerStyle.BackColor = headColor;
             for (int i = 0; i < grdCosts.Columns.Count; i++) {
                 grdCosts.Rows[0].Cells[i].Style = headerStyle;
+                CreateCostMatrixHeaderTooltips(i);
+            }
+        }
+
+        private void CreateCostMatrixHeaderTooltips(int i) {
+            switch (i) {
+                case 0:
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Ärztlicher Dienst";
+                    break;
+                case 1:
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Pflege-/Erziehungsdienst";
+                    break;
+                case 2:
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Psychologen";
+                    break;
+                case 3:
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Sozialarbeiter/Sozial-/Heilpädagogen";
+                    break;
+                case 4:
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Spezialtherapeuten";
+                    break;
+                case 5:
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Med.-techn. Dienst/Funktionsdienst";
+                    break;
+                case 6:
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Arzneimittel";
+                    break;
+                case 7:
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Arzneimittel";
+                    break;
+                case 8:
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Implantate/Transplantate";
+                    break;
+                case 9:
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Übriger medizinischer Bedarf";
+                    break;
+                case 10:
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Übriger medizinischer Bedarf";
+                    break;
+                case 11:
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personal- und Sachkosten med. Infrastruktur";
+                    break;
+                case 12:
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personal- und Sachkosten nicht med. Infrastruktur";
+                    break;
             }
         }
 
@@ -542,11 +613,12 @@ namespace org.inek.PeppBrowser.GUI {
                         .ToList();
                 var q = CsvData.Context().PrimaryDiagnoses.Where(pd => pepps.Contains(pd.PeppCode) && pd.DiagCode == hd);
                 FrmSearch search = new FrmSearch(this);
+                search.StartPosition = FormStartPosition.CenterParent;
                 search.Text = "PEPPs zu Hauptdiagnosen";
                 search.ButtonShowIsVisible = false;
                 search.SetDataSource(q);
                 if (search.ShowDialog() == DialogResult.OK) {
-                    // TODO
+                    LoadPeppByTabControl(search);
                 }
             }
         }
@@ -562,11 +634,12 @@ namespace org.inek.PeppBrowser.GUI {
                         .ToList();
                 var q = CsvData.Context().SecondaryDiagnoses.Where(pd => pepps.Contains(pd.PeppCode) && pd.DiagCode == sd);
                 FrmSearch search = new FrmSearch(this);
+                search.StartPosition = FormStartPosition.CenterParent;
                 search.Text = "PEPPs zu Nebendiagnosen";
                 search.ButtonShowIsVisible = false;
                 search.SetDataSource(q);
                 if (search.ShowDialog() == DialogResult.OK) {
-                    // TODO
+                    LoadPeppByTabControl(search);
                 }
             }
         }
@@ -582,13 +655,21 @@ namespace org.inek.PeppBrowser.GUI {
                         .ToList();
                 var q = CsvData.Context().Procedures.Where(pd => pepps.Contains(pd.PeppCode) && pd.ProcCode == proc);
                 FrmSearch search = new FrmSearch(this);
+                search.StartPosition = FormStartPosition.CenterParent;
                 search.Text = "PEPPs zu Prozeduren";
                 search.ButtonShowIsVisible = false;
                 search.SetDataSource(q);
                 if (search.ShowDialog() == DialogResult.OK) {
-                    // TODO
+                    LoadPeppByTabControl(search);
                 }
             }
+        }
+
+        private void LoadPeppByTabControl(FrmSearch search) {
+            selection.ClearSelection();
+            PEPP = search.Id.ToString();
+            cbxPepp.Text = CsvData.Context().Pepps.Where(p => p.Code == PEPP).Select(p => p.Text).Single();
+            LoadPeppData();
         }
     }
 }

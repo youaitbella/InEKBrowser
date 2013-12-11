@@ -1,15 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using org.inek.controls.gui;
 using org.inek.PeppBrowser.Data;
-using org.inek.PeppBrowser.Data.Entities;
 
 namespace org.inek.PeppBrowser.GUI {
     public partial class Selection : UserControl {
@@ -51,8 +45,21 @@ namespace org.inek.PeppBrowser.GUI {
             cbxProcedure.InputField.Click += cbxProcedure_ButtonClicked;
         }
 
+        public void ClearSelection() {
+            SK = "";
+            PEPP = "";
+            PD = "";
+            SD = "";
+            Procedure = "";
+            cbxSk.Text = "";
+            cbxMainDiagnosis.Text = "";
+            cbxSecondaryDiagnosis.Text = "";
+            cbxProcedure.Text = "";
+        }
+
         private void cbxSk_ButtonClicked(object sender, EventArgs e) {
             FrmSearch dlg = new FrmSearch(cbxSk);
+            dlg.StartPosition = FormStartPosition.CenterParent;
             dlg.ButtonShowIsVisible = false;
             var q = CsvData.Context().StructureCategories.OrderBy(sk => sk.Order)
                     .Select(sk => new { SK = sk.Category, sk.Text, PEPPs = sk.PeppCount, Fälle = sk.CaseCount, Tage = sk.DayCount });
@@ -71,6 +78,7 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void cbxMainDiagnosis_ButtonClicked(object sender, EventArgs e) {
             FrmSearch dlg = new FrmSearch(cbxMainDiagnosis);
+            dlg.StartPosition = FormStartPosition.CenterParent;
             dlg.ButtonShowIsVisible = false;
             var q = CsvData.Context()
                 .Recherche.Where(md => md.PrimaryDaignosis == 1)
@@ -94,6 +102,7 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void cbxSecondaryDiagnosis_ButtonClicked(object sender, EventArgs e) {
             FrmSearch dlg = new FrmSearch(cbxSecondaryDiagnosis);
+            dlg.StartPosition = FormStartPosition.CenterParent;
             dlg.ButtonShowIsVisible = false;
             var q =
                 CsvData.Context()
@@ -118,6 +127,7 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void cbxProcedure_ButtonClicked(object sender, EventArgs e) {
             FrmSearch dlg = new FrmSearch(cbxProcedure);
+            dlg.StartPosition = FormStartPosition.CenterParent;
             dlg.ButtonShowIsVisible = false;
             var q =
                 CsvData.Context()

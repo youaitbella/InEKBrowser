@@ -290,6 +290,7 @@
             this.tabControl.Controls.Add(this.tabSecondaryDiagnosis);
             this.tabControl.Controls.Add(this.tabProcedures);
             this.tabControl.Controls.Add(this.tabDailyCosts);
+            this.tabControl.Enabled = false;
             this.tabControl.Location = new System.Drawing.Point(3, 390);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
@@ -319,6 +320,7 @@
             this.grdMainDiagnosis.MultiSelect = false;
             this.grdMainDiagnosis.Name = "grdMainDiagnosis";
             this.grdMainDiagnosis.ReadOnly = true;
+            this.grdMainDiagnosis.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.grdMainDiagnosis.RowHeadersVisible = false;
             this.grdMainDiagnosis.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdMainDiagnosis.Size = new System.Drawing.Size(1162, 312);
@@ -348,6 +350,7 @@
             this.grdSecondaryDiagnosis.MultiSelect = false;
             this.grdSecondaryDiagnosis.Name = "grdSecondaryDiagnosis";
             this.grdSecondaryDiagnosis.ReadOnly = true;
+            this.grdSecondaryDiagnosis.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.grdSecondaryDiagnosis.RowHeadersVisible = false;
             this.grdSecondaryDiagnosis.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdSecondaryDiagnosis.Size = new System.Drawing.Size(1162, 312);
@@ -376,6 +379,7 @@
             this.grdProcedures.MultiSelect = false;
             this.grdProcedures.Name = "grdProcedures";
             this.grdProcedures.ReadOnly = true;
+            this.grdProcedures.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.grdProcedures.RowHeadersVisible = false;
             this.grdProcedures.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdProcedures.Size = new System.Drawing.Size(1162, 312);
@@ -386,6 +390,7 @@
             // 
             this.tabDailyCosts.BackColor = System.Drawing.Color.Transparent;
             this.tabDailyCosts.Controls.Add(this.grdCosts);
+            this.tabDailyCosts.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tabDailyCosts.Location = new System.Drawing.Point(4, 22);
             this.tabDailyCosts.Name = "tabDailyCosts";
             this.tabDailyCosts.Padding = new System.Windows.Forms.Padding(3);
@@ -405,6 +410,7 @@
             this.grdCosts.MultiSelect = false;
             this.grdCosts.Name = "grdCosts";
             this.grdCosts.ReadOnly = true;
+            this.grdCosts.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.grdCosts.RowHeadersVisible = false;
             this.grdCosts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdCosts.Size = new System.Drawing.Size(1162, 312);
@@ -441,6 +447,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.titleBar.BackColor = System.Drawing.Color.SeaGreen;
             this.titleBar.Location = new System.Drawing.Point(3, 0);
+            this.titleBar.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.titleBar.Name = "titleBar";
             this.titleBar.ShowIconify = true;
             this.titleBar.ShowMinMax = true;
@@ -468,7 +475,7 @@
             this.Name = "FrmPeppBrowser";
             this.helpProvider1.SetShowHelp(this, true);
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "PEPP-Browser";
             this.TransparencyKey = System.Drawing.Color.Pink;
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
