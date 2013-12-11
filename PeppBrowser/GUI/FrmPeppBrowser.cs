@@ -675,8 +675,9 @@ namespace org.inek.PeppBrowser.GUI {
         private List<PeppData> setReportData(string pepp)
         {
             PeppInfo info = CsvData.Context().PeppInfos.Single(p => p.Code == pepp);
+            info.StruCat = Selection.SKTxt;
+            info.PeppTxt = cbxPepp.Text;
             PeppData data = new PeppData(info);
-            data.StructCat = CsvData.Context().StructureCategories.Single(p => p.Text == Selection.SKTxt);
             data.PDX = CsvData.Context().PrimaryDiagnoses.Where(p => p.PeppCode == pepp).ToList();
             data.DDX = CsvData.Context().SecondaryDiagnoses.Where(p => p.PeppCode == pepp).ToList();
             data.Proc = CsvData.Context().Procedures.Where(p => p.PeppCode == pepp).ToList();

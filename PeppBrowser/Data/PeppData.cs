@@ -20,7 +20,7 @@ namespace org.inek.PeppBrowser.Data {
         public List<PrimaryDiagnosis> PDX { get; set; }
         public List<SecondaryDiagnosis> DDX { get; set; }
         public List<Procedure> Proc { get; set; }
-        public StructureCategory StructCat { get; set; }
+        //public StructureCategory StructCat { get; set; }
     }
 
 

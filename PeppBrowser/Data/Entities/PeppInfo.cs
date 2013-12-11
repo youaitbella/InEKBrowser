@@ -185,5 +185,7 @@ namespace org.inek.PeppBrowser.Data.Entities {
         [Column("kd_TageskostenHK")]
         public decimal DayCostsHc { get; set; } // hc = homogeneity coefficient
 
+        public string StruCat { get; set; }
+        public string PeppTxt { get; set; }
     }
 }
