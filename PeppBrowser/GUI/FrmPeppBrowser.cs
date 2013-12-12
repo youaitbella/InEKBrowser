@@ -786,6 +786,27 @@ namespace org.inek.PeppBrowser.GUI {
                                 EntryCount = d.EntryCount,
                                 EntryFraction = d.EntryFraction
                             }).ToList();
+            data.Cost = CsvData.Context().Costs.Where(p => p.PeppCode== pepp)
+                .Join(CsvData.Context().CostDomains, c => c.CostDomain, d => d.DomainId,
+                (c, d) => new Cost()
+                              {
+                                  PeppCode = c.PeppCode,
+                                  CostDomain = c.CostDomain,
+                                  CostType1 = c.CostType1,
+                                  CostType2 = c.CostType2,
+                                  CostType3 = c.CostType3,
+                                  CostType3a = c.CostType3a,
+                                  CostType3b = c.CostType3b,
+                                  CostType3c = c.CostType3c,
+                                  CostType4a = c.CostType4a,
+                                  CostType4b = c.CostType4b,
+                                  CostType5 = c.CostType5,
+                                  CostType6a = c.CostType6a,
+                                  CostType6b = c.CostType6b,
+                                  CostType7 = c.CostType7,
+                                  CostType8 = c.CostType8,
+                                  TxtBez = d.DomainText
+                              }).ToList();
             List<PeppData> dataSet = new List<PeppData>();
             dataSet.Add(data);
 
