@@ -1,5 +1,5 @@
 ﻿namespace org.inek.PeppBrowser.GUI {
-    partial class FrmSplash {
+    partial class FrmAbout {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -23,10 +23,9 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSplash));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAbout));
             this.grpPanel = new System.Windows.Forms.GroupBox();
-            this.lblProgressState = new System.Windows.Forms.Label();
-            this.prgBar = new System.Windows.Forms.ProgressBar();
+            this.btnClose = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -39,39 +38,25 @@
             // 
             // grpPanel
             // 
-            this.grpPanel.Controls.Add(this.lblProgressState);
-            this.grpPanel.Controls.Add(this.prgBar);
+            this.grpPanel.Controls.Add(this.btnClose);
             this.grpPanel.Controls.Add(this.groupBox2);
             this.grpPanel.Controls.Add(this.pictureBox1);
             this.grpPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grpPanel.Location = new System.Drawing.Point(0, 30);
             this.grpPanel.Name = "grpPanel";
-            this.grpPanel.Size = new System.Drawing.Size(309, 468);
+            this.grpPanel.Size = new System.Drawing.Size(309, 452);
             this.grpPanel.TabIndex = 3;
             this.grpPanel.TabStop = false;
             // 
-            // lblProgressState
+            // btnClose
             // 
-            this.lblProgressState.BackColor = System.Drawing.Color.Transparent;
-            this.lblProgressState.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProgressState.ForeColor = System.Drawing.Color.White;
-            this.lblProgressState.Location = new System.Drawing.Point(12, 408);
-            this.lblProgressState.Name = "lblProgressState";
-            this.lblProgressState.Size = new System.Drawing.Size(284, 23);
-            this.lblProgressState.TabIndex = 5;
-            this.lblProgressState.Text = "Lade Kostenbereich...";
-            this.lblProgressState.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // prgBar
-            // 
-            this.prgBar.BackColor = System.Drawing.SystemColors.Control;
-            this.prgBar.ForeColor = System.Drawing.SystemColors.Control;
-            this.prgBar.Location = new System.Drawing.Point(13, 434);
-            this.prgBar.Maximum = 90;
-            this.prgBar.Name = "prgBar";
-            this.prgBar.Size = new System.Drawing.Size(284, 23);
-            this.prgBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.prgBar.TabIndex = 4;
+            this.btnClose.Location = new System.Drawing.Point(105, 411);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(95, 32);
+            this.btnClose.TabIndex = 4;
+            this.btnClose.Text = "Schliesen";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // groupBox2
             // 
@@ -103,13 +88,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // worker
-            // 
-            this.worker.WorkerReportsProgress = true;
-            this.worker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.worker_DoWork);
-            this.worker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.worker_ProgressChanged);
-            this.worker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.worker_RunWorkerCompleted);
-            // 
             // titleBar
             // 
             this.titleBar.BackColor = System.Drawing.Color.SeaGreen;
@@ -120,24 +98,23 @@
             this.titleBar.ShowMinMax = false;
             this.titleBar.Size = new System.Drawing.Size(309, 30);
             this.titleBar.TabIndex = 2;
-            this.titleBar.ClickedExit += new System.EventHandler(this.titleBar_ClickedExit);
+            this.titleBar.ClickedExit += new System.EventHandler(this.btnClose_Click);
             this.titleBar.MouseMoveTitleBar += new System.Windows.Forms.MouseEventHandler(this.titleBar_MouseMove);
             this.titleBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.titleBar_MouseMove);
             // 
-            // FrmSplash
+            // FrmAbout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaGreen;
-            this.ClientSize = new System.Drawing.Size(309, 498);
+            this.ClientSize = new System.Drawing.Size(309, 482);
             this.Controls.Add(this.grpPanel);
             this.Controls.Add(this.titleBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FrmSplash";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Name = "FrmAbout";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FrmSplash";
-            this.Shown += new System.EventHandler(this.FrmSplash_Shown);
             this.grpPanel.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -152,9 +129,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ProgressBar prgBar;
         private System.ComponentModel.BackgroundWorker worker;
-        private System.Windows.Forms.Label lblProgressState;
+        private System.Windows.Forms.Button btnClose;
 
     }
 }

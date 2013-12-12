@@ -131,6 +131,7 @@
             this.txtDaysSummary = new System.Windows.Forms.TextBox();
             this.lblLosNumDays = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.pnlHr2 = new System.Windows.Forms.Panel();
             this.pnlData.SuspendLayout();
             this.grpBigAge.SuspendLayout();
             this.grpGender.SuspendLayout();
@@ -144,6 +145,7 @@
             // 
             // pnlData
             // 
+            this.pnlData.Controls.Add(this.pnlHr2);
             this.pnlData.Controls.Add(this.pnlSummaryLine);
             this.pnlData.Controls.Add(this.grpBigAge);
             this.pnlData.Controls.Add(this.grpGender);
@@ -181,7 +183,7 @@
             this.pnlSummaryLine.BackColor = System.Drawing.Color.White;
             this.pnlSummaryLine.Location = new System.Drawing.Point(8, 88);
             this.pnlSummaryLine.Name = "pnlSummaryLine";
-            this.pnlSummaryLine.Size = new System.Drawing.Size(550, 3);
+            this.pnlSummaryLine.Size = new System.Drawing.Size(550, 2);
             this.pnlSummaryLine.TabIndex = 19;
             // 
             // grpBigAge
@@ -427,7 +429,7 @@
             this.txtBt18Year29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBt18Year29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBt18Year29.ForeColor = System.Drawing.Color.White;
-            this.txtBt18Year29.Location = new System.Drawing.Point(92, 204);
+            this.txtBt18Year29.Location = new System.Drawing.Point(93, 204);
             this.txtBt18Year29.Name = "txtBt18Year29";
             this.txtBt18Year29.ReadOnly = true;
             this.txtBt18Year29.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -451,7 +453,7 @@
             this.txtBt16Year17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBt16Year17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBt16Year17.ForeColor = System.Drawing.Color.White;
-            this.txtBt16Year17.Location = new System.Drawing.Point(92, 177);
+            this.txtBt16Year17.Location = new System.Drawing.Point(93, 177);
             this.txtBt16Year17.Name = "txtBt16Year17";
             this.txtBt16Year17.ReadOnly = true;
             this.txtBt16Year17.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -705,7 +707,7 @@
             this.grpAge.ForeColor = System.Drawing.Color.White;
             this.grpAge.Location = new System.Drawing.Point(825, 21);
             this.grpAge.Name = "grpAge";
-            this.grpAge.Size = new System.Drawing.Size(59, 134);
+            this.grpAge.Size = new System.Drawing.Size(62, 134);
             this.grpAge.TabIndex = 14;
             this.grpAge.TabStop = false;
             this.grpAge.Text = "Alter";
@@ -731,7 +733,7 @@
             this.txtAgeStandardDeviation.Name = "txtAgeStandardDeviation";
             this.txtAgeStandardDeviation.ReadOnly = true;
             this.txtAgeStandardDeviation.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtAgeStandardDeviation.Size = new System.Drawing.Size(38, 21);
+            this.txtAgeStandardDeviation.Size = new System.Drawing.Size(41, 21);
             this.txtAgeStandardDeviation.TabIndex = 41;
             this.txtAgeStandardDeviation.Text = "0";
             // 
@@ -745,7 +747,7 @@
             this.txtAgeAverage.Name = "txtAgeAverage";
             this.txtAgeAverage.ReadOnly = true;
             this.txtAgeAverage.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtAgeAverage.Size = new System.Drawing.Size(38, 21);
+            this.txtAgeAverage.Size = new System.Drawing.Size(41, 21);
             this.txtAgeAverage.TabIndex = 40;
             this.txtAgeAverage.Text = "0";
             // 
@@ -1578,7 +1580,7 @@
             this.txtDays2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDays2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDays2.ForeColor = System.Drawing.Color.White;
-            this.txtDays2.Location = new System.Drawing.Point(9, 101);
+            this.txtDays2.Location = new System.Drawing.Point(8, 101);
             this.txtDays2.Name = "txtDays2";
             this.txtDays2.ReadOnly = true;
             this.txtDays2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -1606,7 +1608,7 @@
             this.txtDaysSummary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDaysSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDaysSummary.ForeColor = System.Drawing.Color.White;
-            this.txtDaysSummary.Location = new System.Drawing.Point(9, 42);
+            this.txtDaysSummary.Location = new System.Drawing.Point(8, 42);
             this.txtDaysSummary.Name = "txtDaysSummary";
             this.txtDaysSummary.ReadOnly = true;
             this.txtDaysSummary.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -1631,6 +1633,15 @@
             this.toolTip.AutoPopDelay = 5000;
             this.toolTip.InitialDelay = 200;
             this.toolTip.ReshowDelay = 40;
+            // 
+            // pnlHr2
+            // 
+            this.pnlHr2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlHr2.BackColor = System.Drawing.Color.White;
+            this.pnlHr2.Location = new System.Drawing.Point(670, 113);
+            this.pnlHr2.Name = "pnlHr2";
+            this.pnlHr2.Size = new System.Drawing.Size(151, 2);
+            this.pnlHr2.TabIndex = 20;
             // 
             // Data
             // 
@@ -1772,5 +1783,6 @@
         private System.Windows.Forms.Label lblDayCostsEuro;
         private System.Windows.Forms.Label lblVwdDaysSmall;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel pnlHr2;
     }
 }

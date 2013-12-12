@@ -256,7 +256,8 @@ namespace org.inek.PeppBrowser.GUI {
             if (dlg.ShowDialog() == DialogResult.OK) {
                 List<object> cells = (List<object>)dlg.Id;
                 PEPP = cells[0].ToString();
-                cbxPepp.Text = cells[1].ToString();
+                cbxPepp.Text = PEPP + ": ";
+                cbxPepp.Text += cells[1].ToString();
                 LoadPeppData();
             }
         }
@@ -276,25 +277,45 @@ namespace org.inek.PeppBrowser.GUI {
                         .Join(context.Recherche.Where(r => r.PrimaryDaignosis == 1), d => d.DiagCode, r => r.Code,
                             (d, r) => new {
                                               PEPP = d.PeppCode,
-                                              SD = d.DiagCode,
+                                              HD = d.DiagCode,
                                               Hauptdiagnose = r.Text,
                                               AnzahlFälle = d.Count,
                                               AnteilFälle = d.Fraction
                                           });
                 grdMainDiagnosis.DataSource = Helper.ConvertToDataTable(q);
+                grdMainDiagnosis.Columns[0].Width = 50;
+                grdMainDiagnosis.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                grdMainDiagnosis.Columns[1].Width = 50;
+                grdMainDiagnosis.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                grdMainDiagnosis.Columns[3].Width = 70;
+                grdMainDiagnosis.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                grdMainDiagnosis.Columns[4].Width = 70;
+                grdMainDiagnosis.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
             } else if (grid == grdSecondaryDiagnosis) {
                 var q = context.SecondaryDiagnoses.Where(d => d.PeppCode == PEPP)
                         .Join(context.Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
                             (d, r) => new {
                                 PEPP = d.PeppCode,
-                                SD = d.DiagCode,
+                                ND = d.DiagCode,
                                 Nebendiagnose = r.Text,
                                 AnzahlFälle = d.CaseCount,
                                 AnteilFälle = d.CaseFraction,
                                 AnzahlNennungen = d.EntryCount,
                                 AnteilNennungen = d.EntryFraction
                             });
-                grdSecondaryDiagnosis.DataSource = Helper.ConvertToDataTable(q);              
+                grdSecondaryDiagnosis.DataSource = Helper.ConvertToDataTable(q);
+                grdSecondaryDiagnosis.Columns[0].Width = 50;
+                grdSecondaryDiagnosis.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                grdSecondaryDiagnosis.Columns[1].Width = 50;
+                grdSecondaryDiagnosis.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                grdSecondaryDiagnosis.Columns[3].Width = 70;
+                grdSecondaryDiagnosis.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                grdSecondaryDiagnosis.Columns[4].Width = 50;
+                grdSecondaryDiagnosis.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                grdSecondaryDiagnosis.Columns[5].Width = 90;
+                grdSecondaryDiagnosis.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                grdSecondaryDiagnosis.Columns[6].Width = 90;
+                grdSecondaryDiagnosis.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
             } else if (grid == grdProcedures) {
                 var q = context.Procedures.Where(d => d.PeppCode == PEPP)
                         .Join(context.Recherche.Where(r => r.Procedure == 1), d => d.ProcCode, r => r.Code,
@@ -326,9 +347,9 @@ namespace org.inek.PeppBrowser.GUI {
                 CsvData.Context()
                     .Costs.Where(pepp => pepp.PeppCode == PEPP)
                     .Select(c => new {
-                                         KostenArt1 = c.CostType1.ToString(), KostenArt2 = c.CostType2.ToString(), KostenArt3a = c.CostType3a.ToString(), KostenArt3b = c.CostType3b.ToString(),
-                                         KostenArt3c = c.CostType3c.ToString(), KostenArt3 = c.CostType3.ToString(), KostenArt4a = c.CostType4a.ToString(), KostenArt4b = c.CostType4b.ToString(), KostenArt5 = c.CostType5.ToString(), KostenArt6a = c.CostType6a.ToString(),
-                                         KostenArt6b = c.CostType6b.ToString(), KostenArt7 = c.CostType7.ToString(), KostenArt8 = c.CostType8.ToString()
+                                         KostenArt1 = c.CostType1.ToString("F"), KostenArt2 = c.CostType2.ToString("F"), KostenArt3a = c.CostType3a.ToString("F"), KostenArt3b = c.CostType3b.ToString("F"),
+                                         KostenArt3c = c.CostType3c.ToString("F"), KostenArt3 = c.CostType3.ToString("F"), KostenArt4a = c.CostType4a.ToString("F"), KostenArt4b = c.CostType4b.ToString("F"), KostenArt5 = c.CostType5.ToString("F"), KostenArt6a = c.CostType6a.ToString("F"),
+                                         KostenArt6b = c.CostType6b.ToString("F"), KostenArt7 = c.CostType7.ToString("F"), KostenArt8 = c.CostType8.ToString("F")
                                      });
             grdCosts.DataSource = Helper.ConvertToDataTable(q);
             List<int> rowIds = CsvData.Context()
@@ -340,13 +361,31 @@ namespace org.inek.PeppBrowser.GUI {
             decimal sum = 0;
             BuildCostMatrixRowSum(Color.MediumSeaGreen, ref sum);
             BuildCostMatrixMasterSum(Color.White, Color.SeaGreen, sum);
+            CostMatrixRightToLeft();
+        }
+
+        private void CostMatrixRightToLeft() {
+            int startCol = grdCosts.Columns["KostenArt1"].Index;
+            int startRow = 1;
+            for (int cols = startCol; cols < grdCosts.Columns.Count - 2; cols++) {
+                for (int rows = startRow; rows < grdCosts.Rows.Count; rows++) {
+                    DataGridViewCellStyle style = new DataGridViewCellStyle(grdCosts.Rows[rows].Cells[cols].Style);
+                    style.Alignment = DataGridViewContentAlignment.MiddleRight;
+                    grdCosts.Rows[rows].Cells[cols].Style = style;
+                }
+            }
+            startCol = grdCosts.Columns["rowSums"].Index;
+            for (int i = 1; i < grdCosts.Rows.Count; i++) {
+                DataGridViewCellStyle style = new DataGridViewCellStyle(grdCosts.Rows[i].Cells[startCol].Style);
+                style.Alignment = DataGridViewContentAlignment.MiddleRight;
+                grdCosts.Rows[i].Cells[startCol].Style = style;
+            }
         }
 
         private void BuildCostMatrixMasterSum(Color fontColor, Color backColor, decimal sum) {
             DataGridViewCellStyle cellStyle = new DataGridViewCellStyle();
             cellStyle.ForeColor = fontColor;
             cellStyle.BackColor = backColor;
-            cellStyle.Font = new Font(grdCosts.Font, FontStyle.Bold | FontStyle.Underline);
             int cellCol = grdCosts.Columns["rowSums"].Index;
             grdCosts.Rows[grdCosts.Rows.Count - 1].Cells[cellCol].Value = sum.ToString();
             grdCosts.Rows[grdCosts.Rows.Count - 1].Cells[cellCol].Style = cellStyle;
@@ -516,36 +555,36 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void FillHeadData() {
             var q = CsvData.Context().PeppInfos.Where(pepp => pepp.Code == PEPP);
-            data.CasesNumSummary = q.Select(p => p.CaseCount.ToString()).ElementAt(0);
-            data.Cases1 = q.Select(p => p.CaseCountPayLevel1.ToString()).ElementAt(0);
-            data.Cases2 = q.Select(p => p.CaseCountPayLevel2.ToString()).ElementAt(0);
-            data.Cases3 = q.Select(p => p.CaseCountPayLevel3.ToString()).ElementAt(0);
-            data.Cases4 = q.Select(p => p.CaseCountPayLevel4.ToString()).ElementAt(0);
-            data.Cases5 = q.Select(p => p.CaseCountPayLevel5.ToString()).ElementAt(0);
+            data.CasesNumSummary = q.Select(p => p.CaseCount.ToString("##,##0")).ElementAt(0);
+            data.Cases1 = q.Select(p => p.CaseCountPayLevel1.ToString("##,##0")).ElementAt(0);
+            data.Cases2 = q.Select(p => p.CaseCountPayLevel2.ToString("##,##0")).ElementAt(0);
+            data.Cases3 = q.Select(p => p.CaseCountPayLevel3.ToString("##,##0")).ElementAt(0);
+            data.Cases4 = q.Select(p => p.CaseCountPayLevel4.ToString("##,##0")).ElementAt(0);
+            data.Cases5 = q.Select(p => p.CaseCountPayLevel5.ToString("##,##0")).ElementAt(0);
             data.CasesP1 = q.Select(p => Math.Round((p.CaseFractionPayLevel1 * 100), 2).ToString()+"%").ElementAt(0); // Prozent
             data.CasesP2 = q.Select(p => Math.Round((p.CaseFractionPayLevel2 * 100), 2).ToString()+"%").ElementAt(0); // Prozent
             data.CasesP3 = q.Select(p => Math.Round((p.CaseFractionPayLevel3 * 100), 2).ToString()+"%").ElementAt(0); // Prozent
             data.CasesP4 = q.Select(p => Math.Round((p.CaseFractionPayLevel4 * 100), 2).ToString()+"%").ElementAt(0); // Prozent
             data.CasesP5 = q.Select(p => Math.Round((p.CaseFractionPayLevel5*100), 2).ToString()+"%").ElementAt(0); // Prozent
-            data.DaysSummary = q.Select(p => p.LosSumDays.ToString()).ElementAt(0);
-            data.Days1 = q.Select(p => p.DayCountPayLevel1.ToString()).ElementAt(0);
-            data.Days2 = q.Select(p => p.DayCountPayLevel2.ToString()).ElementAt(0);
-            data.Days3 = q.Select(p => p.DayCountPayLevel3.ToString()).ElementAt(0);
-            data.Days4 = q.Select(p => p.DayCountPayLevel4.ToString()).ElementAt(0);
-            data.Days5 = q.Select(p => p.DayCountPayLevel5.ToString()).ElementAt(0);
+            data.DaysSummary = q.Select(p => p.LosSumDays.ToString("##,##0")).ElementAt(0);
+            data.Days1 = q.Select(p => p.DayCountPayLevel1.ToString("##,##0")).ElementAt(0);
+            data.Days2 = q.Select(p => p.DayCountPayLevel2.ToString("##,##0")).ElementAt(0);
+            data.Days3 = q.Select(p => p.DayCountPayLevel3.ToString("##,##0")).ElementAt(0);
+            data.Days4 = q.Select(p => p.DayCountPayLevel4.ToString("##,##0")).ElementAt(0);
+            data.Days5 = q.Select(p => p.DayCountPayLevel5.ToString("##,##0")).ElementAt(0);
             data.LosAverage = q.Select(p => Math.Round(p.LosAverage, 1).ToString()).ElementAt(0);               // einstellig Dezimal
             data.LosStandardDeviation = q.Select(p => Math.Round(p.LosStandard, 1).ToString()).ElementAt(0);    // einstellig Dezimal
-            data.LosHomogeneityCoeff = q.Select(p => Math.Round((p.LosHc),2).ToString()+"%").ElementAt(0);      // Prozent
-            data.LosFrom1 = q.Select(p => p.LosFromPayLevel1.ToString()).ElementAt(0);
-            data.LosFrom2 = q.Select(p => p.LosFromPayLevel2.ToString()).ElementAt(0);
-            data.LosFrom3 = q.Select(p => p.LosFromPayLevel3.ToString()).ElementAt(0);
-            data.LosFrom4 = q.Select(p => p.LosFromPayLevel4.ToString()).ElementAt(0);
-            data.LosFrom5 = q.Select(p => p.LosFromPayLevel5.ToString()).ElementAt(0);
-            data.LosTo1 = q.Select(p => p.LosToPayLevel1.ToString()).ElementAt(0);
-            data.LosTo2 = q.Select(p => p.LosToPayLevel2.ToString()).ElementAt(0);
-            data.LosTo3 = q.Select(p => p.LosToPayLevel3.ToString()).ElementAt(0);
-            data.LosTo4 = q.Select(p => p.LosToPayLevel4.ToString()).ElementAt(0);
-            data.LosTo5 = q.Select(p => p.LosToPayLevel5.ToString()).ElementAt(0);
+            data.LosHomogeneityCoeff = q.Select(p => Math.Round((p.LosHc*100),2).ToString()+"%").ElementAt(0);      // Prozent
+            data.LosFrom1 = q.Select(p => p.LosFromPayLevel1.ToString("##,##0")).ElementAt(0);
+            data.LosFrom2 = q.Select(p => p.LosFromPayLevel2.ToString("##,##0")).ElementAt(0);
+            data.LosFrom3 = q.Select(p => p.LosFromPayLevel3.ToString("##,##0")).ElementAt(0);
+            data.LosFrom4 = q.Select(p => p.LosFromPayLevel4.ToString("##,##0")).ElementAt(0);
+            data.LosFrom5 = q.Select(p => p.LosFromPayLevel5.ToString("##,##0")).ElementAt(0);
+            data.LosTo1 = q.Select(p => p.LosToPayLevel1.ToString("##,##0")).ElementAt(0);
+            data.LosTo2 = q.Select(p => p.LosToPayLevel2.ToString("##,##0")).ElementAt(0);
+            data.LosTo3 = q.Select(p => p.LosToPayLevel3.ToString("##,##0")).ElementAt(0);
+            data.LosTo4 = q.Select(p => p.LosToPayLevel4.ToString("##,##0")).ElementAt(0);
+            data.LosTo5 = q.Select(p => p.LosToPayLevel5.ToString("##,##0")).ElementAt(0);
             data.ValuationRatio1 = q.Select(p => Math.Round(p.ValuationRatLevel1, 4).ToString()).ElementAt(0);  // vierstellig Dezimal
             data.ValuationRatio2 = q.Select(p => Math.Round(p.ValuationRatLevel2, 4).ToString()).ElementAt(0);  // vierstellig Dezimal
             data.ValuationRatio3 = q.Select(p => Math.Round(p.ValuationRatLevel3, 4).ToString()).ElementAt(0);  // vierstellig Dezimal
@@ -554,7 +593,7 @@ namespace org.inek.PeppBrowser.GUI {
             data.GenderMale = q.Select(p => Math.Round((p.GenderMale * 100), 2).ToString()+"%").ElementAt(0);         // Prozent
             data.GenderFemale = q.Select(p => Math.Round((p.GenderFemale * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
             data.AgeAverage = q.Select(p => Math.Round(p.AgeAverage, 1).ToString()).ElementAt(0);               // einstellig Dezimal
-            data.AgeStandardDeviation = q.Select(p => Math.Round(p.AgeStandard,1).ToString()+"%").ElementAt(0);     // einstellig Dezimal
+            data.AgeStandardDeviation = q.Select(p => Math.Round(p.AgeStandard,1).ToString()).ElementAt(0);     // einstellig Dezimal
             data.LT28Days = q.Select(p => Math.Round((p.AgeBelow28Days * 100), 2).ToString()+"%").ElementAt(0);        // Prozent
             data.Bt28Days1Year = q.Select(p => Math.Round((p.AgeBelow1Year * 100), 2).ToString()+"%").ElementAt(0);    // Prozent
             data.Bt1Year2 = q.Select(p => Math.Round((p.AgeBelow3Years * 100), 2).ToString()+"%").ElementAt(0);        // Prozent
@@ -691,8 +730,14 @@ namespace org.inek.PeppBrowser.GUI {
         private void LoadPeppByTabControl(FrmSearch search) {
             selection.ClearSelection();
             PEPP = search.Id.ToString();
-            cbxPepp.Text = CsvData.Context().Pepps.Where(p => p.Code == PEPP).Select(p => p.Text).Single();
+            cbxPepp.Text = PEPP + ": ";
+            cbxPepp.Text += CsvData.Context().Pepps.Where(p => p.Code == PEPP).Select(p => p.Text).Single();
             LoadPeppData();
+        }
+
+        private void mnuInfo_Click(object sender, EventArgs e) {
+            FrmAbout about = new FrmAbout();
+            about.ShowDialog(this);
         }
     }
 }

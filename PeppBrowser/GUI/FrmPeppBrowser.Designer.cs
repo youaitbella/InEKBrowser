@@ -23,6 +23,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPeppBrowser));
             this.mnuMain = new System.Windows.Forms.MenuStrip();
             this.mnuFile = new System.Windows.Forms.ToolStripMenuItem();
             this.beendenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -98,6 +99,8 @@
             // 
             // beendenToolStripMenuItem
             // 
+            this.beendenToolStripMenuItem.Image = global::org.inek.PeppBrowser.Properties.Resources.peppo_exit;
+            this.beendenToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.White;
             this.beendenToolStripMenuItem.Name = "beendenToolStripMenuItem";
             this.beendenToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.beendenToolStripMenuItem.Text = "Beenden";
@@ -237,6 +240,7 @@
             this.mnuInfo.Name = "mnuInfo";
             this.mnuInfo.Size = new System.Drawing.Size(130, 22);
             this.mnuInfo.Text = "Info";
+            this.mnuInfo.Click += new System.EventHandler(this.mnuInfo_Click);
             // 
             // pnlContentBackground
             // 
@@ -314,13 +318,14 @@
             this.grdMainDiagnosis.AllowUserToAddRows = false;
             this.grdMainDiagnosis.AllowUserToDeleteRows = false;
             this.grdMainDiagnosis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grdMainDiagnosis.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.grdMainDiagnosis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdMainDiagnosis.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grdMainDiagnosis.Location = new System.Drawing.Point(3, 3);
             this.grdMainDiagnosis.MultiSelect = false;
             this.grdMainDiagnosis.Name = "grdMainDiagnosis";
             this.grdMainDiagnosis.ReadOnly = true;
-            this.grdMainDiagnosis.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.grdMainDiagnosis.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.grdMainDiagnosis.RowHeadersVisible = false;
             this.grdMainDiagnosis.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdMainDiagnosis.Size = new System.Drawing.Size(1162, 312);
@@ -343,14 +348,17 @@
             // 
             this.grdSecondaryDiagnosis.AllowUserToAddRows = false;
             this.grdSecondaryDiagnosis.AllowUserToDeleteRows = false;
+            this.grdSecondaryDiagnosis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.grdSecondaryDiagnosis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grdSecondaryDiagnosis.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.grdSecondaryDiagnosis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdSecondaryDiagnosis.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grdSecondaryDiagnosis.Location = new System.Drawing.Point(3, 3);
             this.grdSecondaryDiagnosis.MultiSelect = false;
             this.grdSecondaryDiagnosis.Name = "grdSecondaryDiagnosis";
             this.grdSecondaryDiagnosis.ReadOnly = true;
-            this.grdSecondaryDiagnosis.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.grdSecondaryDiagnosis.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.grdSecondaryDiagnosis.RowHeadersVisible = false;
             this.grdSecondaryDiagnosis.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdSecondaryDiagnosis.Size = new System.Drawing.Size(1162, 312);
@@ -379,7 +387,7 @@
             this.grdProcedures.MultiSelect = false;
             this.grdProcedures.Name = "grdProcedures";
             this.grdProcedures.ReadOnly = true;
-            this.grdProcedures.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.grdProcedures.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.grdProcedures.RowHeadersVisible = false;
             this.grdProcedures.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdProcedures.Size = new System.Drawing.Size(1162, 312);
@@ -410,7 +418,7 @@
             this.grdCosts.MultiSelect = false;
             this.grdCosts.Name = "grdCosts";
             this.grdCosts.ReadOnly = true;
-            this.grdCosts.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.grdCosts.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.grdCosts.RowHeadersVisible = false;
             this.grdCosts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdCosts.Size = new System.Drawing.Size(1162, 312);
@@ -470,6 +478,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.helpProvider1.SetHelpKeyword(this, "Introduction.htm");
             this.helpProvider1.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.Topic);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.MinimumSize = new System.Drawing.Size(1188, 500);
             this.Name = "FrmPeppBrowser";

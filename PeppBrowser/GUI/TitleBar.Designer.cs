@@ -30,11 +30,13 @@
             this.picIconify = new System.Windows.Forms.PictureBox();
             this.picExit = new System.Windows.Forms.PictureBox();
             this.picMinMax = new System.Windows.Forms.PictureBox();
+            this.picInEK = new System.Windows.Forms.PictureBox();
             this.pnlTitle.SuspendLayout();
             this.pnlFormStates.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIconify)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMinMax)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picInEK)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlTitle
@@ -43,11 +45,12 @@
             this.pnlTitle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlTitle.BackgroundImage")));
             this.pnlTitle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pnlTitle.Controls.Add(this.lblTitle);
+            this.pnlTitle.Controls.Add(this.picInEK);
             this.pnlTitle.Cursor = System.Windows.Forms.Cursors.Default;
             this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlTitle.Location = new System.Drawing.Point(0, 0);
             this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(157, 30);
+            this.pnlTitle.Size = new System.Drawing.Size(191, 30);
             this.pnlTitle.TabIndex = 3;
             this.pnlTitle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlTitle_MouseMove);
             // 
@@ -56,7 +59,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(3, 3);
+            this.lblTitle.Location = new System.Drawing.Point(35, 3);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(152, 25);
             this.lblTitle.TabIndex = 0;
@@ -119,6 +122,16 @@
             this.picMinMax.MouseEnter += new System.EventHandler(this.picMinMax_MouseEnter);
             this.picMinMax.MouseLeave += new System.EventHandler(this.picMinMax_MouseLeave);
             // 
+            // picInEK
+            // 
+            this.picInEK.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picInEK.BackgroundImage")));
+            this.picInEK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picInEK.Location = new System.Drawing.Point(3, 3);
+            this.picInEK.Name = "picInEK";
+            this.picInEK.Size = new System.Drawing.Size(26, 25);
+            this.picInEK.TabIndex = 0;
+            this.picInEK.TabStop = false;
+            // 
             // TitleBar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -134,6 +147,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picIconify)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMinMax)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picInEK)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -146,5 +160,6 @@
         private System.Windows.Forms.PictureBox picMinMax;
         private System.Windows.Forms.PictureBox picExit;
         private System.Windows.Forms.PictureBox picIconify;
+        private System.Windows.Forms.PictureBox picInEK;
     }
 }
