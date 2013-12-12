@@ -54,7 +54,8 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void mnuPepp_Click(object sender, System.EventArgs e) {
             FrmList dlg = new FrmList();
-            var q = CsvData.Context().Pepps.Select(p => new {SK = p.StructureCategory, PEPP=p.Code, p.Text});
+            dlg.StartPosition = FormStartPosition.CenterParent;
+            var q = CsvData.Context().Pepps.Select(p => new { pe_SK = p.StructureCategory, pe_Pepp = p.Code, pe_Text = p.Text });
             dlg.SetDataSource(q);
             dlg.Text = "PEPPS";
             dlg.Show();
@@ -62,59 +63,175 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void mnuStructureCategories_Click(object sender, System.EventArgs e) {
             FrmList dlg = new FrmList();
+            dlg.StartPosition = FormStartPosition.CenterParent;
+            dlg.Text = "Strukturkategorien";
             var q =
                 CsvData.Context().StructureCategories.OrderBy(sk => sk.Order)
-                .Select(sk => new { SK = sk.Category, sk.Text, PEPPs = sk.PeppCount, Fälle = sk.CaseCount, Tage = sk.DayCount });
+                    .Select(sk => new {
+                                          st_Strukturkategorie = sk.Category,
+                                          st_Order = sk.Order,
+                                          st_Text = sk.Text,
+                                          st_PeppAnzahl = sk.PeppCount,
+                                          st_FaelleAnzahl = sk.CaseCount,
+                                          st_TageAnzahl = sk.DayCount
+                                      });
             dlg.SetDataSource(q);
-            dlg.Text = "Strukturkategorien";
-            dlg.Show();
+            dlg.ShowDialog(this);
         }
 
         private void mnuPeppInfo_Click(object sender, System.EventArgs e) {
             FrmList dlg = new FrmList();
-            dlg.SetDataSource(CsvData.Context().PeppInfos);
+            dlg.StartPosition = FormStartPosition.CenterParent;
+            var q = CsvData.Context().PeppInfos.Select(pi => new {
+                                                                     kd_Pepp = pi.Code, kd_FaelleAnzahl = pi.CaseCount, kd_FaelleAnzahlVgst1 = pi.CaseCountPayLevel1,
+                                                                     kd_FaelleAnzahlVgst2 = pi.CaseCountPayLevel2,
+                                                                     kd_FaelleAnzahlVgst3 = pi.CaseCountPayLevel3,
+                                                                     kd_FaelleAnzahlVgst4 = pi.CaseCountPayLevel4,
+                                                                     kd_FaelleAnzahlVgst5 = pi.CaseCountPayLevel5,
+                                                                     kd_FaelleAnteilVstufe1 = pi.CaseFractionPayLevel1,
+                                                                     kd_FaelleAnteilVstufe2 = pi.CaseFractionPayLevel2,
+                                                                     kd_FaelleAnteilVstufe3 = pi.CaseFractionPayLevel3,
+                                                                     kd_FaelleAnteilVstufe4 = pi.CaseFractionPayLevel4,
+                                                                     kd_FaelleAnteilVstufe5 = pi.CaseFractionPayLevel5,
+                                                                     kd_TageAnzahlVgst1 = pi.DayCountPayLevel1,
+                                                                     kd_TageAnzahlVgst2 = pi.DayCountPayLevel2,
+                                                                     kd_TageAnzahlVgst3 = pi.DayCountPayLevel3,
+                                                                     kd_TageAnzahlVgst4 = pi.DayCountPayLevel4,
+                                                                     kd_TageAnzahlVgst5 = pi.DayCountPayLevel5,
+                                                                     kd_VwdSummeTage = pi.LosSumDays,
+                                                                     kd_VwdMw = pi.LosAverage,
+                                                                     kd_VwdStd = pi.LosStandard,
+                                                                     kd_VwdHK = pi.LosStandard,
+                                                                     kd_VwdVonVgst1 = pi.LosFromPayLevel1,
+                                                                     kd_VwdBisVgst1 = pi.LosToPayLevel1,
+                                                                     kd_BewertungsrelationTagVgst1 = pi.ValuationRatLevel1,
+                                                                     kd_VwdVonVgst2 = pi.LosFromPayLevel2,
+                                                                     kd_VwdBisVgst2 = pi.LosToPayLevel2,
+                                                                     kd_BewertungsrelationTagVgst2 = pi.ValuationRatLevel2,
+                                                                     kd_VwdVonVgst3 = pi.LosFromPayLevel3,
+                                                                     kd_VwdBisVgst3 = pi.LosToPayLevel3,
+                                                                     kd_BewertungsrelationTagVgst3 = pi.ValuationRatLevel3,
+                                                                     kd_VwdVonVgst4 = pi.LosFromPayLevel4,
+                                                                     kd_VwdBisVgst4 = pi.LosToPayLevel4,
+                                                                     kd_BewertungsrelationTagVgst4 = pi.ValuationRatLevel4,
+                                                                     kd_VwdVonVgst5 = pi.LosFromPayLevel5,
+                                                                     kd_VwdBisVgst5 = pi.LosToPayLevel5,
+                                                                     kd_BewertungsrelationTagVgst5 = pi.ValuationRatLevel5,
+                                                                     kd_GeschlechtM = pi.GenderMale,
+                                                                     kd_GeschlechtW = pi.GenderFemale,
+                                                                     kd_AlterMw = pi.AgeAverage,
+                                                                     kd_AlterStd = pi.AgeStandard,
+                                                                     kd_AlterU28T = pi.AgeBelow28Days,
+                                                                     kd_AlterU01 = pi.AgeBelow1Year,
+                                                                     kd_AlterU03 = pi.AgeBelow3Years,
+                                                                     kd_AlterU06 = pi.AgeBelow6Years,
+                                                                     kd_AlterU10 = pi.AgeBelow10Years,
+                                                                     kd_AlterU16 = pi.AgeBelow16Years,
+                                                                     kd_AlterU18 = pi.AgeBelow18Years,
+                                                                     kd_AlterU30 = pi.AgeBelow30Years,
+                                                                     kd_AlterU40 = pi.AgeBelow40Years,
+                                                                     kd_AlterU50 = pi.AgeBelow50Years,
+                                                                     kd_AlterU55 = pi.AgeBelow55Years,
+                                                                     kd_AlterU60 = pi.AgeBelow60Years,
+                                                                     kd_AlterU65 = pi.AgeBelow65Years,
+                                                                     kd_AlterU75 = pi.AgeBelow75Years,
+                                                                     kd_AlterU80 = pi.AgeBelow80Years,
+                                                                     kd_AlterU99 = pi.AgeBelow99Years,
+                                                                     kd_TageskostenMw = pi.DayCostsAverage,
+                                                                     kd_TageskostenStd = pi.DayCostsStandard,
+                                                                     kd_TageskostenHK = pi.DayCostsHc
+                                                                 });
+            dlg.SetDataSource(q);
             dlg.Text = "Kopfdaten";
-            dlg.Show();
+            dlg.ShowDialog(this);
 
         }
 
         private void mnuPrimaryDiagnoses_Click(object sender, System.EventArgs e) {
             FrmList dlg = new FrmList();
-            dlg.SetDataSource(CsvData.Context().PrimaryDiagnoses);
+            dlg.StartPosition = FormStartPosition.CenterParent;
+            var q = CsvData.Context().PrimaryDiagnoses.Select(p => new { hd_Pepp = p.PeppCode, hd_Code = p.DiagCode, hd_FaelleAnzahl = p.Count, hd_FaelleAnteil = p.Fraction});
+            dlg.SetDataSource(q);
             dlg.Text = "Hauptdiagnosen";
-            dlg.Show();
+            dlg.ShowDialog(this);
 
         }
 
         private void mnuSecondaryDiagnoses_Click(object sender, System.EventArgs e) {
             FrmList dlg = new FrmList();
-            dlg.SetDataSource(CsvData.Context().SecondaryDiagnoses);
+            dlg.StartPosition = FormStartPosition.CenterParent;
+            var q =
+                CsvData.Context()
+                    .SecondaryDiagnoses.Select(
+                        s =>
+                            new {
+                                    nd_Pepp = s.PeppCode,
+                                    nd_Code = s.DiagCode,
+                                    nd_FaelleAnzahl = s.CaseCount,
+                                    nd_FaelleAnteil = s.CaseFraction,
+                                    nd_NennungenAnzahl = s.EntryCount,
+                                    nd_NennungenAnteil = s.EntryFraction
+                                });
+            dlg.SetDataSource(q);
             dlg.Text = "Nebendiagnosen";
-            dlg.Show();
+            dlg.ShowDialog(this);
 
         }
 
         private void mnuProcedures_Click(object sender, System.EventArgs e) {
             FrmList dlg = new FrmList();
-            dlg.SetDataSource(CsvData.Context().Procedures);
+            dlg.StartPosition = FormStartPosition.CenterParent;
+            var q = CsvData.Context().Procedures.Select(p => new {
+                                                                     pr_Pepp = p.PeppCode,
+                                                                     pr_Code = p.ProcCode,
+                                                                     pr_FaelleAnzahl = p.CaseCount,
+                                                                     pr_FaelleAnteil = p.CaseFraction,
+                                                                     pr_NennungenAnzahl = p.EntryCount,
+                                                                     pr_NennungenAnteil = p.EntryFraction
+                                                                 });
+            dlg.SetDataSource(q);
             dlg.Text = "Prozeduren";
-            dlg.Show();
+            dlg.ShowDialog();
 
         }
 
         private void mnuCosts_Click(object sender, System.EventArgs e) {
             FrmList dlg = new FrmList();
-            dlg.SetDataSource(CsvData.Context().Costs);
+            dlg.StartPosition = FormStartPosition.CenterParent;
+            var q = CsvData.Context().Costs.Select(c => new {
+                                                                ko_Pepp = c.PeppCode,
+                                                                ko_BereichNr = c.CostDomain,
+                                                                ko_KArt1 = c.CostType1,
+                                                                ko_KArt2 = c.CostType2,
+                                                                ko_KArt3a = c.CostType3a,
+                                                                ko_KArt3b = c.CostType3b,
+                                                                ko_KArt3c = c.CostType3c,
+                                                                ko_KArt3 = c.CostType3,
+                                                                ko_KArt4a = c.CostType4a,
+                                                                ko_KArt4b = c.CostType4b,
+                                                                ko_KArt5 = c.CostType5,
+                                                                ko_KArt6a = c.CostType6a,
+                                                                ko_KArt6b = c.CostType6b,
+                                                                ko_KArt7 = c.CostType7,
+                                                                ko_KArt8 = c.CostType8
+                                                            });
+            dlg.SetDataSource(q);
             dlg.Text = "Kosten";
-            dlg.Show();
+            dlg.ShowDialog(this);
 
         }
 
         private void mnuCostDomains_Click(object sender, System.EventArgs e) {
             FrmList dlg = new FrmList();
-            dlg.SetDataSource(CsvData.Context().StructureCategories);
-            dlg.Text = "Strukturkategorien";
-            dlg.Show();
+            dlg.StartPosition = FormStartPosition.CenterParent;
+            var q = CsvData.Context().CostDomains.Select(d => new {
+                                                                      kb_Nr = d.DomainId,
+                                                                      kb_BereichOrder = d.Order,
+                                                                      kb_Bereich = d.DomainText
+                                                                  });
+            dlg.SetDataSource(q);
+            dlg.Text = "Kostenbereich";
+            dlg.ShowDialog();
         }
 
         private void FrmPeppBrowser_MouseMove(object sender, MouseEventArgs e) {

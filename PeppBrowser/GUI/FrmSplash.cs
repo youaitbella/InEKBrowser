@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -40,6 +41,16 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void FrmSplash_Shown(object sender, EventArgs e) {
             worker.RunWorkerAsync();
+        }
+
+        private void CheckRessourceDirectory(string ressourceDir) {
+            if (!Directory.Exists(ressourceDir)) {
+                MessageBox.Show(this,
+                    "Der Ordner für die Ressourcen wurde gelöscht. Bitte laden Sie sich den Browser erneut herunter.",
+                    "Fehler",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Exit();
+            }
         }
 
         private void worker_DoWork(object sender, DoWorkEventArgs e) {

@@ -25,6 +25,7 @@
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
             this.pnlData = new System.Windows.Forms.GroupBox();
+            this.pnlHr2 = new System.Windows.Forms.Panel();
             this.pnlSummaryLine = new System.Windows.Forms.Panel();
             this.grpBigAge = new System.Windows.Forms.GroupBox();
             this.txtGt79Year = new System.Windows.Forms.TextBox();
@@ -131,7 +132,6 @@
             this.txtDaysSummary = new System.Windows.Forms.TextBox();
             this.lblLosNumDays = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.pnlHr2 = new System.Windows.Forms.Panel();
             this.pnlData.SuspendLayout();
             this.grpBigAge.SuspendLayout();
             this.grpGender.SuspendLayout();
@@ -176,10 +176,16 @@
             this.pnlData.TabStop = false;
             this.pnlData.Text = "Kennzahlen";
             // 
+            // pnlHr2
+            // 
+            this.pnlHr2.BackColor = System.Drawing.Color.White;
+            this.pnlHr2.Location = new System.Drawing.Point(670, 113);
+            this.pnlHr2.Name = "pnlHr2";
+            this.pnlHr2.Size = new System.Drawing.Size(151, 2);
+            this.pnlHr2.TabIndex = 20;
+            // 
             // pnlSummaryLine
             // 
-            this.pnlSummaryLine.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlSummaryLine.BackColor = System.Drawing.Color.White;
             this.pnlSummaryLine.Location = new System.Drawing.Point(8, 88);
             this.pnlSummaryLine.Name = "pnlSummaryLine";
@@ -188,7 +194,6 @@
             // 
             // grpBigAge
             // 
-            this.grpBigAge.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.grpBigAge.BackColor = System.Drawing.Color.Transparent;
             this.grpBigAge.Controls.Add(this.txtGt79Year);
             this.grpBigAge.Controls.Add(this.lblGtYear79);
@@ -618,7 +623,6 @@
             // 
             // grpGender
             // 
-            this.grpGender.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.grpGender.BackColor = System.Drawing.Color.Transparent;
             this.grpGender.Controls.Add(this.label2);
             this.grpGender.Controls.Add(this.txtGenderFemale);
@@ -674,7 +678,6 @@
             // 
             // lblFemale
             // 
-            this.lblFemale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFemale.AutoSize = true;
             this.lblFemale.BackColor = System.Drawing.Color.Transparent;
             this.lblFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -686,7 +689,6 @@
             // 
             // lblMale
             // 
-            this.lblMale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblMale.AutoSize = true;
             this.lblMale.BackColor = System.Drawing.Color.Transparent;
             this.lblMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -698,7 +700,6 @@
             // 
             // grpAge
             // 
-            this.grpAge.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.grpAge.BackColor = System.Drawing.Color.Transparent;
             this.grpAge.Controls.Add(this.lblYears);
             this.grpAge.Controls.Add(this.txtAgeStandardDeviation);
@@ -753,7 +754,6 @@
             // 
             // grpDailyCosts
             // 
-            this.grpDailyCosts.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.grpDailyCosts.BackColor = System.Drawing.Color.Transparent;
             this.grpDailyCosts.Controls.Add(this.lblDayCostsEuro);
             this.grpDailyCosts.Controls.Add(this.txtDailyCostsHomogeneityCoeff);
@@ -824,7 +824,6 @@
             // 
             // lblHomogeneityCoefficient
             // 
-            this.lblHomogeneityCoefficient.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHomogeneityCoefficient.AutoSize = true;
             this.lblHomogeneityCoefficient.BackColor = System.Drawing.Color.Transparent;
             this.lblHomogeneityCoefficient.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -837,7 +836,6 @@
             // 
             // lblStandardDeviation
             // 
-            this.lblStandardDeviation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStandardDeviation.AutoSize = true;
             this.lblStandardDeviation.BackColor = System.Drawing.Color.Transparent;
             this.lblStandardDeviation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -850,7 +848,6 @@
             // 
             // lblAverage
             // 
-            this.lblAverage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAverage.AutoSize = true;
             this.lblAverage.BackColor = System.Drawing.Color.Transparent;
             this.lblAverage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -862,7 +859,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.lblVwdDaysSmall);
             this.groupBox1.Controls.Add(this.txtLosHomogeneityCoeff);
@@ -933,7 +929,6 @@
             // 
             // grpCatalog
             // 
-            this.grpCatalog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.grpCatalog.AutoSize = true;
             this.grpCatalog.BackColor = System.Drawing.Color.Transparent;
             this.grpCatalog.Controls.Add(this.txtValuationRatio5);
@@ -1220,7 +1215,6 @@
             // 
             // grpCases
             // 
-            this.grpCases.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.grpCases.AutoSize = true;
             this.grpCases.BackColor = System.Drawing.Color.Transparent;
             this.grpCases.Controls.Add(this.txtCasesP5);
@@ -1512,7 +1506,6 @@
             // 
             // grpLos
             // 
-            this.grpLos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.grpLos.AutoSize = true;
             this.grpLos.BackColor = System.Drawing.Color.Transparent;
             this.grpLos.Controls.Add(this.txtDays4);
@@ -1633,15 +1626,6 @@
             this.toolTip.AutoPopDelay = 5000;
             this.toolTip.InitialDelay = 200;
             this.toolTip.ReshowDelay = 40;
-            // 
-            // pnlHr2
-            // 
-            this.pnlHr2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlHr2.BackColor = System.Drawing.Color.White;
-            this.pnlHr2.Location = new System.Drawing.Point(670, 113);
-            this.pnlHr2.Name = "pnlHr2";
-            this.pnlHr2.Size = new System.Drawing.Size(151, 2);
-            this.pnlHr2.TabIndex = 20;
             // 
             // Data
             // 
