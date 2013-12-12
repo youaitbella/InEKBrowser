@@ -25,6 +25,8 @@ namespace org.inek.PeppBrowser.Data.Entities {
         [Column("nd_NennungenAnteil")]
         public decimal EntryFraction { get; set; }
 
+        public string Nebendiagnose { get; set; }
+
 
     }
 }

@@ -20,5 +20,7 @@ namespace org.inek.PeppBrowser.Data.Entities {
         [Column("pr_NennungenAnteil")]
         public decimal EntryFraction { get; set; }
 
+        public string Prozedur { get; set; }
+
     }
 }

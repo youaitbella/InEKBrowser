@@ -752,9 +752,40 @@ namespace org.inek.PeppBrowser.GUI {
             info.StruCat = Selection.SKTxt;
             info.PeppTxt = cbxPepp.Text;
             PeppData data = new PeppData(info);
-            data.PDX = CsvData.Context().PrimaryDiagnoses.Where(p => p.PeppCode == pepp).ToList();
-            data.DDX = CsvData.Context().SecondaryDiagnoses.Where(p => p.PeppCode == pepp).ToList();
-            data.Proc = CsvData.Context().Procedures.Where(p => p.PeppCode == pepp).ToList();
+            //Primary Diagnoses
+            data.PrimDiag = CsvData.Context().PrimaryDiagnoses.Where(p => p.PeppCode == pepp)
+                .Join(CsvData.Context().Recherche.Where(r => r.PrimaryDaignosis == 1), d => d.DiagCode, r => r.Code,
+                            (d, r) => new PrimaryDiagnosis() {
+                                PeppCode = d.PeppCode,
+                                DiagCode = d.DiagCode,
+                                Hauptdiagnose = r.Text,
+                                Count = d.Count,
+                                Fraction = d.Fraction
+                            }).ToList();
+            //Secondary Diagnoses
+            data.SecDiag = CsvData.Context().SecondaryDiagnoses.Where(p => p.PeppCode == pepp)
+                .Join(CsvData.Context().Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
+                            (d, r) => new SecondaryDiagnosis(){
+                                PeppCode = d.PeppCode,
+                                DiagCode = d.DiagCode,
+                                Nebendiagnose = r.Text,
+                                CaseCount = d.CaseCount,
+                                CaseFraction = d.CaseFraction,
+                                EntryCount = d.EntryCount,
+                                EntryFraction = d.EntryFraction
+                            }).ToList();
+            //Procedures
+            data.Proc = CsvData.Context().Procedures.Where(p => p.PeppCode == pepp)
+                 .Join(CsvData.Context().Recherche.Where(r => r.Procedure == 1), d => d.ProcCode, r => r.Code,
+                            (d, r) => new Procedure() {
+                                PeppCode = d.PeppCode,
+                                ProcCode = d.ProcCode,
+                                Prozedur = r.Text,
+                                CaseCount = d.CaseCount,
+                                CaseFraction = d.CaseFraction,
+                                EntryCount = d.EntryCount,
+                                EntryFraction = d.EntryFraction
+                            }).ToList();
             List<PeppData> dataSet = new List<PeppData>();
             dataSet.Add(data);
 

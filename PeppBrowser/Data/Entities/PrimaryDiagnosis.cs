@@ -14,5 +14,7 @@ namespace org.inek.PeppBrowser.Data.Entities {
 
         [Column("hd_FaelleAnteil")]
         public decimal Fraction { get; set; }
+
+        public string Hauptdiagnose { get; set; }
     }
 }
