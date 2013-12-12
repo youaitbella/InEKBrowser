@@ -12,8 +12,6 @@ using Microsoft.Office.Interop.Excel;
 namespace org.inek.PeppBrowser.GUI {
     public partial class TitleBar : UserControl {
 
-        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TitleBar));
-
         public event EventHandler ClickedExit;
         public event EventHandler ClickedMinMax;
         public event EventHandler ClickedIconify;
@@ -27,6 +25,11 @@ namespace org.inek.PeppBrowser.GUI {
         public bool ShowMinMax {
             get { return picMinMax.Visible; }
             set { picMinMax.Visible = value; }
+        }
+
+        public Image MinMaxImage {
+            get { return picMinMax.BackgroundImage; }
+            set { picMinMax.BackgroundImage = value; }
         }
 
         public TitleBar() {
@@ -63,8 +66,10 @@ namespace org.inek.PeppBrowser.GUI {
             }
         }
 
+        private bool normalWindow = false;
         private void picMinMax_Click(object sender, EventArgs e) {
             if (ClickedMinMax != null) {
+                normalWindow = !normalWindow;
                 ClickedMinMax(picMinMax, e);
             }
         }

@@ -129,8 +129,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="Resources\peppo_exit.png" />
+    <None Include="Resources\peppo_manual.png" />
+    <None Include="Resources\peppo_help.png" />
+    <None Include="Resources\peppo_info.png" />
+    <None Include="Resources\peppo_quit.png" />
+    <None Include="Resources\peppo_print.png" />
     <None Include="Resources\peppo_minimize.png" />
+    <None Include="Resources\peppo_exit.png" />
     <EmbeddedResource Include="GUI\FrmAbout.resx">
       <DependentUpon>FrmAbout.cs</DependentUpon>
     </EmbeddedResource>

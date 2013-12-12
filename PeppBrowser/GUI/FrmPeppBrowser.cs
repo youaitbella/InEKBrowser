@@ -9,13 +9,19 @@ using System.Runtime.InteropServices;
 using System.Runtime.Remoting.Messaging;
 using System.Windows.Forms;
 using combit.ListLabel18;
+using Microsoft.Office.Interop.Excel;
 using org.inek.PeppBrowser.Data.Entities;
 using org.inek.controls.gui;
 using org.inek.controls.helper;
 using org.inek.PeppBrowser.Data;
+using Application = System.Windows.Forms.Application;
+using DataTable = System.Data.DataTable;
+using Point = System.Drawing.Point;
 
 namespace org.inek.PeppBrowser.GUI {
     public partial class FrmPeppBrowser : Form {
+
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TitleBar));
 
         /* Use for window moving */
         private const int WM_NCLBUTTONDOWN = 0xA1;
@@ -279,18 +285,13 @@ namespace org.inek.PeppBrowser.GUI {
                                               PEPP = d.PeppCode,
                                               HD = d.DiagCode,
                                               Hauptdiagnose = r.Text,
-                                              AnzahlFälle = d.Count,
-                                              AnteilFälle = d.Fraction
+                                              AnzahlFälle = d.Count.ToString("##,##0"),
+                                              AnteilFälle = d.Fraction.ToString("P")
                                           });
                 grdMainDiagnosis.DataSource = Helper.ConvertToDataTable(q);
-                grdMainDiagnosis.Columns[0].Width = 50;
-                grdMainDiagnosis.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-                grdMainDiagnosis.Columns[1].Width = 50;
-                grdMainDiagnosis.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-                grdMainDiagnosis.Columns[3].Width = 70;
-                grdMainDiagnosis.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-                grdMainDiagnosis.Columns[4].Width = 70;
-                grdMainDiagnosis.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                grdMainDiagnosis.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                grdMainDiagnosis.Columns[2].Width = 700;
+                SetHdGridColumnStyle();
             } else if (grid == grdSecondaryDiagnosis) {
                 var q = context.SecondaryDiagnoses.Where(d => d.PeppCode == PEPP)
                         .Join(context.Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
@@ -298,24 +299,13 @@ namespace org.inek.PeppBrowser.GUI {
                                 PEPP = d.PeppCode,
                                 ND = d.DiagCode,
                                 Nebendiagnose = r.Text,
-                                AnzahlFälle = d.CaseCount,
-                                AnteilFälle = d.CaseFraction,
-                                AnzahlNennungen = d.EntryCount,
-                                AnteilNennungen = d.EntryFraction
+                                AnzahlFälle = d.CaseCount.ToString("##,##0"),
+                                AnteilFälle = d.CaseFraction.ToString("P"),
+                                AnzahlNennungen = d.EntryCount.ToString("##,##0"),
+                                AnteilNennungen = d.EntryFraction.ToString("P")
                             });
                 grdSecondaryDiagnosis.DataSource = Helper.ConvertToDataTable(q);
-                grdSecondaryDiagnosis.Columns[0].Width = 50;
-                grdSecondaryDiagnosis.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-                grdSecondaryDiagnosis.Columns[1].Width = 50;
-                grdSecondaryDiagnosis.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-                grdSecondaryDiagnosis.Columns[3].Width = 70;
-                grdSecondaryDiagnosis.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-                grdSecondaryDiagnosis.Columns[4].Width = 50;
-                grdSecondaryDiagnosis.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-                grdSecondaryDiagnosis.Columns[5].Width = 90;
-                grdSecondaryDiagnosis.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-                grdSecondaryDiagnosis.Columns[6].Width = 90;
-                grdSecondaryDiagnosis.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                SetSdGridColumnStyle();
             } else if (grid == grdProcedures) {
                 var q = context.Procedures.Where(d => d.PeppCode == PEPP)
                         .Join(context.Recherche.Where(r => r.Procedure == 1), d => d.ProcCode, r => r.Code,
@@ -323,23 +313,41 @@ namespace org.inek.PeppBrowser.GUI {
                                 PEPP = d.PeppCode,
                                 ProzedurKode = d.ProcCode,
                                 Prozedur = r.Text,
-                                AnzahlFälle = d.CaseCount,
-                                AnteilFälle = d.CaseFraction,
-                                AnzahlNennungen = d.EntryCount,
-                                AnteilNennungen = d.EntryFraction
+                                AnzahlFälle = d.CaseCount.ToString("##,##0"),
+                                AnteilFälle = d.CaseFraction.ToString("P"),
+                                AnzahlNennungen = d.EntryCount.ToString("##,##0"),
+                                AnteilNennungen = d.EntryFraction.ToString("P")
                             });
                 grdProcedures.DataSource = Helper.ConvertToDataTable(q);
+                SetProcedureGridColumnStyle();
             } else if (grid == grdCosts && !matrixLoaded) {
                 BuildCostMatrix();
                 matrixLoaded = true;
             }
-            if (grid != null) {
-                if (((DataTable)grid.DataSource).Rows.Count == 0) {
-                    grid.Visible = false;
-                } else {
-                    grid.Visible = true;
-                }   
-            }
+            
+        }
+
+        private void SetHdGridColumnStyle() {
+            grdMainDiagnosis.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            grdMainDiagnosis.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+        }
+
+        private void SetSdGridColumnStyle() {
+            grdSecondaryDiagnosis.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            grdSecondaryDiagnosis.Columns[2].Width = 700;
+            grdSecondaryDiagnosis.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            grdSecondaryDiagnosis.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            grdSecondaryDiagnosis.Columns[5].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            grdSecondaryDiagnosis.Columns[6].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+        }
+
+        private void SetProcedureGridColumnStyle() {
+            grdProcedures.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            grdProcedures.Columns[2].Width = 700;
+            grdProcedures.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            grdProcedures.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            grdProcedures.Columns[5].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            grdProcedures.Columns[6].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
         }
 
         private void BuildCostMatrix() {
@@ -657,12 +665,15 @@ namespace org.inek.PeppBrowser.GUI {
                         .Where(pepp => pepp.DiagCode == hd)
                         .Select(pepp => pepp.PeppCode)
                         .ToList();
-                var q = CsvData.Context().PrimaryDiagnoses.Where(pd => pepps.Contains(pd.PeppCode) && pd.DiagCode == hd);
+                var q = CsvData.Context().PrimaryDiagnoses.Where(pd => pepps.Contains(pd.PeppCode) && pd.DiagCode == hd)
+                    .Select(pd => new {PEPP = pd.PeppCode, HD = pd.DiagCode, AnzahlFälle = pd.Count.ToString("##,##0"), AnteilFälle = pd.Fraction.ToString("P")});
                 FrmSearch search = new FrmSearch(this);
                 search.StartPosition = FormStartPosition.CenterParent;
                 search.Text = "PEPPs zu Hauptdiagnosen";
                 search.ButtonShowIsVisible = false;
                 search.SetDataSource(q);
+                search.ColumnTextAlign(2, DataGridViewContentAlignment.MiddleRight);
+                search.ColumnTextAlign(3, DataGridViewContentAlignment.MiddleRight);
                 if (search.ShowDialog() == DialogResult.OK) {
                     LoadPeppByTabControl(search);
                 }
@@ -678,12 +689,24 @@ namespace org.inek.PeppBrowser.GUI {
                         .Where(pepp => pepp.DiagCode == sd)
                         .Select(pepp => pepp.PeppCode)
                         .ToList();
-                var q = CsvData.Context().SecondaryDiagnoses.Where(pd => pepps.Contains(pd.PeppCode) && pd.DiagCode == sd);
+                var q = CsvData.Context().SecondaryDiagnoses.Where(pd => pepps.Contains(pd.PeppCode) && pd.DiagCode == sd)
+                    .Select(nd => new {
+                        PEPP = nd.PeppCode,
+                        ND = nd.DiagCode,
+                        AnzahlFälle = nd.CaseCount.ToString("##,##0"),
+                        AnteilFälle = nd.CaseFraction.ToString("P"),
+                        AnzahlNennungen = nd.EntryCount.ToString("##,##0"),
+                        AnteilNennungen = nd.EntryFraction.ToString("P")
+                                      });
                 FrmSearch search = new FrmSearch(this);
                 search.StartPosition = FormStartPosition.CenterParent;
                 search.Text = "PEPPs zu Nebendiagnosen";
                 search.ButtonShowIsVisible = false;
                 search.SetDataSource(q);
+                search.ColumnTextAlign(2, DataGridViewContentAlignment.MiddleRight);
+                search.ColumnTextAlign(3, DataGridViewContentAlignment.MiddleRight);
+                search.ColumnTextAlign(4, DataGridViewContentAlignment.MiddleRight);
+                search.ColumnTextAlign(5, DataGridViewContentAlignment.MiddleRight);
                 if (search.ShowDialog() == DialogResult.OK) {
                     LoadPeppByTabControl(search);
                 }
@@ -699,12 +722,24 @@ namespace org.inek.PeppBrowser.GUI {
                         .Where(pepp => pepp.ProcCode == proc)
                         .Select(pepp => pepp.PeppCode)
                         .ToList();
-                var q = CsvData.Context().Procedures.Where(pd => pepps.Contains(pd.PeppCode) && pd.ProcCode == proc);
+                var q = CsvData.Context().Procedures.Where(pd => pepps.Contains(pd.PeppCode) && pd.ProcCode == proc)
+                    .Select(p => new {
+                        PEPP = p.PeppCode,
+                        Prozedur = p.ProcCode,
+                        AnzahlFälle = p.CaseCount.ToString("##,##0"),
+                        AnteilFälle = p.CaseFraction.ToString("P"),
+                        AnzahlNennungen = p.EntryCount.ToString("##,##0"),
+                        AnteilNennungen = p.EntryFraction.ToString("P")
+                                     });
                 FrmSearch search = new FrmSearch(this);
                 search.StartPosition = FormStartPosition.CenterParent;
                 search.Text = "PEPPs zu Prozeduren";
                 search.ButtonShowIsVisible = false;
                 search.SetDataSource(q);
+                search.ColumnTextAlign(2, DataGridViewContentAlignment.MiddleRight);
+                search.ColumnTextAlign(3, DataGridViewContentAlignment.MiddleRight);
+                search.ColumnTextAlign(4, DataGridViewContentAlignment.MiddleRight);
+                search.ColumnTextAlign(5, DataGridViewContentAlignment.MiddleRight);
                 if (search.ShowDialog() == DialogResult.OK) {
                     LoadPeppByTabControl(search);
                 }
@@ -738,6 +773,14 @@ namespace org.inek.PeppBrowser.GUI {
         private void mnuInfo_Click(object sender, EventArgs e) {
             FrmAbout about = new FrmAbout();
             about.ShowDialog(this);
+        }
+
+        private void FrmPeppBrowser_Resize(object sender, EventArgs e) {
+            if (WindowState == FormWindowState.Maximized) {
+                titleBar.MinMaxImage = (Image) resources.GetObject("picMinMax.BackgroundImage2");
+            } else {
+                titleBar.MinMaxImage = (Image) resources.GetObject("picMinMax.BackgroundImage");
+            }
         }
     }
 }
