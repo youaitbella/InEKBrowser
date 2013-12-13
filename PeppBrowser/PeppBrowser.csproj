@@ -85,7 +85,7 @@
     <Compile Include="Data\Entities\StructureCategory.cs" />
     <Compile Include="Data\PeppData.cs" />
     <Compile Include="Data\Reporter.cs" />
-    <Compile Include="Data\RessourceController.cs" />
+    <Compile Include="Data\ResourceController.cs" />
     <Compile Include="GUI\FrmAbout.cs">
       <SubType>Form</SubType>
     </Compile>
