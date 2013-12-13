@@ -10,6 +10,8 @@ using System.Windows.Forms;
 namespace org.inek.PeppBrowser.Data {
     class ResourceController {
 
+        public const string RESOURCE_FILES_HASH = "B364C0CBB06BB7D75F9B35D57101FADC67D6E22CA8CC8A21EFA52463EFCD";
+
         public enum ResourceFilesIndex {
             Hauptdiagnose,
             Kopfdaten,
@@ -52,19 +54,37 @@ namespace org.inek.PeppBrowser.Data {
             }
         }
 
+        /// <summary>
+        /// Throws an exception, if the resource files got manipulated.
+        /// </summary>
         public static void CheckResourceFilesWithSHA256() {
             string hashes = GenerateResourceFilesHash();
+            byte[] hashesBytes = Encoding.ASCII.GetBytes(hashes);
+            SHA256 sha = new SHA256Managed();
+            byte[] masterHashByte = sha.ComputeHash(hashesBytes);
+            string masterHash = "";
+            masterHash = HashBytesToHexString(masterHashByte, masterHash);
+            if (masterHash != RESOURCE_FILES_HASH) {
+                throw new Exception("Fehler: Die Resource-Dateien wurden verändert. Bitte laden Sie den PEPP Browser erneut herunter.");
+            }
         }
 
         private static string GenerateResourceFilesHash() {
             string concatResourceHash = "";
-            SHA256 sha = new SHA256Cng();
+            SHA256 sha = new SHA256Managed();
             for (int i = 0; i < RESOURCE_FILES.Length; i++) {
                 FileStream stream = File.OpenRead(RESOURCE_DIR + RESOURCE_FILES[i]);
-                byte[] fileBuffer = null;
+                byte[] fileBuffer = new byte[(int)stream.Length];
                 stream.Read(fileBuffer, 0, (int)stream.Length);
                 byte[] hash = sha.ComputeHash(fileBuffer);
-                concatResourceHash += hash.ToString();
+                concatResourceHash = HashBytesToHexString(hash, concatResourceHash);
+            }
+            return concatResourceHash;
+        }
+
+        private static string HashBytesToHexString(byte[] hash, string concatResourceHash) {
+            for (int j = 0; j < hash.Length; j++) {
+                concatResourceHash += hash[j].ToString("X");
             }
             return concatResourceHash;
         }

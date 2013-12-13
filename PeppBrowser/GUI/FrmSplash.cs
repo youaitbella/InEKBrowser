@@ -40,17 +40,15 @@ namespace org.inek.PeppBrowser.GUI {
         }
 
         private void FrmSplash_Shown(object sender, EventArgs e) {
-            worker.RunWorkerAsync();
-        }
-
-        private void CheckRessourceDirectory(string ressourceDir) {
-            if (!Directory.Exists(ressourceDir)) {
-                MessageBox.Show(this,
-                    "Der Ordner für die Ressourcen wurde gelöscht. Bitte laden Sie sich den Browser erneut herunter.",
-                    "Fehler",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            try {
+                ResourceController.CheckResourceDir();
+                ResourceController.CheckForResourceFiles();
+                ResourceController.CheckResourceFilesWithSHA256();
+            } catch (Exception ex) {
+                MessageBox.Show(this, ex.Message, "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Application.Exit();
             }
+            worker.RunWorkerAsync();
         }
 
         private void worker_DoWork(object sender, DoWorkEventArgs e) {
