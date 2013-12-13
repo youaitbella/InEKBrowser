@@ -43,66 +43,63 @@ namespace org.inek.PeppBrowser.Data {
 
         public IEnumerable<Cost> Costs {
             get {
-                EnsureData(_costs, ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Kosten], "ko_Pepp;ko_BereichNr;ko_KArt1;ko_KArt2;ko_KArt3a;ko_KArt3b;ko_KArt3c;ko_KArt3;ko_KArt4a;ko_KArt4b;ko_KArt5;ko_KArt6a;ko_KArt6b;ko_KArt7;ko_KArt8");
+                EnsureData(_costs, ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Kosten], ResourceController.RESOURCE_HEADERS[(int)ResourceController.ResourceFilesIndex.Kosten]);
                 return _costs;
             }
         }
 
         public IEnumerable<CostDomain> CostDomains {
             get {
-                EnsureData(_costDomains, ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Kostenbereich], "kb_Nr;kb_BereichOrder;kb_Bereich");
+                EnsureData(_costDomains, ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Kostenbereich], ResourceController.RESOURCE_HEADERS[(int)ResourceController.ResourceFilesIndex.Kostenbereich]);
                 return _costDomains;
             }
         }
 
         public IEnumerable<StructureCategory> StructureCategories {
             get {
-                EnsureData(_structureCategories, ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Strukturkategorie], "st_Strukturkategorie;st_Order;st_Text;st_PeppAnzahl;st_FaelleAnzahl;st_TageAnzahl");
+                EnsureData(_structureCategories, ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Strukturkategorie], ResourceController.RESOURCE_HEADERS[(int)ResourceController.ResourceFilesIndex.Strukturkategorie]);
                 return _structureCategories;
             }
         }
 
         public IEnumerable<Pepp> Pepps {
             get {
-                EnsureData(_pepps, ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Pepp], "pe_SK;pe_Pepp;pe_Text");
+                EnsureData(_pepps, ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Pepp], ResourceController.RESOURCE_HEADERS[(int)ResourceController.ResourceFilesIndex.Pepp]);
                 return _pepps;
             }
         }
 
         public IEnumerable<PeppInfo> PeppInfos {
             get {
-                EnsureData(_peppInfos, ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Kopfdaten], "kd_Pepp;kd_FaelleAnzahl;kd_FaelleAnzahlVgst1;kd_FaelleAnzahlVgst2;kd_FaelleAnzahlVgst3;kd_FaelleAnzahlVgst4;kd_FaelleAnzahlVgst5;kd_FaelleAnteilVstufe1;kd_FaelleAnteilVstufe2;kd_FaelleAnteilVstufe3;kd_FaelleAnteilVstufe4;kd_FaelleAnteilVstufe5;kd_TageAnzahlVgst1;" +
-                                                                     "kd_TageAnzahlVgst2;kd_TageAnzahlVgst3;kd_TageAnzahlVgst4;kd_TageAnzahlVgst5;kd_VwdSummeTage;kd_VwdMw;kd_VwdStd;kd_VwdHK;kd_VwdVonVgst1;kd_VwdBisVgst1;kd_BewertungsrelationTagVgst1;kd_VwdVonVgst2;kd_VwdBisVgst2;kd_BewertungsrelationTagVgst2;kd_VwdVonVgst3;" +
-                                                                     "kd_VwdBisVgst3;kd_BewertungsrelationTagVgst3;kd_VwdVonVgst4;kd_VwdBisVgst4;kd_BewertungsrelationTagVgst4;kd_VwdVonVgst5;kd_VwdBisVgst5;kd_BewertungsrelationTagVgst5;kd_GeschlechtM;kd_GeschlechtW;kd_AlterMw;kd_AlterStd;kd_AlterU28T;kd_AlterU01;kd_AlterU03;" +
-                                                                     "kd_AlterU06;kd_AlterU10;kd_AlterU16;kd_AlterU18;kd_AlterU30;kd_AlterU40;kd_AlterU50;kd_AlterU55;kd_AlterU60;kd_AlterU65;kd_AlterU75;kd_AlterU80;kd_AlterU99;kd_TageskostenMw;kd_TageskostenStd;kd_TageskostenHK");
+                EnsureData(_peppInfos, ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Kopfdaten], ResourceController.RESOURCE_HEADERS[(int)ResourceController.ResourceFilesIndex.Kopfdaten]);
                 return _peppInfos;
             }
         }
 
         public IEnumerable<Procedure> Procedures {
             get {
-                EnsureData(_procedures, ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Prozeduren], "pr_Pepp;pr_Code;pr_FaelleAnzahl;pr_FaelleAnteil;pr_NennungenAnzahl;pr_NennungenAnteil");
+                EnsureData(_procedures, ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Prozeduren], ResourceController.RESOURCE_HEADERS[(int)ResourceController.ResourceFilesIndex.Prozeduren]);
                 return _procedures;
             }
         }
 
         public IEnumerable<PrimaryDiagnosis> PrimaryDiagnoses {
             get {
-                EnsureData(_primaryDiagnoses, ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Hauptdiagnose], "hd_Pepp;hd_Code;hd_FaelleAnzahl;hd_FaelleAnteil");
+                EnsureData(_primaryDiagnoses, ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Hauptdiagnose], ResourceController.RESOURCE_HEADERS[(int)ResourceController.ResourceFilesIndex.Hauptdiagnose]);
                 return _primaryDiagnoses;
             }
         }
 
         public IEnumerable<SecondaryDiagnosis> SecondaryDiagnoses {
             get {
-                EnsureData(_secondaryDiagnoses, ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Nebendiagnose], "nd_Pepp;nd_Code;nd_FaelleAnzahl;nd_FaelleAnteil;nd_NennungenAnzahl;nd_NennungenAnteil");
+                EnsureData(_secondaryDiagnoses, ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Nebendiagnose], ResourceController.RESOURCE_HEADERS[(int)ResourceController.ResourceFilesIndex.Nebendiagnose]);
                 return _secondaryDiagnoses;
             }
         }
 
         public IEnumerable<Recherche> Recherche {
             get {
-                EnsureData(_recherche, ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Recherche], "re_Code;re_Text;re_Hauptdiagnose;re_Nebendiagnose;re_Prozedur");
+                EnsureData(_recherche, ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Recherche], ResourceController.RESOURCE_HEADERS[(int)ResourceController.ResourceFilesIndex.Recherche]);
                 return _recherche;
             }
         } 
