@@ -50,6 +50,7 @@ namespace org.inek.PeppBrowser.GUI {
             InitializeComponent();
             Selection.Parent = this;
             cbxPepp.InputField.Click += cbxPepp_ButtonClicked;
+
         }
 
         private void mnuPepp_Click(object sender, System.EventArgs e) {
@@ -951,5 +952,26 @@ namespace org.inek.PeppBrowser.GUI {
                 titleBar.MinMaxImage = (Image) resources.GetObject("picMinMax.BackgroundImage");
             }
         }
+
+        private int ticks = 0;
+        private void tabControl_Click(object sender, EventArgs e) {
+            if (PEPP == null) {
+                ticks = 0;
+                timerPeppBlink.Start();
+            }
+        }
+
+        private void timerPeppBlink_Tick(object sender, EventArgs e) {
+            if (ticks%2 == 0) {
+                lblPEPP.ForeColor = Color.Black;
+            } else {
+                lblPEPP.ForeColor = Color.White;
+            }
+            if (ticks == 5) {
+                timerPeppBlink.Stop();
+            }
+            ticks++;
+        }
+
     }
 }
