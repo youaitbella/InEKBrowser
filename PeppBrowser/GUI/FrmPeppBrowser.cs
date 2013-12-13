@@ -755,10 +755,13 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void druckenToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            /*
-            Reporter reporter = new Reporter();
-            reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Print, "peppDruck", setReportData(PEPP), "data");
-             */
+            if (PEPP == "" || PEPP == null) {
+                MessageBox.Show("Keine PEPP gewählt. Druck nicht möglich!");
+            }
+            else {
+                Reporter reporter = new Reporter();
+                reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Preview, "peppDruck.lst", setReportData(PEPP), "data");
+            }
         }
 
 
