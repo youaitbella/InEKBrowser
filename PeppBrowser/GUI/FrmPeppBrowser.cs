@@ -681,36 +681,36 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void FillHeadData() {
             var q = CsvData.Context().PeppInfos.Where(pepp => pepp.Code == PEPP);
-            data.CasesNumSummary = q.Select(p => p.CaseCount.ToString("##,##0")).ElementAt(0);
-            data.Cases1 = q.Select(p => p.CaseCountPayLevel1.ToString("##,##0")).ElementAt(0);
-            data.Cases2 = q.Select(p => p.CaseCountPayLevel2.ToString("##,##0")).ElementAt(0);
-            data.Cases3 = q.Select(p => p.CaseCountPayLevel3.ToString("##,##0")).ElementAt(0);
-            data.Cases4 = q.Select(p => p.CaseCountPayLevel4.ToString("##,##0")).ElementAt(0);
-            data.Cases5 = q.Select(p => p.CaseCountPayLevel5.ToString("##,##0")).ElementAt(0);
+            data.CasesNumSummary = q.Select(p => p.CaseCount.ToString("##,###")).ElementAt(0);
+            data.Cases1 = q.Select(p => p.CaseCountPayLevel1.ToString("##,###")).ElementAt(0);
+            data.Cases2 = q.Select(p => p.CaseCountPayLevel2.ToString("##,###")).ElementAt(0);
+            data.Cases3 = q.Select(p => p.CaseCountPayLevel3.ToString("##,###")).ElementAt(0);
+            data.Cases4 = q.Select(p => p.CaseCountPayLevel4.ToString("##,###")).ElementAt(0);
+            data.Cases5 = q.Select(p => p.CaseCountPayLevel5.ToString("##,###")).ElementAt(0);
             data.CasesP1 = q.Select(p => Math.Round((p.CaseFractionPayLevel1 * 100), 2).ToString()+"%").ElementAt(0); // Prozent
             data.CasesP2 = q.Select(p => Math.Round((p.CaseFractionPayLevel2 * 100), 2).ToString()+"%").ElementAt(0); // Prozent
             data.CasesP3 = q.Select(p => Math.Round((p.CaseFractionPayLevel3 * 100), 2).ToString()+"%").ElementAt(0); // Prozent
             data.CasesP4 = q.Select(p => Math.Round((p.CaseFractionPayLevel4 * 100), 2).ToString()+"%").ElementAt(0); // Prozent
             data.CasesP5 = q.Select(p => Math.Round((p.CaseFractionPayLevel5*100), 2).ToString()+"%").ElementAt(0); // Prozent
-            data.DaysSummary = q.Select(p => p.LosSumDays.ToString("##,##0")).ElementAt(0);
-            data.Days1 = q.Select(p => p.DayCountPayLevel1.ToString("##,##0")).ElementAt(0);
-            data.Days2 = q.Select(p => p.DayCountPayLevel2.ToString("##,##0")).ElementAt(0);
-            data.Days3 = q.Select(p => p.DayCountPayLevel3.ToString("##,##0")).ElementAt(0);
-            data.Days4 = q.Select(p => p.DayCountPayLevel4.ToString("##,##0")).ElementAt(0);
-            data.Days5 = q.Select(p => p.DayCountPayLevel5.ToString("##,##0")).ElementAt(0);
+            data.DaysSummary = q.Select(p => p.LosSumDays.ToString("##,###")).ElementAt(0);
+            data.Days1 = q.Select(p => p.DayCountPayLevel1.ToString("##,###")).ElementAt(0);
+            data.Days2 = q.Select(p => p.DayCountPayLevel2.ToString("##,###")).ElementAt(0);
+            data.Days3 = q.Select(p => p.DayCountPayLevel3.ToString("##,###")).ElementAt(0);
+            data.Days4 = q.Select(p => p.DayCountPayLevel4.ToString("##,###")).ElementAt(0);
+            data.Days5 = q.Select(p => p.DayCountPayLevel5.ToString("##,###")).ElementAt(0);
             data.LosAverage = q.Select(p => Math.Round(p.LosAverage, 1).ToString()).ElementAt(0);               // einstellig Dezimal
             data.LosStandardDeviation = q.Select(p => Math.Round(p.LosStandard, 1).ToString()).ElementAt(0);    // einstellig Dezimal
             data.LosHomogeneityCoeff = q.Select(p => Math.Round((p.LosHc*100),2).ToString()+"%").ElementAt(0);      // Prozent
-            data.LosFrom1 = q.Select(p => p.LosFromPayLevel1.ToString("##,##0")).ElementAt(0);
-            data.LosFrom2 = q.Select(p => p.LosFromPayLevel2.ToString("##,##0")).ElementAt(0);
-            data.LosFrom3 = q.Select(p => p.LosFromPayLevel3.ToString("##,##0")).ElementAt(0);
-            data.LosFrom4 = q.Select(p => p.LosFromPayLevel4.ToString("##,##0")).ElementAt(0);
-            data.LosFrom5 = q.Select(p => p.LosFromPayLevel5.ToString("##,##0")).ElementAt(0);
-            data.LosTo1 = q.Select(p => p.LosToPayLevel1.ToString("##,##0")).ElementAt(0);
-            data.LosTo2 = q.Select(p => p.LosToPayLevel2.ToString("##,##0")).ElementAt(0);
-            data.LosTo3 = q.Select(p => p.LosToPayLevel3.ToString("##,##0")).ElementAt(0);
-            data.LosTo4 = q.Select(p => p.LosToPayLevel4.ToString("##,##0")).ElementAt(0);
-            data.LosTo5 = q.Select(p => p.LosToPayLevel5.ToString("##,##0")).ElementAt(0);
+            data.LosFrom1 = q.Select(p => p.LosFromPayLevel1.ToString("##,###")).ElementAt(0);
+            data.LosFrom2 = q.Select(p => p.LosFromPayLevel2.ToString("##,###")).ElementAt(0);
+            data.LosFrom3 = q.Select(p => p.LosFromPayLevel3.ToString("##,###")).ElementAt(0);
+            data.LosFrom4 = q.Select(p => p.LosFromPayLevel4.ToString("##,###")).ElementAt(0);
+            data.LosFrom5 = q.Select(p => p.LosFromPayLevel5.ToString("##,###")).ElementAt(0);
+            data.LosTo1 = q.Select(p => p.LosToPayLevel1.ToString("##,###")).ElementAt(0);
+            data.LosTo2 = q.Select(p => p.LosToPayLevel2.ToString("##,###")).ElementAt(0);
+            data.LosTo3 = q.Select(p => p.LosToPayLevel3.ToString("##,###")).ElementAt(0);
+            data.LosTo4 = q.Select(p => p.LosToPayLevel4.ToString("##,###")).ElementAt(0);
+            data.LosTo5 = q.Select(p => p.LosToPayLevel5.ToString("##,###")).ElementAt(0);
             data.ValuationRatio1 = q.Select(p => Math.Round(p.ValuationRatLevel1, 4).ToString()).ElementAt(0);  // vierstellig Dezimal
             data.ValuationRatio2 = q.Select(p => Math.Round(p.ValuationRatLevel2, 4).ToString()).ElementAt(0);  // vierstellig Dezimal
             data.ValuationRatio3 = q.Select(p => Math.Round(p.ValuationRatLevel3, 4).ToString()).ElementAt(0);  // vierstellig Dezimal
@@ -963,9 +963,9 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void timerPeppBlink_Tick(object sender, EventArgs e) {
             if (ticks%2 == 0) {
-                lblPEPP.ForeColor = Color.Black;
+                cbxPepp.BackColor = Color.Red;
             } else {
-                lblPEPP.ForeColor = Color.White;
+                cbxPepp.BackColor = Color.White;
             }
             if (ticks == 5) {
                 timerPeppBlink.Stop();

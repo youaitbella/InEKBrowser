@@ -681,7 +681,7 @@
             this.lblFemale.AutoSize = true;
             this.lblFemale.BackColor = System.Drawing.Color.Transparent;
             this.lblFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFemale.Location = new System.Drawing.Point(567, 227);
+            this.lblFemale.Location = new System.Drawing.Point(606, 227);
             this.lblFemale.Name = "lblFemale";
             this.lblFemale.Size = new System.Drawing.Size(57, 15);
             this.lblFemale.TabIndex = 16;
@@ -692,7 +692,7 @@
             this.lblMale.AutoSize = true;
             this.lblMale.BackColor = System.Drawing.Color.Transparent;
             this.lblMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMale.Location = new System.Drawing.Point(567, 200);
+            this.lblMale.Location = new System.Drawing.Point(602, 200);
             this.lblMale.Name = "lblMale";
             this.lblMale.Size = new System.Drawing.Size(61, 15);
             this.lblMale.TabIndex = 15;
@@ -839,7 +839,7 @@
             this.lblStandardDeviation.AutoSize = true;
             this.lblStandardDeviation.BackColor = System.Drawing.Color.Transparent;
             this.lblStandardDeviation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStandardDeviation.Location = new System.Drawing.Point(567, 92);
+            this.lblStandardDeviation.Location = new System.Drawing.Point(577, 92);
             this.lblStandardDeviation.Name = "lblStandardDeviation";
             this.lblStandardDeviation.Size = new System.Drawing.Size(86, 15);
             this.lblStandardDeviation.TabIndex = 11;
@@ -851,7 +851,7 @@
             this.lblAverage.AutoSize = true;
             this.lblAverage.BackColor = System.Drawing.Color.Transparent;
             this.lblAverage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAverage.Location = new System.Drawing.Point(567, 65);
+            this.lblAverage.Location = new System.Drawing.Point(600, 65);
             this.lblAverage.Name = "lblAverage";
             this.lblAverage.Size = new System.Drawing.Size(63, 15);
             this.lblAverage.TabIndex = 10;

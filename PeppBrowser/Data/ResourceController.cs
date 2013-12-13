@@ -87,7 +87,7 @@ namespace org.inek.PeppBrowser.Data {
             string masterHash = "";
             masterHash = HashBytesToHexString(masterHashByte, masterHash);
             if (masterHash != RESOURCE_FILES_HASH) {
-                throw new Exception("Fehler: Die Resource-Dateien wurden verändert. Bitte laden Sie den PEPP Browser erneut herunter.");
+                throw new Exception("Fehler: Die Resource-Dateien wurden verändert. Bitte laden Sie den PEPP Browser erneut auf unserer Website (http://g-drg.de) herunter.");
             }
         }
 
