@@ -45,9 +45,7 @@
             this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlContentBackground = new System.Windows.Forms.Panel();
-            this.selection = new org.inek.PeppBrowser.GUI.Selection();
             this.lblPEPP = new System.Windows.Forms.Label();
-            this.cbxPepp = new org.inek.controls.CommonControls.ComboField();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabMainDiagnosis = new System.Windows.Forms.TabPage();
             this.grdMainDiagnosis = new System.Windows.Forms.DataGridView();
@@ -57,10 +55,12 @@
             this.grdProcedures = new System.Windows.Forms.DataGridView();
             this.tabDailyCosts = new System.Windows.Forms.TabPage();
             this.grdCosts = new System.Windows.Forms.DataGridView();
-            this.data = new org.inek.PeppBrowser.GUI.Data();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.timerPeppBlink = new System.Windows.Forms.Timer(this.components);
+            this.cbxPepp = new org.inek.controls.CommonControls.ComboField();
+            this.selection = new org.inek.PeppBrowser.GUI.Selection();
+            this.data = new org.inek.PeppBrowser.GUI.Data();
             this.titleBar = new org.inek.PeppBrowser.GUI.TitleBar();
             this.mnuMain.SuspendLayout();
             this.pnlContentBackground.SuspendLayout();
@@ -269,16 +269,6 @@
             this.pnlContentBackground.TabIndex = 8;
             this.pnlContentBackground.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
             // 
-            // selection
-            // 
-            this.selection.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.selection.BackColor = System.Drawing.Color.SeaGreen;
-            this.selection.Location = new System.Drawing.Point(0, 27);
-            this.selection.Name = "selection";
-            this.selection.Size = new System.Drawing.Size(1182, 52);
-            this.selection.TabIndex = 11;
-            // 
             // lblPEPP
             // 
             this.lblPEPP.AutoSize = true;
@@ -289,21 +279,6 @@
             this.lblPEPP.Size = new System.Drawing.Size(52, 16);
             this.lblPEPP.TabIndex = 9;
             this.lblPEPP.Text = "PEPP:";
-            // 
-            // cbxPepp
-            // 
-            this.cbxPepp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxPepp.Location = new System.Drawing.Point(107, 88);
-            this.cbxPepp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbxPepp.MinimumSize = new System.Drawing.Size(40, 21);
-            this.cbxPepp.MutltiLine = false;
-            this.cbxPepp.Name = "cbxPepp";
-            this.cbxPepp.ReadOnly = true;
-            this.cbxPepp.Size = new System.Drawing.Size(1067, 21);
-            this.cbxPepp.TabIndex = 10;
-            this.toolTip.SetToolTip(this.cbxPepp, "Wählen Sie eine PEPP aus.");
-            this.cbxPepp.ButtonClicked += new System.EventHandler(this.cbxPepp_ButtonClicked);
             // 
             // tabControl
             // 
@@ -441,17 +416,6 @@
             this.grdCosts.Size = new System.Drawing.Size(1162, 312);
             this.grdCosts.TabIndex = 3;
             // 
-            // data
-            // 
-            this.data.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.data.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.data.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.data.Location = new System.Drawing.Point(0, 114);
-            this.data.Name = "data";
-            this.data.Size = new System.Drawing.Size(1182, 270);
-            this.data.TabIndex = 1;
-            // 
             // helpProvider1
             // 
             this.helpProvider1.HelpNamespace = "PeppBrowser.chm";
@@ -467,6 +431,42 @@
             // 
             this.timerPeppBlink.Interval = 250;
             this.timerPeppBlink.Tick += new System.EventHandler(this.timerPeppBlink_Tick);
+            // 
+            // cbxPepp
+            // 
+            this.cbxPepp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxPepp.Location = new System.Drawing.Point(107, 88);
+            this.cbxPepp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbxPepp.MinimumSize = new System.Drawing.Size(40, 21);
+            this.cbxPepp.MutltiLine = false;
+            this.cbxPepp.Name = "cbxPepp";
+            this.cbxPepp.ReadOnly = true;
+            this.cbxPepp.Size = new System.Drawing.Size(1067, 21);
+            this.cbxPepp.TabIndex = 10;
+            this.toolTip.SetToolTip(this.cbxPepp, "Wählen Sie eine PEPP aus.");
+            this.cbxPepp.ButtonClicked += new System.EventHandler(this.cbxPepp_ButtonClicked);
+            // 
+            // selection
+            // 
+            this.selection.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.selection.BackColor = System.Drawing.Color.SeaGreen;
+            this.selection.Location = new System.Drawing.Point(0, 27);
+            this.selection.Name = "selection";
+            this.selection.Size = new System.Drawing.Size(1182, 52);
+            this.selection.TabIndex = 11;
+            // 
+            // data
+            // 
+            this.data.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.data.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.data.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.data.Location = new System.Drawing.Point(0, 114);
+            this.data.Name = "data";
+            this.data.Size = new System.Drawing.Size(1182, 270);
+            this.data.TabIndex = 1;
             // 
             // titleBar
             // 
