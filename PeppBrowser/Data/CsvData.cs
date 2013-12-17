@@ -139,6 +139,8 @@ namespace org.inek.PeppBrowser.Data {
                             switch (info.PropertyType.Name) {
                                 case "Decimal":
                                     decimal decimalNumber = 0;
+                                    if (tokens[names[name]] == "")
+                                        continue;
                                     try {
                                         decimalNumber = decimal.Parse(tokens[names[name]], new CultureInfo("de"));
                                     } catch {
@@ -148,7 +150,10 @@ namespace org.inek.PeppBrowser.Data {
                                     break;
                                 case "Int32":
                                     int number = 0;
+                                    if (tokens[names[name]] == "")
+                                        continue;
                                     try {
+                                        
                                         number = int.Parse(tokens[names[name]]);
                                     } catch {
                                         

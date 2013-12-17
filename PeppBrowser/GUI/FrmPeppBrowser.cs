@@ -402,13 +402,14 @@ namespace org.inek.PeppBrowser.GUI {
                             (d, r) => new {
                                               PEPP = d.PeppCode,
                                               HD = d.DiagCode,
-                                              Hauptdiagnose = r.Text,
-                                              AnzahlFälle = d.Count.ToString("##,##0"),
-                                              AnteilFälle = d.Fraction.ToString("P")
+                                              HDBezeichnung = r.Text,
+                                              AnzahlFälle = d.Count,
+                                              AnteilFälle = d.Fraction
                                           });
                 grdMainDiagnosis.DataSource = Helper.ConvertToDataTable(q);
                 grdMainDiagnosis.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
                 grdMainDiagnosis.Columns[2].Width = 700;
+                grdMainDiagnosis.Columns[2].HeaderText = "HD-Bezeichnung";
                 SetHdGridColumnStyle();
             } else if (grid == grdSecondaryDiagnosis) {
                 var q = context.SecondaryDiagnoses.Where(d => d.PeppCode == PEPP)
@@ -417,10 +418,10 @@ namespace org.inek.PeppBrowser.GUI {
                                 PEPP = d.PeppCode,
                                 ND = d.DiagCode,
                                 Nebendiagnose = r.Text,
-                                AnzahlFälle = d.CaseCount.ToString("##,##0"),
-                                AnteilFälle = d.CaseFraction.ToString("P"),
-                                AnzahlNennungen = d.EntryCount.ToString("##,##0"),
-                                AnteilNennungen = d.EntryFraction.ToString("P")
+                                AnzahlFälle = d.CaseCount,
+                                AnteilFälle = d.CaseFraction,
+                                AnzahlNennungen = d.EntryCount,
+                                AnteilNennungen = d.EntryFraction
                             });
                 grdSecondaryDiagnosis.DataSource = Helper.ConvertToDataTable(q);
                 SetSdGridColumnStyle();
@@ -429,12 +430,12 @@ namespace org.inek.PeppBrowser.GUI {
                         .Join(context.Recherche.Where(r => r.Procedure == 1), d => d.ProcCode, r => r.Code,
                             (d, r) => new {
                                 PEPP = d.PeppCode,
-                                ProzedurKode = d.ProcCode,
+                                OPS = d.ProcCode,
                                 Prozedur = r.Text,
-                                AnzahlFälle = d.CaseCount.ToString("##,##0"),
-                                AnteilFälle = d.CaseFraction.ToString("P"),
-                                AnzahlNennungen = d.EntryCount.ToString("##,##0"),
-                                AnteilNennungen = d.EntryFraction.ToString("P")
+                                AnzahlFälle = d.CaseCount,
+                                AnteilFälle = d.CaseFraction,
+                                AnzahlNennungen = d.EntryCount,
+                                AnteilNennungen = d.EntryFraction
                             });
                 grdProcedures.DataSource = Helper.ConvertToDataTable(q);
                 SetProcedureGridColumnStyle();
@@ -447,25 +448,37 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void SetHdGridColumnStyle() {
             grdMainDiagnosis.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            grdMainDiagnosis.Columns[3].DefaultCellStyle.Format = "##,###";
             grdMainDiagnosis.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            grdMainDiagnosis.Columns[4].DefaultCellStyle.Format = "P";
         }
 
         private void SetSdGridColumnStyle() {
             grdSecondaryDiagnosis.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
             grdSecondaryDiagnosis.Columns[2].Width = 700;
+            grdSecondaryDiagnosis.Columns[2].HeaderText = "ND-Bezeichnung";
             grdSecondaryDiagnosis.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            grdSecondaryDiagnosis.Columns[3].DefaultCellStyle.Format = "##,###";
             grdSecondaryDiagnosis.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            grdSecondaryDiagnosis.Columns[4].DefaultCellStyle.Format = "P";
             grdSecondaryDiagnosis.Columns[5].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            grdSecondaryDiagnosis.Columns[5].DefaultCellStyle.Format = "##,###";
             grdSecondaryDiagnosis.Columns[6].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            grdSecondaryDiagnosis.Columns[6].DefaultCellStyle.Format = "P";
         }
 
         private void SetProcedureGridColumnStyle() {
             grdProcedures.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
             grdProcedures.Columns[2].Width = 700;
+            grdProcedures.Columns[2].HeaderText = "OPS-Bezeichnung";
             grdProcedures.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            grdProcedures.Columns[3].DefaultCellStyle.Format = "##,###";
             grdProcedures.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            grdProcedures.Columns[4].DefaultCellStyle.Format = "P";
             grdProcedures.Columns[5].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            grdProcedures.Columns[5].DefaultCellStyle.Format = "##,###";
             grdProcedures.Columns[6].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            grdProcedures.Columns[6].DefaultCellStyle.Format = "P";
         }
 
         private void BuildCostMatrix() {
@@ -711,11 +724,11 @@ namespace org.inek.PeppBrowser.GUI {
             data.LosTo3 = q.Select(p => p.LosToPayLevel3.ToString("##,###")).ElementAt(0);
             data.LosTo4 = q.Select(p => p.LosToPayLevel4.ToString("##,###")).ElementAt(0);
             data.LosTo5 = q.Select(p => p.LosToPayLevel5.ToString("##,###")).ElementAt(0);
-            data.ValuationRatio1 = q.Select(p => Math.Round(p.ValuationRatLevel1, 4).ToString()).ElementAt(0);  // vierstellig Dezimal
-            data.ValuationRatio2 = q.Select(p => Math.Round(p.ValuationRatLevel2, 4).ToString()).ElementAt(0);  // vierstellig Dezimal
-            data.ValuationRatio3 = q.Select(p => Math.Round(p.ValuationRatLevel3, 4).ToString()).ElementAt(0);  // vierstellig Dezimal
-            data.ValuationRatio4 = q.Select(p => Math.Round(p.ValuationRatLevel4, 4).ToString()).ElementAt(0);  // vierstellig Dezimal
-            data.ValuationRatio5 = q.Select(p => Math.Round(p.ValuationRatLevel5, 4).ToString()).ElementAt(0);  // vierstellig Dezimal
+            data.ValuationRatio1 = q.Select(p => Math.Round(p.ValuationRatLevel1, 4).ToString("N4")).ElementAt(0);  // vierstellig Dezimal
+            data.ValuationRatio2 = q.Select(p => Math.Round(p.ValuationRatLevel2, 4).ToString("N4")).ElementAt(0);  // vierstellig Dezimal
+            data.ValuationRatio3 = q.Select(p => Math.Round(p.ValuationRatLevel3, 4).ToString("N4")).ElementAt(0);  // vierstellig Dezimal
+            data.ValuationRatio4 = q.Select(p => Math.Round(p.ValuationRatLevel4, 4).ToString("N4")).ElementAt(0);  // vierstellig Dezimal
+            data.ValuationRatio5 = q.Select(p => Math.Round(p.ValuationRatLevel5, 4).ToString("N4")).ElementAt(0);  // vierstellig Dezimal
             data.GenderMale = q.Select(p => Math.Round((p.GenderMale * 100), 2).ToString()+"%").ElementAt(0);         // Prozent
             data.GenderFemale = q.Select(p => Math.Round((p.GenderFemale * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
             data.AgeAverage = q.Select(p => Math.Round(p.AgeAverage, 1).ToString()).ElementAt(0);               // einstellig Dezimal

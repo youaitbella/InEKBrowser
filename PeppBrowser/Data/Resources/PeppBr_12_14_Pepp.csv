@@ -21,9 +21,6 @@ PSY;PA14B;Persönlichkeits- und Verhaltensstörungen, Essstörungen und andere S
 PSY;PA15A;Organische Störungen, amnestisches Syndrom, Alzheimer-Krankheit und sonstige degenerative Krankheiten des Nervensystems, mit komplizierender Konstellation oder mit hohem Anteil Intensivbehandlung oder mit erhöhter Therapieintensität
 PSY;PA15B;Organische Störungen, amnestisches Syndrom, Alzheimer-Krankheit und sonstige degenerative Krankheiten des Nervensystems, mit bestimmten Demenzerkrankungen oder mit komplizierender Diagnose oder Alter > 84 Jahre oder mit erhöhtem Anteil Intensivbehandlung
 PSY;PA15C;Organische Störungen, amnestisches Syndrom, Alzheimer-Krankheit und sonstige degenerative Krankheiten des Nervensystems, Alter < 85 Jahre, ohne komplizierende Konstellation, ohne bestimmte Demenzerkrankungen, ohne komplizierende Diagnose
-FEH;PF01Z;Fehlkodierung bei erhöhtem Betreuungsaufwand bei Erwachsenen, 1:1-Betreuung
-FEH;PF02Z;Fehlkodierung bei psychosomatisch-psychotherapeutischer Komplexbehandlung bei Erwachsenen
-FEH;PF96Z;Nicht gruppierbar
 PKJ;PK01Z;Intelligenzstörungen, tief greifende Entwicklungsstörungen, Ticstörungen und andere Störungen mit Beginn in der Kindheit und Jugend
 PKJ;PK02Z;Psychische und Verhaltensstörungen durch psychotrope Substanzen
 PKJ;PK03Z;Schizophrenie, schizotype und wahnhafte Störungen oder andere psychotische Störungen

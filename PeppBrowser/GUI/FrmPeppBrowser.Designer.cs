@@ -58,9 +58,9 @@
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.timerPeppBlink = new System.Windows.Forms.Timer(this.components);
-            this.cbxPepp = new org.inek.controls.CommonControls.ComboField();
             this.selection = new org.inek.PeppBrowser.GUI.Selection();
             this.data = new org.inek.PeppBrowser.GUI.Data();
+            this.cbxPepp = new org.inek.controls.CommonControls.ComboField();
             this.titleBar = new org.inek.PeppBrowser.GUI.TitleBar();
             this.mnuMain.SuspendLayout();
             this.pnlContentBackground.SuspendLayout();
@@ -432,21 +432,6 @@
             this.timerPeppBlink.Interval = 250;
             this.timerPeppBlink.Tick += new System.EventHandler(this.timerPeppBlink_Tick);
             // 
-            // cbxPepp
-            // 
-            this.cbxPepp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxPepp.Location = new System.Drawing.Point(107, 88);
-            this.cbxPepp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbxPepp.MinimumSize = new System.Drawing.Size(40, 21);
-            this.cbxPepp.MutltiLine = false;
-            this.cbxPepp.Name = "cbxPepp";
-            this.cbxPepp.ReadOnly = true;
-            this.cbxPepp.Size = new System.Drawing.Size(1067, 21);
-            this.cbxPepp.TabIndex = 10;
-            this.toolTip.SetToolTip(this.cbxPepp, "Wählen Sie eine PEPP aus.");
-            this.cbxPepp.ButtonClicked += new System.EventHandler(this.cbxPepp_ButtonClicked);
-            // 
             // selection
             // 
             this.selection.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -468,6 +453,21 @@
             this.data.Size = new System.Drawing.Size(1182, 270);
             this.data.TabIndex = 1;
             // 
+            // cbxPepp
+            // 
+            this.cbxPepp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxPepp.Location = new System.Drawing.Point(107, 88);
+            this.cbxPepp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbxPepp.MinimumSize = new System.Drawing.Size(40, 21);
+            this.cbxPepp.MutltiLine = false;
+            this.cbxPepp.Name = "cbxPepp";
+            this.cbxPepp.ReadOnly = true;
+            this.cbxPepp.Size = new System.Drawing.Size(1067, 21);
+            this.cbxPepp.TabIndex = 10;
+            this.toolTip.SetToolTip(this.cbxPepp, "Wählen Sie eine PEPP aus.");
+            this.cbxPepp.ButtonClicked += new System.EventHandler(this.cbxPepp_ButtonClicked);
+            //
             // titleBar
             // 
             this.titleBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
