@@ -486,9 +486,19 @@ namespace org.inek.PeppBrowser.GUI {
                 CsvData.Context()
                     .Costs.Where(pepp => pepp.PeppCode == PEPP)
                     .Select(c => new {
-                                         KostenArt1 = c.CostType1.ToString("F"), KostenArt2 = c.CostType2.ToString("F"), KostenArt3a = c.CostType3a.ToString("F"), KostenArt3b = c.CostType3b.ToString("F"),
-                                         KostenArt3c = c.CostType3c.ToString("F"), KostenArt3 = c.CostType3.ToString("F"), KostenArt4a = c.CostType4a.ToString("F"), KostenArt4b = c.CostType4b.ToString("F"), KostenArt5 = c.CostType5.ToString("F"), KostenArt6a = c.CostType6a.ToString("F"),
-                                         KostenArt6b = c.CostType6b.ToString("F"), KostenArt7 = c.CostType7.ToString("F"), KostenArt8 = c.CostType8.ToString("F")
+                        KostenArt1 = (c.CostType1.ToString("F").Equals("0,00") ? "" : c.CostType1.ToString("F")),
+                        KostenArt2 = (c.CostType2.ToString("F").Equals("0,00") ? "" : c.CostType2.ToString("F")),
+                        KostenArt3a = (c.CostType3a.ToString("F").Equals("0,00") ? "" : c.CostType3a.ToString("F")),
+                        KostenArt3b = (c.CostType3b.ToString("F").Equals("0,00") ? "" : c.CostType3b.ToString("F")),
+                        KostenArt3c = (c.CostType3c.ToString("F").Equals("0,00") ? "" : c.CostType3c.ToString("F")),
+                        KostenArt3 = (c.CostType3.ToString("F").Equals("0,00") ? "" : c.CostType3.ToString("F")),
+                        KostenArt4a = (c.CostType4a.ToString("F").Equals("0,00") ? "" : c.CostType4a.ToString("F")),
+                        KostenArt4b = (c.CostType4b.ToString("F").Equals("0,00") ? "" : c.CostType4b.ToString("F")),
+                        KostenArt5 = (c.CostType5.ToString("F").Equals("0,00") ? "" : c.CostType5.ToString("F")),
+                        KostenArt6a = (c.CostType6a.ToString("F").Equals("0,00") ? "" : c.CostType6a.ToString("F")),
+                        KostenArt6b = (c.CostType6b.ToString("F").Equals("0,00") ? "" : c.CostType6b.ToString("F")),
+                        KostenArt7 = (c.CostType7.ToString("F").Equals("0,00") ? "" : c.CostType7.ToString("F")),
+                        KostenArt8 = (c.CostType8.ToString("F").Equals("0,00") ? "" : c.CostType8.ToString("F")),
                                      });
             grdCosts.DataSource = Helper.ConvertToDataTable(q);
             List<int> rowIds = CsvData.Context()
@@ -501,6 +511,13 @@ namespace org.inek.PeppBrowser.GUI {
             BuildCostMatrixRowSum(Color.MediumSeaGreen, ref sum);
             BuildCostMatrixMasterSum(Color.White, Color.SeaGreen, sum);
             CostMatrixRightToLeft();
+            SetMatrixSortMode();
+        }
+
+        private void SetMatrixSortMode() {
+            foreach (DataGridViewColumn c in grdCosts.Columns) {
+                c.SortMode = DataGridViewColumnSortMode.NotSortable;
+            }
         }
 
         private void CostMatrixRightToLeft() {
@@ -542,9 +559,11 @@ namespace org.inek.PeppBrowser.GUI {
             int colEnd = grdCosts.Columns["KostenArt8"].Index;
             for (int cols = colStart; cols <= colEnd; cols++) {
                 for (int rows = 1; rows < grdCosts.Rows.Count-1; rows++) {
-                    sum += decimal.Parse(grdCosts.Rows[rows].Cells[cols].Value.ToString());
+                    if (grdCosts.Rows[rows].Cells[cols].Value.ToString() != "") {
+                        sum += decimal.Parse(grdCosts.Rows[rows].Cells[cols].Value.ToString());
+                    }
                 }
-                grdCosts.Rows[sumRow].Cells[cols].Value = sum.ToString();
+                grdCosts.Rows[sumRow].Cells[cols].Value = sum.ToString("F");
                 grdCosts.Rows[sumRow].Cells[cols].Style = cellStyle;
                 sumsum += sum;
                 sum = 0;
@@ -569,9 +588,11 @@ namespace org.inek.PeppBrowser.GUI {
             int colEnd = grdCosts.Columns["KostenArt8"].Index;
             for (int rows = 1; rows < grdCosts.Rows.Count; rows++) {
                 for (int cols = colStart; cols <= colEnd; cols++) {
-                    sum += decimal.Parse(grdCosts.Rows[rows].Cells[cols].Value.ToString());
+                    if (grdCosts.Rows[rows].Cells[cols].Value.ToString() != "") {
+                        sum += decimal.Parse(grdCosts.Rows[rows].Cells[cols].Value.ToString());   
+                    }
                 }
-                grdCosts.Rows[rows].Cells[sumCol].Value = sum.ToString();
+                grdCosts.Rows[rows].Cells[sumCol].Value = sum.ToString("F");
                 grdCosts.Rows[rows].Cells[sumCol].Style = cellStyle;
                 sum = 0;
             }
@@ -800,14 +821,16 @@ namespace org.inek.PeppBrowser.GUI {
                         .Select(pepp => pepp.PeppCode)
                         .ToList();
                 var q = CsvData.Context().PrimaryDiagnoses.Where(pd => pepps.Contains(pd.PeppCode) && pd.DiagCode == hd)
-                    .Select(pd => new {PEPP = pd.PeppCode, HD = pd.DiagCode, AnzahlFälle = pd.Count.ToString("##,##0"), AnteilFälle = pd.Fraction.ToString("P")});
+                    .Select(pd => new {PEPP = pd.PeppCode, HD = pd.DiagCode, AnzahlFälle = pd.Count, AnteilFälle = pd.Fraction});
                 FrmSearch search = new FrmSearch(this);
                 search.StartPosition = FormStartPosition.CenterParent;
                 search.Text = "PEPPs zu Hauptdiagnosen";
                 search.ButtonShowIsVisible = false;
                 search.SetDataSource(q);
                 search.ColumnTextAlign(2, DataGridViewContentAlignment.MiddleRight);
+                search.ColumnFormat("##,##0", 2);
                 search.ColumnTextAlign(3, DataGridViewContentAlignment.MiddleRight);
+                search.ColumnFormat("P", 3);
                 if (search.ShowDialog() == DialogResult.OK) {
                     LoadPeppByTabControl(search);
                 }
@@ -827,10 +850,10 @@ namespace org.inek.PeppBrowser.GUI {
                     .Select(nd => new {
                         PEPP = nd.PeppCode,
                         ND = nd.DiagCode,
-                        AnzahlFälle = nd.CaseCount.ToString("##,##0"),
-                        AnteilFälle = nd.CaseFraction.ToString("P"),
-                        AnzahlNennungen = nd.EntryCount.ToString("##,##0"),
-                        AnteilNennungen = nd.EntryFraction.ToString("P")
+                        AnzahlFälle = nd.CaseCount,
+                        AnteilFälle = nd.CaseFraction,
+                        AnzahlNennungen = nd.EntryCount,
+                        AnteilNennungen = nd.EntryFraction
                                       });
                 FrmSearch search = new FrmSearch(this);
                 search.StartPosition = FormStartPosition.CenterParent;
@@ -838,9 +861,13 @@ namespace org.inek.PeppBrowser.GUI {
                 search.ButtonShowIsVisible = false;
                 search.SetDataSource(q);
                 search.ColumnTextAlign(2, DataGridViewContentAlignment.MiddleRight);
+                search.ColumnFormat("##,##0", 2);
                 search.ColumnTextAlign(3, DataGridViewContentAlignment.MiddleRight);
+                search.ColumnFormat("P", 3);
                 search.ColumnTextAlign(4, DataGridViewContentAlignment.MiddleRight);
+                search.ColumnFormat("##,##0", 4);
                 search.ColumnTextAlign(5, DataGridViewContentAlignment.MiddleRight);
+                search.ColumnFormat("P", 5);
                 if (search.ShowDialog() == DialogResult.OK) {
                     LoadPeppByTabControl(search);
                 }
@@ -860,10 +887,10 @@ namespace org.inek.PeppBrowser.GUI {
                     .Select(p => new {
                         PEPP = p.PeppCode,
                         Prozedur = p.ProcCode,
-                        AnzahlFälle = p.CaseCount.ToString("##,##0"),
-                        AnteilFälle = p.CaseFraction.ToString("P"),
-                        AnzahlNennungen = p.EntryCount.ToString("##,##0"),
-                        AnteilNennungen = p.EntryFraction.ToString("P")
+                        AnzahlFälle = p.CaseCount,
+                        AnteilFälle = p.CaseFraction,
+                        AnzahlNennungen = p.EntryCount,
+                        AnteilNennungen = p.EntryFraction
                                      });
                 FrmSearch search = new FrmSearch(this);
                 search.StartPosition = FormStartPosition.CenterParent;
@@ -871,9 +898,13 @@ namespace org.inek.PeppBrowser.GUI {
                 search.ButtonShowIsVisible = false;
                 search.SetDataSource(q);
                 search.ColumnTextAlign(2, DataGridViewContentAlignment.MiddleRight);
+                search.ColumnFormat("##,##0", 2);
                 search.ColumnTextAlign(3, DataGridViewContentAlignment.MiddleRight);
+                search.ColumnFormat("P", 3);
                 search.ColumnTextAlign(4, DataGridViewContentAlignment.MiddleRight);
+                search.ColumnFormat("##,##0", 4);
                 search.ColumnTextAlign(5, DataGridViewContentAlignment.MiddleRight);
+                search.ColumnFormat("P", 5);
                 if (search.ShowDialog() == DialogResult.OK) {
                     LoadPeppByTabControl(search);
                 }
@@ -989,5 +1020,15 @@ namespace org.inek.PeppBrowser.GUI {
             ticks++;
         }
 
+        private void grdCosts_CellClick(object sender, DataGridViewCellEventArgs e) {
+            grdCosts.SelectionMode = DataGridViewSelectionMode.CellSelect;
+            if (e.RowIndex == 0) {
+                grdCosts.SelectionMode = DataGridViewSelectionMode.FullColumnSelect;
+                grdCosts.Columns[e.ColumnIndex].Selected = true;
+            } else {
+                grdCosts.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                grdCosts.Rows[e.RowIndex].Selected = true;
+            }
+        }
     }
 }
