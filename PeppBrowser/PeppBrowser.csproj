@@ -185,31 +185,31 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Content Include="Data\Resources\PeppBr_12_14_Hauptdiagnose.csv">
+    <Content Include="Data\PeppBr_12_14_Hauptdiagnose.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Resources\PeppBr_12_14_Kopfdaten.csv">
+    <Content Include="Data\PeppBr_12_14_Kopfdaten.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Resources\PeppBr_12_14_Kosten.csv">
+    <Content Include="Data\PeppBr_12_14_Kosten.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Resources\PeppBr_12_14_Kostenbereich.csv">
+    <Content Include="Data\PeppBr_12_14_Kostenbereich.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Resources\PeppBr_12_14_Nebendiagnose.csv">
+    <Content Include="Data\PeppBr_12_14_Nebendiagnose.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Resources\PeppBr_12_14_Pepp.csv">
+    <Content Include="Data\PeppBr_12_14_Pepp.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Resources\PeppBr_12_14_Prozeduren.csv">
+    <Content Include="Data\PeppBr_12_14_Prozeduren.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Resources\PeppBr_12_14_Recherche.csv">
+    <Content Include="Data\PeppBr_12_14_Recherche.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Resources\PeppBr_12_14_Strukturkategorie.csv">
+    <Content Include="Data\PeppBr_12_14_Strukturkategorie.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

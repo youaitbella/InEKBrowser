@@ -337,7 +337,8 @@
             // 
             this.grdMainDiagnosis.AllowUserToAddRows = false;
             this.grdMainDiagnosis.AllowUserToDeleteRows = false;
-            this.grdMainDiagnosis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.grdMainDiagnosis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grdMainDiagnosis.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.grdMainDiagnosis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdMainDiagnosis.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grdMainDiagnosis.Location = new System.Drawing.Point(3, 3);
@@ -369,7 +370,8 @@
             this.grdSecondaryDiagnosis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.grdSecondaryDiagnosis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.grdSecondaryDiagnosis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grdSecondaryDiagnosis.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.grdSecondaryDiagnosis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdSecondaryDiagnosis.Location = new System.Drawing.Point(3, 3);
             this.grdSecondaryDiagnosis.MultiSelect = false;
@@ -397,7 +399,8 @@
             // 
             this.grdProcedures.AllowUserToAddRows = false;
             this.grdProcedures.AllowUserToDeleteRows = false;
-            this.grdProcedures.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.grdProcedures.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grdProcedures.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.grdProcedures.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdProcedures.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grdProcedures.Location = new System.Drawing.Point(3, 3);

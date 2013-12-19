@@ -24,7 +24,7 @@ namespace org.inek.PeppBrowser.Data {
             Strukturkategorie
         };
 
-        public static string RESOURCE_DIR = @"Data\Resources\";
+        public static string RESOURCE_DIR = @"Data\";
 
         public static string[] RESOURCE_FILES = {
                                                      "PeppBr_12_14_Hauptdiagnose.csv", 

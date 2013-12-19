@@ -46,7 +46,7 @@
             this.grpPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grpPanel.Location = new System.Drawing.Point(0, 30);
             this.grpPanel.Name = "grpPanel";
-            this.grpPanel.Size = new System.Drawing.Size(309, 468);
+            this.grpPanel.Size = new System.Drawing.Size(325, 468);
             this.grpPanel.TabIndex = 3;
             this.grpPanel.TabStop = false;
             // 
@@ -57,7 +57,7 @@
             this.lblProgressState.ForeColor = System.Drawing.Color.White;
             this.lblProgressState.Location = new System.Drawing.Point(12, 408);
             this.lblProgressState.Name = "lblProgressState";
-            this.lblProgressState.Size = new System.Drawing.Size(284, 23);
+            this.lblProgressState.Size = new System.Drawing.Size(299, 23);
             this.lblProgressState.TabIndex = 5;
             this.lblProgressState.Text = "Lade Kostenbereich...";
             this.lblProgressState.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -69,7 +69,7 @@
             this.prgBar.Location = new System.Drawing.Point(13, 434);
             this.prgBar.Maximum = 90;
             this.prgBar.Name = "prgBar";
-            this.prgBar.Size = new System.Drawing.Size(284, 23);
+            this.prgBar.Size = new System.Drawing.Size(298, 23);
             this.prgBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.prgBar.TabIndex = 4;
             // 
@@ -78,7 +78,7 @@
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Location = new System.Drawing.Point(12, 333);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(284, 72);
+            this.groupBox2.Size = new System.Drawing.Size(301, 72);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             // 
@@ -88,7 +88,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(2, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(278, 48);
+            this.label1.Size = new System.Drawing.Size(297, 48);
             this.label1.TabIndex = 2;
             this.label1.Text = "PEPP Browser\r\nVersion 2014.1\r\n© InEK GmbH";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -99,7 +99,7 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(12, 19);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(284, 308);
+            this.pictureBox1.Size = new System.Drawing.Size(301, 308);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -115,10 +115,11 @@
             this.titleBar.BackColor = System.Drawing.Color.SeaGreen;
             this.titleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.titleBar.Location = new System.Drawing.Point(0, 0);
+            this.titleBar.MinMaxImage = ((System.Drawing.Image)(resources.GetObject("titleBar.MinMaxImage")));
             this.titleBar.Name = "titleBar";
             this.titleBar.ShowIconify = false;
             this.titleBar.ShowMinMax = false;
-            this.titleBar.Size = new System.Drawing.Size(309, 30);
+            this.titleBar.Size = new System.Drawing.Size(325, 30);
             this.titleBar.TabIndex = 2;
             this.titleBar.ClickedExit += new System.EventHandler(this.titleBar_ClickedExit);
             this.titleBar.MouseMoveTitleBar += new System.Windows.Forms.MouseEventHandler(this.titleBar_MouseMove);
@@ -129,7 +130,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaGreen;
-            this.ClientSize = new System.Drawing.Size(309, 498);
+            this.ClientSize = new System.Drawing.Size(325, 498);
             this.Controls.Add(this.grpPanel);
             this.Controls.Add(this.titleBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

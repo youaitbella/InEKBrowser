@@ -26,17 +26,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TitleBar));
             this.pnlTitle = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.picInEK = new System.Windows.Forms.PictureBox();
             this.pnlFormStates = new System.Windows.Forms.Panel();
             this.picIconify = new System.Windows.Forms.PictureBox();
             this.picExit = new System.Windows.Forms.PictureBox();
             this.picMinMax = new System.Windows.Forms.PictureBox();
-            this.picInEK = new System.Windows.Forms.PictureBox();
             this.pnlTitle.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picInEK)).BeginInit();
             this.pnlFormStates.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIconify)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMinMax)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picInEK)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlTitle
@@ -50,7 +50,7 @@
             this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlTitle.Location = new System.Drawing.Point(0, 0);
             this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(191, 30);
+            this.pnlTitle.Size = new System.Drawing.Size(243, 30);
             this.pnlTitle.TabIndex = 3;
             this.pnlTitle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlTitle_MouseMove);
             // 
@@ -61,10 +61,20 @@
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(35, 3);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(152, 25);
+            this.lblTitle.Size = new System.Drawing.Size(206, 25);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "PEPP Browser";
+            this.lblTitle.Text = "PEPP Browser 2014";
             this.lblTitle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblTitle_MouseMove);
+            // 
+            // picInEK
+            // 
+            this.picInEK.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picInEK.BackgroundImage")));
+            this.picInEK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picInEK.Location = new System.Drawing.Point(3, 3);
+            this.picInEK.Name = "picInEK";
+            this.picInEK.Size = new System.Drawing.Size(26, 25);
+            this.picInEK.TabIndex = 0;
+            this.picInEK.TabStop = false;
             // 
             // pnlFormStates
             // 
@@ -122,16 +132,6 @@
             this.picMinMax.MouseEnter += new System.EventHandler(this.picMinMax_MouseEnter);
             this.picMinMax.MouseLeave += new System.EventHandler(this.picMinMax_MouseLeave);
             // 
-            // picInEK
-            // 
-            this.picInEK.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picInEK.BackgroundImage")));
-            this.picInEK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picInEK.Location = new System.Drawing.Point(3, 3);
-            this.picInEK.Name = "picInEK";
-            this.picInEK.Size = new System.Drawing.Size(26, 25);
-            this.picInEK.TabIndex = 0;
-            this.picInEK.TabStop = false;
-            // 
             // TitleBar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -143,11 +143,11 @@
             this.Size = new System.Drawing.Size(868, 30);
             this.pnlTitle.ResumeLayout(false);
             this.pnlTitle.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picInEK)).EndInit();
             this.pnlFormStates.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picIconify)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMinMax)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picInEK)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -36,7 +36,6 @@ namespace org.inek.PeppBrowser.GUI {
         /* ################## */
 
         private FrmList dlg;
-        private bool matrixLoaded = false;
 
         public static string PEPP {
             get; set;
@@ -370,7 +369,7 @@ namespace org.inek.PeppBrowser.GUI {
                 q = q.Where(pepp => pepps.Contains(pepp.PEPP));
             }
             if (!q.Any()) {
-                MessageBox.Show(this, "Es gibt keine PEPP zu Ihren Filtereinstellungen.", "Keine Pepp",
+                MessageBox.Show(this, "Es gibt keine PEPP zu Ihren Filtereinstellungen.", "Keine PEPP gefunden.",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -389,13 +388,21 @@ namespace org.inek.PeppBrowser.GUI {
         private void LoadPeppData() {
             tabControl.Enabled = true;
             FillHeadData();
+            mainLoaded = false;
+            secLoaded = false;
+            procLoaded = false;
             matrixLoaded = false;
             FillActiveTab(ActiveGrid());
         }
 
+        private bool mainLoaded = false;
+        private bool secLoaded = false;
+        private bool procLoaded = false;
+        private bool matrixLoaded = false;
         private void FillActiveTab(DataGridView grid) {
             CsvData context = CsvData.Context();
-            if (grid == grdMainDiagnosis) {
+            Cursor = Cursors.WaitCursor;
+            if (grid == grdMainDiagnosis && !mainLoaded) {
                 var q =
                     context.PrimaryDiagnoses.Where(d => d.PeppCode == PEPP)
                         .Join(context.Recherche.Where(r => r.PrimaryDaignosis == 1), d => d.DiagCode, r => r.Code,
@@ -407,11 +414,9 @@ namespace org.inek.PeppBrowser.GUI {
                                               AnteilFälle = d.Fraction
                                           });
                 grdMainDiagnosis.DataSource = Helper.ConvertToDataTable(q);
-                grdMainDiagnosis.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-                grdMainDiagnosis.Columns[2].Width = 700;
-                grdMainDiagnosis.Columns[2].HeaderText = "HD-Bezeichnung";
                 SetHdGridColumnStyle();
-            } else if (grid == grdSecondaryDiagnosis) {
+                mainLoaded = true;
+            } else if (grid == grdSecondaryDiagnosis && !secLoaded) {
                 var q = context.SecondaryDiagnoses.Where(d => d.PeppCode == PEPP)
                         .Join(context.Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
                             (d, r) => new {
@@ -425,7 +430,8 @@ namespace org.inek.PeppBrowser.GUI {
                             });
                 grdSecondaryDiagnosis.DataSource = Helper.ConvertToDataTable(q);
                 SetSdGridColumnStyle();
-            } else if (grid == grdProcedures) {
+                secLoaded = true;
+            } else if (grid == grdProcedures && !procLoaded) {
                 var q = context.Procedures.Where(d => d.PeppCode == PEPP)
                         .Join(context.Recherche.Where(r => r.Procedure == 1), d => d.ProcCode, r => r.Code,
                             (d, r) => new {
@@ -439,14 +445,25 @@ namespace org.inek.PeppBrowser.GUI {
                             });
                 grdProcedures.DataSource = Helper.ConvertToDataTable(q);
                 SetProcedureGridColumnStyle();
+                procLoaded = true;
             } else if (grid == grdCosts && !matrixLoaded) {
                 BuildCostMatrix();
                 matrixLoaded = true;
+                grdCosts.ClearSelection();
             }
-            
+            Cursor = Cursors.Default;
         }
 
         private void SetHdGridColumnStyle() {
+            //grdMainDiagnosis.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            //grdMainDiagnosis.Columns[2].Width = 700;
+            grdMainDiagnosis.Columns[2].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            grdMainDiagnosis.Columns[0].Width = 50;
+            grdMainDiagnosis.Columns[1].Width = 52;
+            grdMainDiagnosis.Columns[2].Width = 720;
+            grdMainDiagnosis.Columns[3].MinimumWidth = 80;
+            grdMainDiagnosis.Columns[4].MinimumWidth = 80;
+            grdMainDiagnosis.Columns[2].HeaderText = "HD-Bezeichnung";
             grdMainDiagnosis.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             grdMainDiagnosis.Columns[3].DefaultCellStyle.Format = "##,###";
             grdMainDiagnosis.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
@@ -454,8 +471,16 @@ namespace org.inek.PeppBrowser.GUI {
         }
 
         private void SetSdGridColumnStyle() {
-            grdSecondaryDiagnosis.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            grdSecondaryDiagnosis.Columns[2].Width = 700;
+            //grdSecondaryDiagnosis.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            //grdSecondaryDiagnosis.Columns[2].Width = 600;
+            grdSecondaryDiagnosis.Columns[2].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            grdSecondaryDiagnosis.Columns[0].Width = 50;
+            grdSecondaryDiagnosis.Columns[1].Width = 52;
+            grdSecondaryDiagnosis.Columns[2].Width = 678;
+            grdSecondaryDiagnosis.Columns[3].Width = 80;
+            grdSecondaryDiagnosis.Columns[4].Width = 80;
+            grdSecondaryDiagnosis.Columns[5].MinimumWidth = 100;
+            grdSecondaryDiagnosis.Columns[6].MinimumWidth = 100;
             grdSecondaryDiagnosis.Columns[2].HeaderText = "ND-Bezeichnung";
             grdSecondaryDiagnosis.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             grdSecondaryDiagnosis.Columns[3].DefaultCellStyle.Format = "##,###";
@@ -468,8 +493,16 @@ namespace org.inek.PeppBrowser.GUI {
         }
 
         private void SetProcedureGridColumnStyle() {
-            grdProcedures.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            grdProcedures.Columns[2].Width = 700;
+            //grdProcedures.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            //grdProcedures.Columns[2].Width = 600;
+            grdProcedures.Columns[2].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            grdProcedures.Columns[0].Width = 50;
+            grdProcedures.Columns[1].Width = 52;
+            grdProcedures.Columns[2].Width = 678;
+            grdProcedures.Columns[3].Width = 80;
+            grdProcedures.Columns[4].Width = 80;
+            grdProcedures.Columns[5].MinimumWidth = 100;
+            grdProcedures.Columns[6].MinimumWidth = 100;
             grdProcedures.Columns[2].HeaderText = "OPS-Bezeichnung";
             grdProcedures.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             grdProcedures.Columns[3].DefaultCellStyle.Format = "##,###";
@@ -523,7 +556,10 @@ namespace org.inek.PeppBrowser.GUI {
         private void CostMatrixRightToLeft() {
             int startCol = grdCosts.Columns["KostenArt1"].Index;
             int startRow = 1;
-            for (int cols = startCol; cols < grdCosts.Columns.Count - 2; cols++) {
+            for (int cols = startCol; cols < grdCosts.Columns.Count; cols++) {
+                if (cols == grdCosts.Columns["rowHeaders"].Index) {
+                    continue;
+                }
                 for (int rows = startRow; rows < grdCosts.Rows.Count; rows++) {
                     DataGridViewCellStyle style = new DataGridViewCellStyle(grdCosts.Rows[rows].Cells[cols].Style);
                     style.Alignment = DataGridViewContentAlignment.MiddleRight;
@@ -745,11 +781,16 @@ namespace org.inek.PeppBrowser.GUI {
             data.LosTo3 = q.Select(p => p.LosToPayLevel3.ToString("##,###")).ElementAt(0);
             data.LosTo4 = q.Select(p => p.LosToPayLevel4.ToString("##,###")).ElementAt(0);
             data.LosTo5 = q.Select(p => p.LosToPayLevel5.ToString("##,###")).ElementAt(0);
-            data.ValuationRatio1 = q.Select(p => Math.Round(p.ValuationRatLevel1, 4).ToString("N4")).ElementAt(0);  // vierstellig Dezimal
-            data.ValuationRatio2 = q.Select(p => Math.Round(p.ValuationRatLevel2, 4).ToString("N4")).ElementAt(0);  // vierstellig Dezimal
-            data.ValuationRatio3 = q.Select(p => Math.Round(p.ValuationRatLevel3, 4).ToString("N4")).ElementAt(0);  // vierstellig Dezimal
-            data.ValuationRatio4 = q.Select(p => Math.Round(p.ValuationRatLevel4, 4).ToString("N4")).ElementAt(0);  // vierstellig Dezimal
-            data.ValuationRatio5 = q.Select(p => Math.Round(p.ValuationRatLevel5, 4).ToString("N4")).ElementAt(0);  // vierstellig Dezimal
+            data.ValuationRatio1 = q.Select(p => Math.Round(p.ValuationRatLevel1, 4).ToString("N4").Equals("0,0000")
+                ? "" : Math.Round(p.ValuationRatLevel1, 4).ToString("N4")).ElementAt(0);                            // vierstellig Dezimal
+            data.ValuationRatio2 = q.Select(p => Math.Round(p.ValuationRatLevel2, 4).ToString("N4").Equals("0,0000")
+                ? "" : Math.Round(p.ValuationRatLevel2, 4).ToString("N4")).ElementAt(0);                            // vierstellig Dezimal
+            data.ValuationRatio3 = q.Select(p => Math.Round(p.ValuationRatLevel3, 4).ToString("N4").Equals("0,0000")
+                ? "" : Math.Round(p.ValuationRatLevel3, 4).ToString("N4")).ElementAt(0);                            // vierstellig Dezimal
+            data.ValuationRatio4 = q.Select(p => Math.Round(p.ValuationRatLevel4, 4).ToString("N4").Equals("0,0000") 
+                ? "" : Math.Round(p.ValuationRatLevel4, 4).ToString("N4")).ElementAt(0);                            // vierstellig Dezimal
+            data.ValuationRatio5 = q.Select(p => Math.Round(p.ValuationRatLevel5, 4).ToString("N4").Equals("0,0000")
+                ? "" : Math.Round(p.ValuationRatLevel5, 4).ToString("N4")).ElementAt(0);                            // vierstellig Dezimal
             data.GenderMale = q.Select(p => Math.Round((p.GenderMale * 100), 2).ToString()+"%").ElementAt(0);         // Prozent
             data.GenderFemale = q.Select(p => Math.Round((p.GenderFemale * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
             data.AgeAverage = q.Select(p => Math.Round(p.AgeAverage, 1).ToString()).ElementAt(0);               // einstellig Dezimal
