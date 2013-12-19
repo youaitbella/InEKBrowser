@@ -130,6 +130,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="peppDruck.lst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\peppDruck.lst" />
     <None Include="Resources\peppo_manual.png" />
     <None Include="Resources\peppo_help.png" />
     <None Include="Resources\peppo_info.png" />
