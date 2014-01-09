@@ -2,8 +2,8 @@
 using System.ComponentModel;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using org.inek.controls.util;
 using org.inek.PeppBrowser.Data;
-using org.inek.PeppBrowser.Print;
 
 namespace org.inek.PeppBrowser.GUI {
     public partial class FrmSplash : Form {

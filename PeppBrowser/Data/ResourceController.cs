@@ -10,7 +10,7 @@ using System.Windows.Forms;
 namespace org.inek.PeppBrowser.Data {
     class ResourceController {
 
-        public const string RESOURCE_FILES_HASH = "D3A4542ACD3615973C4FEA014B14E3971ED911253AA68D0C4E28DA87DF8A5B";
+        public const string RESOURCE_FILES_HASH = "68AEA4961FFCE5C2B6FA3246542C27D5835E75D7F1B10BFA7503E6F5D232C37";
 
         public enum ResourceFilesIndex {
             Hauptdiagnose,
