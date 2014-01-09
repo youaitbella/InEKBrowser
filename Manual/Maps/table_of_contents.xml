@@ -10,12 +10,24 @@
     </topicref>
     <topicref type="topic" id="414047110825400" build="ALL" modified="2013-05-10T15:28:39.704Z" icon="0" href="CommonUsage">
       <caption translate="true">Allgemeine Bedienung</caption>
+      <topicref type="topic" id="416475006377856" build="ALL" modified="2014-01-08T10:29:46.858Z" icon="0" href="Tooltips">
+        <caption translate="true">Tooltips</caption>
+      </topicref>
     </topicref>
   </topicref>
   <topicref type="topic" id="402772762282526" build="ALL" modified="2010-04-09T11:16:58.306Z" icon="0" href="mnuMain">
     <caption translate="true">Menü</caption>
-    <topicref type="topic" id="415974994408166" build="ALL" modified="2013-11-19T16:55:49.705Z" icon="0" href="Report">
+    <topicref type="topic" id="416464611638161" build="ALL" modified="2014-01-07T14:40:55.701Z" icon="0" href="Datei">
+      <caption translate="true">Datei</caption>
+    </topicref>
+    <topicref type="topic" id="416468138058808" build="ALL" modified="2014-01-07T14:52:32.968Z" icon="0" href="Daten">
+      <caption translate="true">Daten</caption>
+    </topicref>
+    <topicref type="topic" id="416467443891375" build="ALL" modified="2014-01-07T15:16:10.224Z" icon="0" href="Report">
       <caption translate="true">Report</caption>
+    </topicref>
+    <topicref type="topic" id="416466064927594" build="ALL" modified="2014-01-07T15:25:13.248Z" icon="0" href="Topic">
+      <caption translate="true">?</caption>
     </topicref>
   </topicref>
   <topicref type="topic" id="414353926566340" build="ALL" modified="2013-11-26T09:57:57.237Z" icon="0" href="mainTab">

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Daten</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Daten</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold; font-style:normal;" translate="true">Menüpunkt </text><text styleclass="Normal" style="font-weight:bold; font-style:italic;" translate="true">Daten</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><image src="menu_data.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Normal"><var styleclass="Normal" style="font-size:8pt; font-weight:normal; font-style:italic;">&lt;%FIGURE%&gt;</var><text styleclass="Normal" style="font-size:8pt; font-weight:normal; font-style:italic;" translate="true"> Menüpunkt &quot;Daten&quot;</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal" style="text-align:left;"><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">Dieser Menüpunkt ermöglicht Ihnen, mithilfe des </text><var styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;">&lt;%TITLE%&gt;s</var><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">, die Daten im Rohformat anzuzeigen.</text></para>
+    <para styleclass="Normal" style="text-align:left;"></para>
+    <para styleclass="Normal" style="text-align:left;"><image src="raw_data_view.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Normal" style="text-align:left;"><var styleclass="Normal" style="font-size:8pt; font-weight:normal; font-style:italic;">&lt;%FIGURE%&gt;</var><text styleclass="Normal" style="font-size:8pt; font-weight:normal; font-style:italic;" translate="true"> Beispiel Rohdatenansicht der Strukturkategorien (</text><var styleclass="Normal" style="font-size:8pt; font-weight:normal; font-style:italic;">&lt;%FILE_SK%&gt;)</var></para>
+    <para styleclass="Normal" style="text-align:left;"></para>
+    <para styleclass="Normal" style="text-align:left;"><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">Die Dateien werden dem </text><var styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;">&lt;%TITLE%&gt;</var><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true"> als CSV-Dateien (Comma Separated Values) mitgeliefert und sind im Unterordner </text><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:italic;" translate="true">Data </text><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">zu finden.</text></para>
+    <para styleclass="Normal" style="text-align:left;"><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">Um die Funktionalität des </text><var styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;">&lt;%TITLE%&gt;s</var><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true"> gewährleisten zu können, dürfen diese Dateien </text><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal; text-decoration:underline;" translate="true">nicht</text><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true"> entfernt, umbenannt oder manipuliert werden.</text></para>
+    <para styleclass="Normal" style="text-align:left;"></para>
+    <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="text-align:left; font-family:Symbol; font-size:9pt; color:#000000;">
+      <li styleclass="Normal" style="text-align:left;"><text styleclass="Normal" style="font-size:9pt; font-weight:bold; font-style:normal;" translate="true">Strukturkategorie</text></li>
+      <list id="7" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="text-align:left; font-family:&apos;Courier New&apos;; font-size:9pt; color:#000000;">
+        <li styleclass="Normal" style="text-align:left;"><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">Zeigt die Daten der </text><var styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;">&lt;%FILE_SK%&gt;</var><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">.</text></li>
+      </list>
+    </list>
+    <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="text-align:left; font-family:Symbol; font-size:9pt; color:#000000;">
+      <li styleclass="Normal" style="text-align:left;"><text styleclass="Normal" style="font-size:9pt; font-weight:bold; font-style:normal;" translate="true">PEPP</text></li>
+      <list id="7" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="text-align:left; font-family:&apos;Courier New&apos;; font-size:9pt; color:#000000;">
+        <li styleclass="Normal" style="text-align:left;"><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">Zeigt die Daten der </text><var styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;">&lt;%FILE_PEPP%&gt;</var><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">.</text></li>
+      </list>
+    </list>
+    <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="text-align:left; font-family:Symbol; font-size:9pt; color:#000000;">
+      <li styleclass="Normal" style="text-align:left;"><text styleclass="Normal" style="font-size:9pt; font-weight:bold; font-style:normal;" translate="true">Kopfdaten</text></li>
+    </list>
+    <list id="8" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="text-align:left; font-family:&apos;Courier New&apos;; font-size:9pt; color:#000000;">
+      <li styleclass="Normal" style="text-align:left;"><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">Zeigt die Daten der </text><var styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;">&lt;%FILE_HEADDATA%&gt;</var><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">.</text></li>
+    </list>
+    <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="text-align:left; font-family:Symbol; font-size:9pt; color:#000000;">
+      <li styleclass="Normal" style="text-align:left;"><text styleclass="Normal" style="font-size:9pt; font-weight:bold; font-style:normal;" translate="true">Hauptdiagnosen</text></li>
+    </list>
+    <list id="9" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="text-align:left; font-family:&apos;Courier New&apos;; font-size:9pt; color:#000000;">
+      <li styleclass="Normal" style="text-align:left;"><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">Zeigt die Daten der </text><var styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;">&lt;%FILE_HD%&gt;</var><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">.</text></li>
+    </list>
+    <list id="9" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="text-align:left; font-family:Symbol; font-size:9pt; color:#000000;">
+      <li styleclass="Normal" style="text-align:left;"><text styleclass="Normal" style="font-size:9pt; font-weight:bold; font-style:normal;" translate="true">Nebendiagnosen</text></li>
+    </list>
+    <list id="10" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="text-align:left; font-family:&apos;Courier New&apos;; font-size:9pt; color:#000000;">
+      <li styleclass="Normal" style="text-align:left;"><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">Zeigt die Daten der </text><var styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;">&lt;%FILE_ND%&gt;</var><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">.</text></li>
+    </list>
+    <list id="10" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="text-align:left; font-family:Symbol; font-size:9pt; color:#000000;">
+      <li styleclass="Normal" style="text-align:left;"><text styleclass="Normal" style="font-size:9pt; font-weight:bold; font-style:normal;" translate="true">Prozeduren</text></li>
+    </list>
+    <list id="11" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="text-align:left; font-family:&apos;Courier New&apos;; font-size:9pt; color:#000000;">
+      <li styleclass="Normal" style="text-align:left;"><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">Zeigt die Daten der </text><var styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;">&lt;%FILE_PROC%&gt;</var><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">.</text></li>
+    </list>
+    <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="text-align:left; font-family:Symbol; font-size:9pt; color:#000000;">
+      <li styleclass="Normal" style="text-align:left;"><text styleclass="Normal" style="font-size:9pt; font-weight:bold; font-style:normal;" translate="true">Kosten</text></li>
+    </list>
+    <list id="12" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="text-align:left; font-family:&apos;Courier New&apos;; font-size:9pt; color:#000000;">
+      <li styleclass="Normal" style="text-align:left;"><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">Zeigt die Daten der </text><var styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;">&lt;%FILE_COST%&gt;</var><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">.</text></li>
+    </list>
+    <list id="12" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="text-align:left; font-family:Symbol; font-size:9pt; color:#000000;">
+      <li styleclass="Normal" style="text-align:left;"><text styleclass="Normal" style="font-size:9pt; font-weight:bold; font-style:normal;" translate="true">Kostenbereiche</text></li>
+    </list>
+    <list id="13" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="text-align:left; font-family:&apos;Courier New&apos;; font-size:9pt; color:#000000;">
+      <li styleclass="Normal" style="text-align:left;"><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">Zeigt die Daten der </text><var styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;">&lt;%FILE_COST_DOMAIN%&gt;</var><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">.</text></li>
+    </list>
+  </body>
+</topic>

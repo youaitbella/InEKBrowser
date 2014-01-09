@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Datei</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Datei</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold; font-style:normal;" translate="true">Menüpunkt </text><text styleclass="Normal" style="font-weight:bold; font-style:italic;" translate="true">Datei</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><image src="menu_file.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Normal"><var styleclass="Normal" style="font-size:8pt; font-style:italic;">&lt;%FIGURE%&gt;</var><text styleclass="Normal" style="font-size:8pt; font-style:italic;" translate="true"> Menüpunkt &quot;Datei&quot;</text></para>
+    <para styleclass="Normal"></para>
+    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:9pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" style="font-size:9pt; font-weight:bold; font-style:normal;" translate="true">Beenden</text></li>
+      <list id="1" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:&apos;Courier New&apos;; font-size:9pt; color:#000000;">
+        <li styleclass="Normal"><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">Beendet den </text><var styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;">&lt;%TITLE%&gt;</var><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">.</text></li>
+      </list>
+    </list>
+  </body>
+</topic>

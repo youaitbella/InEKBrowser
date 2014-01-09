@@ -4,12 +4,9 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
-using System.Reflection;
 using System.Runtime.InteropServices;
-using System.Runtime.Remoting.Messaging;
 using System.Windows.Forms;
 using combit.ListLabel18;
-using Microsoft.Office.Interop.Excel;
 using org.inek.PeppBrowser.Data.Entities;
 using org.inek.controls.gui;
 using org.inek.controls.helper;
@@ -1035,7 +1032,7 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void FrmPeppBrowser_Resize(object sender, EventArgs e) {
             if (WindowState == FormWindowState.Maximized) {
-                titleBar.MinMaxImage = (Image) resources.GetObject("picMinMax.BackgroundImage2");
+                titleBar.MinMaxImage = (Image) resources.GetObject("peppo_minimize");
             } else {
                 titleBar.MinMaxImage = (Image) resources.GetObject("picMinMax.BackgroundImage");
             }

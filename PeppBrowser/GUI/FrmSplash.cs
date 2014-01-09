@@ -1,18 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using org.inek.PeppBrowser.Data;
+using org.inek.PeppBrowser.Print;
 
 namespace org.inek.PeppBrowser.GUI {
     public partial class FrmSplash : Form {
+
+        private PrintLibraryManager _printManager;
 
         /* Use for window moving */
         private const int WM_NCLBUTTONDOWN = 0xA1;
@@ -28,6 +24,7 @@ namespace org.inek.PeppBrowser.GUI {
 
         public FrmSplash() {
             InitializeComponent();
+            _printManager = new PrintLibraryManager(@"Print\");
             titleBar.ShowIconify = false;
             titleBar.ShowMinMax = false;
         }
@@ -44,6 +41,7 @@ namespace org.inek.PeppBrowser.GUI {
                 ResourceController.CheckResourceDir();
                 ResourceController.CheckForResourceFiles();
                 ResourceController.CheckResourceFilesWithSHA256();
+                _printManager.LoadPrintLibrarys();
             } catch (Exception ex) {
                 MessageBox.Show(this, ex.Message, "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Application.Exit();

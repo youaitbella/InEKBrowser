@@ -111,7 +111,7 @@
     </styleclasses>
     <config-group name="project">
       <config-value name="title" translate="true">PEPP-Browser</config-value>
-      <config-value name="author" translate="true">Michael Müller, InEK GmbH</config-value>
+      <config-value name="author" translate="true">InEK GmbH</config-value>
       <config-value name="copyright" translate="true">© &lt;%YEAR%&gt; InEK GmbH, Siegburg</config-value>
       <config-value name="versionmajor">1</config-value>
       <config-value name="versionminor">0</config-value>
@@ -122,7 +122,7 @@
       <config-value name="autohelpstart">0</config-value>
       <config-value name="autohelpincrement">1</config-value>
       <config-value name="autohelpanchor">0</config-value>
-      <config-value name="searchpath">.\;.\Baggage\;.\Images\</config-value>
+      <config-value name="searchpath">.\;.\Baggage\;.\Images\;\\Fileserver1\User$\vohldo\Desktop\Screenshots\PEPP Browser\</config-value>
       <config-group name="custombuilds">
         <config-value name="DEMO">Demo Build</config-value>
         <config-value name="USER1">Standard</config-value>
@@ -161,7 +161,6 @@
       <config-value name="make6include">EBOOK</config-value>
       <config-value name="make6status">*</config-value>
       <config-value name="summary" translate="true">PEPP-Browser</config-value>
-      <config-group name="bookmarks"/>
     </config-group>
     <config-group name="user">
       <config-group name="muellermi">
@@ -179,6 +178,11 @@
         </config-group>
       </config-group>
       <config-group name="schlappajo">
+        <config-group name="project">
+          <config-value name="lastexport">0</config-value>
+        </config-group>
+      </config-group>
+      <config-group name="vohldo">
         <config-group name="project">
           <config-value name="lastexport">0</config-value>
         </config-group>
@@ -444,6 +448,15 @@ nsrInit();
     <variables>
       <variable id="FIGURE" type="text" translate="true">Abb. &lt;%FIGURE++%&gt;:</variable>
       <variable id="FIGURE++" type="text" translate="true">0</variable>
+      <variable id="FILE_COST" type="text" translate="true">PeppBr_12_14_Kosten.csv</variable>
+      <variable id="FILE_COST_DOMAIN" type="text" translate="true">PeppBr_12_14_Kostenbereich.csv</variable>
+      <variable id="FILE_HD" type="text" translate="true">PeppBr_12_14_Hauptdiagnose.csv</variable>
+      <variable id="FILE_HEADDATA" type="text" translate="true">PeppBr_12_14_Kopfdaten.csv</variable>
+      <variable id="FILE_ND" type="text" translate="true">PeppBr_12_14_Nebendiagnose.csv</variable>
+      <variable id="FILE_PEPP" type="text" translate="true">PeppBr_12_14_Pepp.csv</variable>
+      <variable id="FILE_PROC" type="text" translate="true">PeppBr_12_14_Prozeduren.csv</variable>
+      <variable id="FILE_RECHERCHE" type="text" translate="true">PeppBr_12_14_Recherche.csv</variable>
+      <variable id="FILE_SK" type="text" translate="true">PeppBr_12_14_Strukturkategorie.csv</variable>
     </variables>
     <helpcontext-numbers/>
   </config>
