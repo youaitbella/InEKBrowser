@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
-<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+<topic template="Default" lasteditedby="rusertma" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
   <title translate="true">?</title>
   <body>
     <header>
@@ -26,7 +26,7 @@
     <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:9pt; color:#000000;">
       <li styleclass="Normal"><text styleclass="Normal" style="font-size:9pt; font-weight:bold; font-style:normal;" translate="true">Info</text></li>
       <list id="1" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:&apos;Courier New&apos;; font-size:9pt; color:#000000;">
-        <li styleclass="Normal"><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">Erfahren Sie, welche Version des </text><var styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;">&lt;%TITLE%&gt;s</var><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true"> Sie benutzen.</text></li>
+        <li styleclass="Normal"><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">Zeigt an, welche Version des </text><var styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;">&lt;%TITLE%&gt;s</var><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true"> Sie benutzen.</text></li>
       </list>
     </list>
   </body>

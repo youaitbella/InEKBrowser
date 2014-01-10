@@ -5,9 +5,6 @@
   </topicref>
   <topicref type="topic" id="402752161736847" build="ALL" modified="2010-04-07T08:38:44.674Z" icon="0" href="Introduction">
     <caption translate="true">Einleitung</caption>
-    <topicref type="topic" id="402753149688023" build="ALL" modified="2010-04-07T08:55:10.750Z" icon="0" href="Background">
-      <caption translate="true">Hintergrund und Bedeutung</caption>
-    </topicref>
     <topicref type="topic" id="414047110825400" build="ALL" modified="2013-05-10T15:28:39.704Z" icon="0" href="CommonUsage">
       <caption translate="true">Allgemeine Bedienung</caption>
       <topicref type="topic" id="416475006377856" build="ALL" modified="2014-01-08T10:29:46.858Z" icon="0" href="Tooltips">
@@ -16,6 +13,15 @@
       <topicref type="topic" id="41650178086392" build="ALL" modified="2014-01-09T10:20:35.545Z" icon="0" href="Hotkeys">
         <caption translate="true">Hotkeys</caption>
       </topicref>
+    </topicref>
+  </topicref>
+  <topicref type="topic" id="416499051576363" build="ALL" modified="2014-01-10T16:50:20.719Z" icon="0" href="Systemanforderungen">
+    <caption translate="true">Systemanforderungen</caption>
+  </topicref>
+  <topicref type="topic" id="402753149688023" build="ALL" modified="2014-01-10T17:06:58.016Z" icon="0" href="Background">
+    <caption translate="true">Datengrundlage</caption>
+    <topicref type="topic" id="416498113846128" build="ALL" modified="2014-01-10T17:33:56.392Z" icon="0" href="Rundungen">
+      <caption translate="true">Rundungen</caption>
     </topicref>
   </topicref>
   <topicref type="topic" id="402772762282526" build="ALL" modified="2010-04-09T11:16:58.306Z" icon="0" href="mnuMain">
@@ -39,10 +45,13 @@
       <caption translate="true">Tabellen-Filter</caption>
     </topicref>
   </topicref>
+  <topicref type="topic" id="416495675805084" build="ALL" modified="2014-01-10T17:40:09.937Z" icon="0" href="PEPP-Kennzahlen">
+    <caption translate="true">PEPP-Kennzahlen</caption>
+  </topicref>
   <topicref type="topic" id="416486291574921" build="ALL" modified="2014-01-09T13:58:12.149Z" icon="0" href="Tabellen">
     <caption translate="true">Tabellen</caption>
-    <topicref type="topic" id="416485862093341" build="ALL" modified="2014-01-09T14:16:19.449Z" icon="0" href="Navigieren">
-      <caption translate="true">Navigieren</caption>
+    <topicref type="topic" id="416485862093341" build="ALL" modified="2014-01-10T17:38:27.778Z" icon="0" href="Navigieren">
+      <caption translate="true">Navigieren/Recherche</caption>
     </topicref>
   </topicref>
 </map>

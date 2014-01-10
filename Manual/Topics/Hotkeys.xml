@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
-<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+<topic template="Default" lasteditedby="rusertma" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
   <title translate="true">Hotkeys</title>
   <body>
     <header>
       <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Hotkeys</text></para>
     </header>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Der </text><var styleclass="Normal">&lt;%TITLE%&gt;</var><text styleclass="Normal" translate="true"> bietet Ihnen durch Hotkeys die Möglichkeit, bestimmte Funktionen schneller zu erreichen.</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Der </text><var styleclass="Normal">&lt;%TITLE%&gt;</var><text styleclass="Normal" translate="true"> bietet Ihnen durch sogenannten Hotkeys die Möglichkeit, bestimmte Funktionen schneller zu erreichen:</text></para>
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><table styleclass="Default" rowcount="3" colcount="2" style="width:33%;">
       <tr style="vertical-align:top">
