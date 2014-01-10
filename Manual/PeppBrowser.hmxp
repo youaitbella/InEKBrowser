@@ -188,6 +188,11 @@
           <config-value name="lastexport">4</config-value>
         </config-group>
       </config-group>
+      <config-group name="rusertma">
+        <config-group name="project">
+          <config-value name="lastexport">4</config-value>
+        </config-group>
+      </config-group>
     </config-group>
     <config-group name="chm">
       <config-value name="outputfile">..\PeppBrowser\PeppBrowser.chm</config-value>
