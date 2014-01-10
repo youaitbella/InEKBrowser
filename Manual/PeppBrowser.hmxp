@@ -161,6 +161,7 @@
       <config-value name="make6include">EBOOK</config-value>
       <config-value name="make6status">*</config-value>
       <config-value name="summary" translate="true">PEPP-Browser</config-value>
+      <config-group name="bookmarks"/>
     </config-group>
     <config-group name="user">
       <config-group name="muellermi">
@@ -184,7 +185,7 @@
       </config-group>
       <config-group name="vohldo">
         <config-group name="project">
-          <config-value name="lastexport">0</config-value>
+          <config-value name="lastexport">4</config-value>
         </config-group>
       </config-group>
     </config-group>

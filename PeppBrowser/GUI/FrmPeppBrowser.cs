@@ -689,46 +689,32 @@ namespace org.inek.PeppBrowser.GUI {
         }
 
         private void CreateCostMatrixHeaderTooltips(int i) {
-            switch (i) {
-                case 0:
-                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Ärztlicher Dienst";
-                    break;
-                case 1:
-                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Pflege-/Erziehungsdienst";
-                    break;
-                case 2:
-                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Psychologen";
-                    break;
-                case 3:
-                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Sozialarbeiter/Sozial-/Heilpädagogen";
-                    break;
-                case 4:
-                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Spezialtherapeuten";
-                    break;
-                case 5:
-                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Med.-techn. Dienst/Funktionsdienst";
-                    break;
-                case 6:
-                    grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Arzneimittel";
-                    break;
-                case 7:
-                    grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Arzneimittel";
-                    break;
-                case 8:
-                    grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Implantate/Transplantate";
-                    break;
-                case 9:
-                    grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Übriger medizinischer Bedarf";
-                    break;
-                case 10:
-                    grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Übriger medizinischer Bedarf";
-                    break;
-                case 11:
-                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personal- und Sachkosten med. Infrastruktur";
-                    break;
-                case 12:
-                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personal- und Sachkosten nicht med. Infrastruktur";
-                    break;
+            if (i == grdCosts.Columns["KostenArt1"].Index) {
+                grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Ärztlicher Dienst";
+            } else if (i == grdCosts.Columns["KostenArt2"].Index) {
+                grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Pflege-/Erziehungsdienst";
+            } else if (i == grdCosts.Columns["KostenArt3a"].Index) {
+                grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Psychologen";
+            } else if (i == grdCosts.Columns["KostenArt3b"].Index) {
+                grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Sozialarbeiter/Sozial-/Heilpädagogen";
+            } else if (i == grdCosts.Columns["KostenArt3c"].Index) {
+                grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Spezialtherapeuten";
+            } else if (i == grdCosts.Columns["KostenArt3"].Index) {
+                grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Med.-techn. Dienst/Funktionsdienst";
+            } else if (i == grdCosts.Columns["KostenArt4a"].Index) {
+                grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Arzneimittel";
+            } else if (i == grdCosts.Columns["KostenArt4b"].Index) {
+                grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Arzneimittel";
+            } else if (i == grdCosts.Columns["KostenArt5"].Index) {
+                grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Implantate/Transplantate";
+            } else if (i == grdCosts.Columns["KostenArt6a"].Index) {
+                grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Übriger medizinischer Bedarf";
+            } else if (i == grdCosts.Columns["KostenArt6b"].Index) {
+                grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Übriger medizinischer Bedarf";
+            } else if (i == grdCosts.Columns["KostenArt7"].Index) {
+                grdCosts.Rows[0].Cells[i].ToolTipText = "Personal- und Sachkosten med. Infrastruktur";
+            } else if (i == grdCosts.Columns["KostenArt8"].Index) {
+                grdCosts.Rows[0].Cells[i].ToolTipText = "Personal- und Sachkosten nicht med. Infrastruktur";
             }
         }
 

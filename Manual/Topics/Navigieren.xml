@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Navigieren</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Navigieren</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-size:9pt;" translate="true">Sie haben die Möglichkeit durch die Tabellen Hauptdiagnosen, Nebendiagnosen und Prozeduren eine andere PEPP auszuwählen.</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-size:9pt;" translate="true">Dazu können Sie mit einem </text><text styleclass="Normal" style="font-size:9pt; font-style:italic;" translate="true">Doppelklick</text><text styleclass="Normal" style="font-size:9pt;" translate="true"> auf einen Tabelleneintrag einen Dialog öffnen. Dort werden Ihnen dann alle PEPPs zu Ihrer ausgewählten Hauptdiagnose, Nebendiagnose oder Prozedur angezeigt und Sie können komfortabel zu einer dieser PEPPs navigieren.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><image src="table_navigation.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Normal"><var styleclass="Image Caption" style="font-size:8pt;">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" style="font-size:8pt;" translate="true"> Durch einen Doppelklick auf den rot markierten Tabelleneintrag, öffnet sich ein Dialog, indem Sie alle PEPPs sehen, die es zu der Hauptdiagnose &quot;F70.1&quot; gibt. Mit einem Klick auf &quot;Ok&quot; wird diese PEPP geladen.</text></para>
+  </body>
+</topic>

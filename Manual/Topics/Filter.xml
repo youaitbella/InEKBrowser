@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Filter</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Filter</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-size:9pt;" translate="true">Durch das Auswählen einer Strukturkategorie und/oder einer Hauptdiagnose, Nebendiagnose oder Prozedur können Sie die PEPPs einschränken.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><image src="filter.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Normal"><var styleclass="Normal" style="font-size:8pt; font-style:italic;">&lt;%FIGURE%&gt;</var><text styleclass="Normal" style="font-size:8pt; font-style:italic;" translate="true"> Der PEPP-Filter ohne jegliche Auswahl.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-size:9pt; font-style:normal;" translate="true">Wenn Sie keinen Filter setzen, können Sie alle PEPPs sehen.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><image src="filter_with_all_pepps.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Normal"><var styleclass="Normal" style="font-size:8pt; font-style:italic;">&lt;%FIGURE%&gt;</var><text styleclass="Normal" style="font-size:8pt; font-style:italic;" translate="true"> Leerer PEPP-Filter ermöglicht das Anzeigen aller vorhandener PEPPs.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-size:9pt; font-style:normal;" translate="true">Durch das Setzen einer Strukturkategorie und einer Hauptdiagnose, können Sie die PEPP-Auswahl stärker einschränken. So werden Ihnen nur PEPPs angezeigt, die in der ausgewählten Strukturkategorie und Hauptdiagnose vorhanden sind. Sie können jedoch immer nur einen der 3 rechten Filter benutzen (Hauptdiagnose, Nebendiagnose, Prozedur).</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><image src="filter_with_less_pepps.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Normal"><var styleclass="Normal" style="font-size:8pt; font-style:italic;">&lt;%FIGURE%&gt;</var><text styleclass="Normal" style="font-size:8pt; font-style:italic;" translate="true"> PEPP-Filter mit einer gesetzten Strukturkategorie und einer Hauptdiagnose. Durch diese Filtereinstellungen wurde nur noch eine auswählbare PEPP gefunden.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-size:9pt; font-style:normal;" translate="true">Sollten Sie einmal verschiedene Filtereinstellungen durchprobieren, so könnte es passieren, dass Sie keine PEPP finden werden. Sie werden dann die auf dem unteren Bild abgebildete Information sehen. Mit einem Klick auf </text><text styleclass="Normal" style="font-size:9pt; font-style:italic;" translate="true">&quot;OK&quot; &#160;</text><text styleclass="Normal" style="font-size:9pt; font-style:normal;" translate="true">können Sie den </text><var styleclass="Normal" style="font-size:9pt; font-style:normal;">&lt;%TITLE%&gt;</var><text styleclass="Normal" style="font-size:9pt; font-style:normal;" translate="true"> weiter benutzen und Ihre Filtereinstellungen anpassen.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><image src="no_pepps.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Normal"><var styleclass="Normal" style="font-size:8pt; font-style:italic;">&lt;%FIGURE%&gt;</var><text styleclass="Normal" style="font-size:8pt; font-style:italic;" translate="true"> Diese Meldung taucht auf, wenn sich keine PEPP zu Ihren Filtereinstellungen finden lässt. Ein Klick auf &quot;OK&quot; und Sie können Ihre Filtereinstellungen anpassen.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-size:9pt; font-style:normal;" translate="true">Das Zurücksetzen der Filtereinstellungen können Sie mit dem weißen Kreuz neben den Filter-Textboxen vornehmen. Das weiße Kreuz erscheint erst neben einem Filter, wenn Sie diesen mit Inhalt versehen.</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-size:9pt; font-style:normal;" translate="true">Durch einen Klick auf das Kreuz, wird der dazugehörige Filter gelöscht.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><image src="filter_reset.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Normal"><var styleclass="Normal" style="font-size:8pt; font-style:italic;">&lt;%FIGURE%&gt;</var><text styleclass="Normal" style="font-size:8pt; font-style:italic;" translate="true"> Durch einen Klick auf die in den roten Rechtecken abgebildeten Kreuze, würden die Filter Strukturkategorie und Hauptdiagnose geleert werden.</text></para>
+  </body>
+</topic>

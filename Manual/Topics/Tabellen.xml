@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Tabellen</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Tabellen</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Im unteren Teil des </text><var styleclass="Normal">&lt;%TITLE%&gt;s</var><text styleclass="Normal" translate="true"> befinden sich 4 Reiter (Hauptdiagnosen, Nebendiagnosen, Prozeduren und Tageskosten). Jeder dieser Reiter beinhaltet eine Tabelle, die wiederum PEPP-bezogene Informationen bereitstellen (z.B. Reiter &quot;Hauptdiagnosen&quot; stellt alle Hauptdiagnosen zu der ausgewählten PEPP dar). Zum Befüllen dieser Tabellen, müssen Sie eine PEPP auswählen.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><image src="tables.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Normal"><var styleclass="Normal" style="font-size:8pt; font-style:italic;">&lt;%FIGURE%&gt;</var><text styleclass="Normal" style="font-size:8pt; font-style:italic;" translate="true"> Darstellung der Hauptdiagnosen-Tabelle zu einer ausgewählten PEPP. Die Tabellen werden erst befüllt, wenn Sie eine PEPP ausgewählt haben.</text></para>
+    <para styleclass="Normal"></para>
+  </body>
+</topic>
