@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Windows Vista, 7 und 8</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Windows Vista, 7 und 8</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Die unten dargestellte Druckoberfläche hilft Ihnen dabei, Ihre ausgewählte PEPP auszudrucken oder zu exportieren (z.B. als PDF).</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Nachfolgend wird Ihnen genauer erklärt, wie Sie die selektierte PEPP ausdrucken oder aber als PDF exportieren können.</text></para>
+    <para styleclass="Normal"></para>
+    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Normal"><link displaytype="text" defaultstyle="true" type="topiclink" href="Drucken2" styleclass="Normal" translate="true">Drucken</link></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">PDF erzeugen</text></li>
+    </list>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><image src="print_overview_7.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Normal"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Die Darstellung der Druckoberfläche mit einzelnen farblich gekennzeichneten Bereichen. </text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="color:#ff0000;" translate="true">Seitenvorschau: </text><text styleclass="Normal" style="color:#000000;" translate="true">Die hier dargestellte Seite zeigt Ihnen eine Vorschau, der ausgedruckten Version.</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="color:#008000;" translate="true">Seitenauswahl: </text><text styleclass="Normal" style="color:#000000;" translate="true">Hier können Sie eine der zu druckenden Seite auswählen und in der </text><text styleclass="Normal" style="color:#ff0000;" translate="true">Seitenvorschau</text><text styleclass="Normal" style="color:#000000;" translate="true"> betrachten.</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="color:#0000ff;" translate="true">Funktionsband: </text><text styleclass="Normal" style="color:#000000;" translate="true">Das Funktionsband stellt Ihnen verschiedenen Funktionen bereit. Z.B. können Sie hier Ihre ausgewählte PEPP drucken oder nach Begriffen suchen.</text></para>
+    <para styleclass="Normal"></para>
+  </body>
+</topic>

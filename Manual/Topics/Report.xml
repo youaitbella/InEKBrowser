@@ -9,12 +9,12 @@
     <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Menüpunkt </text><text styleclass="Normal" style="font-weight:bold; font-style:italic;" translate="true">&quot;Report&quot;</text></para>
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><image src="menu_report.png" scale="100.00%" styleclass="Image Caption"></image></para>
-    <para styleclass="Normal"><var styleclass="Normal" style="font-size:8pt; font-style:italic;">&lt;%FIGURE%&gt;</var><text styleclass="Normal" style="font-size:8pt; font-style:italic;" translate="true"> Menüpunkt &quot;Report&quot;</text></para>
+    <para styleclass="Image Caption" style="text-align:left;"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Menüpunkt &quot;Report&quot;</text></para>
     <para styleclass="Normal"></para>
-    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:9pt; color:#000000;">
-      <li styleclass="Normal"><text styleclass="Normal" style="font-size:9pt; font-weight:bold; font-style:normal;" translate="true">Drucken</text></li>
-      <list id="1" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:&apos;Courier New&apos;; font-size:9pt; color:#000000;">
-        <li styleclass="Normal"><text styleclass="Normal" style="font-size:9pt; font-weight:normal; font-style:normal;" translate="true">Ruft das Fenster zum Drucken der ausgewählten PEPP auf.</text></li>
+    <list id="44" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">Drucken</text></li>
+      <list id="44" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+        <li styleclass="Normal"><text styleclass="Normal" translate="true">Ruft das </text><link displaytype="text" defaultstyle="true" type="topiclink" href="Drucken" styleclass="Normal" translate="true">Fenster zum Drucken</link><text styleclass="Normal" translate="true"> der ausgewählten PEPP auf.</text></li>
       </list>
     </list>
   </body>

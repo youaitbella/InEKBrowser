@@ -113,9 +113,8 @@
       <config-value name="title" translate="true">PEPP-Browser</config-value>
       <config-value name="author" translate="true">InEK GmbH</config-value>
       <config-value name="copyright" translate="true">© &lt;%YEAR%&gt; InEK GmbH, Siegburg</config-value>
-      <config-value name="versionmajor">1</config-value>
-      <config-value name="versionminor">0</config-value>
-      <config-value name="versionbuild">0</config-value>
+      <config-value name="versionmajor">2014</config-value>
+      <config-value name="versionminor">1</config-value>
       <config-value name="lcid" translate="true">de-de</config-value>
       <config-value name="charset" translate="true">ANSI_CHARSET</config-value>
       <config-value name="deffont">font-family:'MS Sans Serif'; font-size:8pt; color:#000000;</config-value>
@@ -161,7 +160,6 @@
       <config-value name="make6include">EBOOK</config-value>
       <config-value name="make6status">*</config-value>
       <config-value name="summary" translate="true">PEPP-Browser</config-value>
-      <config-group name="bookmarks"/>
     </config-group>
     <config-group name="user">
       <config-group name="muellermi">

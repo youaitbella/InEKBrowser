@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Report</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Report</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Die nachfolgenden Seiten zeigen Ihnen, wie Sie Ihre ausgewählte PEPP mithilfe des </text><var styleclass="Normal">&lt;%TITLE%&gt;s</var><text styleclass="Normal" translate="true"> ausdrucken können.</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Die grafische Oberfläche zum Drucken kann je nach Betriebssystem variieren, weshalb Sie nachfolgend Ihr Betriebssystem auswählen sollten.</text></para>
+    <para styleclass="Normal"></para>
+    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Normal"><link displaytype="text" defaultstyle="true" type="topiclink" href="Windows_Vista__7_und_8" styleclass="Normal" translate="true">Windows Vista, 7 und 8</link></li>
+      <li styleclass="Normal"><link displaytype="text" defaultstyle="true" type="topiclink" href="Windows_XP" styleclass="Normal" translate="true">Windows XP</link></li>
+    </list>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Sollte Ihr Betriebssystem nicht als Unterkapitel aufgelistet sein, beachten Sie bitte die </text><link displaytype="text" defaultstyle="true" type="topiclink" href="Systemanforderungen" styleclass="Normal" translate="true">Systemanforderungen</link><text styleclass="Normal" translate="true">.</text></para>
+  </body>
+</topic>

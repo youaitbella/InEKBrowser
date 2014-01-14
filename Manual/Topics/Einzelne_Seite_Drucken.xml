@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Einzelne Seite Drucken</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Einzelne Seite Drucken</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Sie können auch eine einzelne Seite ausdrucken. Dazu müssen Sie Ihre auszudruckende Seite in der </text><link displaytype="text" defaultstyle="true" type="topiclink" href="Windows_Vista__7_und_8" styleclass="Normal" translate="true">Seitenauswahl</link><text styleclass="Normal" translate="true"> auswählen und auf den Text mit dem kleinen Pfeil &quot;Quick Print&quot; im </text><link displaytype="text" defaultstyle="true" type="topiclink" href="Windows_Vista__7_und_8" styleclass="Normal" translate="true">Funktionsband</link><text styleclass="Normal" translate="true"> klicken. In dem aufkommenden Menü wählen Sie dann &quot;Print Current Page&quot; oder aber &quot;Print Current Page With Printer Selection&quot;, wenn Sie noch einen spezifischen Drucker auswählen möchten.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><image src="print_symbol_text_7.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Image Caption" style="text-align:left;"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Klicken Sie in das rote Rechteck, um das nachfolgende Druckmenü zu öffnen.</text></para>
+    <para styleclass="Image Caption" style="text-align:left;"></para>
+    <para styleclass="Image Caption" style="text-align:left;"><image src="print_menu_current_page_7.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Image Caption" style="text-align:left;"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Die beiden farblich markierten Menüpunkte erlauben es Ihnen, die ausgewählte Seite zu drucken.</text></para>
+  </body>
+</topic>

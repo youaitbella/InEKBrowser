@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
-<topic template="Default" lasteditedby="rusertma" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
   <title translate="true">Tabellen</title>
   <body>
     <header>
@@ -12,15 +12,18 @@
     <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Reiter „Hauptdiagnose“</text></para>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Es werden die Hauptdiagnosekodes, die je PEPP mindestens vier Fälle repräsentieren, in absteigender Reihenfolge nach Anzahl der Fälle angezeigt. </text></para>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Neben dem Kode und dem Text werden ausgewiesen:</text></para>
-    <list id="106" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
+    <list id="48" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
       <li styleclass="Normal"><text styleclass="Normal" translate="true">AnzahlFälle: Anzahl Fälle mit entspr. Hauptdiagnose in der ausgewählten PEPP </text></li>
       <li styleclass="Normal"><text styleclass="Normal" translate="true">FälleAnteil: Anteil der Fälle mit entspr. Hauptdiagnose an allen Fällen, in Prozent. (D.h.: Zähler: „Fälle“, Nenner: Fallzahl der PEPP)</text></li>
     </list>
     <para styleclass="Normal"></para>
+    <para styleclass="Normal"><image src="tables.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Image Caption" style="text-align:left;"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Darstellung der Hauptdiagnosen-Tabelle zu einer ausgewählten PEPP. Die Tabellen werden erst befüllt, wenn Sie eine PEPP ausgewählt haben.</text></para>
+    <para styleclass="Normal"></para>
     <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Registerblätter „Nebendiagnosen“ bzw. „Prozeduren“</text></para>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Es werden die Nebendiagnose- bzw. Prozedurenkodes, die je PEPP mindestens vier Fälle repräsentieren, in absteigender Reihenfolge nach Anzahl der Fälle angezeigt. Hier werden neben dem Kode und dem Text vier Spalten ausgewiesen:</text></para>
     <para styleclass="Normal"></para>
-    <list id="107" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
+    <list id="49" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
       <li styleclass="Normal"><text styleclass="Normal" translate="true">AnzahlFälle: Anzahl Fälle mit entspr. Nebendiagnose bzw. Prozedur in der ausgewählten PEPP</text></li>
       <li styleclass="Normal"><text styleclass="Normal" translate="true">FälleAnteil: Anteil der Fälle mit entspr. Nebendiagnose bzw. Prozedur an allen Fällen, in Prozent (D.h.: Zähler: „Fälle“, Nenner: Anzahl Fälle in der ausgewählten PEPP)</text></li>
       <li styleclass="Normal"><text styleclass="Normal" translate="true">NennungenAnzahl: Anzahl Nennungen der entspr. Nebendiagnose bzw. Prozedur in der ausgewählten PEPP (Mehrfachnennungen pro Fall mitgezählt). D.h.: Die Zahl der Nennungen ist größer oder gleich der Zahl der Fälle.</text></li>
@@ -29,17 +32,12 @@
     <para styleclass="Normal"></para>
     <para styleclass="Normal" style="margin-left:53px;"><text styleclass="Normal" style="font-size:10pt;" translate="true">Beispiel für die Unterscheidung Fälle vs. Nennungen:</text></para>
     <para styleclass="Normal" style="margin-left:53px;"><text styleclass="Normal" style="font-size:10pt;" translate="true">PEPP xxxxx, Registerblatt „Prozeduren“: </text></para>
-    <list id="108" type="ul" listtype="bullet" formatstring="&#63;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="margin-left:53px; font-family:Symbol; font-size:10pt; color:#000000;">
-      <li styleclass="Normal" style="margin-left:53px;"><text styleclass="Normal" style="font-size:10pt;" translate="true">xx der insgesamt xx Fälle der PEPP xxxxx weisen die Prozedur xxxx auf. Das entspricht einem Fallanteil von xx / xx = xx Prozent. </text></li>
-      <li styleclass="Normal" style="margin-left:53px;"><text styleclass="Normal" style="font-size:10pt;" translate="true">Die Prozedur xxxx wird in den xx Fälle insgesamt xx mal genannt. Diese xx Nennungen entsprechen einem Nennungsanteil von xx / xx = xx Prozent. </text></li>
-    </list>
+    <para styleclass="Normal" style="margin-left:53px;"><text styleclass="Normal" style="font-size:10pt;" translate="true">xx der insgesamt xx Fälle der PEPP xxxxx weisen die Prozedur xxxx auf. Das entspricht einem Fallanteil von xx / xx = xx Prozent. </text></para>
+    <para styleclass="Normal" style="margin-left:53px;"><text styleclass="Normal" style="font-size:10pt;" translate="true">Die Prozedur xxxx wird in den xx Fälle insgesamt xx mal genannt. Diese xx Nennungen entsprechen einem Nennungsanteil von xx / xx = xx Prozent. </text></para>
     <para styleclass="Normal" style="margin-left:53px;"><text styleclass="Normal" style="font-size:10pt;" translate="true">(Die Gesamtzahl xx aller Nennungen der Fälle der PEPP xxxxx ist aus den Daten nicht ersichtlich, da die Prozeduren, die weniger als 4 Fälle repräsentieren, nicht ausgewiesen werden; sie ist jedoch näherungsweise aus dem Dreisatz xx / xx = xx zu errechnen.)</text></para>
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Registerblatt „Tageskosten“</text></para>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Das vierte Registerblatt „Tageskosten“ stellt die mittleren </text><text styleclass="Normal" translate="true">Tageskosten (Summe der Kosten dividiert durch die Summe der Verweildauertage)</text><text styleclass="Normal" translate="true"> je Kostenmodul dar. Die Matrixdarstellung ist an die Anlage 5 des Handbuchs </text><text styleclass="Normal" translate="true">&quot;</text><text styleclass="Normal" translate="true">Handbuch zur Kalkulation psychiatrischer und psychosomatischer Leistungen in Einrichtungen gem. § 17d KHG</text><text styleclass="Normal" translate="true">“ (Version 1.0) angelehnt, enthält aber zusätzlich die Kostenartengruppe 5 sowie – falls in der PEPP vorkommend – die Kostenstellengruppen 4 und 5, da für diese Kostenmodul zum Teil Daten übermittelt und in der </text><text styleclass="Normal" translate="true">Kalkulation verwendet wurden.</text></para>
-    <para styleclass="Normal"></para>
-    <para styleclass="Normal"><image src="tables.png" scale="100.00%" styleclass="Image Caption"></image></para>
-    <para styleclass="Normal"><var styleclass="Normal" style="font-size:8pt; font-style:italic;">&lt;%FIGURE%&gt;</var><text styleclass="Normal" style="font-size:8pt; font-style:italic;" translate="true"> Darstellung der Hauptdiagnosen-Tabelle zu einer ausgewählten PEPP. Die Tabellen werden erst befüllt, wenn Sie eine PEPP ausgewählt haben.</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Das vierte Registerblatt „Tageskosten“ stellt die mittleren Tageskosten (Summe der Kosten dividiert durch die Summe der Verweildauertage) je Kostenmodul dar. Die Matrixdarstellung ist an die Anlage 5 des Handbuchs &quot;Handbuch zur Kalkulation psychiatrischer und psychosomatischer Leistungen in Einrichtungen gem. § 17d KHG“ (Version 1.0) angelehnt, enthält aber zusätzlich die Kostenartengruppe 5 (Implantate) sowie – falls in der PEPP vorkommend – die Kostenstellengruppen 4 und 5 (OP-Bereich und Anästhesie), da für diese Kostenmodul zum Teil Daten übermittelt und in der Kalkulation verwendet wurden.</text></para>
     <para styleclass="Normal"></para>
   </body>
 </topic>
