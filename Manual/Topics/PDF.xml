@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
-<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
-  <title translate="true">PDF</title>
+<topic template="Default" lasteditedby="rusertma" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Export in PDF-Format</title>
   <body>
     <header>
-      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">PDF</text></para>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Export in PDF-Format</text></para>
     </header>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Sie haben auch die Möglichkeit Ihre ausgewählte PEPP mithilfe der Druckoberfläche, als PDF-Dokument zu exportieren.</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Sie haben auch die Möglichkeit, Ihre ausgewählte PEPP mithilfe der Druckoberfläche als PDF-Dokument zu exportieren.</text></para>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Klicken Sie dafür auf die &quot;Export&quot;-Schaltfläche im </text><link displaytype="text" defaultstyle="true" type="topiclink" href="Drucken" styleclass="Normal" translate="true">Funktionsband</link><text styleclass="Normal" translate="true">.</text></para>
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><image src="print_pdf.png" scale="100.00%" styleclass="Image Caption"></image></para>

@@ -160,7 +160,6 @@
       <config-value name="make6include">EBOOK</config-value>
       <config-value name="make6status">*</config-value>
       <config-value name="summary" translate="true">PEPP-Browser</config-value>
-      <config-group name="bookmarks"/>
     </config-group>
     <config-group name="user">
       <config-group name="muellermi">

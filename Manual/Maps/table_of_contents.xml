@@ -48,8 +48,17 @@
   <topicref type="topic" id="416495675805084" build="ALL" modified="2014-01-10T17:40:09.937Z" icon="0" href="PEPP-Kennzahlen">
     <caption translate="true">PEPP-Kennzahlen</caption>
   </topicref>
-  <topicref type="topic" id="416486291574921" build="ALL" modified="2014-01-09T13:58:12.149Z" icon="0" href="Tabellen">
-    <caption translate="true">Tabellen</caption>
+  <topicref type="topic" id="416486291574921" build="ALL" modified="2014-01-16T10:43:39.697Z" icon="0" href="Tabellen">
+    <caption translate="true">Datenreiter</caption>
+    <topicref type="topic" id="416554856467092" build="ALL" modified="2014-01-16T10:45:21.886Z" icon="0" href="Datenreiter_Hauptdiagnose">
+      <caption translate="true">Datenreiter Hauptdiagnose</caption>
+    </topicref>
+    <topicref type="topic" id="416554528245932" build="ALL" modified="2014-01-16T10:47:59.510Z" icon="0" href="Datenreiter_Nebendiagnosen">
+      <caption translate="true">Datenreiter Nebendiagnosen bzw. Prozeduren</caption>
+    </topicref>
+    <topicref type="topic" id="416553655075337" build="ALL" modified="2014-01-16T10:47:40.241Z" icon="0" href="Datenreiter_Tageskosten">
+      <caption translate="true">Datenreiter Tageskosten</caption>
+    </topicref>
     <topicref type="topic" id="416485862093341" build="ALL" modified="2014-01-10T17:38:27.778Z" icon="0" href="Navigieren">
       <caption translate="true">Navigieren/Recherche</caption>
     </topicref>
@@ -62,8 +71,8 @@
         <caption translate="true">Einzelne Seite Drucken</caption>
       </topicref>
     </topicref>
-    <topicref type="topic" id="416543620711589" build="ALL" modified="2014-01-15T09:04:45.547Z" icon="0" href="PDF">
-      <caption translate="true">PDF</caption>
+    <topicref type="topic" id="416543620711589" build="ALL" modified="2014-01-16T10:51:26.015Z" icon="0" href="PDF">
+      <caption translate="true">Export in PDF-Format</caption>
     </topicref>
   </topicref>
 </map>

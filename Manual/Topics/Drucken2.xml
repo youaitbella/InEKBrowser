@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
-<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+<topic template="Default" lasteditedby="rusertma" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
   <title translate="true">Drucken</title>
   <body>
     <header>
       <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Drucken</text></para>
     </header>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Um Ihre selektierte PEPP einfach und schnell drucken zu können, sollte ein Standarddrucker in Ihrem Betriebssystem festgelegt sein.</text></para>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Sollte dies nicht der Fall sein, so richten Sie bitte einen Standarddrucker ein. Wie das geht können Sie der Anleitung bzw. Hilfe Ihres Betriebssystems entnehmen.</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Sollte dies nicht der Fall sein, so richten Sie bitte einen Standarddrucker ein. Das Vorgehen hierzu können Sie ggf. der Anleitung bzw. Hilfe Ihres Betriebssystems entnehmen.</text></para>
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Einen Druckvorgang starten Sie mit einem </text><text styleclass="Normal" style="font-style:italic;" translate="true">Klick</text><text styleclass="Normal" translate="true"> auf das Druckersymbol oberhalb vom Text &quot;Quick Print&quot; im </text><link displaytype="text" defaultstyle="true" type="topiclink" href="Drucken" styleclass="Normal" translate="true">Funktionsband</link><text styleclass="Normal" translate="true">.</text></para>
     <para styleclass="Normal"></para>

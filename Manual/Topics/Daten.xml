@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
-<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+<topic template="Default" lasteditedby="rusertma" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
   <title translate="true">Daten</title>
   <body>
     <header>
@@ -27,50 +27,50 @@
     <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
       <li styleclass="Normal"><text styleclass="Normal" translate="true">Strukturkategorie</text></li>
       <list id="7" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
-        <li styleclass="Normal"><text styleclass="Normal" translate="true">Zeigt die Daten der </text><var styleclass="Normal">&lt;%FILE_SK%&gt;</var><text styleclass="Normal" translate="true">: Bezeichnung der Strukturkategorien.</text></li>
+        <li styleclass="Normal"><text styleclass="Normal" translate="true">Zeigt die Daten der Datei </text><var styleclass="Normal">&lt;%FILE_SK%&gt;</var><text styleclass="Normal" translate="true">: Bezeichnung der Strukturkategorien.</text></li>
       </list>
     </list>
     <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
       <li styleclass="Normal"><text styleclass="Normal" translate="true">PEPP</text></li>
       <list id="7" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
-        <li styleclass="Normal"><text styleclass="Normal" translate="true">Zeigt die Daten der </text><var styleclass="Normal">&lt;%FILE_PEPP%&gt;</var><text styleclass="Normal" translate="true">: Bezeichnung der PEPP.</text></li>
+        <li styleclass="Normal"><text styleclass="Normal" translate="true">Zeigt die Daten der Datei </text><var styleclass="Normal">&lt;%FILE_PEPP%&gt;</var><text styleclass="Normal" translate="true">: Bezeichnung der PEPP.</text></li>
       </list>
     </list>
     <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
       <li styleclass="Normal"><text styleclass="Normal" translate="true">Kopfdaten</text></li>
     </list>
     <list id="8" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">Zeigt die Daten der </text><var styleclass="Normal">&lt;%FILE_HEADDATA%&gt;</var><text styleclass="Normal" translate="true">: Datengrundlage für die PEPP-Kennzahlen.</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">Zeigt die Daten der Datei </text><var styleclass="Normal">&lt;%FILE_HEADDATA%&gt;</var><text styleclass="Normal" translate="true">: Datengrundlage für die PEPP-Kennzahlen im oberen Teil des Browsers.</text></li>
     </list>
     <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
       <li styleclass="Normal"><text styleclass="Normal" translate="true">Hauptdiagnosen</text></li>
     </list>
     <list id="9" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">Zeigt die Daten der </text><var styleclass="Normal">&lt;%FILE_HD%&gt;</var><text styleclass="Normal" translate="true">: Datengrundlage des Reiters Hauptdiagnosen.</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">Zeigt die Daten der Datei </text><var styleclass="Normal">&lt;%FILE_HD%&gt;</var><text styleclass="Normal" translate="true">: Datengrundlage des Datenreiters Hauptdiagnosen.</text></li>
     </list>
     <list id="9" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
       <li styleclass="Normal"><text styleclass="Normal" translate="true">Nebendiagnosen</text></li>
     </list>
     <list id="10" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">Zeigt die Daten der </text><var styleclass="Normal">&lt;%FILE_ND%&gt;</var><text styleclass="Normal" translate="true">: Datengrundlage des Reiters Nebendiagnosen.</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">Zeigt die Daten der Datei </text><var styleclass="Normal">&lt;%FILE_ND%&gt;</var><text styleclass="Normal" translate="true">: Datengrundlage des Datenreiters Nebendiagnosen.</text></li>
     </list>
     <list id="10" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
       <li styleclass="Normal"><text styleclass="Normal" translate="true">Prozeduren</text></li>
     </list>
     <list id="11" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">Zeigt die Daten der </text><var styleclass="Normal">&lt;%FILE_PROC%&gt;</var><text styleclass="Normal" translate="true">: Datengrundlage des Reiters Prozeduren.</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">Zeigt die Daten der Datei </text><var styleclass="Normal">&lt;%FILE_PROC%&gt;</var><text styleclass="Normal" translate="true">: Datengrundlage des Datenreiters Prozeduren.</text></li>
     </list>
     <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
       <li styleclass="Normal"><text styleclass="Normal" translate="true">Kosten</text></li>
     </list>
     <list id="12" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">Zeigt die Daten der </text><var styleclass="Normal">&lt;%FILE_COST%&gt;</var><text styleclass="Normal" translate="true">: Datengrundlage des Reiters Tageskosten.</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">Zeigt die Daten der Datei </text><var styleclass="Normal">&lt;%FILE_COST%&gt;</var><text styleclass="Normal" translate="true">: Datengrundlage des Datenreiters Tageskosten.</text></li>
     </list>
     <list id="12" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
       <li styleclass="Normal"><text styleclass="Normal" translate="true">Kostenbereiche</text></li>
     </list>
     <list id="13" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">Zeigt die Daten der </text><var styleclass="Normal">&lt;%FILE_COST_DOMAIN%&gt;</var><text styleclass="Normal" translate="true">: Referenztabelle für die Zeilen des Reiters Tageskosten.</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">Zeigt die Daten der Datei </text><var styleclass="Normal">&lt;%FILE_COST_DOMAIN%&gt;</var><text styleclass="Normal" translate="true">: Referenztabelle für die Zeilen des Datenreiters Tageskosten.</text></li>
     </list>
   </body>
 </topic>
