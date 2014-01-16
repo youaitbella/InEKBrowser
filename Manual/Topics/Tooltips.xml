@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
-<topic template="Default" lasteditedby="rusertma" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
   <title translate="true">Tooltips</title>
   <body>
     <header>
@@ -11,7 +11,7 @@
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Dazu müssen Sie lediglich die Maus über eine abgekürzte Bezeichnung positionieren.</text></para>
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><image src="tooltip.png" scale="100.00%" styleclass="Image Caption"></image></para>
-    <para styleclass="Normal"><var styleclass="Normal" style="font-size:8pt; font-style:italic;">&lt;%FIGURE%&gt;</var><text styleclass="Normal" style="font-size:8pt; font-style:italic;" translate="true"> Beispiel eines Tooltips</text></para>
+    <para styleclass="Normal"><var styleclass="Normal" style="font-size:8pt; font-style:italic;">&lt;%FIGURE%&gt;</var><text styleclass="Normal" style="font-size:8pt; font-style:italic;" translate="true"> Beispiel eines Tooltips.</text></para>
     <para styleclass="Normal"></para>
   </body>
 </topic>
