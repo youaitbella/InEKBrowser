@@ -89,7 +89,7 @@ namespace org.inek.PeppBrowser.Data {
                     _ll.ExportOptions.Add(LlExportOption.ExportFile, fileName);
                     _ll.ExportOptions.Add(LlExportOption.ExportPath, outputPath);
                     _ll.ExportOptions.Add(LlExportOption.ExportQuiet, "1");
-                    _ll.ExportOptions.Add(LlExportOption.ExportShowResult, "0");
+                    _ll.ExportOptions.Add(LlExportOption.ExportShowResult, "1");
                     //_ll.ExportOptions.Add(LlExportOption.PdfFontMode, "3");
                     _ll.Print(LlProject.List, layoutFile, false, LlPrintMode.Export);
                 } else {
