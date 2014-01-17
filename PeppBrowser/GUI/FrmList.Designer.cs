@@ -25,6 +25,7 @@
         private void InitializeComponent() {
             this.grdData = new org.inek.controls.FilteredDataGridView.FilteredDataGridView();
             this.btnOk = new System.Windows.Forms.Button();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.SuspendLayout();
             // 
             // grdData
@@ -85,5 +86,6 @@
 
         private controls.FilteredDataGridView.FilteredDataGridView grdData;
         private System.Windows.Forms.Button btnOk;
+        public System.Windows.Forms.HelpProvider helpProvider1;
     }
 }

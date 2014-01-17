@@ -37,10 +37,10 @@
             this.mnuProcedures = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuCosts = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuCostDomains = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuReport = new System.Windows.Forms.ToolStripMenuItem();
             this.druckenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.designerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuQuestionTag = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuManual = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuInfo = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,6 +62,7 @@
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.timerPeppBlink = new System.Windows.Forms.Timer(this.components);
             this.titleBar = new org.inek.PeppBrowser.GUI.TitleBar();
+            this.timerPrintWindow = new System.Windows.Forms.Timer(this.components);
             this.mnuMain.SuspendLayout();
             this.pnlContentBackground.SuspendLayout();
             this.tabControl.SuspendLayout();
@@ -81,8 +82,8 @@
             this.mnuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuFile,
             this.mnuData,
-            this.toolStripMenuItem3,
-            this.toolStripMenuItem1});
+            this.mnuReport,
+            this.mnuQuestionTag});
             this.mnuMain.Location = new System.Drawing.Point(0, 0);
             this.mnuMain.Margin = new System.Windows.Forms.Padding(0, 20, 0, 0);
             this.mnuMain.Name = "mnuMain";
@@ -189,15 +190,15 @@
             this.mnuCostDomains.Text = "Kostenbereiche";
             this.mnuCostDomains.Click += new System.EventHandler(this.mnuCostDomains_Click);
             // 
-            // toolStripMenuItem3
+            // mnuReport
             // 
-            this.toolStripMenuItem3.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.toolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuReport.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.mnuReport.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.druckenToolStripMenuItem,
             this.designerToolStripMenuItem});
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(54, 20);
-            this.toolStripMenuItem3.Text = "Report";
+            this.mnuReport.Name = "mnuReport";
+            this.mnuReport.Size = new System.Drawing.Size(54, 20);
+            this.mnuReport.Text = "Report";
             // 
             // druckenToolStripMenuItem
             // 
@@ -216,16 +217,16 @@
             this.designerToolStripMenuItem.Visible = false;
             this.designerToolStripMenuItem.Click += new System.EventHandler(this.designerToolStripMenuItem_Click);
             // 
-            // toolStripMenuItem1
+            // mnuQuestionTag
             // 
-            this.toolStripMenuItem1.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuQuestionTag.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.mnuQuestionTag.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuManual,
             this.mnuHelp,
             this.mnuInfo});
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(24, 20);
-            this.toolStripMenuItem1.Text = "?";
+            this.mnuQuestionTag.Name = "mnuQuestionTag";
+            this.mnuQuestionTag.Size = new System.Drawing.Size(24, 20);
+            this.mnuQuestionTag.Text = "?";
             // 
             // mnuManual
             // 
@@ -274,8 +275,11 @@
             this.selection.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.selection.BackColor = System.Drawing.Color.SeaGreen;
+            this.helpProvider1.SetHelpKeyword(this.selection, "Filter.htm");
+            this.helpProvider1.SetHelpNavigator(this.selection, System.Windows.Forms.HelpNavigator.Topic);
             this.selection.Location = new System.Drawing.Point(0, 27);
             this.selection.Name = "selection";
+            this.helpProvider1.SetShowHelp(this.selection, true);
             this.selection.Size = new System.Drawing.Size(1182, 52);
             this.selection.TabIndex = 11;
             // 
@@ -294,12 +298,15 @@
             // 
             this.cbxPepp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.helpProvider1.SetHelpKeyword(this.cbxPepp, "Filter.htm");
+            this.helpProvider1.SetHelpNavigator(this.cbxPepp, System.Windows.Forms.HelpNavigator.Topic);
             this.cbxPepp.Location = new System.Drawing.Point(107, 88);
             this.cbxPepp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbxPepp.MinimumSize = new System.Drawing.Size(40, 21);
             this.cbxPepp.MutltiLine = false;
             this.cbxPepp.Name = "cbxPepp";
             this.cbxPepp.ReadOnly = true;
+            this.helpProvider1.SetShowHelp(this.cbxPepp, true);
             this.cbxPepp.Size = new System.Drawing.Size(1067, 21);
             this.cbxPepp.TabIndex = 10;
             this.toolTip.SetToolTip(this.cbxPepp, "Wählen Sie eine PEPP aus.");
@@ -341,6 +348,8 @@
             this.grdMainDiagnosis.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.grdMainDiagnosis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdMainDiagnosis.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.helpProvider1.SetHelpKeyword(this.grdMainDiagnosis, "Datenreiter_Hauptdiagnose.htm");
+            this.helpProvider1.SetHelpNavigator(this.grdMainDiagnosis, System.Windows.Forms.HelpNavigator.Topic);
             this.grdMainDiagnosis.Location = new System.Drawing.Point(3, 3);
             this.grdMainDiagnosis.MultiSelect = false;
             this.grdMainDiagnosis.Name = "grdMainDiagnosis";
@@ -348,6 +357,7 @@
             this.grdMainDiagnosis.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.grdMainDiagnosis.RowHeadersVisible = false;
             this.grdMainDiagnosis.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.helpProvider1.SetShowHelp(this.grdMainDiagnosis, true);
             this.grdMainDiagnosis.Size = new System.Drawing.Size(1162, 312);
             this.grdMainDiagnosis.TabIndex = 0;
             this.grdMainDiagnosis.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdMainDiagnosis_CellDoubleClick);
@@ -373,6 +383,8 @@
             this.grdSecondaryDiagnosis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdSecondaryDiagnosis.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.grdSecondaryDiagnosis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.helpProvider1.SetHelpKeyword(this.grdSecondaryDiagnosis, "Datenreiter_Nebendiagnosen.htm");
+            this.helpProvider1.SetHelpNavigator(this.grdSecondaryDiagnosis, System.Windows.Forms.HelpNavigator.Topic);
             this.grdSecondaryDiagnosis.Location = new System.Drawing.Point(3, 3);
             this.grdSecondaryDiagnosis.MultiSelect = false;
             this.grdSecondaryDiagnosis.Name = "grdSecondaryDiagnosis";
@@ -380,6 +392,7 @@
             this.grdSecondaryDiagnosis.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.grdSecondaryDiagnosis.RowHeadersVisible = false;
             this.grdSecondaryDiagnosis.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.helpProvider1.SetShowHelp(this.grdSecondaryDiagnosis, true);
             this.grdSecondaryDiagnosis.Size = new System.Drawing.Size(1162, 312);
             this.grdSecondaryDiagnosis.TabIndex = 1;
             this.grdSecondaryDiagnosis.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdSecondaryDiagnosis_CellDoubleClick);
@@ -403,6 +416,8 @@
             this.grdProcedures.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.grdProcedures.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdProcedures.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.helpProvider1.SetHelpKeyword(this.grdProcedures, "Datenreiter_Nebendiagnosen.htm");
+            this.helpProvider1.SetHelpNavigator(this.grdProcedures, System.Windows.Forms.HelpNavigator.Topic);
             this.grdProcedures.Location = new System.Drawing.Point(3, 3);
             this.grdProcedures.MultiSelect = false;
             this.grdProcedures.Name = "grdProcedures";
@@ -410,6 +425,7 @@
             this.grdProcedures.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.grdProcedures.RowHeadersVisible = false;
             this.grdProcedures.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.helpProvider1.SetShowHelp(this.grdProcedures, true);
             this.grdProcedures.Size = new System.Drawing.Size(1162, 312);
             this.grdProcedures.TabIndex = 2;
             this.grdProcedures.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdProcedures_CellDoubleClick);
@@ -434,6 +450,8 @@
             this.grdCosts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdCosts.ColumnHeadersVisible = false;
             this.grdCosts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.helpProvider1.SetHelpKeyword(this.grdCosts, "Datenreiter_Tageskosten.htm");
+            this.helpProvider1.SetHelpNavigator(this.grdCosts, System.Windows.Forms.HelpNavigator.Topic);
             this.grdCosts.Location = new System.Drawing.Point(3, 3);
             this.grdCosts.MultiSelect = false;
             this.grdCosts.Name = "grdCosts";
@@ -441,6 +459,7 @@
             this.grdCosts.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.grdCosts.RowHeadersVisible = false;
             this.grdCosts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.helpProvider1.SetShowHelp(this.grdCosts, true);
             this.grdCosts.Size = new System.Drawing.Size(1162, 312);
             this.grdCosts.TabIndex = 3;
             this.grdCosts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdCosts_CellClick);
@@ -490,6 +509,11 @@
             this.titleBar.ClickedIconify += new System.EventHandler(this.titleBar_ClickedIconify);
             this.titleBar.MouseMoveTitleBar += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
             this.titleBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
+            // 
+            // timerPrintWindow
+            // 
+            this.timerPrintWindow.Interval = 1000;
+            this.timerPrintWindow.Tick += new System.EventHandler(this.timerPrintWindow_Tick);
             // 
             // FrmPeppBrowser
             // 
@@ -544,8 +568,8 @@
         private System.Windows.Forms.ToolStripMenuItem mnuProcedures;
         private System.Windows.Forms.ToolStripMenuItem mnuCosts;
         private System.Windows.Forms.ToolStripMenuItem mnuCostDomains;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem mnuReport;
+        private System.Windows.Forms.ToolStripMenuItem mnuQuestionTag;
         private System.Windows.Forms.ToolStripMenuItem mnuManual;
         private System.Windows.Forms.ToolStripMenuItem mnuInfo;
         private System.Windows.Forms.Panel pnlContentBackground;
@@ -569,6 +593,7 @@
         private System.Windows.Forms.DataGridView grdCosts;
         private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.Timer timerPeppBlink;
+        private System.Windows.Forms.Timer timerPrintWindow;
 
     }
 }

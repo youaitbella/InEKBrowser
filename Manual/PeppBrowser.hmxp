@@ -121,7 +121,7 @@
       <config-value name="autohelpstart">0</config-value>
       <config-value name="autohelpincrement">1</config-value>
       <config-value name="autohelpanchor">0</config-value>
-      <config-value name="searchpath">.\;.\Baggage\;.\Images\;\\Fileserver1\User$\vohldo\Desktop\Screenshots\PEPP Browser\</config-value>
+      <config-value name="searchpath">.\;.\Baggage\;.\Images\;.\Screenshots\</config-value>
       <config-group name="custombuilds">
         <config-value name="DEMO">Demo Build</config-value>
         <config-value name="USER1">Standard</config-value>
@@ -183,7 +183,7 @@
       </config-group>
       <config-group name="vohldo">
         <config-group name="project">
-          <config-value name="lastexport">4</config-value>
+          <config-value name="lastexport">0</config-value>
         </config-group>
       </config-group>
       <config-group name="rusertma">
@@ -436,9 +436,10 @@ nsrInit();
       <config-value name="style">0</config-value>
       <config-value name="createoutline">1</config-value>
       <config-value name="createhotspots">1</config-value>
-      <config-value name="insertseealso">1</config-value>
+      <config-value name="insertseealso">0</config-value>
       <config-value name="linkcolor">16711680</config-value>
       <config-value name="ignoreblank">0</config-value>
+      <config-value name="outlinesnumbered">0</config-value>
     </config-group>
     <config-group name="ebook">
       <config-value name="outputfile">DrgToolManual_Help.exe</config-value>

@@ -30,6 +30,9 @@ namespace org.inek.PeppBrowser.GUI {
         [DllImport("user32.dll")]
         public static extern bool ReleaseCapture();
 
+        [DllImport("user32.dll", EntryPoint = "FindWindow", SetLastError = true)]
+        static extern IntPtr FindWindowByCaption(IntPtr ZeroOnly, string lpWindowName);
+
         /* ################## */
 
         private FrmList dlg;
@@ -42,15 +45,30 @@ namespace org.inek.PeppBrowser.GUI {
             set { cbxPepp.Text = value; }
         }
 
+        private FrmSearch search;
+
         public FrmPeppBrowser() {
             InitializeComponent();
             Selection.Parent = this;
             cbxPepp.InputField.Click += cbxPepp_ButtonClicked;
+            search = new FrmSearch(this);
+            search.helpProvider1.HelpNamespace = helpProvider1.HelpNamespace;
+            search.helpProvider1.SetHelpNavigator(search, HelpNavigator.Topic);
+            search.helpProvider1.SetShowHelp(search, true);
+            search.helpProvider1.SetHelpKeyword(search, "Navigieren.htm");
 
         }
 
+        private void SetDataHelpProvider(FrmList dlg) {
+            dlg.helpProvider1.HelpNamespace = helpProvider1.HelpNamespace;
+            dlg.helpProvider1.SetHelpNavigator(dlg, HelpNavigator.Topic);
+            dlg.helpProvider1.SetShowHelp(dlg, true);
+            dlg.helpProvider1.SetHelpKeyword(dlg, "Daten.htm");
+        }
+
         private void mnuPepp_Click(object sender, System.EventArgs e) {
-            FrmList dlg = new FrmList();
+            dlg = new FrmList();
+            SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
             var q = CsvData.Context().Pepps.Select(p => new { pe_SK = p.StructureCategory, pe_Pepp = p.Code, pe_Text = p.Text });
             dlg.SetDataSource(q);
@@ -59,7 +77,8 @@ namespace org.inek.PeppBrowser.GUI {
         }
 
         private void mnuStructureCategories_Click(object sender, System.EventArgs e) {
-            FrmList dlg = new FrmList();
+            dlg = new FrmList(); 
+            SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
             dlg.Text = "Strukturkategorien";
             var q =
@@ -72,12 +91,14 @@ namespace org.inek.PeppBrowser.GUI {
                                           st_FaelleAnzahl = sk.CaseCount,
                                           st_TageAnzahl = sk.DayCount
                                       });
+            dlg.DataSource = new DataTable();
             dlg.SetDataSource(q);
             dlg.ShowDialog(this);
         }
 
         private void mnuPeppInfo_Click(object sender, System.EventArgs e) {
-            FrmList dlg = new FrmList();
+            dlg = new FrmList();
+            SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
             var q = CsvData.Context().PeppInfos.Select(pi => new {
                                                                      kd_Pepp = pi.Code, kd_FaelleAnzahl = pi.CaseCount, kd_FaelleAnzahlVgst1 = pi.CaseCountPayLevel1,
@@ -145,7 +166,8 @@ namespace org.inek.PeppBrowser.GUI {
         }
 
         private void mnuPrimaryDiagnoses_Click(object sender, System.EventArgs e) {
-            FrmList dlg = new FrmList();
+            dlg = new FrmList();
+            SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
             var q = CsvData.Context().PrimaryDiagnoses.Select(p => new { hd_Pepp = p.PeppCode, hd_Code = p.DiagCode, hd_FaelleAnzahl = p.Count, hd_FaelleAnteil = p.Fraction});
             dlg.SetDataSource(q);
@@ -155,7 +177,8 @@ namespace org.inek.PeppBrowser.GUI {
         }
 
         private void mnuSecondaryDiagnoses_Click(object sender, System.EventArgs e) {
-            FrmList dlg = new FrmList();
+            dlg = new FrmList();
+            SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
             var q =
                 CsvData.Context()
@@ -176,7 +199,8 @@ namespace org.inek.PeppBrowser.GUI {
         }
 
         private void mnuProcedures_Click(object sender, System.EventArgs e) {
-            FrmList dlg = new FrmList();
+            dlg = new FrmList();
+            SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
             var q = CsvData.Context().Procedures.Select(p => new {
                                                                      pr_Pepp = p.PeppCode,
@@ -193,7 +217,8 @@ namespace org.inek.PeppBrowser.GUI {
         }
 
         private void mnuCosts_Click(object sender, System.EventArgs e) {
-            FrmList dlg = new FrmList();
+            dlg = new FrmList();
+            SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
             var q = CsvData.Context().Costs.Select(c => new {
                                                                 ko_Pepp = c.PeppCode,
@@ -219,7 +244,8 @@ namespace org.inek.PeppBrowser.GUI {
         }
 
         private void mnuCostDomains_Click(object sender, System.EventArgs e) {
-            FrmList dlg = new FrmList();
+            dlg = new FrmList();
+            SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
             var q = CsvData.Context().CostDomains.Select(d => new {
                                                                       kb_Nr = d.DomainId,
@@ -337,6 +363,10 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void cbxPepp_ButtonClicked(object sender, EventArgs e) {
             FrmSearch dlg = new FrmSearch(cbxPepp);
+            dlg.helpProvider1.HelpNamespace = helpProvider1.HelpNamespace;
+            dlg.helpProvider1.SetHelpNavigator(dlg, HelpNavigator.Topic);
+            dlg.helpProvider1.SetShowHelp(dlg, true);
+            dlg.helpProvider1.SetHelpKeyword(dlg, "Filter.htm");
             dlg.StartPosition = FormStartPosition.CenterParent;
             dlg.Text = "PEPP-Suche";
             var q = CsvData.Context().Pepps.Select(pepp => new {Strukturkategorie = pepp.StructureCategory, PEPP = pepp.Code, Text = pepp.Text});
@@ -828,6 +858,8 @@ namespace org.inek.PeppBrowser.GUI {
             }
             else {
                 Reporter reporter = new Reporter();
+                helpProvider1.SetHelpKeyword(this, "Drucken.htm");
+                timerPrintWindow.Start();
                 reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Preview, "peppDruck.lst", setReportData(PEPP), "data");
             }
         }
@@ -845,6 +877,7 @@ namespace org.inek.PeppBrowser.GUI {
             
         }
 
+
         private void grdMainDiagnosis_CellDoubleClick(object sender, DataGridViewCellEventArgs e) {
             if (grdMainDiagnosis.SelectedRows.Count > 0) {
                 string hd = grdMainDiagnosis.SelectedRows[0].Cells[1].Value.ToString();
@@ -856,7 +889,6 @@ namespace org.inek.PeppBrowser.GUI {
                         .ToList();
                 var q = CsvData.Context().PrimaryDiagnoses.Where(pd => pepps.Contains(pd.PeppCode) && pd.DiagCode == hd)
                     .Select(pd => new {PEPP = pd.PeppCode, HD = pd.DiagCode, AnzahlFälle = pd.Count, AnteilFälle = pd.Fraction});
-                FrmSearch search = new FrmSearch(this);
                 search.StartPosition = FormStartPosition.CenterParent;
                 search.Text = "PEPPs zu Hauptdiagnosen";
                 search.ButtonShowIsVisible = false;
@@ -889,7 +921,6 @@ namespace org.inek.PeppBrowser.GUI {
                         AnzahlNennungen = nd.EntryCount,
                         AnteilNennungen = nd.EntryFraction
                                       });
-                FrmSearch search = new FrmSearch(this);
                 search.StartPosition = FormStartPosition.CenterParent;
                 search.Text = "PEPPs zu Nebendiagnosen";
                 search.ButtonShowIsVisible = false;
@@ -926,7 +957,6 @@ namespace org.inek.PeppBrowser.GUI {
                         AnzahlNennungen = p.EntryCount,
                         AnteilNennungen = p.EntryFraction
                                      });
-                FrmSearch search = new FrmSearch(this);
                 search.StartPosition = FormStartPosition.CenterParent;
                 search.Text = "PEPPs zu Prozeduren";
                 search.ButtonShowIsVisible = false;
@@ -1062,6 +1092,14 @@ namespace org.inek.PeppBrowser.GUI {
             } else {
                 grdCosts.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                 grdCosts.Rows[e.RowIndex].Selected = true;
+            }
+        }
+
+        private void timerPrintWindow_Tick(object sender, EventArgs e) {
+            IntPtr previewHandle = FindWindowByCaption(IntPtr.Zero, "Preview");
+            if (previewHandle == IntPtr.Zero) {
+                helpProvider1.SetHelpKeyword(this, "Introduction.htm");
+                timerPrintWindow.Stop();
             }
         }
     }

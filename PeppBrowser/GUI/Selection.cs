@@ -65,8 +65,16 @@ namespace org.inek.PeppBrowser.GUI {
             picClearSk.Visible = false;
         }
 
+        private void SetHelpProvider(FrmSearch dlg) {
+            dlg.helpProvider1.HelpNamespace = helpProvider1.HelpNamespace;
+            dlg.helpProvider1.SetHelpNavigator(dlg, HelpNavigator.Topic);
+            dlg.helpProvider1.SetShowHelp(dlg, true);
+            dlg.helpProvider1.SetHelpKeyword(dlg, "Filter.htm");
+        }
+
         private void cbxSk_ButtonClicked(object sender, EventArgs e) {
             FrmSearch dlg = new FrmSearch(cbxSk);
+            SetHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
             dlg.ButtonShowIsVisible = false;
             var q = CsvData.Context().StructureCategories.OrderBy(sk => sk.Order)
@@ -87,6 +95,7 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void cbxMainDiagnosis_ButtonClicked(object sender, EventArgs e) {
             FrmSearch dlg = new FrmSearch(cbxMainDiagnosis);
+            SetHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
             dlg.ButtonShowIsVisible = false;
             var q = CsvData.Context()
@@ -111,6 +120,7 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void cbxSecondaryDiagnosis_ButtonClicked(object sender, EventArgs e) {
             FrmSearch dlg = new FrmSearch(cbxSecondaryDiagnosis);
+            SetHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
             dlg.ButtonShowIsVisible = false;
             var q =
@@ -136,6 +146,7 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void cbxProcedure_ButtonClicked(object sender, EventArgs e) {
             FrmSearch dlg = new FrmSearch(cbxProcedure);
+            SetHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
             dlg.ButtonShowIsVisible = false;
             var q =
