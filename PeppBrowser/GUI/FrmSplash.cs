@@ -41,7 +41,7 @@ namespace org.inek.PeppBrowser.GUI {
                 ResourceController.CheckResourceDir();
                 ResourceController.CheckForResourceFiles();
                 ResourceController.CheckResourceFilesWithSHA256();
-                //_printLoader.LoadPrintLibrarys();
+                _printLoader.LoadPrintLibrarys();
             } catch (Exception ex) {
                 MessageBox.Show(this, ex.Message, "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Application.Exit();
