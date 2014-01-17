@@ -146,7 +146,7 @@ namespace org.inek.PeppBrowser.Data {
                                     } catch {
                                         
                                     }
-                                    info.SetValue(obj, decimalNumber);
+                                    info.SetValue(obj, decimalNumber, null);
                                     break;
                                 case "Int32":
                                     int number = 0;
@@ -158,10 +158,10 @@ namespace org.inek.PeppBrowser.Data {
                                     } catch {
                                         
                                     }
-                                    info.SetValue(obj, number);
+                                    info.SetValue(obj, number, null);
                                     break;
                                 case "String":
-                                    info.SetValue(obj, tokens[names[name]]);
+                                    info.SetValue(obj, tokens[names[name]], null);
                                     break;
                                 default:
                                     throw new NotImplementedException("Type " + info.PropertyType.Name + " not implemented yet");

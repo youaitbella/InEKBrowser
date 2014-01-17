@@ -13,7 +13,7 @@ namespace org.inek.PeppBrowser.Data {
             foreach (PropertyInfo info in typeof(PeppInfo).GetProperties())
             {
                 PropertyInfo targetInfo = typeof (PeppData).GetProperty(info.Name);
-                targetInfo.SetValue(this, info.GetValue(peppInfo));
+                targetInfo.SetValue(this, info.GetValue(peppInfo, null), null);
             }
         }
 

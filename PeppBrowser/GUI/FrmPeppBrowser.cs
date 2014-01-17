@@ -463,8 +463,10 @@ namespace org.inek.PeppBrowser.GUI {
             grdMainDiagnosis.Columns[2].HeaderText = "HD-Bezeichnung";
             grdMainDiagnosis.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             grdMainDiagnosis.Columns[3].DefaultCellStyle.Format = "##,###";
+            grdMainDiagnosis.Columns[3].HeaderText = "Anzahl Fälle";
             grdMainDiagnosis.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             grdMainDiagnosis.Columns[4].DefaultCellStyle.Format = "P";
+            grdMainDiagnosis.Columns[4].HeaderText = "Anteil Fälle";
         }
 
         private void SetSdGridColumnStyle() {
@@ -481,12 +483,16 @@ namespace org.inek.PeppBrowser.GUI {
             grdSecondaryDiagnosis.Columns[2].HeaderText = "ND-Bezeichnung";
             grdSecondaryDiagnosis.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             grdSecondaryDiagnosis.Columns[3].DefaultCellStyle.Format = "##,###";
+            grdSecondaryDiagnosis.Columns[3].HeaderText = "Anzahl Fälle";
             grdSecondaryDiagnosis.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             grdSecondaryDiagnosis.Columns[4].DefaultCellStyle.Format = "P";
+            grdSecondaryDiagnosis.Columns[4].HeaderText = "Anteil Fälle";
             grdSecondaryDiagnosis.Columns[5].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             grdSecondaryDiagnosis.Columns[5].DefaultCellStyle.Format = "##,###";
+            grdSecondaryDiagnosis.Columns[5].HeaderText = "Anzahl Nennungen";
             grdSecondaryDiagnosis.Columns[6].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             grdSecondaryDiagnosis.Columns[6].DefaultCellStyle.Format = "P";
+            grdSecondaryDiagnosis.Columns[6].HeaderText = "Anteil Nennungen";
         }
 
         private void SetProcedureGridColumnStyle() {
@@ -503,12 +509,16 @@ namespace org.inek.PeppBrowser.GUI {
             grdProcedures.Columns[2].HeaderText = "OPS-Bezeichnung";
             grdProcedures.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             grdProcedures.Columns[3].DefaultCellStyle.Format = "##,###";
+            grdProcedures.Columns[3].HeaderText = "Anzahl Fälle";
             grdProcedures.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             grdProcedures.Columns[4].DefaultCellStyle.Format = "P";
+            grdProcedures.Columns[4].HeaderText = "Anteil Fälle";
             grdProcedures.Columns[5].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             grdProcedures.Columns[5].DefaultCellStyle.Format = "##,###";
+            grdProcedures.Columns[5].HeaderText = "Anzahl Nennungen";
             grdProcedures.Columns[6].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             grdProcedures.Columns[6].DefaultCellStyle.Format = "P";
+            grdProcedures.Columns[6].HeaderText = "Anteil Nennungen";
         }
 
         private void BuildCostMatrix() {

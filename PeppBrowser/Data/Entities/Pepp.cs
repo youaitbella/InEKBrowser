@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace org.inek.PeppBrowser.Data.Entities {
     public class Pepp {

@@ -60,6 +60,9 @@ namespace org.inek.PeppBrowser.GUI {
             cbxMainDiagnosis.Text = "";
             cbxSecondaryDiagnosis.Text = "";
             cbxProcedure.Text = "";
+            picClearHd.Visible = false;
+            picClearSd.Visible = false;
+            picClearSk.Visible = false;
         }
 
         private void cbxSk_ButtonClicked(object sender, EventArgs e) {
