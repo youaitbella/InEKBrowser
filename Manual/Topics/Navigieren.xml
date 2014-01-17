@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
-<topic template="Default" lasteditedby="rusertma" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+<topic template="Default" lasteditedby="muellermi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
   <title translate="true">Navigieren/Recherche</title>
   <body>
     <header>
@@ -9,7 +9,7 @@
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Sie haben die Möglichkeit, innerhalb der kodebezogenen Datenreiter Hauptdiagnosen, Nebendiagnosen und Prozeduren eine andere PEPP auszuwählen.</text></para>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Dazu können Sie mit einem Doppelklick auf einen Tabelleneintrag (d.h. einen bestimmten Hauptdiagnosen- , Nebendiagnosen- oder Prozedurenkode) einen Dialog öffnen. Dort werden Ihnen dann alle PEPPs zu Ihrer ausgewählten Hauptdiagnose, Nebendiagnose oder Prozedur - zusammen mit den Anzahl- und Anteilangaben - &#160;angezeigt. Sie können nun durch Doppelklick komfortabel zu einer dieser PEPPs navigieren.</text></para>
     <para styleclass="Normal"></para>
-    <para styleclass="Normal"><image src="table_navigation.png" scale="100.00%" styleclass="Image Caption"></image></para>
-    <para styleclass="Normal"><var styleclass="Image Caption" style="font-size:8pt;">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" style="font-size:8pt;" translate="true"> Durch einen Doppelklick auf den rot markierten Tabelleneintrag, öffnet sich ein Dialog, indem Sie alle PEPPs sehen, die es zu der Hauptdiagnose &quot;F70.1&quot; gibt. Mit einem Klick auf &quot;Ok&quot; wird diese PEPP geladen.</text></para>
+    <para styleclass="Image Caption"><image src="table_navigation.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Durch einen Doppelklick auf den rot markierten Tabelleneintrag, öffnet sich ein Dialog, indem Sie alle PEPPs sehen, die es zu der Hauptdiagnose &quot;F70.1&quot; gibt. Mit einem Klick auf &quot;Ok&quot; wird diese PEPP geladen.</text></para>
   </body>
 </topic>

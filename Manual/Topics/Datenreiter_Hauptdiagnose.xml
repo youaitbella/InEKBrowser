@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
-<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+<topic template="Default" lasteditedby="muellermi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
   <title translate="true">Datenreiter Hauptdiagnose</title>
   <body>
     <header>
@@ -8,12 +8,12 @@
     </header>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Es werden die Hauptdiagnosekodes, die je PEPP mindestens vier Fälle repräsentieren, in absteigender Reihenfolge nach Anzahl der Fälle angezeigt. </text></para>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Neben dem Kode und dem Text werden ausgewiesen:</text></para>
-    <list id="31" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">Anzahl Fälle: Anzahl Fälle mit entspr. Hauptdiagnose in der ausgewählten PEPP </text></li>
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">Fälle Anteil: Anteil der Fälle mit entspr. Hauptdiagnose an allen Fällen, in Prozent. (D.h.: Zähler: „Fälle“, Nenner: Fallzahl der PEPP)</text></li>
+    <list id="58" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Anzahl Fälle: Anzahl Fälle mit entspr. Hauptdiagnose in der ausgewählten PEPP </text></li>
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Fälle Anteil: Anteil der Fälle mit entspr. Hauptdiagnose an allen Fällen, in Prozent. (D.h.: Zähler: „Fälle“, Nenner: Fallzahl der PEPP)</text></li>
     </list>
     <para styleclass="Normal"></para>
-    <para styleclass="Normal"><image src="tables.png" scale="100.00%" styleclass="Image Caption"></image></para>
-    <para styleclass="Image Caption" style="text-align:left;"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Darstellung der Hauptdiagnosen-Tabelle zu einer ausgewählten PEPP. Die Tabellen werden erst befüllt, wenn Sie eine PEPP ausgewählt haben.</text></para>
+    <para styleclass="Image Caption"><image src="tables.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Darstellung der Hauptdiagnosen-Tabelle zu einer ausgewählten PEPP. Die Tabellen werden erst befüllt, wenn Sie eine PEPP ausgewählt haben.</text></para>
   </body>
 </topic>

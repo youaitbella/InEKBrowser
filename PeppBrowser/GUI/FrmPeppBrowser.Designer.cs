@@ -63,6 +63,7 @@
             this.timerPeppBlink = new System.Windows.Forms.Timer(this.components);
             this.titleBar = new org.inek.PeppBrowser.GUI.TitleBar();
             this.timerPrintWindow = new System.Windows.Forms.Timer(this.components);
+            this.pDFExportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuMain.SuspendLayout();
             this.pnlContentBackground.SuspendLayout();
             this.tabControl.SuspendLayout();
@@ -195,6 +196,7 @@
             this.mnuReport.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.mnuReport.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.druckenToolStripMenuItem,
+            this.pDFExportToolStripMenuItem,
             this.designerToolStripMenuItem});
             this.mnuReport.Name = "mnuReport";
             this.mnuReport.Size = new System.Drawing.Size(54, 20);
@@ -515,6 +517,13 @@
             this.timerPrintWindow.Interval = 1000;
             this.timerPrintWindow.Tick += new System.EventHandler(this.timerPrintWindow_Tick);
             // 
+            // pDFExportToolStripMenuItem
+            // 
+            this.pDFExportToolStripMenuItem.Name = "pDFExportToolStripMenuItem";
+            this.pDFExportToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.pDFExportToolStripMenuItem.Text = "PDF-Export";
+            this.pDFExportToolStripMenuItem.Click += new System.EventHandler(this.pDFExportToolStripMenuItem_Click);
+            // 
             // FrmPeppBrowser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -594,6 +603,7 @@
         private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.Timer timerPeppBlink;
         private System.Windows.Forms.Timer timerPrintWindow;
+        private System.Windows.Forms.ToolStripMenuItem pDFExportToolStripMenuItem;
 
     }
 }

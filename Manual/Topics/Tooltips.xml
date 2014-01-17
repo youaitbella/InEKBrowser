@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
-<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+<topic template="Default" lasteditedby="muellermi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
   <title translate="true">Tooltips</title>
   <body>
     <header>
       <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Tooltips</text></para>
     </header>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Um den </text><var styleclass="Normal">&lt;%TITLE%&gt;</var><text styleclass="Normal" translate="true"> grafisch klein zu halten, wurden längere Bezeichnungen abgekürzt.</text></para>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Mithilfe von sogenannten Tooltips können Sie sich die ausgeschriebenen Bezeichnungen anzeigen lassen.</text></para>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Dazu müssen Sie lediglich die Maus über eine abgekürzte Bezeichnung positionieren.</text></para>
     <para styleclass="Normal"></para>
-    <para styleclass="Normal"><image src="tooltip.png" scale="100.00%" styleclass="Image Caption"></image></para>
-    <para styleclass="Normal"><var styleclass="Normal" style="font-size:8pt; font-style:italic;">&lt;%FIGURE%&gt;</var><text styleclass="Normal" style="font-size:8pt; font-style:italic;" translate="true"> Beispiel eines Tooltips.</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Mithilfe von sogenannten Tooltips können Sie sich die ausgeschriebenen Bezeichnungen anzeigen lassen. Dazu müssen Sie lediglich die Maus über eine abgekürzte Bezeichnung positionieren.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Image Caption"><image src="tooltip.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Beispiel eines Tooltips.</text></para>
     <para styleclass="Normal"></para>
   </body>
 </topic>

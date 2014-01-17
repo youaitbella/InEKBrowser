@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
-<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+<topic template="Default" lasteditedby="muellermi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
   <title translate="true">Systemanforderungen</title>
   <body>
     <header>
@@ -9,15 +9,15 @@
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Der </text><var styleclass="Normal">&lt;%TITLE%&gt;</var><text styleclass="Normal" translate="true"> ist – anders als die bisher veröffentlichten Browser im Entgeltbereich DRG – eine mit C# entwickelte Softwareapplikation.</text></para>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Zum Ausführen des </text><var styleclass="Normal">&lt;%TITLE%&gt;s</var><text styleclass="Normal" translate="true"> sollte Ihr System mindestens folgende Anforderungen erfüllen:</text></para>
     <para styleclass="Normal"></para>
-    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">Windows XP, Vista, 7 oder 8</text></li>
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">Microsoft dotNet Framework 4</text></li>
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">Prozessor: 1GHz</text></li>
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">Arbeitsspeicher: 512MB</text></li>
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">Speicherplatz: 50MB</text></li>
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">Tastatur und Maus</text></li>
+    <list id="22" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Windows XP, Vista, 7 oder 8</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Microsoft dotNet Framework 4</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Prozessor: 1GHz</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Arbeitsspeicher: 512MB</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Speicherplatz: 50MB</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Tastatur und Maus</text></li>
     </list>
-    <para styleclass="Normal"></para>
+    <para styleclass="Bullet Text"></para>
     <para styleclass="Normal"></para>
   </body>
 </topic>

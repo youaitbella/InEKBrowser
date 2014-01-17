@@ -851,19 +851,25 @@ namespace org.inek.PeppBrowser.GUI {
         }
 
 
-        private void druckenToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        private void druckenToolStripMenuItem_Click(object sender, EventArgs e) {
+            CreateReport(OutputType.Print);
+        }
+
+        private void CreateReport(OutputType outputType) {
             if (PEPP == "" || PEPP == null) {
                 MessageBox.Show("Keine PEPP gewählt. Druck nicht möglich!");
-            }
-            else {
+            } else {
                 Reporter reporter = new Reporter();
-                helpProvider1.SetHelpKeyword(this, "Drucken.htm");
-                timerPrintWindow.Start();
-                reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Preview, "peppDruck.lst", setReportData(PEPP), "data");
+                //helpProvider1.SetHelpKeyword(this, "Drucken.htm");
+                //timerPrintWindow.Start();
+                reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, outputType, "peppDruck.lst",
+                                 setReportData(PEPP), "data");
             }
         }
 
+        private void pDFExportToolStripMenuItem_Click(object sender, EventArgs e) {
+            CreateReport(OutputType.PDF);
+        }
 
         private void designerToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -1102,5 +1108,6 @@ namespace org.inek.PeppBrowser.GUI {
                 timerPrintWindow.Stop();
             }
         }
+
     }
 }

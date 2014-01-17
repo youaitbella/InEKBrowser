@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
-<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+<topic template="Default" lasteditedby="muellermi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
   <title translate="true">PEPP-Kennzahlen</title>
   <body>
     <header>
@@ -9,40 +9,41 @@
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Es werden folgende zur PEPP-Version 2014 gehörige Kennzahlen je PEPP ausgewiesen:</text></para>
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Fallzahl</text></para>
-    <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">Anzahl: Fallzahl gesamt und je Vergütungsstufe</text></li>
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">Anteil (%): Fallanteil der Vergütungsstufe (in %)</text></li>
+    <list id="550" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Anzahl: Fallzahl gesamt und je Vergütungsstufe</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Anteil (%): Fallanteil der Vergütungsstufe (in %)</text></li>
     </list>
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Vwd.</text></para>
-    <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">Tage: Anzahl Verweildauertage gesamt und je Vergütungsstufe (gemäß PEPP-Entgeltkatalog Version 2014)</text></li>
+    <list id="551" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Tage: Anzahl Verweildauertage gesamt und je Vergütungsstufe (gemäß PEPP-Entgeltkatalog Version 2014)</text></li>
     </list>
-    <para styleclass="Normal"></para>
+    <para styleclass="Bullet Text"></para>
     <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Katalog</text></para>
-    <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">Verweildauer Von: Untere Grenzverweildauer der jeweiligen Vergütungsstufe (gemäß PEPP-Entgeltkatalog Version 2014)</text></li>
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">Verweildauer Bis: Obere Grenzverweildauer der jeweiligen Vergütungsstufe (gemäß PEPP-Entgeltkatalog Version 2014)</text></li>
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">Bewertungsrelation/Tag: Bewertungsrelation/Tag der jeweiligen Vergütungsstufe (gemäß PEPP-Entgeltkatalog Version 2014)</text></li>
+    <list id="552" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Verweildauer Von: Untere Grenzverweildauer der jeweiligen Vergütungsstufe (gemäß PEPP-Entgeltkatalog Version 2014)</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Verweildauer Bis: Obere Grenzverweildauer der jeweiligen Vergütungsstufe (gemäß PEPP-Entgeltkatalog Version 2014)</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Bewertungsrelation/Tag: Bewertungsrelation/Tag der jeweiligen Vergütungsstufe (gemäß PEPP-Entgeltkatalog Version 2014)</text></li>
     </list>
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Vwd. (Verweildauer) bzw.Tagesk. (Tageskosten) bzw. Alter</text></para>
-    <list id="9" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">Mittelwert: Arithmetischer Mittelwert (m)</text></li>
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">Standardabw.: Standardabweichung (s)</text></li>
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">Homogenitätsk.: Homogenitätskoeffizient = 1/(1+s/m). Es gilt: Je homogener desto näher an 1 bzw. 100%</text></li>
+    <list id="553" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Mittelwert: Arithmetischer Mittelwert (m)</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Standardabw.: Standardabweichung (s)</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Homogenitätsk.: Homogenitätskoeffizient = 1/(1+s/m). Es gilt: Je homogener desto näher an 1 bzw. 100%</text></li>
     </list>
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Geschlecht</text></para>
-    <list id="10" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">Männlich: Anteil männlich je PEPP (in %)</text></li>
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">Weiblich: Anteil weiblich je PEPP (in %)</text></li>
+    <list id="554" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Männlich: Anteil männlich je PEPP (in %)</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Weiblich: Anteil weiblich je PEPP (in %)</text></li>
     </list>
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Alter</text></para>
-    <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
-      <li styleclass="Normal"><text styleclass="Normal" translate="true">&lt; 28 Tage, …, 80 Jahre u. älter: Häufigkeitsverteilung in 16 &#160;Klassen (in %)</text></li>
+    <list id="555" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">&lt; 28 Tage, …, 80 Jahre u. älter: Häufigkeitsverteilung in 16 &#160;Klassen (in %)</text></li>
     </list>
+    <para styleclass="Bullet Text"></para>
     <para styleclass="Normal"></para>
   </body>
 </topic>
