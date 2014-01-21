@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>D:\Projects\PeppBrowser\publish\|D:\Projects\PeppBrowser\|publish\</PublishUrlHistory>
-    <InstallUrlHistory />
+    <PublishUrlHistory>D:\tmp\PeppBrowser\|D:\tmp\|ftp://g-drg.de/PeppBrowser/2014/|D:\Projects\PeppBrowser\publish\|D:\Projects\PeppBrowser\</PublishUrlHistory>
+    <InstallUrlHistory>http://g-drg.de/PeppBrowser/2014/</InstallUrlHistory>
     <SupportUrlHistory />
     <UpdateUrlHistory />
     <BootstrapperUrlHistory />

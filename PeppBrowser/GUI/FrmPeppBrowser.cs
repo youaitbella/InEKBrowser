@@ -1109,5 +1109,9 @@ namespace org.inek.PeppBrowser.GUI {
             }
         }
 
+        private void mnuDataDir_Click(object sender, EventArgs e) {
+            Process.Start("explorer.exe", Application.StartupPath + "\\" + ResourceController.RESOURCE_DIR);
+        }
+
     }
 }

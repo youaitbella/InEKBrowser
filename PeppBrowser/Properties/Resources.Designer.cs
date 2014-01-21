@@ -63,6 +63,26 @@ namespace org.inek.PeppBrowser.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap doc_pdf_icon {
+            get {
+                object obj = ResourceManager.GetObject("doc-pdf-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap folder_document_icon {
+            get {
+                object obj = ResourceManager.GetObject("folder-document-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap peppo_exit {
             get {
                 object obj = ResourceManager.GetObject("peppo_exit", resourceCulture);
