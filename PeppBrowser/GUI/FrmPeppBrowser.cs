@@ -852,22 +852,28 @@ namespace org.inek.PeppBrowser.GUI {
 
 
         private void druckenToolStripMenuItem_Click(object sender, EventArgs e) {
-            CreateReport(OutputType.Print);
+            if (PEPP == "" || PEPP == null) {
+                MessageBox.Show("Keine PEPP gewählt. Druck nicht möglich!");
+                return;
+            }
+            if (MessageBox.Show(this, "Wollen Sie die PEPP " + PEPP + " jetzt ausdrucken?", "Drucken - " + PEPP, MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK) {
+                CreateReport(OutputType.Print);   
+            }
         }
 
         private void CreateReport(OutputType outputType) {
-            if (PEPP == "" || PEPP == null) {
-                MessageBox.Show("Keine PEPP gewählt. Druck nicht möglich!");
-            } else {
                 Reporter reporter = new Reporter();
                 //helpProvider1.SetHelpKeyword(this, "Drucken.htm");
                 //timerPrintWindow.Start();
                 reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, outputType, "peppDruck.lst",
                                  setReportData(PEPP), "data");
-            }
         }
 
         private void pDFExportToolStripMenuItem_Click(object sender, EventArgs e) {
+            if (PEPP == "" || PEPP == null) {
+                MessageBox.Show("Keine PEPP gewählt. PDF-Export nicht möglich!");
+                return;
+            }
             CreateReport(OutputType.PDF);
         }
 

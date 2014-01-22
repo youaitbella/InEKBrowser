@@ -65,14 +65,5 @@
   </topicref>
   <topicref type="topic" id="416536997024245" build="ALL" modified="2014-01-14T15:08:38.145Z" icon="0" href="Drucken">
     <caption translate="true">Report</caption>
-    <topicref type="topic" id="416534805621692" build="ALL" modified="2014-01-14T15:07:55.065Z" icon="0" href="Drucken2">
-      <caption translate="true">Drucken</caption>
-      <topicref type="topic" id="416537378060351" build="ALL" modified="2014-01-14T15:24:30.471Z" icon="0" href="Einzelne_Seite_Drucken">
-        <caption translate="true">Einzelne Seite Drucken</caption>
-      </topicref>
-    </topicref>
-    <topicref type="topic" id="416543620711589" build="ALL" modified="2014-01-16T10:51:26.015Z" icon="0" href="PDF">
-      <caption translate="true">Export in PDF-Format</caption>
-    </topicref>
   </topicref>
 </map>

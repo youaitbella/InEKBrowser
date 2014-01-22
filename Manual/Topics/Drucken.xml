@@ -1,26 +1,22 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
-<topic template="Default" lasteditedby="muellermi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
   <title translate="true">Report</title>
   <body>
     <header>
       <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Report</text></para>
     </header>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Die unten dargestellte Druckoberfläche hilft Ihnen dabei, Ihre ausgewählte PEPP auszudrucken oder zu exportieren (z.B. als PDF).</text></para>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Nachfolgend wird Ihnen genauer erklärt, wie Sie die selektierte PEPP ausdrucken oder aber als PDF exportieren können.</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Der </text><var styleclass="Normal">&lt;%TITLE2%&gt;</var><text styleclass="Normal" translate="true"> bietet Ihnen die Möglichkeit, komfortabel einen Report zu erstellen. Damit können Sie eine PEPP entweder ausdrucken, oder aber ein PDF-Dokument erzeugen.</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Dazu brauchen Sie lediglich eine PEPP zu selektieren und über den Menüpunkt </text><link displaytype="text" defaultstyle="true" type="topiclink" href="Report" styleclass="Normal" style="font-style:italic;" translate="true">Report</link><text styleclass="Normal" style="font-style:italic;" translate="true"> </text><text styleclass="Normal" style="font-style:normal;" translate="true">Ihre gewünschte Reportfunktion.</text></para>
     <para styleclass="Normal"></para>
-    <list id="116" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
-      <li styleclass="Bullet Text"><link displaytype="text" defaultstyle="true" type="topiclink" href="Drucken2" styleclass="Bullet Text" translate="true">Drucken</link></li>
-      <li styleclass="Bullet Text"><link displaytype="text" defaultstyle="true" type="topiclink" href="PDF" styleclass="Bullet Text" translate="true">PDF erzeugen</link></li>
-    </list>
+    <para styleclass="Normal" style="text-align:center;"><image src="menu_report.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Report-Menü.</text></para>
     <para styleclass="Normal"></para>
-    <para styleclass="Image Caption"><image src="print_overview_7.png" scale="100.00%" styleclass="Image Caption"></image></para>
-    <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Die Darstellung der Druckoberfläche mit einzelnen farblich gekennzeichneten Bereichen. </text></para>
-    <para styleclass="Bullet Text"></para>
-    <list id="117" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
-      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Seitenvorschau: </text><text styleclass="Bullet Text" translate="true">Die hier dargestellte Seite zeigt Ihnen eine Vorschau der ausgedruckten Version.</text></li>
-      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Seitenauswahl: </text><text styleclass="Bullet Text" translate="true">Hier können Sie eine der zu druckenden Seite auswählen und in der </text><text styleclass="Bullet Text" translate="true">Seitenvorschau</text><text styleclass="Bullet Text" translate="true"> betrachten.</text></li>
-      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Funktionsband: </text><text styleclass="Bullet Text" translate="true">Das Funktionsband stellt Ihnen verschiedenen Funktionen bereit. Z.B. können Sie hier Ihre ausgewählte PEPP drucken oder nach Begriffen suchen.</text></li>
-    </list>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Durch einen Klick auf </text><text styleclass="Normal" style="font-style:italic;" translate="true">Drucken </text><text styleclass="Normal" style="font-style:normal;" translate="true">wird die ausgewählte PEPP an Ihren Standarddrucker gesendet. Ihr Standarddrucker wird in Ihrem Betriebssystem festgelegt. Wie das geht, entnehmen Sie bitte der Anleitung/Hilfe Ihres Betriebssystem oder fragen Sie Ihre EDV.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-style:normal;" translate="true">Ein Klick auf </text><text styleclass="Normal" style="font-style:italic;" translate="true">PDF-Export</text><text styleclass="Normal" style="font-style:normal;" translate="true"> öffnet einen Dialog indem Sie den Speicherort für das zu erstellende PDF auswählen. Außerdem vergeben Sie dem Dokument einen Namen. Mit einem abschließenden Klick auf </text><text styleclass="Normal" style="font-style:italic;" translate="true">Speichern</text><text styleclass="Normal" style="font-style:normal;" translate="true"> wird Ihr PDF-Dokument erzeugt und an dem gewünschten Ort abgelegt.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal" style="text-align:center;"><image src="print_pdf.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Fenster des PDF-Exports.</text></para>
   </body>
 </topic>

@@ -1,10 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
-<topic template="Default" status="Under Construction" lasteditedby="muellermi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+<topic template="Default" status="Under Construction" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
   <title translate="true">Datengrundlage</title>
-  <keywords>
-    <keyword translate="true">Selbstverwaltungspartner</keyword>
-  </keywords>
   <body>
     <header>
       <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Datengrundlage</text></para>
@@ -14,7 +11,7 @@
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Die Gruppierung erfolgte nach der PEPP-Version 2014. Die Haupt- und Nebendiagnosen sind gemäß ICD-10-GM Version 2012, die Prozeduren gemäß OPS Version 2012 angegeben. </text></para>
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Nicht berücksichtigt sind folgende Fallgruppen:</text></para>
-    <list id="16" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
       <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Begleitpersonen, </text></li>
       <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">rein vorstationäre Fälle,</text></li>
       <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Fälle der Entgeltbereiche „DRG“ und „PIA“.</text></li>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
-<topic template="Default" lasteditedby="muellermi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
   <title translate="true">Datei</title>
   <body>
     <header>
@@ -11,8 +11,8 @@
     <para styleclass="Image Caption"><image src="menu_file.png" scale="100.00%" styleclass="Image Caption"></image></para>
     <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Menüpunkt &quot;Datei&quot;</text></para>
     <para styleclass="Normal"></para>
-    <list id="19" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Button" style="font-family:Symbol; font-size:11pt; color:#000000;">
-      <li styleclass="Button"><text styleclass="Button" translate="true">Beenden</text><br/><text styleclass="Button" translate="true">Beendet den </text><var styleclass="Button">&lt;%TITLE%&gt;</var><text styleclass="Button" translate="true">.</text></li>
+    <list id="9" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Button" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Button"><text styleclass="Normal" translate="true">Beenden</text><br/><text styleclass="Normal" translate="true">Beendet den </text><var styleclass="Normal">&lt;%TITLE2%&gt;</var><text styleclass="Normal" translate="true">.</text></li>
     </list>
   </body>
 </topic>

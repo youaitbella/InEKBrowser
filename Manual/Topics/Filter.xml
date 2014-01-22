@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
-<topic template="Default" lasteditedby="muellermi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
   <title translate="true">Filter</title>
   <body>
     <header>
       <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Filter</text></para>
     </header>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Der </text><var styleclass="Normal">&lt;%TITLE%&gt;</var><text styleclass="Normal" translate="true"> zeigt Ihnen Kennzahlen zu den verschiedenen PEPPs. Durch das Auswählen einer Strukturkategorie und/oder einer Hauptdiagnose, Nebendiagnose oder Prozedur können Sie die PEPPs einschränken. Insofern dient der Filter der gezielten Suche bzw. Recherche einer PEPP.</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Der </text><var styleclass="Normal">&lt;%TITLE2%&gt;</var><text styleclass="Normal" translate="true"> zeigt Ihnen Kennzahlen zu den verschiedenen PEPPs. Durch das Auswählen einer Strukturkategorie und/oder einer Hauptdiagnose, Nebendiagnose oder Prozedur können Sie die PEPPs einschränken. Insofern dient der Filter der gezielten Suche bzw. Recherche einer PEPP.</text></para>
     <para styleclass="Normal"></para>
     <para styleclass="Image Caption"><image src="filter.png" scale="100.00%" styleclass="Image Caption"></image></para>
     <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Der PEPP-Filter ohne jegliche Auswahl.</text></para>
@@ -23,9 +23,9 @@
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Von den drei Listenfeldern Hauptdiagnose, Nebendiagnose- bzw. Prozeduren ist immer nur je eins von drei auswählbar (es ist also keine Schnittmengenbildung z.B. von Nebendiagnosen und Prozeduren möglich).</text></para>
     <para styleclass="Normal"></para>
     <para styleclass="Image Caption"><image src="filter_with_less_pepps.png" scale="100.00%" styleclass="Image Caption"></image></para>
-    <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> PEPP-Filter mit einer gesetzten Strukturkategorie und einer Hauptdiagnose. Durch diese Filtereinstellungen wurde nur noch eine auswählbare PEPP gefunden.</text></para>
+    <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Darstellung der PEPP-Auswahl mit einem gesetzten Filter.</text></para>
     <para styleclass="Normal"></para>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Je nach gewählten Kriterien, kann es vorkommen, dass zu diesen Filtereinstellungen keine PEPP existiert. Dies könnte beispielsweise der Fall sein, wenn Sie nach einer Hauptdiagnose filtern, die in diverse PEPPs einer bestimmten Strukturkategorie führen, sie aber im Filter </text><text styleclass="Normal" style="font-style:italic;" translate="true">Strukturkategorie</text><text styleclass="Normal" translate="true"> eine widersprüchliche Eingabe getätigt haben. Sie werden dann die auf dem folgenden Bild abgebildete Information sehen. Mit einem Klick auf &quot;OK&quot; &#160;können Sie den </text><var styleclass="Normal">&lt;%TITLE%&gt;</var><text styleclass="Normal" translate="true"> weiter benutzen und Ihre Filtereinstellungen anpassen.</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Je nach gewählten Kriterien, kann es vorkommen, dass zu diesen Filtereinstellungen keine PEPP existiert. Dies könnte beispielsweise der Fall sein, wenn Sie nach einer Hauptdiagnose filtern, die in diverse PEPPs einer bestimmten Strukturkategorie führen, sie aber im Filter </text><text styleclass="Normal" style="font-style:italic;" translate="true">Strukturkategorie</text><text styleclass="Normal" translate="true"> eine widersprüchliche Eingabe getätigt haben. Sie werden dann die auf dem folgenden Bild abgebildete Information sehen. Mit einem Klick auf &quot;OK&quot;  können Sie den </text><var styleclass="Normal">&lt;%TITLE2%&gt;</var><text styleclass="Normal" translate="true"> weiter benutzen und Ihre Filtereinstellungen anpassen.</text></para>
     <para styleclass="Normal"></para>
     <para styleclass="Image Caption"><image src="no_pepps.png" scale="100.00%" styleclass="Image Caption"></image></para>
     <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Hinweisdialog, falls keine PEPP existiert, die alle gewählten Filterkriterien erfüllt.</text></para>
