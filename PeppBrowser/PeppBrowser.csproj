@@ -26,7 +26,7 @@
     <InstallUrl>http://g-drg.de/PeppBrowser/2014/</InstallUrl>
     <PublisherName>InEK GmbH</PublisherName>
     <MinimumRequiredVersion>1.0.0.26</MinimumRequiredVersion>
-    <ApplicationRevision>29</ApplicationRevision>
+    <ApplicationRevision>30</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>

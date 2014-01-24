@@ -856,7 +856,10 @@ namespace org.inek.PeppBrowser.GUI {
                 MessageBox.Show("Keine PEPP gewählt. Druck nicht möglich!");
                 return;
             }
-            if (MessageBox.Show(this, "Wollen Sie die PEPP " + PEPP + " jetzt ausdrucken?", "Drucken - " + PEPP, MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK) {
+            if (MessageBox.Show(this, "Wollen Sie die PEPP " + PEPP + " jetzt ausdrucken?\n\n" +
+                                      "Hinweis: Es wird die komplette PEPP ausgedruckt. Um einzelne Seiten auszudrucken, " +
+                                      "benutzen Sie bitte den PDF-Export und einen geeigneten PDF-Reader (z.B. Adobe Acrobat Reader)",
+                                      "Drucken - " + PEPP, MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK) {
                 CreateReport(OutputType.Print);   
             }
         }
