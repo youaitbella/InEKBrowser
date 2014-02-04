@@ -51,12 +51,15 @@ namespace org.inek.PeppBrowser.GUI {
             InitializeComponent();
             Selection.Parent = this;
             cbxPepp.InputField.Click += cbxPepp_ButtonClicked;
+            SetRechercheHelp();
+        }
+
+        private void SetRechercheHelp() {
             search = new FrmSearch(this);
             search.helpProvider1.HelpNamespace = helpProvider1.HelpNamespace;
             search.helpProvider1.SetHelpNavigator(search, HelpNavigator.Topic);
             search.helpProvider1.SetShowHelp(search, true);
             search.helpProvider1.SetHelpKeyword(search, "Navigieren.htm");
-
         }
 
         private void SetDataHelpProvider(FrmList dlg) {
@@ -243,17 +246,19 @@ namespace org.inek.PeppBrowser.GUI {
 
         }
 
-        private void mnuCostDomains_Click(object sender, System.EventArgs e) {
+        private void mnuRecherche_Click(object sender, System.EventArgs e) {
             dlg = new FrmList();
             SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
-            var q = CsvData.Context().CostDomains.Select(d => new {
-                                                                      kb_Nr = d.DomainId,
-                                                                      kb_BereichOrder = d.Order,
-                                                                      kb_Bereich = d.DomainText
+            var q = CsvData.Context().Recherche.Select(d => new {
+                                                                    re_Code = d.Code,
+                                                                    re_Text = d.Text,
+                                                                    re_Hauptdiagnose = d.PrimaryDaignosis,
+                                                                    re_Nebendiagnose = d.SecondaryDiagnosis,
+                                                                    re_Prozedur = d.Procedure
                                                                   });
             dlg.SetDataSource(q);
-            dlg.Text = "Kostenbereich";
+            dlg.Text = "Recherche";
             dlg.ShowDialog();
         }
 
@@ -435,7 +440,7 @@ namespace org.inek.PeppBrowser.GUI {
                         .Join(context.Recherche.Where(r => r.PrimaryDaignosis == 1), d => d.DiagCode, r => r.Code,
                             (d, r) => new {
                                               PEPP = d.PeppCode,
-                                              HD = d.DiagCode,
+                                              Kode = d.DiagCode,
                                               HDBezeichnung = r.Text,
                                               AnzahlFälle = d.Count,
                                               AnteilFälle = d.Fraction
@@ -448,7 +453,7 @@ namespace org.inek.PeppBrowser.GUI {
                         .Join(context.Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
                             (d, r) => new {
                                 PEPP = d.PeppCode,
-                                ND = d.DiagCode,
+                                Kode = d.DiagCode,
                                 Nebendiagnose = r.Text,
                                 AnzahlFälle = d.CaseCount,
                                 AnteilFälle = d.CaseFraction,
@@ -463,7 +468,7 @@ namespace org.inek.PeppBrowser.GUI {
                         .Join(context.Recherche.Where(r => r.Procedure == 1), d => d.ProcCode, r => r.Code,
                             (d, r) => new {
                                 PEPP = d.PeppCode,
-                                OPS = d.ProcCode,
+                                Kode = d.ProcCode,
                                 Prozedur = r.Text,
                                 AnzahlFälle = d.CaseCount,
                                 AnteilFälle = d.CaseFraction,
@@ -490,13 +495,15 @@ namespace org.inek.PeppBrowser.GUI {
             grdMainDiagnosis.Columns[2].Width = 720;
             grdMainDiagnosis.Columns[3].MinimumWidth = 80;
             grdMainDiagnosis.Columns[4].MinimumWidth = 80;
-            grdMainDiagnosis.Columns[2].HeaderText = "HD-Bezeichnung";
+            grdMainDiagnosis.Columns[2].HeaderText = "Hauptdiagnose-Bezeichnung";
             grdMainDiagnosis.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             grdMainDiagnosis.Columns[3].DefaultCellStyle.Format = "##,###";
             grdMainDiagnosis.Columns[3].HeaderText = "Anzahl Fälle";
+            grdMainDiagnosis.Columns[3].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             grdMainDiagnosis.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             grdMainDiagnosis.Columns[4].DefaultCellStyle.Format = "P";
             grdMainDiagnosis.Columns[4].HeaderText = "Anteil Fälle";
+            grdMainDiagnosis.Columns[4].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
         }
 
         private void SetSdGridColumnStyle() {
@@ -510,19 +517,23 @@ namespace org.inek.PeppBrowser.GUI {
             grdSecondaryDiagnosis.Columns[4].Width = 80;
             grdSecondaryDiagnosis.Columns[5].MinimumWidth = 100;
             grdSecondaryDiagnosis.Columns[6].MinimumWidth = 100;
-            grdSecondaryDiagnosis.Columns[2].HeaderText = "ND-Bezeichnung";
+            grdSecondaryDiagnosis.Columns[2].HeaderText = "Nebendiagnose-Bezeichnung";
             grdSecondaryDiagnosis.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             grdSecondaryDiagnosis.Columns[3].DefaultCellStyle.Format = "##,###";
             grdSecondaryDiagnosis.Columns[3].HeaderText = "Anzahl Fälle";
+            grdSecondaryDiagnosis.Columns[3].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             grdSecondaryDiagnosis.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             grdSecondaryDiagnosis.Columns[4].DefaultCellStyle.Format = "P";
             grdSecondaryDiagnosis.Columns[4].HeaderText = "Anteil Fälle";
+            grdSecondaryDiagnosis.Columns[4].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             grdSecondaryDiagnosis.Columns[5].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             grdSecondaryDiagnosis.Columns[5].DefaultCellStyle.Format = "##,###";
             grdSecondaryDiagnosis.Columns[5].HeaderText = "Anzahl Nennungen";
+            grdSecondaryDiagnosis.Columns[5].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             grdSecondaryDiagnosis.Columns[6].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             grdSecondaryDiagnosis.Columns[6].DefaultCellStyle.Format = "P";
             grdSecondaryDiagnosis.Columns[6].HeaderText = "Anteil Nennungen";
+            grdSecondaryDiagnosis.Columns[6].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
         }
 
         private void SetProcedureGridColumnStyle() {
@@ -539,16 +550,20 @@ namespace org.inek.PeppBrowser.GUI {
             grdProcedures.Columns[2].HeaderText = "OPS-Bezeichnung";
             grdProcedures.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             grdProcedures.Columns[3].DefaultCellStyle.Format = "##,###";
+            grdProcedures.Columns[3].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             grdProcedures.Columns[3].HeaderText = "Anzahl Fälle";
             grdProcedures.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             grdProcedures.Columns[4].DefaultCellStyle.Format = "P";
             grdProcedures.Columns[4].HeaderText = "Anteil Fälle";
+            grdProcedures.Columns[4].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             grdProcedures.Columns[5].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             grdProcedures.Columns[5].DefaultCellStyle.Format = "##,###";
             grdProcedures.Columns[5].HeaderText = "Anzahl Nennungen";
+            grdProcedures.Columns[5].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             grdProcedures.Columns[6].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             grdProcedures.Columns[6].DefaultCellStyle.Format = "P";
             grdProcedures.Columns[6].HeaderText = "Anteil Nennungen";
+            grdProcedures.Columns[6].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
         }
 
         private void BuildCostMatrix() {
@@ -722,6 +737,7 @@ namespace org.inek.PeppBrowser.GUI {
             table.Rows.InsertAt(row, 0);
             DataGridViewCellStyle headerStyle = new DataGridViewCellStyle();
             headerStyle.BackColor = headColor;
+            headerStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             for (int i = 0; i < grdCosts.Columns.Count; i++) {
                 grdCosts.Rows[0].Cells[i].Style = headerStyle;
                 CreateCostMatrixHeaderTooltips(i);
@@ -895,6 +911,7 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void grdMainDiagnosis_CellDoubleClick(object sender, DataGridViewCellEventArgs e) {
             if (grdMainDiagnosis.SelectedRows.Count > 0) {
+                SetRechercheHelp();
                 string hd = grdMainDiagnosis.SelectedRows[0].Cells[1].Value.ToString();
                 List<string> pepps =
                     CsvData.Context()
@@ -920,6 +937,7 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void grdSecondaryDiagnosis_CellDoubleClick(object sender, DataGridViewCellEventArgs e) {
             if (grdSecondaryDiagnosis.SelectedRows.Count > 0) {
+                SetRechercheHelp();
                 string sd = grdSecondaryDiagnosis.SelectedRows[0].Cells[1].Value.ToString();
                 List<string> pepps =
                     CsvData.Context()
@@ -956,6 +974,7 @@ namespace org.inek.PeppBrowser.GUI {
 
         private void grdProcedures_CellDoubleClick(object sender, DataGridViewCellEventArgs e) {
             if (grdProcedures.SelectedRows.Count > 0) {
+                SetRechercheHelp();
                 string proc = grdProcedures.SelectedRows[0].Cells[1].Value.ToString();
                 List<string> pepps =
                     CsvData.Context()
@@ -993,7 +1012,8 @@ namespace org.inek.PeppBrowser.GUI {
         private List<PeppData> setReportData(string pepp)
         {
             PeppInfo info = CsvData.Context().PeppInfos.Single(p => p.Code == pepp);
-            info.StruCat = Selection.SKTxt;
+            string skTag = CsvData.Context().Pepps.Where(p => p.Code == PEPP).Select(p => p.StructureCategory).Single();
+            info.StruCat = CsvData.Context().StructureCategories.Where(sk => sk.Category == skTag).Select(sk => sk.Text).Single();
             info.PeppTxt = cbxPepp.Text;
             PeppData data = new PeppData(info);
             //Primary Diagnoses
