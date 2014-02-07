@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("PEPP Browser 2014")]
+[assembly: AssemblyTitle("PEPP-Browser 2014")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("InEK GmbH")]
-[assembly: AssemblyProduct("PeppBrowser")]
-[assembly: AssemblyCopyright("Copyright ©  2013 InEK GmbH")]
+[assembly: AssemblyProduct("PEPP-Browser 2014")]
+[assembly: AssemblyCopyright("Copyright ©  2014 InEK GmbH")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

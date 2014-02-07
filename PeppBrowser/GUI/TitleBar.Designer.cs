@@ -61,9 +61,9 @@
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(35, 3);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(206, 25);
+            this.lblTitle.Size = new System.Drawing.Size(207, 25);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "PEPP Browser 2014";
+            this.lblTitle.Text = "PEPP-Browser 2014";
             this.lblTitle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblTitle_MouseMove);
             // 
             // picInEK

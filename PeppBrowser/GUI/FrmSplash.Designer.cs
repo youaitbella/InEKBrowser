@@ -90,7 +90,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(297, 48);
             this.label1.TabIndex = 2;
-            this.label1.Text = "PEPP Browser\r\nVersion 2014.1\r\n© InEK GmbH";
+            this.label1.Text = "PEPP-Browser\r\nVersion 2014.1\r\n© InEK GmbH";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
