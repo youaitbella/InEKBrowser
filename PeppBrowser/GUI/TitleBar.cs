@@ -97,5 +97,7 @@ namespace org.inek.PeppBrowser.GUI {
                 MouseMoveTitleBar(pnlFormStates, e);
             }
         }
+
+        public string Title { set { lblTitle.Text = value; } }
     }
 }

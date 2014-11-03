@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeppBrowser", "PeppBrowser\PeppBrowser.csproj", "{AE477C50-A88E-4B6C-BCD6-91A005C61FBA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InekControls", "..\InekControls\InekControls.csproj", "{25475440-D19F-42BC-8D5F-C0DE452526D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrgBrowser", "DrgBrowser\DrgBrowser.csproj", "{B116E629-656A-4F76-98F7-0CEBBD24F75F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +34,12 @@ Global
 		{25475440-D19F-42BC-8D5F-C0DE452526D0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{25475440-D19F-42BC-8D5F-C0DE452526D0}.Release|x86.ActiveCfg = Release|Any CPU
 		{25475440-D19F-42BC-8D5F-C0DE452526D0}.Release|x86.Build.0 = Release|Any CPU
+		{B116E629-656A-4F76-98F7-0CEBBD24F75F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B116E629-656A-4F76-98F7-0CEBBD24F75F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B116E629-656A-4F76-98F7-0CEBBD24F75F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B116E629-656A-4F76-98F7-0CEBBD24F75F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B116E629-656A-4F76-98F7-0CEBBD24F75F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B116E629-656A-4F76-98F7-0CEBBD24F75F}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

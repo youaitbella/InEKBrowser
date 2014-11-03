@@ -22,8 +22,9 @@ namespace org.inek.PeppBrowser.GUI {
 
         /* ################## */
 
-        public FrmSplash() {
+        public FrmSplash(string name) {
             InitializeComponent();
+            titleBar.Title = name;
             _printLoader = new PrintLibraryLoader(@"Print\");
             titleBar.ShowIconify = false;
             titleBar.ShowMinMax = false;
