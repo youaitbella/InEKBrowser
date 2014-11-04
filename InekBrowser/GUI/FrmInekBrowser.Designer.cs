@@ -1,5 +1,5 @@
 ﻿namespace org.inek.InekBrowser.GUI {
-    partial class FrmPeppBrowser {
+    partial class FrmInekBrowser {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -24,7 +24,7 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPeppBrowser));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInekBrowser));
             this.mnuMain = new System.Windows.Forms.MenuStrip();
             this.mnuFile = new System.Windows.Forms.ToolStripMenuItem();
             this.beendenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,7 +47,7 @@
             this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlContentBackground = new System.Windows.Forms.Panel();
-            this.selection = new Selection();
+            this.selection = new org.inek.InekBrowser.GUI.Selection();
             this.lblPEPP = new System.Windows.Forms.Label();
             this.cbxPepp = new org.inek.controls.CommonControls.ComboField();
             this.tabControl = new System.Windows.Forms.TabControl();
@@ -59,12 +59,12 @@
             this.grdProcedures = new System.Windows.Forms.DataGridView();
             this.tabDailyCosts = new System.Windows.Forms.TabPage();
             this.grdCosts = new System.Windows.Forms.DataGridView();
-            this.data = new Data();
+            this.data = new org.inek.InekBrowser.GUI.Data();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.timerPeppBlink = new System.Windows.Forms.Timer(this.components);
             this.timerPrintWindow = new System.Windows.Forms.Timer(this.components);
-            this.titleBar = new TitleBar();
+            this.titleBar = new org.inek.InekBrowser.GUI.TitleBar();
             this.mnuMain.SuspendLayout();
             this.pnlContentBackground.SuspendLayout();
             this.tabControl.SuspendLayout();
@@ -80,7 +80,7 @@
             // 
             // mnuMain
             // 
-            this.mnuMain.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.mnuMain.BackColor = System.Drawing.Color.DodgerBlue;
             this.mnuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuFile,
             this.mnuData,
@@ -294,7 +294,7 @@
             // 
             this.selection.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.selection.BackColor = System.Drawing.Color.SeaGreen;
+            this.selection.BackColor = System.Drawing.Color.SteelBlue;
             this.helpProvider1.SetHelpKeyword(this.selection, "Filter.htm");
             this.helpProvider1.SetHelpNavigator(this.selection, System.Windows.Forms.HelpNavigator.Topic);
             this.selection.Location = new System.Drawing.Point(0, 27);
@@ -520,7 +520,7 @@
             // 
             this.titleBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.titleBar.BackColor = System.Drawing.Color.SeaGreen;
+            this.titleBar.BackColor = System.Drawing.Color.SteelBlue;
             this.titleBar.Location = new System.Drawing.Point(3, 0);
             this.titleBar.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.titleBar.MinMaxImage = ((System.Drawing.Image)(resources.GetObject("titleBar.MinMaxImage")));
@@ -535,7 +535,7 @@
             this.titleBar.MouseMoveTitleBar += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
             this.titleBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
             // 
-            // FrmPeppBrowser
+            // FrmInekBrowser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -549,7 +549,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.MinimumSize = new System.Drawing.Size(1188, 500);
-            this.Name = "FrmPeppBrowser";
+            this.Name = "FrmInekBrowser";
             this.helpProvider1.SetShowHelp(this, true);
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

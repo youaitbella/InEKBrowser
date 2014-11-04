@@ -16,7 +16,7 @@ using DataTable = System.Data.DataTable;
 using Point = System.Drawing.Point;
 
 namespace org.inek.InekBrowser.GUI {
-    public partial class FrmPeppBrowser : Form {
+    public partial class FrmInekBrowser : Form {
 
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TitleBar));
 
@@ -47,11 +47,23 @@ namespace org.inek.InekBrowser.GUI {
 
         private FrmSearch search;
 
-        public FrmPeppBrowser() {
+        public FrmInekBrowser() {
             InitializeComponent();
+            UpdateGuiForSystem();
             Selection.Parent = this;
             cbxPepp.InputField.Click += cbxPepp_ButtonClicked;
             SetRechercheHelp();
+        }
+
+        private void UpdateGuiForSystem() {
+            if (Program.SystemBrowser == Program.System.Drg) {
+                titleBar.BackColor = BrowserColors.DrgTitleBar;
+                mnuMain.BackColor = BrowserColors.DrgMenuBand;
+                BackColor = BrowserColors.DrgBrowser;
+                selection.BackColor = BrowserColors.DrgSelection;
+                pnlContentBackground.BackColor = BrowserColors.DrgBackgroundPanel;
+                data.BackColor = BrowserColors.DrgDataBackground;
+            }
         }
 
         private void SetRechercheHelp() {

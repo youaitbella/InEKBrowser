@@ -32,7 +32,7 @@ namespace org.inek.InekBrowser.GUI {
             get; set;
         }
 
-        public new static FrmPeppBrowser Parent { 
+        public new static FrmInekBrowser Parent { 
             private get; set;
         }
 

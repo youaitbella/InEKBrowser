@@ -17,6 +17,9 @@ namespace org.inek.InekBrowser.GUI {
         public event EventHandler ClickedIconify;
         public event MouseEventHandler MouseMoveTitleBar;
 
+        private Color HoverColor;
+        private Color Default;
+
         public bool ShowIconify {
             get { return picIconify.Visible; }
             set { picIconify.Visible = value; }
@@ -34,30 +37,37 @@ namespace org.inek.InekBrowser.GUI {
 
         public TitleBar() {
             InitializeComponent();
+            if (Program.SystemBrowser == Program.System.Drg) {
+                HoverColor = BrowserColors.DrgTitleBarIconHover;
+                Default = BrowserColors.DrgTitleBar;
+            } else if (Program.SystemBrowser == Program.System.Pepp) {
+                HoverColor = BrowserColors.PeppTitleBarIconHover;
+                Default = BrowserColors.PeppTitleBar;
+            }
         }
 
         private void picMinMax_MouseEnter(object sender, EventArgs e) {
-            picMinMax.BackColor = Color.MediumSeaGreen;
+            picMinMax.BackColor = HoverColor;
         }
 
         private void picMinMax_MouseLeave(object sender, EventArgs e) {
-            picMinMax.BackColor = Color.SeaGreen;
+            picMinMax.BackColor = Default;
         }
 
         private void picExit_MouseEnter(object sender, EventArgs e) {
-            picExit.BackColor = Color.MediumSeaGreen;
+            picExit.BackColor = HoverColor;
         }
 
         private void picExit_MouseLeave(object sender, EventArgs e) {
-            picExit.BackColor = Color.SeaGreen;
+            picExit.BackColor = Default;
         }
 
         private void picIconify_MouseEnter(object sender, EventArgs e) {
-            picIconify.BackColor = Color.MediumSeaGreen;
+            picIconify.BackColor = HoverColor;
         }
 
         private void picIconify_MouseLeave(object sender, EventArgs e) {
-            picIconify.BackColor = Color.SeaGreen;
+            picIconify.BackColor = Default;
         }
 
         private void picExit_Click(object sender, EventArgs e) {

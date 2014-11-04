@@ -46,7 +46,7 @@
             // 
             // grpFilter
             // 
-            this.grpFilter.BackColor = System.Drawing.Color.SeaGreen;
+            this.grpFilter.BackColor = System.Drawing.Color.Transparent;
             this.grpFilter.Controls.Add(this.picClearProc);
             this.grpFilter.Controls.Add(this.picClearSd);
             this.grpFilter.Controls.Add(this.picClearHd);
@@ -229,7 +229,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SeaGreen;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.grpFilter);
             this.Name = "Selection";
             this.Size = new System.Drawing.Size(996, 52);
