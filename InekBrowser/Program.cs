@@ -1,12 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using org.inek.InekBrowser.GUI;
 
-namespace DrgBrowser {
+namespace org.inek.InekBrowser {
     static class Program {
+
+        public enum System {
+            Drg,
+            Pepp,
+            Unknown
+        }
+
+        public static System SystemBrowser { get; set; }
+        public const string Year = "2015";
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -14,7 +20,7 @@ namespace DrgBrowser {
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmSplash("DRG"));
+            Application.Run(new FrmSplash("InekBrowser"));
         }
     }
 }
