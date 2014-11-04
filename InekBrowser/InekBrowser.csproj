@@ -7,8 +7,8 @@
     <ProjectGuid>{AE477C50-A88E-4B6C-BCD6-91A005C61FBA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>org.inek.PeppBrowser</RootNamespace>
-    <AssemblyName>PEPP-Browser 2014</AssemblyName>
+    <RootNamespace>org.inek.InekBrowser</RootNamespace>
+    <AssemblyName>InEK-Browser 2014</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>true</IsWebBootstrapper>
@@ -142,6 +142,7 @@
     <Compile Include="Data\PeppData.cs" />
     <Compile Include="Data\Reporter.cs" />
     <Compile Include="Data\ResourceController.cs" />
+    <Compile Include="GUI\BrowserColors.cs" />
     <Compile Include="GUI\FrmAbout.cs">
       <SubType>Form</SubType>
     </Compile>

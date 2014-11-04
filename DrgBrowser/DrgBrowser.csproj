@@ -69,7 +69,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PeppBrowser\InekBrowser.csproj">
+    <ProjectReference Include="..\InekBrowser\InekBrowser.csproj">
       <Project>{AE477C50-A88E-4B6C-BCD6-91A005C61FBA}</Project>
       <Name>InekBrowser</Name>
     </ProjectReference>
