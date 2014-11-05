@@ -149,11 +149,11 @@
     <Compile Include="GUI\FrmAbout.Designer.cs">
       <DependentUpon>FrmAbout.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Data.cs">
+    <Compile Include="GUI\PeppData.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\Data.Designer.cs">
-      <DependentUpon>Data.cs</DependentUpon>
+    <Compile Include="GUI\PeppData.Designer.cs">
+      <DependentUpon>PeppData.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\FrmList.cs">
       <SubType>Form</SubType>
@@ -246,8 +246,8 @@
     <EmbeddedResource Include="GUI\FrmAbout.resx">
       <DependentUpon>FrmAbout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Data.resx">
-      <DependentUpon>Data.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\PeppData.resx">
+      <DependentUpon>PeppData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FrmList.resx">
       <DependentUpon>FrmList.cs</DependentUpon>
@@ -320,6 +320,7 @@
       <Name>InekControls</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

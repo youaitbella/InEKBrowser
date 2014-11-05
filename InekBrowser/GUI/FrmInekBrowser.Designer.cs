@@ -47,8 +47,7 @@
             this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlContentBackground = new System.Windows.Forms.Panel();
-            this.selection = new org.inek.InekBrowser.GUI.Selection();
-            this.lblPEPP = new System.Windows.Forms.Label();
+            this.lblSystem = new System.Windows.Forms.Label();
             this.cbxPepp = new org.inek.controls.CommonControls.ComboField();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabMainDiagnosis = new System.Windows.Forms.TabPage();
@@ -59,11 +58,12 @@
             this.grdProcedures = new System.Windows.Forms.DataGridView();
             this.tabDailyCosts = new System.Windows.Forms.TabPage();
             this.grdCosts = new System.Windows.Forms.DataGridView();
-            this.data = new org.inek.InekBrowser.GUI.Data();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.timerPeppBlink = new System.Windows.Forms.Timer(this.components);
             this.timerPrintWindow = new System.Windows.Forms.Timer(this.components);
+            this.peppData = new org.inek.InekBrowser.GUI.PeppData();
+            this.selection = new org.inek.InekBrowser.GUI.Selection();
             this.titleBar = new org.inek.InekBrowser.GUI.TitleBar();
             this.mnuMain.SuspendLayout();
             this.pnlContentBackground.SuspendLayout();
@@ -278,41 +278,28 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlContentBackground.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pnlContentBackground.Controls.Add(this.peppData);
             this.pnlContentBackground.Controls.Add(this.selection);
-            this.pnlContentBackground.Controls.Add(this.lblPEPP);
+            this.pnlContentBackground.Controls.Add(this.lblSystem);
             this.pnlContentBackground.Controls.Add(this.cbxPepp);
             this.pnlContentBackground.Controls.Add(this.tabControl);
             this.pnlContentBackground.Controls.Add(this.mnuMain);
-            this.pnlContentBackground.Controls.Add(this.data);
             this.pnlContentBackground.Location = new System.Drawing.Point(3, 30);
             this.pnlContentBackground.Name = "pnlContentBackground";
             this.pnlContentBackground.Size = new System.Drawing.Size(1182, 737);
             this.pnlContentBackground.TabIndex = 8;
             this.pnlContentBackground.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
             // 
-            // selection
+            // lblSystem
             // 
-            this.selection.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.selection.BackColor = System.Drawing.Color.SteelBlue;
-            this.helpProvider1.SetHelpKeyword(this.selection, "Filter.htm");
-            this.helpProvider1.SetHelpNavigator(this.selection, System.Windows.Forms.HelpNavigator.Topic);
-            this.selection.Location = new System.Drawing.Point(0, 27);
-            this.selection.Name = "selection";
-            this.helpProvider1.SetShowHelp(this.selection, true);
-            this.selection.Size = new System.Drawing.Size(1182, 52);
-            this.selection.TabIndex = 11;
-            // 
-            // lblPEPP
-            // 
-            this.lblPEPP.AutoSize = true;
-            this.lblPEPP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPEPP.ForeColor = System.Drawing.Color.White;
-            this.lblPEPP.Location = new System.Drawing.Point(7, 91);
-            this.lblPEPP.Name = "lblPEPP";
-            this.lblPEPP.Size = new System.Drawing.Size(52, 16);
-            this.lblPEPP.TabIndex = 9;
-            this.lblPEPP.Text = "PEPP:";
+            this.lblSystem.AutoSize = true;
+            this.lblSystem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSystem.ForeColor = System.Drawing.Color.White;
+            this.lblSystem.Location = new System.Drawing.Point(7, 91);
+            this.lblSystem.Name = "lblSystem";
+            this.lblSystem.Size = new System.Drawing.Size(52, 16);
+            this.lblSystem.TabIndex = 9;
+            this.lblSystem.Text = "PEPP:";
             // 
             // cbxPepp
             // 
@@ -484,17 +471,6 @@
             this.grdCosts.TabIndex = 3;
             this.grdCosts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdCosts_CellClick);
             // 
-            // data
-            // 
-            this.data.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.data.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.data.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.data.Location = new System.Drawing.Point(0, 114);
-            this.data.Name = "data";
-            this.data.Size = new System.Drawing.Size(1182, 270);
-            this.data.TabIndex = 1;
-            // 
             // helpProvider1
             // 
             this.helpProvider1.HelpNamespace = "PeppBrowser.chm";
@@ -515,6 +491,30 @@
             // 
             this.timerPrintWindow.Interval = 1000;
             this.timerPrintWindow.Tick += new System.EventHandler(this.timerPrintWindow_Tick);
+            // 
+            // peppData
+            // 
+            this.peppData.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.peppData.BackColor = System.Drawing.Color.SeaGreen;
+            this.peppData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.peppData.Location = new System.Drawing.Point(0, 114);
+            this.peppData.Name = "peppData";
+            this.peppData.Size = new System.Drawing.Size(1182, 272);
+            this.peppData.TabIndex = 12;
+            // 
+            // selection
+            // 
+            this.selection.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.selection.BackColor = System.Drawing.Color.SteelBlue;
+            this.helpProvider1.SetHelpKeyword(this.selection, "Filter.htm");
+            this.helpProvider1.SetHelpNavigator(this.selection, System.Windows.Forms.HelpNavigator.Topic);
+            this.selection.Location = new System.Drawing.Point(0, 27);
+            this.selection.Name = "selection";
+            this.helpProvider1.SetShowHelp(this.selection, true);
+            this.selection.Size = new System.Drawing.Size(1182, 52);
+            this.selection.TabIndex = 11;
             // 
             // titleBar
             // 
@@ -593,7 +593,6 @@
         private System.Windows.Forms.ToolStripMenuItem mnuManual;
         private System.Windows.Forms.ToolStripMenuItem mnuInfo;
         private System.Windows.Forms.Panel pnlContentBackground;
-        private Data data;
         private System.Windows.Forms.HelpProvider helpProvider1;
         private System.Windows.Forms.ToolStripMenuItem mnuHelp;
         private System.Windows.Forms.TabControl tabControl;
@@ -601,7 +600,7 @@
         private System.Windows.Forms.TabPage tabSecondaryDiagnosis;
         private System.Windows.Forms.TabPage tabProcedures;
         private System.Windows.Forms.TabPage tabDailyCosts;
-        private System.Windows.Forms.Label lblPEPP;
+        private System.Windows.Forms.Label lblSystem;
         private controls.CommonControls.ComboField cbxPepp;
         private System.Windows.Forms.DataGridView grdMainDiagnosis;
         private Selection selection;
@@ -616,6 +615,7 @@
         private System.Windows.Forms.Timer timerPrintWindow;
         private System.Windows.Forms.ToolStripMenuItem pDFExportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mnuDataDir;
+        private PeppData peppData;
 
     }
 }

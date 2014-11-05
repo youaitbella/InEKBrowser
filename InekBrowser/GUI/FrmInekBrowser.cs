@@ -62,7 +62,22 @@ namespace org.inek.InekBrowser.GUI {
                 BackColor = BrowserColors.DrgBrowser;
                 selection.BackColor = BrowserColors.DrgSelection;
                 pnlContentBackground.BackColor = BrowserColors.DrgBackgroundPanel;
-                data.BackColor = BrowserColors.DrgDataBackground;
+                peppData.BackColor = BrowserColors.DrgDataBackground;
+                peppData.ColorTextFields(BrowserColors.DrgDataTextField);
+                titleBar.Title = "DRG-Browser " + Program.Year;
+                pnlContentBackground.Controls.RemoveByKey("peppData");
+                lblSystem.Text = "DRG:";
+            } else if (Program.SystemBrowser == Program.System.Pepp) {
+                titleBar.BackColor = BrowserColors.PeppTitleBar;
+                mnuMain.BackColor = BrowserColors.PeppMenuBand;
+                BackColor = BrowserColors.PeppBrowser;
+                selection.BackColor = BrowserColors.PeppSelection;
+                pnlContentBackground.BackColor = BrowserColors.PeppBackgroundPanel;
+                peppData.BackColor = BrowserColors.PeppDataBackground;
+                peppData.ColorTextFields(BrowserColors.PeppDataTextField);
+                titleBar.Title = "PEPP-Browser " + Program.Year;
+                pnlContentBackground.Controls.RemoveByKey("drgData");
+                lblSystem.Text = "PEPP:";
             }
         }
 
@@ -802,70 +817,35 @@ namespace org.inek.InekBrowser.GUI {
 
         private void FillHeadData() {
             var q = CsvData.Context().PeppInfos.Where(pepp => pepp.Code == PEPP);
-            data.CasesNumSummary = q.Select(p => p.CaseCount.ToString("##,###")).ElementAt(0);
-            data.Cases1 = q.Select(p => p.CaseCountPayLevel1.ToString("##,###")).ElementAt(0);
-            data.Cases2 = q.Select(p => p.CaseCountPayLevel2.ToString("##,###")).ElementAt(0);
-            data.Cases3 = q.Select(p => p.CaseCountPayLevel3.ToString("##,###")).ElementAt(0);
-            data.Cases4 = q.Select(p => p.CaseCountPayLevel4.ToString("##,###")).ElementAt(0);
-            data.Cases5 = q.Select(p => p.CaseCountPayLevel5.ToString("##,###")).ElementAt(0);
-            data.CasesP1 = q.Select(p => Math.Round((p.CaseFractionPayLevel1 * 100), 2).ToString()+"%").ElementAt(0); // Prozent
-            data.CasesP2 = q.Select(p => Math.Round((p.CaseFractionPayLevel2 * 100), 2).ToString()+"%").ElementAt(0); // Prozent
-            data.CasesP3 = q.Select(p => Math.Round((p.CaseFractionPayLevel3 * 100), 2).ToString()+"%").ElementAt(0); // Prozent
-            data.CasesP4 = q.Select(p => Math.Round((p.CaseFractionPayLevel4 * 100), 2).ToString()+"%").ElementAt(0); // Prozent
-            data.CasesP5 = q.Select(p => Math.Round((p.CaseFractionPayLevel5*100), 2).ToString()+"%").ElementAt(0); // Prozent
-            data.DaysSummary = q.Select(p => p.LosSumDays.ToString("##,###")).ElementAt(0);
-            data.Days1 = q.Select(p => p.DayCountPayLevel1.ToString("##,###")).ElementAt(0);
-            data.Days2 = q.Select(p => p.DayCountPayLevel2.ToString("##,###")).ElementAt(0);
-            data.Days3 = q.Select(p => p.DayCountPayLevel3.ToString("##,###")).ElementAt(0);
-            data.Days4 = q.Select(p => p.DayCountPayLevel4.ToString("##,###")).ElementAt(0);
-            data.Days5 = q.Select(p => p.DayCountPayLevel5.ToString("##,###")).ElementAt(0);
-            data.LosAverage = q.Select(p => Math.Round(p.LosAverage, 1).ToString()).ElementAt(0);               // einstellig Dezimal
-            data.LosStandardDeviation = q.Select(p => Math.Round(p.LosStandard, 1).ToString()).ElementAt(0);    // einstellig Dezimal
-            data.LosHomogeneityCoeff = q.Select(p => Math.Round((p.LosHc*100),2).ToString()+"%").ElementAt(0);      // Prozent
-            data.LosFrom1 = q.Select(p => p.LosFromPayLevel1.ToString("##,###")).ElementAt(0);
-            data.LosFrom2 = q.Select(p => p.LosFromPayLevel2.ToString("##,###")).ElementAt(0);
-            data.LosFrom3 = q.Select(p => p.LosFromPayLevel3.ToString("##,###")).ElementAt(0);
-            data.LosFrom4 = q.Select(p => p.LosFromPayLevel4.ToString("##,###")).ElementAt(0);
-            data.LosFrom5 = q.Select(p => p.LosFromPayLevel5.ToString("##,###")).ElementAt(0);
-            data.LosTo1 = q.Select(p => p.LosToPayLevel1.ToString("##,###")).ElementAt(0);
-            data.LosTo2 = q.Select(p => p.LosToPayLevel2.ToString("##,###")).ElementAt(0);
-            data.LosTo3 = q.Select(p => p.LosToPayLevel3.ToString("##,###")).ElementAt(0);
-            data.LosTo4 = q.Select(p => p.LosToPayLevel4.ToString("##,###")).ElementAt(0);
-            data.LosTo5 = q.Select(p => p.LosToPayLevel5.ToString("##,###")).ElementAt(0);
-            data.ValuationRatio1 = q.Select(p => Math.Round(p.ValuationRatLevel1, 4).ToString("N4").Equals("0,0000")
-                ? "" : Math.Round(p.ValuationRatLevel1, 4).ToString("N4")).ElementAt(0);                            // vierstellig Dezimal
-            data.ValuationRatio2 = q.Select(p => Math.Round(p.ValuationRatLevel2, 4).ToString("N4").Equals("0,0000")
-                ? "" : Math.Round(p.ValuationRatLevel2, 4).ToString("N4")).ElementAt(0);                            // vierstellig Dezimal
-            data.ValuationRatio3 = q.Select(p => Math.Round(p.ValuationRatLevel3, 4).ToString("N4").Equals("0,0000")
-                ? "" : Math.Round(p.ValuationRatLevel3, 4).ToString("N4")).ElementAt(0);                            // vierstellig Dezimal
-            data.ValuationRatio4 = q.Select(p => Math.Round(p.ValuationRatLevel4, 4).ToString("N4").Equals("0,0000") 
-                ? "" : Math.Round(p.ValuationRatLevel4, 4).ToString("N4")).ElementAt(0);                            // vierstellig Dezimal
-            data.ValuationRatio5 = q.Select(p => Math.Round(p.ValuationRatLevel5, 4).ToString("N4").Equals("0,0000")
-                ? "" : Math.Round(p.ValuationRatLevel5, 4).ToString("N4")).ElementAt(0);                            // vierstellig Dezimal
-            data.GenderMale = q.Select(p => Math.Round((p.GenderMale * 100), 2).ToString()+"%").ElementAt(0);         // Prozent
-            data.GenderFemale = q.Select(p => Math.Round((p.GenderFemale * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
-            data.AgeAverage = q.Select(p => Math.Round(p.AgeAverage, 1).ToString()).ElementAt(0);               // einstellig Dezimal
-            data.AgeStandardDeviation = q.Select(p => Math.Round(p.AgeStandard,1).ToString()).ElementAt(0);     // einstellig Dezimal
-            data.LT28Days = q.Select(p => Math.Round((p.AgeBelow28Days * 100), 2).ToString()+"%").ElementAt(0);        // Prozent
-            data.Bt28Days1Year = q.Select(p => Math.Round((p.AgeBelow1Year * 100), 2).ToString()+"%").ElementAt(0);    // Prozent
-            data.Bt1Year2 = q.Select(p => Math.Round((p.AgeBelow3Years * 100), 2).ToString()+"%").ElementAt(0);        // Prozent
-            data.Bt3Year5 = q.Select(p => Math.Round((p.AgeBelow6Years * 100), 2).ToString()+"%").ElementAt(0);        // Prozent
-            data.Bt6Year9 = q.Select(p => Math.Round((p.AgeBelow10Years * 100), 2).ToString()+"%").ElementAt(0);       // Prozent
-            data.Bt10Year15 = q.Select(p => Math.Round((p.AgeBelow16Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
-            data.Bt16Year17 = q.Select(p => Math.Round((p.AgeBelow18Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
-            data.Bt18Year29 = q.Select(p => Math.Round((p.AgeBelow30Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
-            data.Bt30Year39 = q.Select(p => Math.Round((p.AgeBelow40Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
-            data.Bt40Year49 = q.Select(p => Math.Round((p.AgeBelow50Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
-            data.Bt50Year54 = q.Select(p => Math.Round((p.AgeBelow55Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
-            data.Bt55Year59 = q.Select(p => Math.Round((p.AgeBelow60Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
-            data.Bt60Year64 = q.Select(p => Math.Round((p.AgeBelow65Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
-            data.Bt65Year74 = q.Select(p => Math.Round((p.AgeBelow75Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
-            data.Bt75Year79 = q.Select(p => Math.Round((p.AgeBelow80Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
-            data.Gt79Year = q.Select(p => Math.Round((p.AgeBelow99Years * 100), 2).ToString()+"%").ElementAt(0);       // Prozent
-            data.DailyCostsAverage = q.Select(p => Math.Round(p.DayCostsAverage, 2).ToString()).ElementAt(0);   // zweistellig Dezimal (money)
-            data.DailyCostsStandardDeviation = q.Select(p => Math.Round(p.DayCostsStandard, 2).ToString()).ElementAt(0);    // zweistellig Dezimal (money)
-            data.DailyCostsHomogeneityCoeff = q.Select(p => Math.Round((p.DayCostsHc * 100), 2).ToString()+"%").ElementAt(0);  // Prozent
-            data.TitlePEPP = "Kennzahlen - " + PEPP;
+            peppData.CasesNumSummary = q.Select(p => p.CaseCount.ToString("##,###")).ElementAt(0);
+            peppData.DaysSummary = q.Select(p => p.LosSumDays.ToString("##,###")).ElementAt(0);
+            peppData.LosAverage = q.Select(p => Math.Round(p.LosAverage, 1).ToString()).ElementAt(0);               // einstellig Dezimal
+            peppData.LosStandardDeviation = q.Select(p => Math.Round(p.LosStandard, 1).ToString()).ElementAt(0);    // einstellig Dezimal
+            peppData.LosHomogeneityCoeff = q.Select(p => Math.Round((p.LosHc*100),2).ToString()+"%").ElementAt(0);      // Prozent
+            peppData.GenderMale = q.Select(p => Math.Round((p.GenderMale * 100), 2).ToString()+"%").ElementAt(0);         // Prozent
+            peppData.GenderFemale = q.Select(p => Math.Round((p.GenderFemale * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
+            peppData.AgeAverage = q.Select(p => Math.Round(p.AgeAverage, 1).ToString()).ElementAt(0);               // einstellig Dezimal
+            peppData.AgeStandardDeviation = q.Select(p => Math.Round(p.AgeStandard,1).ToString()).ElementAt(0);     // einstellig Dezimal
+            peppData.LT28Days = q.Select(p => Math.Round((p.AgeBelow28Days * 100), 2).ToString()+"%").ElementAt(0);        // Prozent
+            peppData.Bt28Days1Year = q.Select(p => Math.Round((p.AgeBelow1Year * 100), 2).ToString()+"%").ElementAt(0);    // Prozent
+            peppData.Bt1Year2 = q.Select(p => Math.Round((p.AgeBelow3Years * 100), 2).ToString()+"%").ElementAt(0);        // Prozent
+            peppData.Bt3Year5 = q.Select(p => Math.Round((p.AgeBelow6Years * 100), 2).ToString()+"%").ElementAt(0);        // Prozent
+            peppData.Bt6Year9 = q.Select(p => Math.Round((p.AgeBelow10Years * 100), 2).ToString()+"%").ElementAt(0);       // Prozent
+            peppData.Bt10Year15 = q.Select(p => Math.Round((p.AgeBelow16Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
+            peppData.Bt16Year17 = q.Select(p => Math.Round((p.AgeBelow18Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
+            peppData.Bt18Year29 = q.Select(p => Math.Round((p.AgeBelow30Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
+            peppData.Bt30Year39 = q.Select(p => Math.Round((p.AgeBelow40Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
+            peppData.Bt40Year49 = q.Select(p => Math.Round((p.AgeBelow50Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
+            peppData.Bt50Year54 = q.Select(p => Math.Round((p.AgeBelow55Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
+            peppData.Bt55Year59 = q.Select(p => Math.Round((p.AgeBelow60Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
+            peppData.Bt60Year64 = q.Select(p => Math.Round((p.AgeBelow65Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
+            peppData.Bt65Year74 = q.Select(p => Math.Round((p.AgeBelow75Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
+            peppData.Bt75Year79 = q.Select(p => Math.Round((p.AgeBelow80Years * 100), 2).ToString()+"%").ElementAt(0);     // Prozent
+            peppData.Gt79Year = q.Select(p => Math.Round((p.AgeBelow99Years * 100), 2).ToString()+"%").ElementAt(0);       // Prozent
+            peppData.DailyCostsAverage = q.Select(p => Math.Round(p.DayCostsAverage, 2).ToString()).ElementAt(0);   // zweistellig Dezimal (money)
+            peppData.DailyCostsStandardDeviation = q.Select(p => Math.Round(p.DayCostsStandard, 2).ToString()).ElementAt(0);    // zweistellig Dezimal (money)
+            peppData.DailyCostsHomogeneityCoeff = q.Select(p => Math.Round((p.DayCostsHc * 100), 2).ToString()+"%").ElementAt(0);  // Prozent
+            peppData.TitlePEPP = "Kennzahlen - " + PEPP;
         }
 
         private void tabControl_SelectedIndexChanged(object sender, EventArgs e) {
@@ -1021,15 +1001,15 @@ namespace org.inek.InekBrowser.GUI {
             }
         }
 
-        private List<PeppData> setReportData(string pepp)
+        private List<InekBrowser.Data.PeppData> setReportData(string pepp)
         {
             PeppInfo info = CsvData.Context().PeppInfos.Single(p => p.Code == pepp);
             string skTag = CsvData.Context().Pepps.Where(p => p.Code == PEPP).Select(p => p.StructureCategory).Single();
             info.StruCat = CsvData.Context().StructureCategories.Where(sk => sk.Category == skTag).Select(sk => sk.Text).Single();
             info.PeppTxt = cbxPepp.Text;
-            PeppData data = new PeppData(info);
+            var peppData = new InekBrowser.Data.PeppData(info);
             //Primary Diagnoses
-            data.PrimDiag = CsvData.Context().PrimaryDiagnoses.Where(p => p.PeppCode == pepp)
+            peppData.PrimDiag = CsvData.Context().PrimaryDiagnoses.Where(p => p.PeppCode == pepp)
                 .Join(CsvData.Context().Recherche.Where(r => r.PrimaryDaignosis == 1), d => d.DiagCode, r => r.Code,
                             (d, r) => new PrimaryDiagnosis() {
                                 PeppCode = d.PeppCode,
@@ -1039,7 +1019,7 @@ namespace org.inek.InekBrowser.GUI {
                                 Fraction = d.Fraction
                             }).ToList();
             //Secondary Diagnoses
-            data.SecDiag = CsvData.Context().SecondaryDiagnoses.Where(p => p.PeppCode == pepp)
+            peppData.SecDiag = CsvData.Context().SecondaryDiagnoses.Where(p => p.PeppCode == pepp)
                 .Join(CsvData.Context().Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
                             (d, r) => new SecondaryDiagnosis(){
                                 PeppCode = d.PeppCode,
@@ -1051,7 +1031,7 @@ namespace org.inek.InekBrowser.GUI {
                                 EntryFraction = d.EntryFraction
                             }).ToList();
             //Procedures
-            data.Proc = CsvData.Context().Procedures.Where(p => p.PeppCode == pepp)
+            peppData.Proc = CsvData.Context().Procedures.Where(p => p.PeppCode == pepp)
                  .Join(CsvData.Context().Recherche.Where(r => r.Procedure == 1), d => d.ProcCode, r => r.Code,
                             (d, r) => new Procedure() {
                                 PeppCode = d.PeppCode,
@@ -1062,7 +1042,7 @@ namespace org.inek.InekBrowser.GUI {
                                 EntryCount = d.EntryCount,
                                 EntryFraction = d.EntryFraction
                             }).ToList();
-            data.Cost = CsvData.Context().Costs.Where(p => p.PeppCode== pepp)
+            peppData.Cost = CsvData.Context().Costs.Where(p => p.PeppCode== pepp)
                 .Join(CsvData.Context().CostDomains, c => c.CostDomain, d => d.DomainId,
                 (c, d) => new Cost()
                               {
@@ -1083,8 +1063,8 @@ namespace org.inek.InekBrowser.GUI {
                                   CostType8 = c.CostType8,
                                   TxtBez = d.DomainText
                               }).ToList();
-            List<PeppData> dataSet = new List<PeppData>();
-            dataSet.Add(data);
+            var dataSet = new List<InekBrowser.Data.PeppData>();
+            dataSet.Add(peppData);
 
             return dataSet;
         }

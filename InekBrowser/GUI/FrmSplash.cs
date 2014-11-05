@@ -126,7 +126,7 @@ namespace org.inek.InekBrowser.GUI {
         private void worker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e) {
             if (!e.Cancelled) {
                 new FrmInekBrowser().Visible = true;
-                this.Visible = false;
+                Visible = false;
             }
         }
 
