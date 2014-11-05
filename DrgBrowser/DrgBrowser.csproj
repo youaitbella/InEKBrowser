@@ -55,6 +55,22 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Data\RepBrDrg_13_15_Drg.csv" />
+    <None Include="Data\RepBrDrg_13_15_Kostenbereich.csv" />
+    <None Include="Data\RepBrDrg_BA_13_15_Hauptdiagnose.csv" />
+    <None Include="Data\RepBrDrg_BA_13_15_Kopfdaten.csv" />
+    <None Include="Data\RepBrDrg_BA_13_15_Kosten.csv" />
+    <None Include="Data\RepBrDrg_BA_13_15_Mdc.csv" />
+    <None Include="Data\RepBrDrg_BA_13_15_Nebendiagnosen.csv" />
+    <None Include="Data\RepBrDrg_BA_13_15_Prozeduren.csv" />
+    <None Include="Data\RepBrDrg_BA_13_15_Recherche.csv" />
+    <None Include="Data\RepBrDrg_HA_13_15_Hauptdiagnose.csv" />
+    <None Include="Data\RepBrDrg_HA_13_15_Kopfdaten.csv" />
+    <None Include="Data\RepBrDrg_HA_13_15_Kosten.csv" />
+    <None Include="Data\RepBrDrg_HA_13_15_Mdc.csv" />
+    <None Include="Data\RepBrDrg_HA_13_15_Nebendiagnosen.csv" />
+    <None Include="Data\RepBrDrg_HA_13_15_Prozeduren.csv" />
+    <None Include="Data\RepBrDrg_HA_13_15_Recherche.csv" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

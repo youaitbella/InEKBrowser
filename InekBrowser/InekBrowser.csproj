@@ -223,33 +223,6 @@
     <Content Include="Print\cmls1801.lng">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\PeppBr_12_14_Hauptdiagnose.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\PeppBr_12_14_Kopfdaten.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\PeppBr_12_14_Kosten.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\PeppBr_12_14_Kostenbereich.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\PeppBr_12_14_Nebendiagnose.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\PeppBr_12_14_Pepp.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\PeppBr_12_14_Prozeduren.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\PeppBr_12_14_Recherche.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\PeppBr_12_14_Strukturkategorie.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Print\cmll18ex.llx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

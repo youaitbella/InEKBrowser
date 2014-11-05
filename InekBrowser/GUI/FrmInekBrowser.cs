@@ -1105,7 +1105,7 @@ namespace org.inek.InekBrowser.GUI {
 
         private void FrmPeppBrowser_Resize(object sender, EventArgs e) {
             if (WindowState == FormWindowState.Maximized) {
-                titleBar.MinMaxImage = (Image) resources.GetObject("peppo_minimize");
+                titleBar.MinMaxImage = (Image)resources.GetObject("peppo_minimize");
             } else {
                 titleBar.MinMaxImage = (Image) resources.GetObject("picMinMax.BackgroundImage");
             }

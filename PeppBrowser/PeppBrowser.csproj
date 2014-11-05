@@ -55,6 +55,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Data\PeppBr_12_14_Hauptdiagnose.csv" />
+    <None Include="Data\PeppBr_12_14_Kopfdaten.csv" />
+    <None Include="Data\PeppBr_12_14_Kosten.csv" />
+    <None Include="Data\PeppBr_12_14_Kostenbereich.csv" />
+    <None Include="Data\PeppBr_12_14_Nebendiagnose.csv" />
+    <None Include="Data\PeppBr_12_14_Pepp.csv" />
+    <None Include="Data\PeppBr_12_14_Prozeduren.csv" />
+    <None Include="Data\PeppBr_12_14_Recherche.csv" />
+    <None Include="Data\PeppBr_12_14_Strukturkategorie.csv" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
