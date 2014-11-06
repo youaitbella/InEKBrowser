@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace org.inek.InekBrowser.Data {
     class ResourceController {
@@ -23,7 +19,7 @@ namespace org.inek.InekBrowser.Data {
             Recherche,
             Strukturkategorie
         };
-
+        
         public static string RESOURCE_DIR = @"Data\";
 
         public static string[] RESOURCE_FILES = {

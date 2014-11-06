@@ -226,6 +226,7 @@
     <Content Include="Print\cmll18ex.llx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\book-open-icon.png" />
     <None Include="cert050216.p12" />
     <None Include="Properties\app.manifest">
       <SubType>Designer</SubType>

@@ -1,16 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.SqlServer.Server;
 
 namespace org.inek.InekBrowser.GUI {
     public partial class PeppData : UserControl {
+
+        public event EventHandler ClickedCatalogue;
 
         public string CasesNumSummary {
             set { txtCasesSummary.Text = value; }
@@ -149,6 +144,11 @@ namespace org.inek.InekBrowser.GUI {
                 var box = (TextBox)tb;
                 box.BackColor = color;
             }
+        }
+
+        private void btnCatalog_Click(object sender, System.EventArgs e) {
+            if (ClickedCatalogue != null)
+                ClickedCatalogue(sender, e);
         }
     }
 }

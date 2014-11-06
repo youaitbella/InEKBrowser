@@ -82,8 +82,7 @@ namespace org.inek.InekBrowser.GUI {
         }
 
         private void SetRechercheHelp() {
-            search = new FrmSearch(this);
-            search.helpProvider1.HelpNamespace = helpProvider1.HelpNamespace;
+            search = new FrmSearch(this) {helpProvider1 = {HelpNamespace = helpProvider1.HelpNamespace}};
             search.helpProvider1.SetHelpNavigator(search, HelpNavigator.Topic);
             search.helpProvider1.SetShowHelp(search, true);
             search.helpProvider1.SetHelpKeyword(search, "Navigieren.htm");
@@ -447,24 +446,24 @@ namespace org.inek.InekBrowser.GUI {
         private void LoadPeppData() {
             tabControl.Enabled = true;
             FillHeadData();
-            mainLoaded = false;
-            secLoaded = false;
-            procLoaded = false;
-            matrixLoaded = false;
+            _mainLoaded = false;
+            _secLoaded = false;
+            _procLoaded = false;
+            _matrixLoaded = false;
             FillActiveTab(ActiveGrid());
         }
 
-        private bool mainLoaded = false;
-        private bool secLoaded = false;
-        private bool procLoaded = false;
-        private bool matrixLoaded = false;
+        private bool _mainLoaded = false;
+        private bool _secLoaded = false;
+        private bool _procLoaded = false;
+        private bool _matrixLoaded = false;
         private void FillActiveTab(DataGridView grid) {
-            CsvData context = CsvData.Context();
+            CsvData dataContext = CsvData.Context();
             Cursor = Cursors.WaitCursor;
-            if (grid == grdMainDiagnosis && !mainLoaded) {
+            if (grid == grdMainDiagnosis && !_mainLoaded) {
                 var q =
-                    context.PrimaryDiagnoses.Where(d => d.PeppCode == PEPP)
-                        .Join(context.Recherche.Where(r => r.PrimaryDaignosis == 1), d => d.DiagCode, r => r.Code,
+                    dataContext.PrimaryDiagnoses.Where(d => d.PeppCode == PEPP)
+                        .Join(dataContext.Recherche.Where(r => r.PrimaryDaignosis == 1), d => d.DiagCode, r => r.Code,
                             (d, r) => new {
                                               PEPP = d.PeppCode,
                                               Kode = d.DiagCode,
@@ -474,10 +473,10 @@ namespace org.inek.InekBrowser.GUI {
                                           });
                 grdMainDiagnosis.DataSource = Helper.ConvertToDataTable(q);
                 SetHdGridColumnStyle();
-                mainLoaded = true;
-            } else if (grid == grdSecondaryDiagnosis && !secLoaded) {
-                var q = context.SecondaryDiagnoses.Where(d => d.PeppCode == PEPP)
-                        .Join(context.Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
+                _mainLoaded = true;
+            } else if (grid == grdSecondaryDiagnosis && !_secLoaded) {
+                var q = dataContext.SecondaryDiagnoses.Where(d => d.PeppCode == PEPP)
+                        .Join(dataContext.Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
                             (d, r) => new {
                                 PEPP = d.PeppCode,
                                 Kode = d.DiagCode,
@@ -489,10 +488,10 @@ namespace org.inek.InekBrowser.GUI {
                             });
                 grdSecondaryDiagnosis.DataSource = Helper.ConvertToDataTable(q);
                 SetSdGridColumnStyle();
-                secLoaded = true;
-            } else if (grid == grdProcedures && !procLoaded) {
-                var q = context.Procedures.Where(d => d.PeppCode == PEPP)
-                        .Join(context.Recherche.Where(r => r.Procedure == 1), d => d.ProcCode, r => r.Code,
+                _secLoaded = true;
+            } else if (grid == grdProcedures && !_procLoaded) {
+                var q = dataContext.Procedures.Where(d => d.PeppCode == PEPP)
+                        .Join(dataContext.Recherche.Where(r => r.Procedure == 1), d => d.ProcCode, r => r.Code,
                             (d, r) => new {
                                 PEPP = d.PeppCode,
                                 Kode = d.ProcCode,
@@ -504,10 +503,10 @@ namespace org.inek.InekBrowser.GUI {
                             });
                 grdProcedures.DataSource = Helper.ConvertToDataTable(q);
                 SetProcedureGridColumnStyle();
-                procLoaded = true;
-            } else if (grid == grdCosts && !matrixLoaded) {
+                _procLoaded = true;
+            } else if (grid == grdCosts && !_matrixLoaded) {
                 BuildCostMatrix();
-                matrixLoaded = true;
+                _matrixLoaded = true;
                 grdCosts.ClearSelection();
             }
             Cursor = Cursors.Default;
@@ -1132,6 +1131,16 @@ namespace org.inek.InekBrowser.GUI {
 
         private void mnuDataDir_Click(object sender, EventArgs e) {
             Process.Start("explorer.exe", Application.StartupPath + "\\" + ResourceController.RESOURCE_DIR);
+        }
+
+        private void peppData_ClickedCatalogue(object sender, EventArgs e) {
+            FrmSearch popup = new FrmSearch(this);
+            popup.StartPosition = FormStartPosition.CenterParent;
+            popup.Text = "Katalog";
+            popup.ButtonShowIsVisible = false;
+            if (popup.ShowDialog(this) == DialogResult.OK) {
+                
+            }
         }
 
     }

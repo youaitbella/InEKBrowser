@@ -90,6 +90,8 @@
             this.txtDaysSummary = new System.Windows.Forms.TextBox();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.txtDegression = new System.Windows.Forms.TextBox();
+            this.btnCatalog = new System.Windows.Forms.Button();
             this.pnlData.SuspendLayout();
             this.grpBigAge.SuspendLayout();
             this.grpGender.SuspendLayout();
@@ -130,9 +132,9 @@
             // pnlHr2
             // 
             this.pnlHr2.BackColor = System.Drawing.Color.White;
-            this.pnlHr2.Location = new System.Drawing.Point(283, 113);
+            this.pnlHr2.Location = new System.Drawing.Point(277, 113);
             this.pnlHr2.Name = "pnlHr2";
-            this.pnlHr2.Size = new System.Drawing.Size(151, 2);
+            this.pnlHr2.Size = new System.Drawing.Size(165, 2);
             this.pnlHr2.TabIndex = 20;
             // 
             // grpBigAge
@@ -172,9 +174,9 @@
             this.grpBigAge.Controls.Add(this.lblLT28Days);
             this.grpBigAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBigAge.ForeColor = System.Drawing.Color.White;
-            this.grpBigAge.Location = new System.Drawing.Point(816, 21);
+            this.grpBigAge.Location = new System.Drawing.Point(653, 21);
             this.grpBigAge.Name = "grpBigAge";
-            this.grpBigAge.Size = new System.Drawing.Size(282, 240);
+            this.grpBigAge.Size = new System.Drawing.Size(523, 134);
             this.grpBigAge.TabIndex = 18;
             this.grpBigAge.TabStop = false;
             this.grpBigAge.Text = "Alter (%)";
@@ -187,7 +189,7 @@
             this.txtGt79Year.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtGt79Year, "PEPP-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtGt79Year, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtGt79Year.Location = new System.Drawing.Point(228, 204);
+            this.txtGt79Year.Location = new System.Drawing.Point(466, 96);
             this.txtGt79Year.Name = "txtGt79Year";
             this.txtGt79Year.ReadOnly = true;
             this.txtGt79Year.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -200,7 +202,7 @@
             // 
             this.lblGtYear79.AutoSize = true;
             this.lblGtYear79.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGtYear79.Location = new System.Drawing.Point(148, 206);
+            this.lblGtYear79.Location = new System.Drawing.Point(386, 98);
             this.lblGtYear79.Name = "lblGtYear79";
             this.lblGtYear79.Size = new System.Drawing.Size(75, 15);
             this.lblGtYear79.TabIndex = 30;
@@ -214,7 +216,7 @@
             this.txtBt75Year79.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt75Year79, "PEPP-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt75Year79, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt75Year79.Location = new System.Drawing.Point(228, 177);
+            this.txtBt75Year79.Location = new System.Drawing.Point(466, 69);
             this.txtBt75Year79.Name = "txtBt75Year79";
             this.txtBt75Year79.ReadOnly = true;
             this.txtBt75Year79.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -227,7 +229,7 @@
             // 
             this.lblBt75Year79.AutoSize = true;
             this.lblBt75Year79.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBt75Year79.Location = new System.Drawing.Point(150, 179);
+            this.lblBt75Year79.Location = new System.Drawing.Point(388, 71);
             this.lblBt75Year79.Name = "lblBt75Year79";
             this.lblBt75Year79.Size = new System.Drawing.Size(73, 15);
             this.lblBt75Year79.TabIndex = 28;
@@ -241,7 +243,7 @@
             this.txtBt65Year74.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt65Year74, "PEPP-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt65Year74, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt65Year74.Location = new System.Drawing.Point(228, 150);
+            this.txtBt65Year74.Location = new System.Drawing.Point(466, 42);
             this.txtBt65Year74.Name = "txtBt65Year74";
             this.txtBt65Year74.ReadOnly = true;
             this.txtBt65Year74.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -254,7 +256,7 @@
             // 
             this.lblBt65Year74.AutoSize = true;
             this.lblBt65Year74.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBt65Year74.Location = new System.Drawing.Point(150, 152);
+            this.lblBt65Year74.Location = new System.Drawing.Point(388, 44);
             this.lblBt65Year74.Name = "lblBt65Year74";
             this.lblBt65Year74.Size = new System.Drawing.Size(73, 15);
             this.lblBt65Year74.TabIndex = 26;
@@ -268,7 +270,7 @@
             this.txtBt60Year64.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt60Year64, "PEPP-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt60Year64, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt60Year64.Location = new System.Drawing.Point(228, 123);
+            this.txtBt60Year64.Location = new System.Drawing.Point(466, 15);
             this.txtBt60Year64.Name = "txtBt60Year64";
             this.txtBt60Year64.ReadOnly = true;
             this.txtBt60Year64.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -281,7 +283,7 @@
             // 
             this.lblBt60Year64.AutoSize = true;
             this.lblBt60Year64.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBt60Year64.Location = new System.Drawing.Point(150, 125);
+            this.lblBt60Year64.Location = new System.Drawing.Point(388, 17);
             this.lblBt60Year64.Name = "lblBt60Year64";
             this.lblBt60Year64.Size = new System.Drawing.Size(73, 15);
             this.lblBt60Year64.TabIndex = 24;
@@ -295,7 +297,7 @@
             this.txtBt55Year59.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt55Year59, "PEPP-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt55Year59, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt55Year59.Location = new System.Drawing.Point(228, 96);
+            this.txtBt55Year59.Location = new System.Drawing.Point(337, 96);
             this.txtBt55Year59.Name = "txtBt55Year59";
             this.txtBt55Year59.ReadOnly = true;
             this.txtBt55Year59.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -308,7 +310,7 @@
             // 
             this.lblBt55Year59.AutoSize = true;
             this.lblBt55Year59.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBt55Year59.Location = new System.Drawing.Point(150, 98);
+            this.lblBt55Year59.Location = new System.Drawing.Point(259, 98);
             this.lblBt55Year59.Name = "lblBt55Year59";
             this.lblBt55Year59.Size = new System.Drawing.Size(73, 15);
             this.lblBt55Year59.TabIndex = 22;
@@ -322,7 +324,7 @@
             this.txtBt50Year54.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt50Year54, "PEPP-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt50Year54, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt50Year54.Location = new System.Drawing.Point(228, 69);
+            this.txtBt50Year54.Location = new System.Drawing.Point(337, 69);
             this.txtBt50Year54.Name = "txtBt50Year54";
             this.txtBt50Year54.ReadOnly = true;
             this.txtBt50Year54.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -335,7 +337,7 @@
             // 
             this.lblBt50Year54.AutoSize = true;
             this.lblBt50Year54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBt50Year54.Location = new System.Drawing.Point(149, 72);
+            this.lblBt50Year54.Location = new System.Drawing.Point(258, 72);
             this.lblBt50Year54.Name = "lblBt50Year54";
             this.lblBt50Year54.Size = new System.Drawing.Size(73, 15);
             this.lblBt50Year54.TabIndex = 20;
@@ -349,7 +351,7 @@
             this.txtBt40Year49.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt40Year49, "PEPP-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt40Year49, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt40Year49.Location = new System.Drawing.Point(228, 42);
+            this.txtBt40Year49.Location = new System.Drawing.Point(337, 42);
             this.txtBt40Year49.Name = "txtBt40Year49";
             this.txtBt40Year49.ReadOnly = true;
             this.txtBt40Year49.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -362,7 +364,7 @@
             // 
             this.lblBt40Year49.AutoSize = true;
             this.lblBt40Year49.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBt40Year49.Location = new System.Drawing.Point(149, 44);
+            this.lblBt40Year49.Location = new System.Drawing.Point(258, 44);
             this.lblBt40Year49.Name = "lblBt40Year49";
             this.lblBt40Year49.Size = new System.Drawing.Size(73, 15);
             this.lblBt40Year49.TabIndex = 18;
@@ -376,7 +378,7 @@
             this.txtBt30Year39.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt30Year39, "PEPP-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt30Year39, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt30Year39.Location = new System.Drawing.Point(228, 15);
+            this.txtBt30Year39.Location = new System.Drawing.Point(337, 15);
             this.txtBt30Year39.Name = "txtBt30Year39";
             this.txtBt30Year39.ReadOnly = true;
             this.txtBt30Year39.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -389,7 +391,7 @@
             // 
             this.lblBt30Year39.AutoSize = true;
             this.lblBt30Year39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBt30Year39.Location = new System.Drawing.Point(150, 17);
+            this.lblBt30Year39.Location = new System.Drawing.Point(259, 17);
             this.lblBt30Year39.Name = "lblBt30Year39";
             this.lblBt30Year39.Size = new System.Drawing.Size(73, 15);
             this.lblBt30Year39.TabIndex = 16;
@@ -403,7 +405,7 @@
             this.txtBt18Year29.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt18Year29, "PEPP-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt18Year29, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt18Year29.Location = new System.Drawing.Point(93, 204);
+            this.txtBt18Year29.Location = new System.Drawing.Point(206, 96);
             this.txtBt18Year29.Name = "txtBt18Year29";
             this.txtBt18Year29.ReadOnly = true;
             this.txtBt18Year29.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -416,7 +418,7 @@
             // 
             this.lblBt18Year29.AutoSize = true;
             this.lblBt18Year29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBt18Year29.Location = new System.Drawing.Point(6, 206);
+            this.lblBt18Year29.Location = new System.Drawing.Point(132, 98);
             this.lblBt18Year29.Name = "lblBt18Year29";
             this.lblBt18Year29.Size = new System.Drawing.Size(73, 15);
             this.lblBt18Year29.TabIndex = 14;
@@ -430,7 +432,7 @@
             this.txtBt16Year17.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt16Year17, "PEPP-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt16Year17, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt16Year17.Location = new System.Drawing.Point(93, 177);
+            this.txtBt16Year17.Location = new System.Drawing.Point(206, 69);
             this.txtBt16Year17.Name = "txtBt16Year17";
             this.txtBt16Year17.ReadOnly = true;
             this.txtBt16Year17.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -443,7 +445,7 @@
             // 
             this.lblBt16Year17.AutoSize = true;
             this.lblBt16Year17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBt16Year17.Location = new System.Drawing.Point(6, 179);
+            this.lblBt16Year17.Location = new System.Drawing.Point(132, 71);
             this.lblBt16Year17.Name = "lblBt16Year17";
             this.lblBt16Year17.Size = new System.Drawing.Size(73, 15);
             this.lblBt16Year17.TabIndex = 12;
@@ -457,7 +459,7 @@
             this.txtBt10Year15.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt10Year15, "PEPP-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt10Year15, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt10Year15.Location = new System.Drawing.Point(93, 150);
+            this.txtBt10Year15.Location = new System.Drawing.Point(206, 42);
             this.txtBt10Year15.Name = "txtBt10Year15";
             this.txtBt10Year15.ReadOnly = true;
             this.txtBt10Year15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -470,7 +472,7 @@
             // 
             this.lblBt10Year15.AutoSize = true;
             this.lblBt10Year15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBt10Year15.Location = new System.Drawing.Point(6, 152);
+            this.lblBt10Year15.Location = new System.Drawing.Point(132, 44);
             this.lblBt10Year15.Name = "lblBt10Year15";
             this.lblBt10Year15.Size = new System.Drawing.Size(73, 15);
             this.lblBt10Year15.TabIndex = 10;
@@ -484,7 +486,7 @@
             this.txtBt6Year9.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt6Year9, "PEPP-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt6Year9, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt6Year9.Location = new System.Drawing.Point(93, 123);
+            this.txtBt6Year9.Location = new System.Drawing.Point(206, 15);
             this.txtBt6Year9.Name = "txtBt6Year9";
             this.txtBt6Year9.ReadOnly = true;
             this.txtBt6Year9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -497,7 +499,7 @@
             // 
             this.lblBt6Year9.AutoSize = true;
             this.lblBt6Year9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBt6Year9.Location = new System.Drawing.Point(6, 125);
+            this.lblBt6Year9.Location = new System.Drawing.Point(134, 17);
             this.lblBt6Year9.Name = "lblBt6Year9";
             this.lblBt6Year9.Size = new System.Drawing.Size(59, 15);
             this.lblBt6Year9.TabIndex = 8;
@@ -511,7 +513,7 @@
             this.txtBt3Year5.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt3Year5, "PEPP-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt3Year5, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt3Year5.Location = new System.Drawing.Point(93, 96);
+            this.txtBt3Year5.Location = new System.Drawing.Point(81, 96);
             this.txtBt3Year5.Name = "txtBt3Year5";
             this.txtBt3Year5.ReadOnly = true;
             this.txtBt3Year5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -538,7 +540,7 @@
             this.txtBt1Year2.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt1Year2, "PEPP-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt1Year2, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt1Year2.Location = new System.Drawing.Point(93, 69);
+            this.txtBt1Year2.Location = new System.Drawing.Point(81, 69);
             this.txtBt1Year2.Name = "txtBt1Year2";
             this.txtBt1Year2.ReadOnly = true;
             this.txtBt1Year2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -565,7 +567,7 @@
             this.txtBt28Days1Year.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt28Days1Year, "PEPP-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt28Days1Year, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt28Days1Year.Location = new System.Drawing.Point(93, 42);
+            this.txtBt28Days1Year.Location = new System.Drawing.Point(81, 42);
             this.txtBt28Days1Year.Name = "txtBt28Days1Year";
             this.txtBt28Days1Year.ReadOnly = true;
             this.txtBt28Days1Year.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -593,7 +595,7 @@
             this.txtLT28Days.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtLT28Days, "PEPP-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtLT28Days, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtLT28Days.Location = new System.Drawing.Point(93, 15);
+            this.txtLT28Days.Location = new System.Drawing.Point(81, 15);
             this.txtLT28Days.Name = "txtLT28Days";
             this.txtLT28Days.ReadOnly = true;
             this.txtLT28Days.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -620,7 +622,7 @@
             this.grpGender.Controls.Add(this.txtGenderMale);
             this.grpGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpGender.ForeColor = System.Drawing.Color.White;
-            this.grpGender.Location = new System.Drawing.Point(591, 161);
+            this.grpGender.Location = new System.Drawing.Point(578, 21);
             this.grpGender.Name = "grpGender";
             this.grpGender.Size = new System.Drawing.Size(72, 100);
             this.grpGender.TabIndex = 17;
@@ -678,7 +680,7 @@
             this.lblFemale.AutoSize = true;
             this.lblFemale.BackColor = System.Drawing.Color.Transparent;
             this.lblFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFemale.Location = new System.Drawing.Point(528, 227);
+            this.lblFemale.Location = new System.Drawing.Point(515, 87);
             this.lblFemale.Name = "lblFemale";
             this.lblFemale.Size = new System.Drawing.Size(57, 15);
             this.lblFemale.TabIndex = 16;
@@ -689,7 +691,7 @@
             this.lblMale.AutoSize = true;
             this.lblMale.BackColor = System.Drawing.Color.Transparent;
             this.lblMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMale.Location = new System.Drawing.Point(524, 200);
+            this.lblMale.Location = new System.Drawing.Point(511, 60);
             this.lblMale.Name = "lblMale";
             this.lblMale.Size = new System.Drawing.Size(61, 15);
             this.lblMale.TabIndex = 15;
@@ -703,7 +705,7 @@
             this.grpAge.Controls.Add(this.txtAgeAverage);
             this.grpAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpAge.ForeColor = System.Drawing.Color.White;
-            this.grpAge.Location = new System.Drawing.Point(438, 21);
+            this.grpAge.Location = new System.Drawing.Point(447, 21);
             this.grpAge.Name = "grpAge";
             this.grpAge.Size = new System.Drawing.Size(62, 134);
             this.grpAge.TabIndex = 14;
@@ -764,7 +766,7 @@
             this.grpDailyCosts.Controls.Add(this.txtDailyCostsAverage);
             this.grpDailyCosts.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpDailyCosts.ForeColor = System.Drawing.Color.White;
-            this.grpDailyCosts.Location = new System.Drawing.Point(360, 21);
+            this.grpDailyCosts.Location = new System.Drawing.Point(369, 21);
             this.grpDailyCosts.Name = "grpDailyCosts";
             this.grpDailyCosts.Size = new System.Drawing.Size(75, 134);
             this.grpDailyCosts.TabIndex = 13;
@@ -839,7 +841,7 @@
             this.lblHomogeneityCoefficient.AutoSize = true;
             this.lblHomogeneityCoefficient.BackColor = System.Drawing.Color.Transparent;
             this.lblHomogeneityCoefficient.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHomogeneityCoefficient.Location = new System.Drawing.Point(180, 119);
+            this.lblHomogeneityCoefficient.Location = new System.Drawing.Point(174, 119);
             this.lblHomogeneityCoefficient.Name = "lblHomogeneityCoefficient";
             this.lblHomogeneityCoefficient.Size = new System.Drawing.Size(96, 15);
             this.lblHomogeneityCoefficient.TabIndex = 12;
@@ -851,7 +853,7 @@
             this.lblStandardDeviation.AutoSize = true;
             this.lblStandardDeviation.BackColor = System.Drawing.Color.Transparent;
             this.lblStandardDeviation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStandardDeviation.Location = new System.Drawing.Point(190, 92);
+            this.lblStandardDeviation.Location = new System.Drawing.Point(184, 92);
             this.lblStandardDeviation.Name = "lblStandardDeviation";
             this.lblStandardDeviation.Size = new System.Drawing.Size(86, 15);
             this.lblStandardDeviation.TabIndex = 11;
@@ -863,7 +865,7 @@
             this.lblAverage.AutoSize = true;
             this.lblAverage.BackColor = System.Drawing.Color.Transparent;
             this.lblAverage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAverage.Location = new System.Drawing.Point(213, 65);
+            this.lblAverage.Location = new System.Drawing.Point(207, 65);
             this.lblAverage.Name = "lblAverage";
             this.lblAverage.Size = new System.Drawing.Size(63, 15);
             this.lblAverage.TabIndex = 10;
@@ -878,13 +880,12 @@
             this.groupBox1.Controls.Add(this.txtLosAverage);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(282, 21);
+            this.groupBox1.Location = new System.Drawing.Point(276, 21);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(72, 134);
+            this.groupBox1.Size = new System.Drawing.Size(90, 134);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Vwd.";
-            this.toolTip.SetToolTip(this.groupBox1, "Verweildauer");
+            this.groupBox1.Text = "Pflegetage";
             // 
             // lblVwdDaysSmall
             // 
@@ -950,14 +951,17 @@
             // 
             // grpCatalog
             // 
-            this.grpCatalog.AutoSize = true;
             this.grpCatalog.BackColor = System.Drawing.Color.Transparent;
+            this.grpCatalog.Controls.Add(this.btnCatalog);
+            this.grpCatalog.Controls.Add(this.txtDegression);
             this.grpCatalog.Controls.Add(this.label1);
             this.grpCatalog.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpCatalog.ForeColor = System.Drawing.Color.White;
-            this.grpCatalog.Location = new System.Drawing.Point(6, 88);
+            this.grpCatalog.Location = new System.Drawing.Point(6, 82);
+            this.grpCatalog.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.grpCatalog.Name = "grpCatalog";
-            this.grpCatalog.Size = new System.Drawing.Size(168, 83);
+            this.grpCatalog.Padding = new System.Windows.Forms.Padding(0);
+            this.grpCatalog.Size = new System.Drawing.Size(168, 73);
             this.grpCatalog.TabIndex = 8;
             this.grpCatalog.TabStop = false;
             this.grpCatalog.Text = "Katalog";
@@ -967,7 +971,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 17);
+            this.label1.Location = new System.Drawing.Point(3, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(127, 15);
             this.label1.TabIndex = 30;
@@ -1019,7 +1023,6 @@
             this.grpLos.TabIndex = 0;
             this.grpLos.TabStop = false;
             this.grpLos.Text = "Pflegetage";
-            this.toolTip.SetToolTip(this.grpLos, "Pflegetage");
             // 
             // txtDaysSummary
             // 
@@ -1029,7 +1032,7 @@
             this.txtDaysSummary.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtDaysSummary, "PEPP-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtDaysSummary, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtDaysSummary.Location = new System.Drawing.Point(17, 20);
+            this.txtDaysSummary.Location = new System.Drawing.Point(19, 20);
             this.txtDaysSummary.Name = "txtDaysSummary";
             this.txtDaysSummary.ReadOnly = true;
             this.txtDaysSummary.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -1048,6 +1051,40 @@
             // helpProvider1
             // 
             this.helpProvider1.HelpNamespace = "PeppBrowser.chm";
+            // 
+            // txtDegression
+            // 
+            this.txtDegression.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtDegression.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDegression.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDegression.ForeColor = System.Drawing.Color.White;
+            this.helpProvider1.SetHelpKeyword(this.txtDegression, "");
+            this.helpProvider1.SetHelpNavigator(this.txtDegression, System.Windows.Forms.HelpNavigator.KeywordIndex);
+            this.txtDegression.Location = new System.Drawing.Point(9, 39);
+            this.txtDegression.Margin = new System.Windows.Forms.Padding(0);
+            this.txtDegression.Name = "txtDegression";
+            this.txtDegression.ReadOnly = true;
+            this.txtDegression.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.helpProvider1.SetShowHelp(this.txtDegression, true);
+            this.txtDegression.Size = new System.Drawing.Size(51, 21);
+            this.txtDegression.TabIndex = 43;
+            this.txtDegression.Text = "0";
+            // 
+            // btnCatalog
+            // 
+            this.btnCatalog.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCatalog.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnCatalog.Image = global::org.inek.InekBrowser.Properties.Resources.book_open_icon;
+            this.btnCatalog.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCatalog.Location = new System.Drawing.Point(71, 37);
+            this.btnCatalog.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.btnCatalog.Name = "btnCatalog";
+            this.btnCatalog.Size = new System.Drawing.Size(89, 24);
+            this.btnCatalog.TabIndex = 44;
+            this.btnCatalog.Text = "Katalog";
+            this.btnCatalog.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCatalog.UseVisualStyleBackColor = true;
+            this.btnCatalog.Click += new System.EventHandler(this.btnCatalog_Click);
             // 
             // PeppData
             // 
@@ -1148,5 +1185,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel pnlHr2;
         private System.Windows.Forms.HelpProvider helpProvider1;
+        private System.Windows.Forms.Button btnCatalog;
+        private System.Windows.Forms.TextBox txtDegression;
     }
 }
