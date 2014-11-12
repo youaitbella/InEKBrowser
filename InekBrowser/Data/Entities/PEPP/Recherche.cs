@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace org.inek.InekBrowser.Data.Entities {
+namespace org.inek.InekBrowser.Data.Entities.PEPP {
     public class Recherche {
         [Column("re_Code")]
         public string Code { get; set; }
@@ -14,7 +9,7 @@ namespace org.inek.InekBrowser.Data.Entities {
         public string Text { get; set; }
 
         [Column("re_Hauptdiagnose")]
-        public int PrimaryDaignosis { get; set; }
+        public int PrimaryDiagnosis { get; set; }
 
         [Column("re_Nebendiagnose")]
         public int SecondaryDiagnosis { get; set; }

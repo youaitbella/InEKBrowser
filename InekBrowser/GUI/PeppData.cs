@@ -123,6 +123,16 @@ namespace org.inek.InekBrowser.GUI {
             set { pnlData.Text = value; }
         }
 
+        public bool CatalogueActive {
+            get { return btnCatalog.Enabled; }
+            set { btnCatalog.Enabled = value; }
+        }
+
+        public string Degression {
+            get { return txtDegression.Text; }
+            set { txtDegression.Text = value; }
+        }
+
         public PeppData() {
             InitializeComponent();
         }

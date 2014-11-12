@@ -3,7 +3,7 @@
 namespace org.inek.InekBrowser.GUI {
     public static class BrowserColors {
 
-        #region PEPP
+        #region Code
         public static Color PeppSplashScreen = Color.SeaGreen;
         public static Color PeppSplashScreenTitleBar = Color.SeaGreen;
         public static Color PeppTitleBar = Color.SeaGreen;

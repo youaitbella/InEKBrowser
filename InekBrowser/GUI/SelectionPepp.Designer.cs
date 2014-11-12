@@ -1,5 +1,5 @@
 ﻿namespace org.inek.InekBrowser.GUI {
-    partial class Selection {
+    partial class SelectionPepp {
         /// <summary> 
         /// Required designer variable.
         /// </summary>
@@ -25,39 +25,39 @@
         private void InitializeComponent() {
             this.grpFilter = new System.Windows.Forms.GroupBox();
             this.picClearProc = new System.Windows.Forms.PictureBox();
-            this.picClearSd = new System.Windows.Forms.PictureBox();
-            this.picClearHd = new System.Windows.Forms.PictureBox();
-            this.picClearSk = new System.Windows.Forms.PictureBox();
-            this.cbxProcedure = new org.inek.controls.CommonControls.ComboField();
+            this.picClearSecondaryDiag = new System.Windows.Forms.PictureBox();
+            this.picClearPrimaryDiag = new System.Windows.Forms.PictureBox();
+            this.picClearCategory = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbxSecondaryDiagnosis = new org.inek.controls.CommonControls.ComboField();
             this.lblSecondaryDiagnosis = new System.Windows.Forms.Label();
             this.lblMainDiagnosis = new System.Windows.Forms.Label();
-            this.cbxMainDiagnosis = new org.inek.controls.CommonControls.ComboField();
-            this.cbxSk = new org.inek.controls.CommonControls.ComboField();
             this.lblSk = new System.Windows.Forms.Label();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.cbxProcedure = new org.inek.controls.CommonControls.ComboField();
+            this.cbxSecondaryDiagnosis = new org.inek.controls.CommonControls.ComboField();
+            this.cbxMainDiagnosis = new org.inek.controls.CommonControls.ComboField();
+            this.cbxCategory = new org.inek.controls.CommonControls.ComboField();
             this.grpFilter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClearProc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picClearSd)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picClearHd)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picClearSk)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picClearSecondaryDiag)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picClearPrimaryDiag)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picClearCategory)).BeginInit();
             this.SuspendLayout();
             // 
             // grpFilter
             // 
             this.grpFilter.BackColor = System.Drawing.Color.Transparent;
             this.grpFilter.Controls.Add(this.picClearProc);
-            this.grpFilter.Controls.Add(this.picClearSd);
-            this.grpFilter.Controls.Add(this.picClearHd);
-            this.grpFilter.Controls.Add(this.picClearSk);
+            this.grpFilter.Controls.Add(this.picClearSecondaryDiag);
+            this.grpFilter.Controls.Add(this.picClearPrimaryDiag);
+            this.grpFilter.Controls.Add(this.picClearCategory);
             this.grpFilter.Controls.Add(this.cbxProcedure);
             this.grpFilter.Controls.Add(this.label1);
             this.grpFilter.Controls.Add(this.cbxSecondaryDiagnosis);
             this.grpFilter.Controls.Add(this.lblSecondaryDiagnosis);
             this.grpFilter.Controls.Add(this.lblMainDiagnosis);
             this.grpFilter.Controls.Add(this.cbxMainDiagnosis);
-            this.grpFilter.Controls.Add(this.cbxSk);
+            this.grpFilter.Controls.Add(this.cbxCategory);
             this.grpFilter.Controls.Add(this.lblSk);
             this.grpFilter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grpFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -67,7 +67,7 @@
             this.grpFilter.Size = new System.Drawing.Size(996, 52);
             this.grpFilter.TabIndex = 2;
             this.grpFilter.TabStop = false;
-            this.grpFilter.Text = "PEPP-Filter";
+            this.grpFilter.Text = "System-Filter";
             // 
             // picClearProc
             // 
@@ -83,60 +83,47 @@
             this.picClearProc.Visible = false;
             this.picClearProc.Click += new System.EventHandler(this.picClearProc_Click);
             // 
-            // picClearSd
+            // picClearSecondaryDiag
             // 
-            this.picClearSd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picClearSd.BackgroundImage = global::org.inek.InekBrowser.Properties.Resources.peppo_exit;
-            this.picClearSd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picClearSd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picClearSd.Location = new System.Drawing.Point(783, 24);
-            this.picClearSd.Name = "picClearSd";
-            this.picClearSd.Size = new System.Drawing.Size(15, 15);
-            this.picClearSd.TabIndex = 18;
-            this.picClearSd.TabStop = false;
-            this.picClearSd.Visible = false;
-            this.picClearSd.Click += new System.EventHandler(this.picClearSd_Click);
+            this.picClearSecondaryDiag.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picClearSecondaryDiag.BackgroundImage = global::org.inek.InekBrowser.Properties.Resources.peppo_exit;
+            this.picClearSecondaryDiag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picClearSecondaryDiag.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picClearSecondaryDiag.Location = new System.Drawing.Point(783, 24);
+            this.picClearSecondaryDiag.Name = "picClearSecondaryDiag";
+            this.picClearSecondaryDiag.Size = new System.Drawing.Size(15, 15);
+            this.picClearSecondaryDiag.TabIndex = 18;
+            this.picClearSecondaryDiag.TabStop = false;
+            this.picClearSecondaryDiag.Visible = false;
+            this.picClearSecondaryDiag.Click += new System.EventHandler(this.picClearSd_Click);
             // 
-            // picClearHd
+            // picClearPrimaryDiag
             // 
-            this.picClearHd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picClearHd.BackgroundImage = global::org.inek.InekBrowser.Properties.Resources.peppo_exit;
-            this.picClearHd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picClearHd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picClearHd.Location = new System.Drawing.Point(585, 24);
-            this.picClearHd.Name = "picClearHd";
-            this.picClearHd.Size = new System.Drawing.Size(15, 15);
-            this.picClearHd.TabIndex = 17;
-            this.picClearHd.TabStop = false;
-            this.picClearHd.Visible = false;
-            this.picClearHd.Click += new System.EventHandler(this.picClearHd_Click);
+            this.picClearPrimaryDiag.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picClearPrimaryDiag.BackgroundImage = global::org.inek.InekBrowser.Properties.Resources.peppo_exit;
+            this.picClearPrimaryDiag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picClearPrimaryDiag.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picClearPrimaryDiag.Location = new System.Drawing.Point(585, 24);
+            this.picClearPrimaryDiag.Name = "picClearPrimaryDiag";
+            this.picClearPrimaryDiag.Size = new System.Drawing.Size(15, 15);
+            this.picClearPrimaryDiag.TabIndex = 17;
+            this.picClearPrimaryDiag.TabStop = false;
+            this.picClearPrimaryDiag.Visible = false;
+            this.picClearPrimaryDiag.Click += new System.EventHandler(this.picClearHd_Click);
             // 
-            // picClearSk
+            // picClearCategory
             // 
-            this.picClearSk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picClearSk.BackgroundImage = global::org.inek.InekBrowser.Properties.Resources.peppo_exit;
-            this.picClearSk.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picClearSk.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picClearSk.Location = new System.Drawing.Point(374, 25);
-            this.picClearSk.Name = "picClearSk";
-            this.picClearSk.Size = new System.Drawing.Size(15, 15);
-            this.picClearSk.TabIndex = 16;
-            this.picClearSk.TabStop = false;
-            this.picClearSk.Visible = false;
-            this.picClearSk.Click += new System.EventHandler(this.picClearSk_Click);
-            // 
-            // cbxProcedure
-            // 
-            this.cbxProcedure.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxProcedure.Location = new System.Drawing.Point(863, 19);
-            this.cbxProcedure.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.cbxProcedure.MinimumSize = new System.Drawing.Size(40, 21);
-            this.cbxProcedure.MutltiLine = false;
-            this.cbxProcedure.Name = "cbxProcedure";
-            this.cbxProcedure.ReadOnly = true;
-            this.cbxProcedure.Size = new System.Drawing.Size(100, 21);
-            this.cbxProcedure.TabIndex = 15;
-            this.cbxProcedure.ButtonClicked += new System.EventHandler(this.cbxProcedure_ButtonClicked);
+            this.picClearCategory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picClearCategory.BackgroundImage = global::org.inek.InekBrowser.Properties.Resources.peppo_exit;
+            this.picClearCategory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picClearCategory.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picClearCategory.Location = new System.Drawing.Point(374, 25);
+            this.picClearCategory.Name = "picClearCategory";
+            this.picClearCategory.Size = new System.Drawing.Size(15, 15);
+            this.picClearCategory.TabIndex = 16;
+            this.picClearCategory.TabStop = false;
+            this.picClearCategory.Visible = false;
+            this.picClearCategory.Click += new System.EventHandler(this.picClearSk_Click);
             // 
             // label1
             // 
@@ -148,19 +135,6 @@
             this.label1.Size = new System.Drawing.Size(52, 13);
             this.label1.TabIndex = 14;
             this.label1.Text = "Prozedur:";
-            // 
-            // cbxSecondaryDiagnosis
-            // 
-            this.cbxSecondaryDiagnosis.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxSecondaryDiagnosis.Location = new System.Drawing.Point(697, 19);
-            this.cbxSecondaryDiagnosis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbxSecondaryDiagnosis.MinimumSize = new System.Drawing.Size(40, 21);
-            this.cbxSecondaryDiagnosis.MutltiLine = false;
-            this.cbxSecondaryDiagnosis.Name = "cbxSecondaryDiagnosis";
-            this.cbxSecondaryDiagnosis.ReadOnly = true;
-            this.cbxSecondaryDiagnosis.Size = new System.Drawing.Size(80, 21);
-            this.cbxSecondaryDiagnosis.TabIndex = 3;
-            this.cbxSecondaryDiagnosis.ButtonClicked += new System.EventHandler(this.cbxSecondaryDiagnosis_ButtonClicked);
             // 
             // lblSecondaryDiagnosis
             // 
@@ -184,33 +158,6 @@
             this.lblMainDiagnosis.TabIndex = 1;
             this.lblMainDiagnosis.Text = "Hauptdiagnose:";
             // 
-            // cbxMainDiagnosis
-            // 
-            this.cbxMainDiagnosis.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxMainDiagnosis.Location = new System.Drawing.Point(499, 19);
-            this.cbxMainDiagnosis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbxMainDiagnosis.MinimumSize = new System.Drawing.Size(30, 21);
-            this.cbxMainDiagnosis.MutltiLine = false;
-            this.cbxMainDiagnosis.Name = "cbxMainDiagnosis";
-            this.cbxMainDiagnosis.ReadOnly = true;
-            this.cbxMainDiagnosis.Size = new System.Drawing.Size(80, 21);
-            this.cbxMainDiagnosis.TabIndex = 0;
-            this.cbxMainDiagnosis.ButtonClicked += new System.EventHandler(this.cbxMainDiagnosis_ButtonClicked);
-            // 
-            // cbxSk
-            // 
-            this.cbxSk.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxSk.Location = new System.Drawing.Point(106, 20);
-            this.cbxSk.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbxSk.MinimumSize = new System.Drawing.Size(100, 21);
-            this.cbxSk.MutltiLine = false;
-            this.cbxSk.Name = "cbxSk";
-            this.cbxSk.ReadOnly = true;
-            this.cbxSk.Size = new System.Drawing.Size(262, 21);
-            this.cbxSk.TabIndex = 9;
-            this.cbxSk.ButtonClicked += new System.EventHandler(this.cbxSk_ButtonClicked);
-            // 
             // lblSk
             // 
             this.lblSk.AutoSize = true;
@@ -225,20 +172,73 @@
             // 
             this.helpProvider1.HelpNamespace = "PeppBrowser.chm";
             // 
+            // cbxProcedure
+            // 
+            this.cbxProcedure.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxProcedure.Location = new System.Drawing.Point(863, 19);
+            this.cbxProcedure.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.cbxProcedure.MinimumSize = new System.Drawing.Size(40, 21);
+            this.cbxProcedure.MutltiLine = false;
+            this.cbxProcedure.Name = "cbxProcedure";
+            this.cbxProcedure.ReadOnly = true;
+            this.cbxProcedure.Size = new System.Drawing.Size(100, 21);
+            this.cbxProcedure.TabIndex = 15;
+            this.cbxProcedure.ButtonClicked += new System.EventHandler(this.cbxProcedure_ButtonClicked);
+            // 
+            // cbxSecondaryDiagnosis
+            // 
+            this.cbxSecondaryDiagnosis.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxSecondaryDiagnosis.Location = new System.Drawing.Point(697, 19);
+            this.cbxSecondaryDiagnosis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbxSecondaryDiagnosis.MinimumSize = new System.Drawing.Size(40, 21);
+            this.cbxSecondaryDiagnosis.MutltiLine = false;
+            this.cbxSecondaryDiagnosis.Name = "cbxSecondaryDiagnosis";
+            this.cbxSecondaryDiagnosis.ReadOnly = true;
+            this.cbxSecondaryDiagnosis.Size = new System.Drawing.Size(80, 21);
+            this.cbxSecondaryDiagnosis.TabIndex = 3;
+            this.cbxSecondaryDiagnosis.ButtonClicked += new System.EventHandler(this.cbxSecondaryDiagnosis_ButtonClicked);
+            // 
+            // cbxMainDiagnosis
+            // 
+            this.cbxMainDiagnosis.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxMainDiagnosis.Location = new System.Drawing.Point(499, 19);
+            this.cbxMainDiagnosis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbxMainDiagnosis.MinimumSize = new System.Drawing.Size(30, 21);
+            this.cbxMainDiagnosis.MutltiLine = false;
+            this.cbxMainDiagnosis.Name = "cbxMainDiagnosis";
+            this.cbxMainDiagnosis.ReadOnly = true;
+            this.cbxMainDiagnosis.Size = new System.Drawing.Size(80, 21);
+            this.cbxMainDiagnosis.TabIndex = 0;
+            this.cbxMainDiagnosis.ButtonClicked += new System.EventHandler(this.cbxMainDiagnosis_ButtonClicked);
+            // 
+            // cbxCategory
+            // 
+            this.cbxCategory.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxCategory.Location = new System.Drawing.Point(106, 20);
+            this.cbxCategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbxCategory.MinimumSize = new System.Drawing.Size(100, 21);
+            this.cbxCategory.MutltiLine = false;
+            this.cbxCategory.Name = "cbxCategory";
+            this.cbxCategory.ReadOnly = true;
+            this.cbxCategory.Size = new System.Drawing.Size(262, 21);
+            this.cbxCategory.TabIndex = 9;
+            this.cbxCategory.ButtonClicked += new System.EventHandler(this.cbxSk_ButtonClicked);
+            // 
             // Selection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.grpFilter);
-            this.Name = "Selection";
+            this.Name = "SelectionPepp";
             this.Size = new System.Drawing.Size(996, 52);
             this.grpFilter.ResumeLayout(false);
             this.grpFilter.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClearProc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picClearSd)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picClearHd)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picClearSk)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picClearSecondaryDiag)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picClearPrimaryDiag)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picClearCategory)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -247,16 +247,16 @@
 
         private System.Windows.Forms.GroupBox grpFilter;
         private System.Windows.Forms.Label lblSk;
-        private controls.CommonControls.ComboField cbxSk;
+        private controls.CommonControls.ComboField cbxCategory;
         private controls.CommonControls.ComboField cbxMainDiagnosis;
         private controls.CommonControls.ComboField cbxSecondaryDiagnosis;
         private System.Windows.Forms.Label lblSecondaryDiagnosis;
         private System.Windows.Forms.Label lblMainDiagnosis;
         private controls.CommonControls.ComboField cbxProcedure;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox picClearSk;
-        private System.Windows.Forms.PictureBox picClearHd;
-        private System.Windows.Forms.PictureBox picClearSd;
+        private System.Windows.Forms.PictureBox picClearCategory;
+        private System.Windows.Forms.PictureBox picClearPrimaryDiag;
+        private System.Windows.Forms.PictureBox picClearSecondaryDiag;
         private System.Windows.Forms.PictureBox picClearProc;
         private System.Windows.Forms.HelpProvider helpProvider1;
 

@@ -29,6 +29,21 @@ namespace org.inek.InekBrowser.GUI {
             InitializeComponent();
             titleBar.ShowIconify = false;
             titleBar.ShowMinMax = false;
+            UpdateGuiForSystem();
+        }
+
+        private void UpdateGuiForSystem() {
+            if (Program.SystemBrowser == Program.System.Pepp) {
+                titleBar.BackColor = BrowserColors.PeppSplashScreenTitleBar;
+                titleBar.Title = "PEPP-Browser " + Program.Year;
+                this.BackColor = BrowserColors.PeppSplashScreen;
+                label1.Text = "PEPP-Browser\nVersion " + Program.Year + ".1\n© InEK GmbH";
+            } else if (Program.SystemBrowser == Program.System.Drg) {
+                titleBar.BackColor = BrowserColors.DrgSplashScreenTitleBar;
+                titleBar.Title = "DRG-Browser " + Program.Year;
+                this.BackColor = BrowserColors.DrgSplashScreen;
+                label1.Text = "DRG-Browser\nVersion " + Program.Year + ".1\n© InEK GmbH";
+            }
         }
 
         private void titleBar_MouseMove(object sender, MouseEventArgs e) {

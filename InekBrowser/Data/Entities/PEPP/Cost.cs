@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace org.inek.InekBrowser.Data.Entities {
+namespace org.inek.InekBrowser.Data.Entities.PEPP {
     public class Cost {
         [Column("ko_Pepp")]
         public string PeppCode { get; set; }

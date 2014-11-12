@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace org.inek.InekBrowser.Data.Entities {
+namespace org.inek.InekBrowser.Data.Entities.PEPP {
     public class PrimaryDiagnosis {
 
         [Column("hd_Pepp")]

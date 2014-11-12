@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace org.inek.InekBrowser.Data.Entities {
+namespace org.inek.InekBrowser.Data.Entities.PEPP {
     public class CostDomain {
         //kb_Nr;kb_Bereich;kb_BereichOrder
 

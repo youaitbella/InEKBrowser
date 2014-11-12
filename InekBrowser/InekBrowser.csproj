@@ -129,16 +129,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\Entities\Cost.cs" />
-    <Compile Include="Data\Entities\CostDomain.cs" />
-    <Compile Include="Data\Entities\PeppInfo.cs" />
-    <Compile Include="Data\Entities\PrimaryDiagnosis.cs" />
-    <Compile Include="Data\Entities\Pepp.cs" />
+    <Compile Include="Data\Entities\DRG\Drg.cs" />
+    <Compile Include="Data\Entities\PEPP\Cost.cs" />
+    <Compile Include="Data\Entities\PEPP\CostDomain.cs" />
+    <Compile Include="Data\Entities\PEPP\Catalog.cs" />
+    <Compile Include="Data\Entities\PEPP\PeppInfo.cs" />
+    <Compile Include="Data\Entities\PEPP\PrimaryDiagnosis.cs" />
+    <Compile Include="Data\Entities\PEPP\Pepp.cs" />
     <Compile Include="Data\CsvData.cs" />
-    <Compile Include="Data\Entities\Procedure.cs" />
-    <Compile Include="Data\Entities\Recherche.cs" />
-    <Compile Include="Data\Entities\SecondaryDiagnosis.cs" />
-    <Compile Include="Data\Entities\StructureCategory.cs" />
+    <Compile Include="Data\Entities\PEPP\Procedure.cs" />
+    <Compile Include="Data\Entities\PEPP\Recherche.cs" />
+    <Compile Include="Data\Entities\PEPP\SecondaryDiagnosis.cs" />
+    <Compile Include="Data\Entities\PEPP\StructureCategory.cs" />
     <Compile Include="Data\PeppData.cs" />
     <Compile Include="Data\Reporter.cs" />
     <Compile Include="Data\ResourceController.cs" />
@@ -173,11 +175,17 @@
     <Compile Include="GUI\FrmSplash.Designer.cs">
       <DependentUpon>FrmSplash.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Selection.cs">
+    <Compile Include="GUI\SelectionDrg.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\Selection.Designer.cs">
-      <DependentUpon>Selection.cs</DependentUpon>
+    <Compile Include="GUI\SelectionDrg.Designer.cs">
+      <DependentUpon>SelectionDrg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SelectionPepp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\SelectionPepp.Designer.cs">
+      <DependentUpon>SelectionPepp.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\TitleBar.cs">
       <SubType>UserControl</SubType>
@@ -246,6 +254,7 @@
     <None Include="Resources\peppo_exit.png" />
     <EmbeddedResource Include="GUI\FrmAbout.resx">
       <DependentUpon>FrmAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\PeppData.resx">
       <DependentUpon>PeppData.cs</DependentUpon>
@@ -259,12 +268,17 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FrmSplash.resx">
       <DependentUpon>FrmSplash.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Selection.resx">
-      <DependentUpon>Selection.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\SelectionDrg.resx">
+      <DependentUpon>SelectionDrg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SelectionPepp.resx">
+      <DependentUpon>SelectionPepp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\TitleBar.resx">
       <DependentUpon>TitleBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

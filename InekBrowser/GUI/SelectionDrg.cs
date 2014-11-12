@@ -6,25 +6,25 @@ using org.inek.controls.gui;
 using org.inek.InekBrowser.Data;
 
 namespace org.inek.InekBrowser.GUI {
-    public partial class Selection : UserControl {
+    public partial class SelectionDrg: UserControl {
 
-        public static string SK {
+        public static string Category {
             get; set;
         }
 
-        public static string SKTxt {
+        public static string CategoryText {
             get; set;
         }
 
-        public static string PEPP {
+        public static string Code {
             get; set;
         }
 
-        public static string PD {
+        public static string PrimaryDiagnosis {
             get; set;
         }
 
-        public static string SD {
+        public static string SecondaryDiagnosis {
             get; set;
         }
 
@@ -32,37 +32,41 @@ namespace org.inek.InekBrowser.GUI {
             get; set;
         }
 
+        public static string Department { get; set; }
+
         public new static FrmInekBrowser Parent { 
             private get; set;
         }
 
-        public Selection() {
+        public SelectionDrg() {
             InitializeComponent();
-            SK = "";
-            SKTxt = "";
-            PEPP = "";
-            PD = "";
-            SD = "";
+            Category = "";
+            CategoryText = "";
+            Code = "";
+            PrimaryDiagnosis = "";
+            SecondaryDiagnosis = "";
             Procedure = "";
-            cbxSk.InputField.Click += cbxSk_ButtonClicked;
+            Department = "";
+            cbxCategory.InputField.Click += cbxCategory_ButtonClicked;
             cbxMainDiagnosis.InputField.Click += cbxMainDiagnosis_ButtonClicked;
             cbxSecondaryDiagnosis.InputField.Click += cbxSecondaryDiagnosis_ButtonClicked;
             cbxProcedure.InputField.Click += cbxProcedure_ButtonClicked;
         }
 
         public void ClearSelection() {
-            SK = "";
-            PEPP = "";
-            PD = "";
-            SD = "";
+            Category = "";
+            Code = "";
+            PrimaryDiagnosis = "";
+            SecondaryDiagnosis = "";
             Procedure = "";
-            cbxSk.Text = "";
+            cbxCategory.Text = "";
             cbxMainDiagnosis.Text = "";
             cbxSecondaryDiagnosis.Text = "";
             cbxProcedure.Text = "";
-            picClearHd.Visible = false;
-            picClearSd.Visible = false;
-            picClearSk.Visible = false;
+            Department = "";
+            picClearPrimaryDiag.Visible = false;
+            picClearSecondaryDiag.Visible = false;
+            picClearCategory.Visible = false;
         }
 
         private void SetHelpProvider(FrmSearch dlg) {
@@ -72,23 +76,23 @@ namespace org.inek.InekBrowser.GUI {
             dlg.helpProvider1.SetHelpKeyword(dlg, "Filter.htm");
         }
 
-        private void cbxSk_ButtonClicked(object sender, EventArgs e) {
-            FrmSearch dlg = new FrmSearch(cbxSk);
+        private void cbxCategory_ButtonClicked(object sender, EventArgs e) {
+            FrmSearch dlg = new FrmSearch(cbxCategory);
             SetHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
             dlg.ButtonShowIsVisible = false;
             var q = CsvData.Context().StructureCategories.OrderBy(sk => sk.Order)
-                    .Select(sk => new { SK = sk.Category, sk.Text, PEPPs = sk.PeppCount, Fälle = sk.CaseCount, Tage = sk.DayCount });
+                    .Select(mdc => new { SK = mdc.Category, mdc.Text, PEPPs = mdc.PeppCount, Fälle = mdc.CaseCount, Tage = mdc.DayCount });
             dlg.SetDataSource(q);
             dlg.KeyColumns = new string[] {"SK", "Text"};
             dlg.Text = "Strukturkategorien";
             if (dlg.ShowDialog(this) == DialogResult.OK) {
-                Parent.TextPEPP = "";
+                Parent.TextCode = "";
                 List<object> cells = (List<object>) dlg.Id;
-                cbxSk.Text = cells[1].ToString();
-                SKTxt = cbxSk.Text;
-                SK = cells[0].ToString();
-                picClearSk.Visible = true;
+                cbxCategory.Text = cells[1].ToString();
+                CategoryText = cbxCategory.Text;
+                Category = cells[0].ToString();
+                picClearCategory.Visible = true;
             }
 
         }
@@ -99,21 +103,21 @@ namespace org.inek.InekBrowser.GUI {
             dlg.StartPosition = FormStartPosition.CenterParent;
             dlg.ButtonShowIsVisible = false;
             var q = CsvData.Context()
-                .Recherche.Where(md => md.PrimaryDaignosis == 1)
+                .Recherche.Where(md => md.PrimaryDiagnosis == 1)
                 .Select(md => new {Hauptdiagnose = md.Code, Text = md.Text});
             dlg.SetDataSource(q);
             dlg.Text = "Hauptdiagnosen";
             dlg.KeyColumns = new[] {"Hauptdiagnose"};
             if (dlg.ShowDialog() == DialogResult.OK) {
-                Parent.TextPEPP = "";
+                Parent.TextCode = "";
                 cbxProcedure.Text = "";
                 Procedure = "";
                 cbxSecondaryDiagnosis.Text = "";
-                SD = "";
+                SecondaryDiagnosis = "";
                 cbxMainDiagnosis.Text = dlg.Id.ToString();
-                PD = dlg.Id.ToString();
-                picClearHd.Visible = true;
-                picClearSd.Visible = false;
+                PrimaryDiagnosis = dlg.Id.ToString();
+                picClearPrimaryDiag.Visible = true;
+                picClearSecondaryDiag.Visible = false;
                 picClearProc.Visible = false;
             }
         }
@@ -131,15 +135,15 @@ namespace org.inek.InekBrowser.GUI {
             dlg.Text = "Sekundärdiagnosen";
             dlg.KeyColumns = new[] {"Sekundärdiagnose"};
             if (dlg.ShowDialog() == DialogResult.OK) {
-                Parent.TextPEPP = "";
+                Parent.TextCode = "";
                 cbxMainDiagnosis.Text = "";
-                PD = "";
+                PrimaryDiagnosis = "";
                 cbxProcedure.Text = "";
                 Procedure = "";
                 cbxSecondaryDiagnosis.Text = dlg.Id.ToString();
-                SD = dlg.Id.ToString();
-                picClearSd.Visible = true;
-                picClearHd.Visible = false;
+                SecondaryDiagnosis = dlg.Id.ToString();
+                picClearSecondaryDiag.Visible = true;
+                picClearPrimaryDiag.Visible = false;
                 picClearProc.Visible = false;
             }
         }
@@ -157,41 +161,47 @@ namespace org.inek.InekBrowser.GUI {
             dlg.Text = "Prozeduren";
             dlg.KeyColumns = new[] {"Prozedur"};
             if (dlg.ShowDialog() == DialogResult.OK) {
-                Parent.TextPEPP = "";
+                Parent.TextCode = "";
                 cbxMainDiagnosis.Text = "";
-                PD = "";
+                PrimaryDiagnosis = "";
                 cbxSecondaryDiagnosis.Text = "";
-                SD = "";
+                SecondaryDiagnosis = "";
                 cbxProcedure.Text = dlg.Id.ToString();
                 Procedure = dlg.Id.ToString();
                 picClearProc.Visible = true;
-                picClearHd.Visible = false;
-                picClearSd.Visible = false;
+                picClearPrimaryDiag.Visible = false;
+                picClearSecondaryDiag.Visible = false;
             }
         }
 
         private void picClearSk_Click(object sender, EventArgs e) {
-            SK = "";
-            cbxSk.Text = "";
-            picClearSk.Visible = false;
+            Category = "";
+            cbxCategory.Text = "";
+            picClearCategory.Visible = false;
         }
 
         private void picClearHd_Click(object sender, EventArgs e) {
             cbxMainDiagnosis.Text = "";
-            PD = "";
-            picClearHd.Visible = false;
+            PrimaryDiagnosis = "";
+            picClearPrimaryDiag.Visible = false;
         }
 
         private void picClearSd_Click(object sender, EventArgs e) {
             cbxSecondaryDiagnosis.Text = "";
-            SD = "";
-            picClearSd.Visible = false;
+            SecondaryDiagnosis = "";
+            picClearSecondaryDiag.Visible = false;
         }
 
         private void picClearProc_Click(object sender, EventArgs e) {
             cbxProcedure.Text = "";
             Procedure = "";
             picClearProc.Visible = false;
+        }
+
+        private void picClearDepartment_Click(object sender, EventArgs e) {
+            cbxDepartment.Text = "";
+            Department = "";
+            picClearDepartment.Visible = false;
         }
     }
 }

@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace org.inek.InekBrowser.Data.Entities {
+namespace org.inek.InekBrowser.Data.Entities.PEPP {
     public class SecondaryDiagnosis {
         [Column("nd_Pepp")]
         public string PeppCode { get; set; }

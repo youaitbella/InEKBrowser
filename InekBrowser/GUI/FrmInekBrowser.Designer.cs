@@ -27,6 +27,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInekBrowser));
             this.mnuMain = new System.Windows.Forms.MenuStrip();
             this.mnuFile = new System.Windows.Forms.ToolStripMenuItem();
+            this.beendenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuData = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuStructureCategories = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPepp = new System.Windows.Forms.ToolStripMenuItem();
@@ -36,11 +37,20 @@
             this.mnuProcedures = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuCosts = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuRecherche = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuDataDir = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuReport = new System.Windows.Forms.ToolStripMenuItem();
+            this.druckenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pDFExportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.designerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuQuestionTag = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuManual = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlContentBackground = new System.Windows.Forms.Panel();
+            this.peppData = new org.inek.InekBrowser.GUI.PeppData();
+            this.selectionPepp = new org.inek.InekBrowser.GUI.SelectionPepp();
             this.lblSystem = new System.Windows.Forms.Label();
+            this.cbxPepp = new org.inek.controls.CommonControls.ComboField();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabMainDiagnosis = new System.Windows.Forms.TabPage();
             this.grdMainDiagnosis = new System.Windows.Forms.DataGridView();
@@ -54,16 +64,6 @@
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.timerPeppBlink = new System.Windows.Forms.Timer(this.components);
             this.timerPrintWindow = new System.Windows.Forms.Timer(this.components);
-            this.beendenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuDataDir = new System.Windows.Forms.ToolStripMenuItem();
-            this.druckenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pDFExportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuManual = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuInfo = new System.Windows.Forms.ToolStripMenuItem();
-            this.peppData = new org.inek.InekBrowser.GUI.PeppData();
-            this.selection = new org.inek.InekBrowser.GUI.Selection();
-            this.cbxPepp = new org.inek.controls.CommonControls.ComboField();
             this.titleBar = new org.inek.InekBrowser.GUI.TitleBar();
             this.mnuMain.SuspendLayout();
             this.pnlContentBackground.SuspendLayout();
@@ -103,6 +103,15 @@
             this.mnuFile.Size = new System.Drawing.Size(46, 20);
             this.mnuFile.Text = "Datei";
             // 
+            // beendenToolStripMenuItem
+            // 
+            this.beendenToolStripMenuItem.Image = global::org.inek.InekBrowser.Properties.Resources.peppo_quit;
+            this.beendenToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.White;
+            this.beendenToolStripMenuItem.Name = "beendenToolStripMenuItem";
+            this.beendenToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.beendenToolStripMenuItem.Text = "Beenden";
+            this.beendenToolStripMenuItem.Click += new System.EventHandler(this.beendenToolStripMenuItem_Click);
+            // 
             // mnuData
             // 
             this.mnuData.BackColor = System.Drawing.Color.MediumSeaGreen;
@@ -133,7 +142,7 @@
             this.mnuPepp.BackColor = System.Drawing.SystemColors.Control;
             this.mnuPepp.Name = "mnuPepp";
             this.mnuPepp.Size = new System.Drawing.Size(185, 22);
-            this.mnuPepp.Text = "PEPP";
+            this.mnuPepp.Text = "Code";
             this.mnuPepp.Click += new System.EventHandler(this.mnuPepp_Click);
             // 
             // mnuPeppInfo
@@ -184,6 +193,14 @@
             this.mnuRecherche.Text = "Recherche";
             this.mnuRecherche.Click += new System.EventHandler(this.mnuRecherche_Click);
             // 
+            // mnuDataDir
+            // 
+            this.mnuDataDir.Image = global::org.inek.InekBrowser.Properties.Resources.folder_document_icon;
+            this.mnuDataDir.Name = "mnuDataDir";
+            this.mnuDataDir.Size = new System.Drawing.Size(185, 22);
+            this.mnuDataDir.Text = "Daten-Ordner öffnen";
+            this.mnuDataDir.Click += new System.EventHandler(this.mnuDataDir_Click);
+            // 
             // mnuReport
             // 
             this.mnuReport.BackColor = System.Drawing.Color.MediumSeaGreen;
@@ -194,6 +211,23 @@
             this.mnuReport.Name = "mnuReport";
             this.mnuReport.Size = new System.Drawing.Size(54, 20);
             this.mnuReport.Text = "Report";
+            // 
+            // druckenToolStripMenuItem
+            // 
+            this.druckenToolStripMenuItem.Image = global::org.inek.InekBrowser.Properties.Resources.peppo_print;
+            this.druckenToolStripMenuItem.Name = "druckenToolStripMenuItem";
+            this.druckenToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.druckenToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.druckenToolStripMenuItem.Text = "Drucken";
+            this.druckenToolStripMenuItem.Click += new System.EventHandler(this.druckenToolStripMenuItem_Click);
+            // 
+            // pDFExportToolStripMenuItem
+            // 
+            this.pDFExportToolStripMenuItem.Image = global::org.inek.InekBrowser.Properties.Resources.doc_pdf_icon;
+            this.pDFExportToolStripMenuItem.Name = "pDFExportToolStripMenuItem";
+            this.pDFExportToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.pDFExportToolStripMenuItem.Text = "PDF-Export";
+            this.pDFExportToolStripMenuItem.Click += new System.EventHandler(this.pDFExportToolStripMenuItem_Click);
             // 
             // designerToolStripMenuItem
             // 
@@ -214,6 +248,30 @@
             this.mnuQuestionTag.Size = new System.Drawing.Size(24, 20);
             this.mnuQuestionTag.Text = "?";
             // 
+            // mnuManual
+            // 
+            this.mnuManual.Image = global::org.inek.InekBrowser.Properties.Resources.peppo_manual;
+            this.mnuManual.Name = "mnuManual";
+            this.mnuManual.Size = new System.Drawing.Size(130, 22);
+            this.mnuManual.Text = "Handbuch";
+            this.mnuManual.Click += new System.EventHandler(this.mnuManual_Click);
+            // 
+            // mnuHelp
+            // 
+            this.mnuHelp.Image = global::org.inek.InekBrowser.Properties.Resources.peppo_help;
+            this.mnuHelp.Name = "mnuHelp";
+            this.mnuHelp.Size = new System.Drawing.Size(130, 22);
+            this.mnuHelp.Text = "Hilfe";
+            this.mnuHelp.Click += new System.EventHandler(this.mnuHelp_Click);
+            // 
+            // mnuInfo
+            // 
+            this.mnuInfo.Image = global::org.inek.InekBrowser.Properties.Resources.peppo_info;
+            this.mnuInfo.Name = "mnuInfo";
+            this.mnuInfo.Size = new System.Drawing.Size(130, 22);
+            this.mnuInfo.Text = "Info";
+            this.mnuInfo.Click += new System.EventHandler(this.mnuInfo_Click);
+            // 
             // pnlContentBackground
             // 
             this.pnlContentBackground.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -221,7 +279,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlContentBackground.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.pnlContentBackground.Controls.Add(this.peppData);
-            this.pnlContentBackground.Controls.Add(this.selection);
+            this.pnlContentBackground.Controls.Add(this.selectionPepp);
             this.pnlContentBackground.Controls.Add(this.lblSystem);
             this.pnlContentBackground.Controls.Add(this.cbxPepp);
             this.pnlContentBackground.Controls.Add(this.tabControl);
@@ -232,6 +290,33 @@
             this.pnlContentBackground.TabIndex = 8;
             this.pnlContentBackground.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
             // 
+            // peppData
+            // 
+            this.peppData.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.peppData.BackColor = System.Drawing.Color.SeaGreen;
+            this.peppData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.peppData.CatalogueActive = true;
+            this.peppData.Degression = "0";
+            this.peppData.Location = new System.Drawing.Point(0, 114);
+            this.peppData.Name = "peppData";
+            this.peppData.Size = new System.Drawing.Size(1182, 163);
+            this.peppData.TabIndex = 12;
+            this.peppData.ClickedCatalogue += new System.EventHandler(this.peppData_ClickedCatalogue);
+            // 
+            // selectionPepp
+            // 
+            this.selectionPepp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.selectionPepp.BackColor = System.Drawing.Color.SteelBlue;
+            this.helpProvider1.SetHelpKeyword(this.selectionPepp, "Filter.htm");
+            this.helpProvider1.SetHelpNavigator(this.selectionPepp, System.Windows.Forms.HelpNavigator.Topic);
+            this.selectionPepp.Location = new System.Drawing.Point(0, 27);
+            this.selectionPepp.Name = "selectionPepp";
+            this.helpProvider1.SetShowHelp(this.selectionPepp, true);
+            this.selectionPepp.Size = new System.Drawing.Size(1182, 52);
+            this.selectionPepp.TabIndex = 11;
+            // 
             // lblSystem
             // 
             this.lblSystem.AutoSize = true;
@@ -239,9 +324,28 @@
             this.lblSystem.ForeColor = System.Drawing.Color.White;
             this.lblSystem.Location = new System.Drawing.Point(7, 91);
             this.lblSystem.Name = "lblSystem";
-            this.lblSystem.Size = new System.Drawing.Size(52, 16);
+            this.lblSystem.Size = new System.Drawing.Size(49, 16);
             this.lblSystem.TabIndex = 9;
-            this.lblSystem.Text = "PEPP:";
+            this.lblSystem.Text = "Code:";
+            // 
+            // cbxPepp
+            // 
+            this.cbxPepp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.helpProvider1.SetHelpKeyword(this.cbxPepp, "Filter.htm");
+            this.helpProvider1.SetHelpNavigator(this.cbxPepp, System.Windows.Forms.HelpNavigator.Topic);
+            this.cbxPepp.Location = new System.Drawing.Point(107, 88);
+            this.cbxPepp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbxPepp.MinimumSize = new System.Drawing.Size(40, 21);
+            this.cbxPepp.MutltiLine = false;
+            this.cbxPepp.Name = "cbxPepp";
+            this.cbxPepp.ReadOnly = true;
+            this.helpProvider1.SetShowHelp(this.cbxPepp, true);
+            this.cbxPepp.Size = new System.Drawing.Size(1067, 21);
+            this.cbxPepp.TabIndex = 10;
+            this.toolTip.SetToolTip(this.cbxPepp, "Wählen Sie eine Code aus.");
+            this.cbxPepp.ButtonClicked += new System.EventHandler(this.cbxPepp_ButtonClicked);
+            this.cbxPepp.Load += new System.EventHandler(this.cbxPepp_Load);
             // 
             // tabControl
             // 
@@ -416,107 +520,6 @@
             this.timerPrintWindow.Interval = 1000;
             this.timerPrintWindow.Tick += new System.EventHandler(this.timerPrintWindow_Tick);
             // 
-            // beendenToolStripMenuItem
-            // 
-            this.beendenToolStripMenuItem.Image = global::org.inek.InekBrowser.Properties.Resources.peppo_quit;
-            this.beendenToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.White;
-            this.beendenToolStripMenuItem.Name = "beendenToolStripMenuItem";
-            this.beendenToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
-            this.beendenToolStripMenuItem.Text = "Beenden";
-            this.beendenToolStripMenuItem.Click += new System.EventHandler(this.beendenToolStripMenuItem_Click);
-            // 
-            // mnuDataDir
-            // 
-            this.mnuDataDir.Image = global::org.inek.InekBrowser.Properties.Resources.folder_document_icon;
-            this.mnuDataDir.Name = "mnuDataDir";
-            this.mnuDataDir.Size = new System.Drawing.Size(185, 22);
-            this.mnuDataDir.Text = "Daten-Ordner öffnen";
-            this.mnuDataDir.Click += new System.EventHandler(this.mnuDataDir_Click);
-            // 
-            // druckenToolStripMenuItem
-            // 
-            this.druckenToolStripMenuItem.Image = global::org.inek.InekBrowser.Properties.Resources.peppo_print;
-            this.druckenToolStripMenuItem.Name = "druckenToolStripMenuItem";
-            this.druckenToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.druckenToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
-            this.druckenToolStripMenuItem.Text = "Drucken";
-            this.druckenToolStripMenuItem.Click += new System.EventHandler(this.druckenToolStripMenuItem_Click);
-            // 
-            // pDFExportToolStripMenuItem
-            // 
-            this.pDFExportToolStripMenuItem.Image = global::org.inek.InekBrowser.Properties.Resources.doc_pdf_icon;
-            this.pDFExportToolStripMenuItem.Name = "pDFExportToolStripMenuItem";
-            this.pDFExportToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
-            this.pDFExportToolStripMenuItem.Text = "PDF-Export";
-            this.pDFExportToolStripMenuItem.Click += new System.EventHandler(this.pDFExportToolStripMenuItem_Click);
-            // 
-            // mnuManual
-            // 
-            this.mnuManual.Image = global::org.inek.InekBrowser.Properties.Resources.peppo_manual;
-            this.mnuManual.Name = "mnuManual";
-            this.mnuManual.Size = new System.Drawing.Size(130, 22);
-            this.mnuManual.Text = "Handbuch";
-            this.mnuManual.Click += new System.EventHandler(this.mnuManual_Click);
-            // 
-            // mnuHelp
-            // 
-            this.mnuHelp.Image = global::org.inek.InekBrowser.Properties.Resources.peppo_help;
-            this.mnuHelp.Name = "mnuHelp";
-            this.mnuHelp.Size = new System.Drawing.Size(130, 22);
-            this.mnuHelp.Text = "Hilfe";
-            this.mnuHelp.Click += new System.EventHandler(this.mnuHelp_Click);
-            // 
-            // mnuInfo
-            // 
-            this.mnuInfo.Image = global::org.inek.InekBrowser.Properties.Resources.peppo_info;
-            this.mnuInfo.Name = "mnuInfo";
-            this.mnuInfo.Size = new System.Drawing.Size(130, 22);
-            this.mnuInfo.Text = "Info";
-            this.mnuInfo.Click += new System.EventHandler(this.mnuInfo_Click);
-            // 
-            // peppData
-            // 
-            this.peppData.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.peppData.BackColor = System.Drawing.Color.SeaGreen;
-            this.peppData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.peppData.Location = new System.Drawing.Point(0, 114);
-            this.peppData.Name = "peppData";
-            this.peppData.Size = new System.Drawing.Size(1182, 163);
-            this.peppData.TabIndex = 12;
-            this.peppData.ClickedCatalogue += new System.EventHandler(this.peppData_ClickedCatalogue);
-            // 
-            // selection
-            // 
-            this.selection.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.selection.BackColor = System.Drawing.Color.SteelBlue;
-            this.helpProvider1.SetHelpKeyword(this.selection, "Filter.htm");
-            this.helpProvider1.SetHelpNavigator(this.selection, System.Windows.Forms.HelpNavigator.Topic);
-            this.selection.Location = new System.Drawing.Point(0, 27);
-            this.selection.Name = "selection";
-            this.helpProvider1.SetShowHelp(this.selection, true);
-            this.selection.Size = new System.Drawing.Size(1182, 52);
-            this.selection.TabIndex = 11;
-            // 
-            // cbxPepp
-            // 
-            this.cbxPepp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.helpProvider1.SetHelpKeyword(this.cbxPepp, "Filter.htm");
-            this.helpProvider1.SetHelpNavigator(this.cbxPepp, System.Windows.Forms.HelpNavigator.Topic);
-            this.cbxPepp.Location = new System.Drawing.Point(107, 88);
-            this.cbxPepp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbxPepp.MinimumSize = new System.Drawing.Size(40, 21);
-            this.cbxPepp.MutltiLine = false;
-            this.cbxPepp.Name = "cbxPepp";
-            this.cbxPepp.ReadOnly = true;
-            this.helpProvider1.SetShowHelp(this.cbxPepp, true);
-            this.cbxPepp.Size = new System.Drawing.Size(1067, 21);
-            this.cbxPepp.TabIndex = 10;
-            this.toolTip.SetToolTip(this.cbxPepp, "Wählen Sie eine PEPP aus.");
-            this.cbxPepp.ButtonClicked += new System.EventHandler(this.cbxPepp_ButtonClicked);
-            // 
             // titleBar
             // 
             this.titleBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -554,7 +557,7 @@
             this.helpProvider1.SetShowHelp(this, true);
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "PEPP-Browser";
+            this.Text = "Code-Browser";
             this.TransparencyKey = System.Drawing.Color.Pink;
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
             this.Resize += new System.EventHandler(this.FrmPeppBrowser_Resize);
@@ -604,7 +607,7 @@
         private System.Windows.Forms.Label lblSystem;
         private controls.CommonControls.ComboField cbxPepp;
         private System.Windows.Forms.DataGridView grdMainDiagnosis;
-        private Selection selection;
+        private SelectionPepp selectionPepp;
         private System.Windows.Forms.DataGridView grdSecondaryDiagnosis;
         private System.Windows.Forms.DataGridView grdProcedures;
         private System.Windows.Forms.ToolStripMenuItem beendenToolStripMenuItem;
