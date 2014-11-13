@@ -28,15 +28,15 @@
             this.picClearSecondaryDiag = new System.Windows.Forms.PictureBox();
             this.picClearPrimaryDiag = new System.Windows.Forms.PictureBox();
             this.picClearCategory = new System.Windows.Forms.PictureBox();
+            this.cbxProcedure = new org.inek.controls.CommonControls.ComboField();
             this.label1 = new System.Windows.Forms.Label();
+            this.cbxSecondaryDiagnosis = new org.inek.controls.CommonControls.ComboField();
             this.lblSecondaryDiagnosis = new System.Windows.Forms.Label();
             this.lblMainDiagnosis = new System.Windows.Forms.Label();
-            this.lblSk = new System.Windows.Forms.Label();
-            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
-            this.cbxProcedure = new org.inek.controls.CommonControls.ComboField();
-            this.cbxSecondaryDiagnosis = new org.inek.controls.CommonControls.ComboField();
             this.cbxMainDiagnosis = new org.inek.controls.CommonControls.ComboField();
             this.cbxCategory = new org.inek.controls.CommonControls.ComboField();
+            this.lblSk = new System.Windows.Forms.Label();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.grpFilter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClearProc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picClearSecondaryDiag)).BeginInit();
@@ -67,7 +67,7 @@
             this.grpFilter.Size = new System.Drawing.Size(996, 52);
             this.grpFilter.TabIndex = 2;
             this.grpFilter.TabStop = false;
-            this.grpFilter.Text = "System-Filter";
+            this.grpFilter.Text = "PEPP-Filter";
             // 
             // picClearProc
             // 
@@ -125,6 +125,19 @@
             this.picClearCategory.Visible = false;
             this.picClearCategory.Click += new System.EventHandler(this.picClearSk_Click);
             // 
+            // cbxProcedure
+            // 
+            this.cbxProcedure.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxProcedure.Location = new System.Drawing.Point(863, 19);
+            this.cbxProcedure.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.cbxProcedure.MinimumSize = new System.Drawing.Size(40, 21);
+            this.cbxProcedure.MutltiLine = false;
+            this.cbxProcedure.Name = "cbxProcedure";
+            this.cbxProcedure.ReadOnly = true;
+            this.cbxProcedure.Size = new System.Drawing.Size(100, 21);
+            this.cbxProcedure.TabIndex = 15;
+            this.cbxProcedure.ButtonClicked += new System.EventHandler(this.cbxProcedure_ButtonClicked);
+            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -135,6 +148,19 @@
             this.label1.Size = new System.Drawing.Size(52, 13);
             this.label1.TabIndex = 14;
             this.label1.Text = "Prozedur:";
+            // 
+            // cbxSecondaryDiagnosis
+            // 
+            this.cbxSecondaryDiagnosis.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxSecondaryDiagnosis.Location = new System.Drawing.Point(697, 19);
+            this.cbxSecondaryDiagnosis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbxSecondaryDiagnosis.MinimumSize = new System.Drawing.Size(40, 21);
+            this.cbxSecondaryDiagnosis.MutltiLine = false;
+            this.cbxSecondaryDiagnosis.Name = "cbxSecondaryDiagnosis";
+            this.cbxSecondaryDiagnosis.ReadOnly = true;
+            this.cbxSecondaryDiagnosis.Size = new System.Drawing.Size(80, 21);
+            this.cbxSecondaryDiagnosis.TabIndex = 3;
+            this.cbxSecondaryDiagnosis.ButtonClicked += new System.EventHandler(this.cbxSecondaryDiagnosis_ButtonClicked);
             // 
             // lblSecondaryDiagnosis
             // 
@@ -157,46 +183,6 @@
             this.lblMainDiagnosis.Size = new System.Drawing.Size(82, 13);
             this.lblMainDiagnosis.TabIndex = 1;
             this.lblMainDiagnosis.Text = "Hauptdiagnose:";
-            // 
-            // lblSk
-            // 
-            this.lblSk.AutoSize = true;
-            this.lblSk.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSk.Location = new System.Drawing.Point(9, 25);
-            this.lblSk.Name = "lblSk";
-            this.lblSk.Size = new System.Drawing.Size(91, 13);
-            this.lblSk.TabIndex = 8;
-            this.lblSk.Text = "Strukturkategorie:";
-            // 
-            // helpProvider1
-            // 
-            this.helpProvider1.HelpNamespace = "PeppBrowser.chm";
-            // 
-            // cbxProcedure
-            // 
-            this.cbxProcedure.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxProcedure.Location = new System.Drawing.Point(863, 19);
-            this.cbxProcedure.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.cbxProcedure.MinimumSize = new System.Drawing.Size(40, 21);
-            this.cbxProcedure.MutltiLine = false;
-            this.cbxProcedure.Name = "cbxProcedure";
-            this.cbxProcedure.ReadOnly = true;
-            this.cbxProcedure.Size = new System.Drawing.Size(100, 21);
-            this.cbxProcedure.TabIndex = 15;
-            this.cbxProcedure.ButtonClicked += new System.EventHandler(this.cbxProcedure_ButtonClicked);
-            // 
-            // cbxSecondaryDiagnosis
-            // 
-            this.cbxSecondaryDiagnosis.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxSecondaryDiagnosis.Location = new System.Drawing.Point(697, 19);
-            this.cbxSecondaryDiagnosis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbxSecondaryDiagnosis.MinimumSize = new System.Drawing.Size(40, 21);
-            this.cbxSecondaryDiagnosis.MutltiLine = false;
-            this.cbxSecondaryDiagnosis.Name = "cbxSecondaryDiagnosis";
-            this.cbxSecondaryDiagnosis.ReadOnly = true;
-            this.cbxSecondaryDiagnosis.Size = new System.Drawing.Size(80, 21);
-            this.cbxSecondaryDiagnosis.TabIndex = 3;
-            this.cbxSecondaryDiagnosis.ButtonClicked += new System.EventHandler(this.cbxSecondaryDiagnosis_ButtonClicked);
             // 
             // cbxMainDiagnosis
             // 
@@ -225,7 +211,21 @@
             this.cbxCategory.TabIndex = 9;
             this.cbxCategory.ButtonClicked += new System.EventHandler(this.cbxSk_ButtonClicked);
             // 
-            // Selection
+            // lblSk
+            // 
+            this.lblSk.AutoSize = true;
+            this.lblSk.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSk.Location = new System.Drawing.Point(9, 25);
+            this.lblSk.Name = "lblSk";
+            this.lblSk.Size = new System.Drawing.Size(91, 13);
+            this.lblSk.TabIndex = 8;
+            this.lblSk.Text = "Strukturkategorie:";
+            // 
+            // helpProvider1
+            // 
+            this.helpProvider1.HelpNamespace = "PeppBrowser.chm";
+            // 
+            // SelectionPepp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
