@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace org.inek.InekBrowser.Data.Entities.PEPP {
+namespace org.inek.InekBrowser.Data.Entities {
     public class StructureCategory {
         //;;;st_PeppAnzahl;st_FaelleAnzahl;st_TageAnzahl
 

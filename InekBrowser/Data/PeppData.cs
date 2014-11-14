@@ -5,7 +5,6 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using org.inek.InekBrowser.Data.Entities;
-using org.inek.InekBrowser.Data.Entities.PEPP;
 
 namespace org.inek.InekBrowser.Data {
     class PeppData :PeppInfo{

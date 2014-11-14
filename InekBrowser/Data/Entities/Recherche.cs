@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace org.inek.InekBrowser.Data.Entities.PEPP {
+namespace org.inek.InekBrowser.Data.Entities {
     public class Recherche {
         [Column("re_Code")]
         public string Code { get; set; }

@@ -7,7 +7,6 @@ using System.IO;
 using System.Reflection;
 using org.inek.InekBrowser.Data.Entities;
 using org.inek.controls.helper;
-using org.inek.InekBrowser.Data.Entities.PEPP;
 
 namespace org.inek.InekBrowser.Data {
     /// <summary>
@@ -22,7 +21,7 @@ namespace org.inek.InekBrowser.Data {
 
         private readonly List<Cost> _costs = new List<Cost>();
         private readonly List<CostDomain> _costDomains = new List<CostDomain>();
-        private readonly List<Pepp> _pepps = new List<Pepp>();
+        private readonly List<Entities.System> _system = new List<Entities.System>();
         private readonly List<PeppInfo> _peppInfos = new List<PeppInfo>();
         private readonly List<PrimaryDiagnosis> _primaryDiagnoses = new List<PrimaryDiagnosis>();
         private readonly List<Procedure> _procedures = new List<Procedure>();
@@ -44,7 +43,7 @@ namespace org.inek.InekBrowser.Data {
         public IEnumerable<Cost> Costs {
             get {
                 if(_costs.Count == 0)
-                    LoadData(ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Kosten], ResourceController.RESOURCE_HEADERS[(int)ResourceController.ResourceFilesIndex.Kosten]);
+                    LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Kosten], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Kosten]);
                 return _costs;
             }
         }
@@ -52,7 +51,7 @@ namespace org.inek.InekBrowser.Data {
         public IEnumerable<CostDomain> CostDomains {
             get {
                 if(_costDomains.Count == 0)
-                    LoadData(ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Kostenbereich], ResourceController.RESOURCE_HEADERS[(int)ResourceController.ResourceFilesIndex.Kostenbereich]);
+                    LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Kostenbereich], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Kostenbereich]);
                 return _costDomains;
             }
         }
@@ -60,23 +59,23 @@ namespace org.inek.InekBrowser.Data {
         public IEnumerable<StructureCategory> StructureCategories {
             get {
                 if(_structureCategories.Count == 0)
-                    LoadData(ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Strukturkategorie], ResourceController.RESOURCE_HEADERS[(int)ResourceController.ResourceFilesIndex.Strukturkategorie]);
+                    LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Strukturkategorie], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Strukturkategorie]);
                 return _structureCategories;
             }
         }
 
-        public IEnumerable<Pepp> Pepps {
+        public IEnumerable<Entities.System> System {
             get {
-                if(_pepps.Count == 0)
-                    LoadData(ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Pepp], ResourceController.RESOURCE_HEADERS[(int)ResourceController.ResourceFilesIndex.Pepp]);
-                return _pepps;
+                if(_system.Count == 0)
+                    LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Pepp], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Pepp]);
+                return _system;
             }
         }
 
         public IEnumerable<PeppInfo> PeppInfos {
             get {
                 if(_peppInfos.Count == 0)
-                    LoadData(ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Kopfdaten], ResourceController.RESOURCE_HEADERS[(int)ResourceController.ResourceFilesIndex.Kopfdaten]);
+                    LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Kopfdaten], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Kopfdaten]);
                 return _peppInfos;
             }
         }
@@ -84,7 +83,7 @@ namespace org.inek.InekBrowser.Data {
         public IEnumerable<Procedure> Procedures {
             get {
                 if(_procedures.Count == 0)
-                    LoadData(ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Prozeduren], ResourceController.RESOURCE_HEADERS[(int)ResourceController.ResourceFilesIndex.Prozeduren]);
+                    LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Prozeduren], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Prozeduren]);
                 return _procedures;
             }
         }
@@ -92,7 +91,7 @@ namespace org.inek.InekBrowser.Data {
         public IEnumerable<PrimaryDiagnosis> PrimaryDiagnoses {
             get {
                 if(_primaryDiagnoses.Count == 0)
-                    LoadData(ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Hauptdiagnose], ResourceController.RESOURCE_HEADERS[(int)ResourceController.ResourceFilesIndex.Hauptdiagnose]);
+                    LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Hauptdiagnose], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Hauptdiagnose]);
                 return _primaryDiagnoses;
             }
         }
@@ -100,7 +99,7 @@ namespace org.inek.InekBrowser.Data {
         public IEnumerable<SecondaryDiagnosis> SecondaryDiagnoses {
             get {
                 if(_secondaryDiagnoses.Count == 0)
-                    LoadData(ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Nebendiagnose], ResourceController.RESOURCE_HEADERS[(int)ResourceController.ResourceFilesIndex.Nebendiagnose]);
+                    LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Nebendiagnose], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Nebendiagnose]);
                 return _secondaryDiagnoses;
             }
         }
@@ -108,7 +107,7 @@ namespace org.inek.InekBrowser.Data {
         public IEnumerable<Recherche> Recherche {
             get {
                 if(_recherche.Count == 0)
-                    LoadData(ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Recherche], ResourceController.RESOURCE_HEADERS[(int)ResourceController.ResourceFilesIndex.Recherche]);
+                    LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Recherche], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Recherche]);
                 return _recherche;
             }
         }
@@ -116,7 +115,7 @@ namespace org.inek.InekBrowser.Data {
         public IEnumerable<Catalog> Catalogs {
             get {
                 if(_catalogs.Count == 0)
-                    LoadData(ResourceController.RESOURCE_FILES[(int)ResourceController.ResourceFilesIndex.Katalog], ResourceController.RESOURCE_HEADERS[(int)ResourceController.ResourceFilesIndex.Katalog]);
+                    LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Katalog], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Katalog]);
                 return _catalogs;
             }
         } 
@@ -212,40 +211,77 @@ namespace org.inek.InekBrowser.Data {
                     if (tokens.Length != names.Count) {
                         throw new DataException("Wrong field count");
                     }
-                    MapCsv2Entity(headline, tokens);
+                    if(Program.SystemBrowser == Program.System.Pepp)
+                        MapPeppCsv2Entity(headline, tokens);
+                    else if (Program.SystemBrowser == Program.System.Drg)
+                        MapDrgCsv2Entity(headline, tokens);
                 }
             }
         }
 
-        private void MapCsv2Entity(string headline, string[] tokens) {
-            if (headline == ResourceController.RESOURCE_HEADERS[(int) ResourceController.ResourceFilesIndex.Nebendiagnose]) {
+        private void MapDrgCsv2Entity(string headline, string[] tokens) {
+            if (headline == ResourceController.DRG_RESOURCE_HEADERS[(int) ResourceController.DrgResourceFilesIndex.Drg]) {
+                MapDrg(tokens);
+            } else if (headline == ResourceController.DRG_RESOURCE_HEADERS[(int) ResourceController.DrgResourceFilesIndex.Kostenbereich]) {
+                MapCostDomainDrg(tokens);
+            } else if (headline == ResourceController.DRG_RESOURCE_HEADERS[(int) ResourceController.DrgResourceFilesIndex.HauptdiagnosenBa]) {
+                var pd = new PrimaryDiagnosis();
+                pd.SystemCode = tokens[0];
+                pd.DiagCode = tokens[1];
+                pd.Fraction = decimal.Parse(tokens[2]);
+                pd.DiagCodeF = tokens[3];
+                pd.Count = int.Parse(tokens[4]);
+                _primaryDiagnoses.Add(pd);
+            }
+        }
+
+        private void MapCostDomainDrg(string[] tokens) {
+            var cd = new CostDomain();
+            cd.DomainId = int.Parse(tokens[0]);
+            cd.DomainText = tokens[1];
+            _costDomains.Add(cd);
+        }
+
+        private void MapDrg(string[] tokens) {
+            var drg = new Entities.System {
+                                              Category = tokens[0],
+                                              Partition = int.Parse(tokens[1]),
+                                              Code = tokens[2],
+                                              Text = tokens[3],
+                                              Calculated = int.Parse(tokens[4])
+                                          };
+            _system.Add(drg);
+        }
+
+        private void MapPeppCsv2Entity(string headline, string[] tokens) {
+            if (headline == ResourceController.PEPP_RESOURCE_HEADERS[(int) ResourceController.PeppResourceFilesIndex.Nebendiagnose]) {
                 MapSecondaryDiagnosis(_secondaryDiagnoses, tokens);
-            } else if (headline == ResourceController.RESOURCE_HEADERS[(int) ResourceController.ResourceFilesIndex.Hauptdiagnose]) {
+            } else if (headline == ResourceController.PEPP_RESOURCE_HEADERS[(int) ResourceController.PeppResourceFilesIndex.Hauptdiagnose]) {
                 MapPrimaryDiagnosis(_primaryDiagnoses, tokens);
-            } else if (headline == ResourceController.RESOURCE_HEADERS[(int) ResourceController.ResourceFilesIndex.Kosten]) {
+            } else if (headline == ResourceController.PEPP_RESOURCE_HEADERS[(int) ResourceController.PeppResourceFilesIndex.Kosten]) {
                 MapCost(_costs, tokens);
             } else if (headline ==
-                       ResourceController.RESOURCE_HEADERS[(int) ResourceController.ResourceFilesIndex.Kostenbereich]) {
+                       ResourceController.PEPP_RESOURCE_HEADERS[(int) ResourceController.PeppResourceFilesIndex.Kostenbereich]) {
                 MapCostDomain(_costDomains, tokens);
             } else if (headline ==
-                       ResourceController.RESOURCE_HEADERS[(int) ResourceController.ResourceFilesIndex.Pepp]) {
-                MapPepp(_pepps, tokens);
+                       ResourceController.PEPP_RESOURCE_HEADERS[(int) ResourceController.PeppResourceFilesIndex.Pepp]) {
+                MapPepp(_system, tokens);
             } else if (headline ==
-                       ResourceController.RESOURCE_HEADERS[(int) ResourceController.ResourceFilesIndex.Prozeduren]) {
+                       ResourceController.PEPP_RESOURCE_HEADERS[(int) ResourceController.PeppResourceFilesIndex.Prozeduren]) {
                 MapProcedure(_procedures, tokens);
             } else if (headline ==
-                       ResourceController.RESOURCE_HEADERS[
-                           (int) ResourceController.ResourceFilesIndex.Recherche]) {
+                       ResourceController.PEPP_RESOURCE_HEADERS[
+                           (int) ResourceController.PeppResourceFilesIndex.Recherche]) {
                 MapRecherche(_recherche, tokens);
             } else if (headline ==
-                       ResourceController.RESOURCE_HEADERS[
-                           (int) ResourceController.ResourceFilesIndex.Strukturkategorie]) {
+                       ResourceController.PEPP_RESOURCE_HEADERS[
+                           (int) ResourceController.PeppResourceFilesIndex.Strukturkategorie]) {
                 MapStructureCategory(_structureCategories, tokens);
             } else if (headline ==
-                       ResourceController.RESOURCE_HEADERS[
-                           (int) ResourceController.ResourceFilesIndex.Kopfdaten]) {
+                       ResourceController.PEPP_RESOURCE_HEADERS[
+                           (int) ResourceController.PeppResourceFilesIndex.Kopfdaten]) {
                 MapPeppInfo(_peppInfos, tokens);
-            } else if (headline == ResourceController.RESOURCE_HEADERS[(int) ResourceController.ResourceFilesIndex.Katalog]) {
+            } else if (headline == ResourceController.PEPP_RESOURCE_HEADERS[(int) ResourceController.PeppResourceFilesIndex.Katalog]) {
                 MapCatalogs(tokens);
             }
         }
@@ -333,8 +369,8 @@ namespace org.inek.InekBrowser.Data {
             list.Add(p);
         }
 
-        private static void MapPepp(List<Pepp> list, string[] tokens) {
-            var p = new Pepp {StructureCategory = tokens[0], Code = tokens[1], Text = tokens[2]};
+        private static void MapPepp(List<Entities.System> list, string[] tokens) {
+            var p = new Entities.System {Category = tokens[0], Code = tokens[1], Text = tokens[2]};
             list.Add(p);
         }
 
@@ -370,7 +406,7 @@ namespace org.inek.InekBrowser.Data {
 
         private static void MapPrimaryDiagnosis(List<PrimaryDiagnosis> list, string[] tokens) {
             var pd = new PrimaryDiagnosis {
-                                              PeppCode = tokens[0],
+                                              SystemCode = tokens[0],
                                               DiagCode = tokens[1],
                                               Count = int.Parse(tokens[2]),
                                               Fraction = decimal.Parse(tokens[3])

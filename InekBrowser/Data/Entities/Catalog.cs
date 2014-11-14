@@ -1,7 +1,7 @@
 ﻿
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace org.inek.InekBrowser.Data.Entities.PEPP {
+namespace org.inek.InekBrowser.Data.Entities {
     public class Catalog {
         [Column("ka_Pepp")]
         public string Pepp { get; set; }

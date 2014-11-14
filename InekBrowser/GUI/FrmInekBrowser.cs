@@ -81,6 +81,7 @@ namespace org.inek.InekBrowser.GUI {
                 titleBar.Title = "PEPP-Browser " + Program.Year;
                 pnlContentBackground.Controls.RemoveByKey("drgData");
                 lblSystem.Text = "PEPP:";
+                mnuPepp.Text = "PEPPs";
                 peppData.CatalogueActive = false;
             }
         }
@@ -111,7 +112,7 @@ namespace org.inek.InekBrowser.GUI {
             dlg.helpProvider1.SetHelpKeyword(dlg, "Daten.htm");
         }
 
-        private void mnuPepp_Click(object sender, System.EventArgs e) {
+        private void mnuPepp_Click(object sender, EventArgs e) {
             dlg = new FrmList();
             SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
@@ -121,7 +122,7 @@ namespace org.inek.InekBrowser.GUI {
             dlg.Show();
         }
 
-        private void mnuStructureCategories_Click(object sender, System.EventArgs e) {
+        private void mnuStructureCategories_Click(object sender, EventArgs e) {
             dlg = new FrmList(); 
             SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
@@ -141,7 +142,7 @@ namespace org.inek.InekBrowser.GUI {
             dlg.ShowDialog(this);
         }
 
-        private void mnuPeppInfo_Click(object sender, System.EventArgs e) {
+        private void mnuPeppInfo_Click(object sender, EventArgs e) {
             dlg = new FrmList();
             SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
@@ -181,7 +182,7 @@ namespace org.inek.InekBrowser.GUI {
 
         }
 
-        private void mnuPrimaryDiagnoses_Click(object sender, System.EventArgs e) {
+        private void mnuPrimaryDiagnoses_Click(object sender, EventArgs e) {
             dlg = new FrmList();
             SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
@@ -192,7 +193,7 @@ namespace org.inek.InekBrowser.GUI {
 
         }
 
-        private void mnuSecondaryDiagnoses_Click(object sender, System.EventArgs e) {
+        private void mnuSecondaryDiagnoses_Click(object sender, EventArgs e) {
             dlg = new FrmList();
             SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
@@ -989,7 +990,7 @@ namespace org.inek.InekBrowser.GUI {
             }
         }
 
-        private List<InekBrowser.Data.PeppData> setReportData(string pepp)
+        private List<Data.PeppData> setReportData(string pepp)
         {
             PeppInfo info = CsvData.Context().PeppInfos.Single(p => p.Code == pepp);
             string skTag = CsvData.Context().Pepps.Where(p => p.Code == PEPP).Select(p => p.StructureCategory).Single();

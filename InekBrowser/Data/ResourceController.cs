@@ -6,9 +6,29 @@ using System.Text;
 namespace org.inek.InekBrowser.Data {
     class ResourceController {
 
-        public const string RESOURCE_FILES_HASH = "68AEA4961FFCE5C2B6FA3246542C27D5835E75D7F1B10BFA7503E6F5D232C37";
+        public const string PEPP_RESOURCE_FILES_HASH = "68AEA4961FFCE5C2B6FA3246542C27D5835E75D7F1B10BFA7503E6F5D232C37";
+        public const string DRG_RESOURCE_FILES_HASH = "";
 
-        public enum ResourceFilesIndex {
+        public enum DrgResourceFilesIndex {
+            Drg,
+            Kostenbereich,
+            HauptdiagnosenBa,
+            KopfdatenBa,
+            KostenBa,
+            MdcBa,
+            NebendiagnosenBa,
+            ProzedurenBa,
+            RechercheBa,
+            HauptdiagnosenHa,
+            KopfdatenHa,
+            KostenHa,
+            MdcHa,
+            NebendiagnosenHa,
+            ProzedurenHa,
+            RechercheHa
+        };
+
+        public enum PeppResourceFilesIndex {
             Hauptdiagnose,
             Kopfdaten,
             Kosten,
@@ -23,7 +43,26 @@ namespace org.inek.InekBrowser.Data {
         
         public static string RESOURCE_DIR = @"Data\";
 
-        public static string[] RESOURCE_FILES = {
+        public static string[] DRG_RESOURCE_FILES = {
+                                                        "RepBrDrg_13_15_Drg.csv",
+                                                        "RepBrDrg_13_15_Kostenbereich.csv",
+                                                        "RepBrDrg_BA_13_15_Hauptdiagnose.csv",
+                                                        "RepBrDrg_BA_13_15_Kopfdaten.csv",
+                                                        "RepBrDrg_BA_13_15_Kosten.csv",
+                                                        "RepBrDrg_BA_13_15_Mdc.csv",
+                                                        "RepBrDrg_BA_13_15_Nebendiagnosen.csv",
+                                                        "RepBrDrg_BA_13_15_Prozeduren.csv",
+                                                        "RepBrDrg_BA_13_15_Recherche.csv",
+                                                        "RepBrDrg_HA_13_15_Hauptdiagnose.csv",
+                                                        "RepBrDrg_HA_13_15_Kopfdaten.csv",
+                                                        "RepBrDrg_HA_13_15_Kosten.csv",
+                                                        "RepBrDrg_HA_13_15_Mdc.csv",
+                                                        "RepBrDrg_HA_13_15_Nebendiagnosen.csv",
+                                                        "RepBrDrg_HA_13_15_Prozeduren.csv",
+                                                        "RepBrDrg_HA_13_15_Recherche.csv"
+                                                    };
+
+        public static string[] PEPP_RESOURCE_FILES = {
                                                      "RepBrPepp_13_15_Hauptdiagnose.csv", 
                                                      "RepBrPepp_13_15_Kopfdaten.csv",
                                                      "RepBrPepp_13_15_Kosten.csv", 
@@ -36,7 +75,49 @@ namespace org.inek.InekBrowser.Data {
                                                      "RepBrPepp_13_15_Katalog.csv"
                                                  };
 
-        public static string[] RESOURCE_HEADERS = {
+        public static string[] DRG_RESOURCE_HEADERS = {
+                                                          "ID_MDC;ID_Partition;ID_DRG;ID_Text;ID_BA_Kalkuliert",
+                                                          "IB_Nr;IB_Bereich",
+                                                          "IH_DRG;IH_Code;IH_Prozent;IH_CodeF;IH_Anzahl",
+
+                                                          "IK_MDC;IK_DRG;IK_Faelle_Anzahl;IK_PCCL0;IK_PCCL1;IK_PCCL2;" +
+                                                          "IK_PCCL3;IK_PCCL4;IK_GeschlechtM;IK_GeschlechtW;IK_GeschlechtU;" +
+                                                          "IK_AlterU28T;IK_AlterU01;IK_AlterU03;IK_AlterU06;IK_AlterU10;" +
+                                                          "IK_AlterU16;IK_AlterU18;IK_AlterU30;IK_AlterU40;IK_AlterU50;" +
+                                                          "IK_AlterU55;IK_AlterU60;IK_AlterU65;IK_AlterU75;IK_AlterU80;" +
+                                                          "IK_AlterU99;IK_VWD_Kurz;IK_VWD_Norm;IK_VWD_Lang;IK_uGVD;IK_oGVD;" +
+                                                          "IK_VWD_MW;IK_Bewertungsrelation;IK_Gesamt;IK_VWD_STD;IK_KOST_MW;IK_KOST_STD",
+
+                                                          "IO_DRG;IO_BereichNr;IO_KArt1;IO_KArt2;IO_KArt3;IO_KArt4a;IO_KArt4b;IO_KArt5;" +
+                                                          "IO_KArt6a;IO_KArt6b;IO_KArt7;IO_KArt8;IO_Summe",
+
+                                                          "IM_MDC;IM_Text;IM_DRG_Anzahl;IM_Faelle_Anzahl",
+                                                          "IN_DRG;IN_Code;IN_Prozent;IN_CodeF;IN_Anzahl;IN_ProzentN;IN_AnzahlN",
+                                                          "IP_DRG;IP_Code;IP_Prozent;IP_CodeF;IP_Anzahl;IP_ProzentN;IP_AnzahlN",
+                                                          "IC_Code;IC_Text;IC_CodeF;IC_ANZHDI;IC_ANZNDI;IC_AnzProzI",
+
+                                                          "ID_MDC;ID_Partition;ID_DRG;ID_Text;ID_BA_Kalkuliert",
+                                                          "IB_Nr;IB_Bereich",
+                                                          "IH_DRG;IH_Code;IH_Prozent;IH_CodeF;IH_Anzahl",
+
+                                                          "IK_MDC;IK_DRG;IK_Faelle_Anzahl;IK_PCCL0;IK_PCCL1;IK_PCCL2;" +
+                                                          "IK_PCCL3;IK_PCCL4;IK_GeschlechtM;IK_GeschlechtW;IK_GeschlechtU;" +
+                                                          "IK_AlterU28T;IK_AlterU01;IK_AlterU03;IK_AlterU06;IK_AlterU10;" +
+                                                          "IK_AlterU16;IK_AlterU18;IK_AlterU30;IK_AlterU40;IK_AlterU50;" +
+                                                          "IK_AlterU55;IK_AlterU60;IK_AlterU65;IK_AlterU75;IK_AlterU80;" +
+                                                          "IK_AlterU99;IK_VWD_Kurz;IK_VWD_Norm;IK_VWD_Lang;IK_uGVD;IK_oGVD;" +
+                                                          "IK_VWD_MW;IK_Bewertungsrelation;IK_Gesamt;IK_VWD_STD;IK_KOST_MW;IK_KOST_STD",
+
+                                                          "IO_DRG;IO_BereichNr;IO_KArt1;IO_KArt2;IO_KArt3;IO_KArt4a;IO_KArt4b;IO_KArt5;" +
+                                                          "IO_KArt6a;IO_KArt6b;IO_KArt7;IO_KArt8;IO_Summe",
+
+                                                          "IM_MDC;IM_Text;IM_DRG_Anzahl;IM_Faelle_Anzahl",
+                                                          "IN_DRG;IN_Code;IN_Prozent;IN_CodeF;IN_Anzahl;IN_ProzentN;IN_AnzahlN",
+                                                          "IP_DRG;IP_Code;IP_Prozent;IP_CodeF;IP_Anzahl;IP_ProzentN;IP_AnzahlN",
+                                                          "IC_Code;IC_Text;IC_CodeF;IC_ANZHDI;IC_ANZNDI;IC_AnzProzI"
+                                                      };
+
+        public static string[] PEPP_RESOURCE_HEADERS = {
                                                       "hd_Pepp;hd_Code;hd_FaelleAnzahl;hd_FaelleAnteil",
                                                       
                                                       "kd_Pepp;kd_FaelleAnzahl;kd_SummePflegetage;kd_PflegetageMw;kd_PflegetageStd;kd_PflegetageHK;" +
@@ -69,8 +150,11 @@ namespace org.inek.InekBrowser.Data {
         public static void CheckForResourceFiles() {
             string[] files = Directory.GetFiles(RESOURCE_DIR);
             for (int i = 0; i < files.Length; i++) {
-                if (!File.Exists(RESOURCE_DIR + RESOURCE_FILES[i])) {
-                    throw new Exception("Fehler: Die Resource-Datei " + RESOURCE_FILES[i] + " fehlt. Bitte downloaden Sie den Code Browser erneut.");
+                if (Program.SystemBrowser == Program.System.Pepp && !File.Exists(RESOURCE_DIR + PEPP_RESOURCE_FILES[i])) {
+                    throw new Exception("Fehler: Die Resource-Datei " + PEPP_RESOURCE_FILES[i] + " fehlt. Bitte downloaden Sie den PEPP-Browser erneut.");
+                }
+                if (Program.SystemBrowser == Program.System.Drg && !File.Exists(RESOURCE_DIR + DRG_RESOURCE_FILES[i])) {
+                    throw new Exception("Fehler: Die Resource-Datei " + DRG_RESOURCE_FILES[i] + " fehlt. Bitte downloaden Sie den DRG-Browser erneut.");
                 }
             }
         }
@@ -85,20 +169,32 @@ namespace org.inek.InekBrowser.Data {
             byte[] masterHashByte = sha.ComputeHash(hashesBytes);
             string masterHash = "";
             masterHash = HashBytesToHexString(masterHashByte, masterHash);
-            if (masterHash != RESOURCE_FILES_HASH) {
-                throw new Exception("Fehler: Die Resource-Dateien wurden verändert. Bitte laden Sie den Code Browser erneut auf unserer Website (http://g-drg.de) herunter.");
+            if (masterHash != PEPP_RESOURCE_FILES_HASH && Program.SystemBrowser == Program.System.Pepp) {
+                throw new Exception("Fehler: Die Resource-Dateien wurden verändert. Bitte laden Sie den PEPP-Browser erneut auf unserer Website (http://g-drg.de) herunter.");
+            } else if (masterHash != DRG_RESOURCE_FILES_HASH && Program.SystemBrowser == Program.System.Drg) {
+                throw new Exception("Fehler: Die Resource-Dateien wurden verändert. Bitte laden Sie den DRG-Browser erneut auf unserer Website (http://g-drg.de) herunter.");
             }
         }
 
         private static string GenerateResourceFilesHash() {
             string concatResourceHash = "";
             SHA256 sha = new SHA256Managed();
-            for (int i = 0; i < RESOURCE_FILES.Length; i++) {
-                FileStream stream = File.OpenRead(RESOURCE_DIR + RESOURCE_FILES[i]);
-                byte[] fileBuffer = new byte[(int)stream.Length];
-                stream.Read(fileBuffer, 0, (int)stream.Length);
-                byte[] hash = sha.ComputeHash(fileBuffer);
-                concatResourceHash = HashBytesToHexString(hash, concatResourceHash);
+            if (Program.SystemBrowser == Program.System.Pepp) {
+                for (int i = 0; i < PEPP_RESOURCE_FILES.Length; i++) {
+                    FileStream stream = File.OpenRead(RESOURCE_DIR + PEPP_RESOURCE_FILES[i]);
+                    byte[] fileBuffer = new byte[(int)stream.Length];
+                    stream.Read(fileBuffer, 0, (int)stream.Length);
+                    byte[] hash = sha.ComputeHash(fileBuffer);
+                    concatResourceHash = HashBytesToHexString(hash, concatResourceHash);
+                }
+            } else if (Program.SystemBrowser == Program.System.Drg) {
+                for (int i = 0; i < DRG_RESOURCE_FILES.Length; i++) {
+                    FileStream stream = File.OpenRead(RESOURCE_DIR + DRG_RESOURCE_FILES[i]);
+                    byte[] fileBuffer = new byte[(int)stream.Length];
+                    stream.Read(fileBuffer, 0, (int)stream.Length);
+                    byte[] hash = sha.ComputeHash(fileBuffer);
+                    concatResourceHash = HashBytesToHexString(hash, concatResourceHash);
+                }
             }
             return concatResourceHash;
         }
