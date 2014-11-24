@@ -83,8 +83,8 @@ namespace org.inek.InekBrowser.GUI {
         private static void LoadPeppDataToMemory() {
             var x1 = CsvData.Context().CostDomains;
             var x2 = CsvData.Context().Costs;
-            var x4 = CsvData.Context().Pepps;
-            var x3 = CsvData.Context().PeppInfos;
+            var x4 = CsvData.Context().System;
+            var x3 = CsvData.Context().SystemInfo;
             var x5 = CsvData.Context().PrimaryDiagnoses;
             var x8 = CsvData.Context().SecondaryDiagnoses;
             var x6 = CsvData.Context().Procedures;

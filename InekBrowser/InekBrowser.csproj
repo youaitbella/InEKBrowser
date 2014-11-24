@@ -129,19 +129,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\Entities\DRG\Drg.cs" />
-    <Compile Include="Data\Entities\PEPP\Cost.cs" />
-    <Compile Include="Data\Entities\PEPP\CostDomain.cs" />
-    <Compile Include="Data\Entities\PEPP\Catalog.cs" />
-    <Compile Include="Data\Entities\PEPP\PeppInfo.cs" />
-    <Compile Include="Data\Entities\PEPP\PrimaryDiagnosis.cs" />
-    <Compile Include="Data\Entities\PEPP\Pepp.cs" />
+    <Compile Include="Data\Entities\Cost.cs" />
+    <Compile Include="Data\Entities\CostDomain.cs" />
+    <Compile Include="Data\Entities\Catalog.cs" />
+    <Compile Include="Data\Entities\SystemInfo.cs" />
+    <Compile Include="Data\Entities\PrimaryDiagnosis.cs" />
+    <Compile Include="Data\Entities\System.cs" />
     <Compile Include="Data\CsvData.cs" />
-    <Compile Include="Data\Entities\PEPP\Procedure.cs" />
-    <Compile Include="Data\Entities\PEPP\Recherche.cs" />
-    <Compile Include="Data\Entities\PEPP\SecondaryDiagnosis.cs" />
-    <Compile Include="Data\Entities\PEPP\StructureCategory.cs" />
-    <Compile Include="Data\PeppData.cs" />
+    <Compile Include="Data\Entities\Procedure.cs" />
+    <Compile Include="Data\Entities\Recherche.cs" />
+    <Compile Include="Data\Entities\SecondaryDiagnosis.cs" />
+    <Compile Include="Data\Entities\StructureCategory.cs" />
+    <Compile Include="Data\SystemData.cs" />
     <Compile Include="Data\Reporter.cs" />
     <Compile Include="Data\ResourceController.cs" />
     <Compile Include="GUI\BrowserColors.cs" />

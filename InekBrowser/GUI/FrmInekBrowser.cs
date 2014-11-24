@@ -10,7 +10,7 @@ using combit.ListLabel18;
 using org.inek.InekBrowser.Data;
 using org.inek.controls.gui;
 using org.inek.controls.helper;
-using org.inek.InekBrowser.Data.Entities.PEPP;
+using org.inek.InekBrowser.Data.Entities;
 using Application = System.Windows.Forms.Application;
 using DataTable = System.Data.DataTable;
 using Point = System.Drawing.Point;
@@ -116,7 +116,7 @@ namespace org.inek.InekBrowser.GUI {
             dlg = new FrmList();
             SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
-            var q = CsvData.Context().Pepps.Select(p => new { pe_SK = p.StructureCategory, pe_Pepp = p.Code, pe_Text = p.Text });
+            var q = CsvData.Context().System.Select(p => new { pe_SK = p.Category, pe_Pepp = p.Code, pe_Text = p.Text });
             dlg.SetDataSource(q);
             dlg.Text = "PEPPS";
             dlg.Show();
@@ -146,7 +146,7 @@ namespace org.inek.InekBrowser.GUI {
             dlg = new FrmList();
             SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
-            var q = CsvData.Context().PeppInfos.Select(pi => new {
+            var q = CsvData.Context().SystemInfo.Select(pi => new {
                                                                      kd_Pepp = pi.Code, kd_FaelleAnzahl = pi.CaseCount,
                                                                      kd_VwdSummeTage = pi.LosSumDays,
                                                                      kd_VwdMw = pi.LosAverage,
@@ -186,7 +186,7 @@ namespace org.inek.InekBrowser.GUI {
             dlg = new FrmList();
             SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
-            var q = CsvData.Context().PrimaryDiagnoses.Select(p => new { hd_Pepp = p.PeppCode, hd_Code = p.DiagCode, hd_FaelleAnzahl = p.Count, hd_FaelleAnteil = p.Fraction});
+            var q = CsvData.Context().PrimaryDiagnoses.Select(p => new { hd_Pepp = p.SystemCode, hd_Code = p.DiagCode, hd_FaelleAnzahl = p.Count, hd_FaelleAnteil = p.Fraction});
             dlg.SetDataSource(q);
             dlg.Text = "Hauptdiagnosen";
             dlg.ShowDialog(this);
@@ -388,7 +388,7 @@ namespace org.inek.InekBrowser.GUI {
             dlg.helpProvider1.SetHelpKeyword(dlg, "Filter.htm");
             dlg.StartPosition = FormStartPosition.CenterParent;
             dlg.Text = "PEPP-Suche";
-            var q = CsvData.Context().Pepps.Select(pepp => new {Strukturkategorie = pepp.StructureCategory, PEPP = pepp.Code, Text = pepp.Text});
+            var q = CsvData.Context().System.Select(pepp => new {Strukturkategorie = pepp.Category, PEPP = pepp.Code, Text = pepp.Text});
             if (SelectionPepp.Category != "") {
                 q = q.Where(pepp => pepp.Strukturkategorie == SelectionPepp.Category);
             }
@@ -396,7 +396,7 @@ namespace org.inek.InekBrowser.GUI {
                 List<string> pepps =
                     CsvData.Context()
                         .PrimaryDiagnoses.Where(hd => hd.DiagCode == SelectionPepp.PrimaryDiagnosis)
-                        .Select(pepp => pepp.PeppCode)
+                        .Select(pepp => pepp.SystemCode)
                         .ToList();
                 q = q.Where(pepp => pepps.Contains(pepp.PEPP));
             } else if (SelectionPepp.SecondaryDiagnosis != "") {
@@ -451,10 +451,10 @@ namespace org.inek.InekBrowser.GUI {
             Cursor = Cursors.WaitCursor;
             if (grid == grdMainDiagnosis && !_mainLoaded) {
                 var q =
-                    dataContext.PrimaryDiagnoses.Where(d => d.PeppCode == PEPP)
+                    dataContext.PrimaryDiagnoses.Where(d => d.SystemCode == PEPP)
                         .Join(dataContext.Recherche.Where(r => r.PrimaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
                             (d, r) => new {
-                                              PEPP = d.PeppCode,
+                                              PEPP = d.SystemCode,
                                               Kode = d.DiagCode,
                                               HDBezeichnung = r.Text,
                                               AnzahlFälle = d.Count,
@@ -804,7 +804,7 @@ namespace org.inek.InekBrowser.GUI {
         } 
 
         private void FillHeadData() {
-            var q = CsvData.Context().PeppInfos.Where(pepp => pepp.Code == PEPP);
+            var q = CsvData.Context().SystemInfo.Where(pepp => pepp.Code == PEPP);
             peppData.CasesNumSummary = q.Select(p => p.CaseCount.ToString("##,###")).ElementAt(0);
             peppData.DaysSummary = q.Select(p => p.LosSumDays.ToString("##,###")).ElementAt(0);
             peppData.LosAverage = q.Select(p => Math.Round(p.LosAverage, 1).ToString()).ElementAt(0);               // einstellig Dezimal
@@ -898,10 +898,10 @@ namespace org.inek.InekBrowser.GUI {
                     CsvData.Context()
                         .PrimaryDiagnoses
                         .Where(pepp => pepp.DiagCode == hd)
-                        .Select(pepp => pepp.PeppCode)
+                        .Select(pepp => pepp.SystemCode)
                         .ToList();
-                var q = CsvData.Context().PrimaryDiagnoses.Where(pd => pepps.Contains(pd.PeppCode) && pd.DiagCode == hd)
-                    .Select(pd => new {PEPP = pd.PeppCode, HD = pd.DiagCode, AnzahlFälle = pd.Count, AnteilFälle = pd.Fraction});
+                var q = CsvData.Context().PrimaryDiagnoses.Where(pd => pepps.Contains(pd.SystemCode) && pd.DiagCode == hd)
+                    .Select(pd => new {PEPP = pd.SystemCode, HD = pd.DiagCode, AnzahlFälle = pd.Count, AnteilFälle = pd.Fraction});
                 search.StartPosition = FormStartPosition.CenterParent;
                 search.Text = "PEPPs zu Hauptdiagnosen";
                 search.ButtonShowIsVisible = false;
@@ -990,18 +990,18 @@ namespace org.inek.InekBrowser.GUI {
             }
         }
 
-        private List<Data.PeppData> setReportData(string pepp)
+        private List<Data.SystemData> setReportData(string pepp)
         {
-            PeppInfo info = CsvData.Context().PeppInfos.Single(p => p.Code == pepp);
-            string skTag = CsvData.Context().Pepps.Where(p => p.Code == PEPP).Select(p => p.StructureCategory).Single();
+            SystemInfo info = CsvData.Context().SystemInfo.Single(p => p.Code == pepp);
+            string skTag = CsvData.Context().System.Where(p => p.Code == PEPP).Select(p => p.Category).Single();
             info.StruCat = CsvData.Context().StructureCategories.Where(sk => sk.Category == skTag).Select(sk => sk.Text).Single();
             info.PeppTxt = cbxPepp.Text;
-            var peppData = new InekBrowser.Data.PeppData(info);
+            var peppData = new InekBrowser.Data.SystemData(info);
             //Primary Diagnoses
-            peppData.PrimDiag = CsvData.Context().PrimaryDiagnoses.Where(p => p.PeppCode == pepp)
+            peppData.PrimDiag = CsvData.Context().PrimaryDiagnoses.Where(p => p.SystemCode == pepp)
                 .Join(CsvData.Context().Recherche.Where(r => r.PrimaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
                             (d, r) => new PrimaryDiagnosis() {
-                                PeppCode = d.PeppCode,
+                                SystemCode = d.SystemCode,
                                 DiagCode = d.DiagCode,
                                 Hauptdiagnose = r.Text,
                                 Count = d.Count,
@@ -1052,7 +1052,7 @@ namespace org.inek.InekBrowser.GUI {
                                   CostType8 = c.CostType8,
                                   TxtBez = d.DomainText
                               }).ToList();
-            var dataSet = new List<Data.PeppData> {peppData};
+            var dataSet = new List<Data.SystemData> {peppData};
 
             return dataSet;
         }
@@ -1062,7 +1062,7 @@ namespace org.inek.InekBrowser.GUI {
             selectionPepp.ClearSelection();
             PEPP = search.Id.ToString();
             cbxPepp.Text = PEPP + ": ";
-            cbxPepp.Text += CsvData.Context().Pepps.Where(p => p.Code == PEPP).Select(p => p.Text).Single();
+            cbxPepp.Text += CsvData.Context().System.Where(p => p.Code == PEPP).Select(p => p.Text).Single();
             LoadPeppData();
         }
 
