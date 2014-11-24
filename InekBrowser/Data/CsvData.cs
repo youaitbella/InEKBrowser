@@ -28,7 +28,8 @@ namespace org.inek.InekBrowser.Data {
         private readonly List<SecondaryDiagnosis> _secondaryDiagnoses = new List<SecondaryDiagnosis>();
         private readonly List<StructureCategory> _structureCategories = new List<StructureCategory>();
         private readonly List<Recherche> _recherche = new List<Recherche>();
-        private readonly List<Catalog> _catalogs = new List<Catalog>(); 
+        private readonly List<Catalog> _catalogs = new List<Catalog>();
+        private readonly List<Mdc> _mdcs = new List<Mdc>(); 
 
         private CsvData() {
         }
@@ -117,6 +118,14 @@ namespace org.inek.InekBrowser.Data {
                 if(_catalogs.Count == 0)
                     LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Katalog], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Katalog]);
                 return _catalogs;
+            }
+        }
+
+        public IEnumerable<Mdc> Mdcs {
+            get {
+                if(_mdcs.Count == 0)
+                    LoadData(ResourceController.DRG_RESOURCE_FILES[(int) ResourceController.DrgResourceFilesIndex.MdcBa],ResourceController.DRG_RESOURCE_HEADERS[(int) ResourceController.DrgResourceFilesIndex.MdcBa]);
+                return _mdcs;
             }
         } 
 
@@ -222,6 +231,18 @@ namespace org.inek.InekBrowser.Data {
             }
         }
 
+        public void ClearDataCaches() {
+            _costDomains.Clear();
+            _mdcs.Clear();
+            _costs.Clear();
+            _primaryDiagnoses.Clear();
+            _procedures.Clear();
+            _recherche.Clear();
+            _secondaryDiagnoses.Clear();
+            _system.Clear();
+            _systemInfo.Clear();
+        }
+
         private void MapDrgBaCsv2Entity(string headline, string[] tokens) {
             if (headline == ResourceController.DRG_RESOURCE_HEADERS[(int) ResourceController.DrgResourceFilesIndex.Drg]) {
                 MapDrg(tokens);
@@ -230,25 +251,138 @@ namespace org.inek.InekBrowser.Data {
             } else if (headline == ResourceController.DRG_RESOURCE_HEADERS[(int) ResourceController.DrgResourceFilesIndex.HauptdiagnosenBa]) {
                 MapPrimaryDiagnosisDrg(tokens);
             } else if (headline == ResourceController.DRG_RESOURCE_HEADERS[(int) ResourceController.DrgResourceFilesIndex.KopfdatenBa]) {
-                _systemInfo.Clear();
+                MapSystemInfoDrg(tokens);
+            } else if (headline == ResourceController.DRG_RESOURCE_HEADERS[(int) ResourceController.DrgResourceFilesIndex.KostenBa]) {
+                MapCostDrg(tokens);
+            } else if (headline == ResourceController.DRG_RESOURCE_HEADERS[(int) ResourceController.DrgResourceFilesIndex.MdcBa]) {
+                MapMdc(tokens);
+            } else if (headline == ResourceController.DRG_RESOURCE_HEADERS[(int) ResourceController.DrgResourceFilesIndex.NebendiagnosenBa]) {
+                MapSecondaryDiagnosisDrg(tokens);
+            } else if (headline == ResourceController.DRG_RESOURCE_HEADERS[(int) ResourceController.DrgResourceFilesIndex.ProzedurenBa]) {
+                MapProcedureDrg(tokens);
+            } else if (headline == ResourceController.DRG_RESOURCE_HEADERS[(int) ResourceController.DrgResourceFilesIndex.RechercheBa]) {
+                var r = new Recherche();
+                r.Code = tokens[0];
+                r.Text = tokens[1];
+                r.CodeF = tokens[2];
+                r.PrimaryDiagnosis = int.Parse(tokens[3]);
+                r.SecondaryDiagnosis = int.Parse(tokens[4]);
+                r.Procedure = int.Parse(tokens[5]);
+                _recherche.Add(r);
             }
         }
 
+        private void MapProcedureDrg(string[] tokens) {
+            var p = new Procedure {
+                                      System = tokens[0],
+                                      ProcCode = tokens[1],
+                                      CaseFraction = decimal.Parse(tokens[2]),
+                                      CodeF = tokens[3],
+                                      CaseCount = int.Parse(tokens[4]),
+                                      EntryFraction = decimal.Parse(tokens[5]),
+                                      EntryCount = int.Parse(tokens[6])
+                                  };
+            _procedures.Add(p);
+        }
+
+        private void MapSecondaryDiagnosisDrg(string[] tokens) {
+            var sd = new SecondaryDiagnosis {
+                                                System = tokens[0],
+                                                DiagCode = tokens[1],
+                                                CaseFraction = decimal.Parse(tokens[2]),
+                                                CodeF = tokens[3],
+                                                CaseCount = int.Parse(tokens[3]),
+                                                EntryFraction = decimal.Parse(tokens[4]),
+                                                EntryCount = int.Parse(tokens[5])
+                                            };
+            _secondaryDiagnoses.Add(sd);
+        }
+
+        private void MapMdc(string[] tokens) {
+            var mdc = new Mdc {
+                                  MDC = tokens[0],
+                                  Text = tokens[1],
+                                  DrgCount = int.Parse(tokens[2]),
+                                  CaseCount = int.Parse(tokens[3])
+                              };
+            _mdcs.Add(mdc);
+        }
+
+        private void MapCostDrg(string[] tokens) {
+            var c = new Cost {
+                                 Code = tokens[0],
+                                 CostDomain = int.Parse(tokens[1]),
+                                 CostType1 = decimal.Parse(tokens[2]),
+                                 CostType2 = decimal.Parse(tokens[3]),
+                                 CostType3 = decimal.Parse(tokens[4]),
+                                 CostType4a = decimal.Parse(tokens[5]),
+                                 CostType4b = decimal.Parse(tokens[6]),
+                                 CostType5 = decimal.Parse(tokens[7]),
+                                 CostType6a = decimal.Parse(tokens[8]),
+                                 CostType6b = decimal.Parse(tokens[9]),
+                                 CostType7 = decimal.Parse(tokens[10]),
+                                 CostType8 = decimal.Parse(tokens[11]),
+                                 CostSum = decimal.Parse(tokens[12])
+                             };
+            _costs.Add(c);
+        }
+
+        private void MapSystemInfoDrg(string[] tokens) {
+            var si = new SystemInfo {
+                                        MDC = tokens[0],
+                                        Code = tokens[1],
+                                        CaseCount = int.Parse(tokens[2]),
+                                        PCCL0 = decimal.Parse(tokens[3]),
+                                        PCCL1 = decimal.Parse(tokens[4]),
+                                        PCCL2 = decimal.Parse(tokens[5]),
+                                        PCCL3 = decimal.Parse(tokens[6]),
+                                        GenderMale = decimal.Parse(tokens[7]),
+                                        GenderFemale = decimal.Parse(tokens[8]),
+                                        GenderUnknown = decimal.Parse(tokens[9]),
+                                        AgeBelow28Days = decimal.Parse(tokens[10]),
+                                        AgeBelow1Year = decimal.Parse(tokens[11]),
+                                        AgeBelow3Years = decimal.Parse(tokens[12]),
+                                        AgeBelow6Years = decimal.Parse(tokens[13]),
+                                        AgeBelow10Years = decimal.Parse(tokens[14]),
+                                        AgeBelow16Years = decimal.Parse(tokens[15]),
+                                        AgeBelow18Years = decimal.Parse(tokens[16]),
+                                        AgeBelow30Years = decimal.Parse(tokens[17]),
+                                        AgeBelow40Years = decimal.Parse(tokens[18]),
+                                        AgeBelow50Years = decimal.Parse(tokens[19]),
+                                        AgeBelow55Years = decimal.Parse(tokens[20]),
+                                        AgeBelow60Years = decimal.Parse(tokens[21]),
+                                        AgeBelow65Years = decimal.Parse(tokens[22]),
+                                        AgeBelow75Years = decimal.Parse(tokens[23]),
+                                        AgeBelow80Years = decimal.Parse(tokens[24]),
+                                        AgeBelow99Years = decimal.Parse(tokens[25]),
+                                        LosShort = decimal.Parse(tokens[26]),
+                                        LosNormal = decimal.Parse(tokens[27]),
+                                        LosLong = decimal.Parse(tokens[28]),
+                                        Day1Reduction = int.Parse(tokens[29]),
+                                        Day1Remuneration = int.Parse(tokens[30]),
+                                        LosAverage = decimal.Parse(tokens[31]),
+                                        ValuationRatio = decimal.Parse(tokens[32]),
+                                        FractionAllCases = decimal.Parse(tokens[33]),
+                                        LosStandard = decimal.Parse(tokens[34]),
+                                        CostAverage = decimal.Parse(tokens[35]),
+                                        CostStandard = decimal.Parse(tokens[36])
+                                    };
+            _systemInfo.Add(si);
+        }
+
         private void MapPrimaryDiagnosisDrg(string[] tokens) {
-            _primaryDiagnoses.Clear();
-            var pd = new PrimaryDiagnosis();
-            pd.SystemCode = tokens[0];
-            pd.DiagCode = tokens[1];
-            pd.Fraction = decimal.Parse(tokens[2]);
-            pd.DiagCodeF = tokens[3];
-            pd.Count = int.Parse(tokens[4]);
+            var pd = new PrimaryDiagnosis {
+                                              SystemCode = tokens[0],
+                                              DiagCode = tokens[1],
+                                              Fraction = decimal.Parse(tokens[2]),
+                                              DiagCodeF = tokens[3],
+                                              Count = int.Parse(tokens[4])
+                                          };
             _primaryDiagnoses.Add(pd);
         }
 
         private void MapCostDomainDrg(string[] tokens) {
-            var cd = new CostDomain();
-            cd.DomainId = int.Parse(tokens[0]);
-            cd.DomainText = tokens[1];
+            var cd = new CostDomain {DomainId = int.Parse(tokens[0]), DomainText = tokens[1]};
             _costDomains.Add(cd);
         }
 
@@ -369,7 +503,7 @@ namespace org.inek.InekBrowser.Data {
 
         private static void MapProcedure(List<Procedure> list, string[] tokens) {
             var p = new Procedure {
-                                      PeppCode = tokens[0],
+                                      System = tokens[0],
                                       ProcCode = tokens[1],
                                       CaseCount = int.Parse(tokens[2]),
                                       CaseFraction = decimal.Parse(tokens[3]),
@@ -395,7 +529,7 @@ namespace org.inek.InekBrowser.Data {
 
         private static void MapCost(List<Cost> list, string[] tokens) {
             var c = new Cost {
-                                 PeppCode = tokens[0],
+                                 Code = tokens[0],
                                  CostDomain = int.Parse(tokens[1]),
                                  CostType1 = decimal.Parse(tokens[2]),
                                  CostType2 = decimal.Parse(tokens[3]),
@@ -426,7 +560,7 @@ namespace org.inek.InekBrowser.Data {
 
         private static void MapSecondaryDiagnosis(List<SecondaryDiagnosis> list, string[] tokens) {
             var diagnosis = new SecondaryDiagnosis {
-                                                    PeppCode = tokens[0],
+                                                    System = tokens[0],
                                                     DiagCode = tokens[1],
                                                     CaseCount = int.Parse(tokens[2]),
                                                     CaseFraction = decimal.Parse(tokens[3]),

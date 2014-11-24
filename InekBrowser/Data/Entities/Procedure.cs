@@ -2,23 +2,13 @@
 
 namespace org.inek.InekBrowser.Data.Entities {
     public class Procedure {
-        [Column("pr_Pepp")]
-        public string PeppCode { get; set; }
-
-        [Column("pr_Code")]
+        public string System { get; set; }
         public string ProcCode { get; set; }
-
-        [Column("pr_FaelleAnzahl")]
         public int CaseCount { get; set; }
-
-        [Column("pr_FaelleAnteil")]
         public decimal CaseFraction { get; set; }
-
-        [Column("pr_NennungenAnzahl")]
         public int EntryCount { get; set; }
-
-        [Column("pr_NennungenAnteil")]
         public decimal EntryFraction { get; set; }
+        public string CodeF { get; set; } // DRG only
 
         public string Prozedur { get; set; }
 

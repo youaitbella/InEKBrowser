@@ -202,7 +202,7 @@ namespace org.inek.InekBrowser.GUI {
                     .SecondaryDiagnoses.Select(
                         s =>
                             new {
-                                    nd_Pepp = s.PeppCode,
+                                    nd_Pepp = s.System,
                                     nd_Code = s.DiagCode,
                                     nd_FaelleAnzahl = s.CaseCount,
                                     nd_FaelleAnteil = s.CaseFraction,
@@ -220,7 +220,7 @@ namespace org.inek.InekBrowser.GUI {
             SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
             var q = CsvData.Context().Procedures.Select(p => new {
-                                                                     pr_Pepp = p.PeppCode,
+                                                                     pr_Pepp = p.System,
                                                                      pr_Code = p.ProcCode,
                                                                      pr_FaelleAnzahl = p.CaseCount,
                                                                      pr_FaelleAnteil = p.CaseFraction,
@@ -403,14 +403,14 @@ namespace org.inek.InekBrowser.GUI {
                 List<string> pepps =
                     CsvData.Context()
                         .SecondaryDiagnoses.Where(sd => sd.DiagCode == SelectionPepp.SecondaryDiagnosis)
-                        .Select(pepp => pepp.PeppCode)
+                        .Select(pepp => pepp.System)
                         .ToList();
                 q = q.Where(pepp => pepps.Contains(pepp.PEPP));
             } else if (SelectionPepp.Procedure != "") {
                 List<string> pepps =
                     CsvData.Context()
                         .Procedures.Where(proc => proc.ProcCode == SelectionPepp.Procedure)
-                        .Select(pepp => pepp.PeppCode)
+                        .Select(pepp => pepp.System)
                         .ToList();
                 q = q.Where(pepp => pepps.Contains(pepp.PEPP));
             }
@@ -464,10 +464,10 @@ namespace org.inek.InekBrowser.GUI {
                 SetHdGridColumnStyle();
                 _mainLoaded = true;
             } else if (grid == grdSecondaryDiagnosis && !_secLoaded) {
-                var q = dataContext.SecondaryDiagnoses.Where(d => d.PeppCode == PEPP)
+                var q = dataContext.SecondaryDiagnoses.Where(d => d.System == PEPP)
                         .Join(dataContext.Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
                             (d, r) => new {
-                                PEPP = d.PeppCode,
+                                PEPP = d.System,
                                 Kode = d.DiagCode,
                                 Nebendiagnose = r.Text,
                                 AnzahlFälle = d.CaseCount,
@@ -479,10 +479,10 @@ namespace org.inek.InekBrowser.GUI {
                 SetSdGridColumnStyle();
                 _secLoaded = true;
             } else if (grid == grdProcedures && !_procLoaded) {
-                var q = dataContext.Procedures.Where(d => d.PeppCode == PEPP)
+                var q = dataContext.Procedures.Where(d => d.System == PEPP)
                         .Join(dataContext.Recherche.Where(r => r.Procedure == 1), d => d.ProcCode, r => r.Code,
                             (d, r) => new {
-                                PEPP = d.PeppCode,
+                                PEPP = d.System,
                                 Kode = d.ProcCode,
                                 Prozedur = r.Text,
                                 AnzahlFälle = d.CaseCount,
@@ -924,11 +924,11 @@ namespace org.inek.InekBrowser.GUI {
                     CsvData.Context()
                         .SecondaryDiagnoses
                         .Where(pepp => pepp.DiagCode == sd)
-                        .Select(pepp => pepp.PeppCode)
+                        .Select(pepp => pepp.System)
                         .ToList();
-                var q = CsvData.Context().SecondaryDiagnoses.Where(pd => pepps.Contains(pd.PeppCode) && pd.DiagCode == sd)
+                var q = CsvData.Context().SecondaryDiagnoses.Where(pd => pepps.Contains(pd.System) && pd.DiagCode == sd)
                     .Select(nd => new {
-                        PEPP = nd.PeppCode,
+                        PEPP = nd.System,
                         ND = nd.DiagCode,
                         AnzahlFälle = nd.CaseCount,
                         AnteilFälle = nd.CaseFraction,
@@ -961,11 +961,11 @@ namespace org.inek.InekBrowser.GUI {
                     CsvData.Context()
                         .Procedures
                         .Where(pepp => pepp.ProcCode == proc)
-                        .Select(pepp => pepp.PeppCode)
+                        .Select(pepp => pepp.System)
                         .ToList();
-                var q = CsvData.Context().Procedures.Where(pd => pepps.Contains(pd.PeppCode) && pd.ProcCode == proc)
+                var q = CsvData.Context().Procedures.Where(pd => pepps.Contains(pd.System) && pd.ProcCode == proc)
                     .Select(p => new {
-                        PEPP = p.PeppCode,
+                        PEPP = p.System,
                         Prozedur = p.ProcCode,
                         AnzahlFälle = p.CaseCount,
                         AnteilFälle = p.CaseFraction,
@@ -1008,10 +1008,10 @@ namespace org.inek.InekBrowser.GUI {
                                 Fraction = d.Fraction
                             }).ToList();
             //Secondary Diagnoses
-            peppData.SecDiag = CsvData.Context().SecondaryDiagnoses.Where(p => p.PeppCode == pepp)
+            peppData.SecDiag = CsvData.Context().SecondaryDiagnoses.Where(p => p.System == pepp)
                 .Join(CsvData.Context().Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
                             (d, r) => new SecondaryDiagnosis(){
-                                PeppCode = d.PeppCode,
+                                System = d.System,
                                 DiagCode = d.DiagCode,
                                 Nebendiagnose = r.Text,
                                 CaseCount = d.CaseCount,
@@ -1020,10 +1020,10 @@ namespace org.inek.InekBrowser.GUI {
                                 EntryFraction = d.EntryFraction
                             }).ToList();
             //Procedures
-            peppData.Proc = CsvData.Context().Procedures.Where(p => p.PeppCode == pepp)
+            peppData.Proc = CsvData.Context().Procedures.Where(p => p.System == pepp)
                  .Join(CsvData.Context().Recherche.Where(r => r.Procedure == 1), d => d.ProcCode, r => r.Code,
                             (d, r) => new Procedure() {
-                                PeppCode = d.PeppCode,
+                                System = d.System,
                                 ProcCode = d.ProcCode,
                                 Prozedur = r.Text,
                                 CaseCount = d.CaseCount,
