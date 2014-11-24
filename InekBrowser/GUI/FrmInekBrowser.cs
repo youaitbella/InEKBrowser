@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using combit.ListLabel18;
+using combit.ListLabel20;
 using org.inek.InekBrowser.Data;
 using org.inek.controls.gui;
 using org.inek.controls.helper;

@@ -47,6 +47,8 @@
             this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlContentBackground = new System.Windows.Forms.Panel();
+            this.peppData = new org.inek.InekBrowser.GUI.PeppData();
+            this.selectionPepp = new org.inek.InekBrowser.GUI.SelectionPepp();
             this.lblSystem = new System.Windows.Forms.Label();
             this.cbxPepp = new org.inek.controls.CommonControls.ComboField();
             this.tabControl = new System.Windows.Forms.TabControl();
@@ -62,8 +64,6 @@
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.timerPeppBlink = new System.Windows.Forms.Timer(this.components);
             this.timerPrintWindow = new System.Windows.Forms.Timer(this.components);
-            this.peppData = new org.inek.InekBrowser.GUI.PeppData();
-            this.selectionPepp = new org.inek.InekBrowser.GUI.SelectionPepp();
             this.titleBar = new org.inek.InekBrowser.GUI.TitleBar();
             this.mnuMain.SuspendLayout();
             this.pnlContentBackground.SuspendLayout();
@@ -234,7 +234,6 @@
             this.designerToolStripMenuItem.Name = "designerToolStripMenuItem";
             this.designerToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.designerToolStripMenuItem.Text = "Designer";
-            this.designerToolStripMenuItem.Visible = false;
             this.designerToolStripMenuItem.Click += new System.EventHandler(this.designerToolStripMenuItem_Click);
             // 
             // mnuQuestionTag
@@ -289,6 +288,33 @@
             this.pnlContentBackground.Size = new System.Drawing.Size(1182, 737);
             this.pnlContentBackground.TabIndex = 8;
             this.pnlContentBackground.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
+            // 
+            // peppData
+            // 
+            this.peppData.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.peppData.BackColor = System.Drawing.Color.SeaGreen;
+            this.peppData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.peppData.CatalogueActive = true;
+            this.peppData.Degression = "0";
+            this.peppData.Location = new System.Drawing.Point(0, 114);
+            this.peppData.Name = "peppData";
+            this.peppData.Size = new System.Drawing.Size(1182, 163);
+            this.peppData.TabIndex = 12;
+            this.peppData.ClickedCatalogue += new System.EventHandler(this.peppData_ClickedCatalogue);
+            // 
+            // selectionPepp
+            // 
+            this.selectionPepp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.selectionPepp.BackColor = System.Drawing.Color.SteelBlue;
+            this.helpProvider1.SetHelpKeyword(this.selectionPepp, "Filter.htm");
+            this.helpProvider1.SetHelpNavigator(this.selectionPepp, System.Windows.Forms.HelpNavigator.Topic);
+            this.selectionPepp.Location = new System.Drawing.Point(0, 27);
+            this.selectionPepp.Name = "selectionPepp";
+            this.helpProvider1.SetShowHelp(this.selectionPepp, true);
+            this.selectionPepp.Size = new System.Drawing.Size(1182, 52);
+            this.selectionPepp.TabIndex = 11;
             // 
             // lblSystem
             // 
@@ -492,33 +518,6 @@
             // 
             this.timerPrintWindow.Interval = 1000;
             this.timerPrintWindow.Tick += new System.EventHandler(this.timerPrintWindow_Tick);
-            // 
-            // peppData
-            // 
-            this.peppData.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.peppData.BackColor = System.Drawing.Color.SeaGreen;
-            this.peppData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.peppData.CatalogueActive = true;
-            this.peppData.Degression = "0";
-            this.peppData.Location = new System.Drawing.Point(0, 114);
-            this.peppData.Name = "peppData";
-            this.peppData.Size = new System.Drawing.Size(1182, 163);
-            this.peppData.TabIndex = 12;
-            this.peppData.ClickedCatalogue += new System.EventHandler(this.peppData_ClickedCatalogue);
-            // 
-            // selectionPepp
-            // 
-            this.selectionPepp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.selectionPepp.BackColor = System.Drawing.Color.SteelBlue;
-            this.helpProvider1.SetHelpKeyword(this.selectionPepp, "Filter.htm");
-            this.helpProvider1.SetHelpNavigator(this.selectionPepp, System.Windows.Forms.HelpNavigator.Topic);
-            this.selectionPepp.Location = new System.Drawing.Point(0, 27);
-            this.selectionPepp.Name = "selectionPepp";
-            this.helpProvider1.SetShowHelp(this.selectionPepp, true);
-            this.selectionPepp.Size = new System.Drawing.Size(1182, 52);
-            this.selectionPepp.TabIndex = 11;
             // 
             // titleBar
             // 

@@ -64,10 +64,10 @@
     <ManifestKeyFile>cert050216.p12</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <GenerateManifests>true</GenerateManifests>
+    <GenerateManifests>false</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
@@ -103,9 +103,8 @@
     <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
-    <Reference Include="combit.ListLabel18, Version=18.0.4674.12587, Culture=neutral, PublicKeyToken=a7a30592cb4a94be, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\combit\LL18\Redistributable Files\x64\combit.ListLabel18.dll</HintPath>
+    <Reference Include="combit.ListLabel20">
+      <HintPath>C:\Program Files (x86)\combit\LL20\Redistributable Files\combit.ListLabel20.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.0.2\lib\net40\EntityFramework.dll</HintPath>
@@ -197,53 +196,52 @@
     <Content Include="peppDruck.lst">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmbr18.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Print\cmbr20.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmct18.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Print\cmct20.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmdw18.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Print\cmdw20.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmll18.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Print\cmll20.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmll18pr.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Print\cmll20pr.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmll18xl.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Print\cmll20xl.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmls18.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Print\cmls20.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmmx18.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Print\cmmx20.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmut18.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Print\cmut20.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmll1801.lng">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Print\cmls1801.lng">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Print\cmll18ex.llx">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <None Include="Print\cmLL2001.chm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Print\cmll2001.lng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Print\Cmll20ex.llx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Print\cmls2001.lng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Resources\book-open-icon.png" />
-    <None Include="cert050216.p12" />
     <None Include="Properties\app.manifest">
       <SubType>Designer</SubType>
     </None>
     <None Include="Resources\doc-pdf-icon.png" />
     <None Include="Resources\folder-document-icon.png" />
     <None Include="packages.config" />
-    <Content Include="Print\cmll1801.chm">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <None Include="Resources\peppo_minimize.png" />
     <None Include="Resources\peppo_manual.png" />
     <None Include="Resources\peppo_help.png" />
