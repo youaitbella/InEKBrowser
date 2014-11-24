@@ -1,4 +1,4 @@
-kb_Nr;kb_BereichOrder;kb_Bereich
+Ôªøkb_Nr;kb_BereichOrder;kb_Bereich
 21;1;21. Station - Regelbehandlung
 22;2;22. Station - Intensivbehandlung
 23;3;23. Psychotherapie
@@ -6,9 +6,9 @@ kb_Nr;kb_BereichOrder;kb_Bereich
 25;5;25. Ergotherapie
 26;6;26. Andere Therapie
 4;7;04. OP-Bereich
-5;8;05. An‰sthesie
+5;8;05. An√§sthesie
 7;9;07. Kardiologische Diagnostik / Therapie
 8;10;08. Endoskopische Diagnostik / Therapie
 9;11;09. Radiologie
 10;12;10. Laboratorien
-11;13;11. ‹brige diagnostische und therapeutische Bereiche
+11;13;11. √úbrige diagnostische und therapeutische Bereiche
