@@ -64,10 +64,10 @@
     <ManifestKeyFile>cert050216.p12</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <GenerateManifests>true</GenerateManifests>
+    <GenerateManifests>false</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
@@ -237,7 +237,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Resources\book-open-icon.png" />
-    <None Include="cert050216.p12" />
     <None Include="Properties\app.manifest">
       <SubType>Designer</SubType>
     </None>
