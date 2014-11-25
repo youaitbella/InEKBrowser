@@ -64,10 +64,10 @@
     <ManifestKeyFile>cert050216.p12</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <GenerateManifests>false</GenerateManifests>
+    <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>false</SignManifests>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
@@ -131,6 +131,7 @@
     <Compile Include="Data\Entities\Cost.cs" />
     <Compile Include="Data\Entities\CostDomain.cs" />
     <Compile Include="Data\Entities\Catalog.cs" />
+    <Compile Include="Data\Entities\Mdc.cs" />
     <Compile Include="Data\Entities\SystemInfo.cs" />
     <Compile Include="Data\Entities\PrimaryDiagnosis.cs" />
     <Compile Include="Data\Entities\System.cs" />
@@ -194,7 +195,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="peppDruck.lst">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Print\cmbr20.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -236,6 +237,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Resources\book-open-icon.png" />
+    <None Include="cert050216.p12" />
     <None Include="Properties\app.manifest">
       <SubType>Designer</SubType>
     </None>

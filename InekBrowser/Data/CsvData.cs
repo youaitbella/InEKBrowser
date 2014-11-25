@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Data;
 using System.Globalization;
 using System.IO;
+using System.Net.Mail;
 using System.Reflection;
 using org.inek.InekBrowser.Data.Entities;
 using org.inek.controls.helper;
@@ -29,7 +30,14 @@ namespace org.inek.InekBrowser.Data {
         private readonly List<StructureCategory> _structureCategories = new List<StructureCategory>();
         private readonly List<Recherche> _recherche = new List<Recherche>();
         private readonly List<Catalog> _catalogs = new List<Catalog>();
-        private readonly List<Mdc> _mdcs = new List<Mdc>(); 
+        private readonly List<Mdc> _mdcs = new List<Mdc>();
+
+        public enum DrgType {
+            BA,
+            HA
+        }
+
+        public static DrgType DrgSystemType { get; set; }
 
         private CsvData() {
         }
@@ -37,22 +45,35 @@ namespace org.inek.InekBrowser.Data {
         public static CsvData Context() {
             if (_instance == null) {
                 _instance = new CsvData();
+                DrgSystemType = DrgType.BA;
             }
             return _instance;
         }
 
         public IEnumerable<Cost> Costs {
             get {
-                if(_costs.Count == 0)
-                    LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Kosten], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Kosten]);
+                if (_costs.Count == 0) {
+                    if(Program.SystemBrowser == Program.System.Pepp)
+                        LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Kosten], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Kosten]);
+                    else if (Program.SystemBrowser == Program.System.Drg) {
+                        if(DrgSystemType == DrgType.BA)
+                            LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.KostenBa], ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.KostenBa]);
+                        else if(DrgSystemType == DrgType.HA)
+                            LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.KostenHa], ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.KostenHa]);
+                    }
+                }
                 return _costs;
             }
         }
 
         public IEnumerable<CostDomain> CostDomains {
             get {
-                if(_costDomains.Count == 0)
-                    LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Kostenbereich], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Kostenbereich]);
+                if (_costDomains.Count == 0) {
+                    if (Program.SystemBrowser == Program.System.Pepp)
+                        LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Kostenbereich], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Kostenbereich]);
+                    else if (Program.SystemBrowser == Program.System.Drg)
+                        LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.Kostenbereich], ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.Kostenbereich]);
+                }
                 return _costDomains;
             }
         }
@@ -67,48 +88,92 @@ namespace org.inek.InekBrowser.Data {
 
         public IEnumerable<Entities.System> System {
             get {
-                if(_system.Count == 0)
-                    LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Pepp], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Pepp]);
+                if (_system.Count == 0) {
+                    if(Program.SystemBrowser == Program.System.Pepp)
+                        LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Pepp], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Pepp]);
+                    else if (Program.SystemBrowser == Program.System.Drg)
+                        LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.Drg], ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.Drg]);
+                }
                 return _system;
             }
         }
 
         public IEnumerable<SystemInfo> SystemInfo {
             get {
-                if(_systemInfo.Count == 0)
-                    LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Kopfdaten], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Kopfdaten]);
+                if (_systemInfo.Count == 0) {
+                    if(Program.SystemBrowser == Program.System.Pepp)
+                        LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Kopfdaten], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Kopfdaten]);
+                    else if (Program.SystemBrowser == Program.System.Drg) {
+                        if(DrgSystemType == DrgType.BA)
+                            LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.KopfdatenBa], ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.KopfdatenBa]);
+                        else if(DrgSystemType == DrgType.HA)
+                            LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.KopfdatenHa], ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.KopfdatenHa]);
+                    }
+                }
                 return _systemInfo;
             }
         }
 
         public IEnumerable<Procedure> Procedures {
             get {
-                if(_procedures.Count == 0)
-                    LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Prozeduren], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Prozeduren]);
+                if (_procedures.Count == 0) {
+                    if(Program.SystemBrowser == Program.System.Pepp)
+                        LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Prozeduren], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Prozeduren]);
+                    else if (Program.SystemBrowser == Program.System.Drg) {
+                        if(DrgSystemType == DrgType.BA)
+                            LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.ProzedurenBa], ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.ProzedurenBa]);
+                        else if(DrgSystemType == DrgType.HA)
+                            LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.ProzedurenHa], ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.ProzedurenHa]);
+                    }
+                }
                 return _procedures;
             }
         }
 
         public IEnumerable<PrimaryDiagnosis> PrimaryDiagnoses {
             get {
-                if(_primaryDiagnoses.Count == 0)
-                    LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Hauptdiagnose], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Hauptdiagnose]);
+                if(_primaryDiagnoses.Count == 0) {
+                    if(Program.SystemBrowser == Program.System.Pepp)
+                        LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Hauptdiagnose], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Hauptdiagnose]);
+                    else if (Program.SystemBrowser == Program.System.Drg) {
+                        if(DrgSystemType == DrgType.BA)
+                            LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.HauptdiagnosenBa], ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.HauptdiagnosenBa]);
+                        else if(DrgSystemType == DrgType.HA)
+                            LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.HauptdiagnosenHa], ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.HauptdiagnosenHa]);
+                    }
+                }
                 return _primaryDiagnoses;
             }
         }
 
         public IEnumerable<SecondaryDiagnosis> SecondaryDiagnoses {
             get {
-                if(_secondaryDiagnoses.Count == 0)
-                    LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Nebendiagnose], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Nebendiagnose]);
+                if (_secondaryDiagnoses.Count == 0) {
+                    if (Program.SystemBrowser == Program.System.Pepp) 
+                        LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Nebendiagnose], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Nebendiagnose]);
+                    else if(Program.SystemBrowser == Program.System.Drg) {
+                        if (DrgSystemType == DrgType.BA)
+                            LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.NebendiagnosenBa], ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.NebendiagnosenBa]);
+                        else if(DrgSystemType == DrgType.HA)
+                            LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.NebendiagnosenHa], ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.NebendiagnosenHa]);
+                    }
+                }
                 return _secondaryDiagnoses;
             }
         }
 
         public IEnumerable<Recherche> Recherche {
             get {
-                if(_recherche.Count == 0)
-                    LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Recherche], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Recherche]);
+                if (_recherche.Count == 0) {
+                    if(Program.SystemBrowser == Program.System.Pepp)
+                        LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Recherche], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Recherche]);
+                    else if (Program.SystemBrowser == Program.System.Drg) {
+                        if(DrgSystemType == DrgType.BA)
+                            LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.RechercheBa], ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.RechercheBa]);
+                        else if(DrgSystemType == DrgType.HA)
+                            LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.RechercheHa], ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.RechercheHa]);
+                    }
+                }
                 return _recherche;
             }
         }
@@ -116,15 +181,24 @@ namespace org.inek.InekBrowser.Data {
         public IEnumerable<Catalog> Catalogs {
             get {
                 if(_catalogs.Count == 0)
-                    LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Katalog], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Katalog]);
+                    if(Program.SystemBrowser == Program.System.Pepp)
+                        LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Katalog], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Katalog]);
                 return _catalogs;
             }
         }
 
         public IEnumerable<Mdc> Mdcs {
             get {
-                if(_mdcs.Count == 0)
-                    LoadData(ResourceController.DRG_RESOURCE_FILES[(int) ResourceController.DrgResourceFilesIndex.MdcBa],ResourceController.DRG_RESOURCE_HEADERS[(int) ResourceController.DrgResourceFilesIndex.MdcBa]);
+                if (_mdcs.Count == 0) {
+                    if (Program.SystemBrowser == Program.System.Drg) {
+                        if (DrgSystemType == DrgType.BA)
+                            LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.MdcBa],
+                                ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.MdcBa]);
+                        else if (DrgSystemType == DrgType.HA)
+                            LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.MdcHa],
+                                ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.MdcHa]);
+                    }
+                }
                 return _mdcs;
             }
         } 
@@ -224,10 +298,31 @@ namespace org.inek.InekBrowser.Data {
                         MapPeppCsv2Entity(headline, tokens);
                     else if (Program.SystemBrowser == Program.System.Drg && filename.StartsWith("RepBrDrg_BA"))
                         MapDrgBaCsv2Entity(headline, tokens);
-                    else if (Program.SystemBrowser == Program.System.Drg && filename.StartsWith("RepBrDrg_HA")) {
-                        // TODO: Load HA data here   
-                    }
+                    else if (Program.SystemBrowser == Program.System.Drg && filename.StartsWith("RepBrDrg_HA"))
+                        MapDrgHaCsv2Entity(headline, tokens);
                 }
+            }
+        }
+
+        private void MapDrgHaCsv2Entity(string headline, string[] tokens) {
+            if (headline == ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.Drg]) {
+                MapDrg(tokens);
+            } else if (headline == ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.Kostenbereich]) {
+                MapCostDomainDrg(tokens);
+            } else if (headline == ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.HauptdiagnosenHa]) {
+                MapPrimaryDiagnosisDrg(tokens);
+            } else if (headline == ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.KopfdatenHa]) {
+                MapSystemInfoDrg(tokens);
+            } else if (headline == ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.KostenHa]) {
+                MapCostDrg(tokens);
+            } else if (headline == ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.MdcHa]) {
+                MapMdc(tokens);
+            } else if (headline == ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.NebendiagnosenHa]) {
+                MapSecondaryDiagnosisDrg(tokens);
+            } else if (headline == ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.ProzedurenHa]) {
+                MapProcedureDrg(tokens);
+            } else if (headline == ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.RechercheHa]) {
+                MapRechercheDrg(tokens);
             }
         }
 
@@ -261,15 +356,20 @@ namespace org.inek.InekBrowser.Data {
             } else if (headline == ResourceController.DRG_RESOURCE_HEADERS[(int) ResourceController.DrgResourceFilesIndex.ProzedurenBa]) {
                 MapProcedureDrg(tokens);
             } else if (headline == ResourceController.DRG_RESOURCE_HEADERS[(int) ResourceController.DrgResourceFilesIndex.RechercheBa]) {
-                var r = new Recherche();
-                r.Code = tokens[0];
-                r.Text = tokens[1];
-                r.CodeF = tokens[2];
-                r.PrimaryDiagnosis = int.Parse(tokens[3]);
-                r.SecondaryDiagnosis = int.Parse(tokens[4]);
-                r.Procedure = int.Parse(tokens[5]);
-                _recherche.Add(r);
+                MapRechercheDrg(tokens);
             }
+        }
+
+        private void MapRechercheDrg(string[] tokens) {
+            var r = new Recherche {
+                                      Code = tokens[0],
+                                      Text = tokens[1],
+                                      CodeF = tokens[2],
+                                      PrimaryDiagnosis = int.Parse(tokens[3]),
+                                      SecondaryDiagnosis = int.Parse(tokens[4]),
+                                      Procedure = int.Parse(tokens[5])
+                                  };
+            _recherche.Add(r);
         }
 
         private void MapProcedureDrg(string[] tokens) {

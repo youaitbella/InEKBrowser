@@ -238,7 +238,7 @@ namespace org.inek.InekBrowser.GUI {
             SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
             var q = CsvData.Context().Costs.Select(c => new {
-                                                                ko_Pepp = c.PeppCode,
+                                                                ko_Pepp = c.Code,
                                                                 ko_BereichNr = c.CostDomain,
                                                                 ko_KArt1 = c.CostType1,
                                                                 ko_KArt2 = c.CostType2,
@@ -584,7 +584,7 @@ namespace org.inek.InekBrowser.GUI {
         private void BuildCostMatrix() {
             var q =
                 CsvData.Context()
-                    .Costs.Where(pepp => pepp.PeppCode == PEPP)
+                    .Costs.Where(pepp => pepp.Code == PEPP)
                     .Select(c => new {
                         KostenArt1 = (c.CostType1.ToString("F").Equals("0,00") ? "" : c.CostType1.ToString("F")),
                         KostenArt2 = (c.CostType2.ToString("F").Equals("0,00") ? "" : c.CostType2.ToString("F")),
@@ -602,7 +602,7 @@ namespace org.inek.InekBrowser.GUI {
                                      });
             grdCosts.DataSource = Helper.ConvertToDataTable(q);
             List<int> rowIds = CsvData.Context()
-                .Costs.Where(pepp => pepp.PeppCode == PEPP)
+                .Costs.Where(pepp => pepp.Code == PEPP)
                 .Select(ri => ri.CostDomain).ToList();
             BuildCostMatrixColHeaders(Color.LightGreen);
             BuildCostMatrixRowHeaders(rowIds, Color.LightGreen);
@@ -1031,11 +1031,11 @@ namespace org.inek.InekBrowser.GUI {
                                 EntryCount = d.EntryCount,
                                 EntryFraction = d.EntryFraction
                             }).ToList();
-            peppData.Cost = CsvData.Context().Costs.Where(p => p.PeppCode== pepp)
+            peppData.Cost = CsvData.Context().Costs.Where(p => p.Code== pepp)
                 .Join(CsvData.Context().CostDomains, c => c.CostDomain, d => d.DomainId,
                 (c, d) => new Cost()
                               {
-                                  PeppCode = c.PeppCode,
+                                  Code = c.Code,
                                   CostDomain = c.CostDomain,
                                   CostType1 = c.CostType1,
                                   CostType2 = c.CostType2,
