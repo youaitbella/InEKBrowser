@@ -36,6 +36,8 @@
             this.mnuSecondaryDiagnoses = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuProcedures = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuCosts = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuCostDomain = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuCatalogue = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuRecherche = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuDataDir = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuReport = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,6 +50,7 @@
             this.mnuInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlContentBackground = new System.Windows.Forms.Panel();
             this.lblSystem = new System.Windows.Forms.Label();
+            this.cbxSystem = new org.inek.controls.CommonControls.ComboField();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabMainDiagnosis = new System.Windows.Forms.TabPage();
             this.grdMainDiagnosis = new System.Windows.Forms.DataGridView();
@@ -55,7 +58,7 @@
             this.grdSecondaryDiagnosis = new System.Windows.Forms.DataGridView();
             this.tabProcedures = new System.Windows.Forms.TabPage();
             this.grdProcedures = new System.Windows.Forms.DataGridView();
-            this.tabDailyCosts = new System.Windows.Forms.TabPage();
+            this.tabCosts = new System.Windows.Forms.TabPage();
             this.grdCosts = new System.Windows.Forms.DataGridView();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
@@ -63,7 +66,6 @@
             this.timerPrintWindow = new System.Windows.Forms.Timer(this.components);
             this.peppData = new org.inek.InekBrowser.GUI.PeppData();
             this.selectionPepp = new org.inek.InekBrowser.GUI.SelectionPepp();
-            this.cbxSystem = new org.inek.controls.CommonControls.ComboField();
             this.titleBar = new org.inek.InekBrowser.GUI.TitleBar();
             this.mnuMain.SuspendLayout();
             this.pnlContentBackground.SuspendLayout();
@@ -74,7 +76,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.grdSecondaryDiagnosis)).BeginInit();
             this.tabProcedures.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdProcedures)).BeginInit();
-            this.tabDailyCosts.SuspendLayout();
+            this.tabCosts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdCosts)).BeginInit();
             this.SuspendLayout();
             // 
@@ -123,6 +125,8 @@
             this.mnuSecondaryDiagnoses,
             this.mnuProcedures,
             this.mnuCosts,
+            this.mnuCostDomain,
+            this.mnuCatalogue,
             this.mnuRecherche,
             this.mnuDataDir});
             this.mnuData.Name = "mnuData";
@@ -151,7 +155,7 @@
             this.mnuPeppInfo.Name = "mnuPeppInfo";
             this.mnuPeppInfo.Size = new System.Drawing.Size(185, 22);
             this.mnuPeppInfo.Text = "Kopfdaten";
-            this.mnuPeppInfo.Click += new System.EventHandler(this.mnuPeppInfo_Click);
+            this.mnuPeppInfo.Click += new System.EventHandler(this.mnuSystemInfo_Click);
             // 
             // mnuPrimaryDiagnoses
             // 
@@ -184,6 +188,20 @@
             this.mnuCosts.Size = new System.Drawing.Size(185, 22);
             this.mnuCosts.Text = "Kosten";
             this.mnuCosts.Click += new System.EventHandler(this.mnuCosts_Click);
+            // 
+            // mnuCostDomain
+            // 
+            this.mnuCostDomain.Name = "mnuCostDomain";
+            this.mnuCostDomain.Size = new System.Drawing.Size(185, 22);
+            this.mnuCostDomain.Text = "Kostenbereich";
+            this.mnuCostDomain.Click += new System.EventHandler(this.kostenbereichToolStripMenuItem_Click);
+            // 
+            // mnuCatalogue
+            // 
+            this.mnuCatalogue.Name = "mnuCatalogue";
+            this.mnuCatalogue.Size = new System.Drawing.Size(185, 22);
+            this.mnuCatalogue.Text = "Katalog";
+            this.mnuCatalogue.Click += new System.EventHandler(this.mnuCatalogue_Click);
             // 
             // mnuRecherche
             // 
@@ -300,12 +318,34 @@
             this.lblSystem.TabIndex = 9;
             this.lblSystem.Text = "Code:";
             // 
+            // cbxSystem
+            // 
+            this.cbxSystem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.helpProvider1.SetHelpKeyword(this.cbxSystem, "Filter.htm");
+            this.helpProvider1.SetHelpNavigator(this.cbxSystem, System.Windows.Forms.HelpNavigator.Topic);
+            this.cbxSystem.Location = new System.Drawing.Point(107, 88);
+            this.cbxSystem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbxSystem.MinimumSize = new System.Drawing.Size(40, 21);
+            this.cbxSystem.MutltiLine = false;
+            this.cbxSystem.Name = "cbxSystem";
+            this.cbxSystem.ReadOnly = true;
+            this.helpProvider1.SetShowHelp(this.cbxSystem, true);
+            this.cbxSystem.Size = new System.Drawing.Size(1067, 21);
+            this.cbxSystem.TabIndex = 10;
+            this.toolTip.SetToolTip(this.cbxSystem, "Wählen Sie eine Code aus.");
+            this.cbxSystem.ButtonClicked += new System.EventHandler(this.cbxSystem_ButtonClicked);
+            this.cbxSystem.Load += new System.EventHandler(this.cbxPepp_Load);
+            // 
             // tabControl
             // 
+            this.tabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl.Controls.Add(this.tabMainDiagnosis);
             this.tabControl.Controls.Add(this.tabSecondaryDiagnosis);
             this.tabControl.Controls.Add(this.tabProcedures);
-            this.tabControl.Controls.Add(this.tabDailyCosts);
+            this.tabControl.Controls.Add(this.tabCosts);
             this.tabControl.Location = new System.Drawing.Point(3, 283);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
@@ -415,17 +455,17 @@
             this.grdProcedures.TabIndex = 2;
             this.grdProcedures.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdProcedures_CellDoubleClick);
             // 
-            // tabDailyCosts
+            // tabCosts
             // 
-            this.tabDailyCosts.BackColor = System.Drawing.Color.Transparent;
-            this.tabDailyCosts.Controls.Add(this.grdCosts);
-            this.tabDailyCosts.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tabDailyCosts.Location = new System.Drawing.Point(4, 22);
-            this.tabDailyCosts.Name = "tabDailyCosts";
-            this.tabDailyCosts.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDailyCosts.Size = new System.Drawing.Size(1168, 425);
-            this.tabDailyCosts.TabIndex = 3;
-            this.tabDailyCosts.Text = "Tageskosten";
+            this.tabCosts.BackColor = System.Drawing.Color.Transparent;
+            this.tabCosts.Controls.Add(this.grdCosts);
+            this.tabCosts.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.tabCosts.Location = new System.Drawing.Point(4, 22);
+            this.tabCosts.Name = "tabCosts";
+            this.tabCosts.Padding = new System.Windows.Forms.Padding(3);
+            this.tabCosts.Size = new System.Drawing.Size(1168, 425);
+            this.tabCosts.TabIndex = 3;
+            this.tabCosts.Text = "Tageskosten";
             // 
             // grdCosts
             // 
@@ -497,25 +537,6 @@
             this.selectionPepp.Size = new System.Drawing.Size(1182, 52);
             this.selectionPepp.TabIndex = 11;
             // 
-            // cbxSystem
-            // 
-            this.cbxSystem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.helpProvider1.SetHelpKeyword(this.cbxSystem, "Filter.htm");
-            this.helpProvider1.SetHelpNavigator(this.cbxSystem, System.Windows.Forms.HelpNavigator.Topic);
-            this.cbxSystem.Location = new System.Drawing.Point(107, 88);
-            this.cbxSystem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbxSystem.MinimumSize = new System.Drawing.Size(40, 21);
-            this.cbxSystem.MutltiLine = false;
-            this.cbxSystem.Name = "cbxSystem";
-            this.cbxSystem.ReadOnly = true;
-            this.helpProvider1.SetShowHelp(this.cbxSystem, true);
-            this.cbxSystem.Size = new System.Drawing.Size(1067, 21);
-            this.cbxSystem.TabIndex = 10;
-            this.toolTip.SetToolTip(this.cbxSystem, "Wählen Sie eine Code aus.");
-            this.cbxSystem.ButtonClicked += new System.EventHandler(this.cbxSystem_ButtonClicked);
-            this.cbxSystem.Load += new System.EventHandler(this.cbxPepp_Load);
-            // 
             // titleBar
             // 
             this.titleBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -568,7 +589,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.grdSecondaryDiagnosis)).EndInit();
             this.tabProcedures.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdProcedures)).EndInit();
-            this.tabDailyCosts.ResumeLayout(false);
+            this.tabCosts.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdCosts)).EndInit();
             this.ResumeLayout(false);
 
@@ -599,7 +620,7 @@
         private System.Windows.Forms.TabPage tabMainDiagnosis;
         private System.Windows.Forms.TabPage tabSecondaryDiagnosis;
         private System.Windows.Forms.TabPage tabProcedures;
-        private System.Windows.Forms.TabPage tabDailyCosts;
+        private System.Windows.Forms.TabPage tabCosts;
         private System.Windows.Forms.Label lblSystem;
         private controls.CommonControls.ComboField cbxSystem;
         private System.Windows.Forms.DataGridView grdMainDiagnosis;
@@ -616,6 +637,8 @@
         private System.Windows.Forms.ToolStripMenuItem pDFExportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mnuDataDir;
         private PeppData peppData;
+        private System.Windows.Forms.ToolStripMenuItem mnuCostDomain;
+        private System.Windows.Forms.ToolStripMenuItem mnuCatalogue;
 
     }
 }

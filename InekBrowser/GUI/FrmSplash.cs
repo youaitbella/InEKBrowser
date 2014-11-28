@@ -65,10 +65,10 @@ namespace org.inek.InekBrowser.GUI {
         private void FrmSplash_Shown(object sender, EventArgs e) {
             Visible = false;
             try {
+                ResourceController.CheckResourceDir();
+                ResourceController.CheckForResourceFiles();
+                ResourceController.CheckResourceFilesWithSHA256();
                 if (Program.SystemBrowser == Program.System.Pepp) {
-                    ResourceController.CheckResourceDir();
-                    ResourceController.CheckForResourceFiles();
-                    //ResourceController.CheckResourceFilesWithSHA256();
                     CsvData.Context().LoadPeppDataToMemory();
                 } else if (Program.SystemBrowser == Program.System.Drg) {
                     CsvData.Context().LoadDrgDataToMemory(CsvData.DrgType.HA);

@@ -6,8 +6,8 @@ using System.Text;
 namespace org.inek.InekBrowser.Data {
     class ResourceController {
 
-        public const string PEPP_RESOURCE_FILES_HASH = "68AEA4961FFCE5C2B6FA3246542C27D5835E75D7F1B10BFA7503E6F5D232C37";
-        public const string DRG_RESOURCE_FILES_HASH = "";
+        public const string PEPP_RESOURCE_FILES_HASH = "41E61F9245DA1FFF112116814F2FC270A1B78DE8F424D073B3392C5E15A72B72";
+        public const string DRG_RESOURCE_FILES_HASH = "F4E25812AA32650D6572339DABCE3EE9D44C62A709C328EACBC2F6451E014";
 
         public enum DrgResourceFilesIndex {
             Drg,
@@ -136,7 +136,7 @@ namespace org.inek.InekBrowser.Data {
         /// Throws an exception, if the resource folder doesnt exist.
         /// </summary>
         public static void CheckResourceDir() {
-            if (!Directory.Exists(RESOURCE_DIR)) {
+            if (!Directory.Exists(RESOURCE_DIR + Program.Year)) {
                 throw new Exception("Fehler: Der Resource Ordner wurde gelöscht.");
             }
         }
@@ -145,12 +145,12 @@ namespace org.inek.InekBrowser.Data {
         /// Throws an exception if a resource file doesnt exist.
         /// </summary>
         public static void CheckForResourceFiles() {
-            string[] files = Directory.GetFiles(RESOURCE_DIR);
+            string[] files = Directory.GetFiles(RESOURCE_DIR + Program.Year);
             for (int i = 0; i < files.Length; i++) {
-                if (Program.SystemBrowser == Program.System.Pepp && !File.Exists(RESOURCE_DIR + PEPP_RESOURCE_FILES[i])) {
+                if (Program.SystemBrowser == Program.System.Pepp && !File.Exists(RESOURCE_DIR + Program.Year + "\\" + PEPP_RESOURCE_FILES[i])) {
                     throw new Exception("Fehler: Die Resource-Datei " + PEPP_RESOURCE_FILES[i] + " fehlt. Bitte downloaden Sie den PEPP-Browser erneut.");
                 }
-                if (Program.SystemBrowser == Program.System.Drg && !File.Exists(RESOURCE_DIR + DRG_RESOURCE_FILES[i])) {
+                if (Program.SystemBrowser == Program.System.Drg && !File.Exists(RESOURCE_DIR + Program.Year + "\\" + DRG_RESOURCE_FILES[i])) {
                     throw new Exception("Fehler: Die Resource-Datei " + DRG_RESOURCE_FILES[i] + " fehlt. Bitte downloaden Sie den DRG-Browser erneut.");
                 }
             }
@@ -168,7 +168,8 @@ namespace org.inek.InekBrowser.Data {
             masterHash = HashBytesToHexString(masterHashByte, masterHash);
             if (masterHash != PEPP_RESOURCE_FILES_HASH && Program.SystemBrowser == Program.System.Pepp) {
                 throw new Exception("Fehler: Die Resource-Dateien wurden verändert. Bitte laden Sie den PEPP-Browser erneut auf unserer Website (http://g-drg.de) herunter.");
-            } else if (masterHash != DRG_RESOURCE_FILES_HASH && Program.SystemBrowser == Program.System.Drg) {
+            } 
+            if (masterHash != DRG_RESOURCE_FILES_HASH && Program.SystemBrowser == Program.System.Drg) {
                 throw new Exception("Fehler: Die Resource-Dateien wurden verändert. Bitte laden Sie den DRG-Browser erneut auf unserer Website (http://g-drg.de) herunter.");
             }
         }
@@ -178,7 +179,7 @@ namespace org.inek.InekBrowser.Data {
             SHA256 sha = new SHA256Managed();
             if (Program.SystemBrowser == Program.System.Pepp) {
                 for (int i = 0; i < PEPP_RESOURCE_FILES.Length; i++) {
-                    FileStream stream = File.OpenRead(RESOURCE_DIR + PEPP_RESOURCE_FILES[i]);
+                    FileStream stream = File.OpenRead(RESOURCE_DIR + Program.Year + "\\" + PEPP_RESOURCE_FILES[i]);
                     byte[] fileBuffer = new byte[(int)stream.Length];
                     stream.Read(fileBuffer, 0, (int)stream.Length);
                     byte[] hash = sha.ComputeHash(fileBuffer);
@@ -186,7 +187,7 @@ namespace org.inek.InekBrowser.Data {
                 }
             } else if (Program.SystemBrowser == Program.System.Drg) {
                 for (int i = 0; i < DRG_RESOURCE_FILES.Length; i++) {
-                    FileStream stream = File.OpenRead(RESOURCE_DIR + DRG_RESOURCE_FILES[i]);
+                    FileStream stream = File.OpenRead(RESOURCE_DIR + Program.Year + "\\" + DRG_RESOURCE_FILES[i]);
                     byte[] fileBuffer = new byte[(int)stream.Length];
                     stream.Read(fileBuffer, 0, (int)stream.Length);
                     byte[] hash = sha.ComputeHash(fileBuffer);

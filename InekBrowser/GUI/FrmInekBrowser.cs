@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
@@ -72,6 +73,8 @@ namespace org.inek.InekBrowser.GUI {
                 mnuCategories.Text = "MDCs";
                 mnuSystem.Text = "DRGs";
                 initDrgData();
+                tabCosts.Text = "Kosten";
+                mnuCatalogue.Visible = false;
             } else if (Program.SystemBrowser == Program.System.Pepp) {
                 titleBar.BackColor = BrowserColors.PeppTitleBar;
                 mnuMain.BackColor = BrowserColors.PeppMenuBand;
@@ -132,7 +135,8 @@ namespace org.inek.InekBrowser.GUI {
             dlg.helpProvider1.SetHelpKeyword(dlg, "Daten.htm");
         }
 
-        private void mnuPepp_Click(object sender, EventArgs e) {
+        private void mnuSystem_Click(object sender, EventArgs e) {
+            Cursor = Cursors.WaitCursor;
             dlg = new FrmList();
             SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
@@ -156,9 +160,11 @@ namespace org.inek.InekBrowser.GUI {
                 dlg.Text = "DRGs";
             }
             dlg.Show();
+            Cursor = DefaultCursor;
         }
 
-        private void mnuStructureCategories_Click(object sender, EventArgs e) {
+        private void mnuCategories_Click(object sender, EventArgs e) {
+            Cursor = Cursors.WaitCursor;
             dlg = new FrmList(); 
             SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
@@ -192,140 +198,308 @@ namespace org.inek.InekBrowser.GUI {
             }
             
             dlg.ShowDialog(this);
+            Cursor = DefaultCursor;
         }
 
-        private void mnuPeppInfo_Click(object sender, EventArgs e) {
+        private void mnuSystemInfo_Click(object sender, EventArgs e) {
+            Cursor = Cursors.WaitCursor;
             dlg = new FrmList();
             SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
-            var q = CsvData.Context().SystemInfo.Select(pi => new {
-                                                                     kd_Pepp = pi.Code, kd_FaelleAnzahl = pi.CaseCount,
-                                                                     kd_VwdSummeTage = pi.LosSumDays,
-                                                                     kd_VwdMw = pi.LosAverage,
-                                                                     kd_VwdStd = pi.LosStandard,
-                                                                     kd_VwdHK = pi.LosStandard,
-                                                                     kd_GeschlechtM = pi.GenderMale,
-                                                                     kd_GeschlechtW = pi.GenderFemale,
-                                                                     kd_AlterMw = pi.AgeAverage,
-                                                                     kd_AlterStd = pi.AgeStandard,
-                                                                     kd_AlterU28T = pi.AgeBelow28Days,
-                                                                     kd_AlterU01 = pi.AgeBelow1Year,
-                                                                     kd_AlterU03 = pi.AgeBelow3Years,
-                                                                     kd_AlterU06 = pi.AgeBelow6Years,
-                                                                     kd_AlterU10 = pi.AgeBelow10Years,
-                                                                     kd_AlterU16 = pi.AgeBelow16Years,
-                                                                     kd_AlterU18 = pi.AgeBelow18Years,
-                                                                     kd_AlterU30 = pi.AgeBelow30Years,
-                                                                     kd_AlterU40 = pi.AgeBelow40Years,
-                                                                     kd_AlterU50 = pi.AgeBelow50Years,
-                                                                     kd_AlterU55 = pi.AgeBelow55Years,
-                                                                     kd_AlterU60 = pi.AgeBelow60Years,
-                                                                     kd_AlterU65 = pi.AgeBelow65Years,
-                                                                     kd_AlterU75 = pi.AgeBelow75Years,
-                                                                     kd_AlterU80 = pi.AgeBelow80Years,
-                                                                     kd_AlterU99 = pi.AgeBelow99Years,
-                                                                     kd_TageskostenMw = pi.DayCostsAverage,
-                                                                     kd_TageskostenStd = pi.DayCostsStandard,
-                                                                     kd_TageskostenHK = pi.DayCostsHc
-                                                                 });
-            dlg.SetDataSource(q);
-            dlg.Text = "Kopfdaten";
+            if (Program.SystemBrowser == Program.System.Pepp) {
+                var q = CsvData.Context().SystemInfo.Select(pi => new {
+                                                                          kd_Pepp = pi.Code,
+                                                                          kd_FaelleAnzahl = pi.CaseCount,
+                                                                          kd_VwdSummeTage = pi.LosSumDays,
+                                                                          kd_VwdMw = pi.LosAverage,
+                                                                          kd_VwdStd = pi.LosStandard,
+                                                                          kd_VwdHK = pi.LosStandard,
+                                                                          kd_GeschlechtM = pi.GenderMale,
+                                                                          kd_GeschlechtW = pi.GenderFemale,
+                                                                          kd_AlterMw = pi.AgeAverage,
+                                                                          kd_AlterStd = pi.AgeStandard,
+                                                                          kd_AlterU28T = pi.AgeBelow28Days,
+                                                                          kd_AlterU01 = pi.AgeBelow1Year,
+                                                                          kd_AlterU03 = pi.AgeBelow3Years,
+                                                                          kd_AlterU06 = pi.AgeBelow6Years,
+                                                                          kd_AlterU10 = pi.AgeBelow10Years,
+                                                                          kd_AlterU16 = pi.AgeBelow16Years,
+                                                                          kd_AlterU18 = pi.AgeBelow18Years,
+                                                                          kd_AlterU30 = pi.AgeBelow30Years,
+                                                                          kd_AlterU40 = pi.AgeBelow40Years,
+                                                                          kd_AlterU50 = pi.AgeBelow50Years,
+                                                                          kd_AlterU55 = pi.AgeBelow55Years,
+                                                                          kd_AlterU60 = pi.AgeBelow60Years,
+                                                                          kd_AlterU65 = pi.AgeBelow65Years,
+                                                                          kd_AlterU75 = pi.AgeBelow75Years,
+                                                                          kd_AlterU80 = pi.AgeBelow80Years,
+                                                                          kd_AlterU99 = pi.AgeBelow99Years,
+                                                                          kd_TageskostenMw = pi.DayCostsAverage,
+                                                                          kd_TageskostenStd = pi.DayCostsStandard,
+                                                                          kd_TageskostenHK = pi.DayCostsHc
+                                                                      });
+                dlg.SetDataSource(q);
+                dlg.Text = "Kopfdaten";
+            } else if (Program.SystemBrowser == Program.System.Drg) {
+                var q = CsvData.Context().SystemInfo.Select(drg => new {
+                                                                           IK_MDC = drg.MDC,
+                                                                           IK_DRG = drg.Code,
+                                                                           IK_Faelle_Anzahl = drg.CaseCount,
+                                                                           IK_PCCL0 = drg.PCCL0,
+                                                                           IK_PCCL1 = drg.PCCL1,
+                                                                           IK_PCCL2 = drg.PCCL2,
+                                                                           IK_PCCL3 = drg.PCCL3,
+                                                                           IK_PCCL4 = drg.PCCL4,
+                                                                           IK_GeschlechtM = drg.GenderMale,
+                                                                           IK_GeschlechtW = drg.GenderFemale,
+                                                                           IK_GeschlechtU = drg.GenderUnknown,
+                                                                           IK_AlterU28T = drg.AgeBelow28Days,
+                                                                           IK_AlterU01 = drg.AgeBelow1Year,
+                                                                           IK_AlterU03 = drg.AgeBelow3Years,
+                                                                           IK_AlterU06 = drg.AgeBelow6Years,
+                                                                           IK_AlterU10 = drg.AgeBelow10Years,
+                                                                           IK_AlterU16 = drg.AgeBelow16Years,
+                                                                           IK_AlterU18 = drg.AgeBelow18Years,
+                                                                           IK_AlterU30 = drg.AgeBelow30Years,
+                                                                           IK_AlterU40 = drg.AgeBelow40Years,
+                                                                           IK_AlterU50 = drg.AgeBelow50Years,
+                                                                           IK_AlterU55 = drg.AgeBelow55Years,
+                                                                           IK_AlterU60 = drg.AgeBelow60Years,
+                                                                           IK_AlterU65 = drg.AgeBelow65Years,
+                                                                           IK_AlterU75 = drg.AgeBelow75Years,
+                                                                           IK_AlterU80 = drg.AgeBelow80Years,
+                                                                           IK_AlterU99 = drg.AgeBelow99Years,
+                                                                           IK_VWD_Kurz = drg.LosShort,
+                                                                           IK_VWD_Normal = drg.LosNormal,
+                                                                           IK_VWD_Lang = drg.LosLong,
+                                                                           IK_uGVD = drg.Day1Reduction,
+                                                                           IK_oGVD = drg.Day1Remuneration,
+                                                                           IK_VWD_MW = drg.LosAverage,
+                                                                           IK_Bewertungsrelation = drg.ValuationRatio,
+                                                                           IK_Gesamt = drg.FractionAllCases,
+                                                                           IK_VWD_STD = drg.LosStandard,
+                                                                           IK_KOST_MW = drg.CostAverage,
+                                                                           IK_KOST_STD = drg.CostStandard
+                                                                       });
+                dlg.SetDataSource(q);
+                dlg.Text = "Kopfdaten";
+            }
             dlg.ShowDialog(this);
-
+            Cursor = DefaultCursor;
         }
 
         private void mnuPrimaryDiagnoses_Click(object sender, EventArgs e) {
+            Cursor = Cursors.WaitCursor;
             dlg = new FrmList();
             SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
-            var q = CsvData.Context().PrimaryDiagnoses.Select(p => new { hd_Pepp = p.SystemCode, hd_Code = p.DiagCode, hd_FaelleAnzahl = p.Count, hd_FaelleAnteil = p.Fraction});
-            dlg.SetDataSource(q);
+            if (Program.SystemBrowser == Program.System.Pepp) {
+                var q = CsvData.Context().PrimaryDiagnoses.Select(p => new { hd_Pepp = p.SystemCode, hd_Code = p.DiagCode, hd_FaelleAnzahl = p.Count, hd_FaelleAnteil = p.Fraction });
+                dlg.SetDataSource(q);
+            } else if (Program.SystemBrowser == Program.System.Drg) {
+                var q =
+                    CsvData.Context()
+                        .PrimaryDiagnoses.Select(
+                            drg =>
+                                new {
+                                        IH_DRG = drg.SystemCode,
+                                        IH_Code = drg.DiagCode,
+                                        IH_Prozent = drg.Fraction,
+                                        IH_CodeF = drg.DiagCodeF,
+                                        IH_Anzahl = drg.Count
+                                    });
+                dlg.SetDataSource(q);
+            }
             dlg.Text = "Hauptdiagnosen";
             dlg.ShowDialog(this);
-
+            Cursor = DefaultCursor;
         }
 
         private void mnuSecondaryDiagnoses_Click(object sender, EventArgs e) {
+            Cursor = Cursors.WaitCursor;
             dlg = new FrmList();
             SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
-            var q =
-                CsvData.Context()
-                    .SecondaryDiagnoses.Select(
-                        s =>
-                            new {
-                                    nd_Pepp = s.System,
-                                    nd_Code = s.DiagCode,
-                                    nd_FaelleAnzahl = s.CaseCount,
-                                    nd_FaelleAnteil = s.CaseFraction,
-                                    nd_NennungenAnzahl = s.EntryCount,
-                                    nd_NennungenAnteil = s.EntryFraction
-                                });
-            dlg.SetDataSource(q);
+            if (Program.SystemBrowser == Program.System.Pepp) {
+                var q =
+                    CsvData.Context()
+                        .SecondaryDiagnoses.Select(
+                            s =>
+                                new {
+                                        nd_Pepp = s.System,
+                                        nd_Code = s.DiagCode,
+                                        nd_FaelleAnzahl = s.CaseCount,
+                                        nd_FaelleAnteil = s.CaseFraction,
+                                        nd_NennungenAnzahl = s.EntryCount,
+                                        nd_NennungenAnteil = s.EntryFraction
+                                    });
+                dlg.SetDataSource(q);
+            } else if (Program.SystemBrowser == Program.System.Drg) {
+                var q =
+                    CsvData.Context()
+                        .SecondaryDiagnoses.Select(
+                            drg =>
+                                new {
+                                        IN_DRG = drg.System,
+                                        IN_Code = drg.DiagCode,
+                                        IN_Prozent = drg.CaseFraction,
+                                        IN_CodeF = drg.CodeF,
+                                        IN_Anzahl = drg.CaseCount,
+                                        IN_ProzentN = drg.EntryFraction,
+                                        IN_AnzahlN = drg.EntryCount
+                                    });
+                dlg.SetDataSource(q);
+            }
             dlg.Text = "Nebendiagnosen";
             dlg.ShowDialog(this);
-
+            Cursor = DefaultCursor;
         }
 
         private void mnuProcedures_Click(object sender, System.EventArgs e) {
+            Cursor = Cursors.WaitCursor;
             dlg = new FrmList();
             SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
-            var q = CsvData.Context().Procedures.Select(p => new {
-                                                                     pr_Pepp = p.System,
-                                                                     pr_Code = p.ProcCode,
-                                                                     pr_FaelleAnzahl = p.CaseCount,
-                                                                     pr_FaelleAnteil = p.CaseFraction,
-                                                                     pr_NennungenAnzahl = p.EntryCount,
-                                                                     pr_NennungenAnteil = p.EntryFraction
-                                                                 });
-            dlg.SetDataSource(q);
+            if (Program.SystemBrowser == Program.System.Pepp) {
+                var q = CsvData.Context().Procedures.Select(p => new {
+                                                                         pr_Pepp = p.System,
+                                                                         pr_Code = p.ProcCode,
+                                                                         pr_FaelleAnzahl = p.CaseCount,
+                                                                         pr_FaelleAnteil = p.CaseFraction,
+                                                                         pr_NennungenAnzahl = p.EntryCount,
+                                                                         pr_NennungenAnteil = p.EntryFraction
+                                                                     });
+                dlg.SetDataSource(q);
+            } else if (Program.SystemBrowser == Program.System.Drg) {
+                var q = CsvData.Context().Procedures.Select(p => new {
+                    IP_DRG = p.System,
+                    IP_Code = p.ProcCode,
+                    IP_Prozent = p.CaseFraction,
+                    IP_CodeF = p.CodeF,
+                    IP_Anzahl = p.CaseCount,
+                    IP_ProzentN = p.EntryFraction,
+                    IP_AnzahlN = p.EntryCount
+                });
+                dlg.SetDataSource(q);
+            }
             dlg.Text = "Prozeduren";
             dlg.ShowDialog();
-
+            Cursor = DefaultCursor;
         }
 
         private void mnuCosts_Click(object sender, System.EventArgs e) {
+            Cursor = Cursors.WaitCursor;
             dlg = new FrmList();
             SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
-            var q = CsvData.Context().Costs.Select(c => new {
-                                                                ko_Pepp = c.Code,
-                                                                ko_BereichNr = c.CostDomain,
-                                                                ko_KArt1 = c.CostType1,
-                                                                ko_KArt2 = c.CostType2,
-                                                                ko_KArt3a = c.CostType3a,
-                                                                ko_KArt3b = c.CostType3b,
-                                                                ko_KArt3c = c.CostType3c,
-                                                                ko_KArt3 = c.CostType3,
-                                                                ko_KArt4a = c.CostType4a,
-                                                                ko_KArt4b = c.CostType4b,
-                                                                ko_KArt5 = c.CostType5,
-                                                                ko_KArt6a = c.CostType6a,
-                                                                ko_KArt6b = c.CostType6b,
-                                                                ko_KArt7 = c.CostType7,
-                                                                ko_KArt8 = c.CostType8
-                                                            });
-            dlg.SetDataSource(q);
+            if (Program.SystemBrowser == Program.System.Pepp) {
+                var q = CsvData.Context().Costs.Select(c => new {
+                                                                    ko_Pepp = c.Code,
+                                                                    ko_BereichNr = c.CostDomain,
+                                                                    ko_KArt1 = c.CostType1,
+                                                                    ko_KArt2 = c.CostType2,
+                                                                    ko_KArt3a = c.CostType3a,
+                                                                    ko_KArt3b = c.CostType3b,
+                                                                    ko_KArt3c = c.CostType3c,
+                                                                    ko_KArt3 = c.CostType3,
+                                                                    ko_KArt4a = c.CostType4a,
+                                                                    ko_KArt4b = c.CostType4b,
+                                                                    ko_KArt5 = c.CostType5,
+                                                                    ko_KArt6a = c.CostType6a,
+                                                                    ko_KArt6b = c.CostType6b,
+                                                                    ko_KArt7 = c.CostType7,
+                                                                    ko_KArt8 = c.CostType8
+                                                                });
+                dlg.SetDataSource(q);
+            } else if (Program.SystemBrowser == Program.System.Drg) {
+                var q = CsvData.Context().Costs.Select(c => new {
+                    IO_DRG = c.Code,
+                    IO_BereichNr = c.CostDomain,
+                    IO_KArt1 = c.CostType1,
+                    IO_KArt2 = c.CostType2,
+                    IO_KArt3 = c.CostType3,
+                    IO_KArt4a = c.CostType4a,
+                    IO_KArt4b = c.CostType4b,
+                    IO_KArt5 = c.CostType5,
+                    IO_KArt6a = c.CostType6a,
+                    IO_KArt6b = c.CostType6b,
+                    IO_KArt7 = c.CostType7,
+                    IO_KArt8 = c.CostType8,
+                    IO_Summe = c.CostSum
+                });
+                dlg.SetDataSource(q);
+            }
             dlg.Text = "Kosten";
             dlg.ShowDialog(this);
-
+            Cursor = DefaultCursor;
         }
 
-        private void mnuRecherche_Click(object sender, System.EventArgs e) {
+        private void mnuCatalogue_Click(object sender, EventArgs e) {
+            Cursor = Cursors.WaitCursor;
             dlg = new FrmList();
             SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
-            var q = CsvData.Context().Recherche.Select(d => new {
-                                                                    re_Code = d.Code,
-                                                                    re_Text = d.Text,
-                                                                    re_Hauptdiagnose = d.PrimaryDiagnosis,
-                                                                    re_Nebendiagnose = d.SecondaryDiagnosis,
-                                                                    re_Prozedur = d.Procedure
-                                                                  });
+            var q = CsvData.Context().Catalogs.Select(c => new {
+                ka_Pepp = c.Pepp,
+                ka_Verguetungsklasse = c.RemunerationClass,
+                ka_Relgew = c.RelativeWeight
+            });
             dlg.SetDataSource(q);
+            dlg.Text = "Katalog";
+            dlg.ShowDialog();
+            Cursor = DefaultCursor;
+        }
+
+        private void mnuRecherche_Click(object sender, EventArgs e) {
+            Cursor = Cursors.WaitCursor;
+            dlg = new FrmList();
+            SetDataHelpProvider(dlg);
+            dlg.StartPosition = FormStartPosition.CenterParent;
+            if (Program.SystemBrowser == Program.System.Pepp) {
+                var q = CsvData.Context().Recherche.Select(d => new {
+                                                                        re_Code = d.Code,
+                                                                        re_Text = d.Text,
+                                                                        re_Hauptdiagnose = d.PrimaryDiagnosis,
+                                                                        re_Nebendiagnose = d.SecondaryDiagnosis,
+                                                                        re_Prozedur = d.Procedure
+                                                                    });
+                dlg.SetDataSource(q);
+            } else if (Program.SystemBrowser == Program.System.Drg) {
+                var q = CsvData.Context().Recherche.Select(d => new {
+                    IC_Code = d.Code,
+                    IC_Text = d.Text,
+                    IC_CodeF = d.CodeF,
+                    IC_ANZHDI = d.PrimaryDiagnosis,
+                    IC_ANZNDI = d.SecondaryDiagnosis,
+                    IC_AnzProzI = d.Procedure
+                });
+                dlg.SetDataSource(q);
+            }
             dlg.Text = "Recherche";
             dlg.ShowDialog();
+            Cursor = DefaultCursor;
+        }
+
+        private void kostenbereichToolStripMenuItem_Click(object sender, EventArgs e) {
+            Cursor = Cursors.WaitCursor;
+            dlg = new FrmList();
+            SetDataHelpProvider(dlg);
+            dlg.StartPosition = FormStartPosition.CenterParent;
+            if (Program.SystemBrowser == Program.System.Drg) {
+                var q =
+                    CsvData.Context().CostDomains.Select(drg => new {IB_Nr = drg.DomainId, IB_Bereich = drg.DomainText});
+                dlg.SetDataSource(q);
+            } else if (Program.SystemBrowser == Program.System.Pepp) {
+                var q =
+                    CsvData.Context()
+                        .CostDomains.Select(
+                            pepp =>
+                                new {kb_Nr = pepp.DomainId, kb_BereichOrder = pepp.Order, kb_Bereich = pepp.DomainText});
+                dlg.SetDataSource(q);
+            }
+            dlg.Text = "Kostenbereich";
+            dlg.ShowDialog();
+            Cursor = DefaultCursor;
         }
 
         private void FrmPeppBrowser_MouseMove(object sender, MouseEventArgs e) {
@@ -452,30 +626,32 @@ namespace org.inek.InekBrowser.GUI {
                                     drg.Partition,
                                     DRG = drg.Code,
                                     drg.Text,
-                                    Kalkuliert = drg.Calculated
                                 });
-            if (CsvData.DrgSystemType == CsvData.DrgType.BA)
-                q = q.Where(drg => drg.Kalkuliert == 1);
+            List<string> calcDrgs = new List<string>();
+            if (CsvData.DrgSystemType == CsvData.DrgType.BA) {
+                calcDrgs = CsvData.Context().System.Where(drg => drg.Calculated == 1).Select(drg => drg.Code).ToList();
+                q = q.Where(drg => calcDrgs.Contains(drg.DRG));
+            }
             if (SelectionDrg.Category != "")
                 q = q.Where(cat => cat.MDC == SelectionDrg.Category);
             if (SelectionDrg.PrimaryDiagnosis != "") {
                 List<string> drgs =
                     CsvData.Context()
-                        .PrimaryDiagnoses.Where(hd => hd.DiagCode == SelectionDrg.PrimaryDiagnosis)
+                        .PrimaryDiagnoses.Where(hd => hd.DiagCodeF == SelectionDrg.PrimaryDiagnosis)
                         .Select(drg => drg.SystemCode)
                         .ToList();
                 q = q.Where(drg => drgs.Contains(drg.DRG));
             } else if (SelectionDrg.SecondaryDiagnosis != "") {
                 List<string> drgs =
                     CsvData.Context()
-                        .SecondaryDiagnoses.Where(sd => sd.DiagCode == SelectionDrg.SecondaryDiagnosis)
+                        .SecondaryDiagnoses.Where(sd => sd.CodeF == SelectionDrg.SecondaryDiagnosis)
                         .Select(drg => drg.System)
                         .ToList();
                 q = q.Where(drg => drgs.Contains(drg.DRG));
             } else if (SelectionDrg.Procedure != "") {
                 List<string> drgs =
                     CsvData.Context()
-                        .Procedures.Where(proc => proc.ProcCode == SelectionDrg.Procedure)
+                        .Procedures.Where(proc => proc.CodeF == SelectionDrg.Procedure)
                         .Select(drg => drg.System)
                         .ToList();
                 q = q.Where(drg => drgs.Contains(drg.DRG));
@@ -795,36 +971,133 @@ namespace org.inek.InekBrowser.GUI {
         }
 
         private void BuildCostMatrix() {
-            var q =
-                CsvData.Context()
-                    .Costs.Where(pepp => pepp.Code == SystemCode)
-                    .Select(c => new {
-                        KostenArt1 = (c.CostType1.ToString("F").Equals("0,00") ? "" : c.CostType1.ToString("F")),
-                        KostenArt2 = (c.CostType2.ToString("F").Equals("0,00") ? "" : c.CostType2.ToString("F")),
-                        KostenArt3a = (c.CostType3a.ToString("F").Equals("0,00") ? "" : c.CostType3a.ToString("F")),
-                        KostenArt3b = (c.CostType3b.ToString("F").Equals("0,00") ? "" : c.CostType3b.ToString("F")),
-                        KostenArt3c = (c.CostType3c.ToString("F").Equals("0,00") ? "" : c.CostType3c.ToString("F")),
-                        KostenArt3 = (c.CostType3.ToString("F").Equals("0,00") ? "" : c.CostType3.ToString("F")),
-                        KostenArt4a = (c.CostType4a.ToString("F").Equals("0,00") ? "" : c.CostType4a.ToString("F")),
-                        KostenArt4b = (c.CostType4b.ToString("F").Equals("0,00") ? "" : c.CostType4b.ToString("F")),
-                        KostenArt5 = (c.CostType5.ToString("F").Equals("0,00") ? "" : c.CostType5.ToString("F")),
-                        KostenArt6a = (c.CostType6a.ToString("F").Equals("0,00") ? "" : c.CostType6a.ToString("F")),
-                        KostenArt6b = (c.CostType6b.ToString("F").Equals("0,00") ? "" : c.CostType6b.ToString("F")),
-                        KostenArt7 = (c.CostType7.ToString("F").Equals("0,00") ? "" : c.CostType7.ToString("F")),
-                        KostenArt8 = (c.CostType8.ToString("F").Equals("0,00") ? "" : c.CostType8.ToString("F")),
-                                     });
-            grdCosts.DataSource = Helper.ConvertToDataTable(q);
-            List<int> rowIds = CsvData.Context()
+            if (Program.SystemBrowser == Program.System.Pepp) {
+                var q =
+                    CsvData.Context()
+                        .Costs.Where(pepp => pepp.Code == SystemCode)
+                        .Select(c => new {
+                                             KostenArt1 =
+                                                 (c.CostType1.ToString("F").Equals("0,00")
+                                                     ? ""
+                                                     : c.CostType1.ToString("F")),
+                                             KostenArt2 =
+                                                 (c.CostType2.ToString("F").Equals("0,00")
+                                                     ? ""
+                                                     : c.CostType2.ToString("F")),
+                                             KostenArt3a =
+                                                 (c.CostType3a.ToString("F").Equals("0,00")
+                                                     ? ""
+                                                     : c.CostType3a.ToString("F")),
+                                             KostenArt3b =
+                                                 (c.CostType3b.ToString("F").Equals("0,00")
+                                                     ? ""
+                                                     : c.CostType3b.ToString("F")),
+                                             KostenArt3c =
+                                                 (c.CostType3c.ToString("F").Equals("0,00")
+                                                     ? ""
+                                                     : c.CostType3c.ToString("F")),
+                                             KostenArt3 =
+                                                 (c.CostType3.ToString("F").Equals("0,00")
+                                                     ? ""
+                                                     : c.CostType3.ToString("F")),
+                                             KostenArt4a =
+                                                 (c.CostType4a.ToString("F").Equals("0,00")
+                                                     ? ""
+                                                     : c.CostType4a.ToString("F")),
+                                             KostenArt4b =
+                                                 (c.CostType4b.ToString("F").Equals("0,00")
+                                                     ? ""
+                                                     : c.CostType4b.ToString("F")),
+                                             KostenArt5 =
+                                                 (c.CostType5.ToString("F").Equals("0,00")
+                                                     ? ""
+                                                     : c.CostType5.ToString("F")),
+                                             KostenArt6a =
+                                                 (c.CostType6a.ToString("F").Equals("0,00")
+                                                     ? ""
+                                                     : c.CostType6a.ToString("F")),
+                                             KostenArt6b =
+                                                 (c.CostType6b.ToString("F").Equals("0,00")
+                                                     ? ""
+                                                     : c.CostType6b.ToString("F")),
+                                             KostenArt7 =
+                                                 (c.CostType7.ToString("F").Equals("0,00")
+                                                     ? ""
+                                                     : c.CostType7.ToString("F")),
+                                             KostenArt8 =
+                                                 (c.CostType8.ToString("F").Equals("0,00")
+                                                     ? ""
+                                                     : c.CostType8.ToString("F")),
+                                         });
+                grdCosts.DataSource = Helper.ConvertToDataTable(q);
+                List<int> rowIds = CsvData.Context()
                 .Costs.Where(pepp => pepp.Code == SystemCode)
                 .Select(ri => ri.CostDomain).ToList();
-            BuildCostMatrixColHeaders(Color.LightGreen);
-            BuildCostMatrixRowHeaders(rowIds, Color.LightGreen);
-            BuildCostMatrixColSum(Color.MediumSeaGreen);
-            decimal sum = 0;
-            BuildCostMatrixRowSum(Color.MediumSeaGreen, ref sum);
-            BuildCostMatrixMasterSum(Color.White, Color.SeaGreen, sum);
-            CostMatrixRightToLeft();
-            SetMatrixSortMode();
+                BuildCostMatrixColHeaders(Color.LightGreen);
+                BuildCostMatrixRowHeaders(rowIds, Color.LightGreen);
+                BuildCostMatrixColSum(Color.MediumSeaGreen);
+                decimal sum = 0;
+                BuildCostMatrixRowSum(Color.MediumSeaGreen, ref sum);
+                BuildCostMatrixMasterSum(Color.White, Color.SeaGreen, sum);
+                CostMatrixRightToLeft();
+                SetMatrixSortMode();
+            } else if (Program.SystemBrowser == Program.System.Drg) {
+                var q = CsvData.Context().Costs.Where(drg => drg.Code == SystemCode).Select(
+                    c => new {
+                        KostenArt1 =
+                            (c.CostType1.ToString("F").Equals("0,00")
+                                ? ""
+                                : c.CostType1.ToString("F")),
+                        KostenArt2 =
+                            (c.CostType2.ToString("F").Equals("0,00")
+                                ? ""
+                                : c.CostType2.ToString("F")),
+                        KostenArt3 =
+                            (c.CostType3.ToString("F").Equals("0,00")
+                                ? ""
+                                : c.CostType3.ToString("F")),
+                        KostenArt4a =
+                            (c.CostType4a.ToString("F").Equals("0,00")
+                                ? ""
+                                : c.CostType4a.ToString("F")),
+                        KostenArt4b =
+                            (c.CostType4b.ToString("F").Equals("0,00")
+                                ? ""
+                                : c.CostType4b.ToString("F")),
+                        KostenArt5 =
+                            (c.CostType5.ToString("F").Equals("0,00")
+                                ? ""
+                                : c.CostType5.ToString("F")),
+                        KostenArt6a =
+                            (c.CostType6a.ToString("F").Equals("0,00")
+                                ? ""
+                                : c.CostType6a.ToString("F")),
+                        KostenArt6b =
+                            (c.CostType6b.ToString("F").Equals("0,00")
+                                ? ""
+                                : c.CostType6b.ToString("F")),
+                        KostenArt7 =
+                            (c.CostType7.ToString("F").Equals("0,00")
+                                ? ""
+                                : c.CostType7.ToString("F")),
+                        KostenArt8 =
+                            (c.CostType8.ToString("F").Equals("0,00")
+                                ? ""
+                                : c.CostType8.ToString("F")),
+                    });
+                grdCosts.DataSource = Helper.ConvertToDataTable(q);
+                List<int> rowIds = CsvData.Context()
+                .Costs.Where(drg => drg.Code == SystemCode)
+                .Select(ri => ri.CostDomain).ToList();
+                BuildCostMatrixColHeaders(Color.SteelBlue);
+                BuildCostMatrixRowHeaders(rowIds, Color.SteelBlue);
+                BuildCostMatrixColSum(Color.DodgerBlue);
+                decimal sum = 0;
+                BuildCostMatrixRowSum(Color.DodgerBlue, ref sum);
+                BuildCostMatrixMasterSum(Color.White, Color.SteelBlue, sum);
+                CostMatrixRightToLeft();
+                SetMatrixSortMode();
+            }
         }
 
         private void SetMatrixSortMode() {
@@ -922,7 +1195,11 @@ namespace org.inek.InekBrowser.GUI {
                 grdCosts.Columns[colHeaderId].MinimumWidth = 280;
                 grdCosts.Columns[colHeaderId].DisplayIndex = 0;
             }
-            var rowMap = CreateCostCenterMap();
+            Dictionary<int, string> rowMap = null;
+            if (Program.SystemBrowser == Program.System.Pepp)
+                rowMap = CreateCostCenterMapPepp();
+            else if (Program.SystemBrowser == Program.System.Drg)
+                rowMap = CreateCostCenterMapDrg();
             DataGridViewCellStyle headerStyle = new DataGridViewCellStyle();
             headerStyle.BackColor = headColor;
             for (int i = 0; i < grdCosts.Rows.Count - 1; i++) {
@@ -934,7 +1211,7 @@ namespace org.inek.InekBrowser.GUI {
             }
         }
 
-        private static Dictionary<int, string> CreateCostCenterMap() {
+        private static Dictionary<int, string> CreateCostCenterMapPepp() {
             Dictionary<int, string> rowMap = new Dictionary<int, string>();
             rowMap.Add(21, "21. Station - Regelbehandlung");
             rowMap.Add(22, "22. Station - Intensivbehandlung");
@@ -952,6 +1229,22 @@ namespace org.inek.InekBrowser.GUI {
             return rowMap;
         }
 
+        private static Dictionary<int, string> CreateCostCenterMapDrg() {
+            Dictionary<int, string> rowMap = new Dictionary<int, string>();
+            rowMap.Add(1, "01. Normalstation");
+            rowMap.Add(2, "02. Intensivstation");
+            rowMap.Add(3, "03. Dialyseabteilung");
+            rowMap.Add(4, "04. OP-Bereich");
+            rowMap.Add(5, "05. Anästhesie");
+            rowMap.Add(6, "06. Kreißsaal");
+            rowMap.Add(7, "07. Kardiologische Diagnostik / Therapie");
+            rowMap.Add(8, "08. Endoskopische Diagnostik / Therapie");
+            rowMap.Add(9, "09. Radiologie");
+            rowMap.Add(10, "10. Laboratorien");
+            rowMap.Add(11, "11. Übrige diagnostische und therapeutische Bereiche");
+            return rowMap;
+        }
+
         private void BuildCostMatrixColHeaders(Color headColor) {
             DataTable table = ((DataTable) grdCosts.DataSource);
             DataRow row = table.NewRow();
@@ -959,7 +1252,9 @@ namespace org.inek.InekBrowser.GUI {
                       "1", "2", "3a", "3b", "3c", "3",
                       "4a", "4b", "5", "6a", "6b", "7", "8"
                   };
-            for (int i = 0; i < 13; i++) {
+            if (Program.SystemBrowser == Program.System.Drg)
+                headers = new[] {"1", "2", "3", "4a", "4b", "5", "6a", "6b", "7", "8"};
+            for (int i = 0; i < headers.Length; i++) {
                 row[i] = headers[i];
             }
             table.Rows.InsertAt(row, 0);
@@ -973,32 +1268,56 @@ namespace org.inek.InekBrowser.GUI {
         }
 
         private void CreateCostMatrixHeaderTooltips(int i) {
-            if (i == grdCosts.Columns["KostenArt1"].Index) {
-                grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Ärztlicher Dienst";
-            } else if (i == grdCosts.Columns["KostenArt2"].Index) {
-                grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Pflege-/Erziehungsdienst";
-            } else if (i == grdCosts.Columns["KostenArt3a"].Index) {
-                grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Psychologen";
-            } else if (i == grdCosts.Columns["KostenArt3b"].Index) {
-                grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Sozialarbeiter/Sozial-/Heilpädagogen";
-            } else if (i == grdCosts.Columns["KostenArt3c"].Index) {
-                grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Spezialtherapeuten";
-            } else if (i == grdCosts.Columns["KostenArt3"].Index) {
-                grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Med.-techn. Dienst/Funktionsdienst";
-            } else if (i == grdCosts.Columns["KostenArt4a"].Index) {
-                grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Arzneimittel";
-            } else if (i == grdCosts.Columns["KostenArt4b"].Index) {
-                grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Arzneimittel";
-            } else if (i == grdCosts.Columns["KostenArt5"].Index) {
-                grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Implantate/Transplantate";
-            } else if (i == grdCosts.Columns["KostenArt6a"].Index) {
-                grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Übriger medizinischer Bedarf";
-            } else if (i == grdCosts.Columns["KostenArt6b"].Index) {
-                grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Übriger medizinischer Bedarf";
-            } else if (i == grdCosts.Columns["KostenArt7"].Index) {
-                grdCosts.Rows[0].Cells[i].ToolTipText = "Personal- und Sachkosten med. Infrastruktur";
-            } else if (i == grdCosts.Columns["KostenArt8"].Index) {
-                grdCosts.Rows[0].Cells[i].ToolTipText = "Personal- und Sachkosten nicht med. Infrastruktur";
+            if (Program.SystemBrowser == Program.System.Pepp) {
+                if (i == grdCosts.Columns["KostenArt1"].Index) {
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Ärztlicher Dienst";
+                } else if (i == grdCosts.Columns["KostenArt2"].Index) {
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Pflege-/Erziehungsdienst";
+                } else if (i == grdCosts.Columns["KostenArt3a"].Index) {
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Psychologen";
+                } else if (i == grdCosts.Columns["KostenArt3b"].Index) {
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Sozialarbeiter/Sozial-/Heilpädagogen";
+                } else if (i == grdCosts.Columns["KostenArt3c"].Index) {
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Spezialtherapeuten";
+                } else if (i == grdCosts.Columns["KostenArt3"].Index) {
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Med.-techn. Dienst/Funktionsdienst";
+                } else if (i == grdCosts.Columns["KostenArt4a"].Index) {
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Arzneimittel";
+                } else if (i == grdCosts.Columns["KostenArt4b"].Index) {
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Arzneimittel";
+                } else if (i == grdCosts.Columns["KostenArt5"].Index) {
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Implantate/Transplantate";
+                } else if (i == grdCosts.Columns["KostenArt6a"].Index) {
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Übriger medizinischer Bedarf";
+                } else if (i == grdCosts.Columns["KostenArt6b"].Index) {
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Übriger medizinischer Bedarf";
+                } else if (i == grdCosts.Columns["KostenArt7"].Index) {
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personal- und Sachkosten med. Infrastruktur";
+                } else if (i == grdCosts.Columns["KostenArt8"].Index) {
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personal- und Sachkosten nicht med. Infrastruktur";
+                }
+            } else if (Program.SystemBrowser == Program.System.Drg) {
+                if (i == grdCosts.Columns["KostenArt1"].Index) {
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Ärztlicher Dienst";
+                } else if (i == grdCosts.Columns["KostenArt2"].Index) {
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Pflege-/Erziehungsdienst";
+                } else if (i == grdCosts.Columns["KostenArt3"].Index) {
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Med.-techn. Dienst/Funktionsdienst";
+                } else if (i == grdCosts.Columns["KostenArt4a"].Index) {
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Arzneimittel";
+                } else if (i == grdCosts.Columns["KostenArt4b"].Index) {
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Arzneimittel";
+                } else if (i == grdCosts.Columns["KostenArt5"].Index) {
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Implantate/Transplantate";
+                } else if (i == grdCosts.Columns["KostenArt6a"].Index) {
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Übriger medizinischer Bedarf";
+                } else if (i == grdCosts.Columns["KostenArt6b"].Index) {
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Übriger medizinischer Bedarf";
+                } else if (i == grdCosts.Columns["KostenArt7"].Index) {
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personal- und Sachkosten med. Infrastruktur";
+                } else if (i == grdCosts.Columns["KostenArt8"].Index) {
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personal- und Sachkosten nicht med. Infrastruktur";
+                }
             }
         }
 
@@ -1425,6 +1744,5 @@ namespace org.inek.InekBrowser.GUI {
         private void cbxPepp_Load(object sender, EventArgs e) {
 
         }
-
     }
 }
