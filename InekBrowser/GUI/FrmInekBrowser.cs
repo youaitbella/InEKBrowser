@@ -1410,26 +1410,50 @@ namespace org.inek.InekBrowser.GUI {
                 Reporter reporter = new Reporter();
                 //helpProvider1.SetHelpKeyword(this, "Drucken.htm");
                 //timerPrintWindow.Start();
-                reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, outputType, "peppDruck.lst",
-                                 setReportData(SystemCode), "data");
+                if (Program.SystemBrowser == Program.System.Drg) {
+                    reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, outputType, "drgDruck.lst",
+                                             setReportData(SystemCode), "data"); 
+                }
+                else if (Program.SystemBrowser == Program.System.Pepp) {
+                    reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, outputType, "peppDruck.lst",
+                                     setReportData(SystemCode), "data");
+                }
+                
         }
 
         private void pDFExportToolStripMenuItem_Click(object sender, EventArgs e) {
             if (string.IsNullOrEmpty(SystemCode)) {
-                MessageBox.Show("Keine PEPP gewählt. PDF-Export nicht möglich!");
-                return;
+                if(Program.SystemBrowser == Program.System.Drg){
+                    MessageBox.Show("Keine DRG gewählt. PDF-Export nicht möglich!");
+                    return;
+                }
+                else if(Program.SystemBrowser == Program.System.Pepp){
+                    MessageBox.Show("Keine PEPP gewählt. PDF-Export nicht möglich!");
+                    return;
+                }
+                
             }
             CreateReport(OutputType.PDF);
         }
 
         private void designerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(SystemCode)){
+            if (string.IsNullOrEmpty(SystemCode) && Program.SystemBrowser == Program.System.Pepp) {
                 MessageBox.Show("Keine PEPP gewählt. Druck nicht möglich!");
+                return;
             }
             else{
                 Reporter reporter = new Reporter();
                 reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Design, "peppDruck", setReportData(SystemCode), "data");    
+            }
+
+            if (string.IsNullOrEmpty(SystemCode) && Program.SystemBrowser == Program.System.Drg) {
+                MessageBox.Show("Keine DRG gewählt. Druck nicht möglich!");
+                return;
+            }
+            else {
+                Reporter reporter = new Reporter();
+                reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Design, "drgDruck", setReportData(SystemCode), "data");
             }
             
         }
@@ -1609,68 +1633,73 @@ namespace org.inek.InekBrowser.GUI {
 
         private IEnumerable<SystemData> setReportData(string pepp)
         {
-            SystemInfo info = CsvData.Context().SystemInfo.Single(p => p.Code == pepp);
-            string skTag = CsvData.Context().System.Where(p => p.Code == SystemCode).Select(p => p.Category).Single();
-            info.StruCat = CsvData.Context().StructureCategories.Where(sk => sk.Category == skTag).Select(sk => sk.Text).Single();
-            info.PeppTxt = cbxSystem.Text;
-            var peppData = new SystemData(info);
-            //Primary Diagnoses
-            peppData.PrimDiag = CsvData.Context().PrimaryDiagnoses.Where(p => p.SystemCode == pepp)
-                .Join(CsvData.Context().Recherche.Where(r => r.PrimaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
-                            (d, r) => new PrimaryDiagnosis() {
-                                SystemCode = d.SystemCode,
-                                DiagCode = d.DiagCode,
-                                Hauptdiagnose = r.Text,
-                                Count = d.Count,
-                                Fraction = d.Fraction
-                            }).ToList();
-            //Secondary Diagnoses
-            peppData.SecDiag = CsvData.Context().SecondaryDiagnoses.Where(p => p.System == pepp)
-                .Join(CsvData.Context().Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
-                            (d, r) => new SecondaryDiagnosis(){
-                                System = d.System,
-                                DiagCode = d.DiagCode,
-                                Nebendiagnose = r.Text,
-                                CaseCount = d.CaseCount,
-                                CaseFraction = d.CaseFraction,
-                                EntryCount = d.EntryCount,
-                                EntryFraction = d.EntryFraction
-                            }).ToList();
-            //Procedures
-            peppData.Proc = CsvData.Context().Procedures.Where(p => p.System == pepp)
-                 .Join(CsvData.Context().Recherche.Where(r => r.Procedure == 1), d => d.ProcCode, r => r.Code,
-                            (d, r) => new Procedure() {
-                                System = d.System,
-                                ProcCode = d.ProcCode,
-                                Prozedur = r.Text,
-                                CaseCount = d.CaseCount,
-                                CaseFraction = d.CaseFraction,
-                                EntryCount = d.EntryCount,
-                                EntryFraction = d.EntryFraction
-                            }).ToList();
-            peppData.Cost = CsvData.Context().Costs.Where(p => p.Code== pepp)
-                .Join(CsvData.Context().CostDomains, c => c.CostDomain, d => d.DomainId,
-                (c, d) => new Cost()
-                              {
-                                  Code = c.Code,
-                                  CostDomain = c.CostDomain,
-                                  CostType1 = c.CostType1,
-                                  CostType2 = c.CostType2,
-                                  CostType3 = c.CostType3,
-                                  CostType3a = c.CostType3a,
-                                  CostType3b = c.CostType3b,
-                                  CostType3c = c.CostType3c,
-                                  CostType4a = c.CostType4a,
-                                  CostType4b = c.CostType4b,
-                                  CostType5 = c.CostType5,
-                                  CostType6a = c.CostType6a,
-                                  CostType6b = c.CostType6b,
-                                  CostType7 = c.CostType7,
-                                  CostType8 = c.CostType8,
-                                  TxtBez = d.DomainText
-                              }).ToList();
+            if (Program.SystemBrowser == Program.System.Pepp) {
+                SystemInfo info = CsvData.Context().SystemInfo.Single(p => p.Code == pepp);
+                string skTag = CsvData.Context().System.Where(p => p.Code == SystemCode).Select(p => p.Category).Single();
+                info.StruCat = CsvData.Context().StructureCategories.Where(sk => sk.Category == skTag).Select(sk => sk.Text).Single();
+                info.PeppTxt = cbxSystem.Text;
+                var peppData = new SystemData(info);
+                //Primary Diagnoses
+                peppData.PrimDiag = CsvData.Context().PrimaryDiagnoses.Where(p => p.SystemCode == pepp)
+                    .Join(CsvData.Context().Recherche.Where(r => r.PrimaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
+                                (d, r) => new PrimaryDiagnosis() {
+                                    SystemCode = d.SystemCode,
+                                    DiagCode = d.DiagCode,
+                                    Hauptdiagnose = r.Text,
+                                    Count = d.Count,
+                                    Fraction = d.Fraction
+                                }).ToList();
+                //Secondary Diagnoses
+                peppData.SecDiag = CsvData.Context().SecondaryDiagnoses.Where(p => p.System == pepp)
+                    .Join(CsvData.Context().Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
+                                (d, r) => new SecondaryDiagnosis() {
+                                    System = d.System,
+                                    DiagCode = d.DiagCode,
+                                    Nebendiagnose = r.Text,
+                                    CaseCount = d.CaseCount,
+                                    CaseFraction = d.CaseFraction,
+                                    EntryCount = d.EntryCount,
+                                    EntryFraction = d.EntryFraction
+                                }).ToList();
+                //Procedures
+                peppData.Proc = CsvData.Context().Procedures.Where(p => p.System == pepp)
+                     .Join(CsvData.Context().Recherche.Where(r => r.Procedure == 1), d => d.ProcCode, r => r.Code,
+                                (d, r) => new Procedure() {
+                                    System = d.System,
+                                    ProcCode = d.ProcCode,
+                                    Prozedur = r.Text,
+                                    CaseCount = d.CaseCount,
+                                    CaseFraction = d.CaseFraction,
+                                    EntryCount = d.EntryCount,
+                                    EntryFraction = d.EntryFraction
+                                }).ToList();
+                peppData.Cost = CsvData.Context().Costs.Where(p => p.Code == pepp)
+                    .Join(CsvData.Context().CostDomains, c => c.CostDomain, d => d.DomainId,
+                    (c, d) => new Cost() {
+                        Code = c.Code,
+                        CostDomain = c.CostDomain,
+                        CostType1 = c.CostType1,
+                        CostType2 = c.CostType2,
+                        CostType3 = c.CostType3,
+                        CostType3a = c.CostType3a,
+                        CostType3b = c.CostType3b,
+                        CostType3c = c.CostType3c,
+                        CostType4a = c.CostType4a,
+                        CostType4b = c.CostType4b,
+                        CostType5 = c.CostType5,
+                        CostType6a = c.CostType6a,
+                        CostType6b = c.CostType6b,
+                        CostType7 = c.CostType7,
+                        CostType8 = c.CostType8,
+                        TxtBez = d.DomainText
+                    }).ToList();
 
-            return new List<SystemData> { peppData };
+                return new List<SystemData> { peppData };
+            }
+
+            else {
+                return new List<SystemData> { };
+            }
         }
 
 
