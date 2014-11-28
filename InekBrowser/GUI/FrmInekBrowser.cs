@@ -98,11 +98,11 @@ namespace org.inek.InekBrowser.GUI {
                                       BackgroundImageLayout = ImageLayout.Zoom,
                                       Location = new Point(0, 114),
                                       Name = "drgData",
-                                      Size = new Size(1182, 242),
+                                      Size = new Size(1182, 270),
                                       TabIndex = 1
                                   };
-            tabControl.Location = new Point(tabControl.Location.X,tabControl.Location.Y + (tabControl.Height - 372));
-            tabControl.Height = 372;
+            tabControl.Location = new Point(tabControl.Location.X, tabControl.Location.Y + (tabControl.Height - 340));
+            tabControl.Height = 340;
             tabControl.Anchor = AnchorStyles.Right | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Top; 
             pnlContentBackground.Controls.Add(drgData);
         }
@@ -766,8 +766,8 @@ namespace org.inek.InekBrowser.GUI {
             drgData.GenderMale = q.Select(dh => dh.GenderMale).Single().ToString("P");
             drgData.GenderFemale = q.Select(dh => dh.GenderFemale).Single().ToString("P");
             drgData.GenderUnknown = q.Select(dh => dh.GenderUnknown).Single().ToString("P");
-            drgData.CaseCostAvg = q.Select(dh => dh.CostAverage).Single().ToString();
-            drgData.CaseCostStd = q.Select(dh => dh.CostStandard).Single().ToString();
+            drgData.CaseCostAvg = q.Select(dh => dh.CostAverage).Single().ToString("##,###,###");
+            drgData.CaseCostStd = q.Select(dh => dh.CostStandard).Single().ToString("##,###,###");
             drgData.LT28Days = q.Select(dh => dh.AgeBelow28Days).Single().ToString("P");
             drgData.Bt28Days1Year = q.Select(dh => dh.AgeBelow1Year).Single().ToString("P");
             drgData.Bt1Year2 = q.Select(dh => dh.AgeBelow3Years).Single().ToString("P");
@@ -785,6 +785,12 @@ namespace org.inek.InekBrowser.GUI {
             drgData.Bt75Year79 = q.Select(dh => dh.AgeBelow80Years).Single().ToString("P");
             drgData.Gt79Year = q.Select(dh => dh.AgeBelow99Years).Single().ToString("P");
             drgData.TitleDrg = "Kennzahlen - " + SystemCode;
+            drgData.Mdc = q.Select(dh => dh.MDC).Single();
+            var q2 = CsvData.Context().Mdcs.Where(mdc => mdc.MDC.Trim() == q.Select(m => m.MDC).Single().Trim());
+            drgData.MdcText = q2.Select(mdc => mdc.Text).Single();
+            drgData.MdcCases = q2.Select(mdc => mdc.CaseCount).Single().ToString("##,###,###");
+            drgData.NumDrgs = q2.Select(mdc => mdc.DrgCount).Single().ToString("##,###,###");
+            drgData.FromMdc = ((decimal)((decimal)q.Select(drg => drg.CaseCount).Single()/(decimal)q2.Select(mdc => mdc.CaseCount).Single())).ToString("P");
         }
 
         private bool _mainLoaded = false;
@@ -1033,12 +1039,12 @@ namespace org.inek.InekBrowser.GUI {
                 List<int> rowIds = CsvData.Context()
                 .Costs.Where(pepp => pepp.Code == SystemCode)
                 .Select(ri => ri.CostDomain).ToList();
-                BuildCostMatrixColHeaders(Color.LightGreen);
-                BuildCostMatrixRowHeaders(rowIds, Color.LightGreen);
-                BuildCostMatrixColSum(Color.MediumSeaGreen);
+                BuildCostMatrixColHeaders(Color.LightGreen, Color.Black);
+                BuildCostMatrixRowHeaders(rowIds, Color.LightGreen, Color.Black);
+                BuildCostMatrixColSum(Color.MediumSeaGreen, Color.Black);
                 decimal sum = 0;
-                BuildCostMatrixRowSum(Color.MediumSeaGreen, ref sum);
-                BuildCostMatrixMasterSum(Color.White, Color.SeaGreen, sum);
+                BuildCostMatrixRowSum(Color.MediumSeaGreen, Color.Black, ref sum);
+                BuildCostMatrixMasterSum(Color.White, Color.SeaGreen, false, sum);
                 CostMatrixRightToLeft();
                 SetMatrixSortMode();
             } else if (Program.SystemBrowser == Program.System.Drg) {
@@ -1089,12 +1095,12 @@ namespace org.inek.InekBrowser.GUI {
                 List<int> rowIds = CsvData.Context()
                 .Costs.Where(drg => drg.Code == SystemCode)
                 .Select(ri => ri.CostDomain).ToList();
-                BuildCostMatrixColHeaders(Color.SteelBlue);
-                BuildCostMatrixRowHeaders(rowIds, Color.SteelBlue);
-                BuildCostMatrixColSum(Color.DodgerBlue);
+                BuildCostMatrixColHeaders(Color.SteelBlue, Color.White);
+                BuildCostMatrixRowHeaders(rowIds, Color.SteelBlue, Color.White);
+                BuildCostMatrixColSum(Color.DodgerBlue, Color.White);
                 decimal sum = 0;
-                BuildCostMatrixRowSum(Color.DodgerBlue, ref sum);
-                BuildCostMatrixMasterSum(Color.White, Color.SteelBlue, sum);
+                BuildCostMatrixRowSum(Color.DodgerBlue, Color.White, ref sum);
+                BuildCostMatrixMasterSum(Color.White, Color.SteelBlue, true, sum);
                 CostMatrixRightToLeft();
                 SetMatrixSortMode();
             }
@@ -1127,18 +1133,23 @@ namespace org.inek.InekBrowser.GUI {
             }
         }
 
-        private void BuildCostMatrixMasterSum(Color fontColor, Color backColor, decimal sum) {
+        private void BuildCostMatrixMasterSum(Color fontColor, Color backColor, bool bold, decimal sum) {
             DataGridViewCellStyle cellStyle = new DataGridViewCellStyle();
             cellStyle.ForeColor = fontColor;
             cellStyle.BackColor = backColor;
+            if (bold) {
+                Font f = new Font(DefaultFont, FontStyle.Bold);
+                cellStyle.Font = f;
+            }
             int cellCol = grdCosts.Columns["rowSums"].Index;
             grdCosts.Rows[grdCosts.Rows.Count - 1].Cells[cellCol].Value = sum.ToString();
             grdCosts.Rows[grdCosts.Rows.Count - 1].Cells[cellCol].Style = cellStyle;
         }
 
-        private void BuildCostMatrixRowSum(Color backColor, ref decimal sumsum) {
+        private void BuildCostMatrixRowSum(Color backColor, Color foreColor, ref decimal sumsum) {
             DataGridViewCellStyle cellStyle = new DataGridViewCellStyle();
             cellStyle.BackColor = backColor;
+            cellStyle.ForeColor = foreColor;
             DataTable table = ((DataTable)grdCosts.DataSource);
             DataRow row = table.NewRow();
             table.Rows.Add(row);
@@ -1162,9 +1173,10 @@ namespace org.inek.InekBrowser.GUI {
             grdCosts.Rows[sumRow].Cells[sumCell].Style = cellStyle;
         }
 
-        private void BuildCostMatrixColSum(Color sumColor) {
+        private void BuildCostMatrixColSum(Color sumColor, Color foreColor) {
             DataGridViewCellStyle cellStyle = new DataGridViewCellStyle();
             cellStyle.BackColor = sumColor;
+            cellStyle.ForeColor = foreColor;
             int sumCol = 1;
             if (!grdCosts.Columns.Contains("rowSums")) {
                 grdCosts.Columns.Add("rowSums", "");
@@ -1187,7 +1199,7 @@ namespace org.inek.InekBrowser.GUI {
             }
         }
 
-        private void BuildCostMatrixRowHeaders(List<int> rowIds, Color headColor) {
+        private void BuildCostMatrixRowHeaders(List<int> rowIds, Color headColor, Color foreColor) {
             int colHeaderId = 0;
             if (!grdCosts.Columns.Contains("rowHeaders")) {
                 grdCosts.Columns.Add("rowHeaders", "");
@@ -1202,6 +1214,7 @@ namespace org.inek.InekBrowser.GUI {
                 rowMap = CreateCostCenterMapDrg();
             DataGridViewCellStyle headerStyle = new DataGridViewCellStyle();
             headerStyle.BackColor = headColor;
+            headerStyle.ForeColor = foreColor;
             for (int i = 0; i < grdCosts.Rows.Count - 1; i++) {
                 if (i == grdCosts.Rows.Count - 2) {
                     grdCosts.Rows[i + 1].Cells[colHeaderId].Style = headerStyle;
@@ -1245,7 +1258,7 @@ namespace org.inek.InekBrowser.GUI {
             return rowMap;
         }
 
-        private void BuildCostMatrixColHeaders(Color headColor) {
+        private void BuildCostMatrixColHeaders(Color headColor, Color foreColor) {
             DataTable table = ((DataTable) grdCosts.DataSource);
             DataRow row = table.NewRow();
             string[] headers = {
@@ -1260,6 +1273,7 @@ namespace org.inek.InekBrowser.GUI {
             table.Rows.InsertAt(row, 0);
             DataGridViewCellStyle headerStyle = new DataGridViewCellStyle();
             headerStyle.BackColor = headColor;
+            headerStyle.ForeColor = foreColor;
             headerStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             for (int i = 0; i < grdCosts.Columns.Count; i++) {
                 grdCosts.Rows[0].Cells[i].Style = headerStyle;

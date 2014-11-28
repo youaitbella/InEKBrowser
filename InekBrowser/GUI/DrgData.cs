@@ -160,6 +160,22 @@ namespace org.inek.InekBrowser.GUI {
             set { pnlData.Text = value; }
         }
 
+        public string Mdc {
+            set { txtMdcNum.Text = value; }
+        }
+
+        public string MdcText {
+            set { txtMdcText.Text = value; }
+        }
+
+        public string NumDrgs {
+            set { txtNumDrgs.Text = value; }
+        }
+
+        public string MdcCases {
+            set { txtN.Text = value; }
+        }
+
         public DrgData() {
             InitializeComponent();
         }

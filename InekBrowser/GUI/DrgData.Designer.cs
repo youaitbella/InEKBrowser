@@ -25,9 +25,52 @@
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
             this.pnlData = new System.Windows.Forms.GroupBox();
+            this.grpMdc = new System.Windows.Forms.GroupBox();
+            this.txtN = new System.Windows.Forms.TextBox();
+            this.lblN = new System.Windows.Forms.Label();
+            this.txtNumDrgs = new System.Windows.Forms.TextBox();
+            this.lblNumDrgs = new System.Windows.Forms.Label();
+            this.txtMdcText = new System.Windows.Forms.TextBox();
+            this.txtMdcNum = new System.Windows.Forms.TextBox();
+            this.grpValutationRatio = new System.Windows.Forms.GroupBox();
+            this.txtValutationRatio = new System.Windows.Forms.TextBox();
+            this.grpCaseNormal = new System.Windows.Forms.GroupBox();
+            this.txtFromAll = new System.Windows.Forms.TextBox();
+            this.txtFromMdc = new System.Windows.Forms.TextBox();
+            this.lblFromAll = new System.Windows.Forms.Label();
+            this.txtCasesNormal = new System.Windows.Forms.TextBox();
+            this.lblFromMdc = new System.Windows.Forms.Label();
+            this.grpLos = new System.Windows.Forms.GroupBox();
+            this.lblLosStd = new System.Windows.Forms.Label();
+            this.lblLosAvg = new System.Windows.Forms.Label();
+            this.lblDay1Renumeration = new System.Windows.Forms.Label();
+            this.lblDay1Reduction = new System.Windows.Forms.Label();
+            this.lblLosLong = new System.Windows.Forms.Label();
+            this.txtLosNormal = new System.Windows.Forms.TextBox();
+            this.txtLosLong = new System.Windows.Forms.TextBox();
+            this.txtDay1Reduction = new System.Windows.Forms.TextBox();
+            this.txtDay1Remuneration = new System.Windows.Forms.TextBox();
+            this.txtLosAvg = new System.Windows.Forms.TextBox();
+            this.txtLosStd = new System.Windows.Forms.TextBox();
+            this.lblLosNormal = new System.Windows.Forms.Label();
+            this.txtLosShort = new System.Windows.Forms.TextBox();
+            this.lblLosShort = new System.Windows.Forms.Label();
+            this.grpPCCL = new System.Windows.Forms.GroupBox();
+            this.txtPCCL4 = new System.Windows.Forms.TextBox();
+            this.txtPCCL3 = new System.Windows.Forms.TextBox();
+            this.txtPCCL2 = new System.Windows.Forms.TextBox();
+            this.txtPCCL1 = new System.Windows.Forms.TextBox();
+            this.txtPCCL0 = new System.Windows.Forms.TextBox();
+            this.lblPCCL4 = new System.Windows.Forms.Label();
+            this.lblPCCL1 = new System.Windows.Forms.Label();
+            this.lblPCCL2 = new System.Windows.Forms.Label();
+            this.lblPCCL3 = new System.Windows.Forms.Label();
+            this.lblPCCL0 = new System.Windows.Forms.Label();
             this.grpCaseCosts = new System.Windows.Forms.GroupBox();
+            this.txtStdAbw = new System.Windows.Forms.TextBox();
+            this.txtArithMw = new System.Windows.Forms.TextBox();
+            this.lblStdAbw = new System.Windows.Forms.Label();
             this.lblArithMw = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.grpBigAge = new System.Windows.Forms.GroupBox();
             this.txtGt79Year = new System.Windows.Forms.TextBox();
             this.lblGtYear79 = new System.Windows.Forms.Label();
@@ -67,59 +110,25 @@
             this.txtGenderFemale = new System.Windows.Forms.TextBox();
             this.txtGenderMale = new System.Windows.Forms.TextBox();
             this.lblFemale = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblMale = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
-            this.lblStdAbw = new System.Windows.Forms.Label();
-            this.txtArithMw = new System.Windows.Forms.TextBox();
-            this.txtStdAbw = new System.Windows.Forms.TextBox();
-            this.grpPCCL = new System.Windows.Forms.GroupBox();
-            this.lblPCCL0 = new System.Windows.Forms.Label();
-            this.lblPCCL3 = new System.Windows.Forms.Label();
-            this.lblPCCL2 = new System.Windows.Forms.Label();
-            this.lblPCCL1 = new System.Windows.Forms.Label();
-            this.lblPCCL4 = new System.Windows.Forms.Label();
-            this.txtPCCL0 = new System.Windows.Forms.TextBox();
-            this.txtPCCL1 = new System.Windows.Forms.TextBox();
-            this.txtPCCL2 = new System.Windows.Forms.TextBox();
-            this.txtPCCL3 = new System.Windows.Forms.TextBox();
-            this.txtPCCL4 = new System.Windows.Forms.TextBox();
-            this.grpLos = new System.Windows.Forms.GroupBox();
-            this.txtLosShort = new System.Windows.Forms.TextBox();
-            this.lblLosShort = new System.Windows.Forms.Label();
-            this.lblLosNormal = new System.Windows.Forms.Label();
-            this.txtLosStd = new System.Windows.Forms.TextBox();
-            this.txtLosAvg = new System.Windows.Forms.TextBox();
-            this.txtDay1Remuneration = new System.Windows.Forms.TextBox();
-            this.txtDay1Reduction = new System.Windows.Forms.TextBox();
-            this.txtLosLong = new System.Windows.Forms.TextBox();
-            this.txtLosNormal = new System.Windows.Forms.TextBox();
-            this.lblLosLong = new System.Windows.Forms.Label();
-            this.lblDay1Reduction = new System.Windows.Forms.Label();
-            this.lblDay1Renumeration = new System.Windows.Forms.Label();
-            this.lblLosAvg = new System.Windows.Forms.Label();
-            this.lblLosStd = new System.Windows.Forms.Label();
-            this.grpCaseNormal = new System.Windows.Forms.GroupBox();
-            this.txtCasesNormal = new System.Windows.Forms.TextBox();
-            this.lblFromMdc = new System.Windows.Forms.Label();
-            this.lblFromAll = new System.Windows.Forms.Label();
-            this.txtFromMdc = new System.Windows.Forms.TextBox();
-            this.txtFromAll = new System.Windows.Forms.TextBox();
-            this.grpValutationRatio = new System.Windows.Forms.GroupBox();
-            this.txtValutationRatio = new System.Windows.Forms.TextBox();
             this.pnlData.SuspendLayout();
+            this.grpMdc.SuspendLayout();
+            this.grpValutationRatio.SuspendLayout();
+            this.grpCaseNormal.SuspendLayout();
+            this.grpLos.SuspendLayout();
+            this.grpPCCL.SuspendLayout();
             this.grpCaseCosts.SuspendLayout();
             this.grpBigAge.SuspendLayout();
             this.grpGender.SuspendLayout();
-            this.grpPCCL.SuspendLayout();
-            this.grpLos.SuspendLayout();
-            this.grpCaseNormal.SuspendLayout();
-            this.grpValutationRatio.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlData
             // 
             this.pnlData.BackColor = System.Drawing.Color.DodgerBlue;
+            this.pnlData.Controls.Add(this.grpMdc);
             this.pnlData.Controls.Add(this.grpValutationRatio);
             this.pnlData.Controls.Add(this.grpCaseNormal);
             this.pnlData.Controls.Add(this.grpLos);
@@ -137,6 +146,628 @@
             this.pnlData.TabStop = false;
             this.pnlData.Text = "Kennzahlen";
             // 
+            // grpMdc
+            // 
+            this.grpMdc.Controls.Add(this.txtN);
+            this.grpMdc.Controls.Add(this.lblN);
+            this.grpMdc.Controls.Add(this.txtNumDrgs);
+            this.grpMdc.Controls.Add(this.lblNumDrgs);
+            this.grpMdc.Controls.Add(this.txtMdcText);
+            this.grpMdc.Controls.Add(this.txtMdcNum);
+            this.grpMdc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpMdc.ForeColor = System.Drawing.Color.White;
+            this.grpMdc.Location = new System.Drawing.Point(6, 13);
+            this.grpMdc.Name = "grpMdc";
+            this.grpMdc.Size = new System.Drawing.Size(968, 38);
+            this.grpMdc.TabIndex = 25;
+            this.grpMdc.TabStop = false;
+            // 
+            // txtN
+            // 
+            this.txtN.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtN.ForeColor = System.Drawing.Color.White;
+            this.helpProvider1.SetHelpKeyword(this.txtN, "Code-Kennzahlen.htm");
+            this.helpProvider1.SetHelpNavigator(this.txtN, System.Windows.Forms.HelpNavigator.Topic);
+            this.txtN.Location = new System.Drawing.Point(896, 12);
+            this.txtN.Name = "txtN";
+            this.txtN.ReadOnly = true;
+            this.txtN.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.helpProvider1.SetShowHelp(this.txtN, true);
+            this.txtN.Size = new System.Drawing.Size(61, 21);
+            this.txtN.TabIndex = 56;
+            this.txtN.Text = "0";
+            // 
+            // lblN
+            // 
+            this.lblN.AutoSize = true;
+            this.lblN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblN.Location = new System.Drawing.Point(871, 14);
+            this.lblN.Name = "lblN";
+            this.lblN.Size = new System.Drawing.Size(19, 15);
+            this.lblN.TabIndex = 55;
+            this.lblN.Text = "N:";
+            this.toolTip.SetToolTip(this.lblN, "28 Tage - 1 Jahr");
+            // 
+            // txtNumDrgs
+            // 
+            this.txtNumDrgs.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtNumDrgs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNumDrgs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumDrgs.ForeColor = System.Drawing.Color.White;
+            this.helpProvider1.SetHelpKeyword(this.txtNumDrgs, "Code-Kennzahlen.htm");
+            this.helpProvider1.SetHelpNavigator(this.txtNumDrgs, System.Windows.Forms.HelpNavigator.Topic);
+            this.txtNumDrgs.Location = new System.Drawing.Point(804, 12);
+            this.txtNumDrgs.Name = "txtNumDrgs";
+            this.txtNumDrgs.ReadOnly = true;
+            this.txtNumDrgs.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.helpProvider1.SetShowHelp(this.txtNumDrgs, true);
+            this.txtNumDrgs.Size = new System.Drawing.Size(61, 21);
+            this.txtNumDrgs.TabIndex = 54;
+            this.txtNumDrgs.Text = "0";
+            // 
+            // lblNumDrgs
+            // 
+            this.lblNumDrgs.AutoSize = true;
+            this.lblNumDrgs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumDrgs.Location = new System.Drawing.Point(734, 14);
+            this.lblNumDrgs.Name = "lblNumDrgs";
+            this.lblNumDrgs.Size = new System.Drawing.Size(69, 15);
+            this.lblNumDrgs.TabIndex = 53;
+            this.lblNumDrgs.Text = "Anz. DRGs:";
+            this.toolTip.SetToolTip(this.lblNumDrgs, "28 Tage - 1 Jahr");
+            // 
+            // txtMdcText
+            // 
+            this.txtMdcText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMdcText.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtMdcText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMdcText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMdcText.ForeColor = System.Drawing.Color.White;
+            this.helpProvider1.SetHelpKeyword(this.txtMdcText, "Code-Kennzahlen.htm");
+            this.helpProvider1.SetHelpNavigator(this.txtMdcText, System.Windows.Forms.HelpNavigator.Topic);
+            this.txtMdcText.Location = new System.Drawing.Point(63, 12);
+            this.txtMdcText.Name = "txtMdcText";
+            this.txtMdcText.ReadOnly = true;
+            this.txtMdcText.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.helpProvider1.SetShowHelp(this.txtMdcText, true);
+            this.txtMdcText.Size = new System.Drawing.Size(665, 21);
+            this.txtMdcText.TabIndex = 52;
+            // 
+            // txtMdcNum
+            // 
+            this.txtMdcNum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMdcNum.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtMdcNum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMdcNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMdcNum.ForeColor = System.Drawing.Color.White;
+            this.helpProvider1.SetHelpKeyword(this.txtMdcNum, "Code-Kennzahlen.htm");
+            this.helpProvider1.SetHelpNavigator(this.txtMdcNum, System.Windows.Forms.HelpNavigator.Topic);
+            this.txtMdcNum.Location = new System.Drawing.Point(6, 12);
+            this.txtMdcNum.Name = "txtMdcNum";
+            this.txtMdcNum.ReadOnly = true;
+            this.txtMdcNum.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.helpProvider1.SetShowHelp(this.txtMdcNum, true);
+            this.txtMdcNum.Size = new System.Drawing.Size(51, 21);
+            this.txtMdcNum.TabIndex = 51;
+            this.txtMdcNum.Text = "0";
+            // 
+            // grpValutationRatio
+            // 
+            this.grpValutationRatio.BackColor = System.Drawing.Color.Transparent;
+            this.grpValutationRatio.Controls.Add(this.txtValutationRatio);
+            this.grpValutationRatio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpValutationRatio.ForeColor = System.Drawing.Color.White;
+            this.grpValutationRatio.Location = new System.Drawing.Point(6, 165);
+            this.grpValutationRatio.Name = "grpValutationRatio";
+            this.grpValutationRatio.Size = new System.Drawing.Size(160, 57);
+            this.grpValutationRatio.TabIndex = 24;
+            this.grpValutationRatio.TabStop = false;
+            this.grpValutationRatio.Text = "Bewertungsrelation";
+            // 
+            // txtValutationRatio
+            // 
+            this.txtValutationRatio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtValutationRatio.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtValutationRatio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtValutationRatio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValutationRatio.ForeColor = System.Drawing.Color.White;
+            this.helpProvider1.SetHelpKeyword(this.txtValutationRatio, "Code-Kennzahlen.htm");
+            this.helpProvider1.SetHelpNavigator(this.txtValutationRatio, System.Windows.Forms.HelpNavigator.Topic);
+            this.txtValutationRatio.Location = new System.Drawing.Point(10, 24);
+            this.txtValutationRatio.Name = "txtValutationRatio";
+            this.txtValutationRatio.ReadOnly = true;
+            this.txtValutationRatio.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.helpProvider1.SetShowHelp(this.txtValutationRatio, true);
+            this.txtValutationRatio.Size = new System.Drawing.Size(140, 21);
+            this.txtValutationRatio.TabIndex = 48;
+            this.txtValutationRatio.Text = "0";
+            // 
+            // grpCaseNormal
+            // 
+            this.grpCaseNormal.BackColor = System.Drawing.Color.Transparent;
+            this.grpCaseNormal.Controls.Add(this.txtFromAll);
+            this.grpCaseNormal.Controls.Add(this.txtFromMdc);
+            this.grpCaseNormal.Controls.Add(this.lblFromAll);
+            this.grpCaseNormal.Controls.Add(this.txtCasesNormal);
+            this.grpCaseNormal.Controls.Add(this.lblFromMdc);
+            this.grpCaseNormal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpCaseNormal.ForeColor = System.Drawing.Color.White;
+            this.grpCaseNormal.Location = new System.Drawing.Point(6, 52);
+            this.grpCaseNormal.Name = "grpCaseNormal";
+            this.grpCaseNormal.Size = new System.Drawing.Size(160, 107);
+            this.grpCaseNormal.TabIndex = 23;
+            this.grpCaseNormal.TabStop = false;
+            this.grpCaseNormal.Text = "Fallzahl Normallieger";
+            // 
+            // txtFromAll
+            // 
+            this.txtFromAll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtFromAll.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtFromAll.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFromAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFromAll.ForeColor = System.Drawing.Color.White;
+            this.helpProvider1.SetHelpKeyword(this.txtFromAll, "Code-Kennzahlen.htm");
+            this.helpProvider1.SetHelpNavigator(this.txtFromAll, System.Windows.Forms.HelpNavigator.Topic);
+            this.txtFromAll.Location = new System.Drawing.Point(99, 78);
+            this.txtFromAll.Name = "txtFromAll";
+            this.txtFromAll.ReadOnly = true;
+            this.txtFromAll.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.helpProvider1.SetShowHelp(this.txtFromAll, true);
+            this.txtFromAll.Size = new System.Drawing.Size(51, 21);
+            this.txtFromAll.TabIndex = 51;
+            this.txtFromAll.Text = "0";
+            // 
+            // txtFromMdc
+            // 
+            this.txtFromMdc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtFromMdc.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtFromMdc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFromMdc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFromMdc.ForeColor = System.Drawing.Color.White;
+            this.helpProvider1.SetHelpKeyword(this.txtFromMdc, "Code-Kennzahlen.htm");
+            this.helpProvider1.SetHelpNavigator(this.txtFromMdc, System.Windows.Forms.HelpNavigator.Topic);
+            this.txtFromMdc.Location = new System.Drawing.Point(99, 50);
+            this.txtFromMdc.Name = "txtFromMdc";
+            this.txtFromMdc.ReadOnly = true;
+            this.txtFromMdc.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.helpProvider1.SetShowHelp(this.txtFromMdc, true);
+            this.txtFromMdc.Size = new System.Drawing.Size(51, 21);
+            this.txtFromMdc.TabIndex = 50;
+            this.txtFromMdc.Text = "0";
+            // 
+            // lblFromAll
+            // 
+            this.lblFromAll.AutoSize = true;
+            this.lblFromAll.BackColor = System.Drawing.Color.Transparent;
+            this.lblFromAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFromAll.Location = new System.Drawing.Point(6, 80);
+            this.lblFromAll.Name = "lblFromAll";
+            this.lblFromAll.Size = new System.Drawing.Size(73, 15);
+            this.lblFromAll.TabIndex = 49;
+            this.lblFromAll.Text = "von gesamt:";
+            // 
+            // txtCasesNormal
+            // 
+            this.txtCasesNormal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCasesNormal.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtCasesNormal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCasesNormal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCasesNormal.ForeColor = System.Drawing.Color.White;
+            this.helpProvider1.SetHelpKeyword(this.txtCasesNormal, "Code-Kennzahlen.htm");
+            this.helpProvider1.SetHelpNavigator(this.txtCasesNormal, System.Windows.Forms.HelpNavigator.Topic);
+            this.txtCasesNormal.Location = new System.Drawing.Point(9, 20);
+            this.txtCasesNormal.Name = "txtCasesNormal";
+            this.txtCasesNormal.ReadOnly = true;
+            this.txtCasesNormal.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.helpProvider1.SetShowHelp(this.txtCasesNormal, true);
+            this.txtCasesNormal.Size = new System.Drawing.Size(91, 21);
+            this.txtCasesNormal.TabIndex = 48;
+            this.txtCasesNormal.Text = "0";
+            // 
+            // lblFromMdc
+            // 
+            this.lblFromMdc.AutoSize = true;
+            this.lblFromMdc.BackColor = System.Drawing.Color.Transparent;
+            this.lblFromMdc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFromMdc.Location = new System.Drawing.Point(7, 52);
+            this.lblFromMdc.Name = "lblFromMdc";
+            this.lblFromMdc.Size = new System.Drawing.Size(60, 15);
+            this.lblFromMdc.TabIndex = 21;
+            this.lblFromMdc.Text = "von MDC:";
+            // 
+            // grpLos
+            // 
+            this.grpLos.BackColor = System.Drawing.Color.Transparent;
+            this.grpLos.Controls.Add(this.lblLosStd);
+            this.grpLos.Controls.Add(this.lblLosAvg);
+            this.grpLos.Controls.Add(this.lblDay1Renumeration);
+            this.grpLos.Controls.Add(this.lblDay1Reduction);
+            this.grpLos.Controls.Add(this.lblLosLong);
+            this.grpLos.Controls.Add(this.txtLosNormal);
+            this.grpLos.Controls.Add(this.txtLosLong);
+            this.grpLos.Controls.Add(this.txtDay1Reduction);
+            this.grpLos.Controls.Add(this.txtDay1Remuneration);
+            this.grpLos.Controls.Add(this.txtLosAvg);
+            this.grpLos.Controls.Add(this.txtLosStd);
+            this.grpLos.Controls.Add(this.lblLosNormal);
+            this.grpLos.Controls.Add(this.txtLosShort);
+            this.grpLos.Controls.Add(this.lblLosShort);
+            this.grpLos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpLos.ForeColor = System.Drawing.Color.White;
+            this.grpLos.Location = new System.Drawing.Point(172, 51);
+            this.grpLos.Name = "grpLos";
+            this.grpLos.Size = new System.Drawing.Size(273, 213);
+            this.grpLos.TabIndex = 22;
+            this.grpLos.TabStop = false;
+            this.grpLos.Text = "Verweildauer";
+            // 
+            // lblLosStd
+            // 
+            this.lblLosStd.AutoSize = true;
+            this.lblLosStd.BackColor = System.Drawing.Color.Transparent;
+            this.lblLosStd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLosStd.Location = new System.Drawing.Point(6, 183);
+            this.lblLosStd.Name = "lblLosStd";
+            this.lblLosStd.Size = new System.Drawing.Size(202, 15);
+            this.lblLosStd.TabIndex = 60;
+            this.lblLosStd.Text = "Standardabweichung Verweildauer:";
+            // 
+            // lblLosAvg
+            // 
+            this.lblLosAvg.AutoSize = true;
+            this.lblLosAvg.BackColor = System.Drawing.Color.Transparent;
+            this.lblLosAvg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLosAvg.Location = new System.Drawing.Point(6, 156);
+            this.lblLosAvg.Name = "lblLosAvg";
+            this.lblLosAvg.Size = new System.Drawing.Size(203, 15);
+            this.lblLosAvg.TabIndex = 59;
+            this.lblLosAvg.Text = "Mittlere arithmetische Verweildauer:";
+            // 
+            // lblDay1Renumeration
+            // 
+            this.lblDay1Renumeration.AutoSize = true;
+            this.lblDay1Renumeration.BackColor = System.Drawing.Color.Transparent;
+            this.lblDay1Renumeration.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDay1Renumeration.Location = new System.Drawing.Point(6, 129);
+            this.lblDay1Renumeration.Name = "lblDay1Renumeration";
+            this.lblDay1Renumeration.Size = new System.Drawing.Size(180, 15);
+            this.lblDay1Renumeration.TabIndex = 58;
+            this.lblDay1Renumeration.Text = "1. Tag mit zusätzlichem Entgelt:";
+            // 
+            // lblDay1Reduction
+            // 
+            this.lblDay1Reduction.AutoSize = true;
+            this.lblDay1Reduction.BackColor = System.Drawing.Color.Transparent;
+            this.lblDay1Reduction.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDay1Reduction.Location = new System.Drawing.Point(6, 101);
+            this.lblDay1Reduction.Name = "lblDay1Reduction";
+            this.lblDay1Reduction.Size = new System.Drawing.Size(117, 15);
+            this.lblDay1Reduction.TabIndex = 57;
+            this.lblDay1Reduction.Text = "1. Tag mit Abschlag:";
+            // 
+            // lblLosLong
+            // 
+            this.lblLosLong.AutoSize = true;
+            this.lblLosLong.BackColor = System.Drawing.Color.Transparent;
+            this.lblLosLong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLosLong.Location = new System.Drawing.Point(6, 74);
+            this.lblLosLong.Name = "lblLosLong";
+            this.lblLosLong.Size = new System.Drawing.Size(69, 15);
+            this.lblLosLong.TabIndex = 56;
+            this.lblLosLong.Text = "Langlieger:";
+            // 
+            // txtLosNormal
+            // 
+            this.txtLosNormal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLosNormal.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtLosNormal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosNormal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLosNormal.ForeColor = System.Drawing.Color.White;
+            this.helpProvider1.SetHelpKeyword(this.txtLosNormal, "Code-Kennzahlen.htm");
+            this.helpProvider1.SetHelpNavigator(this.txtLosNormal, System.Windows.Forms.HelpNavigator.Topic);
+            this.txtLosNormal.Location = new System.Drawing.Point(212, 46);
+            this.txtLosNormal.Name = "txtLosNormal";
+            this.txtLosNormal.ReadOnly = true;
+            this.txtLosNormal.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.helpProvider1.SetShowHelp(this.txtLosNormal, true);
+            this.txtLosNormal.Size = new System.Drawing.Size(51, 21);
+            this.txtLosNormal.TabIndex = 55;
+            this.txtLosNormal.Text = "0";
+            // 
+            // txtLosLong
+            // 
+            this.txtLosLong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLosLong.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtLosLong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosLong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLosLong.ForeColor = System.Drawing.Color.White;
+            this.helpProvider1.SetHelpKeyword(this.txtLosLong, "Code-Kennzahlen.htm");
+            this.helpProvider1.SetHelpNavigator(this.txtLosLong, System.Windows.Forms.HelpNavigator.Topic);
+            this.txtLosLong.Location = new System.Drawing.Point(212, 73);
+            this.txtLosLong.Name = "txtLosLong";
+            this.txtLosLong.ReadOnly = true;
+            this.txtLosLong.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.helpProvider1.SetShowHelp(this.txtLosLong, true);
+            this.txtLosLong.Size = new System.Drawing.Size(51, 21);
+            this.txtLosLong.TabIndex = 54;
+            this.txtLosLong.Text = "0";
+            // 
+            // txtDay1Reduction
+            // 
+            this.txtDay1Reduction.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDay1Reduction.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtDay1Reduction.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDay1Reduction.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDay1Reduction.ForeColor = System.Drawing.Color.White;
+            this.helpProvider1.SetHelpKeyword(this.txtDay1Reduction, "Code-Kennzahlen.htm");
+            this.helpProvider1.SetHelpNavigator(this.txtDay1Reduction, System.Windows.Forms.HelpNavigator.Topic);
+            this.txtDay1Reduction.Location = new System.Drawing.Point(212, 100);
+            this.txtDay1Reduction.Name = "txtDay1Reduction";
+            this.txtDay1Reduction.ReadOnly = true;
+            this.txtDay1Reduction.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.helpProvider1.SetShowHelp(this.txtDay1Reduction, true);
+            this.txtDay1Reduction.Size = new System.Drawing.Size(51, 21);
+            this.txtDay1Reduction.TabIndex = 53;
+            this.txtDay1Reduction.Text = "0";
+            // 
+            // txtDay1Remuneration
+            // 
+            this.txtDay1Remuneration.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDay1Remuneration.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtDay1Remuneration.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDay1Remuneration.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDay1Remuneration.ForeColor = System.Drawing.Color.White;
+            this.helpProvider1.SetHelpKeyword(this.txtDay1Remuneration, "Code-Kennzahlen.htm");
+            this.helpProvider1.SetHelpNavigator(this.txtDay1Remuneration, System.Windows.Forms.HelpNavigator.Topic);
+            this.txtDay1Remuneration.Location = new System.Drawing.Point(212, 127);
+            this.txtDay1Remuneration.Name = "txtDay1Remuneration";
+            this.txtDay1Remuneration.ReadOnly = true;
+            this.txtDay1Remuneration.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.helpProvider1.SetShowHelp(this.txtDay1Remuneration, true);
+            this.txtDay1Remuneration.Size = new System.Drawing.Size(51, 21);
+            this.txtDay1Remuneration.TabIndex = 52;
+            this.txtDay1Remuneration.Text = "0";
+            // 
+            // txtLosAvg
+            // 
+            this.txtLosAvg.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLosAvg.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtLosAvg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosAvg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLosAvg.ForeColor = System.Drawing.Color.White;
+            this.helpProvider1.SetHelpKeyword(this.txtLosAvg, "Code-Kennzahlen.htm");
+            this.helpProvider1.SetHelpNavigator(this.txtLosAvg, System.Windows.Forms.HelpNavigator.Topic);
+            this.txtLosAvg.Location = new System.Drawing.Point(212, 154);
+            this.txtLosAvg.Name = "txtLosAvg";
+            this.txtLosAvg.ReadOnly = true;
+            this.txtLosAvg.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.helpProvider1.SetShowHelp(this.txtLosAvg, true);
+            this.txtLosAvg.Size = new System.Drawing.Size(51, 21);
+            this.txtLosAvg.TabIndex = 51;
+            this.txtLosAvg.Text = "0";
+            // 
+            // txtLosStd
+            // 
+            this.txtLosStd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLosStd.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtLosStd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosStd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLosStd.ForeColor = System.Drawing.Color.White;
+            this.helpProvider1.SetHelpKeyword(this.txtLosStd, "Code-Kennzahlen.htm");
+            this.helpProvider1.SetHelpNavigator(this.txtLosStd, System.Windows.Forms.HelpNavigator.Topic);
+            this.txtLosStd.Location = new System.Drawing.Point(212, 181);
+            this.txtLosStd.Name = "txtLosStd";
+            this.txtLosStd.ReadOnly = true;
+            this.txtLosStd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.helpProvider1.SetShowHelp(this.txtLosStd, true);
+            this.txtLosStd.Size = new System.Drawing.Size(51, 21);
+            this.txtLosStd.TabIndex = 50;
+            this.txtLosStd.Text = "0";
+            // 
+            // lblLosNormal
+            // 
+            this.lblLosNormal.AutoSize = true;
+            this.lblLosNormal.BackColor = System.Drawing.Color.Transparent;
+            this.lblLosNormal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLosNormal.Location = new System.Drawing.Point(6, 47);
+            this.lblLosNormal.Name = "lblLosNormal";
+            this.lblLosNormal.Size = new System.Drawing.Size(82, 15);
+            this.lblLosNormal.TabIndex = 49;
+            this.lblLosNormal.Text = "Normallieger:";
+            // 
+            // txtLosShort
+            // 
+            this.txtLosShort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLosShort.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtLosShort.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosShort.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLosShort.ForeColor = System.Drawing.Color.White;
+            this.helpProvider1.SetHelpKeyword(this.txtLosShort, "Code-Kennzahlen.htm");
+            this.helpProvider1.SetHelpNavigator(this.txtLosShort, System.Windows.Forms.HelpNavigator.Topic);
+            this.txtLosShort.Location = new System.Drawing.Point(212, 20);
+            this.txtLosShort.Name = "txtLosShort";
+            this.txtLosShort.ReadOnly = true;
+            this.txtLosShort.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.helpProvider1.SetShowHelp(this.txtLosShort, true);
+            this.txtLosShort.Size = new System.Drawing.Size(51, 21);
+            this.txtLosShort.TabIndex = 48;
+            this.txtLosShort.Text = "0";
+            // 
+            // lblLosShort
+            // 
+            this.lblLosShort.AutoSize = true;
+            this.lblLosShort.BackColor = System.Drawing.Color.Transparent;
+            this.lblLosShort.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLosShort.Location = new System.Drawing.Point(6, 22);
+            this.lblLosShort.Name = "lblLosShort";
+            this.lblLosShort.Size = new System.Drawing.Size(66, 15);
+            this.lblLosShort.TabIndex = 21;
+            this.lblLosShort.Text = "Kurzlieger:";
+            // 
+            // grpPCCL
+            // 
+            this.grpPCCL.BackColor = System.Drawing.Color.Transparent;
+            this.grpPCCL.Controls.Add(this.txtPCCL4);
+            this.grpPCCL.Controls.Add(this.txtPCCL3);
+            this.grpPCCL.Controls.Add(this.txtPCCL2);
+            this.grpPCCL.Controls.Add(this.txtPCCL1);
+            this.grpPCCL.Controls.Add(this.txtPCCL0);
+            this.grpPCCL.Controls.Add(this.lblPCCL4);
+            this.grpPCCL.Controls.Add(this.lblPCCL1);
+            this.grpPCCL.Controls.Add(this.lblPCCL2);
+            this.grpPCCL.Controls.Add(this.lblPCCL3);
+            this.grpPCCL.Controls.Add(this.lblPCCL0);
+            this.grpPCCL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpPCCL.ForeColor = System.Drawing.Color.White;
+            this.grpPCCL.Location = new System.Drawing.Point(608, 52);
+            this.grpPCCL.Name = "grpPCCL";
+            this.grpPCCL.Size = new System.Drawing.Size(91, 143);
+            this.grpPCCL.TabIndex = 21;
+            this.grpPCCL.TabStop = false;
+            this.grpPCCL.Text = "PCCL";
+            // 
+            // txtPCCL4
+            // 
+            this.txtPCCL4.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtPCCL4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPCCL4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPCCL4.ForeColor = System.Drawing.Color.White;
+            this.helpProvider1.SetHelpKeyword(this.txtPCCL4, "Code-Kennzahlen.htm");
+            this.helpProvider1.SetHelpNavigator(this.txtPCCL4, System.Windows.Forms.HelpNavigator.Topic);
+            this.txtPCCL4.Location = new System.Drawing.Point(29, 110);
+            this.txtPCCL4.Name = "txtPCCL4";
+            this.txtPCCL4.ReadOnly = true;
+            this.txtPCCL4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.helpProvider1.SetShowHelp(this.txtPCCL4, true);
+            this.txtPCCL4.Size = new System.Drawing.Size(51, 21);
+            this.txtPCCL4.TabIndex = 48;
+            this.txtPCCL4.Text = "0";
+            // 
+            // txtPCCL3
+            // 
+            this.txtPCCL3.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtPCCL3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPCCL3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPCCL3.ForeColor = System.Drawing.Color.White;
+            this.helpProvider1.SetHelpKeyword(this.txtPCCL3, "Code-Kennzahlen.htm");
+            this.helpProvider1.SetHelpNavigator(this.txtPCCL3, System.Windows.Forms.HelpNavigator.Topic);
+            this.txtPCCL3.Location = new System.Drawing.Point(29, 87);
+            this.txtPCCL3.Name = "txtPCCL3";
+            this.txtPCCL3.ReadOnly = true;
+            this.txtPCCL3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.helpProvider1.SetShowHelp(this.txtPCCL3, true);
+            this.txtPCCL3.Size = new System.Drawing.Size(51, 21);
+            this.txtPCCL3.TabIndex = 47;
+            this.txtPCCL3.Text = "0";
+            // 
+            // txtPCCL2
+            // 
+            this.txtPCCL2.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtPCCL2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPCCL2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPCCL2.ForeColor = System.Drawing.Color.White;
+            this.helpProvider1.SetHelpKeyword(this.txtPCCL2, "Code-Kennzahlen.htm");
+            this.helpProvider1.SetHelpNavigator(this.txtPCCL2, System.Windows.Forms.HelpNavigator.Topic);
+            this.txtPCCL2.Location = new System.Drawing.Point(29, 64);
+            this.txtPCCL2.Name = "txtPCCL2";
+            this.txtPCCL2.ReadOnly = true;
+            this.txtPCCL2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.helpProvider1.SetShowHelp(this.txtPCCL2, true);
+            this.txtPCCL2.Size = new System.Drawing.Size(51, 21);
+            this.txtPCCL2.TabIndex = 46;
+            this.txtPCCL2.Text = "0";
+            // 
+            // txtPCCL1
+            // 
+            this.txtPCCL1.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtPCCL1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPCCL1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPCCL1.ForeColor = System.Drawing.Color.White;
+            this.helpProvider1.SetHelpKeyword(this.txtPCCL1, "Code-Kennzahlen.htm");
+            this.helpProvider1.SetHelpNavigator(this.txtPCCL1, System.Windows.Forms.HelpNavigator.Topic);
+            this.txtPCCL1.Location = new System.Drawing.Point(29, 41);
+            this.txtPCCL1.Name = "txtPCCL1";
+            this.txtPCCL1.ReadOnly = true;
+            this.txtPCCL1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.helpProvider1.SetShowHelp(this.txtPCCL1, true);
+            this.txtPCCL1.Size = new System.Drawing.Size(51, 21);
+            this.txtPCCL1.TabIndex = 45;
+            this.txtPCCL1.Text = "0";
+            // 
+            // txtPCCL0
+            // 
+            this.txtPCCL0.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtPCCL0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPCCL0.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPCCL0.ForeColor = System.Drawing.Color.White;
+            this.helpProvider1.SetHelpKeyword(this.txtPCCL0, "Code-Kennzahlen.htm");
+            this.helpProvider1.SetHelpNavigator(this.txtPCCL0, System.Windows.Forms.HelpNavigator.Topic);
+            this.txtPCCL0.Location = new System.Drawing.Point(29, 18);
+            this.txtPCCL0.Name = "txtPCCL0";
+            this.txtPCCL0.ReadOnly = true;
+            this.txtPCCL0.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.helpProvider1.SetShowHelp(this.txtPCCL0, true);
+            this.txtPCCL0.Size = new System.Drawing.Size(51, 21);
+            this.txtPCCL0.TabIndex = 44;
+            this.txtPCCL0.Text = "0";
+            // 
+            // lblPCCL4
+            // 
+            this.lblPCCL4.AutoSize = true;
+            this.lblPCCL4.BackColor = System.Drawing.Color.Transparent;
+            this.lblPCCL4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPCCL4.Location = new System.Drawing.Point(6, 112);
+            this.lblPCCL4.Name = "lblPCCL4";
+            this.lblPCCL4.Size = new System.Drawing.Size(17, 15);
+            this.lblPCCL4.TabIndex = 21;
+            this.lblPCCL4.Text = "4:";
+            // 
+            // lblPCCL1
+            // 
+            this.lblPCCL1.AutoSize = true;
+            this.lblPCCL1.BackColor = System.Drawing.Color.Transparent;
+            this.lblPCCL1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPCCL1.Location = new System.Drawing.Point(6, 43);
+            this.lblPCCL1.Name = "lblPCCL1";
+            this.lblPCCL1.Size = new System.Drawing.Size(17, 15);
+            this.lblPCCL1.TabIndex = 20;
+            this.lblPCCL1.Text = "1:";
+            // 
+            // lblPCCL2
+            // 
+            this.lblPCCL2.AutoSize = true;
+            this.lblPCCL2.BackColor = System.Drawing.Color.Transparent;
+            this.lblPCCL2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPCCL2.Location = new System.Drawing.Point(6, 66);
+            this.lblPCCL2.Name = "lblPCCL2";
+            this.lblPCCL2.Size = new System.Drawing.Size(17, 15);
+            this.lblPCCL2.TabIndex = 19;
+            this.lblPCCL2.Text = "2:";
+            // 
+            // lblPCCL3
+            // 
+            this.lblPCCL3.AutoSize = true;
+            this.lblPCCL3.BackColor = System.Drawing.Color.Transparent;
+            this.lblPCCL3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPCCL3.Location = new System.Drawing.Point(6, 89);
+            this.lblPCCL3.Name = "lblPCCL3";
+            this.lblPCCL3.Size = new System.Drawing.Size(17, 15);
+            this.lblPCCL3.TabIndex = 18;
+            this.lblPCCL3.Text = "3:";
+            // 
+            // lblPCCL0
+            // 
+            this.lblPCCL0.AutoSize = true;
+            this.lblPCCL0.BackColor = System.Drawing.Color.Transparent;
+            this.lblPCCL0.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPCCL0.Location = new System.Drawing.Point(6, 20);
+            this.lblPCCL0.Name = "lblPCCL0";
+            this.lblPCCL0.Size = new System.Drawing.Size(17, 15);
+            this.lblPCCL0.TabIndex = 17;
+            this.lblPCCL0.Text = "0:";
+            // 
             // grpCaseCosts
             // 
             this.grpCaseCosts.BackColor = System.Drawing.Color.Transparent;
@@ -146,12 +777,57 @@
             this.grpCaseCosts.Controls.Add(this.lblArithMw);
             this.grpCaseCosts.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpCaseCosts.ForeColor = System.Drawing.Color.White;
-            this.grpCaseCosts.Location = new System.Drawing.Point(451, 165);
+            this.grpCaseCosts.Location = new System.Drawing.Point(451, 195);
             this.grpCaseCosts.Name = "grpCaseCosts";
             this.grpCaseCosts.Size = new System.Drawing.Size(248, 69);
             this.grpCaseCosts.TabIndex = 20;
             this.grpCaseCosts.TabStop = false;
             this.grpCaseCosts.Text = "Fallkosten";
+            // 
+            // txtStdAbw
+            // 
+            this.txtStdAbw.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtStdAbw.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtStdAbw.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStdAbw.ForeColor = System.Drawing.Color.White;
+            this.helpProvider1.SetHelpKeyword(this.txtStdAbw, "Code-Kennzahlen.htm");
+            this.helpProvider1.SetHelpNavigator(this.txtStdAbw, System.Windows.Forms.HelpNavigator.Topic);
+            this.txtStdAbw.Location = new System.Drawing.Point(150, 40);
+            this.txtStdAbw.Name = "txtStdAbw";
+            this.txtStdAbw.ReadOnly = true;
+            this.txtStdAbw.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.helpProvider1.SetShowHelp(this.txtStdAbw, true);
+            this.txtStdAbw.Size = new System.Drawing.Size(87, 21);
+            this.txtStdAbw.TabIndex = 44;
+            this.txtStdAbw.Text = "0";
+            // 
+            // txtArithMw
+            // 
+            this.txtArithMw.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtArithMw.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtArithMw.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtArithMw.ForeColor = System.Drawing.Color.White;
+            this.helpProvider1.SetHelpKeyword(this.txtArithMw, "Code-Kennzahlen.htm");
+            this.helpProvider1.SetHelpNavigator(this.txtArithMw, System.Windows.Forms.HelpNavigator.Topic);
+            this.txtArithMw.Location = new System.Drawing.Point(150, 15);
+            this.txtArithMw.Name = "txtArithMw";
+            this.txtArithMw.ReadOnly = true;
+            this.txtArithMw.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.helpProvider1.SetShowHelp(this.txtArithMw, true);
+            this.txtArithMw.Size = new System.Drawing.Size(87, 21);
+            this.txtArithMw.TabIndex = 43;
+            this.txtArithMw.Text = "0";
+            // 
+            // lblStdAbw
+            // 
+            this.lblStdAbw.AutoSize = true;
+            this.lblStdAbw.BackColor = System.Drawing.Color.Transparent;
+            this.lblStdAbw.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStdAbw.Location = new System.Drawing.Point(6, 42);
+            this.lblStdAbw.Name = "lblStdAbw";
+            this.lblStdAbw.Size = new System.Drawing.Size(130, 15);
+            this.lblStdAbw.TabIndex = 17;
+            this.lblStdAbw.Text = "Standard Abweichung:";
             // 
             // lblArithMw
             // 
@@ -163,17 +839,6 @@
             this.lblArithMw.Size = new System.Drawing.Size(144, 15);
             this.lblArithMw.TabIndex = 16;
             this.lblArithMw.Text = "Arithmetischer Mittelwert:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 101);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 15);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Unbestimmt:";
             // 
             // grpBigAge
             // 
@@ -212,7 +877,7 @@
             this.grpBigAge.Controls.Add(this.lblLT28Days);
             this.grpBigAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBigAge.ForeColor = System.Drawing.Color.White;
-            this.grpBigAge.Location = new System.Drawing.Point(705, 22);
+            this.grpBigAge.Location = new System.Drawing.Point(705, 52);
             this.grpBigAge.Name = "grpBigAge";
             this.grpBigAge.Size = new System.Drawing.Size(269, 213);
             this.grpBigAge.TabIndex = 18;
@@ -664,7 +1329,7 @@
             this.grpGender.Controls.Add(this.lblMale);
             this.grpGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpGender.ForeColor = System.Drawing.Color.White;
-            this.grpGender.Location = new System.Drawing.Point(451, 22);
+            this.grpGender.Location = new System.Drawing.Point(451, 52);
             this.grpGender.Name = "grpGender";
             this.grpGender.Size = new System.Drawing.Size(151, 143);
             this.grpGender.TabIndex = 17;
@@ -744,6 +1409,17 @@
             this.lblFemale.TabIndex = 16;
             this.lblFemale.Text = "Weiblich:";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 101);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 15);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Unbestimmt:";
+            // 
             // lblMale
             // 
             this.lblMale.AutoSize = true;
@@ -766,566 +1442,6 @@
             // 
             this.helpProvider1.HelpNamespace = "PeppBrowser.chm";
             // 
-            // lblStdAbw
-            // 
-            this.lblStdAbw.AutoSize = true;
-            this.lblStdAbw.BackColor = System.Drawing.Color.Transparent;
-            this.lblStdAbw.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStdAbw.Location = new System.Drawing.Point(6, 42);
-            this.lblStdAbw.Name = "lblStdAbw";
-            this.lblStdAbw.Size = new System.Drawing.Size(130, 15);
-            this.lblStdAbw.TabIndex = 17;
-            this.lblStdAbw.Text = "Standard Abweichung:";
-            // 
-            // txtArithMw
-            // 
-            this.txtArithMw.BackColor = System.Drawing.Color.SteelBlue;
-            this.txtArithMw.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtArithMw.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtArithMw.ForeColor = System.Drawing.Color.White;
-            this.helpProvider1.SetHelpKeyword(this.txtArithMw, "Code-Kennzahlen.htm");
-            this.helpProvider1.SetHelpNavigator(this.txtArithMw, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtArithMw.Location = new System.Drawing.Point(186, 15);
-            this.txtArithMw.Name = "txtArithMw";
-            this.txtArithMw.ReadOnly = true;
-            this.txtArithMw.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.helpProvider1.SetShowHelp(this.txtArithMw, true);
-            this.txtArithMw.Size = new System.Drawing.Size(51, 21);
-            this.txtArithMw.TabIndex = 43;
-            this.txtArithMw.Text = "0";
-            // 
-            // txtStdAbw
-            // 
-            this.txtStdAbw.BackColor = System.Drawing.Color.SteelBlue;
-            this.txtStdAbw.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtStdAbw.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStdAbw.ForeColor = System.Drawing.Color.White;
-            this.helpProvider1.SetHelpKeyword(this.txtStdAbw, "Code-Kennzahlen.htm");
-            this.helpProvider1.SetHelpNavigator(this.txtStdAbw, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtStdAbw.Location = new System.Drawing.Point(186, 40);
-            this.txtStdAbw.Name = "txtStdAbw";
-            this.txtStdAbw.ReadOnly = true;
-            this.txtStdAbw.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.helpProvider1.SetShowHelp(this.txtStdAbw, true);
-            this.txtStdAbw.Size = new System.Drawing.Size(51, 21);
-            this.txtStdAbw.TabIndex = 44;
-            this.txtStdAbw.Text = "0";
-            // 
-            // grpPCCL
-            // 
-            this.grpPCCL.BackColor = System.Drawing.Color.Transparent;
-            this.grpPCCL.Controls.Add(this.txtPCCL4);
-            this.grpPCCL.Controls.Add(this.txtPCCL3);
-            this.grpPCCL.Controls.Add(this.txtPCCL2);
-            this.grpPCCL.Controls.Add(this.txtPCCL1);
-            this.grpPCCL.Controls.Add(this.txtPCCL0);
-            this.grpPCCL.Controls.Add(this.lblPCCL4);
-            this.grpPCCL.Controls.Add(this.lblPCCL1);
-            this.grpPCCL.Controls.Add(this.lblPCCL2);
-            this.grpPCCL.Controls.Add(this.lblPCCL3);
-            this.grpPCCL.Controls.Add(this.lblPCCL0);
-            this.grpPCCL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpPCCL.ForeColor = System.Drawing.Color.White;
-            this.grpPCCL.Location = new System.Drawing.Point(608, 22);
-            this.grpPCCL.Name = "grpPCCL";
-            this.grpPCCL.Size = new System.Drawing.Size(91, 143);
-            this.grpPCCL.TabIndex = 21;
-            this.grpPCCL.TabStop = false;
-            this.grpPCCL.Text = "PCCL";
-            // 
-            // lblPCCL0
-            // 
-            this.lblPCCL0.AutoSize = true;
-            this.lblPCCL0.BackColor = System.Drawing.Color.Transparent;
-            this.lblPCCL0.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPCCL0.Location = new System.Drawing.Point(6, 20);
-            this.lblPCCL0.Name = "lblPCCL0";
-            this.lblPCCL0.Size = new System.Drawing.Size(17, 15);
-            this.lblPCCL0.TabIndex = 17;
-            this.lblPCCL0.Text = "0:";
-            // 
-            // lblPCCL3
-            // 
-            this.lblPCCL3.AutoSize = true;
-            this.lblPCCL3.BackColor = System.Drawing.Color.Transparent;
-            this.lblPCCL3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPCCL3.Location = new System.Drawing.Point(6, 89);
-            this.lblPCCL3.Name = "lblPCCL3";
-            this.lblPCCL3.Size = new System.Drawing.Size(17, 15);
-            this.lblPCCL3.TabIndex = 18;
-            this.lblPCCL3.Text = "3:";
-            // 
-            // lblPCCL2
-            // 
-            this.lblPCCL2.AutoSize = true;
-            this.lblPCCL2.BackColor = System.Drawing.Color.Transparent;
-            this.lblPCCL2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPCCL2.Location = new System.Drawing.Point(6, 66);
-            this.lblPCCL2.Name = "lblPCCL2";
-            this.lblPCCL2.Size = new System.Drawing.Size(17, 15);
-            this.lblPCCL2.TabIndex = 19;
-            this.lblPCCL2.Text = "2:";
-            // 
-            // lblPCCL1
-            // 
-            this.lblPCCL1.AutoSize = true;
-            this.lblPCCL1.BackColor = System.Drawing.Color.Transparent;
-            this.lblPCCL1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPCCL1.Location = new System.Drawing.Point(6, 43);
-            this.lblPCCL1.Name = "lblPCCL1";
-            this.lblPCCL1.Size = new System.Drawing.Size(17, 15);
-            this.lblPCCL1.TabIndex = 20;
-            this.lblPCCL1.Text = "1:";
-            // 
-            // lblPCCL4
-            // 
-            this.lblPCCL4.AutoSize = true;
-            this.lblPCCL4.BackColor = System.Drawing.Color.Transparent;
-            this.lblPCCL4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPCCL4.Location = new System.Drawing.Point(6, 112);
-            this.lblPCCL4.Name = "lblPCCL4";
-            this.lblPCCL4.Size = new System.Drawing.Size(17, 15);
-            this.lblPCCL4.TabIndex = 21;
-            this.lblPCCL4.Text = "4:";
-            // 
-            // txtPCCL0
-            // 
-            this.txtPCCL0.BackColor = System.Drawing.Color.SteelBlue;
-            this.txtPCCL0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPCCL0.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPCCL0.ForeColor = System.Drawing.Color.White;
-            this.helpProvider1.SetHelpKeyword(this.txtPCCL0, "Code-Kennzahlen.htm");
-            this.helpProvider1.SetHelpNavigator(this.txtPCCL0, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtPCCL0.Location = new System.Drawing.Point(29, 18);
-            this.txtPCCL0.Name = "txtPCCL0";
-            this.txtPCCL0.ReadOnly = true;
-            this.txtPCCL0.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.helpProvider1.SetShowHelp(this.txtPCCL0, true);
-            this.txtPCCL0.Size = new System.Drawing.Size(51, 21);
-            this.txtPCCL0.TabIndex = 44;
-            this.txtPCCL0.Text = "0";
-            // 
-            // txtPCCL1
-            // 
-            this.txtPCCL1.BackColor = System.Drawing.Color.SteelBlue;
-            this.txtPCCL1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPCCL1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPCCL1.ForeColor = System.Drawing.Color.White;
-            this.helpProvider1.SetHelpKeyword(this.txtPCCL1, "Code-Kennzahlen.htm");
-            this.helpProvider1.SetHelpNavigator(this.txtPCCL1, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtPCCL1.Location = new System.Drawing.Point(29, 41);
-            this.txtPCCL1.Name = "txtPCCL1";
-            this.txtPCCL1.ReadOnly = true;
-            this.txtPCCL1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.helpProvider1.SetShowHelp(this.txtPCCL1, true);
-            this.txtPCCL1.Size = new System.Drawing.Size(51, 21);
-            this.txtPCCL1.TabIndex = 45;
-            this.txtPCCL1.Text = "0";
-            // 
-            // txtPCCL2
-            // 
-            this.txtPCCL2.BackColor = System.Drawing.Color.SteelBlue;
-            this.txtPCCL2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPCCL2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPCCL2.ForeColor = System.Drawing.Color.White;
-            this.helpProvider1.SetHelpKeyword(this.txtPCCL2, "Code-Kennzahlen.htm");
-            this.helpProvider1.SetHelpNavigator(this.txtPCCL2, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtPCCL2.Location = new System.Drawing.Point(29, 64);
-            this.txtPCCL2.Name = "txtPCCL2";
-            this.txtPCCL2.ReadOnly = true;
-            this.txtPCCL2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.helpProvider1.SetShowHelp(this.txtPCCL2, true);
-            this.txtPCCL2.Size = new System.Drawing.Size(51, 21);
-            this.txtPCCL2.TabIndex = 46;
-            this.txtPCCL2.Text = "0";
-            // 
-            // txtPCCL3
-            // 
-            this.txtPCCL3.BackColor = System.Drawing.Color.SteelBlue;
-            this.txtPCCL3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPCCL3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPCCL3.ForeColor = System.Drawing.Color.White;
-            this.helpProvider1.SetHelpKeyword(this.txtPCCL3, "Code-Kennzahlen.htm");
-            this.helpProvider1.SetHelpNavigator(this.txtPCCL3, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtPCCL3.Location = new System.Drawing.Point(29, 87);
-            this.txtPCCL3.Name = "txtPCCL3";
-            this.txtPCCL3.ReadOnly = true;
-            this.txtPCCL3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.helpProvider1.SetShowHelp(this.txtPCCL3, true);
-            this.txtPCCL3.Size = new System.Drawing.Size(51, 21);
-            this.txtPCCL3.TabIndex = 47;
-            this.txtPCCL3.Text = "0";
-            // 
-            // txtPCCL4
-            // 
-            this.txtPCCL4.BackColor = System.Drawing.Color.SteelBlue;
-            this.txtPCCL4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPCCL4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPCCL4.ForeColor = System.Drawing.Color.White;
-            this.helpProvider1.SetHelpKeyword(this.txtPCCL4, "Code-Kennzahlen.htm");
-            this.helpProvider1.SetHelpNavigator(this.txtPCCL4, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtPCCL4.Location = new System.Drawing.Point(29, 110);
-            this.txtPCCL4.Name = "txtPCCL4";
-            this.txtPCCL4.ReadOnly = true;
-            this.txtPCCL4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.helpProvider1.SetShowHelp(this.txtPCCL4, true);
-            this.txtPCCL4.Size = new System.Drawing.Size(51, 21);
-            this.txtPCCL4.TabIndex = 48;
-            this.txtPCCL4.Text = "0";
-            // 
-            // grpLos
-            // 
-            this.grpLos.BackColor = System.Drawing.Color.Transparent;
-            this.grpLos.Controls.Add(this.lblLosStd);
-            this.grpLos.Controls.Add(this.lblLosAvg);
-            this.grpLos.Controls.Add(this.lblDay1Renumeration);
-            this.grpLos.Controls.Add(this.lblDay1Reduction);
-            this.grpLos.Controls.Add(this.lblLosLong);
-            this.grpLos.Controls.Add(this.txtLosNormal);
-            this.grpLos.Controls.Add(this.txtLosLong);
-            this.grpLos.Controls.Add(this.txtDay1Reduction);
-            this.grpLos.Controls.Add(this.txtDay1Remuneration);
-            this.grpLos.Controls.Add(this.txtLosAvg);
-            this.grpLos.Controls.Add(this.txtLosStd);
-            this.grpLos.Controls.Add(this.lblLosNormal);
-            this.grpLos.Controls.Add(this.txtLosShort);
-            this.grpLos.Controls.Add(this.lblLosShort);
-            this.grpLos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpLos.ForeColor = System.Drawing.Color.White;
-            this.grpLos.Location = new System.Drawing.Point(172, 21);
-            this.grpLos.Name = "grpLos";
-            this.grpLos.Size = new System.Drawing.Size(273, 213);
-            this.grpLos.TabIndex = 22;
-            this.grpLos.TabStop = false;
-            this.grpLos.Text = "Verweildauer";
-            // 
-            // txtLosShort
-            // 
-            this.txtLosShort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLosShort.BackColor = System.Drawing.Color.SteelBlue;
-            this.txtLosShort.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtLosShort.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLosShort.ForeColor = System.Drawing.Color.White;
-            this.helpProvider1.SetHelpKeyword(this.txtLosShort, "Code-Kennzahlen.htm");
-            this.helpProvider1.SetHelpNavigator(this.txtLosShort, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtLosShort.Location = new System.Drawing.Point(212, 20);
-            this.txtLosShort.Name = "txtLosShort";
-            this.txtLosShort.ReadOnly = true;
-            this.txtLosShort.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.helpProvider1.SetShowHelp(this.txtLosShort, true);
-            this.txtLosShort.Size = new System.Drawing.Size(51, 21);
-            this.txtLosShort.TabIndex = 48;
-            this.txtLosShort.Text = "0";
-            // 
-            // lblLosShort
-            // 
-            this.lblLosShort.AutoSize = true;
-            this.lblLosShort.BackColor = System.Drawing.Color.Transparent;
-            this.lblLosShort.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLosShort.Location = new System.Drawing.Point(6, 22);
-            this.lblLosShort.Name = "lblLosShort";
-            this.lblLosShort.Size = new System.Drawing.Size(66, 15);
-            this.lblLosShort.TabIndex = 21;
-            this.lblLosShort.Text = "Kurzlieger:";
-            // 
-            // lblLosNormal
-            // 
-            this.lblLosNormal.AutoSize = true;
-            this.lblLosNormal.BackColor = System.Drawing.Color.Transparent;
-            this.lblLosNormal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLosNormal.Location = new System.Drawing.Point(6, 47);
-            this.lblLosNormal.Name = "lblLosNormal";
-            this.lblLosNormal.Size = new System.Drawing.Size(82, 15);
-            this.lblLosNormal.TabIndex = 49;
-            this.lblLosNormal.Text = "Normallieger:";
-            // 
-            // txtLosStd
-            // 
-            this.txtLosStd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLosStd.BackColor = System.Drawing.Color.SteelBlue;
-            this.txtLosStd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtLosStd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLosStd.ForeColor = System.Drawing.Color.White;
-            this.helpProvider1.SetHelpKeyword(this.txtLosStd, "Code-Kennzahlen.htm");
-            this.helpProvider1.SetHelpNavigator(this.txtLosStd, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtLosStd.Location = new System.Drawing.Point(212, 181);
-            this.txtLosStd.Name = "txtLosStd";
-            this.txtLosStd.ReadOnly = true;
-            this.txtLosStd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.helpProvider1.SetShowHelp(this.txtLosStd, true);
-            this.txtLosStd.Size = new System.Drawing.Size(51, 21);
-            this.txtLosStd.TabIndex = 50;
-            this.txtLosStd.Text = "0";
-            // 
-            // txtLosAvg
-            // 
-            this.txtLosAvg.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLosAvg.BackColor = System.Drawing.Color.SteelBlue;
-            this.txtLosAvg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtLosAvg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLosAvg.ForeColor = System.Drawing.Color.White;
-            this.helpProvider1.SetHelpKeyword(this.txtLosAvg, "Code-Kennzahlen.htm");
-            this.helpProvider1.SetHelpNavigator(this.txtLosAvg, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtLosAvg.Location = new System.Drawing.Point(212, 154);
-            this.txtLosAvg.Name = "txtLosAvg";
-            this.txtLosAvg.ReadOnly = true;
-            this.txtLosAvg.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.helpProvider1.SetShowHelp(this.txtLosAvg, true);
-            this.txtLosAvg.Size = new System.Drawing.Size(51, 21);
-            this.txtLosAvg.TabIndex = 51;
-            this.txtLosAvg.Text = "0";
-            // 
-            // txtDay1Remuneration
-            // 
-            this.txtDay1Remuneration.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDay1Remuneration.BackColor = System.Drawing.Color.SteelBlue;
-            this.txtDay1Remuneration.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDay1Remuneration.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDay1Remuneration.ForeColor = System.Drawing.Color.White;
-            this.helpProvider1.SetHelpKeyword(this.txtDay1Remuneration, "Code-Kennzahlen.htm");
-            this.helpProvider1.SetHelpNavigator(this.txtDay1Remuneration, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtDay1Remuneration.Location = new System.Drawing.Point(212, 127);
-            this.txtDay1Remuneration.Name = "txtDay1Remuneration";
-            this.txtDay1Remuneration.ReadOnly = true;
-            this.txtDay1Remuneration.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.helpProvider1.SetShowHelp(this.txtDay1Remuneration, true);
-            this.txtDay1Remuneration.Size = new System.Drawing.Size(51, 21);
-            this.txtDay1Remuneration.TabIndex = 52;
-            this.txtDay1Remuneration.Text = "0";
-            // 
-            // txtDay1Reduction
-            // 
-            this.txtDay1Reduction.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDay1Reduction.BackColor = System.Drawing.Color.SteelBlue;
-            this.txtDay1Reduction.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDay1Reduction.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDay1Reduction.ForeColor = System.Drawing.Color.White;
-            this.helpProvider1.SetHelpKeyword(this.txtDay1Reduction, "Code-Kennzahlen.htm");
-            this.helpProvider1.SetHelpNavigator(this.txtDay1Reduction, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtDay1Reduction.Location = new System.Drawing.Point(212, 100);
-            this.txtDay1Reduction.Name = "txtDay1Reduction";
-            this.txtDay1Reduction.ReadOnly = true;
-            this.txtDay1Reduction.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.helpProvider1.SetShowHelp(this.txtDay1Reduction, true);
-            this.txtDay1Reduction.Size = new System.Drawing.Size(51, 21);
-            this.txtDay1Reduction.TabIndex = 53;
-            this.txtDay1Reduction.Text = "0";
-            // 
-            // txtLosLong
-            // 
-            this.txtLosLong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLosLong.BackColor = System.Drawing.Color.SteelBlue;
-            this.txtLosLong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtLosLong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLosLong.ForeColor = System.Drawing.Color.White;
-            this.helpProvider1.SetHelpKeyword(this.txtLosLong, "Code-Kennzahlen.htm");
-            this.helpProvider1.SetHelpNavigator(this.txtLosLong, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtLosLong.Location = new System.Drawing.Point(212, 73);
-            this.txtLosLong.Name = "txtLosLong";
-            this.txtLosLong.ReadOnly = true;
-            this.txtLosLong.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.helpProvider1.SetShowHelp(this.txtLosLong, true);
-            this.txtLosLong.Size = new System.Drawing.Size(51, 21);
-            this.txtLosLong.TabIndex = 54;
-            this.txtLosLong.Text = "0";
-            // 
-            // txtLosNormal
-            // 
-            this.txtLosNormal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLosNormal.BackColor = System.Drawing.Color.SteelBlue;
-            this.txtLosNormal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtLosNormal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLosNormal.ForeColor = System.Drawing.Color.White;
-            this.helpProvider1.SetHelpKeyword(this.txtLosNormal, "Code-Kennzahlen.htm");
-            this.helpProvider1.SetHelpNavigator(this.txtLosNormal, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtLosNormal.Location = new System.Drawing.Point(212, 46);
-            this.txtLosNormal.Name = "txtLosNormal";
-            this.txtLosNormal.ReadOnly = true;
-            this.txtLosNormal.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.helpProvider1.SetShowHelp(this.txtLosNormal, true);
-            this.txtLosNormal.Size = new System.Drawing.Size(51, 21);
-            this.txtLosNormal.TabIndex = 55;
-            this.txtLosNormal.Text = "0";
-            // 
-            // lblLosLong
-            // 
-            this.lblLosLong.AutoSize = true;
-            this.lblLosLong.BackColor = System.Drawing.Color.Transparent;
-            this.lblLosLong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLosLong.Location = new System.Drawing.Point(6, 74);
-            this.lblLosLong.Name = "lblLosLong";
-            this.lblLosLong.Size = new System.Drawing.Size(69, 15);
-            this.lblLosLong.TabIndex = 56;
-            this.lblLosLong.Text = "Langlieger:";
-            // 
-            // lblDay1Reduction
-            // 
-            this.lblDay1Reduction.AutoSize = true;
-            this.lblDay1Reduction.BackColor = System.Drawing.Color.Transparent;
-            this.lblDay1Reduction.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDay1Reduction.Location = new System.Drawing.Point(6, 101);
-            this.lblDay1Reduction.Name = "lblDay1Reduction";
-            this.lblDay1Reduction.Size = new System.Drawing.Size(117, 15);
-            this.lblDay1Reduction.TabIndex = 57;
-            this.lblDay1Reduction.Text = "1. Tag mit Abschlag:";
-            // 
-            // lblDay1Renumeration
-            // 
-            this.lblDay1Renumeration.AutoSize = true;
-            this.lblDay1Renumeration.BackColor = System.Drawing.Color.Transparent;
-            this.lblDay1Renumeration.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDay1Renumeration.Location = new System.Drawing.Point(6, 129);
-            this.lblDay1Renumeration.Name = "lblDay1Renumeration";
-            this.lblDay1Renumeration.Size = new System.Drawing.Size(180, 15);
-            this.lblDay1Renumeration.TabIndex = 58;
-            this.lblDay1Renumeration.Text = "1. Tag mit zusätzlichem Entgelt:";
-            // 
-            // lblLosAvg
-            // 
-            this.lblLosAvg.AutoSize = true;
-            this.lblLosAvg.BackColor = System.Drawing.Color.Transparent;
-            this.lblLosAvg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLosAvg.Location = new System.Drawing.Point(6, 156);
-            this.lblLosAvg.Name = "lblLosAvg";
-            this.lblLosAvg.Size = new System.Drawing.Size(203, 15);
-            this.lblLosAvg.TabIndex = 59;
-            this.lblLosAvg.Text = "Mittlere arithmetische Verweildauer:";
-            // 
-            // lblLosStd
-            // 
-            this.lblLosStd.AutoSize = true;
-            this.lblLosStd.BackColor = System.Drawing.Color.Transparent;
-            this.lblLosStd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLosStd.Location = new System.Drawing.Point(6, 183);
-            this.lblLosStd.Name = "lblLosStd";
-            this.lblLosStd.Size = new System.Drawing.Size(202, 15);
-            this.lblLosStd.TabIndex = 60;
-            this.lblLosStd.Text = "Standardabweichung Verweildauer:";
-            // 
-            // grpCaseNormal
-            // 
-            this.grpCaseNormal.BackColor = System.Drawing.Color.Transparent;
-            this.grpCaseNormal.Controls.Add(this.txtFromAll);
-            this.grpCaseNormal.Controls.Add(this.txtFromMdc);
-            this.grpCaseNormal.Controls.Add(this.lblFromAll);
-            this.grpCaseNormal.Controls.Add(this.txtCasesNormal);
-            this.grpCaseNormal.Controls.Add(this.lblFromMdc);
-            this.grpCaseNormal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpCaseNormal.ForeColor = System.Drawing.Color.White;
-            this.grpCaseNormal.Location = new System.Drawing.Point(6, 22);
-            this.grpCaseNormal.Name = "grpCaseNormal";
-            this.grpCaseNormal.Size = new System.Drawing.Size(160, 107);
-            this.grpCaseNormal.TabIndex = 23;
-            this.grpCaseNormal.TabStop = false;
-            this.grpCaseNormal.Text = "Fallzahl Normallieger";
-            // 
-            // txtCasesNormal
-            // 
-            this.txtCasesNormal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCasesNormal.BackColor = System.Drawing.Color.SteelBlue;
-            this.txtCasesNormal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCasesNormal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCasesNormal.ForeColor = System.Drawing.Color.White;
-            this.helpProvider1.SetHelpKeyword(this.txtCasesNormal, "Code-Kennzahlen.htm");
-            this.helpProvider1.SetHelpNavigator(this.txtCasesNormal, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtCasesNormal.Location = new System.Drawing.Point(9, 20);
-            this.txtCasesNormal.Name = "txtCasesNormal";
-            this.txtCasesNormal.ReadOnly = true;
-            this.txtCasesNormal.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.helpProvider1.SetShowHelp(this.txtCasesNormal, true);
-            this.txtCasesNormal.Size = new System.Drawing.Size(91, 21);
-            this.txtCasesNormal.TabIndex = 48;
-            this.txtCasesNormal.Text = "0";
-            // 
-            // lblFromMdc
-            // 
-            this.lblFromMdc.AutoSize = true;
-            this.lblFromMdc.BackColor = System.Drawing.Color.Transparent;
-            this.lblFromMdc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFromMdc.Location = new System.Drawing.Point(7, 52);
-            this.lblFromMdc.Name = "lblFromMdc";
-            this.lblFromMdc.Size = new System.Drawing.Size(60, 15);
-            this.lblFromMdc.TabIndex = 21;
-            this.lblFromMdc.Text = "von MDC:";
-            // 
-            // lblFromAll
-            // 
-            this.lblFromAll.AutoSize = true;
-            this.lblFromAll.BackColor = System.Drawing.Color.Transparent;
-            this.lblFromAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFromAll.Location = new System.Drawing.Point(6, 80);
-            this.lblFromAll.Name = "lblFromAll";
-            this.lblFromAll.Size = new System.Drawing.Size(73, 15);
-            this.lblFromAll.TabIndex = 49;
-            this.lblFromAll.Text = "von gesamt:";
-            // 
-            // txtFromMdc
-            // 
-            this.txtFromMdc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFromMdc.BackColor = System.Drawing.Color.SteelBlue;
-            this.txtFromMdc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtFromMdc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFromMdc.ForeColor = System.Drawing.Color.White;
-            this.helpProvider1.SetHelpKeyword(this.txtFromMdc, "Code-Kennzahlen.htm");
-            this.helpProvider1.SetHelpNavigator(this.txtFromMdc, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtFromMdc.Location = new System.Drawing.Point(99, 50);
-            this.txtFromMdc.Name = "txtFromMdc";
-            this.txtFromMdc.ReadOnly = true;
-            this.txtFromMdc.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.helpProvider1.SetShowHelp(this.txtFromMdc, true);
-            this.txtFromMdc.Size = new System.Drawing.Size(51, 21);
-            this.txtFromMdc.TabIndex = 50;
-            this.txtFromMdc.Text = "0";
-            // 
-            // txtFromAll
-            // 
-            this.txtFromAll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFromAll.BackColor = System.Drawing.Color.SteelBlue;
-            this.txtFromAll.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtFromAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFromAll.ForeColor = System.Drawing.Color.White;
-            this.helpProvider1.SetHelpKeyword(this.txtFromAll, "Code-Kennzahlen.htm");
-            this.helpProvider1.SetHelpNavigator(this.txtFromAll, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtFromAll.Location = new System.Drawing.Point(99, 78);
-            this.txtFromAll.Name = "txtFromAll";
-            this.txtFromAll.ReadOnly = true;
-            this.txtFromAll.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.helpProvider1.SetShowHelp(this.txtFromAll, true);
-            this.txtFromAll.Size = new System.Drawing.Size(51, 21);
-            this.txtFromAll.TabIndex = 51;
-            this.txtFromAll.Text = "0";
-            // 
-            // grpValutationRatio
-            // 
-            this.grpValutationRatio.BackColor = System.Drawing.Color.Transparent;
-            this.grpValutationRatio.Controls.Add(this.txtValutationRatio);
-            this.grpValutationRatio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpValutationRatio.ForeColor = System.Drawing.Color.White;
-            this.grpValutationRatio.Location = new System.Drawing.Point(6, 135);
-            this.grpValutationRatio.Name = "grpValutationRatio";
-            this.grpValutationRatio.Size = new System.Drawing.Size(160, 57);
-            this.grpValutationRatio.TabIndex = 24;
-            this.grpValutationRatio.TabStop = false;
-            this.grpValutationRatio.Text = "Bewertungsrelation";
-            // 
-            // txtValutationRatio
-            // 
-            this.txtValutationRatio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtValutationRatio.BackColor = System.Drawing.Color.SteelBlue;
-            this.txtValutationRatio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtValutationRatio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValutationRatio.ForeColor = System.Drawing.Color.White;
-            this.helpProvider1.SetHelpKeyword(this.txtValutationRatio, "Code-Kennzahlen.htm");
-            this.helpProvider1.SetHelpNavigator(this.txtValutationRatio, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtValutationRatio.Location = new System.Drawing.Point(10, 24);
-            this.txtValutationRatio.Name = "txtValutationRatio";
-            this.txtValutationRatio.ReadOnly = true;
-            this.txtValutationRatio.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.helpProvider1.SetShowHelp(this.txtValutationRatio, true);
-            this.txtValutationRatio.Size = new System.Drawing.Size(140, 21);
-            this.txtValutationRatio.TabIndex = 48;
-            this.txtValutationRatio.Text = "0";
-            // 
             // DrgData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1336,20 +1452,22 @@
             this.Name = "DrgData";
             this.Size = new System.Drawing.Size(1182, 272);
             this.pnlData.ResumeLayout(false);
+            this.grpMdc.ResumeLayout(false);
+            this.grpMdc.PerformLayout();
+            this.grpValutationRatio.ResumeLayout(false);
+            this.grpValutationRatio.PerformLayout();
+            this.grpCaseNormal.ResumeLayout(false);
+            this.grpCaseNormal.PerformLayout();
+            this.grpLos.ResumeLayout(false);
+            this.grpLos.PerformLayout();
+            this.grpPCCL.ResumeLayout(false);
+            this.grpPCCL.PerformLayout();
             this.grpCaseCosts.ResumeLayout(false);
             this.grpCaseCosts.PerformLayout();
             this.grpBigAge.ResumeLayout(false);
             this.grpBigAge.PerformLayout();
             this.grpGender.ResumeLayout(false);
             this.grpGender.PerformLayout();
-            this.grpPCCL.ResumeLayout(false);
-            this.grpPCCL.PerformLayout();
-            this.grpLos.ResumeLayout(false);
-            this.grpLos.PerformLayout();
-            this.grpCaseNormal.ResumeLayout(false);
-            this.grpCaseNormal.PerformLayout();
-            this.grpValutationRatio.ResumeLayout(false);
-            this.grpValutationRatio.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1439,5 +1557,12 @@
         private System.Windows.Forms.Label lblLosStd;
         private System.Windows.Forms.Label lblLosAvg;
         private System.Windows.Forms.Label lblDay1Renumeration;
+        private System.Windows.Forms.GroupBox grpMdc;
+        private System.Windows.Forms.TextBox txtN;
+        private System.Windows.Forms.Label lblN;
+        private System.Windows.Forms.TextBox txtNumDrgs;
+        private System.Windows.Forms.Label lblNumDrgs;
+        private System.Windows.Forms.TextBox txtMdcText;
+        private System.Windows.Forms.TextBox txtMdcNum;
     }
 }
