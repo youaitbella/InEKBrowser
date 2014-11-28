@@ -59,5 +59,7 @@ namespace org.inek.InekBrowser.Data.Entities {
         // Print variables
         public string StruCat { get; set; }
         public string PeppTxt { get; set; }
+        public string DrgTxt { get; set; }
+        public string MdcCat { get; set; }
     }
 }

@@ -1631,16 +1631,16 @@ namespace org.inek.InekBrowser.GUI {
             }
         }
 
-        private IEnumerable<SystemData> setReportData(string pepp)
+        private IEnumerable<SystemData> setReportData(string systemCode)
         {
             if (Program.SystemBrowser == Program.System.Pepp) {
-                SystemInfo info = CsvData.Context().SystemInfo.Single(p => p.Code == pepp);
+                SystemInfo info = CsvData.Context().SystemInfo.Single(p => p.Code == systemCode);
                 string skTag = CsvData.Context().System.Where(p => p.Code == SystemCode).Select(p => p.Category).Single();
                 info.StruCat = CsvData.Context().StructureCategories.Where(sk => sk.Category == skTag).Select(sk => sk.Text).Single();
                 info.PeppTxt = cbxSystem.Text;
                 var peppData = new SystemData(info);
                 //Primary Diagnoses
-                peppData.PrimDiag = CsvData.Context().PrimaryDiagnoses.Where(p => p.SystemCode == pepp)
+                peppData.PrimDiag = CsvData.Context().PrimaryDiagnoses.Where(p => p.SystemCode == systemCode)
                     .Join(CsvData.Context().Recherche.Where(r => r.PrimaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
                                 (d, r) => new PrimaryDiagnosis() {
                                     SystemCode = d.SystemCode,
@@ -1650,7 +1650,7 @@ namespace org.inek.InekBrowser.GUI {
                                     Fraction = d.Fraction
                                 }).ToList();
                 //Secondary Diagnoses
-                peppData.SecDiag = CsvData.Context().SecondaryDiagnoses.Where(p => p.System == pepp)
+                peppData.SecDiag = CsvData.Context().SecondaryDiagnoses.Where(p => p.System == systemCode)
                     .Join(CsvData.Context().Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
                                 (d, r) => new SecondaryDiagnosis() {
                                     System = d.System,
@@ -1662,7 +1662,7 @@ namespace org.inek.InekBrowser.GUI {
                                     EntryFraction = d.EntryFraction
                                 }).ToList();
                 //Procedures
-                peppData.Proc = CsvData.Context().Procedures.Where(p => p.System == pepp)
+                peppData.Proc = CsvData.Context().Procedures.Where(p => p.System == systemCode)
                      .Join(CsvData.Context().Recherche.Where(r => r.Procedure == 1), d => d.ProcCode, r => r.Code,
                                 (d, r) => new Procedure() {
                                     System = d.System,
@@ -1673,7 +1673,7 @@ namespace org.inek.InekBrowser.GUI {
                                     EntryCount = d.EntryCount,
                                     EntryFraction = d.EntryFraction
                                 }).ToList();
-                peppData.Cost = CsvData.Context().Costs.Where(p => p.Code == pepp)
+                peppData.Cost = CsvData.Context().Costs.Where(p => p.Code == systemCode)
                     .Join(CsvData.Context().CostDomains, c => c.CostDomain, d => d.DomainId,
                     (c, d) => new Cost() {
                         Code = c.Code,
@@ -1695,11 +1695,70 @@ namespace org.inek.InekBrowser.GUI {
                     }).ToList();
 
                 return new List<SystemData> { peppData };
-            }
+            } if(Program.SystemBrowser == Program.System.Drg){
+                SystemInfo info = CsvData.Context().SystemInfo.Single(drg => drg.Code == systemCode);
+                string mdcTag = CsvData.Context().System.Where(drg => drg.Code == SystemCode).Select(drg => drg.Category).Single();
+                info.MdcCat = CsvData.Context().Mdcs.Where(mdc => mdc.MDC == mdcTag).Select(mdc => mdc.Text).Single();
+                info.DrgTxt = cbxSystem.Text;
+                var drgData = new SystemData(info);
+                //Primary Diagnoses
+                drgData.PrimDiag = CsvData.Context().PrimaryDiagnoses.Where(p => p.SystemCode == systemCode)
+                    .Join(CsvData.Context().Recherche.Where(r => r.PrimaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
+                                (d, r) => new PrimaryDiagnosis() {
+                                    SystemCode = d.SystemCode,
+                                    DiagCode = d.DiagCode,
+                                    Hauptdiagnose = r.Text,
+                                    DiagCodeF = d.DiagCodeF,
+                                    Count = d.Count,
+                                    Fraction = d.Fraction
+                                }).ToList();
+                //Secondary Diagnoses
+                drgData.SecDiag = CsvData.Context().SecondaryDiagnoses.Where(p => p.System == systemCode)
+                    .Join(CsvData.Context().Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
+                                (d, r) => new SecondaryDiagnosis() {
+                                    System = d.System,
+                                    DiagCode = d.DiagCode,
+                                    CodeF = d.CodeF,
+                                    Nebendiagnose = r.Text,
+                                    CaseCount = d.CaseCount,
+                                    CaseFraction = d.CaseFraction,
+                                    EntryCount = d.EntryCount,
+                                    EntryFraction = d.EntryFraction
+                                }).ToList();
+                //Procedures
+                drgData.Proc = CsvData.Context().Procedures.Where(p => p.System == systemCode)
+                     .Join(CsvData.Context().Recherche.Where(r => r.Procedure == 1), d => d.ProcCode, r => r.Code,
+                                (d, r) => new Procedure() {
+                                    System = d.System,
+                                    ProcCode = d.ProcCode,
+                                    CodeF = d.CodeF,
+                                    Prozedur = r.Text,
+                                    CaseCount = d.CaseCount,
+                                    CaseFraction = d.CaseFraction,
+                                    EntryCount = d.EntryCount,
+                                    EntryFraction = d.EntryFraction
+                                }).ToList();
+                drgData.Cost = CsvData.Context().Costs.Where(p => p.Code == systemCode)
+                    .Join(CsvData.Context().CostDomains, c => c.CostDomain, d => d.DomainId,
+                    (c, d) => new Cost() {
+                        Code = c.Code,
+                        CostDomain = c.CostDomain,
+                        CostType1 = c.CostType1,
+                        CostType2 = c.CostType2,
+                        CostType3 = c.CostType3,
+                        CostType4a = c.CostType4a,
+                        CostType4b = c.CostType4b,
+                        CostType5 = c.CostType5,
+                        CostType6a = c.CostType6a,
+                        CostType6b = c.CostType6b,
+                        CostType7 = c.CostType7,
+                        CostType8 = c.CostType8,
+                        TxtBez = d.DomainText
+                    }).ToList();
 
-            else {
-                return new List<SystemData> { };
+                return new List<SystemData> { drgData};
             }
+            return new List<SystemData> { };
         }
 
 
