@@ -80,24 +80,21 @@ namespace org.inek.InekBrowser.Data {
                                                           "IB_Nr;IB_Bereich",
                                                           "IH_DRG;IH_Code;IH_Prozent;IH_CodeF;IH_Anzahl",
 
-                                                          "IK_MDC;IK_DRG;IK_Faelle_Anzahl;IK_PCCL0;IK_PCCL1;IK_PCCL2;" +
-                                                          "IK_PCCL3;IK_PCCL4;IK_GeschlechtM;IK_GeschlechtW;IK_GeschlechtU;" +
-                                                          "IK_AlterU28T;IK_AlterU01;IK_AlterU03;IK_AlterU06;IK_AlterU10;" +
-                                                          "IK_AlterU16;IK_AlterU18;IK_AlterU30;IK_AlterU40;IK_AlterU50;" +
-                                                          "IK_AlterU55;IK_AlterU60;IK_AlterU65;IK_AlterU75;IK_AlterU80;" +
-                                                          "IK_AlterU99;IK_VWD_Kurz;IK_VWD_Norm;IK_VWD_Lang;IK_uGVD;IK_oGVD;" +
-                                                          "IK_VWD_MW;IK_Bewertungsrelation;IK_Gesamt;IK_VWD_STD;IK_KOST_MW;IK_KOST_STD",
+                                                          "IK_MDC;IK_DRG;IK_Faelle_Anzahl;IK_PCCL0;IK_PCCL1;IK_PCCL2;IK_PCCL3;" +
+                                                          "IK_PCCL4;IK_GeschlechtM;IK_GeschlechtW;IK_GeschlechtU;IK_AlterU28T;" +
+                                                          "IK_AlterU01;IK_AlterU03;IK_AlterU06;IK_AlterU10;IK_AlterU16;IK_AlterU18;" +
+                                                          "IK_AlterU30;IK_AlterU40;IK_AlterU50;IK_AlterU55;IK_AlterU60;IK_AlterU65;" +
+                                                          "IK_AlterU75;IK_AlterU80;IK_AlterU99;IK_VWD_Kurz;IK_VWD_Norm;IK_VWD_Lang;" +
+                                                          "IK_uGVD;IK_oGVD;IK_VWD_MW;IK_Bewertungsrelation;IK_Gesamt;IK_VWD_STD;IK_KOST_MW;IK_KOST_STD",
 
-                                                          "IO_DRG;IO_BereichNr;IO_KArt1;IO_KArt2;IO_KArt3;IO_KArt4a;IO_KArt4b;IO_KArt5;" +
-                                                          "IO_KArt6a;IO_KArt6b;IO_KArt7;IO_KArt8;IO_Summe",
+                                                          "IO_DRG;IO_BereichNr;IO_KArt1;IO_KArt2;IO_KArt3;IO_KArt4a;" +
+                                                          "IO_KArt4b;IO_KArt5;IO_KArt6a;IO_KArt6b;IO_KArt7;IO_KArt8;IO_Summe",
 
                                                           "IM_MDC;IM_Text;IM_DRG_Anzahl;IM_Faelle_Anzahl",
                                                           "IN_DRG;IN_Code;IN_Prozent;IN_CodeF;IN_Anzahl;IN_ProzentN;IN_AnzahlN",
                                                           "IP_DRG;IP_Code;IP_Prozent;IP_CodeF;IP_Anzahl;IP_ProzentN;IP_AnzahlN",
                                                           "IC_Code;IC_Text;IC_CodeF;IC_ANZHDI;IC_ANZNDI;IC_AnzProzI",
 
-                                                          "ID_MDC;ID_Partition;ID_DRG;ID_Text;ID_BA_Kalkuliert",
-                                                          "IB_Nr;IB_Bereich",
                                                           "IH_DRG;IH_Code;IH_Prozent;IH_CodeF;IH_Anzahl",
 
                                                           "IK_MDC;IK_DRG;IK_Faelle_Anzahl;IK_PCCL0;IK_PCCL1;IK_PCCL2;" +

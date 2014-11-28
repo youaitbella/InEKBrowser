@@ -150,6 +150,12 @@
     <Compile Include="GUI\FrmAbout.Designer.cs">
       <DependentUpon>FrmAbout.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\DrgData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\DrgData.Designer.cs">
+      <DependentUpon>DrgData.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\PeppData.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -253,6 +259,9 @@
     <EmbeddedResource Include="GUI\FrmAbout.resx">
       <DependentUpon>FrmAbout.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DrgData.resx">
+      <DependentUpon>DrgData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\PeppData.resx">
       <DependentUpon>PeppData.cs</DependentUpon>

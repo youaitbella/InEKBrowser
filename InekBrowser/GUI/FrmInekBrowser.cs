@@ -17,8 +17,7 @@ using Point = System.Drawing.Point;
 
 namespace org.inek.InekBrowser.GUI {
     public partial class FrmInekBrowser : Form {
-
-        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TitleBar));
+        readonly System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TitleBar));
 
         /* Use for window moving */
         private const int WM_NCLBUTTONDOWN = 0xA1;
@@ -38,12 +37,12 @@ namespace org.inek.InekBrowser.GUI {
         private FrmList dlg;
         private SelectionDrg selectionDrg;
 
-        public static string PEPP {
+        public static string SystemCode {
             get; set;
         }
 
         public string TextCode {
-            set { cbxPepp.Text = value; }
+            set { cbxSystem.Text = value; }
         }
 
         private FrmSearch search;
@@ -52,7 +51,7 @@ namespace org.inek.InekBrowser.GUI {
             InitializeComponent();
             UpdateGuiForSystem();
             SelectionPepp.Parent = this;
-            cbxPepp.InputField.Click += cbxPepp_ButtonClicked;
+            cbxSystem.InputField.Click += cbxSystem_ButtonClicked;
             SetRechercheHelp();
         }
 
@@ -65,11 +64,14 @@ namespace org.inek.InekBrowser.GUI {
                 peppData.BackColor = BrowserColors.DrgDataBackground;
                 peppData.ColorTextFields(BrowserColors.DrgDataTextField);
                 titleBar.Title = "DRG-Browser " + Program.Year;
-                pnlContentBackground.Controls.RemoveByKey("peppData");
-                pnlContentBackground.Controls.RemoveByKey("peppSelection");
+                pnlContentBackground.Controls.Remove(peppData);
+                pnlContentBackground.Controls.Remove(selectionPepp);
                 initDrgSelection();
                 selectionDrg.BackColor = BrowserColors.DrgSelection;
                 lblSystem.Text = "DRG:";
+                mnuCategories.Text = "MDCs";
+                mnuSystem.Text = "DRGs";
+                initDrgData();
             } else if (Program.SystemBrowser == Program.System.Pepp) {
                 titleBar.BackColor = BrowserColors.PeppTitleBar;
                 mnuMain.BackColor = BrowserColors.PeppMenuBand;
@@ -79,23 +81,41 @@ namespace org.inek.InekBrowser.GUI {
                 peppData.BackColor = BrowserColors.PeppDataBackground;
                 peppData.ColorTextFields(BrowserColors.PeppDataTextField);
                 titleBar.Title = "PEPP-Browser " + Program.Year;
-                pnlContentBackground.Controls.RemoveByKey("drgData");
                 lblSystem.Text = "PEPP:";
-                mnuPepp.Text = "PEPPs";
+                mnuCategories.Text = "Strukturkategorie";
+                mnuSystem.Text = "PEPPs";
                 peppData.CatalogueActive = false;
             }
         }
 
+        private DrgData drgData;
+        private void initDrgData() {
+            drgData = new DrgData {
+                                      BackColor = Color.SeaGreen,
+                                      BackgroundImageLayout = ImageLayout.Zoom,
+                                      Location = new Point(0, 114),
+                                      Name = "drgData",
+                                      Size = new Size(1182, 242),
+                                      TabIndex = 1
+                                  };
+            tabControl.Location = new Point(tabControl.Location.X,tabControl.Location.Y + (tabControl.Height - 372));
+            tabControl.Height = 372;
+            tabControl.Anchor = AnchorStyles.Right | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Top; 
+            pnlContentBackground.Controls.Add(drgData);
+        }
+
         private void initDrgSelection() {
-            selectionDrg.Anchor =
-                ((System.Windows.Forms.AnchorStyles)
-                    (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                      | System.Windows.Forms.AnchorStyles.Right)));
-            selectionDrg.BackColor = System.Drawing.Color.Transparent;
-            selectionDrg.Location = new System.Drawing.Point(0, 27);
-            selectionDrg.Name = "selectionDrg";
-            selectionDrg.Size = new System.Drawing.Size(1182, 52);
-            selectionDrg.TabIndex = 13;
+            selectionDrg = new SelectionDrg {
+                                                Anchor = (((AnchorStyles.Top | AnchorStyles.Left)
+                                                           | AnchorStyles.Right)),
+                                                BackColor = Color.Transparent,
+                                                Location = new Point(0, 27),
+                                                Name = "selectionDrg",
+                                                Size = new Size(1182, 52),
+                                                TabIndex = 13
+                                            };
+            SelectionDrg.Parent = this;
+            pnlContentBackground.Controls.Add(selectionDrg);
         }
 
         private void SetRechercheHelp() {
@@ -116,9 +136,25 @@ namespace org.inek.InekBrowser.GUI {
             dlg = new FrmList();
             SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
-            var q = CsvData.Context().System.Select(p => new { pe_SK = p.Category, pe_Pepp = p.Code, pe_Text = p.Text });
-            dlg.SetDataSource(q);
-            dlg.Text = "PEPPS";
+            if (Program.SystemBrowser == Program.System.Pepp) {
+                var q = CsvData.Context().System.Select(p => new { pe_SK = p.Category, pe_Pepp = p.Code, pe_Text = p.Text });
+                dlg.SetDataSource(q);
+                dlg.Text = "PEPPs";
+            } else if (Program.SystemBrowser == Program.System.Drg) {
+                var q =
+                    CsvData.Context()
+                        .System.Select(
+                            drg =>
+                                new {
+                                        ID_MDC = drg.Category,
+                                        ID_Partition = drg.Partition,
+                                        ID_DRG = drg.Code,
+                                        ID_Text = drg.Text,
+                                        ID_BA_Kalkuliert = drg.Calculated
+                                    });
+                dlg.SetDataSource(q);
+                dlg.Text = "DRGs";
+            }
             dlg.Show();
         }
 
@@ -126,19 +162,35 @@ namespace org.inek.InekBrowser.GUI {
             dlg = new FrmList(); 
             SetDataHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
-            dlg.Text = "Strukturkategorien";
-            var q =
-                CsvData.Context().StructureCategories.OrderBy(sk => sk.Order)
-                    .Select(sk => new {
-                                          st_Strukturkategorie = sk.Category,
-                                          st_Order = sk.Order,
-                                          st_Text = sk.Text,
-                                          st_PeppAnzahl = sk.PeppCount,
-                                          st_FaelleAnzahl = sk.CaseCount,
-                                          st_TageAnzahl = sk.DayCount
-                                      });
             dlg.DataSource = new DataTable();
-            dlg.SetDataSource(q);
+            if (Program.SystemBrowser == Program.System.Pepp) {
+                dlg.Text = "Strukturkategorien";
+                var q =
+                    CsvData.Context().StructureCategories.OrderBy(sk => sk.Order)
+                        .Select(sk => new {
+                                              st_Strukturkategorie = sk.Category,
+                                              st_Order = sk.Order,
+                                              st_Text = sk.Text,
+                                              st_PeppAnzahl = sk.PeppCount,
+                                              st_FaelleAnzahl = sk.CaseCount,
+                                              st_TageAnzahl = sk.DayCount
+                                          });
+                dlg.SetDataSource(q);
+            } else if (Program.SystemBrowser == Program.System.Drg) {
+                dlg.Text = "MDCs";
+                var q =
+                    CsvData.Context()
+                        .Mdcs.Select(
+                            mdc =>
+                                new {
+                                        IM_MDC = mdc.MDC,
+                                        IM_Text = mdc.Text,
+                                        IM_DRG_Anzahl = mdc.DrgCount,
+                                        IM_Faelle_Anzahl = mdc.CaseCount
+                                    });
+                dlg.SetDataSource(q);
+            }
+            
             dlg.ShowDialog(this);
         }
 
@@ -380,15 +432,81 @@ namespace org.inek.InekBrowser.GUI {
 
         }
 
-        private void cbxPepp_ButtonClicked(object sender, EventArgs e) {
-            FrmSearch dlg = new FrmSearch(cbxPepp);
+        private void cbxSystem_ButtonClicked(object sender, EventArgs e) {
+            if(Program.SystemBrowser == Program.System.Pepp)
+                ClickedPeppCbx();
+            else if (Program.SystemBrowser == Program.System.Drg)
+                ClickedDrgCbx();
+        }
+
+        private void ClickedDrgCbx() {
+            var dlg = new FrmSearch(cbxSystem);
+            dlg.StartPosition = FormStartPosition.CenterParent;
+            dlg.Text = "DRG-Suche";
+            var q =
+                CsvData.Context()
+                    .System.Select(
+                        drg =>
+                            new {
+                                    MDC = drg.Category.Trim(),
+                                    drg.Partition,
+                                    DRG = drg.Code,
+                                    drg.Text,
+                                    Kalkuliert = drg.Calculated
+                                });
+            if (CsvData.DrgSystemType == CsvData.DrgType.BA)
+                q = q.Where(drg => drg.Kalkuliert == 1);
+            if (SelectionDrg.Category != "")
+                q = q.Where(cat => cat.MDC == SelectionDrg.Category);
+            if (SelectionDrg.PrimaryDiagnosis != "") {
+                List<string> drgs =
+                    CsvData.Context()
+                        .PrimaryDiagnoses.Where(hd => hd.DiagCode == SelectionDrg.PrimaryDiagnosis)
+                        .Select(drg => drg.SystemCode)
+                        .ToList();
+                q = q.Where(drg => drgs.Contains(drg.DRG));
+            } else if (SelectionDrg.SecondaryDiagnosis != "") {
+                List<string> drgs =
+                    CsvData.Context()
+                        .SecondaryDiagnoses.Where(sd => sd.DiagCode == SelectionDrg.SecondaryDiagnosis)
+                        .Select(drg => drg.System)
+                        .ToList();
+                q = q.Where(drg => drgs.Contains(drg.DRG));
+            } else if (SelectionDrg.Procedure != "") {
+                List<string> drgs =
+                    CsvData.Context()
+                        .Procedures.Where(proc => proc.ProcCode == SelectionDrg.Procedure)
+                        .Select(drg => drg.System)
+                        .ToList();
+                q = q.Where(drg => drgs.Contains(drg.DRG));
+            }
+            if (!q.Any()) {
+                MessageBox.Show(this, "Es gibt keine DRG zu Ihren Filtereinstellungen.", "Keine DRG gefunden.",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            dlg.SetDataSource(q);
+            dlg.KeyColumns = new[] { "DRG", "Text" };
+            dlg.ButtonShowIsVisible = false;
+            if (dlg.ShowDialog() == DialogResult.OK) {
+                var cells = (List<object>)dlg.Id;
+                SystemCode = cells[0].ToString();
+                cbxSystem.Text = SystemCode + ": " + cells[1];
+                LoadDrgData();
+            }
+        }
+
+        private void ClickedPeppCbx() {
+            var dlg = new FrmSearch(cbxSystem);
             dlg.helpProvider1.HelpNamespace = helpProvider1.HelpNamespace;
             dlg.helpProvider1.SetHelpNavigator(dlg, HelpNavigator.Topic);
             dlg.helpProvider1.SetShowHelp(dlg, true);
             dlg.helpProvider1.SetHelpKeyword(dlg, "Filter.htm");
             dlg.StartPosition = FormStartPosition.CenterParent;
             dlg.Text = "PEPP-Suche";
-            var q = CsvData.Context().System.Select(pepp => new {Strukturkategorie = pepp.Category, PEPP = pepp.Code, Text = pepp.Text});
+            var q =
+                CsvData.Context()
+                    .System.Select(pepp => new {Strukturkategorie = pepp.Category, PEPP = pepp.Code, Text = pepp.Text});
             if (SelectionPepp.Category != "") {
                 q = q.Where(pepp => pepp.Strukturkategorie == SelectionPepp.Category);
             }
@@ -423,10 +541,10 @@ namespace org.inek.InekBrowser.GUI {
             dlg.KeyColumns = new[] {"Pepp", "Text"};
             dlg.ButtonShowIsVisible = false;
             if (dlg.ShowDialog() == DialogResult.OK) {
-                List<object> cells = (List<object>)dlg.Id;
-                PEPP = cells[0].ToString();
-                cbxPepp.Text = PEPP + ": ";
-                cbxPepp.Text += cells[1].ToString();
+                var cells = (List<object>) dlg.Id;
+                SystemCode = cells[0].ToString();
+                cbxSystem.Text = SystemCode + ": ";
+                cbxSystem.Text += cells[1].ToString();
                 LoadPeppData();
                 peppData.CatalogueActive = true;
             }
@@ -434,12 +552,63 @@ namespace org.inek.InekBrowser.GUI {
 
         private void LoadPeppData() {
             tabControl.Enabled = true;
-            FillHeadData();
+            FillPeppHeadData();
             _mainLoaded = false;
             _secLoaded = false;
             _procLoaded = false;
             _matrixLoaded = false;
             FillActiveTab(ActiveGrid());
+        }
+
+        private void LoadDrgData() {
+            tabControl.Enabled = true;
+            FillDrgHeadData();
+            _mainLoaded = false;
+            _secLoaded = false;
+            _procLoaded = false;
+            _matrixLoaded = false;
+            FillActiveTab(ActiveGrid());
+        }
+
+        private void FillDrgHeadData() {
+            var q = CsvData.Context().SystemInfo.Where(si => si.Code == SystemCode);
+            drgData.CasesNormal = q.Select(dh => dh.CaseCount).Single().ToString("##,###,###");
+            drgData.FromAll = q.Select(dh => dh.FractionAllCases).Single().ToString("P");
+            drgData.ValutationRatio = q.Select(dh => dh.ValuationRatio).Single().ToString();
+            drgData.LosShort = q.Select(dh => dh.LosShort).Single().ToString("P");
+            drgData.LosNormal = q.Select(dh => dh.LosNormal).Single().ToString("P");
+            drgData.LosLong = q.Select(dh => dh.LosLong).Single().ToString("P");
+            drgData.LosDay1Reduction = q.Select(dh => dh.Day1Reduction).Single().ToString();
+            drgData.LosDay1Remuneration = q.Select(dh => dh.Day1Remuneration).Single().ToString();
+            drgData.LosAvg = q.Select(dh => dh.LosAverage).Single().ToString();
+            drgData.LosStd = q.Select(dh => dh.LosStandard).Single().ToString();
+            drgData.PCCL0 = q.Select(dh => dh.PCCL0).Single().ToString("P");
+            drgData.PCCL1 = q.Select(dh => dh.PCCL1).Single().ToString("P");
+            drgData.PCCL2 = q.Select(dh => dh.PCCL2).Single().ToString("P");
+            drgData.PCCL3 = q.Select(dh => dh.PCCL3).Single().ToString("P");
+            drgData.PCCL4 = q.Select(dh => dh.PCCL4).Single().ToString("P");
+            drgData.GenderMale = q.Select(dh => dh.GenderMale).Single().ToString("P");
+            drgData.GenderFemale = q.Select(dh => dh.GenderFemale).Single().ToString("P");
+            drgData.GenderUnknown = q.Select(dh => dh.GenderUnknown).Single().ToString("P");
+            drgData.CaseCostAvg = q.Select(dh => dh.CostAverage).Single().ToString();
+            drgData.CaseCostStd = q.Select(dh => dh.CostStandard).Single().ToString();
+            drgData.LT28Days = q.Select(dh => dh.AgeBelow28Days).Single().ToString("P");
+            drgData.Bt28Days1Year = q.Select(dh => dh.AgeBelow1Year).Single().ToString("P");
+            drgData.Bt1Year2 = q.Select(dh => dh.AgeBelow3Years).Single().ToString("P");
+            drgData.Bt3Year5 = q.Select(dh => dh.AgeBelow6Years).Single().ToString("P");
+            drgData.Bt6Year9 = q.Select(dh => dh.AgeBelow10Years).Single().ToString("P");
+            drgData.Bt10Year15 = q.Select(dh => dh.AgeBelow16Years).Single().ToString("P");
+            drgData.Bt16Year17 = q.Select(dh => dh.AgeBelow18Years).Single().ToString("P");
+            drgData.Bt18Year29 = q.Select(dh => dh.AgeBelow30Years).Single().ToString("P");
+            drgData.Bt30Year39 = q.Select(dh => dh.AgeBelow40Years).Single().ToString("P");
+            drgData.Bt40Year49 = q.Select(dh => dh.AgeBelow50Years).Single().ToString("P");
+            drgData.Bt50Year54 = q.Select(dh => dh.AgeBelow55Years).Single().ToString("P");
+            drgData.Bt55Year59 = q.Select(dh => dh.AgeBelow60Years).Single().ToString("P");
+            drgData.Bt60Year64 = q.Select(dh => dh.AgeBelow65Years).Single().ToString("P");
+            drgData.Bt65Year74 = q.Select(dh => dh.AgeBelow75Years).Single().ToString("P");
+            drgData.Bt75Year79 = q.Select(dh => dh.AgeBelow80Years).Single().ToString("P");
+            drgData.Gt79Year = q.Select(dh => dh.AgeBelow99Years).Single().ToString("P");
+            drgData.TitleDrg = "Kennzahlen - " + SystemCode;
         }
 
         private bool _mainLoaded = false;
@@ -450,21 +619,36 @@ namespace org.inek.InekBrowser.GUI {
             CsvData dataContext = CsvData.Context();
             Cursor = Cursors.WaitCursor;
             if (grid == grdMainDiagnosis && !_mainLoaded) {
-                var q =
-                    dataContext.PrimaryDiagnoses.Where(d => d.SystemCode == PEPP)
+                if (Program.SystemBrowser == Program.System.Pepp) {
+                    var q =
+                    dataContext.PrimaryDiagnoses.Where(d => d.SystemCode == SystemCode)
                         .Join(dataContext.Recherche.Where(r => r.PrimaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
                             (d, r) => new {
-                                              PEPP = d.SystemCode,
-                                              Kode = d.DiagCode,
-                                              HDBezeichnung = r.Text,
-                                              AnzahlFälle = d.Count,
-                                              AnteilFälle = d.Fraction
-                                          });
-                grdMainDiagnosis.DataSource = Helper.ConvertToDataTable(q);
+                                PEPP = d.SystemCode,
+                                Kode = d.DiagCode,
+                                HDBezeichnung = r.Text,
+                                AnzahlFälle = d.Count,
+                                AnteilFälle = d.Fraction
+                            });
+                    grdMainDiagnosis.DataSource = Helper.ConvertToDataTable(q);
+                } else if (Program.SystemBrowser == Program.System.Drg) {
+                    var q =
+                    dataContext.PrimaryDiagnoses.Where(d => d.SystemCode == SystemCode)
+                        .Join(dataContext.Recherche.Where(r => r.PrimaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
+                            (d, r) => new {
+                                DRG = d.SystemCode,
+                                Kode = d.DiagCodeF,
+                                HDBezeichnung = r.Text,
+                                AnzahlFälle = d.Count,
+                                AnteilFälle = d.Fraction
+                            });
+                    grdMainDiagnosis.DataSource = Helper.ConvertToDataTable(q);
+                }
                 SetHdGridColumnStyle();
                 _mainLoaded = true;
             } else if (grid == grdSecondaryDiagnosis && !_secLoaded) {
-                var q = dataContext.SecondaryDiagnoses.Where(d => d.System == PEPP)
+                if (Program.SystemBrowser == Program.System.Pepp) {
+                    var q = dataContext.SecondaryDiagnoses.Where(d => d.System == SystemCode)
                         .Join(dataContext.Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
                             (d, r) => new {
                                 PEPP = d.System,
@@ -475,22 +659,51 @@ namespace org.inek.InekBrowser.GUI {
                                 AnzahlNennungen = d.EntryCount,
                                 AnteilNennungen = d.EntryFraction
                             });
-                grdSecondaryDiagnosis.DataSource = Helper.ConvertToDataTable(q);
+                    grdSecondaryDiagnosis.DataSource = Helper.ConvertToDataTable(q);
+                } else if (Program.SystemBrowser == Program.System.Drg) {
+                    var q = dataContext.SecondaryDiagnoses.Where(d => d.System == SystemCode)
+                        .Join(dataContext.Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
+                            (d, r) => new {
+                                DRG = d.System,
+                                Kode = d.CodeF,
+                                Nebendiagnose = r.Text,
+                                AnzahlFälle = d.CaseCount,
+                                AnteilFälle = d.CaseFraction,
+                                AnzahlNennungen = d.EntryCount,
+                                AnteilNennungen = d.EntryFraction
+                            });
+                    grdSecondaryDiagnosis.DataSource = Helper.ConvertToDataTable(q);
+                }
                 SetSdGridColumnStyle();
                 _secLoaded = true;
             } else if (grid == grdProcedures && !_procLoaded) {
-                var q = dataContext.Procedures.Where(d => d.System == PEPP)
+                if (Program.SystemBrowser == Program.System.Pepp) {
+                    var q = dataContext.Procedures.Where(d => d.System == SystemCode)
                         .Join(dataContext.Recherche.Where(r => r.Procedure == 1), d => d.ProcCode, r => r.Code,
                             (d, r) => new {
-                                PEPP = d.System,
-                                Kode = d.ProcCode,
+                                              PEPP = d.System,
+                                              Kode = d.ProcCode,
+                                              Prozedur = r.Text,
+                                              AnzahlFälle = d.CaseCount,
+                                              AnteilFälle = d.CaseFraction,
+                                              AnzahlNennungen = d.EntryCount,
+                                              AnteilNennungen = d.EntryFraction
+                                          });
+                    grdProcedures.DataSource = Helper.ConvertToDataTable(q);
+                } else if (Program.SystemBrowser == Program.System.Drg) {
+                    var q = dataContext.Procedures.Where(d => d.System == SystemCode)
+                        .Join(dataContext.Recherche.Where(r => r.Procedure == 1), d => d.ProcCode, r => r.Code,
+                            (d, r) => new {
+                                DRG = d.System,
+                                Kode = d.CodeF,
                                 Prozedur = r.Text,
                                 AnzahlFälle = d.CaseCount,
                                 AnteilFälle = d.CaseFraction,
                                 AnzahlNennungen = d.EntryCount,
                                 AnteilNennungen = d.EntryFraction
                             });
-                grdProcedures.DataSource = Helper.ConvertToDataTable(q);
+                    grdProcedures.DataSource = Helper.ConvertToDataTable(q);
+                }
                 SetProcedureGridColumnStyle();
                 _procLoaded = true;
             } else if (grid == grdCosts && !_matrixLoaded) {
@@ -584,7 +797,7 @@ namespace org.inek.InekBrowser.GUI {
         private void BuildCostMatrix() {
             var q =
                 CsvData.Context()
-                    .Costs.Where(pepp => pepp.Code == PEPP)
+                    .Costs.Where(pepp => pepp.Code == SystemCode)
                     .Select(c => new {
                         KostenArt1 = (c.CostType1.ToString("F").Equals("0,00") ? "" : c.CostType1.ToString("F")),
                         KostenArt2 = (c.CostType2.ToString("F").Equals("0,00") ? "" : c.CostType2.ToString("F")),
@@ -602,7 +815,7 @@ namespace org.inek.InekBrowser.GUI {
                                      });
             grdCosts.DataSource = Helper.ConvertToDataTable(q);
             List<int> rowIds = CsvData.Context()
-                .Costs.Where(pepp => pepp.Code == PEPP)
+                .Costs.Where(pepp => pepp.Code == SystemCode)
                 .Select(ri => ri.CostDomain).ToList();
             BuildCostMatrixColHeaders(Color.LightGreen);
             BuildCostMatrixRowHeaders(rowIds, Color.LightGreen);
@@ -803,8 +1016,8 @@ namespace org.inek.InekBrowser.GUI {
             return null;
         } 
 
-        private void FillHeadData() {
-            var q = CsvData.Context().SystemInfo.Where(pepp => pepp.Code == PEPP);
+        private void FillPeppHeadData() {
+            var q = CsvData.Context().SystemInfo.Where(pepp => pepp.Code == SystemCode);
             peppData.CasesNumSummary = q.Select(p => p.CaseCount.ToString("##,###")).ElementAt(0);
             peppData.DaysSummary = q.Select(p => p.LosSumDays.ToString("##,###")).ElementAt(0);
             peppData.LosAverage = q.Select(p => Math.Round(p.LosAverage, 1).ToString()).ElementAt(0);               // einstellig Dezimal
@@ -834,7 +1047,7 @@ namespace org.inek.InekBrowser.GUI {
             peppData.DailyCostsStandardDeviation = q.Select(p => Math.Round(p.DayCostsStandard, 2).ToString()).ElementAt(0);    // zweistellig Dezimal (money)
             peppData.DailyCostsHomogeneityCoeff = q.Select(p => Math.Round((p.DayCostsHc * 100), 2).ToString()+"%").ElementAt(0);  // Prozent
             peppData.Degression = q.Select(p => p.Degression).Single().ToString();
-            peppData.TitlePEPP = "Kennzahlen - " + PEPP;
+            peppData.TitlePEPP = "Kennzahlen - " + SystemCode;
         }
 
         private void tabControl_SelectedIndexChanged(object sender, EventArgs e) {
@@ -842,21 +1055,20 @@ namespace org.inek.InekBrowser.GUI {
         }
 
 
-        private void beendenToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        private void beendenToolStripMenuItem_Click(object sender, EventArgs e) {
             Application.Exit();
         }
 
 
         private void druckenToolStripMenuItem_Click(object sender, EventArgs e) {
-            if (string.IsNullOrEmpty(PEPP)) {
+            if (string.IsNullOrEmpty(SystemCode)) {
                 MessageBox.Show("Keine PEPP gewählt. Druck nicht möglich!");
                 return;
             }
-            if (MessageBox.Show(this, "Wollen Sie die PEPP " + PEPP + " jetzt ausdrucken?\n\n" +
+            if (MessageBox.Show(this, "Wollen Sie die PEPP " + SystemCode + " jetzt ausdrucken?\n\n" +
                                       "Hinweis: Es wird die komplette PEPP ausgedruckt. Um einzelne Seiten auszudrucken, " +
                                       "benutzen Sie bitte den PDF-Export und einen geeigneten PDF-Reader (z.B. Adobe Acrobat Reader)",
-                                      "Drucken - " + PEPP, MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK) {
+                                      "Drucken - " + SystemCode, MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK) {
                 CreateReport(OutputType.Print);   
             }
         }
@@ -866,11 +1078,11 @@ namespace org.inek.InekBrowser.GUI {
                 //helpProvider1.SetHelpKeyword(this, "Drucken.htm");
                 //timerPrintWindow.Start();
                 reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, outputType, "peppDruck.lst",
-                                 setReportData(PEPP), "data");
+                                 setReportData(SystemCode), "data");
         }
 
         private void pDFExportToolStripMenuItem_Click(object sender, EventArgs e) {
-            if (string.IsNullOrEmpty(PEPP)) {
+            if (string.IsNullOrEmpty(SystemCode)) {
                 MessageBox.Show("Keine PEPP gewählt. PDF-Export nicht möglich!");
                 return;
             }
@@ -879,12 +1091,12 @@ namespace org.inek.InekBrowser.GUI {
 
         private void designerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(PEPP)){
+            if(string.IsNullOrEmpty(SystemCode)){
                 MessageBox.Show("Keine PEPP gewählt. Druck nicht möglich!");
             }
             else{
                 Reporter reporter = new Reporter();
-                reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Design, "peppDruck", setReportData(PEPP), "data");    
+                reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Design, "peppDruck", setReportData(SystemCode), "data");    
             }
             
         }
@@ -894,24 +1106,54 @@ namespace org.inek.InekBrowser.GUI {
             if (grdMainDiagnosis.SelectedRows.Count > 0) {
                 SetRechercheHelp();
                 string hd = grdMainDiagnosis.SelectedRows[0].Cells[1].Value.ToString();
-                List<string> pepps =
-                    CsvData.Context()
-                        .PrimaryDiagnoses
-                        .Where(pepp => pepp.DiagCode == hd)
-                        .Select(pepp => pepp.SystemCode)
-                        .ToList();
-                var q = CsvData.Context().PrimaryDiagnoses.Where(pd => pepps.Contains(pd.SystemCode) && pd.DiagCode == hd)
-                    .Select(pd => new {PEPP = pd.SystemCode, HD = pd.DiagCode, AnzahlFälle = pd.Count, AnteilFälle = pd.Fraction});
-                search.StartPosition = FormStartPosition.CenterParent;
-                search.Text = "PEPPs zu Hauptdiagnosen";
+                if (Program.SystemBrowser == Program.System.Pepp) {
+                    List<string> pepps =
+                        CsvData.Context()
+                            .PrimaryDiagnoses
+                            .Where(pepp => pepp.DiagCode == hd)
+                            .Select(pepp => pepp.SystemCode)
+                            .ToList();
+                    var q = CsvData.Context()
+                        .PrimaryDiagnoses.Where(pd => pepps.Contains(pd.SystemCode) && pd.DiagCode == hd)
+                        .Select(
+                            pd =>
+                                new {
+                                        PEPP = pd.SystemCode,
+                                        HD = pd.DiagCode,
+                                        AnzahlFälle = pd.Count,
+                                        AnteilFälle = pd.Fraction
+                                    });
+                    search.StartPosition = FormStartPosition.CenterParent;
+                    search.Text = "PEPPs zu Hauptdiagnose";
+                    search.SetDataSource(q);
+                } else if (Program.SystemBrowser == Program.System.Drg) {
+                    List<string> drgs =
+                        CsvData.Context()
+                            .PrimaryDiagnoses
+                            .Where(drg => drg.DiagCodeF == hd)
+                            .Select(drg => drg.SystemCode)
+                            .ToList();
+                    var q = CsvData.Context()
+                        .PrimaryDiagnoses.Where(pd => drgs.Contains(pd.SystemCode) && pd.DiagCodeF == hd)
+                        .Select(
+                            pd =>
+                                new {
+                                    DRG = pd.SystemCode,
+                                    HD = pd.DiagCodeF,
+                                    AnzahlFälle = pd.Count,
+                                    AnteilFälle = pd.Fraction
+                                });
+                    search.StartPosition = FormStartPosition.CenterParent;
+                    search.Text = "DRGs zu Hauptdiagnose";
+                    search.SetDataSource(q);
+                }
                 search.ButtonShowIsVisible = false;
-                search.SetDataSource(q);
                 search.ColumnTextAlign(2, DataGridViewContentAlignment.MiddleRight);
                 search.ColumnFormat("##,##0", 2);
                 search.ColumnTextAlign(3, DataGridViewContentAlignment.MiddleRight);
                 search.ColumnFormat("P", 3);
                 if (search.ShowDialog() == DialogResult.OK) {
-                    LoadPeppByTabControl(search);
+                    LoadSystemDataByTabControl(search);
                 }
             }
         }
@@ -920,25 +1162,47 @@ namespace org.inek.InekBrowser.GUI {
             if (grdSecondaryDiagnosis.SelectedRows.Count > 0) {
                 SetRechercheHelp();
                 string sd = grdSecondaryDiagnosis.SelectedRows[0].Cells[1].Value.ToString();
-                List<string> pepps =
-                    CsvData.Context()
-                        .SecondaryDiagnoses
-                        .Where(pepp => pepp.DiagCode == sd)
-                        .Select(pepp => pepp.System)
-                        .ToList();
-                var q = CsvData.Context().SecondaryDiagnoses.Where(pd => pepps.Contains(pd.System) && pd.DiagCode == sd)
-                    .Select(nd => new {
-                        PEPP = nd.System,
-                        ND = nd.DiagCode,
-                        AnzahlFälle = nd.CaseCount,
-                        AnteilFälle = nd.CaseFraction,
-                        AnzahlNennungen = nd.EntryCount,
-                        AnteilNennungen = nd.EntryFraction
-                                      });
+                if (Program.SystemBrowser == Program.System.Pepp) {
+                    List<string> pepps =
+                        CsvData.Context()
+                            .SecondaryDiagnoses
+                            .Where(pepp => pepp.DiagCode == sd)
+                            .Select(pepp => pepp.System)
+                            .ToList();
+                    var q = CsvData.Context()
+                        .SecondaryDiagnoses.Where(pd => pepps.Contains(pd.System) && pd.DiagCode == sd)
+                        .Select(nd => new {
+                                              PEPP = nd.System,
+                                              ND = nd.DiagCode,
+                                              AnzahlFälle = nd.CaseCount,
+                                              AnteilFälle = nd.CaseFraction,
+                                              AnzahlNennungen = nd.EntryCount,
+                                              AnteilNennungen = nd.EntryFraction
+                                          });
+                    search.Text = "PEPPs zu Nebendiagnosen";
+                    search.SetDataSource(q);
+                } else if (Program.SystemBrowser == Program.System.Drg) {
+                    List<string> drgs =
+                        CsvData.Context()
+                            .SecondaryDiagnoses
+                            .Where(drg => drg.CodeF == sd)
+                            .Select(drg => drg.System)
+                            .ToList();
+                    var q = CsvData.Context()
+                        .SecondaryDiagnoses.Where(pd => drgs.Contains(pd.System) && pd.CodeF == sd)
+                        .Select(nd => new {
+                            DRG = nd.System,
+                            ND = nd.CodeF,
+                            AnzahlFälle = nd.CaseCount,
+                            AnteilFälle = nd.CaseFraction,
+                            AnzahlNennungen = nd.EntryCount,
+                            AnteilNennungen = nd.EntryFraction
+                        });
+                    search.Text = "DRGs zu Nebendiagnose";
+                    search.SetDataSource(q);
+                }
                 search.StartPosition = FormStartPosition.CenterParent;
-                search.Text = "PEPPs zu Nebendiagnosen";
                 search.ButtonShowIsVisible = false;
-                search.SetDataSource(q);
                 search.ColumnTextAlign(2, DataGridViewContentAlignment.MiddleRight);
                 search.ColumnFormat("##,##0", 2);
                 search.ColumnTextAlign(3, DataGridViewContentAlignment.MiddleRight);
@@ -948,7 +1212,7 @@ namespace org.inek.InekBrowser.GUI {
                 search.ColumnTextAlign(5, DataGridViewContentAlignment.MiddleRight);
                 search.ColumnFormat("P", 5);
                 if (search.ShowDialog() == DialogResult.OK) {
-                    LoadPeppByTabControl(search);
+                    LoadSystemDataByTabControl(search);
                 }
             }
         }
@@ -957,25 +1221,45 @@ namespace org.inek.InekBrowser.GUI {
             if (grdProcedures.SelectedRows.Count > 0) {
                 SetRechercheHelp();
                 string proc = grdProcedures.SelectedRows[0].Cells[1].Value.ToString();
-                List<string> pepps =
-                    CsvData.Context()
-                        .Procedures
-                        .Where(pepp => pepp.ProcCode == proc)
-                        .Select(pepp => pepp.System)
-                        .ToList();
-                var q = CsvData.Context().Procedures.Where(pd => pepps.Contains(pd.System) && pd.ProcCode == proc)
-                    .Select(p => new {
-                        PEPP = p.System,
-                        Prozedur = p.ProcCode,
-                        AnzahlFälle = p.CaseCount,
-                        AnteilFälle = p.CaseFraction,
-                        AnzahlNennungen = p.EntryCount,
-                        AnteilNennungen = p.EntryFraction
-                                     });
+                if (Program.SystemBrowser == Program.System.Pepp) {
+                    List<string> pepps =
+                                CsvData.Context()
+                                    .Procedures
+                                    .Where(pepp => pepp.ProcCode == proc)
+                                    .Select(pepp => pepp.System)
+                                    .ToList();
+                    var q = CsvData.Context().Procedures.Where(pd => pepps.Contains(pd.System) && pd.ProcCode == proc)
+                        .Select(p => new {
+                            PEPP = p.System,
+                            Prozedur = p.ProcCode,
+                            AnzahlFälle = p.CaseCount,
+                            AnteilFälle = p.CaseFraction,
+                            AnzahlNennungen = p.EntryCount,
+                            AnteilNennungen = p.EntryFraction
+                        });
+                    search.SetDataSource(q);
+                    search.Text = "PEPPs zu Prozeduren";
+                } else if (Program.SystemBrowser == Program.System.Drg) {
+                    List<string> drgs =
+                                CsvData.Context()
+                                    .Procedures
+                                    .Where(drg => drg.CodeF == proc)
+                                    .Select(drg => drg.System)
+                                    .ToList();
+                    var q = CsvData.Context().Procedures.Where(pd => drgs.Contains(pd.System) && pd.CodeF == proc)
+                        .Select(p => new {
+                            DRG = p.System,
+                            Prozedur = p.CodeF,
+                            AnzahlFälle = p.CaseCount,
+                            AnteilFälle = p.CaseFraction,
+                            AnzahlNennungen = p.EntryCount,
+                            AnteilNennungen = p.EntryFraction
+                        });
+                    search.SetDataSource(q);
+                    search.Text = "DRGs zu Prozedur";
+                }
                 search.StartPosition = FormStartPosition.CenterParent;
-                search.Text = "PEPPs zu Prozeduren";
                 search.ButtonShowIsVisible = false;
-                search.SetDataSource(q);
                 search.ColumnTextAlign(2, DataGridViewContentAlignment.MiddleRight);
                 search.ColumnFormat("##,##0", 2);
                 search.ColumnTextAlign(3, DataGridViewContentAlignment.MiddleRight);
@@ -985,18 +1269,18 @@ namespace org.inek.InekBrowser.GUI {
                 search.ColumnTextAlign(5, DataGridViewContentAlignment.MiddleRight);
                 search.ColumnFormat("P", 5);
                 if (search.ShowDialog() == DialogResult.OK) {
-                    LoadPeppByTabControl(search);
+                    LoadSystemDataByTabControl(search);
                 }
             }
         }
 
-        private List<Data.SystemData> setReportData(string pepp)
+        private IEnumerable<SystemData> setReportData(string pepp)
         {
             SystemInfo info = CsvData.Context().SystemInfo.Single(p => p.Code == pepp);
-            string skTag = CsvData.Context().System.Where(p => p.Code == PEPP).Select(p => p.Category).Single();
+            string skTag = CsvData.Context().System.Where(p => p.Code == SystemCode).Select(p => p.Category).Single();
             info.StruCat = CsvData.Context().StructureCategories.Where(sk => sk.Category == skTag).Select(sk => sk.Text).Single();
-            info.PeppTxt = cbxPepp.Text;
-            var peppData = new InekBrowser.Data.SystemData(info);
+            info.PeppTxt = cbxSystem.Text;
+            var peppData = new SystemData(info);
             //Primary Diagnoses
             peppData.PrimDiag = CsvData.Context().PrimaryDiagnoses.Where(p => p.SystemCode == pepp)
                 .Join(CsvData.Context().Recherche.Where(r => r.PrimaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
@@ -1052,18 +1336,22 @@ namespace org.inek.InekBrowser.GUI {
                                   CostType8 = c.CostType8,
                                   TxtBez = d.DomainText
                               }).ToList();
-            var dataSet = new List<Data.SystemData> {peppData};
 
-            return dataSet;
+            return new List<SystemData> { peppData };
         }
 
 
-        private void LoadPeppByTabControl(FrmSearch search) {
-            selectionPepp.ClearSelection();
-            PEPP = search.Id.ToString();
-            cbxPepp.Text = PEPP + ": ";
-            cbxPepp.Text += CsvData.Context().System.Where(p => p.Code == PEPP).Select(p => p.Text).Single();
-            LoadPeppData();
+        private void LoadSystemDataByTabControl(FrmSearch search) {
+            SystemCode = search.Id.ToString();
+            cbxSystem.Text = SystemCode + ": ";
+            cbxSystem.Text += CsvData.Context().System.Where(p => p.Code == SystemCode).Select(p => p.Text).Single();
+            if (Program.SystemBrowser == Program.System.Pepp) {
+                selectionPepp.ClearSelection();
+                LoadPeppData();
+            } else if (Program.SystemBrowser == Program.System.Drg) {
+                selectionDrg.ClearSelection();
+                LoadDrgData();   
+            }
         }
 
         private void mnuInfo_Click(object sender, EventArgs e) {
@@ -1081,7 +1369,7 @@ namespace org.inek.InekBrowser.GUI {
 
         private int ticks = 0;
         private void tabControl_Click(object sender, EventArgs e) {
-            if (PEPP == null) {
+            if (SystemCode == null) {
                 ticks = 0;
                 timerPeppBlink.Start();
             }
@@ -1089,9 +1377,9 @@ namespace org.inek.InekBrowser.GUI {
 
         private void timerPeppBlink_Tick(object sender, EventArgs e) {
             if (ticks%2 == 0) {
-                cbxPepp.BackColor = Color.Red;
+                cbxSystem.BackColor = Color.Red;
             } else {
-                cbxPepp.BackColor = Color.White;
+                cbxSystem.BackColor = Color.White;
             }
             if (ticks == 5) {
                 timerPeppBlink.Stop();
@@ -1127,7 +1415,7 @@ namespace org.inek.InekBrowser.GUI {
             popup.StartPosition = FormStartPosition.CenterParent;
             popup.Text = "Katalog";
             popup.ButtonShowIsVisible = false;
-            var q = CsvData.Context().Catalogs.Where(c => c.Pepp == PEPP).Select(c => new {PEPP = c.Pepp, Vergütungsklasse = c.RemunerationClass, Relativgewicht = c.RelativeWeight});
+            var q = CsvData.Context().Catalogs.Where(c => c.Pepp == SystemCode).Select(c => new {PEPP = c.Pepp, Vergütungsklasse = c.RemunerationClass, Relativgewicht = c.RelativeWeight.ToString("0.####")});
             popup.SetDataSource(q);
             if (popup.ShowDialog(this) == DialogResult.OK) {
                 

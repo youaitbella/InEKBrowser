@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using org.inek.controls.util;
 using org.inek.InekBrowser.Data;
+using org.inek.InekBrowser.Data.Entities;
 
 namespace org.inek.InekBrowser.GUI {
     public partial class FrmSplash : Form {
@@ -67,30 +69,16 @@ namespace org.inek.InekBrowser.GUI {
                     ResourceController.CheckResourceDir();
                     ResourceController.CheckForResourceFiles();
                     //ResourceController.CheckResourceFilesWithSHA256();
-                    LoadPeppDataToMemory();
+                    CsvData.Context().LoadPeppDataToMemory();
                 } else if (Program.SystemBrowser == Program.System.Drg) {
-                    
+                    CsvData.Context().LoadDrgDataToMemory(CsvData.DrgType.HA);
                 }
                 _printLoader.LoadPrintLibrarys();
                 new FrmInekBrowser().Visible = true;
-                Visible = false;
             } catch (Exception ex) {
                 MessageBox.Show(this, ex.Message, "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Application.Exit();
             }
-        }
-
-        private static void LoadPeppDataToMemory() {
-            var x1 = CsvData.Context().CostDomains;
-            var x2 = CsvData.Context().Costs;
-            var x4 = CsvData.Context().System;
-            var x3 = CsvData.Context().SystemInfo;
-            var x5 = CsvData.Context().PrimaryDiagnoses;
-            var x8 = CsvData.Context().SecondaryDiagnoses;
-            var x6 = CsvData.Context().Procedures;
-            var x7 = CsvData.Context().Recherche;
-            var x9 = CsvData.Context().StructureCategories;
-            var x10 = CsvData.Context().Catalogs;
         }
 
         private void worker_DoWork(object sender, DoWorkEventArgs e) {

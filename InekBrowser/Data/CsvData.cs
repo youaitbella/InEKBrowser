@@ -45,7 +45,6 @@ namespace org.inek.InekBrowser.Data {
         public static CsvData Context() {
             if (_instance == null) {
                 _instance = new CsvData();
-                DrgSystemType = DrgType.BA;
             }
             return _instance;
         }
@@ -201,7 +200,33 @@ namespace org.inek.InekBrowser.Data {
                 }
                 return _mdcs;
             }
-        } 
+        }
+
+        public void LoadPeppDataToMemory() {
+            var x1 = Context().CostDomains;
+            var x2 = Context().Costs;
+            var x4 = Context().System;
+            var x3 = Context().SystemInfo;
+            var x5 = Context().PrimaryDiagnoses;
+            var x8 = Context().SecondaryDiagnoses;
+            var x6 = Context().Procedures;
+            var x7 = Context().Recherche;
+            var x9 = Context().StructureCategories;
+            var x10 = Context().Catalogs;
+        }
+
+        public void LoadDrgDataToMemory(DrgType drgSystemDepartment) {
+            DrgSystemType = drgSystemDepartment;
+            var x1 = Context().CostDomains;
+            var x2 = Context().Costs;
+            var x4 = Context().System;
+            var x3 = Context().SystemInfo;
+            var x5 = Context().PrimaryDiagnoses;
+            var x8 = Context().SecondaryDiagnoses;
+            var x6 = Context().Procedures;
+            var x7 = Context().Recherche;
+            var x9 = Context().Mdcs;
+        }
 
 
         //private void EnsureData<T>(List<T> list, string filename, string headline) {
@@ -296,9 +321,13 @@ namespace org.inek.InekBrowser.Data {
                     }
                     if(Program.SystemBrowser == Program.System.Pepp)
                         MapPeppCsv2Entity(headline, tokens);
-                    else if (Program.SystemBrowser == Program.System.Drg && filename.StartsWith("RepBrDrg_BA"))
+                    else if (Program.SystemBrowser == Program.System.Drg && 
+                            (filename.StartsWith("RepBrDrg_BA") || filename.EndsWith("_Drg.csv") || filename.EndsWith("_Kostenbereich.csv")) && 
+                            DrgSystemType == DrgType.BA)
                         MapDrgBaCsv2Entity(headline, tokens);
-                    else if (Program.SystemBrowser == Program.System.Drg && filename.StartsWith("RepBrDrg_HA"))
+                    else if (Program.SystemBrowser == Program.System.Drg &&
+                            (filename.StartsWith("RepBrDrg_HA") || filename.EndsWith("_Drg.csv") || filename.EndsWith("_Kostenbereich.csv")) &&
+                            DrgSystemType == DrgType.HA)
                         MapDrgHaCsv2Entity(headline, tokens);
                 }
             }
@@ -391,9 +420,9 @@ namespace org.inek.InekBrowser.Data {
                                                 DiagCode = tokens[1],
                                                 CaseFraction = decimal.Parse(tokens[2]),
                                                 CodeF = tokens[3],
-                                                CaseCount = int.Parse(tokens[3]),
-                                                EntryFraction = decimal.Parse(tokens[4]),
-                                                EntryCount = int.Parse(tokens[5])
+                                                CaseCount = int.Parse(tokens[4]),
+                                                EntryFraction = decimal.Parse(tokens[5]),
+                                                EntryCount = int.Parse(tokens[6])
                                             };
             _secondaryDiagnoses.Add(sd);
         }
@@ -428,6 +457,9 @@ namespace org.inek.InekBrowser.Data {
         }
 
         private void MapSystemInfoDrg(string[] tokens) {
+            for(int i = 0; i < tokens.Length; i++)
+                if (tokens[i] == "")
+                    tokens[i] = 0 + "";
             var si = new SystemInfo {
                                         MDC = tokens[0],
                                         Code = tokens[1],
@@ -436,36 +468,37 @@ namespace org.inek.InekBrowser.Data {
                                         PCCL1 = decimal.Parse(tokens[4]),
                                         PCCL2 = decimal.Parse(tokens[5]),
                                         PCCL3 = decimal.Parse(tokens[6]),
-                                        GenderMale = decimal.Parse(tokens[7]),
-                                        GenderFemale = decimal.Parse(tokens[8]),
-                                        GenderUnknown = decimal.Parse(tokens[9]),
-                                        AgeBelow28Days = decimal.Parse(tokens[10]),
-                                        AgeBelow1Year = decimal.Parse(tokens[11]),
-                                        AgeBelow3Years = decimal.Parse(tokens[12]),
-                                        AgeBelow6Years = decimal.Parse(tokens[13]),
-                                        AgeBelow10Years = decimal.Parse(tokens[14]),
-                                        AgeBelow16Years = decimal.Parse(tokens[15]),
-                                        AgeBelow18Years = decimal.Parse(tokens[16]),
-                                        AgeBelow30Years = decimal.Parse(tokens[17]),
-                                        AgeBelow40Years = decimal.Parse(tokens[18]),
-                                        AgeBelow50Years = decimal.Parse(tokens[19]),
-                                        AgeBelow55Years = decimal.Parse(tokens[20]),
-                                        AgeBelow60Years = decimal.Parse(tokens[21]),
-                                        AgeBelow65Years = decimal.Parse(tokens[22]),
-                                        AgeBelow75Years = decimal.Parse(tokens[23]),
-                                        AgeBelow80Years = decimal.Parse(tokens[24]),
-                                        AgeBelow99Years = decimal.Parse(tokens[25]),
-                                        LosShort = decimal.Parse(tokens[26]),
-                                        LosNormal = decimal.Parse(tokens[27]),
-                                        LosLong = decimal.Parse(tokens[28]),
-                                        Day1Reduction = int.Parse(tokens[29]),
-                                        Day1Remuneration = int.Parse(tokens[30]),
-                                        LosAverage = decimal.Parse(tokens[31]),
-                                        ValuationRatio = decimal.Parse(tokens[32]),
-                                        FractionAllCases = decimal.Parse(tokens[33]),
-                                        LosStandard = decimal.Parse(tokens[34]),
-                                        CostAverage = decimal.Parse(tokens[35]),
-                                        CostStandard = decimal.Parse(tokens[36])
+                                        PCCL4 = decimal.Parse(tokens[7]),
+                                        GenderMale = decimal.Parse(tokens[8]),
+                                        GenderFemale = decimal.Parse(tokens[9]),
+                                        GenderUnknown = decimal.Parse(tokens[10]),
+                                        AgeBelow28Days = decimal.Parse(tokens[11]),
+                                        AgeBelow1Year = decimal.Parse(tokens[12]),
+                                        AgeBelow3Years = decimal.Parse(tokens[13]),
+                                        AgeBelow6Years = decimal.Parse(tokens[14]),
+                                        AgeBelow10Years = decimal.Parse(tokens[15]),
+                                        AgeBelow16Years = decimal.Parse(tokens[16]),
+                                        AgeBelow18Years = decimal.Parse(tokens[17]),
+                                        AgeBelow30Years = decimal.Parse(tokens[18]),
+                                        AgeBelow40Years = decimal.Parse(tokens[19]),
+                                        AgeBelow50Years = decimal.Parse(tokens[20]),
+                                        AgeBelow55Years = decimal.Parse(tokens[21]),
+                                        AgeBelow60Years = decimal.Parse(tokens[22]),
+                                        AgeBelow65Years = decimal.Parse(tokens[23]),
+                                        AgeBelow75Years = decimal.Parse(tokens[24]),
+                                        AgeBelow80Years = decimal.Parse(tokens[25]),
+                                        AgeBelow99Years = decimal.Parse(tokens[26]),
+                                        LosShort = decimal.Parse(tokens[27]),
+                                        LosNormal = decimal.Parse(tokens[28]),
+                                        LosLong = decimal.Parse(tokens[29]),
+                                        Day1Reduction = int.Parse(tokens[30]),
+                                        Day1Remuneration = int.Parse(tokens[31]),
+                                        LosAverage = decimal.Parse(tokens[32]),
+                                        ValuationRatio = decimal.Parse(tokens[33]),
+                                        FractionAllCases = decimal.Parse(tokens[34]),
+                                        LosStandard = decimal.Parse(tokens[35]),
+                                        CostAverage = decimal.Parse(tokens[36]),
+                                        CostStandard = decimal.Parse(tokens[37])
                                     };
             _systemInfo.Add(si);
         }
@@ -489,7 +522,7 @@ namespace org.inek.InekBrowser.Data {
         private void MapDrg(string[] tokens) {
             var drg = new Entities.System {
                                               Category = tokens[0],
-                                              Partition = int.Parse(tokens[1]),
+                                              Partition = tokens[1][0],
                                               Code = tokens[2],
                                               Text = tokens[3],
                                               Calculated = int.Parse(tokens[4])
@@ -504,26 +537,17 @@ namespace org.inek.InekBrowser.Data {
                 MapPrimaryDiagnosis(_primaryDiagnoses, tokens);
             } else if (headline == ResourceController.PEPP_RESOURCE_HEADERS[(int) ResourceController.PeppResourceFilesIndex.Kosten]) {
                 MapCost(_costs, tokens);
-            } else if (headline ==
-                       ResourceController.PEPP_RESOURCE_HEADERS[(int) ResourceController.PeppResourceFilesIndex.Kostenbereich]) {
+            } else if (headline == ResourceController.PEPP_RESOURCE_HEADERS[(int) ResourceController.PeppResourceFilesIndex.Kostenbereich]) {
                 MapCostDomain(_costDomains, tokens);
-            } else if (headline ==
-                       ResourceController.PEPP_RESOURCE_HEADERS[(int) ResourceController.PeppResourceFilesIndex.Pepp]) {
+            } else if (headline == ResourceController.PEPP_RESOURCE_HEADERS[(int) ResourceController.PeppResourceFilesIndex.Pepp]) {
                 MapPepp(_system, tokens);
-            } else if (headline ==
-                       ResourceController.PEPP_RESOURCE_HEADERS[(int) ResourceController.PeppResourceFilesIndex.Prozeduren]) {
+            } else if (headline == ResourceController.PEPP_RESOURCE_HEADERS[(int) ResourceController.PeppResourceFilesIndex.Prozeduren]) {
                 MapProcedure(_procedures, tokens);
-            } else if (headline ==
-                       ResourceController.PEPP_RESOURCE_HEADERS[
-                           (int) ResourceController.PeppResourceFilesIndex.Recherche]) {
+            } else if (headline == ResourceController.PEPP_RESOURCE_HEADERS[(int) ResourceController.PeppResourceFilesIndex.Recherche]) {
                 MapRecherche(_recherche, tokens);
-            } else if (headline ==
-                       ResourceController.PEPP_RESOURCE_HEADERS[
-                           (int) ResourceController.PeppResourceFilesIndex.Strukturkategorie]) {
+            } else if (headline == ResourceController.PEPP_RESOURCE_HEADERS[(int) ResourceController.PeppResourceFilesIndex.Strukturkategorie]) {
                 MapStructureCategory(_structureCategories, tokens);
-            } else if (headline ==
-                       ResourceController.PEPP_RESOURCE_HEADERS[
-                           (int) ResourceController.PeppResourceFilesIndex.Kopfdaten]) {
+            } else if (headline == ResourceController.PEPP_RESOURCE_HEADERS[(int) ResourceController.PeppResourceFilesIndex.Kopfdaten]) {
                 MapPeppInfo(_systemInfo, tokens);
             } else if (headline == ResourceController.PEPP_RESOURCE_HEADERS[(int) ResourceController.PeppResourceFilesIndex.Katalog]) {
                 MapCatalogs(tokens);
@@ -580,13 +604,14 @@ namespace org.inek.InekBrowser.Data {
         }
 
         private static void MapStructureCategory(List<StructureCategory> list, string[] tokens) {
-            var sc = new StructureCategory();
-            sc.Category = tokens[0];
-            sc.Order = int.Parse(tokens[1]);
-            sc.Text = tokens[2];
-            sc.PeppCount = int.Parse(tokens[3]);
-            sc.CaseCount = int.Parse(tokens[4]);
-            sc.DayCount = int.Parse(tokens[5]);
+            var sc = new StructureCategory {
+                                               Category = tokens[0],
+                                               Order = int.Parse(tokens[1]),
+                                               Text = tokens[2],
+                                               PeppCount = int.Parse(tokens[3]),
+                                               CaseCount = int.Parse(tokens[4]),
+                                               DayCount = int.Parse(tokens[5])
+                                           };
             list.Add(sc);
         }
 

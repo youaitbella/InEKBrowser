@@ -81,11 +81,12 @@ namespace org.inek.InekBrowser.GUI {
             SetHelpProvider(dlg);
             dlg.StartPosition = FormStartPosition.CenterParent;
             dlg.ButtonShowIsVisible = false;
-            var q = CsvData.Context().StructureCategories.OrderBy(sk => sk.Order)
-                    .Select(mdc => new { SK = mdc.Category, mdc.Text, PEPPs = mdc.PeppCount, Fälle = mdc.CaseCount, Tage = mdc.DayCount });
+            var q =
+                CsvData.Context()
+                    .Mdcs.Select(mdc => new {mdc.MDC, mdc.Text, DrgAnzahl = mdc.DrgCount, FälleAnzahl = mdc.CaseCount});
             dlg.SetDataSource(q);
-            dlg.KeyColumns = new string[] {"SK", "Text"};
-            dlg.Text = "Strukturkategorien";
+            dlg.KeyColumns = new string[] {"MDC", "Text"};
+            dlg.Text = "MDCs";
             if (dlg.ShowDialog(this) == DialogResult.OK) {
                 Parent.TextCode = "";
                 List<object> cells = (List<object>) dlg.Id;
@@ -104,7 +105,7 @@ namespace org.inek.InekBrowser.GUI {
             dlg.ButtonShowIsVisible = false;
             var q = CsvData.Context()
                 .Recherche.Where(md => md.PrimaryDiagnosis == 1)
-                .Select(md => new {Hauptdiagnose = md.Code, Text = md.Text});
+                .Select(md => new {Hauptdiagnose = md.Code, Code = md.CodeF, md.Text});
             dlg.SetDataSource(q);
             dlg.Text = "Hauptdiagnosen";
             dlg.KeyColumns = new[] {"Hauptdiagnose"};
@@ -130,7 +131,7 @@ namespace org.inek.InekBrowser.GUI {
             var q =
                 CsvData.Context()
                     .Recherche.Where(sd => sd.SecondaryDiagnosis == 1)
-                    .Select(sd => new {Sekundärdiagnose = sd.Code, Text = sd.Text});
+                    .Select(sd => new {Sekundärdiagnose = sd.Code, Code = sd.CodeF, sd.Text});
             dlg.SetDataSource(q);
             dlg.Text = "Sekundärdiagnosen";
             dlg.KeyColumns = new[] {"Sekundärdiagnose"};
@@ -156,7 +157,7 @@ namespace org.inek.InekBrowser.GUI {
             var q =
                 CsvData.Context()
                     .Recherche.Where(proc => proc.Procedure == 1)
-                    .Select(proc => new { Prozedur = proc.Code, Text = proc.Text });
+                    .Select(proc => new { Prozedur = proc.Code, Code = proc.CodeF, Text = proc.Text });
             dlg.SetDataSource(q);
             dlg.Text = "Prozeduren";
             dlg.KeyColumns = new[] {"Prozedur"};
@@ -198,10 +199,25 @@ namespace org.inek.InekBrowser.GUI {
             picClearProc.Visible = false;
         }
 
-        private void picClearDepartment_Click(object sender, EventArgs e) {
-            cbxDepartment.Text = "";
-            Department = "";
-            picClearDepartment.Visible = false;
+        private void cbxDepartment_SelectedIndexChanged(object sender, EventArgs e) {
+            Parent.Cursor = Cursors.WaitCursor;
+            CsvData.Context().ClearDataCaches();
+            if (cbxDepartment.Text == "Hauptabteilung")
+                CsvData.Context().LoadDrgDataToMemory(CsvData.DrgType.HA);
+            else if (cbxDepartment.Text == "Belegabteilung")
+                CsvData.Context().LoadDrgDataToMemory(CsvData.DrgType.BA);
+
+            Parent.TextCode = "";
+            cbxMainDiagnosis.Text = "";
+            PrimaryDiagnosis = "";
+            cbxSecondaryDiagnosis.Text = "";
+            SecondaryDiagnosis = "";
+            cbxProcedure.Text = "";
+            Procedure = "";
+            cbxCategory.Text = "";
+            Category = "";
+
+            Parent.Cursor = DefaultCursor;
         }
     }
 }

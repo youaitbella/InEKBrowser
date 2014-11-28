@@ -55,22 +55,54 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Data\RepBrDrg_13_15_Drg.csv" />
-    <None Include="Data\RepBrDrg_13_15_Kostenbereich.csv" />
-    <None Include="Data\RepBrDrg_BA_13_15_Hauptdiagnose.csv" />
-    <None Include="Data\RepBrDrg_BA_13_15_Kopfdaten.csv" />
-    <None Include="Data\RepBrDrg_BA_13_15_Kosten.csv" />
-    <None Include="Data\RepBrDrg_BA_13_15_Mdc.csv" />
-    <None Include="Data\RepBrDrg_BA_13_15_Nebendiagnosen.csv" />
-    <None Include="Data\RepBrDrg_BA_13_15_Prozeduren.csv" />
-    <None Include="Data\RepBrDrg_BA_13_15_Recherche.csv" />
-    <None Include="Data\RepBrDrg_HA_13_15_Hauptdiagnose.csv" />
-    <None Include="Data\RepBrDrg_HA_13_15_Kopfdaten.csv" />
-    <None Include="Data\RepBrDrg_HA_13_15_Kosten.csv" />
-    <None Include="Data\RepBrDrg_HA_13_15_Mdc.csv" />
-    <None Include="Data\RepBrDrg_HA_13_15_Nebendiagnosen.csv" />
-    <None Include="Data\RepBrDrg_HA_13_15_Prozeduren.csv" />
-    <None Include="Data\RepBrDrg_HA_13_15_Recherche.csv" />
+    <None Include="Data\2015\RepBrDrg_13_15_Drg.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\2015\RepBrDrg_13_15_Kostenbereich.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\2015\RepBrDrg_BA_13_15_Hauptdiagnose.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\2015\RepBrDrg_BA_13_15_Kopfdaten.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\2015\RepBrDrg_BA_13_15_Kosten.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\2015\RepBrDrg_BA_13_15_Mdc.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\2015\RepBrDrg_BA_13_15_Nebendiagnosen.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\2015\RepBrDrg_BA_13_15_Prozeduren.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\2015\RepBrDrg_BA_13_15_Recherche.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\2015\RepBrDrg_HA_13_15_Hauptdiagnose.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\2015\RepBrDrg_HA_13_15_Kopfdaten.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\2015\RepBrDrg_HA_13_15_Kosten.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\2015\RepBrDrg_HA_13_15_Mdc.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\2015\RepBrDrg_HA_13_15_Nebendiagnosen.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\2015\RepBrDrg_HA_13_15_Prozeduren.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\2015\RepBrDrg_HA_13_15_Recherche.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
