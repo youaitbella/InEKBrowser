@@ -1697,8 +1697,8 @@ namespace org.inek.InekBrowser.GUI {
                 return new List<SystemData> { peppData };
             } if(Program.SystemBrowser == Program.System.Drg){
                 SystemInfo info = CsvData.Context().SystemInfo.Single(drg => drg.Code == systemCode);
-                string mdcTag = CsvData.Context().System.Where(drg => drg.Code == SystemCode).Select(drg => drg.Category).Single();
-                info.MdcCat = CsvData.Context().Mdcs.Where(mdc => mdc.MDC == mdcTag).Select(mdc => mdc.Text).Single();
+                string mdcTag = CsvData.Context().System.Where(drg => drg.Code == SystemCode).Select(drg => drg.Category).Single().Trim();
+                info.MdcCat = CsvData.Context().Mdcs.Where(mdc => mdc.MDC.Trim() == mdcTag).Select(mdc => mdc.Text).Single();
                 info.DrgTxt = cbxSystem.Text;
                 var drgData = new SystemData(info);
                 //Primary Diagnoses
