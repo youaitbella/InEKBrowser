@@ -1,10 +1,11 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
+using System.Resources;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using combit.ListLabel20;
@@ -64,7 +65,7 @@ namespace org.inek.InekBrowser.GUI {
                 pnlContentBackground.BackColor = BrowserColors.DrgBackgroundPanel;
                 peppData.BackColor = BrowserColors.DrgDataBackground;
                 peppData.ColorTextFields(BrowserColors.DrgDataTextField);
-                titleBar.Title = "DRG-Browser " + Program.Year;
+                titleBar.Title = "DRG-Report-Browser " + Program.Year;
                 pnlContentBackground.Controls.Remove(peppData);
                 pnlContentBackground.Controls.Remove(selectionPepp);
                 initDrgSelection();
@@ -387,7 +388,7 @@ namespace org.inek.InekBrowser.GUI {
             Cursor = DefaultCursor;
         }
 
-        private void mnuCosts_Click(object sender, System.EventArgs e) {
+        private void mnuCosts_Click(object sender, EventArgs e) {
             Cursor = Cursors.WaitCursor;
             dlg = new FrmList();
             SetDataHelpProvider(dlg);
@@ -1782,7 +1783,7 @@ namespace org.inek.InekBrowser.GUI {
 
         private void FrmPeppBrowser_Resize(object sender, EventArgs e) {
             if (WindowState == FormWindowState.Maximized) {
-                titleBar.MinMaxImage = (Image)resources.GetObject("peppo_minimize");
+                titleBar.MinMaxImage = Properties.Resources.peppo_minimize;
             } else {
                 titleBar.MinMaxImage = (Image) resources.GetObject("picMinMax.BackgroundImage");
             }

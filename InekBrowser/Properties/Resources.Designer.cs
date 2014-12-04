@@ -133,6 +133,16 @@ namespace org.inek.InekBrowser.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap peppo_minimize {
+            get {
+                object obj = ResourceManager.GetObject("peppo_minimize", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap peppo_print {
             get {
                 object obj = ResourceManager.GetObject("peppo_print", resourceCulture);

@@ -43,7 +43,8 @@ namespace org.inek.InekBrowser.GUI {
                 titleBar.Title = "Code-Browser " + Program.Year;
                 this.BackColor = BrowserColors.PeppSplashScreen;
                 label1.Text = "Code-Browser\nVersion " + Program.Year + ".1\n© InEK GmbH";
-            }
+            } else if(Program.SystemBrowser == Program.System.Unknown)
+                Application.Exit();
         }
 
         private static void SetSystem(string system) {

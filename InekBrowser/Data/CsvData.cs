@@ -1,13 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Data;
-using System.Globalization;
 using System.IO;
-using System.Net.Mail;
-using System.Reflection;
 using org.inek.InekBrowser.Data.Entities;
-using org.inek.controls.helper;
 
 namespace org.inek.InekBrowser.Data {
     /// <summary>
