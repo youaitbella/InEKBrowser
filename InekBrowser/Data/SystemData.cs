@@ -21,6 +21,9 @@ namespace org.inek.InekBrowser.Data {
         public List<SecondaryDiagnosis> SecDiag { get; set; }
         public List<Procedure> Proc { get; set; }
         public List<Cost> Cost { get; set; }
+        public int casesDrgMDC { get; set; }
+        public int casesMDC { get; set; }
+        public string fromMDC { get; set; }
 
     }
 
