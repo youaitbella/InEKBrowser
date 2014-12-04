@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using org.inek.controls.util;
 using org.inek.InekBrowser.Data;
-using org.inek.InekBrowser.Data.Entities;
 
 namespace org.inek.InekBrowser.GUI {
     public partial class FrmSplash : Form {

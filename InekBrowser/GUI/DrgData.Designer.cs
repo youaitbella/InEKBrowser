@@ -158,7 +158,7 @@
             this.grpMdc.ForeColor = System.Drawing.Color.White;
             this.grpMdc.Location = new System.Drawing.Point(6, 13);
             this.grpMdc.Name = "grpMdc";
-            this.grpMdc.Size = new System.Drawing.Size(968, 38);
+            this.grpMdc.Size = new System.Drawing.Size(1001, 38);
             this.grpMdc.TabIndex = 25;
             this.grpMdc.TabStop = false;
             // 
@@ -170,7 +170,7 @@
             this.txtN.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtN, "Code-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtN, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtN.Location = new System.Drawing.Point(896, 12);
+            this.txtN.Location = new System.Drawing.Point(929, 12);
             this.txtN.Name = "txtN";
             this.txtN.ReadOnly = true;
             this.txtN.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -183,12 +183,12 @@
             // 
             this.lblN.AutoSize = true;
             this.lblN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblN.Location = new System.Drawing.Point(871, 14);
+            this.lblN.Location = new System.Drawing.Point(904, 14);
             this.lblN.Name = "lblN";
             this.lblN.Size = new System.Drawing.Size(19, 15);
             this.lblN.TabIndex = 55;
             this.lblN.Text = "N:";
-            this.toolTip.SetToolTip(this.lblN, "28 Tage - 1 Jahr");
+            this.toolTip.SetToolTip(this.lblN, "Anzahl Fälle in MDC");
             // 
             // txtNumDrgs
             // 
@@ -198,7 +198,7 @@
             this.txtNumDrgs.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtNumDrgs, "Code-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtNumDrgs, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtNumDrgs.Location = new System.Drawing.Point(804, 12);
+            this.txtNumDrgs.Location = new System.Drawing.Point(837, 12);
             this.txtNumDrgs.Name = "txtNumDrgs";
             this.txtNumDrgs.ReadOnly = true;
             this.txtNumDrgs.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -211,12 +211,12 @@
             // 
             this.lblNumDrgs.AutoSize = true;
             this.lblNumDrgs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumDrgs.Location = new System.Drawing.Point(734, 14);
+            this.lblNumDrgs.Location = new System.Drawing.Point(767, 14);
             this.lblNumDrgs.Name = "lblNumDrgs";
             this.lblNumDrgs.Size = new System.Drawing.Size(69, 15);
             this.lblNumDrgs.TabIndex = 53;
             this.lblNumDrgs.Text = "Anz. DRGs:";
-            this.toolTip.SetToolTip(this.lblNumDrgs, "28 Tage - 1 Jahr");
+            this.toolTip.SetToolTip(this.lblNumDrgs, "Anzahl DRGs");
             // 
             // txtMdcText
             // 
@@ -227,12 +227,12 @@
             this.txtMdcText.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtMdcText, "Code-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtMdcText, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtMdcText.Location = new System.Drawing.Point(63, 12);
+            this.txtMdcText.Location = new System.Drawing.Point(66, 12);
             this.txtMdcText.Name = "txtMdcText";
             this.txtMdcText.ReadOnly = true;
             this.txtMdcText.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtMdcText, true);
-            this.txtMdcText.Size = new System.Drawing.Size(665, 21);
+            this.txtMdcText.Size = new System.Drawing.Size(695, 21);
             this.txtMdcText.TabIndex = 52;
             // 
             // txtMdcNum
@@ -244,7 +244,7 @@
             this.txtMdcNum.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtMdcNum, "Code-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtMdcNum, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtMdcNum.Location = new System.Drawing.Point(6, 12);
+            this.txtMdcNum.Location = new System.Drawing.Point(9, 12);
             this.txtMdcNum.Name = "txtMdcNum";
             this.txtMdcNum.ReadOnly = true;
             this.txtMdcNum.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -879,7 +879,7 @@
             this.grpBigAge.ForeColor = System.Drawing.Color.White;
             this.grpBigAge.Location = new System.Drawing.Point(705, 52);
             this.grpBigAge.Name = "grpBigAge";
-            this.grpBigAge.Size = new System.Drawing.Size(269, 213);
+            this.grpBigAge.Size = new System.Drawing.Size(302, 213);
             this.grpBigAge.TabIndex = 18;
             this.grpBigAge.TabStop = false;
             this.grpBigAge.Text = "Alter (%)";
@@ -892,12 +892,12 @@
             this.txtGt79Year.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtGt79Year, "Code-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtGt79Year, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtGt79Year.Location = new System.Drawing.Point(212, 181);
+            this.txtGt79Year.Location = new System.Drawing.Point(240, 182);
             this.txtGt79Year.Name = "txtGt79Year";
             this.txtGt79Year.ReadOnly = true;
             this.txtGt79Year.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.helpProvider1.SetShowHelp(this.txtGt79Year, true);
-            this.txtGt79Year.Size = new System.Drawing.Size(46, 21);
+            this.txtGt79Year.Size = new System.Drawing.Size(56, 21);
             this.txtGt79Year.TabIndex = 31;
             this.txtGt79Year.Text = "0";
             // 
@@ -905,7 +905,7 @@
             // 
             this.lblGtYear79.AutoSize = true;
             this.lblGtYear79.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGtYear79.Location = new System.Drawing.Point(132, 183);
+            this.lblGtYear79.Location = new System.Drawing.Point(159, 183);
             this.lblGtYear79.Name = "lblGtYear79";
             this.lblGtYear79.Size = new System.Drawing.Size(75, 15);
             this.lblGtYear79.TabIndex = 30;
@@ -919,12 +919,12 @@
             this.txtBt75Year79.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt75Year79, "Code-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt75Year79, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt75Year79.Location = new System.Drawing.Point(212, 158);
+            this.txtBt75Year79.Location = new System.Drawing.Point(240, 159);
             this.txtBt75Year79.Name = "txtBt75Year79";
             this.txtBt75Year79.ReadOnly = true;
             this.txtBt75Year79.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.helpProvider1.SetShowHelp(this.txtBt75Year79, true);
-            this.txtBt75Year79.Size = new System.Drawing.Size(46, 21);
+            this.txtBt75Year79.Size = new System.Drawing.Size(56, 21);
             this.txtBt75Year79.TabIndex = 29;
             this.txtBt75Year79.Text = "0";
             // 
@@ -932,7 +932,7 @@
             // 
             this.lblBt75Year79.AutoSize = true;
             this.lblBt75Year79.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBt75Year79.Location = new System.Drawing.Point(134, 160);
+            this.lblBt75Year79.Location = new System.Drawing.Point(161, 160);
             this.lblBt75Year79.Name = "lblBt75Year79";
             this.lblBt75Year79.Size = new System.Drawing.Size(73, 15);
             this.lblBt75Year79.TabIndex = 28;
@@ -946,12 +946,12 @@
             this.txtBt65Year74.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt65Year74, "Code-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt65Year74, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt65Year74.Location = new System.Drawing.Point(212, 135);
+            this.txtBt65Year74.Location = new System.Drawing.Point(240, 136);
             this.txtBt65Year74.Name = "txtBt65Year74";
             this.txtBt65Year74.ReadOnly = true;
             this.txtBt65Year74.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.helpProvider1.SetShowHelp(this.txtBt65Year74, true);
-            this.txtBt65Year74.Size = new System.Drawing.Size(46, 21);
+            this.txtBt65Year74.Size = new System.Drawing.Size(56, 21);
             this.txtBt65Year74.TabIndex = 27;
             this.txtBt65Year74.Text = "0";
             // 
@@ -959,7 +959,7 @@
             // 
             this.lblBt65Year74.AutoSize = true;
             this.lblBt65Year74.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBt65Year74.Location = new System.Drawing.Point(134, 137);
+            this.lblBt65Year74.Location = new System.Drawing.Point(161, 137);
             this.lblBt65Year74.Name = "lblBt65Year74";
             this.lblBt65Year74.Size = new System.Drawing.Size(73, 15);
             this.lblBt65Year74.TabIndex = 26;
@@ -973,12 +973,12 @@
             this.txtBt60Year64.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt60Year64, "Code-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt60Year64, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt60Year64.Location = new System.Drawing.Point(212, 112);
+            this.txtBt60Year64.Location = new System.Drawing.Point(240, 113);
             this.txtBt60Year64.Name = "txtBt60Year64";
             this.txtBt60Year64.ReadOnly = true;
             this.txtBt60Year64.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.helpProvider1.SetShowHelp(this.txtBt60Year64, true);
-            this.txtBt60Year64.Size = new System.Drawing.Size(46, 21);
+            this.txtBt60Year64.Size = new System.Drawing.Size(56, 21);
             this.txtBt60Year64.TabIndex = 25;
             this.txtBt60Year64.Text = "0";
             // 
@@ -986,7 +986,7 @@
             // 
             this.lblBt60Year64.AutoSize = true;
             this.lblBt60Year64.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBt60Year64.Location = new System.Drawing.Point(134, 114);
+            this.lblBt60Year64.Location = new System.Drawing.Point(161, 114);
             this.lblBt60Year64.Name = "lblBt60Year64";
             this.lblBt60Year64.Size = new System.Drawing.Size(73, 15);
             this.lblBt60Year64.TabIndex = 24;
@@ -1000,12 +1000,12 @@
             this.txtBt55Year59.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt55Year59, "Code-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt55Year59, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt55Year59.Location = new System.Drawing.Point(212, 89);
+            this.txtBt55Year59.Location = new System.Drawing.Point(240, 90);
             this.txtBt55Year59.Name = "txtBt55Year59";
             this.txtBt55Year59.ReadOnly = true;
             this.txtBt55Year59.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.helpProvider1.SetShowHelp(this.txtBt55Year59, true);
-            this.txtBt55Year59.Size = new System.Drawing.Size(46, 21);
+            this.txtBt55Year59.Size = new System.Drawing.Size(56, 21);
             this.txtBt55Year59.TabIndex = 23;
             this.txtBt55Year59.Text = "0";
             // 
@@ -1013,7 +1013,7 @@
             // 
             this.lblBt55Year59.AutoSize = true;
             this.lblBt55Year59.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBt55Year59.Location = new System.Drawing.Point(134, 91);
+            this.lblBt55Year59.Location = new System.Drawing.Point(161, 91);
             this.lblBt55Year59.Name = "lblBt55Year59";
             this.lblBt55Year59.Size = new System.Drawing.Size(73, 15);
             this.lblBt55Year59.TabIndex = 22;
@@ -1027,12 +1027,12 @@
             this.txtBt50Year54.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt50Year54, "Code-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt50Year54, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt50Year54.Location = new System.Drawing.Point(212, 66);
+            this.txtBt50Year54.Location = new System.Drawing.Point(240, 67);
             this.txtBt50Year54.Name = "txtBt50Year54";
             this.txtBt50Year54.ReadOnly = true;
             this.txtBt50Year54.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.helpProvider1.SetShowHelp(this.txtBt50Year54, true);
-            this.txtBt50Year54.Size = new System.Drawing.Size(46, 21);
+            this.txtBt50Year54.Size = new System.Drawing.Size(56, 21);
             this.txtBt50Year54.TabIndex = 21;
             this.txtBt50Year54.Text = "0";
             // 
@@ -1040,7 +1040,7 @@
             // 
             this.lblBt50Year54.AutoSize = true;
             this.lblBt50Year54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBt50Year54.Location = new System.Drawing.Point(133, 68);
+            this.lblBt50Year54.Location = new System.Drawing.Point(160, 68);
             this.lblBt50Year54.Name = "lblBt50Year54";
             this.lblBt50Year54.Size = new System.Drawing.Size(73, 15);
             this.lblBt50Year54.TabIndex = 20;
@@ -1054,12 +1054,12 @@
             this.txtBt40Year49.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt40Year49, "Code-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt40Year49, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt40Year49.Location = new System.Drawing.Point(212, 43);
+            this.txtBt40Year49.Location = new System.Drawing.Point(240, 44);
             this.txtBt40Year49.Name = "txtBt40Year49";
             this.txtBt40Year49.ReadOnly = true;
             this.txtBt40Year49.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.helpProvider1.SetShowHelp(this.txtBt40Year49, true);
-            this.txtBt40Year49.Size = new System.Drawing.Size(46, 21);
+            this.txtBt40Year49.Size = new System.Drawing.Size(56, 21);
             this.txtBt40Year49.TabIndex = 19;
             this.txtBt40Year49.Text = "0";
             // 
@@ -1067,7 +1067,7 @@
             // 
             this.lblBt40Year49.AutoSize = true;
             this.lblBt40Year49.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBt40Year49.Location = new System.Drawing.Point(133, 45);
+            this.lblBt40Year49.Location = new System.Drawing.Point(160, 45);
             this.lblBt40Year49.Name = "lblBt40Year49";
             this.lblBt40Year49.Size = new System.Drawing.Size(73, 15);
             this.lblBt40Year49.TabIndex = 18;
@@ -1081,12 +1081,12 @@
             this.txtBt30Year39.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt30Year39, "Code-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt30Year39, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt30Year39.Location = new System.Drawing.Point(212, 20);
+            this.txtBt30Year39.Location = new System.Drawing.Point(240, 21);
             this.txtBt30Year39.Name = "txtBt30Year39";
             this.txtBt30Year39.ReadOnly = true;
             this.txtBt30Year39.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.helpProvider1.SetShowHelp(this.txtBt30Year39, true);
-            this.txtBt30Year39.Size = new System.Drawing.Size(46, 21);
+            this.txtBt30Year39.Size = new System.Drawing.Size(56, 21);
             this.txtBt30Year39.TabIndex = 17;
             this.txtBt30Year39.Text = "0";
             // 
@@ -1094,7 +1094,7 @@
             // 
             this.lblBt30Year39.AutoSize = true;
             this.lblBt30Year39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBt30Year39.Location = new System.Drawing.Point(134, 22);
+            this.lblBt30Year39.Location = new System.Drawing.Point(161, 22);
             this.lblBt30Year39.Name = "lblBt30Year39";
             this.lblBt30Year39.Size = new System.Drawing.Size(73, 15);
             this.lblBt30Year39.TabIndex = 16;
@@ -1108,12 +1108,12 @@
             this.txtBt18Year29.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt18Year29, "Code-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt18Year29, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt18Year29.Location = new System.Drawing.Point(81, 181);
+            this.txtBt18Year29.Location = new System.Drawing.Point(83, 181);
             this.txtBt18Year29.Name = "txtBt18Year29";
             this.txtBt18Year29.ReadOnly = true;
             this.txtBt18Year29.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.helpProvider1.SetShowHelp(this.txtBt18Year29, true);
-            this.txtBt18Year29.Size = new System.Drawing.Size(47, 21);
+            this.txtBt18Year29.Size = new System.Drawing.Size(57, 21);
             this.txtBt18Year29.TabIndex = 15;
             this.txtBt18Year29.Text = "0";
             // 
@@ -1135,12 +1135,12 @@
             this.txtBt16Year17.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt16Year17, "Code-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt16Year17, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt16Year17.Location = new System.Drawing.Point(81, 158);
+            this.txtBt16Year17.Location = new System.Drawing.Point(83, 158);
             this.txtBt16Year17.Name = "txtBt16Year17";
             this.txtBt16Year17.ReadOnly = true;
             this.txtBt16Year17.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.helpProvider1.SetShowHelp(this.txtBt16Year17, true);
-            this.txtBt16Year17.Size = new System.Drawing.Size(47, 21);
+            this.txtBt16Year17.Size = new System.Drawing.Size(57, 21);
             this.txtBt16Year17.TabIndex = 13;
             this.txtBt16Year17.Text = "0";
             // 
@@ -1162,12 +1162,12 @@
             this.txtBt10Year15.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt10Year15, "Code-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt10Year15, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt10Year15.Location = new System.Drawing.Point(81, 135);
+            this.txtBt10Year15.Location = new System.Drawing.Point(83, 135);
             this.txtBt10Year15.Name = "txtBt10Year15";
             this.txtBt10Year15.ReadOnly = true;
             this.txtBt10Year15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.helpProvider1.SetShowHelp(this.txtBt10Year15, true);
-            this.txtBt10Year15.Size = new System.Drawing.Size(47, 21);
+            this.txtBt10Year15.Size = new System.Drawing.Size(57, 21);
             this.txtBt10Year15.TabIndex = 11;
             this.txtBt10Year15.Text = "0";
             // 
@@ -1189,12 +1189,12 @@
             this.txtBt6Year9.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt6Year9, "Code-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt6Year9, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt6Year9.Location = new System.Drawing.Point(81, 112);
+            this.txtBt6Year9.Location = new System.Drawing.Point(83, 112);
             this.txtBt6Year9.Name = "txtBt6Year9";
             this.txtBt6Year9.ReadOnly = true;
             this.txtBt6Year9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.helpProvider1.SetShowHelp(this.txtBt6Year9, true);
-            this.txtBt6Year9.Size = new System.Drawing.Size(47, 21);
+            this.txtBt6Year9.Size = new System.Drawing.Size(57, 21);
             this.txtBt6Year9.TabIndex = 9;
             this.txtBt6Year9.Text = "0";
             // 
@@ -1216,12 +1216,12 @@
             this.txtBt3Year5.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt3Year5, "Code-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt3Year5, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt3Year5.Location = new System.Drawing.Point(81, 89);
+            this.txtBt3Year5.Location = new System.Drawing.Point(83, 89);
             this.txtBt3Year5.Name = "txtBt3Year5";
             this.txtBt3Year5.ReadOnly = true;
             this.txtBt3Year5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.helpProvider1.SetShowHelp(this.txtBt3Year5, true);
-            this.txtBt3Year5.Size = new System.Drawing.Size(47, 21);
+            this.txtBt3Year5.Size = new System.Drawing.Size(57, 21);
             this.txtBt3Year5.TabIndex = 7;
             this.txtBt3Year5.Text = "0";
             // 
@@ -1243,12 +1243,12 @@
             this.txtBt1Year2.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt1Year2, "Code-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt1Year2, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt1Year2.Location = new System.Drawing.Point(81, 66);
+            this.txtBt1Year2.Location = new System.Drawing.Point(83, 66);
             this.txtBt1Year2.Name = "txtBt1Year2";
             this.txtBt1Year2.ReadOnly = true;
             this.txtBt1Year2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.helpProvider1.SetShowHelp(this.txtBt1Year2, true);
-            this.txtBt1Year2.Size = new System.Drawing.Size(47, 21);
+            this.txtBt1Year2.Size = new System.Drawing.Size(57, 21);
             this.txtBt1Year2.TabIndex = 5;
             this.txtBt1Year2.Text = "0";
             // 
@@ -1270,12 +1270,12 @@
             this.txtBt28Days1Year.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtBt28Days1Year, "Code-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtBt28Days1Year, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtBt28Days1Year.Location = new System.Drawing.Point(81, 43);
+            this.txtBt28Days1Year.Location = new System.Drawing.Point(83, 43);
             this.txtBt28Days1Year.Name = "txtBt28Days1Year";
             this.txtBt28Days1Year.ReadOnly = true;
             this.txtBt28Days1Year.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.helpProvider1.SetShowHelp(this.txtBt28Days1Year, true);
-            this.txtBt28Days1Year.Size = new System.Drawing.Size(47, 21);
+            this.txtBt28Days1Year.Size = new System.Drawing.Size(57, 21);
             this.txtBt28Days1Year.TabIndex = 3;
             this.txtBt28Days1Year.Text = "0";
             // 
@@ -1298,12 +1298,12 @@
             this.txtLT28Days.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtLT28Days, "Code-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtLT28Days, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtLT28Days.Location = new System.Drawing.Point(81, 20);
+            this.txtLT28Days.Location = new System.Drawing.Point(83, 20);
             this.txtLT28Days.Name = "txtLT28Days";
             this.txtLT28Days.ReadOnly = true;
             this.txtLT28Days.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.helpProvider1.SetShowHelp(this.txtLT28Days, true);
-            this.txtLT28Days.Size = new System.Drawing.Size(47, 21);
+            this.txtLT28Days.Size = new System.Drawing.Size(57, 21);
             this.txtLT28Days.TabIndex = 1;
             this.txtLT28Days.Text = "0";
             // 
@@ -1403,7 +1403,7 @@
             this.lblFemale.AutoSize = true;
             this.lblFemale.BackColor = System.Drawing.Color.Transparent;
             this.lblFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFemale.Location = new System.Drawing.Point(6, 47);
+            this.lblFemale.Location = new System.Drawing.Point(6, 74);
             this.lblFemale.Name = "lblFemale";
             this.lblFemale.Size = new System.Drawing.Size(57, 15);
             this.lblFemale.TabIndex = 16;
@@ -1425,7 +1425,7 @@
             this.lblMale.AutoSize = true;
             this.lblMale.BackColor = System.Drawing.Color.Transparent;
             this.lblMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMale.Location = new System.Drawing.Point(6, 74);
+            this.lblMale.Location = new System.Drawing.Point(6, 47);
             this.lblMale.Name = "lblMale";
             this.lblMale.Size = new System.Drawing.Size(61, 15);
             this.lblMale.TabIndex = 15;

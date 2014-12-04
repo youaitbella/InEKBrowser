@@ -4,8 +4,6 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
-using System.Reflection;
-using System.Resources;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using combit.ListLabel20;
@@ -1395,16 +1393,30 @@ namespace org.inek.InekBrowser.GUI {
 
 
         private void druckenToolStripMenuItem_Click(object sender, EventArgs e) {
-            if (string.IsNullOrEmpty(SystemCode)) {
-                MessageBox.Show("Keine PEPP gewählt. Druck nicht möglich!");
-                return;
+            if (Program.SystemBrowser == Program.System.Pepp) {
+                if (string.IsNullOrEmpty(SystemCode)) {
+                    MessageBox.Show("Keine PEPP gewählt. Druck nicht möglich!");
+                    return;
+                }
+                if (MessageBox.Show(this, "Wollen Sie die PEPP " + SystemCode + " jetzt ausdrucken?\n\n" +
+                                          "Hinweis: Es wird die komplette PEPP ausgedruckt. Um einzelne Seiten auszudrucken, " +
+                                          "benutzen Sie bitte den PDF-Export und einen geeigneten PDF-Reader (z.B. Adobe Acrobat Reader)",
+                                          "Drucken - " + SystemCode, MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK) {
+                    CreateReport(OutputType.Print);
+                }
+            } else if (Program.SystemBrowser == Program.System.Drg) {
+                if (string.IsNullOrEmpty(SystemCode)) {
+                    MessageBox.Show("Keine DRG gewählt. Druck nicht möglich!");
+                    return;
+                }
+                if (MessageBox.Show(this, "Wollen Sie die DRG " + SystemCode + " jetzt ausdrucken?\n\n" +
+                                          "Hinweis: Es wird die komplette DRG ausgedruckt. Um einzelne Seiten auszudrucken, " +
+                                          "benutzen Sie bitte den PDF-Export und einen geeigneten PDF-Reader (z.B. Adobe Acrobat Reader)",
+                                          "Drucken - " + SystemCode, MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK) {
+                    CreateReport(OutputType.Print);
+                }
             }
-            if (MessageBox.Show(this, "Wollen Sie die PEPP " + SystemCode + " jetzt ausdrucken?\n\n" +
-                                      "Hinweis: Es wird die komplette PEPP ausgedruckt. Um einzelne Seiten auszudrucken, " +
-                                      "benutzen Sie bitte den PDF-Export und einen geeigneten PDF-Reader (z.B. Adobe Acrobat Reader)",
-                                      "Drucken - " + SystemCode, MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK) {
-                CreateReport(OutputType.Print);   
-            }
+            
         }
 
         private void CreateReport(OutputType outputType) {
