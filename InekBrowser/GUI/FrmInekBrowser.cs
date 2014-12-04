@@ -1443,20 +1443,19 @@ namespace org.inek.InekBrowser.GUI {
                 MessageBox.Show("Keine PEPP gewählt. Druck nicht möglich!");
                 return;
             }
-            else{
-                Reporter reporter = new Reporter();
-                reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Design, "peppDruck", setReportData(SystemCode), "data");    
-            }
-
             if (string.IsNullOrEmpty(SystemCode) && Program.SystemBrowser == Program.System.Drg) {
                 MessageBox.Show("Keine DRG gewählt. Druck nicht möglich!");
                 return;
             }
-            else {
+            
+            if(Program.SystemBrowser == Program.System.Pepp) {
+            Reporter reporter = new Reporter();
+                reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Design, "peppDruck", setReportData(SystemCode), "data");    
+            }
+            else if (Program.SystemBrowser == Program.System.Drg) {
                 Reporter reporter = new Reporter();
                 reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Design, "drgDruck", setReportData(SystemCode), "data");
             }
-            
         }
 
 
@@ -1696,12 +1695,17 @@ namespace org.inek.InekBrowser.GUI {
                     }).ToList();
 
                 return new List<SystemData> { peppData };
+
             } if(Program.SystemBrowser == Program.System.Drg){
                 SystemInfo info = CsvData.Context().SystemInfo.Single(drg => drg.Code == systemCode);
                 string mdcTag = CsvData.Context().System.Where(drg => drg.Code == SystemCode).Select(drg => drg.Category).Single().Trim();
                 info.MdcCat = CsvData.Context().Mdcs.Where(mdc => mdc.MDC.Trim() == mdcTag).Select(mdc => mdc.Text).Single();
                 info.DrgTxt = cbxSystem.Text;
                 var drgData = new SystemData(info);
+                var q2 = CsvData.Context().Mdcs.Where(mdc => mdc.MDC.Trim() == drgData.MDC.Trim());
+                drgData.casesMDC = q2.Select(mdc => mdc.CaseCount).Single();
+                drgData.fromMDC = (((decimal)drgData.CaseCount / (decimal)drgData.casesMDC)*100).ToString();
+                drgData.casesDrgMDC  = q2.Select(mdc => mdc.DrgCount).Single();
                 //Primary Diagnoses
                 drgData.PrimDiag = CsvData.Context().PrimaryDiagnoses.Where(p => p.SystemCode == systemCode)
                     .Join(CsvData.Context().Recherche.Where(r => r.PrimaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
