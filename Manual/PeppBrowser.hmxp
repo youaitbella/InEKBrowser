@@ -110,10 +110,10 @@
       </tablestyleclass>
     </styleclasses>
     <config-group name="project">
-      <config-value name="title" translate="true">PEPP-Browser 2014</config-value>
+      <config-value name="title" translate="true">PEPP-Browser 2015</config-value>
       <config-value name="author" translate="true">InEK GmbH</config-value>
       <config-value name="copyright" translate="true">© &lt;%YEAR%&gt; InEK GmbH, Siegburg</config-value>
-      <config-value name="versionmajor">2014</config-value>
+      <config-value name="versionmajor">2015</config-value>
       <config-value name="versionminor">1</config-value>
       <config-value name="lcid" translate="true">de-de</config-value>
       <config-value name="charset" translate="true">ANSI_CHARSET</config-value>
@@ -159,7 +159,8 @@
       </config-group>
       <config-value name="make6include">EBOOK</config-value>
       <config-value name="make6status">*</config-value>
-      <config-value name="summary" translate="true">PEPP-Browser 2014</config-value>
+      <config-value name="summary" translate="true">PEPP-Browser 2015</config-value>
+      <config-value name="versionbuild">0</config-value>
     </config-group>
     <config-group name="user">
       <config-group name="muellermi">
@@ -451,17 +452,18 @@ nsrInit();
       <config-value name="insertseealso">0</config-value>
     </config-group>
     <variables>
+      <variable id="DOWNLOAD_LINK" type="text" translate="true">http://g-drg.de/PeppBrowser/2015/Pepp-Browser2015Setup.exe</variable>
       <variable id="FIGURE" type="text" translate="true">Abb. &lt;%FIGURE++%&gt;:</variable>
       <variable id="FIGURE++" type="text" translate="true">0</variable>
-      <variable id="FILE_COST" type="text" translate="true">PeppBr_12_14_Kosten.csv</variable>
-      <variable id="FILE_COST_DOMAIN" type="text" translate="true">PeppBr_12_14_Kostenbereich.csv</variable>
-      <variable id="FILE_HD" type="text" translate="true">PeppBr_12_14_Hauptdiagnose.csv</variable>
-      <variable id="FILE_HEADDATA" type="text" translate="true">PeppBr_12_14_Kopfdaten.csv</variable>
-      <variable id="FILE_ND" type="text" translate="true">PeppBr_12_14_Nebendiagnose.csv</variable>
-      <variable id="FILE_PEPP" type="text" translate="true">PeppBr_12_14_Pepp.csv</variable>
-      <variable id="FILE_PROC" type="text" translate="true">PeppBr_12_14_Prozeduren.csv</variable>
-      <variable id="FILE_RECHERCHE" type="text" translate="true">PeppBr_12_14_Recherche.csv</variable>
-      <variable id="FILE_SK" type="text" translate="true">PeppBr_12_14_Strukturkategorie.csv</variable>
+      <variable id="FILE_COST" type="text" translate="true">PeppBr_13_15_Kosten.csv</variable>
+      <variable id="FILE_COST_DOMAIN" type="text" translate="true">PeppBr_13_15_Kostenbereich.csv</variable>
+      <variable id="FILE_HD" type="text" translate="true">PeppBr_13_15_Hauptdiagnose.csv</variable>
+      <variable id="FILE_HEADDATA" type="text" translate="true">PeppBr_13_15_Kopfdaten.csv</variable>
+      <variable id="FILE_ND" type="text" translate="true">PeppBr_13_15_Nebendiagnose.csv</variable>
+      <variable id="FILE_PEPP" type="text" translate="true">PeppBr_13_15_Pepp.csv</variable>
+      <variable id="FILE_PROC" type="text" translate="true">PeppBr_13_15_Prozeduren.csv</variable>
+      <variable id="FILE_RECHERCHE" type="text" translate="true">PeppBr_13_15_Recherche.csv</variable>
+      <variable id="FILE_SK" type="text" translate="true">PeppBr_13_15_Strukturkategorie.csv</variable>
       <variable id="TITLE2" type="text" translate="true">PEPP-Browser</variable>
     </variables>
     <helpcontext-numbers/>
