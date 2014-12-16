@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.IO;
+using System.Windows.Forms;
 using org.inek.InekBrowser.Data.Entities;
 
 namespace org.inek.InekBrowser.Data {
@@ -302,29 +303,35 @@ namespace org.inek.InekBrowser.Data {
             bool isFirstLine = true;
             string relativeName = "Data\\" + Program.Year + "\\" + filename;
 
-
-            foreach (string line in File.ReadLines(relativeName)) {
-                if (isFirstLine) {
-                    isFirstLine = false;
-                    if (line != headline) {
-                        throw new DataException("Wrong headline");
+            try {
+                foreach (string line in File.ReadLines(relativeName)) {
+                    if (isFirstLine) {
+                        isFirstLine = false;
+                        if (line != headline) {
+                            throw new DataException("Wrong headline");
+                        }
+                    } else {
+                        string[] tokens = line.Split(new[] {";"}, StringSplitOptions.None);
+                        if (tokens.Length != names.Count) {
+                            throw new DataException("Wrong field count");
+                        }
+                        if (Program.SystemBrowser == Program.System.Pepp)
+                            MapPeppCsv2Entity(headline, tokens);
+                        else if (Program.SystemBrowser == Program.System.Drg &&
+                                 (filename.StartsWith("RepBrDrg_BA") || filename.EndsWith("_Drg.csv") ||
+                                  filename.EndsWith("_Kostenbereich.csv")) &&
+                                 DrgSystemType == DrgType.BA)
+                            MapDrgBaCsv2Entity(headline, tokens);
+                        else if (Program.SystemBrowser == Program.System.Drg &&
+                                 (filename.StartsWith("RepBrDrg_HA") || filename.EndsWith("_Drg.csv") ||
+                                  filename.EndsWith("_Kostenbereich.csv")) &&
+                                 DrgSystemType == DrgType.HA)
+                            MapDrgHaCsv2Entity(headline, tokens);
                     }
-                } else {
-                    string[] tokens = line.Split(new[] { ";" }, StringSplitOptions.None);
-                    if (tokens.Length != names.Count) {
-                        throw new DataException("Wrong field count");
-                    }
-                    if(Program.SystemBrowser == Program.System.Pepp)
-                        MapPeppCsv2Entity(headline, tokens);
-                    else if (Program.SystemBrowser == Program.System.Drg && 
-                            (filename.StartsWith("RepBrDrg_BA") || filename.EndsWith("_Drg.csv") || filename.EndsWith("_Kostenbereich.csv")) && 
-                            DrgSystemType == DrgType.BA)
-                        MapDrgBaCsv2Entity(headline, tokens);
-                    else if (Program.SystemBrowser == Program.System.Drg &&
-                            (filename.StartsWith("RepBrDrg_HA") || filename.EndsWith("_Drg.csv") || filename.EndsWith("_Kostenbereich.csv")) &&
-                            DrgSystemType == DrgType.HA)
-                        MapDrgHaCsv2Entity(headline, tokens);
                 }
+            } catch (UnauthorizedAccessException ex) {
+                MessageBox.Show("Fehler: Eine der benötigten Dateien ist bereits mit einem anderen Program geöffnet.", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Exit();
             }
         }
 

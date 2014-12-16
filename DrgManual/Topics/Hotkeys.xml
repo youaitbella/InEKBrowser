@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Hotkeys</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Hotkeys</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Der </text><var styleclass="Normal">&lt;%TITLE2%&gt;</var><text styleclass="Normal" translate="true"> bietet Ihnen durch sogenannten Hotkeys die Möglichkeit, bestimmte Funktionen schneller zu erreichen:</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="3" colcount="2" style="width:50%;">
+      <tr style="vertical-align:top">
+        <td style="width:70px; height:16px;">
+          <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Hotkey</text></para>
+        </td>
+        <td style="width:738px; height:16px;">
+          <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Funktion</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:70px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">F1</text></para>
+        </td>
+        <td style="width:738px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">kontextsensitive Hilfe aufrufen: Hier befinden Sie sich zu manchen Funktionen direkt auf der passenden Seite in der Hilfe.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:70px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">STRG+P</text></para>
+        </td>
+        <td style="width:738px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">Drucken/PDF erzeugen</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"></para>
+  </body>
+</topic>

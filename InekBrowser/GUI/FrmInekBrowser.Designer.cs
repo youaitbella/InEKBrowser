@@ -575,7 +575,7 @@
             this.helpProvider1.SetShowHelp(this, true);
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Code-Browser";
+            this.Text = "Browser";
             this.TransparencyKey = System.Drawing.Color.Pink;
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmPeppBrowser_MouseMove);
             this.Resize += new System.EventHandler(this.FrmPeppBrowser_Resize);

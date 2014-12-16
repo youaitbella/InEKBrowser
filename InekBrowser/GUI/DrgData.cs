@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using System.Xml.Schema;
 
 namespace org.inek.InekBrowser.GUI {
     public partial class DrgData : UserControl {

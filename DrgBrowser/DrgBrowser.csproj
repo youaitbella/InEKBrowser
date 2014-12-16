@@ -24,11 +24,11 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <ProductName>DRG-Report-Browser 2015</ProductName>
-    <PublisherName>Institut für das Entgeltsystem im Krankenhaus GmbH %28InEK GmbH%29</PublisherName>
-    <SuiteName>DRG-Report-Browser 2015</SuiteName>
+    <PublisherName>Institut für das Entgeltsystem im Krankenhaus GmbH %28InEK%29</PublisherName>
+    <SuiteName>DRG-Report-Browser</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationRevision>8</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>

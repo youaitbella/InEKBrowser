@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Rundungen</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Rundungen</text></para>
+    </header>
+    <para style="text-align:justify; tabstops:288px left,372px left ;"><text styleclass="Normal" translate="true">Durch die Rundung der Prozentangaben im Daten- sowie im Profilbereich kann es zu geringfügigen Abweichungen in den Summen der vier Häufigkeitsverteilungen (Verweildauer, PCCL, Geschlecht, Altersverteilung) kommen. </text></para>
+    <para style="text-align:justify; tabstops:288px left,372px left ;"><text styleclass="Normal" translate="true">In den jeweiligen Tabellen (</text><var styleclass="Normal" style="font-style:italic;">&lt;%FILE_HD%&gt;</var><text styleclass="Normal" style="font-style:italic;" translate="true">, </text><var styleclass="Normal" style="font-style:italic;">&lt;%FILE_ND%&gt;</var><text styleclass="Normal" style="font-style:italic;" translate="true">, </text><var styleclass="Normal" style="font-style:italic;">&lt;%FILE_PROC%&gt;</var><text styleclass="Normal" style="font-style:italic;" translate="true">, </text><var styleclass="Normal" style="font-style:italic;">&lt;%FILE_HEADDATA%&gt;</var><text styleclass="Normal" translate="true">) sind die im </text><var styleclass="Normal">&lt;%TITLE2%&gt;</var><text styleclass="Normal" translate="true"> in Prozent dargestellten Werte als Bruchteil zwischen 0 und 1 angegeben und auf vier Dezimalstellen gerundet. </text></para>
+  </body>
+</topic>
