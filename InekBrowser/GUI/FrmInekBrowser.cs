@@ -63,7 +63,7 @@ namespace org.inek.InekBrowser.GUI {
                 pnlContentBackground.BackColor = BrowserColors.DrgBackgroundPanel;
                 peppData.BackColor = BrowserColors.DrgDataBackground;
                 peppData.ColorTextFields(BrowserColors.DrgDataTextField);
-                titleBar.Title = "DRG-Report-Browser " + Program.Year;
+                titleBar.Title = "G-DRG-Report-Browser " + Program.Year;
                 pnlContentBackground.Controls.Remove(peppData);
                 pnlContentBackground.Controls.Remove(selectionPepp);
                 initDrgSelection();
@@ -74,6 +74,8 @@ namespace org.inek.InekBrowser.GUI {
                 initDrgData();
                 tabCosts.Text = "Kosten";
                 mnuCatalogue.Visible = false;
+                this.Text = "G-DRG-Report-Browser " + Program.Year;
+                helpProvider1.HelpNamespace = "DrgBrowser.chm";
             } else if (Program.SystemBrowser == Program.System.Pepp) {
                 titleBar.BackColor = BrowserColors.PeppTitleBar;
                 mnuMain.BackColor = BrowserColors.PeppMenuBand;
@@ -85,8 +87,10 @@ namespace org.inek.InekBrowser.GUI {
                 titleBar.Title = "PEPP-Browser " + Program.Year;
                 lblSystem.Text = "PEPP:";
                 mnuCategories.Text = "Strukturkategorie";
-                mnuSystem.Text = "PEPPs";
+                mnuSystem.Text = "PEPP";
+                helpProvider1.HelpNamespace = "PeppBrowser.chm";
                 peppData.CatalogueActive = false;
+                this.Text = "PEPP-Browser " + Program.Year;
             }
         }
 
@@ -134,7 +138,7 @@ namespace org.inek.InekBrowser.GUI {
             dlg.helpProvider1.SetHelpKeyword(dlg, "Daten.htm");
         }
 
-        private void mnuSystem_Click(object sender, EventArgs e) {
+        private void MnuSystemClick(object sender, EventArgs e) {
             Cursor = Cursors.WaitCursor;
             dlg = new FrmList();
             SetDataHelpProvider(dlg);
@@ -444,6 +448,7 @@ namespace org.inek.InekBrowser.GUI {
                 ka_Relgew = c.RelativeWeight
             });
             dlg.SetDataSource(q);
+            dlg.FormatColumn(2, "#0.0000");
             dlg.Text = "Katalog";
             dlg.ShowDialog();
             Cursor = DefaultCursor;
@@ -589,7 +594,10 @@ namespace org.inek.InekBrowser.GUI {
 
         private void mnuManual_Click(object sender, EventArgs e) {
             try {
-                Process.Start("PeppBrowser.pdf");
+                if(Program.SystemBrowser == Program.System.Pepp) 
+                    Process.Start("PeppBrowser.pdf");
+                else if (Program.SystemBrowser == Program.System.Drg)
+                    Process.Start("DrgBrowser.pdf");
             } catch (Exception) {
                 MessageBox.Show("Kein Handbuch verfügbar.");
             }
@@ -598,7 +606,10 @@ namespace org.inek.InekBrowser.GUI {
 
         private void mnuHelp_Click(object sender, EventArgs e) {
             try {
-                Process.Start("PeppBrowser.chm");
+                if (Program.SystemBrowser == Program.System.Pepp) 
+                    Process.Start("PeppBrowser.chm");
+                else if (Program.SystemBrowser == Program.System.Drg)
+                    Process.Start("DrgBrowser.chm");
             } catch (Exception) {
                 MessageBox.Show("Keine Hilfe verfügbar.");
             }
@@ -1141,7 +1152,7 @@ namespace org.inek.InekBrowser.GUI {
                 cellStyle.Font = f;
             }
             int cellCol = grdCosts.Columns["rowSums"].Index;
-            grdCosts.Rows[grdCosts.Rows.Count - 1].Cells[cellCol].Value = sum.ToString();
+            grdCosts.Rows[grdCosts.Rows.Count - 1].Cells[cellCol].Value = sum.ToString("###,###,###.00");
             grdCosts.Rows[grdCosts.Rows.Count - 1].Cells[cellCol].Style = cellStyle;
         }
 
@@ -1162,7 +1173,7 @@ namespace org.inek.InekBrowser.GUI {
                         sum += decimal.Parse(grdCosts.Rows[rows].Cells[cols].Value.ToString());
                     }
                 }
-                grdCosts.Rows[sumRow].Cells[cols].Value = sum.ToString("F");
+                grdCosts.Rows[sumRow].Cells[cols].Value = sum.ToString("###,###,###.00");
                 grdCosts.Rows[sumRow].Cells[cols].Style = cellStyle;
                 sumsum += sum;
                 sum = 0;
@@ -1192,7 +1203,7 @@ namespace org.inek.InekBrowser.GUI {
                         sum += decimal.Parse(grdCosts.Rows[rows].Cells[cols].Value.ToString());   
                     }
                 }
-                grdCosts.Rows[rows].Cells[sumCol].Value = sum.ToString("F");
+                grdCosts.Rows[rows].Cells[sumCol].Value = sum.ToString("###,###,###.00");
                 grdCosts.Rows[rows].Cells[sumCol].Style = cellStyle;
                 sum = 0;
             }
@@ -1383,7 +1394,9 @@ namespace org.inek.InekBrowser.GUI {
         }
 
         private void tabControl_SelectedIndexChanged(object sender, EventArgs e) {
+            Cursor = Cursors.WaitCursor;
             FillActiveTab(ActiveGrid());
+            Cursor = DefaultCursor;
         }
 
 
@@ -1423,15 +1436,19 @@ namespace org.inek.InekBrowser.GUI {
                 Reporter reporter = new Reporter();
                 //helpProvider1.SetHelpKeyword(this, "Drucken.htm");
                 //timerPrintWindow.Start();
+            try {
                 if (Program.SystemBrowser == Program.System.Drg) {
                     reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, outputType, "drgDruck.lst",
-                                             setReportData(SystemCode), "data"); 
-                }
-                else if (Program.SystemBrowser == Program.System.Pepp) {
+                        setReportData(SystemCode), "data");
+                } else if (Program.SystemBrowser == Program.System.Pepp) {
                     reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, outputType, "peppDruck.lst",
-                                     setReportData(SystemCode), "data");
+                        setReportData(SystemCode), "data");
                 }
-                
+            } catch (Exception ex) {
+                MessageBox.Show(
+                    "Der Druck war nicht erfolgreich. Bitte vergewissern Sie sich, dass Sie einen Druckertreiber installiert haben.\n" + ex.Message,
+                    "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void pDFExportToolStripMenuItem_Click(object sender, EventArgs e) {

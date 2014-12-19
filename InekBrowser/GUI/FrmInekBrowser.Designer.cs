@@ -147,7 +147,7 @@
             this.mnuSystem.Name = "mnuSystem";
             this.mnuSystem.Size = new System.Drawing.Size(185, 22);
             this.mnuSystem.Text = "Code";
-            this.mnuSystem.Click += new System.EventHandler(this.mnuSystem_Click);
+            this.mnuSystem.Click += new System.EventHandler(this.MnuSystemClick);
             // 
             // mnuPeppInfo
             // 

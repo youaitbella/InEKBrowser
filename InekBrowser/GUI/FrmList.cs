@@ -53,6 +53,10 @@ namespace org.inek.InekBrowser.GUI {
             }
         }
 
+        public void FormatColumn(int colId, string format) {
+            grdData.ColumnFormat(format, colId);
+        }
+
         private void FormLoad(object sender, EventArgs e) {
             try {
                 grdData.SizeGrid();

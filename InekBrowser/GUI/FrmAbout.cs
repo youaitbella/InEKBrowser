@@ -40,9 +40,9 @@ namespace org.inek.InekBrowser.GUI {
                 label1.Text = "PEPP-Browser\nVersion " + Program.Year + ".1\n© InEK GmbH";
             } else if (Program.SystemBrowser == Program.System.Drg) {
                 titleBar.BackColor = BrowserColors.DrgSplashScreenTitleBar;
-                titleBar.Title = "DRG-Browser " + Program.Year;
+                titleBar.Title = "G-DRG-Browser " + Program.Year;
                 this.BackColor = BrowserColors.DrgSplashScreen;
-                label1.Text = "DRG-Browser\nVersion " + Program.Year + ".1\n© InEK GmbH";
+                label1.Text = "G-DRG-Browser\nVersion " + Program.Year + ".1\n© InEK GmbH";
             }
         }
 

@@ -63,6 +63,7 @@ namespace org.inek.InekBrowser.GUI {
 
         private void FrmSplash_Shown(object sender, EventArgs e) {
             Visible = false;
+            Cursor = Cursors.WaitCursor;
             try {
                 ResourceController.CheckResourceDir();
                 ResourceController.CheckForResourceFiles();
@@ -78,6 +79,7 @@ namespace org.inek.InekBrowser.GUI {
                 MessageBox.Show(this, ex.Message, "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Application.Exit();
             }
+            Cursor = DefaultCursor;
         }
 
         private void worker_DoWork(object sender, DoWorkEventArgs e) {

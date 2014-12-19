@@ -9,8 +9,8 @@
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Es werden die Hauptdiagnosekodes, die je DRG mindestens vier Fälle repräsentieren, in absteigender Reihenfolge nach Anzahl der Fälle angezeigt. </text></para>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Neben dem Kode und dem Text werden ausgewiesen:</text></para>
     <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
-      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Anzahl Fälle: Anzahl Fälle mit entspr. Hauptdiagnose in der ausgewählten DRG </text></li>
-      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Fälle Anteil: Anteil der Fälle mit entspr. Hauptdiagnose an allen Fällen, in Prozent. (D.h.: Zähler: „Fälle“, Nenner: Fallzahl der DRG)</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Anzahl Fälle: Anzahl Inlier mit entspr. Hauptdiagnose in der ausgewählten DRG </text></li>
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Anteil Fälle: Anteil der Inlier mit entspr. Hauptdiagnose an allen Inliern, in Prozent. (D.h.: Zähler: „Inlier“, Nenner: Inlier der DRG)</text></li>
     </list>
     <para styleclass="Normal"></para>
     <para styleclass="Image Caption"><image src="drgMaindiag.png" scale="100.00%" styleclass="Image Caption"></image></para>

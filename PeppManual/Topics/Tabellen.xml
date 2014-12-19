@@ -9,6 +9,6 @@
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Im unteren Teil des </text><var styleclass="Normal">&lt;%TITLE2%&gt;s</var><text styleclass="Normal" translate="true"> befinden sich vier Datenreiter: Hauptdiagnosen, Nebendiagnosen, Prozeduren und Tageskosten. </text></para>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Jeder dieser Reiter beinhaltet eine Tabelle, die wiederum PEPP-bezogene Informationen bereitstellt. Zum Anzeigen dieser Tabellen müssen Sie zunächst eine PEPP auswählen.</text></para>
     <para styleclass="Normal"></para>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Für die drei kodebezogenen Datenreiter besteht die Möglichkeit der Recherche bzw. des Navigierens innerhalb der möglichen PEPPs, die mit einem bestimmten Kode in Verbindung stehen.</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Für die drei kodebezogenen Datenreiter besteht die Möglichkeit der Recherche bzw. des Navigierens innerhalb der möglichen PEPP, die mit einem bestimmten Kode in Verbindung stehen.</text></para>
   </body>
 </topic>

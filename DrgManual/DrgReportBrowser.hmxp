@@ -40,11 +40,14 @@
     </helpwindows>
     <styleclasses>
       <styleclass name="Normal" shortcut="0">
-        <style-set media="screen" type="para">margin-right:5px; margin-left:5px;</style-set>
+        <style-set media="screen" type="para">margin-right:0px; margin-left:0px; white-space:normal;</style-set>
         <style-set media="screen" type="text">font-family:Arial; font-size:11pt; letter-spacing:normal;</style-set>
       </styleclass>
       <styleclass name="Bullet Text" parentclass="Normal" shortcut="0">
         <style-set media="screen" type="para">text-indent:-24px; margin-top:4px; margin-bottom:4px; margin-left:29px;</style-set>
+      </styleclass>
+      <styleclass name="Button" parentclass="Normal" nextclass="Normal" shortcut="0">
+        <style-set media="screen" type="text">background-color:#e0e0e0;</style-set>
       </styleclass>
       <styleclass name="Code Example" parentclass="Normal" shortcut="0">
         <style-set media="screen" type="para">white-space:nowrap; border:none;</style-set>
@@ -54,7 +57,7 @@
         <style-set media="screen" type="para">text-align:center;</style-set>
       </styleclass>
       <styleclass name="Heading1" parentclass="Normal" shortcut="119">
-        <style-set media="screen" type="para">margin-bottom:0px; page-break-after:avoid; border:none;</style-set>
+        <style-set media="screen" type="para">margin-bottom:10px; page-break-after:avoid; border:none;</style-set>
         <style-set media="screen" type="text">font-size:16pt; font-weight:bold; color:#ffffff; letter-spacing:normal;</style-set>
       </styleclass>
       <styleclass name="Heading2" parentclass="Normal" shortcut="16497">
@@ -83,9 +86,6 @@
       <styleclass name="Indend2" parentclass="Indend" shortcut="0">
         <style-set media="screen" type="para">text-indent:-85px; margin-top:4px; margin-left:114px;</style-set>
       </styleclass>
-      <styleclass name="Button" parentclass="Normal" nextclass="Normal" shortcut="0">
-        <style-set media="screen" type="text">background-color:#e0e0e0;</style-set>
-      </styleclass>
       <styleclass name="Notes" parentclass="Normal" shortcut="0"/>
       <styleclass name="SeeAlso" parentclass="Normal" shortcut="0">
         <style-set media="screen" type="para">background-color:#ccffff;</style-set>
@@ -110,7 +110,7 @@
       </tablestyleclass>
     </styleclasses>
     <config-group name="project">
-      <config-value name="title" translate="true">DRG-Report-Browser 2015</config-value>
+      <config-value name="title" translate="true">G-DRG-Report-Browser 2015</config-value>
       <config-value name="author" translate="true">InEK GmbH</config-value>
       <config-value name="copyright" translate="true">© 2015 InEK GmbH, Siegburg</config-value>
       <config-value name="versionmajor">2015</config-value>
@@ -159,7 +159,7 @@
       </config-group>
       <config-value name="make6include">EBOOK</config-value>
       <config-value name="make6status">*</config-value>
-      <config-value name="summary" translate="true">DRG-Report-Browser 2015</config-value>
+      <config-value name="summary" translate="true">G-DRG-Report-Browser 2015</config-value>
       <config-value name="versionbuild">0</config-value>
     </config-group>
     <config-group name="user">
@@ -194,7 +194,7 @@
       </config-group>
     </config-group>
     <config-group name="chm">
-      <config-value name="outputfile">..\PeppBrowser\PeppBrowser.chm</config-value>
+      <config-value name="outputfile">..\DrgBrowser\DrgBrowser.chm</config-value>
       <config-value name="deletetemp">1</config-value>
     </config-group>
     <config-group name="HTML">
@@ -457,13 +457,13 @@ nsrInit();
       <variable id="FILE_COST" type="text" translate="true">RepBrDrg_BA_13_15_Kosten.csv, RepBrDrg_HA_13_15_Kosten.csv</variable>
       <variable id="FILE_COST_DOMAIN" type="text" translate="true">RepBrDrg_13_15_Kostenbereich.csv</variable>
       <variable id="FILE_DRG" type="text" translate="true">RepBrDrg_13_15_Drg.csv</variable>
-      <variable id="FILE_HD" type="text" translate="true">RepBrDrg_BA_13_15_Hauptdiagnose.csv, RepBrDrg_HA_13_15_Hauptdiagnose.csv</variable>
-      <variable id="FILE_HEADDATA" type="text" translate="true">RepBrDrg_BA_13_15_Kopfdaten.csv, RepBrDrg_HA_13_15_Kopfdaten.csv</variable>
-      <variable id="FILE_MDCS" type="text" translate="true">RepBrDrg_BA_13_15_Mdc.csv, RepBrDrg_HA_13_15_Mdc.csv</variable>
-      <variable id="FILE_ND" type="text" translate="true">RepBrDrg_BA_13_15_Nebendiagnosen.csv, RepBrDrg_HA_13_15_Nebendiagnosen.csv</variable>
-      <variable id="FILE_PROC" type="text" translate="true">RepBrDrg_BA_13_15_Prozeduren.csv, RepBrDrg_HA_13_15_Prozeduren.csv</variable>
-      <variable id="FILE_RECHERCHE" type="text" translate="true">RepBrDrg_BA_13_15_Recherche.csv, RepBrDrg_HA_13_15_Recherche.csv</variable>
-      <variable id="TITLE2" type="text" translate="true">DRG-Report-Browser</variable>
+      <variable id="FILE_HD" type="text" translate="true">RepBrDrg_BA_13_15_Hauptdiagnose.csv bzw. RepBrDrg_HA_13_15_Hauptdiagnose.csv</variable>
+      <variable id="FILE_HEADDATA" type="text" translate="true">RepBrDrg_BA_13_15_Kopfdaten.csv bzw. RepBrDrg_HA_13_15_Kopfdaten.csv</variable>
+      <variable id="FILE_MDCS" type="text" translate="true">RepBrDrg_BA_13_15_Mdc.csv bzw. RepBrDrg_HA_13_15_Mdc.csv</variable>
+      <variable id="FILE_ND" type="text" translate="true">RepBrDrg_BA_13_15_Nebendiagnosen.csv bzw. RepBrDrg_HA_13_15_Nebendiagnosen.csv</variable>
+      <variable id="FILE_PROC" type="text" translate="true">RepBrDrg_BA_13_15_Prozeduren.csv bzw. RepBrDrg_HA_13_15_Prozeduren.csv</variable>
+      <variable id="FILE_RECHERCHE" type="text" translate="true">RepBrDrg_BA_13_15_Recherche.csv bzw. RepBrDrg_HA_13_15_Recherche.csv</variable>
+      <variable id="TITLE2" type="text" translate="true">G-DRG-Report-Browser</variable>
     </variables>
     <helpcontext-numbers/>
   </config>

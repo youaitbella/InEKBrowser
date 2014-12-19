@@ -12,7 +12,7 @@
     <para styleclass="Image Caption"><image src="table_filter.png" scale="100.00%" styleclass="Image Caption"></image></para>
     <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Beispiel einer Tabelle mit Filtern.</text></para>
     <para styleclass="Normal"></para>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Die Filterung der Tabelle beginnt, sobald Sie etwas in die rot markierten Textboxen eingeben. Zahlenwerte können mit den Operatoren &lt;, &gt;, = oder &lt;&gt; gefiltert werden.</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Die Filterung der Tabelle beginnt, sobald Sie etwas in die rot markierten Textboxen eingeben. Zahlenwerte können mit den Operatoren &lt;, &gt;, = oder &lt;&gt; gefiltert werden. Der * Operator kann als beliebiger Platzhalter eingesetzt werden.</text></para>
     <para styleclass="Normal"></para>
     <para styleclass="Image Caption"><image src="table_filter_active.png" scale="100.00%" styleclass="Image Caption"></image></para>
     <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Tabelle mit einer Filterung.</text></para>

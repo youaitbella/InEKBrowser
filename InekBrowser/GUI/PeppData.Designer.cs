@@ -779,7 +779,7 @@
             this.lblDayCostsEuro.AutoSize = true;
             this.lblDayCostsEuro.BackColor = System.Drawing.Color.Transparent;
             this.lblDayCostsEuro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDayCostsEuro.Location = new System.Drawing.Point(6, 17);
+            this.lblDayCostsEuro.Location = new System.Drawing.Point(21, 17);
             this.lblDayCostsEuro.Name = "lblDayCostsEuro";
             this.lblDayCostsEuro.Size = new System.Drawing.Size(33, 15);
             this.lblDayCostsEuro.TabIndex = 41;
@@ -892,7 +892,7 @@
             this.lblVwdDaysSmall.AutoSize = true;
             this.lblVwdDaysSmall.BackColor = System.Drawing.Color.Transparent;
             this.lblVwdDaysSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVwdDaysSmall.Location = new System.Drawing.Point(6, 17);
+            this.lblVwdDaysSmall.Location = new System.Drawing.Point(25, 17);
             this.lblVwdDaysSmall.Name = "lblVwdDaysSmall";
             this.lblVwdDaysSmall.Size = new System.Drawing.Size(35, 15);
             this.lblVwdDaysSmall.TabIndex = 40;
@@ -1064,12 +1064,12 @@
             this.txtDaysSummary.ForeColor = System.Drawing.Color.White;
             this.helpProvider1.SetHelpKeyword(this.txtDaysSummary, "Code-Kennzahlen.htm");
             this.helpProvider1.SetHelpNavigator(this.txtDaysSummary, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtDaysSummary.Location = new System.Drawing.Point(19, 20);
+            this.txtDaysSummary.Location = new System.Drawing.Point(12, 20);
             this.txtDaysSummary.Name = "txtDaysSummary";
             this.txtDaysSummary.ReadOnly = true;
             this.txtDaysSummary.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.helpProvider1.SetShowHelp(this.txtDaysSummary, true);
-            this.txtDaysSummary.Size = new System.Drawing.Size(51, 21);
+            this.txtDaysSummary.Size = new System.Drawing.Size(64, 21);
             this.txtDaysSummary.TabIndex = 22;
             this.txtDaysSummary.Text = "0";
             // 

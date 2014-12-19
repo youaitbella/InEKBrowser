@@ -46,6 +46,9 @@
       <styleclass name="Bullet Text" parentclass="Normal" shortcut="0">
         <style-set media="screen" type="para">text-indent:-24px; margin-top:4px; margin-bottom:4px; margin-left:29px;</style-set>
       </styleclass>
+      <styleclass name="Button" parentclass="Normal" nextclass="Normal" shortcut="0">
+        <style-set media="screen" type="text">background-color:#e0e0e0;</style-set>
+      </styleclass>
       <styleclass name="Code Example" parentclass="Normal" shortcut="0">
         <style-set media="screen" type="para">white-space:nowrap; border:none;</style-set>
         <style-set media="screen" type="text">font-family:'Courier New'; font-size:10pt; letter-spacing:normal;</style-set>
@@ -54,7 +57,7 @@
         <style-set media="screen" type="para">text-align:center;</style-set>
       </styleclass>
       <styleclass name="Heading1" parentclass="Normal" shortcut="119">
-        <style-set media="screen" type="para">margin-bottom:0px; page-break-after:avoid; border:none;</style-set>
+        <style-set media="screen" type="para">margin-bottom:10px; page-break-after:avoid; border:none;</style-set>
         <style-set media="screen" type="text">font-size:16pt; font-weight:bold; color:#ffffff; letter-spacing:normal;</style-set>
       </styleclass>
       <styleclass name="Heading2" parentclass="Normal" shortcut="16497">
@@ -82,9 +85,6 @@
       </styleclass>
       <styleclass name="Indend2" parentclass="Indend" shortcut="0">
         <style-set media="screen" type="para">text-indent:-85px; margin-top:4px; margin-left:114px;</style-set>
-      </styleclass>
-      <styleclass name="Button" parentclass="Normal" nextclass="Normal" shortcut="0">
-        <style-set media="screen" type="text">background-color:#e0e0e0;</style-set>
       </styleclass>
       <styleclass name="Notes" parentclass="Normal" shortcut="0"/>
       <styleclass name="SeeAlso" parentclass="Normal" shortcut="0">

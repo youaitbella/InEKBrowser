@@ -1440,7 +1440,7 @@
             // 
             // helpProvider1
             // 
-            this.helpProvider1.HelpNamespace = "PeppBrowser.chm";
+            this.helpProvider1.HelpNamespace = "DrgBrowser.chm";
             // 
             // DrgData
             // 

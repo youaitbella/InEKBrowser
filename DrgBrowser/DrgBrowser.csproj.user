@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>\\vFileserver01\company%24\Common\Datenbrowser\ReportBrowser\Reportbrowser_V2013_2015\Prüfung\|publish\</PublishUrlHistory>
-    <InstallUrlHistory />
+    <PublishUrlHistory>D:\tmp\GDrgBrowser\2015\|W:\Common\Datenbrowser\ReportBrowser\Reportbrowser_V2013_2015\Prüfung\|W:\EDV\Users\DV\Offline Browser\2015\DRG\|\\vFileserver01\company%24\Common\Datenbrowser\ReportBrowser\Reportbrowser_V2013_2015\Prüfung\|publish\</PublishUrlHistory>
+    <InstallUrlHistory>http://g-drg.de/GDrgReportBrowser/2015/|\\vFileserver01\company%24\Common\Datenbrowser\ReportBrowser\Reportbrowser_V2013_2015\Prüfung\|\\vFileserver01\company%24\EDV\Users\DV\Offline Browser\2015\DRG\|\\vFileserver01\EDV\Users\DV\Offline Browser\2015\DRG\</InstallUrlHistory>
     <SupportUrlHistory />
     <UpdateUrlHistory />
     <BootstrapperUrlHistory />
