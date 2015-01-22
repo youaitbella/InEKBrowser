@@ -5,6 +5,7 @@ namespace org.inek.InekBrowser {
         public enum System {
             Drg,
             Pepp,
+            P21,
             Unknown
         }
 

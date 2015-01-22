@@ -30,7 +30,8 @@ namespace org.inek.InekBrowser.Data {
 
         public enum DrgType {
             BA,
-            HA
+            HA,
+            TS
         }
 
         public static DrgType DrgSystemType { get; set; }
@@ -86,8 +87,10 @@ namespace org.inek.InekBrowser.Data {
                 if (_system.Count == 0) {
                     if(Program.SystemBrowser == Program.System.Pepp)
                         LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Pepp], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Pepp]);
-                    else if (Program.SystemBrowser == Program.System.Drg)
+                    else if (Program.SystemBrowser == Program.System.Drg) {
                         LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.Drg], ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.Drg]);
+                    } else if(Program.SystemBrowser == Program.System.P21)
+                        LoadData(ResourceController.P21_RESOURCE_FILES[(int)ResourceController.P21TsResourceFilesIndex.Drg], ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.Drg]);
                 }
                 return _system;
             }
@@ -100,9 +103,21 @@ namespace org.inek.InekBrowser.Data {
                         LoadData(ResourceController.PEPP_RESOURCE_FILES[(int)ResourceController.PeppResourceFilesIndex.Kopfdaten], ResourceController.PEPP_RESOURCE_HEADERS[(int)ResourceController.PeppResourceFilesIndex.Kopfdaten]);
                     else if (Program.SystemBrowser == Program.System.Drg) {
                         if(DrgSystemType == DrgType.BA)
-                            LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.KopfdatenBa], ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.KopfdatenBa]);
+                            LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.KopfdatenBa],
+                                ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.KopfdatenBa]);
                         else if(DrgSystemType == DrgType.HA)
-                            LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.KopfdatenHa], ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.KopfdatenHa]);
+                            LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.KopfdatenHa],
+                                ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.KopfdatenHa]);
+                    } else if (Program.SystemBrowser == Program.System.P21) {
+                        if(DrgSystemType == DrgType.BA)
+                            LoadData(ResourceController.P21_RESOURCE_FILES[(int)ResourceController.P21TsResourceFilesIndex.KopfdatenDrgBa],
+                                ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.KopfdatenDrgBa]);
+                        else if(DrgSystemType == DrgType.HA)
+                            LoadData(ResourceController.P21_RESOURCE_FILES[(int)ResourceController.P21TsResourceFilesIndex.KopfdatenDrgHa],
+                                ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.KopfdatenDrgHa]);
+                        else if(DrgSystemType == DrgType.TS)
+                            LoadData(ResourceController.P21_RESOURCE_FILES[(int)ResourceController.P21TsResourceFilesIndex.Kopfdaten],
+                                ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.Kopfdaten]);
                     }
                 }
                 return _systemInfo;
@@ -119,6 +134,13 @@ namespace org.inek.InekBrowser.Data {
                             LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.ProzedurenBa], ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.ProzedurenBa]);
                         else if(DrgSystemType == DrgType.HA)
                             LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.ProzedurenHa], ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.ProzedurenHa]);
+                    } else if (Program.SystemBrowser == Program.System.P21) {
+                        if (DrgSystemType == DrgType.BA)
+                            LoadData(ResourceController.P21_RESOURCE_FILES[(int)ResourceController.P21TsResourceFilesIndex.ProzedurenDrgBa], ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.ProzedurenDrgBa]);
+                        else if (DrgSystemType == DrgType.HA)
+                            LoadData(ResourceController.P21_RESOURCE_FILES[(int)ResourceController.P21TsResourceFilesIndex.ProzedurenDrgHa], ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.ProzedurenDrgHa]);
+                        else if (DrgSystemType == DrgType.TS)
+                            LoadData(ResourceController.P21_RESOURCE_FILES[(int)ResourceController.P21TsResourceFilesIndex.Prozeduren], ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.Prozeduren]);
                     }
                 }
                 return _procedures;
@@ -135,6 +157,13 @@ namespace org.inek.InekBrowser.Data {
                             LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.HauptdiagnosenBa], ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.HauptdiagnosenBa]);
                         else if(DrgSystemType == DrgType.HA)
                             LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.HauptdiagnosenHa], ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.HauptdiagnosenHa]);
+                    } else if (Program.SystemBrowser == Program.System.P21) {
+                        if(DrgSystemType == DrgType.BA)
+                            LoadData(ResourceController.P21_RESOURCE_FILES[(int)ResourceController.P21TsResourceFilesIndex.HauptdiagnoseDrgBa], ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.HauptdiagnoseDrgBa]);
+                        else if(DrgSystemType == DrgType.HA)
+                            LoadData(ResourceController.P21_RESOURCE_FILES[(int)ResourceController.P21TsResourceFilesIndex.HauptdiagnoseDrgHa], ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.HauptdiagnoseDrgHa]);
+                        else if (DrgSystemType == DrgType.TS)
+                            LoadData(ResourceController.P21_RESOURCE_FILES[(int)ResourceController.P21TsResourceFilesIndex.Hauptdiagnose], ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.Hauptdiagnose]);
                     }
                 }
                 return _primaryDiagnoses;
@@ -151,6 +180,13 @@ namespace org.inek.InekBrowser.Data {
                             LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.NebendiagnosenBa], ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.NebendiagnosenBa]);
                         else if(DrgSystemType == DrgType.HA)
                             LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.NebendiagnosenHa], ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.NebendiagnosenHa]);
+                    } else if (Program.SystemBrowser == Program.System.P21) {
+                        if (DrgSystemType == DrgType.BA)
+                            LoadData(ResourceController.P21_RESOURCE_FILES[(int)ResourceController.P21TsResourceFilesIndex.NebendiagnosenDrgBa], ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.NebendiagnosenDrgBa]);
+                        else if(DrgSystemType == DrgType.HA)
+                            LoadData(ResourceController.P21_RESOURCE_FILES[(int)ResourceController.P21TsResourceFilesIndex.NebendiagnosenDrgHa], ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.NebendiagnosenDrgHa]);
+                        else if (DrgSystemType == DrgType.TS)
+                            LoadData(ResourceController.P21_RESOURCE_FILES[(int)ResourceController.P21TsResourceFilesIndex.Nebendiagnose], ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.Nebendiagnose]);
                     }
                 }
                 return _secondaryDiagnoses;
@@ -167,6 +203,13 @@ namespace org.inek.InekBrowser.Data {
                             LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.RechercheBa], ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.RechercheBa]);
                         else if(DrgSystemType == DrgType.HA)
                             LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.RechercheHa], ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.RechercheHa]);
+                    } else if (Program.SystemBrowser == Program.System.P21) {
+                        if (DrgSystemType == DrgType.BA)
+                            LoadData(ResourceController.P21_RESOURCE_FILES[(int)ResourceController.P21TsResourceFilesIndex.RechercheDrgBa], ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.RechercheDrgBa]);
+                        else if (DrgSystemType == DrgType.HA)
+                            LoadData(ResourceController.P21_RESOURCE_FILES[(int)ResourceController.P21TsResourceFilesIndex.RechercheDrgHa], ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.RechercheDrgHa]);
+                        else if (DrgSystemType == DrgType.TS)
+                            LoadData(ResourceController.P21_RESOURCE_FILES[(int)ResourceController.P21TsResourceFilesIndex.Recherche], ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.Recherche]);
                     }
                 }
                 return _recherche;
@@ -192,6 +235,16 @@ namespace org.inek.InekBrowser.Data {
                         else if (DrgSystemType == DrgType.HA)
                             LoadData(ResourceController.DRG_RESOURCE_FILES[(int)ResourceController.DrgResourceFilesIndex.MdcHa],
                                 ResourceController.DRG_RESOURCE_HEADERS[(int)ResourceController.DrgResourceFilesIndex.MdcHa]);
+                    } else if (Program.SystemBrowser == Program.System.P21) {
+                        if (DrgSystemType == DrgType.BA)
+                            LoadData(ResourceController.P21_RESOURCE_FILES[(int)ResourceController.P21TsResourceFilesIndex.MdcDrgBa],
+                                ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.MdcDrgBa]);
+                        else if (DrgSystemType == DrgType.HA)
+                            LoadData(ResourceController.P21_RESOURCE_FILES[(int)ResourceController.P21TsResourceFilesIndex.MdcDrgHa],
+                                ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.MdcDrgHa]);
+                        else if (DrgSystemType == DrgType.TS)
+                            LoadData(ResourceController.P21_RESOURCE_FILES[(int)ResourceController.P21TsResourceFilesIndex.Mdc],
+                                ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.Mdc]);
                     }
                 }
                 return _mdcs;
@@ -213,8 +266,10 @@ namespace org.inek.InekBrowser.Data {
 
         public void LoadDrgDataToMemory(DrgType drgSystemDepartment) {
             DrgSystemType = drgSystemDepartment;
-            var x1 = Context().CostDomains;
-            var x2 = Context().Costs;
+            if (DrgSystemType != DrgType.TS) {
+                var x1 = Context().CostDomains;
+                var x2 = Context().Costs;   
+            }
             var x4 = Context().System;
             var x3 = Context().SystemInfo;
             var x5 = Context().PrimaryDiagnoses;
@@ -317,16 +372,28 @@ namespace org.inek.InekBrowser.Data {
                         }
                         if (Program.SystemBrowser == Program.System.Pepp)
                             MapPeppCsv2Entity(headline, tokens);
-                        else if (Program.SystemBrowser == Program.System.Drg &&
+                        else if ((Program.SystemBrowser == Program.System.Drg) &&
                                  (filename.StartsWith("RepBrDrg_BA") || filename.EndsWith("_Drg.csv") ||
                                   filename.EndsWith("_Kostenbereich.csv")) &&
                                  DrgSystemType == DrgType.BA)
                             MapDrgBaCsv2Entity(headline, tokens);
-                        else if (Program.SystemBrowser == Program.System.Drg &&
+                        else if ((Program.SystemBrowser == Program.System.Drg) &&
                                  (filename.StartsWith("RepBrDrg_HA") || filename.EndsWith("_Drg.csv") ||
                                   filename.EndsWith("_Kostenbereich.csv")) &&
                                  DrgSystemType == DrgType.HA)
                             MapDrgHaCsv2Entity(headline, tokens);
+                        else if (Program.SystemBrowser == Program.System.P21 &&
+                                 (filename.StartsWith("P21BrDrg_TS") || filename.EndsWith("_Drg.csv")) &&
+                                 DrgSystemType == DrgType.TS)
+                            MapP21TsCsv2Entity(headline, tokens);
+                        else if (Program.SystemBrowser == Program.System.P21 &&
+                                 (filename.StartsWith("P21BrDrg_HA") || filename.EndsWith("_Drg.csv")) &&
+                                 DrgSystemType == DrgType.HA)
+                            MapP21HaCsv2Entity(headline, tokens);
+                        else if (Program.SystemBrowser == Program.System.P21 &&
+                                 (filename.StartsWith("P21BrDrg_BA") || filename.EndsWith("_Drg.csv")) &&
+                                 DrgSystemType == DrgType.BA)
+                            MapP21BaCsv2Entity(headline, tokens);
                     }
                 }
             } catch (UnauthorizedAccessException ex) {
@@ -391,6 +458,60 @@ namespace org.inek.InekBrowser.Data {
             }
         }
 
+        private void MapP21TsCsv2Entity(string headline, string[] tokens) {
+            if (headline == ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.Drg]) {
+                MapDrgP21(tokens);
+            } else if (headline == ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.Hauptdiagnose]) {
+                MapPrimaryDiagnosisP21(tokens);
+            } else if (headline == ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.Kopfdaten]) {
+                MapSystemInfoP21(tokens);
+            } else if (headline == ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.Mdc]) {
+                MapMdc(tokens);
+            } else if (headline == ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.Nebendiagnose]) {
+                MapSecondaryDiagnosisP21(tokens);
+            } else if (headline == ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.Prozeduren]) {
+                MapProcedureP21(tokens);
+            } else if (headline == ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.Recherche]) {
+                MapRechercheP21(tokens);
+            }
+        }
+
+        private void MapP21HaCsv2Entity(string headline, string[] tokens) {
+            if (headline == ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.Drg]) {
+                MapDrgP21(tokens);
+            } else if (headline == ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.HauptdiagnoseDrgHa]) {
+                MapPrimaryDiagnosisP21(tokens);
+            } else if (headline == ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.KopfdatenDrgHa]) {
+                MapSystemInfoP21(tokens);
+            } else if (headline == ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.MdcDrgHa]) {
+                MapMdc(tokens);
+            } else if (headline == ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.NebendiagnosenDrgHa]) {
+                MapSecondaryDiagnosisP21(tokens);
+            } else if (headline == ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.ProzedurenDrgHa]) {
+                MapProcedureP21(tokens);
+            } else if (headline == ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.RechercheDrgHa]) {
+                MapRechercheP21(tokens);
+            }
+        }
+
+        private void MapP21BaCsv2Entity(string headline, string[] tokens) {
+            if (headline == ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.Drg]) {
+                MapDrgP21(tokens);
+            } else if (headline == ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.HauptdiagnoseDrgBa]) {
+                MapPrimaryDiagnosisP21(tokens);
+            } else if (headline == ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.KopfdatenDrgBa]) {
+                MapSystemInfoP21(tokens);
+            } else if (headline == ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.MdcDrgBa]) {
+                MapMdc(tokens);
+            } else if (headline == ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.NebendiagnosenDrgBa]) {
+                MapSecondaryDiagnosisP21(tokens);
+            } else if (headline == ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.ProzedurenDrgBa]) {
+                MapProcedureP21(tokens);
+            } else if (headline == ResourceController.P21_RESOURCE_HEADERS[(int)ResourceController.P21TsResourceFilesIndex.RechercheDrgBa]) {
+                MapRechercheP21(tokens);
+            }
+        }
+
         private void MapRechercheDrg(string[] tokens) {
             var r = new Recherche {
                                       Code = tokens[0],
@@ -399,6 +520,17 @@ namespace org.inek.InekBrowser.Data {
                                       PrimaryDiagnosis = int.Parse(tokens[3]),
                                       SecondaryDiagnosis = int.Parse(tokens[4]),
                                       Procedure = int.Parse(tokens[5])
+                                  };
+            _recherche.Add(r);
+        }
+
+        private void MapRechercheP21(string[] tokens) {
+            var r = new Recherche {
+                                      Text = tokens[1],
+                                      CodeF = tokens[0],
+                                      PrimaryDiagnosis = int.Parse(tokens[2]),
+                                      SecondaryDiagnosis = int.Parse(tokens[3]),
+                                      Procedure = int.Parse(tokens[4])
                                   };
             _recherche.Add(r);
         }
@@ -416,6 +548,18 @@ namespace org.inek.InekBrowser.Data {
             _procedures.Add(p);
         }
 
+        private void MapProcedureP21(string[] tokens) {
+            var p = new Procedure {
+                                      System = tokens[0],
+                                      CaseFraction = decimal.Parse(tokens[3]),
+                                      CodeF = tokens[1],
+                                      CaseCount = int.Parse(tokens[2]),
+                                      EntryFraction = decimal.Parse(tokens[5]),
+                                      EntryCount = int.Parse(tokens[4])
+                                  };
+            _procedures.Add(p);
+        }
+
         private void MapSecondaryDiagnosisDrg(string[] tokens) {
             var sd = new SecondaryDiagnosis {
                                                 System = tokens[0],
@@ -425,6 +569,18 @@ namespace org.inek.InekBrowser.Data {
                                                 CaseCount = int.Parse(tokens[4]),
                                                 EntryFraction = decimal.Parse(tokens[5]),
                                                 EntryCount = int.Parse(tokens[6])
+                                            };
+            _secondaryDiagnoses.Add(sd);
+        }
+
+        private void MapSecondaryDiagnosisP21(string[] tokens) {
+            var sd = new SecondaryDiagnosis {
+                                                System = tokens[0],
+                                                CaseFraction = decimal.Parse(tokens[3]),
+                                                CodeF = tokens[1],
+                                                CaseCount = int.Parse(tokens[2]),
+                                                EntryFraction = decimal.Parse(tokens[5]),
+                                                EntryCount = int.Parse(tokens[4])
                                             };
             _secondaryDiagnoses.Add(sd);
         }
@@ -505,6 +661,51 @@ namespace org.inek.InekBrowser.Data {
             _systemInfo.Add(si);
         }
 
+        private void MapSystemInfoP21(string[] tokens) {
+            for (int i = 0; i < tokens.Length; i++)
+                if (tokens[i] == "")
+                    tokens[i] = 0 + "";
+            var si = new SystemInfo {
+                MDC = tokens[0],
+                Code = tokens[1],
+                CaseCount = int.Parse(tokens[2]),
+                PCCL0 = decimal.Parse(tokens[3]),
+                PCCL1 = decimal.Parse(tokens[4]),
+                PCCL2 = decimal.Parse(tokens[5]),
+                PCCL3 = decimal.Parse(tokens[6]),
+                PCCL4 = decimal.Parse(tokens[7]),
+                GenderMale = decimal.Parse(tokens[8]),
+                GenderFemale = decimal.Parse(tokens[9]),
+                GenderUnknown = decimal.Parse(tokens[10]),
+                AgeBelow28Days = decimal.Parse(tokens[11]),
+                AgeBelow1Year = decimal.Parse(tokens[12]),
+                AgeBelow3Years = decimal.Parse(tokens[13]),
+                AgeBelow6Years = decimal.Parse(tokens[14]),
+                AgeBelow10Years = decimal.Parse(tokens[15]),
+                AgeBelow16Years = decimal.Parse(tokens[16]),
+                AgeBelow18Years = decimal.Parse(tokens[17]),
+                AgeBelow30Years = decimal.Parse(tokens[18]),
+                AgeBelow40Years = decimal.Parse(tokens[19]),
+                AgeBelow50Years = decimal.Parse(tokens[20]),
+                AgeBelow55Years = decimal.Parse(tokens[21]),
+                AgeBelow60Years = decimal.Parse(tokens[22]),
+                AgeBelow65Years = decimal.Parse(tokens[23]),
+                AgeBelow75Years = decimal.Parse(tokens[24]),
+                AgeBelow80Years = decimal.Parse(tokens[25]),
+                AgeBelow99Years = decimal.Parse(tokens[26]),
+                LosShort = decimal.Parse(tokens[27]),
+                LosNormal = decimal.Parse(tokens[28]),
+                LosLong = decimal.Parse(tokens[29]),
+                Day1Reduction = int.Parse(tokens[30]),
+                Day1Remuneration = int.Parse(tokens[31]),
+                LosAverage = decimal.Parse(tokens[32]),
+                ValuationRatio = decimal.Parse(tokens[33]),
+                FractionAllCases = decimal.Parse(tokens[34]),
+                LosStandard = decimal.Parse(tokens[35])
+            };
+            _systemInfo.Add(si);
+        }
+
         private void MapPrimaryDiagnosisDrg(string[] tokens) {
             var pd = new PrimaryDiagnosis {
                                               SystemCode = tokens[0],
@@ -513,6 +714,16 @@ namespace org.inek.InekBrowser.Data {
                                               DiagCodeF = tokens[3],
                                               Count = int.Parse(tokens[4])
                                           };
+            _primaryDiagnoses.Add(pd);
+        }
+
+        private void MapPrimaryDiagnosisP21(string[] tokens) {
+            var pd = new PrimaryDiagnosis {
+                SystemCode = tokens[0],
+                Fraction = decimal.Parse(tokens[3]),
+                DiagCodeF = tokens[1],
+                Count = int.Parse(tokens[2])
+            };
             _primaryDiagnoses.Add(pd);
         }
 
@@ -529,6 +740,16 @@ namespace org.inek.InekBrowser.Data {
                                               Text = tokens[3],
                                               Calculated = int.Parse(tokens[4])
                                           };
+            _system.Add(drg);
+        }
+
+        private void MapDrgP21(string[] tokens) {
+            var drg = new Entities.System {
+                Category = tokens[0],
+                Partition = tokens[1][0],
+                Code = tokens[2],
+                Text = tokens[3]
+            };
             _system.Add(drg);
         }
 

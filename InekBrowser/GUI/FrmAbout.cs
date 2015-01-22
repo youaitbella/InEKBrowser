@@ -36,13 +36,18 @@ namespace org.inek.InekBrowser.GUI {
             if (Program.SystemBrowser == Program.System.Pepp) {
                 titleBar.BackColor = BrowserColors.PeppSplashScreenTitleBar;
                 titleBar.Title = "PEPP-Browser " + Program.Year;
-                this.BackColor = BrowserColors.PeppSplashScreen;
+                BackColor = BrowserColors.PeppSplashScreen;
                 label1.Text = "PEPP-Browser\nVersion " + Program.Year + ".1\n© InEK GmbH";
             } else if (Program.SystemBrowser == Program.System.Drg) {
                 titleBar.BackColor = BrowserColors.DrgSplashScreenTitleBar;
-                titleBar.Title = "G-DRG-Browser " + Program.Year;
-                this.BackColor = BrowserColors.DrgSplashScreen;
-                label1.Text = "G-DRG-Browser\nVersion " + Program.Year + ".1\n© InEK GmbH";
+                titleBar.Title = "G-DRG-Report-Browser " + Program.Year;
+                BackColor = BrowserColors.DrgSplashScreen;
+                label1.Text = "G-DRG-Report-Browser\nVersion " + Program.Year + ".1\n© InEK GmbH";
+            } else if (Program.SystemBrowser == Program.System.P21) {
+                titleBar.BackColor = BrowserColors.DrgSplashScreenTitleBar;
+                titleBar.Title = "P21-Report-Browser " + Program.Year;
+                BackColor = BrowserColors.DrgSplashScreen;
+                label1.Text = "P21-Report-Browser\nVersion " + Program.Year + ".1\n© InEK GmbH";
             }
         }
 

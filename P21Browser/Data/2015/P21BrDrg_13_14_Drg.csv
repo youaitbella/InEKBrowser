@@ -1,0 +1,1197 @@
+ID_MDC;ID_Partition;ID_DRG;ID_Text
+-1 ;O;901A;Ausgedehnte OR-Prozedur ohne Bezug zur Hauptdiagnose mit bestimmter komplizierender Konstellation oder Strahlentherapie oder endovaskul‰rer Implantation von Stent-Prothesen an der Aorta
+-1 ;O;901B;Ausgedehnte OR-Prozedur ohne Bezug zur Hauptdiagnose ohne Strahlentherapie, ohne endovaskul‰re Implantation von Stent-Prothesen an der Aorta, mit hochkomplexer OR-Prozedur oder komplizierender Konstellation
+-1 ;O;901C;Ausgedehnte OR-Prozedur ohne Bezug zur Hauptdiagnose ohne komplizierende Konstellation, ohne Strahlentherapie, ohne hochkomplexe OR-Prozedur, mit komplexer OR-Prozedur oder mit anderen Eingriffen an Kopf und Wirbels‰ule, Alter†<†1†Jahr oder bei Para-†/†Tetraplegie
+-1 ;O;901D;Ausgedehnte OR-Prozedur ohne Bezug zur Hauptdiagnose ohne komplizierende Konstellation, ohne Strahlentherapie, ohne komplexe OR-Prozedur, ohne andere Eingriffe an Kopf und Wirbels‰ule, Alter†>†0†Jahre, auﬂer bei Para-†/†Tetraplegie
+-1 ;O;902Z;Nicht ausgedehnte OR-Prozedur ohne Bezug zur Hauptdiagnose
+-1 ;M;960Z;Nicht gruppierbar
+-1 ;M;961Z;Unzul‰ssige Hauptdiagnose
+-1 ;M;962Z;Unzul‰ssige Kodierung einer Sectio caesarea
+-1 ;M;963Z;Neonatale Diagnose unvereinbar mit Alter†oder Gewicht
+00 ;O;A01A;Lebertransplantation mit Beatmung†>†179†Stunden oder kombinierter D¸nndarmtransplantation
+00 ;O;A01B;Lebertransplantation ohne kombinierte D¸nndarmtransplantation mit Beatmung†>†59 und <†180†Stunden oder mit Transplantatabstoﬂung oder mit kombinierter Nierentransplantation oder Alter†<†6†Jahre
+00 ;O;A01C;Lebertransplantation ohne kombinierte D¸nndarmtransplantation, ohne Beatmung†>†59†Stunden, ohne Transplantatabstoﬂung, ohne kombinierte Nierentransplantation, Alter†>†5†Jahre
+00 ;O;A02Z;Transplantation von Niere und Pankreas
+00 ;O;A03A;Lungentransplantation mit Beatmung†>†179†Stunden
+00 ;O;A03B;Lungentransplantation ohne Beatmung†>†179†Stunden
+00 ;O;A04A;Knochenmarktransplantation / Stammzelltransfusion, allogen, mit zweiter Knochenmarktransplantation / Stammzelltransfusion im selben Aufenthalt
+00 ;O;A04B;Knochenmarktransplantation / Stammzelltransfusion, allogen, auﬂer bei Plasmozytom oder mit Graft-versus-host-Krankheit Grad III und IV, mit In-vitro-Aufbereitung oder Alter < 16 Jahre
+00 ;O;A04C;Knochenmarktransplantation / Stammzelltransfusion, allogen, auﬂer bei Plasmozytom, HLA-verschieden oder bei Plasmozytom, mit Graft-versus-host-Krankheit Grad III und IV, ohne In-vitro-Aufbereitung, Alter > 15 Jahre
+00 ;O;A04D;Knochenmarktransplantation / Stammzelltransfusion, allogen, auﬂer bei Plasmozytom, ohne In-vitro-Aufbereitung, Alter > 15 Jahre, ohne Graft-versus-host-Krankheit Grad III und IV, HLA-identisch
+00 ;O;A04E;Knochenmarktransplantation / Stammzelltransfusion, allogen, bei Plasmozytom, ohne Graft-versus-host-Krankheit Grad III und IV, Alter > 15 Jahre
+00 ;O;A05A;Herztransplantation mit Beatmung†>†179†Stunden oder Alter†<†16†Jahre
+00 ;O;A05B;Herztransplantation ohne Beatmung†>†179†Stunden, Alter†>†15†Jahre
+00 ;O;A06A;Beatmung >†1799†Stunden mit komplexer OR-Prozedur oder Polytrauma, mit hochkomplexem Eingriff oder intensivmedizinischer Komplexbehandlung >†3920 / 3680†Aufwandspunkte
+00 ;O;A06B;Beatmung >†1799†Stunden mit komplexer OR-Prozedur oder Polytrauma, ohne hochkomplexen Eingriff, ohne intensivmedizinische Komplexbehandlung >†3920 / 3680†Aufwandspunkte oder ohne komplexe OR-Prozedur, ohne Polytrauma
+00 ;O;A07A;Beatmung >†999†Stunden oder >†499†Stunden mit intensivmedizinischer Komplexbehandlung >†4900 / 4600†Aufwandspunkte, mit komplexer OR-Prozedur oder Polytrauma und int. Komplexbehandlung >†3920 / 3680†P. oder mit hochkomplexem oder dreizeitigem Eingriff
+00 ;O;A07B;Beatmung >†999†Stunden oder >†499†Stunden mit intensivmedizinischer Komplexbehandlung >†4900 / 4600†Aufwandspunkte, mit komplexer OR-Prozedur und komplizierender Konstellation oder mit Polytrauma oder Alter†<†16†Jahre
+00 ;O;A07C;Beatmung >†999†Stunden oder >†499†Stunden mit intensivmedizinischer Komplexbehandlung >†4900 / 4600†Aufwandspunkte, ohne komplexe OR-Prozedur, ohne Polytrauma, Alter†>†15†Jahre, mit intensivmedizinischer Komplexbehandlung >†2352 / 2208†Aufwandspunkte
+00 ;O;A07D;Beatmung >†999†Stunden ohne komplexe OR-Prozedur, ohne Polytrauma, Alter†>†15†Jahre, ohne intensivmedizinische Komplexbehandlung >†2352 / 2208†Aufwandspunkte, mit komplexer Diagnose
+00 ;O;A07E;Beatmung >†999†Stunden ohne komplexe OR-Prozedur, ohne Polytrauma, Alter†>†15†Jahre, ohne intensivmedizinische Komplexbehandlung >†2352 / 2208†Aufwandspunkte, ohne komplexe Diagnose
+00 ;O;A09A;Beatmung >†499 Stunden oder > 249 Stunden mit int. Komplexbeh. >†2352†/†2208†P., mit angeb. Fehlbild. od. Tumorerkr., Alter†<†3†J. od. mit kompl. OR-Proz. oder Polytrauma od. int. Komplexbeh. >†3430†/†3220†P. und hochkompl. Eingr. od. Alter†<†16†J.
+00 ;O;A09B;Beatmung >†499 Stunden oder > 249 Stunden mit intensivmed. Komplexbehandlung >†2352†/†2208†Aufwandsp., mit kompl. OR-Prozedur od. Polytrauma od. intensivmed. Komplexbehandlung >†3430†/†3220†Aufwandsp., mit sehr kompl. Eingriff od. kompliz. Konstellation
+00 ;O;A09C;Beatmung >†499 Stunden oder > 249 Stunden mit intensivmedizinischer Komplexbehandlung >†2352†/†2208†Aufwandspunkte, mit komplexer OR-Prozedur oder Polytrauma oder int. Komplexbeh. > 2352†/†2208 P. oder kompliz. Konstellation oder Alter < 16 Jahre
+00 ;O;A09D;Beatmung >†499 Stunden, ohne komplexe OR-Prozedur, ohne Polytrauma, Alter > 15 Jahre, ohne komplizierende Konstellation, mit intensivmedizinischer Komplexbehandlung > 1470†/†1380 und <†2353†/†2209†Aufwandspunkte
+00 ;O;A09E;Beatmung >†499 Stunden, ohne komplexe OR-Prozedur, ohne Polytrauma, Alter > 15 Jahre, ohne komplizierende Konstellation, ohne intensivmedizinische Komplexbehandlung > 1470†/†1380 Aufwandspunkte, mit komplexer Diagnose oder Prozedur
+00 ;O;A09F;Beatmung >†499 Stunden, ohne komplexe OR-Prozedur, ohne Polytrauma, Alter > 15 Jahre, ohne komplizierende Konstellation, ohne intensivmedizinische Komplexbehandlung > 1470†/†1380 Aufwandspunkte, ohne komplexe Diagnose, ohne komplexe Prozedur
+00 ;O;A11A;Beatmung >†249†Stunden oder >†95†Stunden mit intensivmedizinischer Komplexbehandlung >†1764 / 1656†Aufwandspunkte, mit hochkompl. Eingriff oder Alter†<†2†J. bei angeborener Fehlbildung od. mit kompliz. Konstellation und best. OR-Prozedur, Alter†<†16†J.
+00 ;O;A11B;Beatmung >†249†Stunden oder >†95†Stunden mit intensivmedizinischer Komplexbehandlung >†1764 / 1656†Aufwandspunkte, mit komplexer OR-Prozedur und Alter†<†16†Jahre oder kompliz. Konstellation, oder bei Tumor oder angeborener Fehlbildung, Alter†<†3†Jahre
+00 ;O;A11C;Beatmung >†249†Stunden, ohne komplexe OR-Prozedur, ohne intensivmedizinische Komplexbehandlung >†1764 / 1656†Aufwandspunkte, mit komplizierender Konstellation und bestimmter OR-Prozedur, Alter†>†15†Jahre
+00 ;O;A11D;Beatmung >†249†Stunden, mit komplexer OR-Prozedur, ohne hochkomplexen Eingriff, ohne intensivmedizinische Komplexbehandlung >†1764 / 1656†Aufwandspunkte, ohne komplizierende Konstellation, Alter†>†15†Jahre
+00 ;O;A11E;Beatmung >†249†Stunden oder >†95†Stunden mit intensivmedizinischer Komplexbehandlung >†1764 / 1656†Aufwandspunkte, mit bestimmter OR-Prozedur oder kompliz. Konstellation oder int. Komplexbeh. >†1176 / 1104†P. oder Alter†<†6†Jahre
+00 ;O;A11F;Beatmung >†249†Stunden, ohne komplexe oder bestimmte OR-Prozedur, ohne intensivmedizinische Komplexbehandlung >†1176 / 1104†Aufwandspunkte, ohne komplizierende Konstellation, Alter†>†5†Jahre, mit komplexer Diagnose oder Prozedur oder Alter†<†16†Jahre
+00 ;O;A11G;Beatmung >†249†Stunden, ohne komplexe oder bestimmte OR-Prozedur, ohne intensivmedizinische Komplexbehandlung >†1176 / 1104†Aufwandspunkte, ohne komplizierende Konstellation, Alter†>†15†Jahre, ohne komplexe Diagnose oder Prozedur, mit ‰uﬂerst schweren CC
+00 ;O;A11H;Beatmung >†249†Stunden, ohne komplexe oder bestimmte OR-Prozedur, ohne intensivmedizinische Komplexbehandlung >†1176 / 1104†Aufwandspunkte, ohne komplizierende Konstellation, Alter†>†15†Jahre, ohne komplexe Diagnose oder Prozedur, ohne ‰uﬂerst schwere CC
+00 ;O;A13A;Beatmung >†95†Stunden mit hochkomplexem Eingriff od. mit komplexer OR-Prozedur u. intensivmed. Komplexbeh.>†1176 / 1104†P. od. mit kompliz. Konst. u. best. OR-Proz. und Alter†<†16†J. od. intensivmed. Komplexbeh. >†1176 / 1104†P. bei Lymphom und Leuk‰mie
+00 ;O;A13B;Beatmung >†95†Stunden mit komplexer OR-Prozedur und sehr komplexem Eingriff oder Eingriff bei angeborener Fehlbildung, Alter†<†10†Jahre, oder mit intensivmed. Komplexbehandlung >†1176 / 1104†Punkte und komplizierender Konstellation
+00 ;O;A13C;Beatmung >†95†Stunden ohne komplexe OR-Prozedur, mit bestimmter OR-Prozedur und kompliz. Konstellation, Alter†>†15†J. oder mit intensivmed. Komplexbehandlung >†1176 / 1104†Punkte od. Alter†<†16†J., ohne Lymphom und Leuk‰mie, ohne kompliz. Konstellation
+00 ;O;A13D;Beatmung >†95†Stunden mit komplexer OR-Prozedur, ohne hochkomplexen oder sehr komplexen Eingriff, ohne intensivmedizinische Komplexbehandlung >†1176 / 1104†Aufwandspunkte, ohne komplizierende Konstellation, ohne Eingriff bei angeborener Fehlbildung
+00 ;O;A13E;Beatmung > 95 Stunden, ohne komplexe OR-Prozedur, mit bestimmter OR-Prozedur oder komplizierender Konstellation oder mit intensivmedizinischer Komplexbehandlung > 588 / 552 Aufwandspunkte und < 1177 / 1105 Aufwandspunkte oder Alter < 16 Jahre
+00 ;O;A13F;Beatmung >†95†Stunden, ohne komplexe OR-Prozedur, verstorben oder verlegt†<†9†Tage oder ohne bestimmte OR-Proz., ohne kompliz. Konstellation, ohne int. Komplexbehandlung >†588 / 552†Aufwandspunkte, Alter†>†15†Jahre, mit komplexer Diagnose oder Prozedur
+00 ;O;A13G;Beatmung >†95†Stunden, ohne komplexe OR-Prozedur, verstorben oder verlegt†<†9†Tage oder ohne bestimmte OR-Proz., ohne kompliz. Konst., ohne int. Komplexbeh. >†588 / 552†P., Alter†>†15†Jahre, ohne komplexe Diagnose oder Prozedur, mit ‰uﬂerst schweren CC
+00 ;O;A13H;Beatmung >†95†Stunden, ohne komplexe OR-Prozedur, ohne bestimmte OR-Prozedur, ohne kompliz. Konstellation, ohne int. Komplexbeh. >†588 / 552†P., Alter†>†15†Jahre, ohne komplexe Diagnose oder Prozedur, ohne ‰uﬂerst schwere CC
+00 ;O;A15A;Knochenmarktransplantation / Stammzelltransfusion, autogen, mit zweiter Knochenmarktransplantation / Stammzelltransfusion im selben Aufenthalt
+00 ;O;A15B;Knochenmarktransplantation / Stammzelltransfusion, autogen, auﬂer bei Plasmozytom, Alter < 16 Jahre
+00 ;O;A15C;Knochenmarktransplantation / Stammzelltransfusion, autogen, auﬂer bei Plasmozytom, Alter > 15 Jahre
+00 ;O;A15D;Knochenmarktransplantation / Stammzelltransfusion, autogen, bei Plasmozytom
+00 ;O;A16A;Transplantation von Darm oder Pankreas
+00 ;O;A16B;Injektion von Pankreasgewebe
+00 ;O;A17A;Nierentransplantation mit postoperativem Versagen des Nierentransplantates oder Alter†<†16†Jahre oder AB0-inkompatible Transplantation
+00 ;O;A17B;Nierentransplantation ohne postoperatives Versagen des Nierentransplantates, Alter†>†15†Jahre oder ohne AB0-inkompatible Transplantation
+00 ;O;A18Z;Beatmung >†999†Stunden und Transplantation von Leber, Lunge, Herz und Knochenmark oder Stammzelltransfusion
+00 ;O;A22Z;Korrektureingriff bei Doppelfehlbildung
+00 ;O;A36A;Intensivmedizinische Komplexbehandlung >†1764 / 1656†Aufwandspunkte bei bestimmten Krankheiten und Stˆrungen oder intensivmedizinische Komplexbehandlung >†588 / 552†Aufwandspunkte bei Versagen und Abstoﬂung eines Transplantates h‰matopoetischer Zellen
+00 ;O;A36B;Intensivmedizinische Komplexbehandlung >†588 / 552 und <†1765 / 1657†Aufwandspunkte bei bestimmten Krankheiten und Stˆrungen oder komplizierende Konstellation bei Versagen und Abstoﬂung eines Transplantates h‰matopoetischer Zellen
+00 ;A;A42A;Stammzellentnahme bei Eigenspender mit Chemotherapie
+00 ;A;A42B;Stammzellentnahme bei Eigenspender ohne Chemotherapie, Alter†<†16†Jahre
+00 ;A;A42C;Stammzellentnahme bei Eigenspender ohne Chemotherapie, Alter†>†15†Jahre
+00 ;A;A43Z;Fr¸hrehabilitation bei Wachkoma und Locked-in-Syndrom
+00 ;M;A60A;Versagen und Abstoﬂung eines Organtransplantates, mehr als ein†Belegungstag, mit Entfernung eines Organtransplantates oder komplexer OR-Prozedur oder ‰uﬂerst schweren CC
+00 ;M;A60B;Versagen und Abstoﬂung eines Organtransplantates, mehr als ein†Belegungstag, ohne Entfernung eines Organtransplantates, ohne komplexe OR-Prozedur, ohne ‰uﬂerst schwere CC, Alter†<†16†Jahre
+00 ;M;A60C;Versagen und Abstoﬂung eines Organtransplantates, mehr als ein†Belegungstag, ohne Entfernung eines Organtransplantates, ohne komplexe OR-Prozedur, ohne ‰uﬂerst schwere CC, Alter†>†15†Jahre
+00 ;M;A60D;Versagen und Abstoﬂung eines Organtransplantates, ein†Belegungstag
+00 ;M;A61A;Versagen und Abstoﬂung eines Transplantates h‰matopoetischer Zellen, mit ‰uﬂerst schweren CC
+00 ;M;A61B;Versagen und Abstoﬂung eines Transplantates h‰matopoetischer Zellen, ohne ‰uﬂerst schwere CC
+00 ;M;A62Z;Evaluierungsaufenthalt vor Herztransplantation
+00 ;M;A63Z;Evaluierungsaufenthalt vor Lungen- oder Herz-Lungen-Transplantation
+00 ;M;A64Z;Evaluierungsaufenthalt vor Leber-, D¸nndarm oder Nieren-Pankreas-Transplantation
+00 ;M;A66Z;Evaluierungsaufenthalt vor anderer Organtransplantation
+00 ;M;A69Z;Evaluierungsaufenthalt vor Organtransplantation ohne Aufnahme auf eine Warteliste
+00 ;A;A90A;Teilstation‰re geriatrische Komplexbehandlung, umfassende Behandlung
+00 ;A;A90B;Teilstation‰re geriatrische Komplexbehandlung, Basisbehandlung
+01 ;O;B01Z;Mehrzeitige komplexe OR-Prozeduren bei Krankheiten und Stˆrungen des Nervensystems
+01 ;O;B02A;Komplexe Kraniotomie oder Wirbels‰ulen-Operation mit Strahlentherapie, mehr als 8†Bestrahlungen, bei bestimmter Neubildung des Nervensystems oder Alter†<†6†Jahre und ‰uﬂ. schw. CC, bei best. Neubildung d. Nervensyst. oder mit best. Eingr. am Sch‰del
+01 ;O;B02B;Komplexe Kraniotomie oder Wirbels‰ulen-Operation mit Strahlentherapie, mehr als 8†Bestrahlungen oder Alter†>†5†Jahre und Alter†<†18†Jahre mit gr. intrakran. Eingriff und ‰uﬂ. schw. CC, bei best. Neubildung d. Nervensyst. oder mit best. Eingr. am Sch‰del
+01 ;O;B02C;Komplexe Kraniotomie oder Wirbels‰ulen-Operation, Alter†<†6†Jahre oder Alter†<†18†Jahre mit groﬂem intrakraniellen Eingriff und ‰uﬂerst schweren CC oder mit komplizierender Konstellation oder mit verschiedenartiger komplexer Prozedur
+01 ;O;B02D;Komplexe Kraniotomie oder Wirbels‰ulen-Operation ohne Strahlentherapie, Alter†>†5†Jahre oder ohne ‰uﬂerst schwere CC, ohne bestimmten Eingriff am Sch‰del, ohne komplizierende Konstellation, ohne verschiedenartige komplexe Prozedur
+01 ;O;B03Z;Operative Eingriffe bei nicht akuter Para-†/†Tetraplegie oder Eingriffe an Wirbels‰ule und R¸ckenmark bei bˆsart. Neubild. od. mit schw. CC od. mit intraop. Monitoring od. Eingriffe b. zerebraler L‰hmung, Muskeldystrophie, Neuropathie mit ‰uﬂ. schw. CC
+01 ;O;B04A;Interventionelle und beidseitige Eingriffe an den extrakraniellen Gef‰ﬂen mit ‰uﬂerst schweren CC
+01 ;O;B04B;Eingriffe an den extrakraniellen Gef‰ﬂen mit ‰uﬂerst schweren CC und beidseitige Eingriffe an den extrakraniellen Gef‰ﬂen ohne ‰uﬂerst schwere CC
+01 ;O;B04C;Interventionelle Eingriffe an den extrakraniellen Gef‰ﬂen ohne ‰uﬂerst schwere CC
+01 ;O;B04D;Eingriffe an den extrakraniellen Gef‰ﬂen ohne ‰uﬂerst schwere CC
+01 ;O;B05Z;Dekompression bei Karpaltunnelsyndrom
+01 ;O;B07Z;Eingriffe an peripheren Nerven, Hirnnerven und anderen Teilen des Nervensystems mit ‰uﬂerst schweren CC oder komplizierender Diagnose
+01 ;O;B09A;Andere Eingriffe am Sch‰del mit ‰uﬂerst schweren CC
+01 ;O;B09B;Andere Eingriffe am Sch‰del ohne ‰uﬂerst schwere CC
+01 ;O;B11Z;Fr¸hrehabilitation mit bestimmter OR-Prozedur
+01 ;O;B12Z;Implantation eines Herzschrittmachers bei Krankheiten und Stˆrungen des Nervensystems oder perkutan-transluminale Gef‰ﬂintervention an Herz und Koronargef‰ﬂen
+01 ;O;B13Z;Epilepsiechirurgie mit invasivem pr‰operativen Video-EEG
+01 ;O;B15Z;Strahlentherapie bei Krankheiten und Stˆrungen des Nervensystems, mehr als ein†Belegungstag, mehr als 10†Bestrahlungen
+01 ;O;B16Z;Strahlentherapie bei Krankheiten und Stˆrungen des Nervensystems, mehr als ein†Belegungstag, weniger als 11†Bestrahlungen
+01 ;O;B17A;Eingriffe an peripheren Nerven, Hirnnerven und anderen Teilen des Nervensystems oder Eingriff bei zerebraler L‰hmung, Muskeldystrophie oder Neuropathie, mit komplexer Diagnose
+01 ;O;B17B;Eingriffe an peripheren Nerven, Hirnnerven und anderen Teilen des Nervensystems oder Eingriff bei zerebraler L‰hmung, Muskeldystrophie oder Neuropathie, ohne komplexe Diagnose, mit komplexem Eingriff
+01 ;O;B17C;Eingriffe an periph. Nerven, Hirnnerven und anderen Teilen des Nervensyst. oder Eingr. bei zerebr. L‰hmung, Muskeldystrophie oder Neuropathie, ohne komplexe Diagnose, ohne komplexen Eingriff, Alter†<†19†Jahre oder mit schweren CC, Alter†<†16†Jahre
+01 ;O;B17D;Eingriffe an periph. Nerven, Hirnnerven und anderen Teilen des Nervensyst. oder Eingr. bei zerebr. L‰hmung, Muskeldystrophie oder Neuropathie, ohne komplexe Diagnose, ohne komplexen Eingriff, Alter†<†19†Jahre oder mit schweren CC, Alter†>†15†Jahre
+01 ;O;B17E;Eingriffe an peripheren Nerven, Hirnnerven und anderen Teilen des Nervensystems oder Eingriff bei zerebr. L‰hmung, Muskeldystrophie oder Neuropathie, ohne kompl. Diagn., ohne kompl. Eingr., ohne schw. CC, Alter†>†18†Jahre, mit m‰ﬂig kompl. Eingr.
+01 ;O;B17F;Eingriffe an peripheren Nerven, Hirnnerven und anderen Teilen des Nervensystems oder Eingriff bei zerebr. L‰hmung, Muskeldystrophie od. Neuropathie, ohne kompl. Diagnose, ohne m‰ﬂig kompl. od. kompl. Eingr., ohne ‰uﬂ. schw. oder schw. CC, Alter†>†18†J.
+01 ;O;B18Z;Eingriffe an Wirbels‰ule und R¸ckenmark auﬂer bei bˆsartiger Neubildung, ohne ‰uﬂerst schwere oder schwere CC oder Revision eines Ventrikelshuntes
+01 ;O;B20A;Kraniotomie oder groﬂe Wirbels‰ulen-Operation mit komplexer Prozedur, Alter†<†16†Jahre
+01 ;O;B20B;Kraniotomie oder groﬂe Wirbels‰ulen-Operation mit komplexer Prozedur, Alter†>†15†Jahre, mit intraoperativem neurophysiologischen Monitoring oder komplexer Diagnose
+01 ;O;B20C;Kraniotomie oder groﬂe Wirbels‰ulen-Operation ohne komplexe Prozedur, Alter†<†3†Jahre oder Alter†<†18†Jahre mit groﬂem intrakraniellen Eingriff
+01 ;O;B20D;Kraniotomie oder groﬂe Wirbels‰ulen-Operation mit komplexer Prozedur, Alter†>†15†Jahre, ohne intraoperatives neurophysiologisches Monitoring, ohne komplexe Diagnose
+01 ;O;B20E;Kraniotomie oder groﬂe Wirbels‰ulen-Operation ohne komplexe Prozedur, Alter†>†2†Jahre, mit komplexer Diagnose oder bestimmtem Eingriff bei Trigeminusneuralgie
+01 ;O;B20F;Kraniotomie oder groﬂe Wirbels‰ulen-Operation ohne komplexe Prozedur, Alter†>†2†Jahre, ohne komplexe Diagnose, ohne bestimmten Eingriff bei Trigeminusneuralgie
+01 ;O;B21A;Implantation eines Neurostimulators zur Hirnstimulation, Mehrelektrodensystem, mit Sondenimplantation
+01 ;O;B21B;Implantation eines Neurostimulators zur Hirnstimulation, Mehrelektrodensystem, ohne Sondenimplantation
+01 ;O;B36A;Intensivmedizinische Komplexbehandlung >†1764 / 1656†Aufwandspunkte oder >†1176 / 1104†Aufwandspunkte mit bestimmter OR-Prozedur bei Krankheiten und Stˆrungen des Nervensystems
+01 ;O;B36B;Intensivmedizinische Komplexbehandlung >†1176 / 1104†Aufwandspunkte und <†1765 / 1657†Aufwandspunkte ohne best. OR-Prozedur oder >†588 / 552†Aufwandspunkte und <†1177 / 1105†Aufwandspunkte mit best. OR-Proz. bei Krankheiten und Stˆrungen d. Nervensystems
+01 ;O;B39A;Neurologische Komplexbehandlung des akuten Schlaganfalls mit bestimmter OR-Prozedur, mehr als 72†Stunden mit komplexem Eingriff oder mit komplizierender Konstellation
+01 ;O;B39B;Neurologische Komplexbehandlung des akuten Schlaganfalls mit bestimmter OR-Prozedur, bis†72†Stunden mit komplexem Eingriff, oder mehr als 72†Stunden, ohne komplexen Eingriff, ohne komplizierende Konstellation
+01 ;O;B39C;Neurologische Komplexbehandlung des akuten Schlaganfalls mit bestimmter OR-Prozedur, bis†72†Stunden, ohne komplexen Eingriff, ohne komplizierende Konstellation
+01 ;A;B42A;Fr¸hrehabilitation bei Krankheiten und Stˆrungen des Nervensystems bis†27†Tage mit neurologischer Komplexbehandlung des akuten Schlaganfalls oder fach¸bergreifende u. andere Fr¸hrehabilitation mit neurologischer Komplexbehandlung des akuten Schlaganfalls
+01 ;A;B42B;Fr¸hrehabilitation bei Krankheiten und Stˆrungen des Nervensystems bis†27†Tage ohne neurologische Komplexbehandlung des akuten Schlaganfalls
+01 ;A;B43Z;Fr¸hrehabilitation bei Krankheiten und Stˆrungen des Nervensystems, mehr als 27†Tage
+01 ;A;B44A;Geriatrische fr¸hrehabilitative Komplexbehandlung bei Krankheiten und Stˆrungen des Nervensystems mit schwerer motorischer Funktionseinschr‰nkung, mit neurologischer Komplexbehandlung des akuten Schlaganfalls
+01 ;A;B44B;Geriatrische fr¸hrehabilitative Komplexbehandlung bei Krankheiten und Stˆrungen des Nervensystems mit schwerer motorischer Funktionseinschr‰nkung, ohne neurologische Komplexbehandlung des akuten Schlaganfalls
+01 ;A;B44C;Geriatrische fr¸hrehabilitative Komplexbehandlung bei Krankheiten und Stˆrungen des Nervensystems ohne schwere motorische Funktionseinschr‰nkung, mit neurologischer Komplexbehandlung des akuten Schlaganfalls
+01 ;A;B44D;Geriatrische fr¸hrehabilitative Komplexbehandlung bei Krankheiten und Stˆrungen des Nervensystems ohne schwere motorische Funktionseinschr‰nkung, ohne neurologische Komplexbehandlung des akuten Schlaganfalls
+01 ;A;B46Z;Sozial- und neurop‰diatrische und p‰diatrisch-psychosomatische Therapie bei Krankheiten und Stˆrungen des Nervensystems
+01 ;A;B47Z;Multimodale Schmerztherapie bei Krankheiten und Stˆrungen des Nervensystems
+01 ;A;B48Z;Fr¸hrehabilitation bei Multipler Sklerose und zerebellarer Ataxie, nicht akuter Para-†/†Tetraplegie oder anderen neurologischen Erkrankungen
+01 ;A;B49Z;Multimodale Komplexbehandlung bei Morbus Parkinson
+01 ;M;B60A;Nicht akute Paraplegie / Tetraplegie, mehr als ein†Belegungstag
+01 ;M;B60B;Nicht akute Paraplegie / Tetraplegie, ein†Belegungstag
+01 ;M;B61A;Bestimmte akute Erkrankungen und Verletzungen des R¸ckenmarks mit komplexem Eingriff, weniger als 14†Belegungstage, wegverlegt
+01 ;M;B61B;Bestimmte akute Erkrankungen und Verletzungen des R¸ckenmarks ohne komplexen Eingriff oder mehr als 13†Belegungstage oder nicht wegverlegt
+01 ;M;B63Z;Demenz und andere chronische Stˆrungen der Hirnfunktion
+01 ;M;B64Z;Delirium
+01 ;M;B66A;Neubildungen des Nervensystems mit ‰uﬂerst schweren CC, mehr als ein†Belegungstag, Alter†<†10†Jahre oder mit komplizierender Konstellation
+01 ;M;B66B;Neubildungen des Nervensystems mit ‰uﬂerst schweren CC, mehr als ein†Belegungstag, Alter†>†9†Jahre, ohne komplizierende Konstellation
+01 ;M;B66C;Neubildungen des Nervensystems, ein†Belegungstag oder ohne ‰uﬂerst schwere CC, Alter†<†1†Jahr
+01 ;M;B66D;Neubildungen des Nervensystems, ein†Belegungstag oder ohne ‰uﬂerst schwere CC, Alter†>†0†Jahre
+01 ;M;B67A;Morbus Parkinson mit ‰uﬂerst schweren CC oder schwerster Beeintr‰chtigung
+01 ;M;B67B;Morbus Parkinson ohne ‰uﬂerst schwere CC, ohne schwerste Beeintr‰chtigung
+01 ;M;B68A;Multiple Sklerose und zerebellare Ataxie mit ‰uﬂerst schweren CC, mehr als ein†Belegungstag
+01 ;M;B68B;Multiple Sklerose und zerebellare Ataxie, ein†Belegungstag oder ohne ‰uﬂerst schwere CC, Alter†<†16†Jahre
+01 ;M;B68C;Multiple Sklerose und zerebellare Ataxie, ein†Belegungstag oder ohne ‰uﬂerst schwere CC, Alter†>†15†Jahre, mit komplexer Diagnose
+01 ;M;B68D;Multiple Sklerose und zerebellare Ataxie, ein†Belegungstag oder ohne ‰uﬂerst schwere CC, Alter†>†15†Jahre, ohne komplexe Diagnose
+01 ;M;B69A;Transitorische isch‰mische Attacke (TIA) und extrakranielle Gef‰ﬂverschl¸sse mit neurologischer Komplexbehandlung des akuten Schlaganfalls, mehr als 72†Stunden
+01 ;M;B69B;Transitorische isch‰mische Attacke (TIA) und extrakranielle Gef‰ﬂverschl¸sse mit neurologischer Komplexbehandlung des akuten Schlaganfalls, bis†72†Stunden, mit ‰uﬂerst schweren CC
+01 ;M;B69C;Transitorische isch‰mische Attacke (TIA) und extrakranielle Gef‰ﬂverschl¸sse mit neurol. Komplexbehandlung des akuten Schlaganfalls, bis†72†Std., ohne ‰uﬂ. schw. CC oder mit anderer neurol. Komplexbeh. des akuten Schlaganfalls oder mit ‰uﬂ. schw. CC
+01 ;M;B69D;Transitorische isch‰mische Attacke (TIA) und extrakranielle Gef‰ﬂverschl¸sse ohne neurologische Komplexbehandlung des akuten Schlaganfalls, ohne andere neurologische Komplexbehandlung des akuten Schlaganfalls, ohne ‰uﬂerst schwere CC
+01 ;M;B70A;Apoplexie mit neurologischer Komplexbehandlung des akuten Schlaganfalls, mehr als 72†Stunden, mit komplizierender Diagnose
+01 ;M;B70B;Apoplexie mit neurologischer Komplexbehandlung des akuten Schlaganfalls, mehr als 72†Stunden, ohne komplizierende Diagnose oder mit komplexem zerebrovaskul‰ren Vasospasmus
+01 ;M;B70C;Apoplexie ohne komplexen zerebrovask. Vasospasmus, mit neurol. Komplexbeh. des akuten Schlaganfalls bis†72†Std., mit komplizierender Diagnose oder systemischer Thrombolyse oder mit anderer neurol. Komplexbeh. des akuten Schlaganfalls, mehr als 72†Std.
+01 ;M;B70D;Apoplexie ohne komplexen zerebrovask. Vasospasmus, ohne komplizierende Diagnose oder systemische Thrombolyse, mit neurol. Komplexbeh. des akuten Schlaganfalls bis†72†Std. oder mit anderer neurol. Komplexbeh. des akuten Schlaganfalls bis†72†Std.
+01 ;M;B70E;Apoplexie ohne neurologische Komplexbehandlung des akuten Schlaganfalls, ohne andere neurol. Komplexbeh. des akuten Schlaganfalls, mehr als 72†Stunden, ohne komplexen zerebrovask. Vasospasmus, mit komplizierender Diagnose oder systemischer Thrombolyse
+01 ;M;B70F;Apoplexie ohne neurologische Komplexbehandlung des akuten Schlaganfalls, ohne andere neurologische Komplexbehandlung des akuten Schlaganfalls, ohne komplexen zerebrovaskul‰ren Vasospasmus, ohne komplizierende Diagnose, ohne systemische Thrombolyse
+01 ;M;B70G;Apoplexie mit neurologischer Komplexbehandlung des akuten Schlaganfalls oder mit anderer neurologischer Komplexbehandlung des akuten Schlaganfalls, verstorben†<†4†Tage nach Aufnahme
+01 ;M;B70H;Apoplexie ohne neurologische Komplexbehandlung des akuten Schlaganfalls, ohne andere neurologische Komplexbehandlung des akuten Schlaganfalls, verstorben†<†4†Tage nach Aufnahme
+01 ;M;B70I;Apoplexie, ein†Belegungstag
+01 ;M;B71A;Erkrankungen an Hirnnerven und peripheren Nerven mit komplexer Diagnose oder Komplexbehandlung der Hand, mit ‰uﬂerst schweren CC oder bei Para-†/†Tetraplegie mit ‰uﬂerst schweren oder schweren CC
+01 ;M;B71B;Erkrankungen an Hirnnerven und peripheren Nerven mit komplexer Diagnose, mit schweren CC oder bei Para-†/†Tetraplegie oder mit Komplexbehandlung der Hand oder ohne komplexe Diagnose, mit ‰uﬂerst schweren oder schweren CC, bei Para-†/†Tetraplegie
+01 ;M;B71C;Erkrankungen an Hirnnerven u. periph. Nerven ohne Komplexb. d. Hand od. m. kompl. Diagnose, ohne schw. CC od. auﬂer b. Para-†/†Tetraplegie od. ohne kompl. Diagn., m. ‰uﬂ. schw. od. schw. CC, auﬂ. b. Para-†/†Tetrapl. od. ohne schw. CC, b. Para-†/†Tetrapl.
+01 ;M;B71D;Erkrankungen an Hirnnerven und peripheren Nerven ohne komplexe Diagnose, ohne Komplexbehandlung der Hand, ohne ‰uﬂerst schwere oder schwere CC, auﬂer bei Para-†/†Tetraplegie
+01 ;M;B72A;Infektion des Nervensystems auﬂer Virusmeningitis, Alter†<†16†Jahre
+01 ;M;B72B;Infektion des Nervensystems auﬂer Virusmeningitis, Alter†>†15†Jahre
+01 ;M;B73Z;Virusmeningitis
+01 ;M;B75Z;Fieberkr‰mpfe
+01 ;M;B76A;Anf‰lle, mehr als ein†Belegungstag, mit komplexer Diagnostik und Therapie
+01 ;M;B76B;Anf‰lle, mehr als ein†Belegungstag, ohne komplexe Diagnostik und Therapie, mit schweren CC, Alter†<†3†Jahre oder mit komplexer Diagnose oder mit ‰uﬂerst schweren CC oder ohne ‰uﬂerst schwere oder schwere CC, mit EEG, mit komplexer Diagnose
+01 ;M;B76C;Anf‰lle, mehr als ein†Belegungstag, ohne komplexe Diagnostik und Therapie, mit ‰uﬂerst schweren CC, ohne komplexe Diagnose oder mit schweren CC, Alter†>†2†Jahre oder ohne schwere CC, mit EEG, ohne komplexe Diagnose, mit angeborener Fehlbildung
+01 ;M;B76D;Anf‰lle, mehr als ein†Belegungstag, ohne komplexe Diagnostik und Therapie, mit schweren CC, Alter†>†2†Jahre, ohne komplexe Diagnose oder ohne ‰uﬂerst schwere oder schwere CC, mit EEG, ohne komplexe Diagnose, ohne angeborene Fehlbildung
+01 ;M;B76E;Anf‰lle, ein†Belegungstag oder ohne komplexe Diagnostik und Therapie, ohne ‰uﬂerst schwere oder schwere CC, ohne EEG, Alter†<†6†Jahre oder mit komplexer Diagnose
+01 ;M;B76F;Anf‰lle, ein†Belegungstag oder ohne komplexe Diagnostik und Therapie, ohne ‰uﬂerst schwere oder schwere CC, ohne EEG, Alter†>†5†Jahre, ohne komplexe Diagnose
+01 ;M;B77Z;Kopfschmerzen
+01 ;M;B78A;Intrakranielle Verletzung, Alter†<†1†Jahr oder mit komplizierender Diagnose
+01 ;M;B78B;Intrakranielle Verletzung, Alter†>†0†Jahre, ohne komplizierende Diagnose
+01 ;M;B79Z;Sch‰delfrakturen, Somnolenz, Sopor
+01 ;M;B80Z;Andere Kopfverletzungen
+01 ;M;B81A;Andere Erkrankungen des Nervensystems mit komplexer Diagnose
+01 ;M;B81B;Andere Erkrankungen des Nervensystems ohne komplexe Diagnose
+01 ;M;B82Z;Andere Erkrankungen an peripheren Nerven
+01 ;M;B84Z;Vaskul‰re Myelopathien
+01 ;M;B85A;Degenerative Krankheiten des Nervensystems mit hochkomplexer Diagnose oder mit ‰uﬂerst schweren oder schweren CC, mit komplexer Diagnose
+01 ;M;B85B;Degenerative Krankheiten des Nervensystems mit ‰uﬂerst schweren oder schweren CC, ohne komplexe Diagnose, ohne hochkomplexe Diagnose
+01 ;M;B85C;Degenerative Krankheiten des Nervensystems ohne hochkomplexe Diagnose, ohne ‰uﬂerst schwere oder schwere CC, mit komplexer Diagnose oder zerebrale L‰hmungen
+01 ;M;B85D;Degenerative Krankheiten des Nervensystems ohne hochkomplexe Diagnose, ohne ‰uﬂerst schwere oder schwere CC, ohne komplexe Diagnose
+01 ;M;B86Z;R¸ckenmarkkompression, nicht n‰her bezeichnet und Krankheit des R¸ckenmarkes, nicht n‰her bezeichnet
+02 ;O;C01A;Komplexe Eingriffe bei penetrierenden Augenverletzungen
+02 ;O;C01B;Andere Eingriffe bei penetrierenden Augenverletzungen oder Amnionmembrantransplantation oder Biopsien an kraniellen Gef‰ﬂen
+02 ;O;C02A;Enukleationen und Eingriffe an der Orbita bei bˆsartiger Neubildung oder Strahlentherapie bei bˆsartiger Neubildung
+02 ;O;C02B;Enukleationen und Eingriffe an der Orbita auﬂer bei bˆsartiger Neubildung
+02 ;O;C03A;Eingriffe an der Retina mit Pars-plana-Vitrektomie, mit extrakapsul‰rer Extraktion der Linse (ECCE) oder bei bˆsartiger Neubildung des Auges, mit best. Eingriff an der Retina oder Entfernung des Augapfels mit gleichzeitiger Einf¸hrung eines Implantates
+02 ;O;C03B;Eingriffe an der Retina mit Pars-plana-Vitrektomie, mit extrakapsul‰rer Extraktion der Linse (ECCE) oder bei bˆsartiger Neubildung des Auges, ohne bestimmten Eingriff an der Retina
+02 ;O;C03C;Eingriffe an der Retina mit Pars-plana-Vitrektomie, ohne extrakapsul‰re Extraktion der Linse (ECCE), auﬂer bei bˆsartiger Neubildung des Auges, mit bestimmtem Eingriff an der Retina
+02 ;O;C03D;Eingriffe an der Retina mit Pars-plana-Vitrektomie, ohne extrakapsul‰re Extraktion der Linse (ECCE), auﬂer bei bˆsartiger Neubildung des Auges, ohne bestimmten Eingriff an der Retina
+02 ;O;C04A;Hornhauttransplantation mit extrakapsul‰rer Extraktion der Linse (ECCE), Amnionmembrantransplantation oder Alter†<†16†Jahre
+02 ;O;C04B;Hornhauttransplantation ohne extrakapsul‰re Extraktion der Linse (ECCE), ohne Amnionmembrantransplantation, Alter†>†15†Jahre
+02 ;O;C05Z;Dakryozystorhinostomie
+02 ;O;C06Z;Komplexe Eingriffe bei Glaukom
+02 ;O;C07A;Andere Eingriffe bei Glaukom mit extrakapsul‰rer Extraktion der Linse (ECCE)
+02 ;O;C07B;Andere Eingriffe bei Glaukom ohne extrakapsul‰re Extraktion der Linse (ECCE)
+02 ;O;C08A;Beidseitige extrakapsul‰re Extraktion der Linse (ECCE) oder extrakapsul‰re Extraktion der Linse bei angeborener Fehlbildung der Linse
+02 ;O;C08B;Extrakapsul‰re Extraktion der Linse (ECCE) ohne angeborene Fehlbildung der Linse
+02 ;O;C10A;Eingriffe an den Augenmuskeln mit erhˆhtem Aufwand
+02 ;O;C10B;Eingriffe an den Augenmuskeln ohne erhˆhten Aufwand, Alter†<†6†Jahre
+02 ;O;C10C;Eingriffe an den Augenmuskeln ohne erhˆhten Aufwand, Alter†>†5†Jahre
+02 ;O;C12Z;Andere Rekonstruktionen der Augenlider
+02 ;O;C13Z;Eingriffe an Tr‰nendr¸se und Tr‰nenwegen
+02 ;O;C14Z;Andere Eingriffe am Auge
+02 ;O;C15Z;Andere Eingriffe an der Retina
+02 ;O;C16Z;Aufw‰ndige Eingriffe am Auge, Alter†<†6†Jahre
+02 ;O;C20A;Eingriffe an Kornea, Sklera und Konjunktiva, Eingriffe am Augenlid oder verschiedene Eingriffe an der Linse, Alter†<†16†Jahre
+02 ;O;C20B;Eingriffe an Kornea, Sklera und Konjunktiva, Eingriffe am Augenlid oder verschiedene Eingriffe an der Linse, Alter†>†15†Jahre
+02 ;M;C60Z;Akute und schwere Augeninfektionen
+02 ;M;C61Z;Neuro-ophthalmologische und vaskul‰re Erkrankungen des Auges
+02 ;M;C62Z;Hyph‰ma und konservativ behandelte Augenverletzungen
+02 ;M;C63Z;Andere Erkrankungen des Auges
+02 ;M;C64Z;Glaukom, Katarakt und Erkrankungen des Augenlides
+02 ;M;C65Z;Bˆsartige Neubildungen des Auges
+02 ;M;C66Z;Augenerkrankungen bei Diabetes mellitus
+03 ;O;D01A;Kochleaimplantation, bilateral
+03 ;O;D01B;Kochleaimplantation, unilateral
+03 ;O;D02A;Komplexe Resektionen mit Rekonstruktionen an Kopf und Hals mit komplexem Eingriff oder mit Kombinationseingriff mit ‰uﬂerst schweren CC
+03 ;O;D02B;Komplexe Resektionen mit Rekonstruktionen an Kopf und Hals ohne komplexen Eingriff, ohne Kombinationseingriff mit ‰uﬂerst schweren CC
+03 ;O;D03A;Operative Korrektur einer Lippen-Kiefer-Gaumen-Spalte oder plastische Rekonstruktion der Ohrmuschel mit Knorpeltransplantat, Alter†<†1†Jahr
+03 ;O;D03B;Operative Korrektur einer Lippen-Kiefer-Gaumen-Spalte oder plastische Rekonstruktion der Ohrmuschel mit Knorpeltransplantat, Alter†>†0†Jahre
+03 ;O;D04Z;Bignathe Osteotomie und komplexe Eingriffe am Kiefer oder Rekonstruktion der Trachea oder plastische Rekonstruktion der Ohrmuschel mit mikrovaskul‰rem Lappen
+03 ;O;D05A;Komplexe Parotidektomie
+03 ;O;D05B;Komplexe Eingriffe an den Speicheldr¸sen auﬂer komplexe Parotidektomien
+03 ;O;D06A;Eingriffe an Nasennebenhˆhlen, Mastoid, komplexe Eingriffe am Mittelohr und andere Eingriffe an den Speicheldr¸sen, Alter†<†6†Jahre
+03 ;O;D06B;Eingriffe an Nasennebenhˆhlen, Mastoid, komplexe Eingriffe am Mittelohr und andere Eingriffe an den Speicheldr¸sen, Alter†>†5†Jahre und Alter†<†16†Jahre oder Alter†>†15†Jahre, mit komplexer Prozedur oder komplexer Diagnose
+03 ;O;D06C;Eingriffe an Nasennebenhˆhlen, Mastoid, komplexe Eingriffe am Mittelohr und andere Eingriffe an den Speicheldr¸sen, Alter†>†15†Jahre, ohne komplexe Prozedur, ohne komplexe Diagnose
+03 ;O;D08A;Eingriffe an Mundhˆhle und Mund bei bˆsartiger Neubildung mit ‰uﬂerst schweren CC
+03 ;O;D08B;Eingriffe an Mundhˆhle und Mund bei bˆsartiger Neubildung ohne ‰uﬂerst schwere CC
+03 ;O;D09Z;Tonsillektomie bei bˆsartiger Neubildung oder verschiedene Eingriffe an Ohr, Nase, Mund und Hals mit ‰uﬂerst schweren CC
+03 ;O;D12A;Andere aufw‰ndige Eingriffe an Ohr, Nase, Mund und Hals
+03 ;O;D12B;Andere Eingriffe an Ohr, Nase, Mund und Hals
+03 ;O;D13A;Kleine Eingriffe an Nase, Ohr und Mund mit komplizierender Diagnose
+03 ;O;D13B;Kleine Eingriffe an Nase, Ohr und Mund ohne komplizierende Diagnose
+03 ;O;D15A;Tracheostomie mit ‰uﬂerst schweren CC oder Implantation einer Kiefergelenkendoprothese
+03 ;O;D15B;Tracheostomie ohne ‰uﬂerst schwere CC
+03 ;O;D16Z;Materialentfernung an Kiefer und Gesicht
+03 ;O;D19Z;Strahlentherapie bei Krankheiten und Stˆrungen des Ohres, der Nase, des Mundes und des Halses, mehr als ein†Belegungstag, mehr als 10†Bestrahlungen
+03 ;O;D20Z;Andere Strahlentherapie bei Krankheiten und Stˆrungen des Ohres, der Nase, des Mundes und des Halses, mehr als ein†Belegungstag
+03 ;O;D22A;Eingriffe an Mundhˆhle und Mund mit Mundboden- oder Vestibulumplastik
+03 ;O;D22B;Eingriffe an Mundhˆhle und Mund auﬂer bei bˆsartiger Neubildung ohne Mundboden- oder Vestibulumplastik
+03 ;O;D23Z;Implantation eines Hˆrger‰tes
+03 ;O;D24A;Komplexe Hautplastiken und groﬂe Eingriffe an Kopf und Hals mit ‰uﬂerst schweren CC oder mit Kombinationseingriff ohne ‰uﬂerst schwere CC
+03 ;O;D24B;Komplexe Hautplastiken und groﬂe Eingriffe an Kopf und Hals ohne ‰uﬂerst schwere CC, ohne Kombinationseingriff
+03 ;O;D25A;M‰ﬂig komplexe Eingriffe an Kopf und Hals bei bˆsartiger Neubildung mit ‰uﬂerst schweren CC oder Strahlentherapie mit operativem Eingriff
+03 ;O;D25B;M‰ﬂig komplexe Eingriffe an Kopf und Hals bei bˆsartiger Neubildung ohne ‰uﬂerst schwere CC
+03 ;O;D25C;M‰ﬂig komplexe Eingriffe an Kopf und Hals auﬂer bei bˆsartiger Neubildung mit ‰uﬂerst schweren CC
+03 ;O;D25D;M‰ﬂig komplexe Eingriffe an Kopf und Hals auﬂer bei bˆsartiger Neubildung ohne ‰uﬂerst schwere CC
+03 ;O;D28Z;Monognathe Osteotomie und komplexe Eingriffe an Kopf und Hals oder andere Eingriffe an Kopf und Hals bei bˆsartiger Neubildung oder Rekonstruktion mit Gesichtsepithesen
+03 ;O;D29Z;Operationen am Kiefer und andere Eingriffe an Kopf und Hals auﬂer bei bˆsartiger Neubildung
+03 ;O;D30A;Tonsillektomie auﬂer bei bˆsart. Neubildung oder versch. Eingr. an Ohr, Nase, Mund u. Hals ohne ‰uﬂ. schw. CC, mit aufw. Eingr. od. Eingr. an Mundhˆhle u. Mund auﬂer bei bˆsart. Neub. oh. Mundboden- od. Vestib.plastik, Alter†<†3†J. od. mit kompl. Diagn.
+03 ;O;D30B;Tonsillektomie auﬂer bei bˆsartiger Neubildung oder verschiedene Eingriffe an Ohr, Nase, Mund und Hals ohne ‰uﬂerst schwere CC, ohne aufw‰ndigen Eingriff, ohne komplexe Diagnose
+03 ;O;D33Z;Mehrzeitige komplexe OR-Prozeduren bei Krankheiten und Stˆrungen des Ohres, der Nase, des Mundes und des Halses
+03 ;O;D35Z;Eingriffe an Nase und Nasennebenhˆhlen bei bˆsartiger Neubildung
+03 ;O;D36Z;Sehr komplexe Eingriffe an den Nasennebenhˆhlen
+03 ;O;D37A;Sehr komplexe Eingriffe an der Nase, Alter†<†16†Jahre oder Gaumenspalte oder Spaltnase oder Septorhinoplastik mit Rippenknorpeltransplantation
+03 ;O;D37B;Sehr komplexe Eingriffe an der Nase, Alter†>†15†Jahre, ohne Gaumenspalte, ohne Spaltnase, ohne Septorhinoplastik mit Rippenknorpeltransplantation
+03 ;O;D38Z;M‰ﬂig komplexe Eingriffe an der Nase oder an den Nasennebenhˆhlen
+03 ;O;D39Z;Andere Eingriffe an der Nase
+03 ;A;D40Z;Zahnextraktion und -wiederherstellung
+03 ;M;D60A;Bˆsartige Neubildungen an Ohr, Nase, Mund und Hals, mehr als ein†Belegungstag, mit ‰uﬂerst schweren oder schweren CC, mit starrer Endoskopie
+03 ;M;D60B;Bˆsartige Neubildungen an Ohr, Nase, Mund und Hals, mehr als ein†Belegungstag, mit ‰uﬂerst schweren oder schweren CC, ohne starre Endoskopie
+03 ;M;D60C;Bˆsartige Neubildungen an Ohr, Nase, Mund und Hals, ein†Belegungstag oder ohne ‰uﬂerst schwere oder schwere CC
+03 ;M;D61A;Komplexe Gleichgewichtsstˆrung, Hˆrverlust oder Tinnitus
+03 ;M;D61B;Gleichgewichtsstˆrungen (Schwindel) auﬂer komplexer Gleichgewichtsstˆrung, Hˆrverlust, Tinnitus
+03 ;M;D62Z;Blutung aus Nase und Rachen oder Otitis media oder Infektionen der oberen Atemwege, Alter†>†2†Jahre
+03 ;M;D63Z;Otitis media oder Infektionen der oberen Atemwege, Alter†<†3†Jahre
+03 ;M;D64Z;Laryngotracheitis, Laryngospasmus und Epiglottitis
+03 ;M;D65Z;Verletzung und Deformit‰t der Nase
+03 ;M;D66Z;Andere Krankheiten an Ohr, Nase, Mund und Hals
+03 ;M;D67Z;Erkrankungen von Z‰hnen und Mundhˆhle
+04 ;O;E01A;Revisionseingriffe, beidseitige Lobektomie, erweiterte Lungenresektionen und andere komplexe Eingriffe am Thorax mit komplizierender Konstellation, hochkomplexem Eingriff oder komplizierender Diagnose
+04 ;O;E01B;Revisionseingriffe, beidseitige Lobektomie, erweiterte Lungenresektionen und andere komplexe Eingriffe am Thorax ohne komplizierende Konstellation, ohne hochkomplexen Eingriff, ohne komplizierende Diagnose
+04 ;O;E02A;Andere OR-Prozeduren an den Atmungsorganen, Alter†<†10†Jahre
+04 ;O;E02B;Andere OR-Prozeduren an den Atmungsorganen, mit aufw‰ndigem Eingriff, Alter†>†9†Jahre
+04 ;O;E02C;Andere OR-Prozeduren an den Atmungsorganen ohne aufw‰ndigen Eingriff, Alter†>†9†Jahre
+04 ;O;E03Z;Brachytherapie oder Therapie mit offenen Nukliden bei Krankheiten und Stˆrungen der Atmungsorgane, mehr als ein†Belegungstag
+04 ;O;E05A;Andere groﬂe Eingriffe am Thorax mit ‰uﬂerst schweren CC
+04 ;O;E05B;Andere groﬂe Eingriffe am Thorax ohne ‰uﬂerst schwere CC, bei bˆsartiger Neubildung
+04 ;O;E05C;Andere groﬂe Eingriffe am Thorax ohne ‰uﬂerst schwere CC, auﬂer bei bˆsartiger Neubildung
+04 ;O;E06A;Andere Lungenresektionen, Biopsie an Thoraxorganen und Eingriffe an Thoraxwand, Pleura und Mediastinum mit ‰uﬂerst schweren CC
+04 ;O;E06B;Andere Lungenresektionen, Biopsie an Thoraxorganen und Eingriffe an Thoraxwand, Pleura und Mediastinum ohne ‰uﬂerst schwere CC, Alter†<†16†Jahre
+04 ;O;E06C;Andere Lungenresektionen, Biopsie an Thoraxorganen und Eingriffe an Thoraxwand, Pleura und Mediastinum ohne ‰uﬂerst schwere CC, Alter†>†15†Jahre
+04 ;O;E07Z;Eingriffe bei Schlafapnoesyndrom
+04 ;O;E08A;Strahlentherapie bei Krankheiten und Stˆrungen der Atmungsorgane mit operativem Eingriff oder Beatmung†>†24†Stunden
+04 ;O;E08B;Strahlentherapie bei Krankheiten und Stˆrungen der Atmungsorgane, ohne operativen Eingriff oder Beatmung†>†24†Stunden, mehr als ein†Belegungstag, mehr als 9†Bestrahlungen
+04 ;O;E08C;Strahlentherapie bei Krankheiten und Stˆrungen der Atmungsorgane, ohne operativen Eingriff oder Beatmung†>†24†Stunden, mehr als ein†Belegungstag, weniger als 10†Bestrahlungen
+04 ;O;E36Z;Intensivmedizinische Komplexbehandlung >†588 / 552†Aufwandspunkte oder hochaufw‰ndiges Implantat bei Krankheiten und Stˆrungen der Atmungsorgane
+04 ;O;E37Z;L‰ngerer station‰rer Aufenthalt vor Transplantation bei hoher Dringlichkeitsstufe bei Krankheiten und Stˆrungen der Atmungsorgane
+04 ;A;E40A;Krankheiten und Stˆrungen der Atmungsorgane mit Beatmung†>†24†Stunden, mit intensivmed. Komplexbeh. im Kindesalter >†196†P. oder mit kompliz. Diagnose oder kompl. Prozedur oder Alter†<†16†Jahre, mit ‰uﬂ. schw. CC oder ARDS, Alter†<†16†J.
+04 ;A;E40B;Krankheiten und Stˆrungen der Atmungsorgane mit Beatmung†>†24†Std., ohne intensivmed. Komplexbeh. im Kindesalter >†196†P., oh. kompliz. Diagn., ohne kompl. Proz., Alter†>†15†J., mit ‰uﬂ. schw. CC od. bei Para-†/†Tetraplegie, Alter†>†15†J.
+04 ;A;E40C;Krankheiten und Stˆrungen der Atmungsorgane mit Beatmung†>†24†Stunden, ohne intensivmedizinische Komplexbehandlung im Kindesalter >†196†P., ohne kompliz. Diagnose, ohne kompl. Prozedur, ohne ‰uﬂ. schw. CC, auﬂer bei Para-†/†Tetraplegie
+04 ;A;E41Z;Fr¸hrehabilitation bei Krankheiten und Stˆrungen der Atmungsorgane
+04 ;A;E42Z;Geriatrische fr¸hrehabilitative Komplexbehandlung bei Krankheiten und Stˆrungen der Atmungsorgane
+04 ;M;E60A;Zystische Fibrose (Mukoviszidose), Alter†<†16†Jahre oder mit ‰uﬂerst schweren CC
+04 ;M;E60B;Zystische Fibrose (Mukoviszidose), Alter†>†15†Jahre, ohne ‰uﬂerst schwere CC
+04 ;M;E63Z;Schlafapnoesyndrom oder kardiorespiratorische Polysomnographie bis†2†Belegungstage
+04 ;M;E64A;Respiratorische Insuffizienz, mehr als ein†Belegungstag, mit ‰uﬂerst schweren CC oder Lungenembolie
+04 ;M;E64B;Respiratorische Insuffizienz, mehr als ein†Belegungstag, ohne ‰uﬂerst schwere CC, Alter†<†10†Jahre
+04 ;M;E64C;Respiratorische Insuffizienz, mehr als ein†Belegungstag, ohne ‰uﬂerst schwere CC, Alter†>†9†Jahre
+04 ;M;E64D;Respiratorische Insuffizienz, ein†Belegungstag
+04 ;M;E65A;Chronisch-obstruktive Atemwegserkrankung mit ‰uﬂ. schw. CC oder starrer Bronchoskopie oder mit komplizierender Diagnose oder Bronchitis und Asthma bronchiale, mehr als ein†Belegungstag, mit ‰uﬂ. schw. oder schw. CC, Alter†<†1†J., mit RS-Virus-Infektion
+04 ;M;E65B;Chronisch-obstruktive Atemwegserkrankung ohne ‰uﬂerst schwere CC, ohne starre Bronchoskopie, ohne komplizierende Diagnose, mit FEV1†<†35% oder Alter†<†1†Jahr
+04 ;M;E65C;Chronisch-obstruktive Atemwegserkrankung ohne ‰uﬂerst schwere CC, ohne starre Bronchoskopie, ohne komplizierende Diagnose, ohne FEV1†<†35%, Alter†>†0†Jahre
+04 ;M;E66A;Schweres Thoraxtrauma mit komplizierender Diagnose
+04 ;M;E66B;Schweres Thoraxtrauma ohne komplizierende Diagnose
+04 ;M;E69A;Bronchitis und Asthma bronchiale, mehr als ein†Belegungstag, mit ‰uﬂerst schweren oder schweren CC, Alter†<†1†Jahr ohne RS-Virus-Infektion oder bei Para-†/†Tetraplegie
+04 ;M;E69B;Bronchitis und Asthma bronchiale, mehr als ein†Belegungstag u. Alter†>†55†Jahre oder mit ‰uﬂerst schweren od. schw. CC, Alt.†>†0†J., auﬂer b. Para-†/†Tetraplegie od. ein†Belegungstag od. ohne ‰uﬂerst schw. od. schw. CC, Alt.†<†1†J., m. RS-Virus-Infektion
+04 ;M;E69C;Bronchitis und Asthma bronchiale, ein†Belegungstag oder ohne ‰uﬂerst schwere oder schwere CC, Alter†<†1†Jahr, ohne RS-Virus-Infektion
+04 ;M;E69D;Bronchitis und Asthma bronchiale, Alter†>†0†Jahre und Alter†<†6†Jahre und ein†Belegungstag oder ohne ‰uﬂerst schwere oder schwere CC oder Stˆrungen der Atmung mit Ursache in der Neonatalperiode oder Alter†<†16†Jahre auﬂer bei Hyperventilation
+04 ;M;E69E;Bronchitis und Asthma bronchiale, Alter†>†5†Jahre, ein†Belegungstag oder Alter†>†5†Jahre und Alter†<†56†Jahre, ohne ‰uﬂerst schwere oder schwere CC oder Beschwerden und Symptome d. Atmung ohne komplexe Diagnose, Alter†>†15†Jahre oder bei Hyperventilation
+04 ;M;E70A;Keuchhusten und akute Bronchiolitis, Alter†<†3†Jahre
+04 ;M;E70B;Keuchhusten und akute Bronchiolitis, Alter†>†2†Jahre
+04 ;M;E71A;Neubildungen der Atmungsorgane, mehr als ein†Belegungstag, mit ‰uﬂerst schweren CC oder starrer Bronchoskopie oder mit komplexer Biopsie der Lunge
+04 ;M;E71B;Neubildungen der Atmungsorgane, ein†Belegungstag oder ohne ‰uﬂerst schwere CC, ohne starre Bronchoskopie oder ohne komplexe Biopsie der Lunge
+04 ;M;E73A;Pleuraerguss mit ‰uﬂerst schweren CC
+04 ;M;E73B;Pleuraerguss ohne ‰uﬂerst schwere CC
+04 ;M;E74Z;Interstitielle Lungenerkrankung
+04 ;M;E75A;Andere Krankheiten der Atmungsorgane mit ‰uﬂerst schweren CC, Alter†<†10†Jahre
+04 ;M;E75B;Andere Krankheiten der Atmungsorgane mit ‰uﬂerst schweren CC, Alter†>†9†Jahre
+04 ;M;E75C;Andere Krankheiten der Atmungsorgane ohne ‰uﬂerst schwere CC oder Beschwerden und Symptome der Atmung mit komplexer Diagnose
+04 ;M;E76A;Tuberkulose, mehr als 14†Belegungstage
+04 ;M;E76B;Tuberkulose bis†14†Belegungstage mit ‰uﬂerst schweren oder schweren CC
+04 ;M;E76C;Tuberkulose bis†14†Belegungstage ohne ‰uﬂerst schwere oder schwere CC oder Pneumothorax
+04 ;M;E77A;Infektionen und Entz¸ndungen der Atmungsorgane mit bestimmter Diagnose oder ‰uﬂerst schweren CC, mit intensivmedizinischer Komplexbehandlung im Kindesalter >†196†Aufwandspunkte
+04 ;M;E77B;Infektionen und Entz¸ndungen der Atmungsorgane mit bestimmter Diagnose oder ‰uﬂerst schweren CC, mit komplizierender Konstellation oder hochkomplexer Diagnose oder komplexer Diagnose bei Z.n. Organtransplantation
+04 ;M;E77C;Infektionen und Entz¸ndungen der Atmungsorgane mit bestimmter Diagnose oder ‰uﬂerst schweren CC, ohne komplizierende Konstellation, ohne hochkomplexe Diagnose, ohne komplexe Diagnose bei Z.n. Organtransplantation, mit ‰uﬂerst schweren CC
+04 ;M;E77D;Infektionen und Entz¸ndungen der Atmungsorgane mit bestimmter Diagnose oder ‰uﬂerst schweren CC, mit Komplexbehandlung bei multiresistenten Erregern oder angeborenem Fehlbildungssyndrom
+04 ;M;E77E;Infektionen und Entz¸ndungen der Atmungsorgane mit bestimmter Diagnose oder ‰uﬂerst schweren CC, mit sehr komplexer Diagnose mit ‰uﬂerst schweren oder schweren CC
+04 ;M;E77F;Infektionen und Entz¸ndungen der Atmungsorgane mit bestimmter Diagnose oder ‰uﬂerst schweren CC
+04 ;M;E77G;Infektionen und Entz¸ndungen der Atmungsorgane ohne komplexe Diagnose, ohne ‰uﬂerst schwere CC, bei Para-†/†Tetraplegie oder mit Komplexbehandlung bei multiresistenten Erregern
+04 ;M;E77H;Infektionen und Entz¸ndungen der Atmungsorgane ohne komplexe Diagnose, ohne ‰uﬂerst schwere CC, Alter†<†1†Jahr, auﬂer bei Para-†/†Tetraplegie, ohne Komplexbehandlung bei multiresistenten Erregern
+04 ;M;E77I;Infektionen und Entz¸ndungen der Atmungsorgane ohne komplexe Diagnose, ohne ‰uﬂerst schwere CC, Alter†>†0†Jahre, auﬂer bei Para-†/†Tetraplegie, ohne Komplexbehandlung bei multiresistenten Erregern
+04 ;M;E78Z;Kontrolle oder Optimierung einer bestehenden h‰uslichen Beatmung, bis†2†Belegungstage
+05 ;O;F01A;Implantation Kardioverter / Defibrillator (AICD), Drei-Kammer-Stimulation, mit zus‰tzlichem Herz- oder Gef‰ﬂeingriff oder Implantation eines myokardmodulierenden Systems
+05 ;O;F01B;Implantation Kardioverter†/†Defibrillator (AICD), Zwei-Kammer-Stimulation oder Defibrillator mit subkutaner Elektrode, mit zus‰tzlichem Herz- oder Gef‰ﬂeingriff
+05 ;O;F01C;Implantation Kardioverter / Defibrillator (AICD), Drei-Kammer-Stimulation, ohne zus‰tzlichen Herz- oder Gef‰ﬂeingriff
+05 ;O;F01D;Implantation Kardioverter / Defibrillator (AICD), Ein-Kammer-Stimulation, mit zus‰tzlichem Herz- oder Gef‰ﬂeingriff
+05 ;O;F01E;Implantation Kardioverter†/†Defibrillator (AICD), Ein-Kammer-Stimulation oder Defibrillator mit subkutaner Elektrode, ohne zus‰tzlichen Herz- oder Gef‰ﬂeingriff, mit ‰uﬂerst schweren CC
+05 ;O;F01F;Implantation Kardioverter†/†Defibrillator (AICD), Zwei-Kammer-Stimulation oder Defibrillator mit subkutaner Elektrode, ohne zus‰tzlichen Herz- oder Gef‰ﬂeingriff
+05 ;O;F01G;Implantation Kardioverter / Defibrillator (AICD), Ein-Kammer-Stimulation, ohne zus‰tzlichen Herz- oder Gef‰ﬂeingriff, ohne ‰uﬂerst schwere CC
+05 ;O;F02A;Aggregatwechsel eines Kardioverters / Defibrillators (AICD), Zwei- oder Drei-Kammer-Stimulation
+05 ;O;F02B;Aggregatwechsel eines Kardioverters / Defibrillators (AICD), Ein-Kammer-Stimulation
+05 ;O;F03A;Herzklappeneingriff mit Herz-Lungen-Maschine mit komplizierender Konstellation oder pulmonale Endarteriektomie
+05 ;O;F03B;Herzklappeneingriff mit Herz-Lungen-Maschine, ohne komplizierende Konstellation, mit Dreifacheingriff oder Alter†<†1†Jahr oder Eingriff in tiefer Hypothermie
+05 ;O;F03C;Herzklappeneingriff mit Herz-Lungen-Maschine, ohne komplizierende Konstellation, Alter†>†0†Jahre, ohne Eingriff in tiefer Hypothermie, mit Zweifacheingriff oder bei angeborenem Herzfehler, mit komplexem Eingriff
+05 ;O;F03D;Herzklappeneingriff mit Herz-Lungen-Maschine, ohne kompliz. Konst., Alter†>†0†Jahre, ohne Eingr. in tiefer Hypothermie, mit Zweifacheingr. oder kompl. Eingr. oder bei Endokarditis oder bei angeborenem Herzfehler, Alter†<†16†Jahre
+05 ;O;F03E;Herzklappeneingriff mit Herz-Lungen-Maschine, ohne kompliz. Konstellation, ohne Eingriff in tiefer Hypothermie, Alter†>†15†Jahre, mit Zweifacheingr. oder kompl. Eingriff oder bei Endokarditis oder bei angeborenem Herzfehler
+05 ;O;F03F;Herzklappeneingriff mit Herz-Lungen-Maschine, ohne komplizierende Konstellation, ohne Eingriff in tiefer Hypothermie, ohne Dreifach-†/†Zweifacheingriff, auﬂer bei angeborenem Herzfehler, ohne komplexen Eingriff, auﬂer bei Endokarditis, Alter†>†15†J.
+05 ;O;F05Z;Koronare Bypass-Operation mit invasiver kardiologischer Diagnostik oder intraoperativer Ablation, mit komplizierender Konstellation oder Karotiseingriff oder bestimmte Eingriffe mit Herz-Lungen-Maschine in tiefer Hypothermie
+05 ;O;F06A;Koronare Bypass-Operation mit mehrzeitigen komplexen OR-Prozeduren, mit komplizierender Konstellation oder Karotiseingriff
+05 ;O;F06B;Koronare Bypass-Operation mit mehrzeitigen komplexen OR-Prozeduren, ohne komplizierende Konstellation, ohne Karotiseingriff
+05 ;O;F06C;Koronare Bypass-Operation ohne mehrzeitige komplexe OR-Prozeduren, mit komplizierender Konstellation oder Karotiseingriff oder bei Infarkt oder mit Reoperation oder mit invasiver kardiologischer Diagnostik, mit intraoperativer Ablation
+05 ;O;F06D;Koronare Bypass-Operation ohne mehrzeitige komplexe OR-Prozeduren, ohne komplizierende Konstellation, ohne Karotiseingriff, mit invasiver kardiologischer Diagnostik, bei Infarkt oder mit Reoperation, ohne intraoperative Ablation
+05 ;O;F06E;Koronare Bypass-Operation ohne mehrzeitige komplexe OR-Prozeduren, ohne komplizierende Konstellation, ohne Karotiseingriff, mit invasiver kardiologischer Diagnostik oder mit intraoperativer Ablation, auﬂer bei Infarkt, ohne Reoperation
+05 ;O;F06F;Koronare Bypass-Operation ohne mehrzeitige komplexe OR-Prozeduren, ohne komplizierende Konstellation, ohne Karotiseingriff, ohne invasive kardiologische Diagnostik, ohne intraoperative Ablation
+05 ;O;F07A;Andere Eingriffe mit Herz-Lungen-Maschine, Alter†<†1†Jahr oder mit komplizierender Konstellation oder komplexer Operation
+05 ;O;F07B;Andere Eingriffe mit Herz-Lungen-Maschine, Alter†>†0†Jahre, ohne komplizierende Konstellation, ohne komplexe Operation
+05 ;O;F08A;Rekonstruktive Gef‰ﬂeingriffe ohne Herz-Lungen-Maschine, mit komplizierender Konstellation oder thorakoabdominalem Aneurysma oder komplexem Aorteneingriff
+05 ;O;F08B;Rekonstruktive Gef‰ﬂeingriffe ohne Herz-Lungen-Maschine, ohne komplizierende Konstellation, ohne thorakoabdominales Aneurysma, ohne komplexen Aorteneingriff, mit komplexem Eingriff, mit Mehretagen- oder Aorteneingriff oder Reoperation, mit ‰uﬂ. schw. CC
+05 ;O;F08C;Rekonstruktive Gef‰ﬂeingriffe ohne Herz-Lungen-Maschine, ohne kompliz. Konstell., ohne thorakoabd. Aneurysma, ohne kompl. Aorteneingr., mit kompl. Eingr., ohne Mehretagen- oder Aorteneingr., ohne Reoperation, mit ‰uﬂ. schw. CC od. mit best. Aorteneingr.
+05 ;O;F08D;Rekonstruktive Gef‰ﬂeingriffe ohne Herz-Lungen-Maschine, ohne kompliz. Konstell., ohne thorakoabd. Aneurysma, ohne kompl. Aorteneingr., mit kompl. Eingr., mit Mehretagen- oder Aorteneingr. oder Reoperation, ohne ‰uﬂ. schw. CC, ohne best. Aorteneingr.
+05 ;O;F08E;Rekonstruktive Gef‰ﬂeingriffe ohne Herz-Lungen-Maschine, ohne kompliz. Konstell., ohne thorakoabd. Aneurysma, ohne kompl. Aorteneingr., mit kompl. Eingr., ohne Mehretagen- oder Aorteneingr., ohne Reoperation, ohne ‰uﬂ. schw. CC, ohne best. Aorteneingr.
+05 ;O;F08F;Rekonstruktive Gef‰ﬂeingriffe ohne Herz-Lungen-Maschine, ohne komplizierende Konstellation, ohne thorakoabdominales Aneurysma, ohne komplexen Aorteneingriff, ohne komplexen Eingriff, ohne bestimmten Aorteneingriff
+05 ;O;F09A;Andere kardiothorakale Eingriffe ohne Herz-Lungen-Maschine, mit komplizierender Konstellation oder Alter†<†16†Jahre
+05 ;O;F09B;Andere kardiothorakale Eingriffe ohne Herz-Lungen-Maschine, ohne komplizierende Konstellation, Alter†>†15†Jahre, mit ‰uﬂerst schweren CC
+05 ;O;F09C;Andere kardiothorakale Eingriffe ohne Herz-Lungen-Maschine, ohne komplizierende Konstellation, Alter†>†15†Jahre, ohne ‰uﬂerst schwere CC
+05 ;O;F12A;Implantation eines Herzschrittmachers, Drei-Kammersystem mit ‰uﬂerst schweren CC oder mit ablativen Maﬂnahmen oder PTCA
+05 ;O;F12B;Implantation eines Herzschrittmachers, Drei-Kammersystem ohne ‰uﬂ. schw. CC, oh. ablative Maﬂnahme, oh. PTCA oder Implantation eines Herzschrittmachers, Zwei-Kammersystem, oh. kompl. Eingriff, Alter†>†15†J., m. Sondenentfernung m. Excimer-Laser
+05 ;O;F12C;Implantation eines Herzschrittmachers, Zwei-Kammersystem, Alter†<†16†Jahre
+05 ;O;F12D;Implantation eines Herzschrittmachers, Zwei-Kammersystem, Alter†>†15†Jahre, mit komplexem Eingriff
+05 ;O;F12E;Implantation eines Herzschrittmachers, Zwei-Kammersystem, ohne kompl. Eingr., Alter†>†15†Jahre, ohne Sondenentfernung mit Excimer-Laser, mit ‰uﬂerst schweren CC oder isolierter offen chirurgischer Sondenimplantation
+05 ;O;F12F;Implantation eines Herzschrittmachers, Ein-Kammersystem, mit invasiver kardiologischer Diagnostik bei bestimmten Eingriffen oder Alter†<†16†Jahre
+05 ;O;F12G;Implantation eines Herzschrittmachers, Zwei-Kammersystem, ohne komplexen Eingriff, Alter†>†15†Jahre, ohne Sondenentfernung mit Excimer-Laser, ohne ‰uﬂerst schwere CC oder isolierte offen chirurgische Sondenimplantation
+05 ;O;F12H;Implantation eines Herzschrittmachers, Ein-Kammersystem, ohne invasive kardiologische Diagnostik bei bestimmten Eingriffen, Alter†>†15†Jahre, mit Implantation eines Ereignisrekorders
+05 ;O;F12I;Implantation eines Herzschrittmachers, Ein-Kammersystem, ohne invasive kardiologische Diagnostik bei bestimmten Eingriffen, Alter†>†15†Jahre, ohne Implantation eines Ereignisrekorders
+05 ;O;F13A;Amputation bei Kreislauferkrankungen an oberer Extremit‰t und Zehen mit ‰uﬂerst schweren CC und mehrzeitigen Revisions- oder Rekonstruktionseingriffen
+05 ;O;F13B;Amputation bei Kreislauferkrankungen an oberer Extremit‰t und Zehen mit ‰uﬂerst schweren CC, ohne mehrzeitige Revisions- oder Rekonstruktionseingriffe
+05 ;O;F13C;Amputation bei Kreislauferkrankungen an oberer Extremit‰t und Zehen ohne ‰uﬂerst schwere CC
+05 ;O;F14A;Komplexe oder mehrfache Gef‰ﬂeingriffe auﬂer groﬂe rekonstruktive Eingriffe mit komplizierender Konstellation oder Revision oder komplizierender Diagnose oder Alter†<†3†Jahre oder bestimmte beidseitige Gef‰ﬂeingriffe, mit ‰uﬂerst schweren CC
+05 ;O;F14B;Komplexe oder mehrfache Gef‰ﬂeingriffe auﬂer groﬂe rekonstruktive Eingriffe mit komplizierender Konstellation oder Revision oder komplizierender Diagnose oder Alter†<†3†Jahre oder bestimmte beidseitige Gef‰ﬂeingriffe, ohne ‰uﬂerst schwere CC
+05 ;O;F15Z;Perkutane Koronarangioplastie m. komplizierender Konstellation od. m. komplexer Diagn. u. hochkompl. Intervention od. m. perkut. Angioplastie, Alt.†<†16†J. od. inv. kardiolog. Diagnostik, mehr als 2†Beleg.tage, m. kompliz. Konstellation od. Endokarditis
+05 ;O;F17A;Wechsel eines Herzschrittmachers, Mehrkammersystem oder Alter†<†16†Jahre
+05 ;O;F17B;Wechsel eines Herzschrittmachers, Einkammersystem, Alter†>†15†Jahre
+05 ;O;F18A;Revision eines Herzschrittmachers oder Kardioverters / Defibrillators (AICD) ohne Aggregatwechsel, Alter†<†16†Jahre oder mit ‰uﬂerst schweren CC oder mit Sondenentfernung mit Excimer-Laser, mit komplexem Eingriff
+05 ;O;F18B;Revision eines Herzschrittmachers oder Kardioverters / Defibrillators (AICD) ohne Aggregatwechsel, Alter†<†16†Jahre oder mit ‰uﬂerst schweren CC oder mit Sondenentfernung mit Excimer-Laser, ohne komplexen Eingriff
+05 ;O;F18C;Revision eines Herzschrittmachers oder Kardioverters / Defibrillators (AICD) ohne Aggregatwechsel, Alter†>†15†Jahre, ohne ‰uﬂerst schwere CC, ohne Sondenentfernung mit Excimer-Laser, mit komplexem Eingriff
+05 ;O;F18D;Revision eines Herzschrittmachers oder Kardioverters / Defibrillators (AICD) ohne Aggregatwechsel, Alter†>†15†Jahre, ohne ‰uﬂerst schwere CC, ohne Sondenentfernung mit Excimer-Laser, ohne komplexen Eingriff
+05 ;O;F19A;Andere perkutan-transluminale Intervention an Herz, Aorta und Lungengef‰ﬂen mit ‰uﬂerst schweren CC
+05 ;O;F19B;Andere perkutan-transluminale Intervention an Herz, Aorta und Lungengef‰ﬂen oder Radiofrequenzablation ¸ber A. renalis, ohne ‰uﬂerst schwere CC bei anderen perkutan-transluminalen Interventionen an Herz, Aorta und Lungengef‰ﬂen, Alter†<†16†Jahre
+05 ;O;F19C;Andere perkutan-transluminale Intervention an Herz, Aorta und Lungengef‰ﬂen, ohne ‰uﬂerst schwere CC, Alter†>†15†Jahre
+05 ;O;F19D;Radiofrequenzablation ¸ber A. renalis, Alter†>†15†Jahre
+05 ;O;F20Z;Beidseitige Unterbindung und Stripping von Venen mit bestimmter Diagnose oder ‰uﬂerst schweren oder schweren CC
+05 ;O;F21A;Andere OR-Prozeduren bei Kreislauferkrankungen, mit hochkomplexem Eingriff
+05 ;O;F21B;Andere OR-Prozeduren bei Kreislauferkrankungen, ohne hochkomplexen Eingriff, mit komplexem Eingriff
+05 ;O;F21C;Andere OR-Prozeduren bei Kreislauferkrankungen, ohne hochkomplexen Eingriff, ohne komplexen Eingriff
+05 ;O;F24A;Perkutane Koronarangioplastie mit komplexer Diagnose und hochkomplexer Intervention oder mit perkutaner Angioplastie, Alter†>†15†Jahre, mit ‰uﬂerst schweren CC
+05 ;O;F24B;Perkutane Koronarangioplastie mit komplexer Diagnose und hochkomplexer Intervention oder mit perkutaner Angioplastie, Alter†>†15†Jahre, ohne ‰uﬂerst schwere CC
+05 ;O;F27A;Verschiedene Eingriffe bei Diabetes mellitus mit Komplikationen, mit Gef‰ﬂeingriff
+05 ;O;F27B;Verschiedene Eingriffe bei Diabetes mellitus mit Komplikationen, ohne Gef‰ﬂeingriff, mit ‰uﬂerst schweren CC oder komplexer Arthrodese des Fuﬂes
+05 ;O;F27C;Verschiedene Eingriffe bei Diabetes mellitus mit Komplikationen, ohne Gef‰ﬂeingriff, ohne ‰uﬂerst schwere CC, ohne komplexe Arthrodese des Fuﬂes
+05 ;O;F28A;Amputation mit zus‰tzlichem Gef‰ﬂeingriff oder mit Hauttransplantation, mit ‰uﬂerst schweren oder schweren CC
+05 ;O;F28B;Amputation bei Kreislauferkrankungen auﬂer an oberer Extremit‰t und Zehen, ohne Gef‰ﬂeingriff, ohne Hauttransplantation, mit ‰uﬂerst schweren oder schweren CC
+05 ;O;F28C;Amputation bei Kreislauferkrankungen auﬂer an oberer Extremit‰t und Zehen, ohne Gef‰ﬂeingriff, ohne ‰uﬂerst schwere oder schwere CC
+05 ;O;F29Z;Fr¸hrehabilitation bei Krankheiten und Stˆrungen des Kreislaufsystems, mit bestimmter OR-Prozedur, auﬂer kardiothorakale Eingriffe
+05 ;O;F30Z;Operation bei komplexem angeborenen Herzfehler oder Hybridchirurgie bei Kindern
+05 ;O;F36A;Intensivmedizinische Komplexbehandlung bei Krankheiten und Stˆrungen des Kreislaufsystems >†1176 / 1104†Aufwandspunkte mit bestimmter OR-Prozedur oder >†588 / 552†Aufwandspunkte mit endovaskul‰rer Implantation von Stent-Prothesen an der Aorta
+05 ;O;F36B;Intensivmed. Komplexbeh. >†588 / 552†P. u. <†1177 / 1105†P. m. best. OR-Proz. od. kompl. Eingr. od. >†1176 / 1104†P. oh. best. OR-Proz. m. kompl. Eingr., oh. mehrzeit. kompl. OR-Proz. b. Krankh. u. Stˆrungen d. Kreislaufsyst.
+05 ;O;F37Z;L‰ngerer station‰rer Aufenthalt vor Transplantation bei hoher Dringlichkeitsstufe bei Krankheiten und Stˆrungen des Kreislaufsystems
+05 ;O;F39A;Unterbindung und Stripping von Venen mit beidseitigem Eingriff oder bestimmter Diagnose oder ‰uﬂerst schweren oder schweren CC
+05 ;O;F39B;Unterbindung und Stripping von Venen ohne beidseitigen Eingriff, ohne bestimmte Diagnose, ohne ‰uﬂerst schwere oder schwere CC
+05 ;A;F41A;Invasive kardiologische Diagnostik bei akutem Myokardinfarkt mit ‰uﬂerst schweren CC
+05 ;A;F41B;Invasive kardiologische Diagnostik bei akutem Myokardinfarkt ohne ‰uﬂerst schwere CC
+05 ;O;F42Z;Operation b. kompl. angeb. Herzfehler, Hybridchirurgie, best. Herzklappeneingriffe od. and. Eingriffe m. Herz-Lungen-Maschine m. invas. kardiolog. Diagnostik bei Kindern od. best. rekonstruktive Gef‰ﬂeingriffe oh. Herz-Lungen-Maschine m. kompl. Eingriff
+05 ;A;F43A;Beatmung >†24†Stunden bei Krankheiten und Stˆrungen des Kreislaufsystems, Alter†<†6†Jahre oder intensivmedizinische Komplexbehandlung >†392 / 552†Aufwandspunkte
+05 ;A;F43B;Beatmung >†24†Stunden bei Krankheiten und Stˆrungen des Kreislaufsystems, Alter†>†5†Jahre, ohne intensivmedizinische Komplexbehandlung >†392 / 552†Aufwandspunkte, mit komplizierender Konstellation oder bestimmter OR-Prozedur
+05 ;A;F43C;Beatmung >†24†Stunden bei Krankheiten und Stˆrungen des Kreislaufsystems, Alter†>†5†Jahre, ohne intensivmedizinische Komplexbehandlung >†392 / 552†Aufwandspunkte, ohne komplizierende Konstellation, ohne bestimmte OR-Prozedur
+05 ;A;F45Z;Fr¸hrehabilitation bei Krankheiten und Stˆrungen des Kreislaufsystems
+05 ;A;F48Z;Geriatrische fr¸hrehabilitative Komplexbehandlung bei Krankheiten und Stˆrungen des Kreislaufsystems
+05 ;A;F49A;Invasive kardiologische Diagnostik auﬂer bei akutem Myokardinfarkt, mit ‰uﬂerst schweren CC, mit komplexem Eingriff
+05 ;A;F49B;Invasive kardiologische Diagnostik auﬂer bei akutem Myokardinfarkt, mit ‰uﬂerst schweren CC, ohne komplexen Eingriff
+05 ;A;F49C;Invasive kardiologische Diagnostik auﬂer bei akutem Myokardinfarkt, ohne ‰uﬂerst schwere CC, Alter†<†15†Jahre
+05 ;A;F49D;Invasive kardiologische Diagnostik auﬂer bei akutem Myokardinfarkt, ohne ‰uﬂerst schwere CC, Alter†>†14†Jahre, mit kardialem Mapping oder schweren CC
+05 ;A;F49E;Invasive kardiologische Diagnostik auﬂer bei akutem Myokardinfarkt, ohne ‰uﬂerst schwere CC, Alter†>†14†Jahre, ohne kardiales Mapping, ohne schwere CC, mit komplexer Diagnose
+05 ;A;F49F;Invasive kardiologische Diagnostik auﬂer bei akutem Myokardinfarkt, ohne ‰uﬂerst schwere CC, Alter†>†14†Jahre, ohne kardiales Mapping, ohne schwere CC, ohne komplexe Diagnose, mit bestimmtem Eingriff
+05 ;A;F49G;Invasive kardiologische Diagnostik auﬂer bei akutem Myokardinfarkt, ohne ‰uﬂerst schwere CC, Alter†>†14†Jahre, ohne kardiales Mapping, ohne schwere CC, ohne komplexe Diagnose, ohne bestimmten Eingriff
+05 ;O;F50A;Ablative Maﬂnahmen bei Tachyarrhythmie mit komplexer Ablation im linken Vorhof oder hochkomplexer Ablation oder Implantation eines Ereignisrekorders
+05 ;O;F50B;Ablative Maﬂnahmen bei Tachyarrhythmie mit komplexer Ablation, ohne komplexe Ablation im linken Vorhof, ohne hochkomplexe Ablation, ohne Implantation eines Ereignisrekorders
+05 ;O;F50C;Ablative Maﬂnahmen bei Tachyarrhythmie ohne komplexe Ablation, ohne Implantation eines Ereignisrekorders, mit transseptaler Linksherz-Katheteruntersuchung
+05 ;O;F50D;Ablative Maﬂnahmen bei Tachyarrhythmie ohne komplexe Ablation, ohne Implantation eines Ereignisrekorders, ohne transseptale Linksherz-Katheteruntersuchung
+05 ;O;F51A;Endovaskul‰re Implantation von Stent-Prothesen an der Aorta, thorakal oder mit bestimmter Aortenprothesenkombination
+05 ;O;F51B;Endovaskul‰re Implantation von Stent-Prothesen an der Aorta, nicht thorakal, ohne bestimmte Aortenprothesenkombination
+05 ;O;F52A;Perkutane Koronarangioplastie mit komplexer Diagnose, mit ‰uﬂerst schweren CC
+05 ;O;F52B;Perkutane Koronarangioplastie mit komplexer Diagnose, ohne ‰uﬂerst schwere CC oder mit intrakoronarer Brachytherapie
+05 ;O;F56A;Perkutane Koronarangioplastie mit bestimmter hochkomplexer Intervention, mit ‰uﬂerst schweren CC
+05 ;O;F56B;Perkutane Koronarangioplastie mit hochkomplexer Intervention, ohne bestimmte hochkomplexe Intervention, ohne ‰uﬂerst schwere CC, oder Kryoplastie
+05 ;O;F58A;Perkutane Koronarangioplastie mit ‰uﬂerst schweren CC
+05 ;O;F58B;Perkutane Koronarangioplastie ohne ‰uﬂerst schwere CC
+05 ;O;F59A;M‰ﬂig komplexe Gef‰ﬂeingriffe oder komplexe Gef‰ﬂeingriffe ohne komplizierende Konstellation, ohne Revision, ohne komplizierende Diagnose, Alter†>†2†Jahre, ohne bestimmte beidseitige Gef‰ﬂeingriffe, mit ‰uﬂ. schweren CC oder Rotationsthrombektomie
+05 ;O;F59B;M‰ﬂig kompl. Gef‰ﬂeingr. od. kompl. Gef‰ﬂeingr. ohne kompliz. Konstell., ohne Revis., ohne kompliz. Diagn., Alt.†>†2†J., ohne best. beids. Gef‰ﬂeingr., ohne ‰uﬂ. schw. CC, ohne Rotationsthromb., mit aufw‰nd. Eingr. od. best. Diagn. od. Alt.†<†16†J.
+05 ;O;F59C;M‰ﬂig kompl. Gef‰ﬂeingr. oder kompl. Gef‰ﬂeingr. ohne kompliz. Konst., oh. Revis., oh. kompliz. Diagn., Alt.†>†2†J., oh. best. beids. Gef‰ﬂeingr., oh. ‰uﬂ. schwere CC, oh. Rot.thromb., oh. aufw. Eingr., oh. best. Diagn., Alt.†>†15†J., mit best. Eingr.
+05 ;O;F59D;M‰ﬂig kompl. Gef‰ﬂeingr. od. kompl. Gef‰ﬂeingr. ohne kompliz. Konst., oh. Revis., oh. kompliz. Diagn., Alt.†>†2†J., oh. best. beids. Gef‰ﬂeingr., oh. ‰uﬂ. schw. CC, oh. Rotat.thromb., oh. aufw. Eingr., oh. best. Diagn., Alt.†>†15†J., oh. best. Eingr.
+05 ;M;F60A;Akuter Myokardinfarkt ohne invasive kardiologische Diagnostik mit ‰uﬂerst schweren CC
+05 ;M;F60B;Akuter Myokardinfarkt ohne invasive kardiologische Diagnostik ohne ‰uﬂerst schwere CC
+05 ;M;F61A;Infektiˆse Endokarditis mit komplizierender Diagnose oder mit komplizierender Konstellation
+05 ;M;F61B;Infektiˆse Endokarditis ohne komplizierende Diagnose, ohne komplizierende Konstellation
+05 ;M;F62A;Herzinsuffizienz und Schock mit ‰uﬂerst schweren CC, mit Dialyse oder komplizierender Diagnose
+05 ;M;F62B;Herzinsuffizienz und Schock ohne ‰uﬂerst schwere CC oder ohne Dialyse, ohne komplizierende Diagnose
+05 ;M;F63A;Venenthrombose mit ‰uﬂerst schweren CC
+05 ;M;F63B;Venenthrombose ohne ‰uﬂerst schwere CC
+05 ;M;F64Z;Hautulkus bei Kreislauferkrankungen
+05 ;M;F65A;Periphere Gef‰ﬂkrankheiten mit komplexer Diagnose und ‰uﬂerst schweren CC
+05 ;M;F65B;Periphere Gef‰ﬂkrankheiten ohne komplexe Diagnose oder ohne ‰uﬂerst schwere CC
+05 ;M;F66A;Koronararteriosklerose mit ‰uﬂerst schweren CC
+05 ;M;F66B;Koronararteriosklerose ohne ‰uﬂerst schwere CC
+05 ;M;F67A;Hypertonie mit ‰uﬂerst schweren CC
+05 ;M;F67B;Hypertonie mit komplizierender Diagnose oder schweren CC
+05 ;M;F67C;Hypertonie ohne komplizierende Diagnose, ohne ‰uﬂerst schwere oder schwere CC, Alter†<†16†Jahre
+05 ;M;F67D;Hypertonie ohne komplizierende Diagnose, ohne ‰uﬂerst schwere oder schwere CC, Alter†>†15†Jahre
+05 ;M;F68A;Angeborene Herzkrankheit, Alter†<†6†Jahre
+05 ;M;F68B;Angeborene Herzkrankheit, Alter†>†5†Jahre
+05 ;M;F69A;Herzklappenerkrankungen mit ‰uﬂerst schweren oder schweren CC
+05 ;M;F69B;Herzklappenerkrankungen ohne ‰uﬂerst schwere oder schwere CC
+05 ;M;F70A;Schwere Arrhythmie und Herzstillstand mit ‰uﬂerst schweren CC
+05 ;M;F70B;Schwere Arrhythmie und Herzstillstand ohne ‰uﬂerst schwere CC
+05 ;M;F71A;Nicht schwere kardiale Arrhythmie und Erregungsleitungsstˆrungen mit ‰uﬂerst schweren CC oder kathetergest¸tzter elektrophysiologischer Untersuchung des Herzens
+05 ;M;F71B;Nicht schwere kardiale Arrhythmie und Erregungsleitungsstˆrungen ohne ‰uﬂerst schwere CC, ohne kathetergest¸tzte elektrophysiologische Untersuchung des Herzens
+05 ;M;F72A;Instabile Angina pectoris mit ‰uﬂerst schweren CC
+05 ;M;F72B;Instabile Angina pectoris ohne ‰uﬂerst schwere CC
+05 ;M;F73Z;Synkope und Kollaps
+05 ;M;F74Z;Thoraxschmerz
+05 ;M;F75A;Andere Krankheiten des Kreislaufsystems mit ‰uﬂerst schweren CC
+05 ;M;F75B;Andere Krankheiten des Kreislaufsystems ohne ‰uﬂerst schwere CC, Alter†<†10†Jahre
+05 ;M;F75C;Andere Krankheiten des Kreislaufsystems ohne ‰uﬂerst schwere CC, Alter†>†9†Jahre und Alter†<†18†Jahre
+05 ;M;F75D;Andere Krankheiten des Kreislaufsystems ohne ‰uﬂerst schwere CC, Alter†>†17†Jahre
+05 ;M;F77Z;Komplexbehandlung bei multiresistenten Erregern bei Krankheiten und Stˆrungen des Kreislaufsystems
+05 ;O;F95A;Interventioneller Septumverschluss, Alter†<†19†Jahre oder Vorhofohrverschluss
+05 ;O;F95B;Interventioneller Septumverschluss, Alter†>†18†Jahre
+05 ;O;F96Z;Stammzelltransfusion bei Krankheiten und Stˆrungen des Kreislaufsystems
+05 ;O;F98A;Komplexe minimalinvasive Operationen an Herzklappen, mit hochkomplexem Eingriff oder komplexer Diagnose oder Alter†<†16†Jahre
+05 ;O;F98B;Komplexe minimalinvasive Operationen an Herzklappen, ohne hochkomplexen Eingriff, ohne komplexe Diagnose, Alter†>†15†Jahre, mit sehr komplexem Eingriff
+05 ;O;F98C;Komplexe minimalinvasive Operationen an Herzklappen, ohne hochkomplexen Eingriff, ohne komplexe Diagnose, Alter†>†15†Jahre, ohne sehr komplexen Eingriff
+06 ;O;G01Z;Eviszeration des kleinen Beckens oder bestimmte Eingriffe an den Verdauungsorganen mit intensivmedizinischer Komplexbehandlung im Kindesalter >†392†Aufwandspunkte
+06 ;O;G02A;Eingriffe an den Verdauungsorganen bei angeborener Fehlbildung, Alter†<†2†Jahre, ohne intensivmedizinische Komplexbehandlung im Kindesalter >†392 AufwPkte oder bestimmte Eingriffe an D¸nn- und Dickdarm mit komplizierender Diagnose
+06 ;O;G02B;Komplexe Eingriffe an D¸nn- und Dickdarm ohne Eingriffe an den Verdauungsorganen bei angeborener Fehlbildung, Alter†<†2†Jahre, ohne intensivmed. Komplexbeh. im Kindesalter >†392 AufwPkte, ohne best. Eingriffe an D¸nn- und Dickdarm mit kompliz. Diagnose
+06 ;O;G03A;Groﬂe Eingriffe an Magen, ÷sophagus und Duodenum mit hochkompl. Eingriff oder kompliz. Konstell. oder bei bestimmter bˆsartiger Neubildung
+06 ;O;G03B;Groﬂe Eingriffe an Magen, ÷sophagus und Duodenum ohne hochkomplexen Eingriff, ohne komplizierende Konstellation, auﬂer bei bestimmter bˆsartiger Neubildung, mit komplexem Eingriff
+06 ;O;G03C;Groﬂe Eingriffe an Magen, ÷sophagus und Duodenum ohne hochkomplexen Eingriff, ohne komplizierende Konstellation, auﬂer bei bestimmter bˆsartiger Neubildung, ohne komplexen Eingriff
+06 ;O;G04A;Adh‰siolyse am Peritoneum, Alter†<†4†J. od. mit schw. CC od. kl. Eingr. an D¸nn-/Dickdarm mit ‰uﬂ. schw. CC od. Anl. eines Enterostomas, Alt.†<†6†J., od. best. PTAs an abd. Gef‰ﬂen mit ‰uﬂ. schw. CC, oh. int.med. Komplexbeh. b. Kind >†392 AufwPkte
+06 ;O;G04B;Adh‰siolyse am Peritoneum, Alter†<†4†Jahre oder mit ‰uﬂerst schweren oder schweren CC oder kleine Eingriffe an D¸nn- und Dickdarm mit ‰uﬂerst schweren CC od. Anlegen eines Enterostomas, Alter†>†5†Jahre, ohne best. PTAs an abdominalen Gef‰ﬂen
+06 ;O;G07A;Appendektomie oder laparoskopische Adh‰siolyse bei Peritonitis mit ‰uﬂ. schw. oder schweren CC oder kleine Eingr. an D¸nn- und Dickdarm od. a. abd. Gef. ohne ‰uﬂerst schwere CC, Alter†<†3†Jahre oder mit best. perkutan-translumin. Eingr. an abdom. Gef‰ﬂen
+06 ;O;G07B;Appendektomie oder laparoskopische Adh‰siolyse bei Peritonitis mit ‰uﬂerst schweren oder schweren CC oder kleine Eingriffe an D¸nn- und Dickdarm ohne ‰uﬂerst schwere CC, mit laparoskopischer Adh‰siolyse od. Alter†>†2†Jahre und Alter†<†10†Jahre
+06 ;O;G07C;Appendektomie oder laparoskopische Adh‰siolyse bei Peritonitis mit ‰uﬂerst schweren oder schweren CC oder kleine Eingriffe an D¸nn- und Dickdarm ohne ‰uﬂerst schwere CC, Alter†>†9†Jahre
+06 ;O;G08A;Komplexe Rekonstruktion der Bauchwand, Alter†>†0†Jahre, mit ‰uﬂerst schweren CC
+06 ;O;G08B;Komplexe Rekonstruktion der Bauchwand, Alter†>†0†Jahre, ohne ‰uﬂerst schwere CC
+06 ;O;G09Z;Beidseitige Eingriffe bei Leisten- und Schenkelhernien, Alter†>†55†Jahre oder komplexe Herniotomien
+06 ;O;G10Z;Bestimmte Eingriffe an hepatobili‰rem System, Pankreas, Niere und Milz
+06 ;O;G11A;Pyloromyotomie oder Anoproktoplastik und Rekonstruktion von Anus und Sphinkter, Alter†<†10†Jahre
+06 ;O;G11B;Pyloromyotomie oder Anoproktoplastik und Rekonstruktion von Anus und Sphinkter, Alter†>†9†Jahre
+06 ;O;G12A;Andere OR-Prozeduren an den Verdauungsorganen mit komplexer OR-Prozedur
+06 ;O;G12B;Andere OR-Prozeduren an den Verdauungsorganen mit m‰ﬂig komplexer OR-Prozedur
+06 ;O;G12C;Andere OR-Prozeduren an den Verdauungsorganen ohne komplexe oder m‰ﬂig komplexe OR-Prozedur
+06 ;O;G13Z;Andere Eingriffe an Darm oder Enterostoma mit ‰uﬂerst schweren CC
+06 ;O;G14Z;Geriatrische fr¸hrehabilitative Komplexbehandlung mit bestimmter OR-Prozedur bei Krankheiten und Stˆrungen der Verdauungsorgane
+06 ;O;G15Z;Strahlentherapie mit groﬂem abdominellen Eingriff
+06 ;O;G16A;Komplexe Rektumresektion oder andere Rektumresektion mit bestimmtem Eingriff oder bei Zustand nach Organtransplantation oder mit Immundefekt, mit bestimmter Lebermetastasenchirurgie oder komplizierender Konstellation
+06 ;O;G16B;Komplexe Rektumresektion oder andere Rektumresektion mit bestimmtem Eingriff oder bei Zustand nach Organtransplantation oder mit Immundefekt, ohne bestimmte Lebermetastasenchirurgie, ohne komplizierende Konstellation
+06 ;O;G17A;Andere Rektumresektion ohne bestimmten Eingriff, bei bˆsartiger Neubildung
+06 ;O;G17B;Andere Rektumresektion ohne bestimmten Eingriff, auﬂer bei bˆsartiger Neubildung
+06 ;O;G18A;Eingriffe an D¸nn- und Dickdarm auﬂer bei angeborener Fehlbildung oder Alter†>†1†Jahr mit hochkomplexem Eingriff oder komplizierender Diagnose
+06 ;O;G18B;Eingriffe an D¸nn- und Dickdarm auﬂer bei angeborener Fehlbildung oder Alter†>†1†Jahr, ohne hochkomplexen Eingriff, ohne komplizierende Diagnose, mit sehr komplexem Eingriff
+06 ;O;G18C;Eingriffe an D¸nn- und Dickdarm auﬂer bei angeborener Fehlbildung oder Alter†>†1†Jahr, ohne hochkomplexen Eingriff, ohne komplizierende Diagnose, ohne sehr komplexen Eingriff, mit komplexem Eingriff
+06 ;O;G18D;Eingriffe an D¸nn- und Dickdarm auﬂer bei angeborener Fehlbildung oder Alter†>†1†Jahr, ohne hochkomplexen Eingriff, ohne komplizierende Diagnose, ohne sehr komplexen Eingriff, ohne komplexen Eingriff
+06 ;O;G19A;Andere Eingriffe an Magen, ÷sophagus und Duodenum auﬂer bei angeborener Fehlbildung oder Alter†>†1†Jahr, mit komplizierender Konstellation oder bei bˆsartiger Neubildung oder Alter†<†16†Jahre
+06 ;O;G19B;Andere Eingriffe an Magen, ÷sophagus und Duodenum auﬂer bei angeborener Fehlbildung oder Alter†>†1†Jahr, ohne komplizierende Konstellation, auﬂer bei bˆsartiger Neubildung, Alter†>†15†Jahre, mit komplexem Eingriff
+06 ;O;G19C;Andere Eingriffe an Magen, ÷sophagus und Duodenum auﬂer bei angeborener Fehlbildung oder Alter†>†1†Jahr, ohne komplizierende Konstellation, auﬂer bei bˆsartiger Neubildung, Alter†>†15†Jahre, ohne komplexen Eingriff
+06 ;O;G21A;Komplexe Adh‰siolyse am Peritoneum, Alter†>†3†Jahre und ohne ‰uﬂerst schwere oder schwere CC oder andere Eingriffe an Darm oder Enterostoma ohne ‰uﬂerst schwere CC, Alter†<†16†Jahre
+06 ;O;G21B;Komplexe Adh‰siolyse am Peritoneum, Alter†>†3†Jahre und ohne ‰uﬂerst schwere oder schwere CC oder andere Eingriffe an Darm oder Enterostoma ohne ‰uﬂerst schwere CC, Alter†>†15†Jahre, mit komplexem Eingriff
+06 ;O;G21C;Komplexe Adh‰siolyse am Peritoneum, Alter†>†3†Jahre und ohne ‰uﬂerst schwere oder schwere CC oder andere Eingriffe an Darm oder Enterostoma ohne ‰uﬂerst schwere CC, Alter†>†15†Jahre, ohne komplexen Eingriff
+06 ;O;G22A;Appendektomie oder laparoskopische Adh‰siolyse bei Peritonitis oder mit ‰uﬂerst schweren oder schweren CC, Alter†<†10†Jahre oder bei bˆsartiger Neubildung
+06 ;O;G22B;Appendektomie oder laparoskopische Adh‰siolyse bei Peritonitis oder mit ‰uﬂerst schweren oder schweren CC, Alter†>†9†Jahre, mit laparoskopischer Adh‰siolyse oder Alter†<†16†Jahre, auﬂer bei bˆsartiger Neubildung
+06 ;O;G22C;Appendektomie oder laparoskopische Adh‰siolyse bei Peritonitis oder mit ‰uﬂerst schweren oder schweren CC, Alter†>†15†Jahre, auﬂer bei bˆsartiger Neubildung
+06 ;O;G23A;Appendektomie oder laparoskopische Adh‰siolyse auﬂer bei Peritonitis, ohne ‰uﬂerst schwere oder schwere CC, Alter†<†10†Jahre oder bei bˆsartiger Neubildung
+06 ;O;G23B;Appendektomie oder laparoskopische Adh‰siolyse auﬂer bei Peritonitis, ohne ‰uﬂerst schwere oder schwere CC, Alter†>†9†Jahre, mit laparoskopischer Adh‰siolyse oder Alter†<†14†Jahre, auﬂer bei bˆsartiger Neubildung
+06 ;O;G23C;Appendektomie oder laparoskopische Adh‰siolyse auﬂer bei Peritonitis, ohne ‰uﬂerst schwere oder schwere CC, Alter†>†13†Jahre, auﬂer bei bˆsartiger Neubildung
+06 ;O;G24A;Eingriffe bei Hernien, mit plastischer Rekonstruktion der Bauchwand
+06 ;O;G24B;Eingriffe bei Hernien, ohne plastische Rekonstruktion der Bauchwand
+06 ;O;G26Z;Andere Eingriffe am Anus
+06 ;O;G27A;Strahlentherapie bei Krankheiten und Stˆrungen der Verdauungsorgane, mehr als ein†Belegungstag, mehr als 8†Bestrahlungen, mit ‰uﬂerst schweren CC
+06 ;O;G27B;Strahlentherapie bei Krankheiten und Stˆrungen der Verdauungsorgane, mehr als ein†Belegungstag, mehr als 8†Bestrahlungen, ohne ‰uﬂerst schwere CC
+06 ;O;G29Z;Andere Strahlentherapie bei Krankheiten und Stˆrungen der Verdauungsorgane, mehr als ein†Belegungstag
+06 ;O;G33Z;Mehrzeitige komplexe OR-Prozeduren bei Krankheiten und Stˆrungen der Verdauungsorgane
+06 ;O;G35Z;Komplexe Vakuumbehandlung bei Krankheiten und Stˆrungen der Verdauungsorgane
+06 ;O;G36Z;Intensivmedizinische Komplexbehandlung >†1176 / 1104†Aufwandspunkte oder hochaufw‰ndiges Implantat bei Krankheiten und Stˆrungen der Verdauungsorgane
+06 ;O;G37Z;Multiviszeraleingriff bei Krankheiten und Stˆrungen der Verdauungsorgane
+06 ;O;G38Z;Komplizierende Konstellation mit bestimmtem operativen Eingriff bei Krankheiten und Stˆrungen der Verdauungsorgane
+06 ;A;G40Z;Komplizierende Konstellation mit bestimmtem endoskopischen Eingriff bei Krankheiten und Stˆrungen der Verdauungsorgane
+06 ;A;G46A;Verschiedenartige Gastroskopie bei schweren Krankheiten der Verdauungsorgane verbunden mit ‰uﬂerst schweren CC oder verbunden mit ‰uﬂerst schweren, schweren CC oder komplizierendem Eingriff bei Kindern
+06 ;A;G46B;Verschiedenartige Gastroskopie bei schweren Krankheiten der Verdauungsorgane verbunden mit ‰uﬂerst schweren CC, schweren CC oder mit komplizierendem Eingriff oder verbunden mit schw. CC bei Kindern, oder ÷sophagusperforation oder bestimmte Prozedur
+06 ;A;G46C;Verschiedenartige Gastroskopie ohne wenig komplexe Gastroskopien bei schweren Krankheiten der Verdauungsorgane, mit schw. CC oder bei nicht schw. Erkr. der Verdauungsorgane, mit schw. CC bei Kindern, ohne ÷sophagusperforation, ohne bestimmte Prozedur
+06 ;A;G47Z;Andere Gastroskopie bei schweren Krankheiten der Verdauungsorgane, ohne ‰uﬂerst schwere oder schwere CC oder Gastroskopie ohne wenig komplexe Gastroskopie, Alter†<†15†Jahre
+06 ;A;G48A;Koloskopie mit ‰uﬂerst schweren oder schweren CC, komplizierendem Eingriff oder Alter†<†15†Jahre, mit schwerer Darminfektion oder bei Zustand nach Organtransplantation
+06 ;A;G48B;Koloskopie mit ‰uﬂerst schweren oder schweren CC, komplizierendem Eingriff oder Alter†<†15†Jahre, mit komplizierender Diagnose, ohne schwere Darminfektion, auﬂer bei Zustand nach Organtransplantation
+06 ;A;G48C;Koloskopie ohne wenig komplexe Koloskopie mit ‰uﬂerst schweren oder schweren CC, komplizierendem Eingriff oder Alter†<†15†Jahre, ohne komplizierende Diagnose, ohne schwere Darminfektion, auﬂer bei Zustand nach Organtransplantation
+06 ;A;G50Z;Gastroskopie ohne wenig komplexe Gastroskopie bei nicht schweren Krankheiten der Verdauungsorgane, mit ‰uﬂerst schweren oder schweren CC, Alter†>†14†Jahre
+06 ;A;G51Z;Fr¸hrehabilitation bei Krankheiten und Stˆrungen der Verdauungsorgane
+06 ;A;G52Z;Geriatrische fr¸hrehabilitative Komplexbehandlung bei Krankheiten und Stˆrungen der Verdauungsorgane
+06 ;M;G60A;Bˆsartige Neubildung der Verdauungsorgane, mehr als ein†Belegungstag, mit ‰uﬂerst schweren CC
+06 ;M;G60B;Bˆsartige Neubildung der Verdauungsorgane, ein†Belegungstag oder ohne ‰uﬂerst schwere CC
+06 ;M;G64A;Entz¸ndliche Darmerkrankung oder andere schwere Erkrankungen der Verdauungsorgane, mit ‰uﬂerst schweren CC
+06 ;M;G64B;Entz¸ndliche Darmerkrankung oder andere schwere Erkrankungen der Verdauungsorgane, ohne ‰uﬂerst schwere CC
+06 ;M;G65Z;Obstruktion des Verdauungstraktes
+06 ;M;G66Z;Abdominalschmerz oder mesenteriale Lymphadenitis, Alter†>†55†Jahre und mit CC
+06 ;M;G67A;÷sophagitis, Gastroenteritis, gastrointestinale Blutung, Ulkuserkrankung und verschiedene Erkrankungen der Verdauungsorgane mit bestimmter komplizierender Diagnose oder mit komplexer Prozedur oder mit Dialyse
+06 ;M;G67B;÷sophagitis, Gastroenteritis, gastrointestinale Blutung, Ulkuserkrankung und verschiedene Erkrankungen der Verdauungsorgane mit komplexer Diagnose oder ‰uﬂerst schweren CC oder Alter†<†3†Jahre oder >†74†Jahre oder schweren CC bei bestimmter Diagnose
+06 ;M;G67C;÷sophagitis, Gastroenteritis, gastrointestinale Blutung, Ulkuserkrankung und verschiedene Erkrankungen der Verdauungsorgane ohne komplexe Prozedur, ohne komplexe Diagnose, ohne ‰uﬂerst schwere CC
+06 ;M;G70A;Andere schwere Erkrankungen der Verdauungsorgane ohne ‰uﬂerst schwere CC, Alter†<†16†Jahre
+06 ;M;G70B;Andere schwere Erkrankungen der Verdauungsorgane ohne ‰uﬂerst schwere CC, Alter†>†15†Jahre
+06 ;M;G71Z;Andere m‰ﬂig schwere Erkrankungen der Verdauungsorgane
+06 ;M;G72A;Andere leichte bis†moderate Erkrankungen der Verdauungsorgane oder Abdominalschmerz oder mesenteriale Lymphadenitis, Alter†<†3†Jahre
+06 ;M;G72B;Andere leichte bis†moderate Erkrankungen der Verdauungsorgane, Alter†>†2†Jahre oder Abdominalschmerz oder mesenteriale Lymphadenitis, Alter†>†2†Jahre und Alter†<†56†Jahre oder ohne CC
+06 ;M;G73Z;Gastrointestinale Blutung oder Ulkuserkrankung mit ‰uﬂerst schweren CC, mehr als ein†Belegungstag
+06 ;M;G74Z;H‰morrhoiden
+06 ;M;G77Z;Komplexbehandlung bei multiresistenten Erregern bei Krankheiten und Stˆrungen der Verdauungsorgane
+07 ;O;H01A;Eingriffe an Pankreas und Leber und portosystemische Shuntoperationen mit groﬂem Eingriff oder Strahlentherapie, mit komplexem Eingriff
+07 ;O;H01B;Eingriffe an Pankreas und Leber und portosystemische Shuntoperationen mit groﬂem Eingriff oder Strahlentherapie, ohne komplexen Eingriff
+07 ;O;H02A;Komplexe Eingriffe an Gallenblase und Gallenwegen bei bˆsartiger Neubildung
+07 ;O;H02B;Komplexe Eingriffe an Gallenblase und Gallenwegen auﬂer bei bˆsartiger Neubildung
+07 ;O;H05Z;Laparotomie und m‰ﬂig komplexe Eingriffe an Gallenblase und Gallenwegen
+07 ;O;H06A;Andere OR-Prozeduren an hepatobili‰rem System und Pankreas mit bestimmtem Eingriff und komplexer Diagnose, Dialyse, komplexer OR-Prozedur oder komplizierender Konstellation
+07 ;O;H06B;Andere OR-Prozeduren an hepatobili‰rem System und Pankreas, ohne bestimmten Eingriff und komplexe Diagnose, Dialyse, komplexe OR-Prozedur oder komplizierende Konstellation, mit selektiver Embolisation
+07 ;O;H06C;Andere OR-Prozeduren an hepatobili‰rem System und Pankreas, ohne bestimmten Eingriff und komplexe Diagnose, Dialyse, komplexe OR-Prozedur oder komplizierende Konstellation, ohne selektive Embolisation
+07 ;O;H07A;Cholezystektomie mit sehr komplexer Diagnose oder komplizierender Konstellation
+07 ;O;H07B;Cholezystektomie ohne sehr komplexe Diagnose, ohne komplizierende Konstellation
+07 ;O;H08A;Laparoskopische Cholezystektomie mit sehr komplexer oder komplizierender Diagnose
+07 ;O;H08B;Laparoskopische Cholezystektomie ohne sehr komplexe Diagnose, ohne komplizierende Diagnose
+07 ;O;H09A;Eingriffe an Pankreas und Leber und portosystemische Shuntoperationen, ohne groﬂen Eingriff, ohne Strahlentherapie, mit ‰uﬂerst schweren CC
+07 ;O;H09B;Eingriffe an Pankreas und Leber und portosystemische Shuntoperationen, ohne groﬂen Eingriff, ohne Strahlentherapie, bei bˆsartiger Neubildung oder mit bestimmtem Eingriff am Pankreas
+07 ;O;H09C;Eingriffe an Pankreas und Leber und portosystemische Shuntoperationen, ohne groﬂen Eingriff, ohne Strahlentherapie, auﬂer bei bˆsartiger Neubildung, ohne bestimmten Eingriff am Pankreas
+07 ;O;H12A;Verschiedene Eingriffe am hepatobili‰ren System mit ‰uﬂerst schweren CC oder komplexem Eingriff
+07 ;O;H12B;Verschiedene Eingriffe am hepatobili‰ren System ohne ‰uﬂerst schwere CC, ohne komplexen Eingriff
+07 ;O;H15Z;Strahlentherapie bei Krankheiten und Stˆrungen an hepatobili‰rem System und Pankreas, mehr als ein†Belegungstag, mehr als 9†Bestrahlungen
+07 ;O;H16Z;Andere Strahlentherapie bei Krankheiten und Stˆrungen an hepatobili‰rem System und Pankreas, mehr als ein†Belegungstag
+07 ;O;H33Z;Mehrzeitige komplexe OR-Prozeduren bei Krankheiten und Stˆrungen an hepatobili‰rem System und Pankreas
+07 ;O;H36Z;Intensivmedizinische Komplexbehandlung >†588 / 552†Aufwandspunkte bei Krankheiten und Stˆrungen an hepatobili‰rem System und Pankreas
+07 ;O;H37Z;L‰ngerer station‰rer Aufenthalt vor Transplantation bei hoher Dringlichkeitsstufe bei Krankheiten und Stˆrungen an hepatobili‰rem System und Pankreas
+07 ;O;H38Z;Komplizierende Konstellation mit bestimmtem operativen Eingriff bei Krankheiten und Stˆrungen an hepatobili‰rem System und Pankreas
+07 ;A;H40Z;Endoskopische Eingriffe bei ÷sophagusvarizenblutung
+07 ;A;H41A;Komplexe therapeutische ERCP mit ‰uﬂerst schweren CC oder photodynamische Therapie oder ERCP mit perkutan-transluminalen Verfahren
+07 ;A;H41B;Komplexe therapeutische ERCP mit schweren CC, ohne photodynamische Therapie oder Alter†<†16†Jahre oder komplexer Eingriff, ohne perkutan-transluminales Verfahren
+07 ;A;H41C;Komplexe therapeutische ERCP ohne ‰uﬂerst schwere oder schwere CC, ohne photodynamische Therapie, Alter†>†15†Jahre, ohne komplexen Eingriff, oder andere ERCP
+07 ;A;H44Z;Geriatrische fr¸hrehabilitative Komplexbehandlung bei Krankheiten und Stˆrungen an hepatobili‰rem System und Pankreas
+07 ;M;H60Z;Leberzirrhose und bestimmte nichtinfektiˆse Hepatitiden mit ‰uﬂerst schweren CC
+07 ;M;H61A;Bˆsartige Neubildung an hepatobili‰rem System und Pankreas, mehr als ein†Belegungstag, mit komplexer Diagnose, mit ‰uﬂerst schweren CC oder Pfortaderthrombose
+07 ;M;H61B;Bˆsartige Neubildung an hepatobili‰rem System und Pankreas, ein†Belegungstag oder ohne komplexe Diagnose oder ohne ‰uﬂerst schwere CC, ohne Pfortaderthrombose
+07 ;M;H62A;Erkrankungen des Pankreas auﬂer bˆsartige Neubildung mit akuter Pankreatitis, Alter†<†16†Jahre
+07 ;M;H62B;Erkrankungen des Pankreas auﬂer bˆsartige Neubildung mit akuter Pankreatitis, Alter†>†15†Jahre oder Leberzirrhose und bestimmte nichtinfektiˆse Hepatitiden ohne ‰uﬂerst schwere CC
+07 ;M;H62C;Erkrankungen des Pankreas auﬂer bˆsartige Neubildung ohne akute Pankreatitis
+07 ;M;H63A;Erkrankungen der Leber auﬂer bˆsartige Neubildung, Leberzirrhose und best. nichtinfekt. Hepatitiden, mehr als ein†Belegungstag, mit komplexer Diagnose und ‰uﬂerst schw. oder schw. CC oder mit kompl. Diagnose oder ‰uﬂerst schw. oder schw. CC, Alter†<†1†J.
+07 ;M;H63B;Erkrankungen der Leber auﬂer bˆsartige Neubildung, Leberzirrhose und bestimmte nichtinfektiˆse Hepatitiden, mehr als ein†Belegungstag, mit komplexer Diagnose oder ‰uﬂerst schweren oder schweren CC, Alter†>†0†Jahre
+07 ;M;H63C;Erkrankungen der Leber auﬂer bˆsartige Neubildung, Leberzirrhose und bestimmte nichtinfektiˆse Hepatitiden, ein†Belegungstag oder ohne komplexe Diagnose und ohne ‰uﬂerst schwere oder schwere CC
+07 ;M;H64Z;Erkrankungen von Gallenblase und Gallenwegen
+07 ;M;H78Z;Komplizierende Konstellation bei bestimmten Krankheiten und Stˆrungen an hepatobili‰rem System und Pankreas
+08 ;O;I01Z;Beidseitige Eingriffe oder mehrere groﬂe Eingriffe an Gelenken der unteren Extremit‰t mit komplexer Diagnose
+08 ;O;I02A;Groﬂfl. Gewebe- / Hauttransplantation, auﬂer an der Hand, mit komplizierender Konstellation, Eingriff an mehreren Lokalisationen oder mit schwerem Weichteilschaden, mit ‰uﬂerst schweren CC und komplexer OR-Prozedur
+08 ;O;I02B;Groﬂfl. Gewebe- / Hauttransplantation, auﬂ. an d. Hand, m. kompliz. Konst., Eingr. an mehr. Lokal. od. schw. Weichteilschaden, m. ‰uﬂ. schwer. CC od. kompl. OR-Proz. oder mit hochkompl. Gewebetransplantation oder bei bˆsart. Neub. und kompl. OR-Prozedur
+08 ;O;I02C;Groﬂfl. Gewebe- / Hauttransplantation, auﬂer an der Hand, mit kompliz. Konst., Eingriff an mehreren Lokalisationen oder schw. Weichteilschaden, ohne ‰uﬂ. schw. CC, ohne komplexe OR-Prozedur od. mit komplexer plast. Rekonstruktion od. kompl. OR-Prozedur
+08 ;O;I02D;Kleinfl‰chige oder groﬂfl‰chige Gewebe- / Hauttransplantation, auﬂer an der Hand, mit ‰uﬂerst schweren CC
+08 ;O;I03A;Revision oder Ersatz des H¸ftgelenkes mit kompl. Diagnose od. Arthrodese od. Alter†<†16†Jahre od. beidseitige Eingriffe od. mehrere groﬂe Eingr. an Gelenken der unteren Extremit‰t mit kompl. Eingr., mit ‰uﬂerst schw. CC, od. Eingr. an mehreren Lok.
+08 ;O;I03B;Revision oder Ersatz des H¸ftgelenkes mit kompl. Diagnose od. Arthrodese od. Alter†<†16†Jahre od. beidseitige Eingriffe od. mehrere groﬂe Eingr. an Gelenken der unteren Extremit‰t mit kompl. Eingr., oh. ‰uﬂerst schw. CC, oh. Eingr. an mehreren Lok.
+08 ;O;I04Z;Implantation, Wechsel oder Entfernung einer Endoprothese am Kniegelenk mit komplizierender Diagnose oder Arthrodese
+08 ;O;I05A;Revision oder Ersatz des H¸ftgelenkes ohne komplizierende Diagnose, ohne Arthrodese, ohne komplexen Eingriff, mit ‰uﬂerst schweren CC
+08 ;O;I05B;Anderer groﬂer Gelenkersatz
+08 ;O;I06A;Komplexe Eingriffe an der Wirbels‰ule mit Wirbels‰ulenrelease oder mit bestimmtem mehrzeitigem Eingriff oder mit Eingriff an mehreren Lokalisationen oder mit komplizierender Konstellation, oder bei Para-†/†Tetrapl. mit ‰uﬂerst schweren CC
+08 ;O;I06B;Komplexe Eingriffe an Wirbels‰ule, Kopf und Hals mit hochkomplexem Eingriff an der Wirbels‰ule oder komplexem Eingriff an Kopf und Hals, Alter†<†19†Jahre oder mit sehr komplexem Eingriff bei schwerer entz¸ndlicher Erkrankung
+08 ;O;I06C;Komplexe Eingriffe an der Wirbels‰ule mit sehr komplexem Eingriff an Wirbels‰ule ohne schwer entz. Erkr. oder mit Wirbelkˆrperersatz oder bei schwerer entz¸ndlicher Erkrankung oder bˆsartiger Neubildung, mit ‰uﬂerst schweren CC oder Halotraktion
+08 ;O;I06D;Komplexe Eingriffe an Wirbels‰ule, Kopf und Hals ohne hochkomplexen oder sehr komplexen Eingriff, ohne Wirbelkˆrperersatz, ohne schwere entz¸ndliche Erkrankung, ohne bˆsartige Neubildung, ohne ‰uﬂerst schwere CC, ohne Halotraktion
+08 ;O;I07Z;Amputation bei Krankheiten und Stˆrungen an Muskel-Skelett-System und Bindegewebe
+08 ;O;I08A;And. m‰ﬂig kompl. Eingriffe an H¸ftgelenk und Femur mit kompl. Mehrfacheingriff oder mit sehr kompl. Diagnosen, mit Osteotomie oder Muskel- / Gelenkplastik bei Zerebralparese oder Kontraktur oder mit best. Eingriff bei Beckenfraktur
+08 ;O;I08B;And. m‰ﬂig kompl. Eingriffe an H¸ftgelenk und Femur mit kompl. Mehrfacheingriff oder mit sehr kompl. Diagnosen, ohne Osteotomie oder Muskel- / Gelenkplastik bei Zerebralparese oder Kontraktur, ohne best. Eingriff bei Beckenfraktur, Alter<†16†Jahre
+08 ;O;I08C;And. m‰ﬂig kompl. Eingriffe an H¸ftgelenk und Femur mit kompl. Mehrfacheingr. od. sehr kompl. Diagn., Alter†>†15†J. od. mit kompl. Eingr. od. ‰uﬂ. schweren CC bei best. Beckenrepositionen
+08 ;O;I08D;And. m‰ﬂig kompl. Eingriffe an H¸ftgelenk und Femur mit kompl. Eingriff od. ‰uﬂerst schweren CC, oh. Osteotomie od. Muskel-†/†Gelenkplastik, od. oh. kompl. Eingr., oh. ‰uﬂ. schw. CC, mit best. Beckenrep., oh. Osteotomie od. Muskel-†/†Gelenkplastik
+08 ;O;I08E;And. m‰ﬂig kompl. Eingr. an H¸ftgel. und Femur m. kompl. Eingr. od. ‰uﬂ. schw. CC ohne best. Beckenrep. mit Osteotomie od. Muskel- / Gelenkplastik od. ohne kompl. Eingr., ohne ‰uﬂ. schw. CC, mit Osteot. od. Muskel- / Gelenkplastik, oh. best. Beckenrep.
+08 ;O;I08F;And. Eingr. an H¸ftgel. und Femur oh. kompl. Mehrfacheingr., oh. sehr kompl. Diagn., oh. kompl. Eingr., oh. ‰uﬂerst schw. CC, oh. Osteot. od. Muskel-†/†Gelenkpl., oh. m‰ﬂig kompl. Eingr. und m. Knochentranspl. und -transp. am dist. Femur od. Revision
+08 ;O;I08G;And. Eingr. H¸ftgel. u. Femur od. Ers. H¸ftgel. m. Eingr. an oberer Extremit‰t od WS, oh. m‰ﬂig komplexer Eingriff, oh. Knochentransplantation und -transposition am distalen Femur oder Revision ohne Wechsel Endoprothetik H¸fte
+08 ;O;I09A;Bestimmte Eingriffe an der Wirbels‰ule, mit sehr kompl. Osteosynthese und ‰uﬂ. schw. CC od. mehrz. kompl. Eingr. od. kompl. Eingr. m. WK-Ersatz. od. versch. kompl. Eing. an mehreren Seg.
+08 ;O;I09B;Bestimmte Eingriffe an der Wirbels‰ule, ohne sehr kompl. Osteosynth., ohne mehrz. kompl. Eingr., mit kompl. Osteosynth. und ‰uﬂerst schw. CC
+08 ;O;I09C;Bestimmte Eingriffe an der Wirbels‰ule, ohne kompl. Eingr., ohne WK-Ersatz, ohne versch. kompl. Eingr. an mehreren Seg., mit best. aufw. WS-Eingr., mit best. Kyphopl., m. best. Eingr. am Sch‰del, Gehirn, R¸ckenm. od. WS
+08 ;O;I09D;Bestimmte Eingriffe an der Wirbels‰ule, ohne kompl. Eingr., ohne WK-Ersatz, ohne versch. kompl. Eingr. an mehreren Seg., mit best. aufw. WS-Eingr., mit best. Kyphopl., ohne best. Eingr. an Sch‰del, Gehirn, R¸ckenm. od. WS
+08 ;O;I09E;Bestimmte Eingriffe an der Wirbels‰ule, ohne best. aufw. WS-Eingr., mit best. WS-Osteosynthesen, od. bei Para-†/†Tetraplegie od. bei HWS-Fraktur, od. m. intervertebrale Cages > 2 Seg.
+08 ;O;I09F;Bestimmte Eingriffe an der Wirbels‰ule, ohne best. aufw. WS-Eingr., ohne best. WS-Osteosynthesen, ohne Para-†/†Tetraplegie ohne HWS-Fraktur, ohne intervertebrale Cages > 2 Seg.
+08 ;O;I10A;Andere Eingriffe an der Wirbels‰ule mit bestimmtem Eingriff an R¸ckenmark, Spinalkanal, Wirbels‰ule, Rumpf mit ‰uﬂerst schwerem CC
+08 ;O;I10B;Andere Eingriffe an der Wirbels‰ule mit best. kompl. Eingr. od. Halotraktion od. Para-†/†Tetraplegie, od. Wirbelfraktur mit bestimmten Eingriffen an Wirbels‰ule, Spinalkanal und Bandscheibe ohne ‰uﬂerst schw. CC
+08 ;O;I10C;Andere Eingriffe an der Wirbels‰ule mit kompl. Eingriff an d. Wirbels‰ule, mit intervertebralem Cage 1 Seg. od. bei best. Spinalkanalstenose od. best. Bandscheibensch‰den
+08 ;O;I10D;Andere Eingriffe an der Wirbels‰ule mit kompl. Eingriff an d. Wirbels‰ule, ohne intervertebralem Cage 1 Seg., ohne best. Spinalkanalstenose, ohne Bandscheibensch‰den
+08 ;O;I10E;Andere Eingriffe an der Wirbels‰ule, ohne kompl. Eingr. an d. WS, ohne ‰uﬂ. schw. CC, ohne Halotraktion, auﬂer bei Para-†/†Tetraplegie, ohne Wirbelfraktur, mit m‰ﬂig kompl. Eingriff
+08 ;O;I10F;Andere Eingriffe an der Wirbels‰ule, ohne kompl. Eingriff, ohne ‰uﬂ. schw. CC, ohne Halotraktion, auﬂ. bei Para-†/†Tetraplegie, ohne Wirbelfraktur, ohne m‰ﬂig kompl. Eingriff, mit wenig kompl. Eingriff
+08 ;O;I10G;Andere Eingriffe an der Wirbels‰ule, ohne kompl. Eingriff, ohne ‰uﬂ. schw. CC, ohne Halotraktion, auﬂ. bei Para-†/†Tetraplegie, ohne Wirbelfraktur, ohne m‰ﬂig kompl. Eingriff,ohne wenig kompl. Eingriff
+08 ;O;I11Z;Eingriffe zur Verl‰ngerung einer Extremit‰t
+08 ;O;I12A;Knochen- und Gelenkinfektion / -entz¸ndung mit verschiedenen Eingriffen am Muskel-Skelett-System und Bindegewebe mit ‰uﬂerst schweren CC
+08 ;O;I12B;Knochen- und Gelenkinfektion / -entz¸ndung mit verschiedenen Eingriffen am Muskel-Skelett-System und Bindegewebe mit schweren CC, mit Revision des Kniegelenkes oder Osteomyelitis, Alter†<†16†Jahre
+08 ;O;I12C;Knochen- und Gelenkinfektion / -entz¸ndung mit verschiedenen Eingriffen am Muskel-Skelett-System und Bindegewebe mit schweren CC, ohne Revision des Kniegelenkes, ohne Osteomyelitis, Alter†>†15†Jahre
+08 ;O;I13A;Bestimmte Eingriffe an Humerus, Tibia, Fibula und Sprunggelenk mit komplexem Mehrfacheingriff oder aufw‰ndiger Osteosynthese mit komplizierenden Eingriffen am Humerus
+08 ;O;I13B;Bestimmte Eingriffe an Humerus, Tibia, Fibula und Sprunggelenk mit komplexem Mehrfacheingriff oder aufw‰ndiger Osteosynthese ohne komplizierenden Eingriffen am Humerus
+08 ;O;I13C;Bestimmte Eingriffe an Humerus, Tibia, Fibula und Sprunggelenk mit best. Mehrfacheingr. od. kompl. Diagn. od. best. kompl. Osteotomie bei kompl. Eingriff od. schw. Weichteilschaden, oder bestimmte Eingriffe bei Endoprothese der oberen Extremit‰t
+08 ;O;I13D;Bestimmte Eingriffe an Humerus, Tibia, Fibula und Sprunggelenk mit komplexem Eingriff oder schwerem Weichteilschaden oder komplexer Osteotomie bei m‰ﬂig komplexem Eingriff oder Pseudarthrose
+08 ;O;I13E;Bestimmte Eingriffe an Humerus, Tibia, Fibula und Sprunggelenk mit m‰ﬂig komplexem Eingriff oder bei Pseudarthrose
+08 ;O;I13F;Bestimmte Eingriffe an Humerus, Tibia, Fibula und Sprunggelenk, ohne aufw‰ndige Osteosynthese, ohne Mehrfacheingriff, ohne komplexe Diagnose, ohne komplexe Prozedur, ohne schweren Weichteilschaden, ohne m‰ﬂig komplexen Eingriff, ohne Pseudarthrose
+08 ;O;I14Z;Revision eines Amputationsstumpfes
+08 ;O;I15A;Operationen am Hirn- und Gesichtssch‰del, mit bestimmtem intrakraniellen Eingriff oder auﬂer Materialentfernung, Alter†<†16†Jahre
+08 ;O;I15B;Operationen am Hirn- und Gesichtssch‰del, ohne bestimmten intrakraniellen Eingriff, Alter†>†15†Jahre oder Materialentfernung
+08 ;O;I16Z;Andere Eingriffe am Schultergelenk oder an der Klavikula, oder offene Repositionen bei einer Klavikulafraktur
+08 ;O;I17Z;Operationen am Gesichtssch‰del
+08 ;O;I18A;Wenig komplexe Eingriffe an Kniegelenk, Ellenbogengelenk und Unterarm, Alter†<†16†Jahre oder mit m‰ﬂig komplexem Eingriff oder mit beidseitigem Eingriff am Kniegelenk
+08 ;O;I18B;Wenig komplexe Eingriffe an Kniegelenk, Ellenbogengelenk und Unterarm, Alter†>†15†Jahre, ohne m‰ﬂig komplexen Eingriff, ohne beidseitigen Eingriff am Kniegelenk
+08 ;O;I20A;Eingriffe am Fuﬂ, mit mehreren hochkomplexen Eingriffen, mit hochkomplexem Eingriff und komplexer Diagnose, mit Teilwechsel Endoprothese des unteren Sprunggelenks oder mit bestimmter Arthrodese
+08 ;O;I20B;Eingriffe am Fuﬂ, mit mehreren komplexen Eingriffen, mit hochkomplexem Eingriff, bei Zerebralparese, mit Teilwechsel Endoprothese d. unteren Sprunggelenks, mit komplexem Eingriff bei komplexer Diagnose, mit Eingriff an Sehnen des R¸ckfuﬂes
+08 ;O;I20C;Eingr. am Fuﬂ oh. mehr. kompl. Eingr., m. kompl. Eingr. od. schw. Weichteilsch. od. Osteomyelitis†/†Arthritis od. Eingr. Groﬂz. m. kompl. Eingr. an mehr. Strah., m. Knochentx, m. Impl. Zehengel. od. bei Kalka., od. Einz. Mehrf. > 3 Mittelf.- / Zehenstr.
+08 ;O;I20D;Eingriffe am Fuﬂ ohne komplexe Eingriffe, mit Eingriff an mehr als einem Strahl oder chronischer Polyarthritis
+08 ;O;I20E;Eingriffe am Fuﬂ ohne komplexen Eingriff, Alter†<†16†Jahre
+08 ;O;I20F;Eingriffe am Fuﬂ ohne komplexen Eingriff, Alter†>†15†Jahre
+08 ;O;I21Z;Lokale Exzision und Entfernung von Osteosynthesematerial an H¸ftgelenk, Femur und Wirbels‰ule oder komplexe Eingriffe an Ellenbogengelenk und Unterarm oder bestimmte Eingriffe an der Klavikula
+08 ;O;I22A;Gewebe- / Hauttransplantation, auﬂer an der Hand, mit groﬂfl‰ch. Gewebetransplantation, mit komplizierender Konstellation, Eingriff an mehreren Lokalisationen, schwerem Weichteilschaden oder komplexer Gewebetransplantation mit schweren CC
+08 ;O;I22B;Gewebe- / Hauttransplantation, auﬂer an der Hand, mit kleinfl‰chiger Gewebetransplantation od. mit groﬂfl‰chiger Gewebetransplantation ohne kompliz. Konst., oh. Eingr. an mehreren Lokal., oh. schw. Weichteilschaden, oh. kompl. Gewebetranspl. m. schw. CC
+08 ;O;I23A;Lokale Exzision und Entfernung von Osteosynthesematerial auﬂer an H¸ftgelenk, Femur und Wirbels‰ule mit komplizierendem Eingriff am Knochen
+08 ;O;I23B;Lokale Exzision und Entfernung von Osteosynthesematerial auﬂer an H¸ftgelenk, Femur und Wirbels‰ule ohne komplizierenden Eingriff am Knochen
+08 ;O;I24Z;Arthroskopie einschlieﬂlich Biopsie oder andere Eingriffe an Kniegelenk, Ellenbogengelenk und Unterarm
+08 ;O;I26Z;Intensivmedizinische Komplexbehandlung >†588 / 552†Aufwandspunkte oder hochaufw‰ndiges Implantat bei hochkomplexer Gewebe- / Hauttransplantation
+08 ;O;I27A;Eingriffe am Weichteilgewebe oder kleinfl‰chige Gewebetransplantationen mit bestimmter Diagnose und bestimmtem Eingriff, oder mit ‰uﬂerst schweren CC oder bˆsartiger Neubildung und schweren CC und bestimmter Diagnose und komplexe Eingr.
+08 ;O;I27B;Eingr. am Weichteilg. oder kleinfl. Gewebetransplant., ohne best. Diagn. und best. Eingriff, ohne ‰uﬂ. schw. CC oder bˆsartige Neub. und schw. CC, ohne schw. CC und mit bˆsartiger Neub. bei best. Eingr. am Weichteilgew. od. kleinfl. Gewebetransplant.
+08 ;O;I27C;Eingr. am Weichteilg. oder kleinfl. Gewebetransplant., oh. best. Diagnose und best. Eingriff, oh. ƒuﬂerst schw. CC oder bˆsartige Neub. und schw. CC, mit schw. CC u. mit bˆsartige Neub. bei best. Eingr. am Weichteilgew. od. kleinfl. Gewebetransplant.
+08 ;O;I27D;Eingr. am Weichteilg. oder kleinfl. Gewebetransplant., oh. best. Diagnose und best. Eingriff, oh. ƒuﬂerst schw. CC oder bˆsartige Neub. und schw. CC, oh. schw. CC und oh. bˆsartige Neub. bei best. Eingr. am Weichteilgew. od. kleinfl. Gewebetransplant.
+08 ;O;I28A;Komplexe Eingriffe am Bindegewebe
+08 ;O;I28B;M‰ﬂig komplexe Eingriffe am Bindegewebe
+08 ;O;I28C;Andere Eingriffe am Bindegewebe
+08 ;O;I29A;Komplexe Eingriffe am Schultergelenk oder bestimmte Osteosynthesen an der Klavikula, bei komplizierender Diagnose oder Eingriff an mehreren Lokalisationen
+08 ;O;I29B;Komplexe Eingriffe am Schultergelenk oder bestimmte Osteosynthesen an der Klavikula, ohne komplizierende Diagnose oder ohne Eingriff an mehreren Lokalisationen
+08 ;O;I30Z;Komplexe Eingriffe am Kniegelenk oder arthroskopische Eingriffe am H¸ftgelenk
+08 ;O;I31A;Mehrere komplexe Eingriffe an Ellenbogengelenk und Unterarm oder gelenk¸bergreifende Weichteildistraktion bei angeborenen Anomalien der Hand, mit aufw‰ndigen Eingriffen am Unterarm
+08 ;O;I31B;Mehrere komplexe Eingriffe an Ellenbogengelenk und Unterarm oder gelenk¸bergreifende Weichteildistraktion bei angeborenen Anomalien der Hand
+08 ;O;I32A;Eingr. an Handgelenk u. Hand mit mehrzeitigem kompl. od. m‰ﬂig kompl. Eingr. od. mit Komplexbehandl. Hand od. mit aufw‰ndigem rekonstruktiven Eingr. bei angeborener Fehlbildung der Hand oder mit best. gef‰ﬂgestielten Knochentx. bei Pseudarthrose der Hand
+08 ;O;I32B;Eingr. an Handgel. und Hand ohne mehrz. Eingr., oh. Komplexb. Hand, ohne aufw. rekonstr. Eingr., mit kompl. Eingr. od. b. angeb. Anomalie d. Hand od. Pseudarthr., Alter†<†6†J. od. kompl. Eingr. b. angeb. Fehlb. d. Hand u. Alter†<†16†J.
+08 ;O;I32C;Eingr. an Handg. und Hand oh. mehrz. Eingr., oh. Komplexb. Hand, mit kompl. Eingr. od. bei angeb. Anomalie d. Hand od. Pseudarthr., Alter†>†5†J. od. oh. kompl. Eingr. b. angeb. Fehlb. d. Hand und Alter < 16 J., mit best. Eingr. od. kompl. Diag.
+08 ;O;I32D;Eingriffe an Handgelenk und Hand mit komplexem Eingriff, ohne komplexe Diagnose oder ohne sehr komplexen Eingriff, oder mit komplexer Diagnose oder mit bestimmtem oder beidseitigem Eingriff
+08 ;O;I32E;M‰ﬂig komplexe Eingriffe an Handgelenk und Hand, Alter†<†6†Jahre
+08 ;O;I32F;M‰ﬂig komplexe Eingriffe an Handgelenk und Hand, Alter†>†5†Jahre
+08 ;O;I32G;Eingriffe an Handgelenk und Hand ohne komplexe oder m‰ﬂig komplexe Eingriffe
+08 ;O;I33Z;Rekonstruktion von Extremit‰tenfehlbildungen
+08 ;O;I34Z;Geriatrische fr¸hrehabilitative Komplexbehandlung mit bestimmter OR-Prozedur bei Krankheiten und Stˆrungen an Muskel-Skelett-System und Bindegewebe
+08 ;O;I36Z;Beidseitige Implantation einer Endoprothese an H¸ft- und/oder Kniegelenk
+08 ;O;I37Z;Resezierender Eingriff am Becken bei bˆsartiger Neubildung des Beckens oder Mehretageneingriffe an der unteren Extremit‰t
+08 ;O;I39Z;Strahlentherapie bei Krankheiten und Stˆrungen an Muskel-Skelett-System und Bindegewebe, mehr als 8†Bestrahlungen
+08 ;A;I40Z;Fr¸hrehabilitation bei Krankheiten und Stˆrungen an Muskel-Skelett-System und Bindegewebe
+08 ;A;I41Z;Geriatrische fr¸hrehabilitative Komplexbehandlung bei Krankheiten und Stˆrungen an Muskel-Skelett-System und Bindegewebe
+08 ;A;I42Z;Multimodale Schmerztherapie bei Krankheiten und Stˆrungen an Muskel-Skelett-System und Bindegewebe
+08 ;O;I43A;Implantation oder Wechsel bestimmter Endoprothesen am Knie- oder am Ellenbogengelenk oder Prothesenwechsel am Schulter- oder am Sprunggelenk, mit ‰uﬂerst schweren CC
+08 ;O;I43B;Implantation oder Wechsel bestimmter Endoprothesen am Knie- oder am Ellenbogengelenk oder Prothesenwechsel am Schulter- oder am Sprunggelenk, ohne ‰uﬂerst schwere CC
+08 ;O;I44A;Implantation einer bikondyl‰ren Endoprothese oder andere Endoprothesenimplantation / -revision am Kniegelenk, mit ‰uﬂerst schweren CC oder Korrektur einer Brustkorbdeformit‰t
+08 ;O;I44B;Implantation einer bikondyl‰ren Endoprothese oder andere Endoprothesenimplantation / -revision am Kniegelenk, ohne ‰uﬂerst schweren CC oder ohne Korrektur einer Brustkorbdeformit‰t
+08 ;O;I44C;Verschiedene Endoprotheseneingriffe am Kniegelenk
+08 ;O;I45A;Implantation und Ersatz einer Bandscheibenendoprothese, mehr als ein†Segment
+08 ;O;I45B;Implantation und Ersatz einer Bandscheibenendoprothese, weniger als 2†Segmente
+08 ;O;I46A;Prothesenwechsel am H¸ftgelenk mit ‰uﬂerst schweren CC oder Eingriff an mehreren Lokalisationen
+08 ;O;I46B;Prothesenwechsel am H¸ftgelenk ohne ‰uﬂerst schwere CC, ohne Eingriff an mehreren Lokalisationen
+08 ;O;I47A;Revision oder Ersatz des H¸ftgelenkes ohne komplizierende Diagnose, ohne Arthrodese, ohne ‰uﬂerst schwere CC, Alter†>†15†Jahre, mit komplizierendem Eingriff oder mit Implantation / Wechsel einer Radiuskopfprothese
+08 ;O;I47B;Revision oder Ersatz des H¸ftgelenkes ohne komplizierende Diagnose, ohne Arthrodese, ohne ‰uﬂerst schwere CC, Alter†>†15†Jahre, ohne komplizierenden Eingriff
+08 ;O;I50Z;Gewebe- / Hauttransplantation, auﬂer an der Hand, ohne komplizierende Konstellation, ohne Eingriff an mehreren Lokalisationen, ohne schweren Weichteilschaden, ohne ‰uﬂerst schwere oder schwere CC
+08 ;O;I54Z;Strahlentherapie bei Krankheiten und Stˆrungen an Muskel-Skelett-System und Bindegewebe, weniger als 9†Bestrahlungen bei bˆsartiger Neubildung
+08 ;O;I59Z;Andere Eingriffe an Humerus, Tibia, Fibula und Sprunggelenk oder m‰ﬂig komplexe Eingriffe an Kniegelenk, Ellenbogengelenk und Unterarm
+08 ;M;I60Z;Frakturen am Femurschaft, Alter†<†3†Jahre
+08 ;M;I64A;Osteomyelitis, Alter†<†16†Jahre
+08 ;M;I64B;Osteomyelitis, Alter†>†15†Jahre, mit ‰uﬂerst schweren oder schweren CC
+08 ;M;I64C;Osteomyelitis, Alter†>†15†Jahre, ohne ‰uﬂerst schwere oder schwere CC
+08 ;M;I65A;Bˆsartige Neubildung des Bindegewebes einschlieﬂlich pathologischer Fraktur, Alter†<†17†Jahre oder mit ‰uﬂerst schweren CC, mit hochkomplexer Chemotherapie
+08 ;M;I65B;Bˆsartige Neubildung des Bindegewebes einschlieﬂlich pathologischer Fraktur, Alter†<†17†Jahre oder mit ‰uﬂerst schweren CC, ohne hochkomplexe Chemotherapie
+08 ;M;I65C;Bˆsartige Neubildung des Bindegewebes einschlieﬂlich pathologischer Fraktur, Alter†>†16†Jahre, ohne ‰uﬂerst schwere CC
+08 ;M;I66A;Andere Erkrankungen des Bindegewebes, mehr als ein†Belegungstag, mit ‰uﬂerst schweren CC
+08 ;M;I66B;Andere Erkrankungen des Bindegewebes, mehr als ein†Belegungstag, ohne ‰uﬂerst schwere CC oder Frakturen an Becken und Schenkelhals
+08 ;M;I66C;Andere Erkrankungen des Bindegewebes, ein†Belegungstag
+08 ;M;I68A;Nicht operativ behandelte Erkrankungen und Verletzungen im Wirbels‰ulenbereich, mehr als ein†Belegungstag, mit schweren CC oder bei Para-†/†Tetraplegie, bei Diszitis oder infektiˆser Spondylopathie
+08 ;M;I68B;Nicht operativ behandelte Erkrankungen und Verletzungen im Wirbels‰ulenbereich, mehr als ein†Belegungstag, mit schw. CC oder bei Para-†/†Tetraplegie, Alter†>†65†Jahre oder mit kompl. Diagnose auﬂer bei Diszitis oder infektiˆser Spondylopathie
+08 ;M;I68C;Nicht operativ behandelte Erkrankungen und Verletzungen im WS-Bereich, mehr als ein†Belegungstag, mit schw. CC, Alter†>†65†Jahre od. ‰uﬂ. schwere CC, auﬂer bei Para-†/†Tetraplegie, ohne komplexe Diagnose, auﬂer bei Diszitis od. infektiˆser Spondylopathie
+08 ;M;I68D;Nicht operativ behandelte Erkrankungen und Verl. im WS-Bereich, mehr als†ein†Belegungstag, bei and. Femurfraktur, Alt.†<†65†J., mit schw. CC, oh. ‰uﬂ. schw. CC, auﬂ. b. Para-†/†Tetraplegie, auﬂ. b. Diszitis od. infekt. Spondylopathie, oh. kompl. Diagn.
+08 ;M;I68E;Nicht operativ behandelte Erkrankungen und Verletzungen im Wirbels‰ulenbereich, ein†Belegungstag
+08 ;M;I69A;Knochenkrankheiten und spezifische Arthropathien mit komplexer Diagnose oder Muskel- und Sehnenerkrankungen bei Para-†/†Tetraplegie
+08 ;M;I69B;Knochenkrankheiten und spezifische Arthropathien ohne komplexe Diagnose
+08 ;M;I71A;Muskel- und Sehnenerkrankungen auﬂer bei Para-†/†Tetraplegie oder Verstauchung, Zerrung, Luxation an H¸ftgelenk, Becken und Oberschenkel, mit Zerebralparese oder Kontraktur
+08 ;M;I71B;Muskel- und Sehnenerkrankungen auﬂer bei Para-†/†Tetraplegie oder Verstauchung, Zerrung, Luxation an H¸ftgelenk, Becken und Oberschenkel, ohne Zerebralparese, ohne Kontraktur
+08 ;M;I72Z;Entz¸ndung von Sehnen, Muskeln und Schleimbeuteln mit ‰uﬂerst schweren oder schweren CC oder Frakturen am Femurschaft, Alter†>†2†Jahre
+08 ;M;I73Z;Nachbehandlung bei Erkrankungen des Bindegewebes
+08 ;M;I74A;Verletzungen an Unterarm, Handgelenk, Hand oder Fuﬂ mit ‰uﬂerst schweren oder schweren CC oder unspezifische Arthropathien
+08 ;M;I74B;Verletzungen an Unterarm, Handgelenk, Hand oder Fuﬂ ohne ‰uﬂerst schwere oder schwere CC, Alter†<†10†Jahre
+08 ;M;I74C;Verletzungen an Unterarm, Handgelenk, Hand oder Fuﬂ ohne ‰uﬂerst schwere oder schwere CC, Alter†>†9†Jahre
+08 ;M;I75A;Schwere Verletzungen von Schulter, Arm, Ellenbogen, Knie, Bein und Sprunggelenk mit CC
+08 ;M;I75B;Schwere Verletzungen von Schulter, Arm, Ellenbogen, Knie, Bein und Sprunggelenk ohne CC oder Entz¸ndungen von Sehnen, Muskeln und Schleimbeuteln ohne ‰uﬂerst schwere oder schwere CC
+08 ;M;I76A;Andere Erkrankungen des Bindegewebes mit komplizierender Diagnose oder ‰uﬂerst schweren CC oder septische Arthritis mit ‰uﬂerst schweren CC oder Alter†<†16†Jahre
+08 ;M;I76B;Andere Erkrankungen des Bindegewebes ohne komplizierende Diagnose, ohne ‰uﬂerst schwere CC oder septische Arthritis ohne ‰uﬂerst schwere CC, Alter†>†15†Jahre
+08 ;M;I77Z;M‰ﬂig schwere Verletzungen von Schulter, Arm, Ellenbogen, Knie, Bein und Sprunggelenk
+08 ;M;I78Z;Leichte bis†moderate Verletzungen von Schulter, Arm, Ellenbogen, Knie, Bein und Sprunggelenk
+08 ;M;I79Z;Fibromyalgie
+08 ;O;I95Z;Implantation einer Tumorendoprothese oder Knochentotalersatz am Femur
+08 ;O;I96Z;Fr¸hrehabilitation mit bestimmter OR-Prozedur bei Krankheiten und Stˆrungen an Muskel-Skelett-System und Bindegewebe, mehr als 20†Tage
+08 ;A;I97Z;Rheumatologische Komplexbehandlung bei Krankheiten und Stˆrungen an Muskel-Skelett-System und Bindegewebe
+08 ;O;I98Z;Komplexe Vakuumbehandlung bei Krankheiten und Stˆrungen an Muskel-Skelett-System und Bindegewebe
+09 ;O;J01Z;Gewebetransplantation mit mikrovaskul‰rer Anastomosierung bei bˆsartiger Neubildung an Haut, Unterhaut und Mamma
+09 ;O;J02A;Hauttransplantation oder Lappenplastik an der unteren Extr. bei Ulkus od. Infektion / Entz¸ndung od. ausgedehnte Lymphad. od. Gewebetranspl. mit mikrovask. Anastomos., mit ‰uﬂ. schw. CC bei Para-†/†Tetraplegie od. mit kompl. Eingr.
+09 ;O;J02B;Hauttranspl. od. Lappenpl. an d. unt. Extr. b. Ulkus/Infekt./Entz. od. ausged. Lymphad. od. Gewebetranspl. m. mikrovask. Anastomos., m. ‰uﬂ. schw. CC auﬂ. b. Para- / Tetrapl., oh. kompl. Eingr. od. oh. ‰uﬂ. schw. CC, m. kompl. Eingr.
+09 ;O;J02C;Hauttransplantation oder Lappenplastik an der unteren Extremit‰t bei Ulkus oder Infektion / Entz¸ndung oder ausgedehnte Lymphadenektomie, ohne ‰uﬂerst schwere CC, ohne komplexen Eingriff
+09 ;O;J03Z;Eingriffe an der Haut der unteren Extremit‰t bei Ulkus oder Infektion / Entz¸ndung
+09 ;O;J04Z;Eingriffe an der Haut der unteren Extremit‰t auﬂer bei Ulkus oder Infektion / Entz¸ndung
+09 ;O;J06Z;Mastektomie mit Prothesenimplantation und plastischer Operation bei bˆsartiger Neubildung
+09 ;O;J07A;Kleine Eingriffe an der Mamma mit axill‰rer Lymphknotenexzision oder ‰uﬂerst schweren oder schweren CC bei bˆsartiger Neubildung, mit beidseitigem Eingriff
+09 ;O;J07B;Kleine Eingriffe an der Mamma mit axill‰rer Lymphknotenexzision oder ‰uﬂerst schweren oder schweren CC bei bˆsartiger Neubildung, ohne beidseitigen Eingriff
+09 ;O;J08A;Andere Hauttransplantation oder Debridement mit kompl. Diagnose oder mit Eingr. an Kopf u. Hals od. ‰uﬂerst schw. CC, mit kompl. Proz. od. Eingr. an d. Haut der unt. Extremit‰t b. Ulkus od. Infekt. / Entz¸nd. b. Para-†/†Tetrapl., mit ‰uﬂerst schw. CC
+09 ;O;J08B;Andere Hauttransplantation oder Debridement ohne komplexe Prozedur, mit bestimmtem Eingriff an Haut, Unterhaut und Mamma, mit ‰uﬂerst schweren CC
+09 ;O;J08C;Andere Hauttransplantation oder Debridement ohne komplexe Prozedur, mit komplexer Diagnose oder mit Eingriff an Kopf und Hals, ohne bestimmten Eingriff an Haut, Unterhaut und Mamma oder ohne ‰uﬂerst schwere CC
+09 ;O;J09A;Eingriffe bei Sinus pilonidalis und perianal, Alter†<†16†Jahre
+09 ;O;J09B;Eingriffe bei Sinus pilonidalis und perianal, Alter†>†15†Jahre
+09 ;O;J10A;Plastische Operationen an Haut, Unterhaut und Mamma bei bˆsartiger Neubildung
+09 ;O;J10B;Plastische Operationen an Haut, Unterhaut und Mamma auﬂer bei bˆsartiger Neubildung
+09 ;O;J11A;Andere Eingriffe an Haut, Unterhaut und Mamma mit bestimmtem Eingriff bei komplizierender Diagnose oder bei Para-†/†Tetraplegie oder selektive Embolisation bei H‰mangiom
+09 ;O;J11B;Andere Eingriffe an Haut, Unterhaut und Mamma ohne bestimmten Eingriff bei komplizierender Diagnose, auﬂer bei Para-†/†Tetraplegie, ohne selektive Embolisation bei H‰mangiom, mit m‰ﬂig komplexer Prozedur oder komplexer Diagnose
+09 ;O;J11C;Andere Eingriffe an Haut, Unterhaut und Mamma ohne komplizierende Diagnose, auﬂer bei Para-†/†Tetraplegie, ohne selektive Embolisation bei H‰mangiom, ohne m‰ﬂig komplexe Prozedur, ohne komplexe Diagnose
+09 ;O;J14A;Plastische Rekonstruktion der Mamma bei bˆsart. Neubild. mit aufw‰ndiger Rekonstr. oder beidseit. Mastektomie bei bˆsart. Neubild. oder Strahlenther. mit operat. Proz. bei Krankh. und Stˆrungen an Haut, Unterhaut und Mamma, mit beidseit. Prothesenimpl.
+09 ;O;J14B;Plastische Rekonstruktion der Mamma bei bˆsartiger Neubildung ohne aufw‰ndige Rekonstruktion
+09 ;O;J16Z;Beidseitige Mastektomie bei bˆsartiger Neubildung oder Strahlentherapie mit operativer Prozedur bei Krankheiten und Stˆrungen an Haut, Unterhaut und Mamma, ohne beidseitige Prothesenimplantation
+09 ;O;J17Z;Strahlentherapie bei Krankheiten und Stˆrungen an Haut, Unterhaut und Mamma, mehr als ein†Belegungstag, mehr als 9†Bestrahlungen
+09 ;O;J18Z;Andere Strahlentherapie bei Krankheiten und Stˆrungen an Haut, Unterhaut und Mamma, mehr als ein†Belegungstag
+09 ;O;J21Z;Andere Hauttransplantation oder Debridement mit Lymphknotenexzision oder schweren CC
+09 ;O;J22A;Andere Hauttransplantation oder Debridement ohne komplexen Eingriff, ohne komplexe Diagnose, ohne ‰uﬂerst schwere oder schwere CC, mit Weichteildeckung
+09 ;O;J22B;Andere Hauttransplantation oder Debridement ohne komplexen Eingriff, ohne komplexe Diagnose, ohne ‰uﬂerst schwere oder schwere CC, ohne Weichteildeckung
+09 ;O;J23Z;Groﬂe Eingriffe an der Mamma bei bˆsartiger Neubildung ohne komplexen Eingriff, ohne bestimmten Eingriff an den weiblichen Geschlechtsorganen bei bˆsartiger Neubildung
+09 ;O;J24A;Eingriffe an der Mamma auﬂer bei bˆsartiger Neubildung mit ausgedehntem Eingriff, mit Prothesenimplantation oder bestimmter Mammareduktionsplastik
+09 ;O;J24B;Eingriffe an der Mamma auﬂer bei bˆsartiger Neubildung mit ausgedehntem Eingriff, ohne Prothesenimplantation, ohne bestimmte Mammareduktionsplastik
+09 ;O;J24C;Eingriffe an der Mamma auﬂer bei bˆsartiger Neubildung ohne ausgedehnten Eingriff, mit komplexem Eingriff
+09 ;O;J24D;Eingriffe an der Mamma auﬂer bei bˆsartiger Neubildung ohne ausgedehnten Eingriff, ohne komplexen Eingriff
+09 ;O;J25Z;Kleine Eingriffe an der Mamma bei bˆsartiger Neubildung ohne ‰uﬂerst schwere oder schwere CC
+09 ;O;J26Z;Plastische Rekonstruktion der Mamma mit komplexer Hauttransplantation oder groﬂe Eingriffe an der Mamma bei bˆsartiger Neubildung mit komplexem Eingriff oder bestimmtem Eingriff an den weiblichen Geschlechtsorganen bei bˆsartiger Neubildung
+09 ;O;J35Z;Komplexe Vakuumbehandlung bei Krankheiten und Stˆrungen an Haut, Unterhaut und Mamma
+09 ;A;J44Z;Geriatrische fr¸hrehabilitative Komplexbehandlung bei Krankheiten und Stˆrungen an Haut, Unterhaut und Mamma
+09 ;M;J61A;Schwere Erkrankungen der Haut, mehr als ein†Belegungstag, Alter†>†17†Jahre oder mit komplexer Diagnose, mit ‰uﬂerst schweren CC oder Hautulkus bei Para-†/†Tetraplegie oder hochkomplexe Diagnose
+09 ;M;J61B;Schwere Erkrankungen der Haut, mehr als ein†Belegungstag, Alter†>†17†Jahre, ohne ‰uﬂerst schwere CC, ohne hochkomplexe Diagnose
+09 ;M;J61C;Schwere Erkrankungen der Haut, mehr als ein†Belegungstag, Alter†<†18†Jahre, ohne hochkomplexe Diagnose oder m‰ﬂig schwere Hauterkrankungen, mehr als ein†Belegungstag
+09 ;M;J62A;Bˆsartige Neubildungen der Mamma, mehr als ein†Belegungstag, mit ‰uﬂerst schweren CC
+09 ;M;J62B;Bˆsartige Neubildungen der Mamma, ein†Belegungstag oder ohne ‰uﬂerst schwere CC
+09 ;M;J64A;Infektion / Entz¸ndung der Haut und Unterhaut oder Hautulkus mit ‰uﬂerst schweren CC
+09 ;M;J64B;Infektion / Entz¸ndung der Haut und Unterhaut oder Hautulkus ohne ‰uﬂerst schwere CC
+09 ;M;J65Z;Verletzung der Haut, Unterhaut und Mamma
+09 ;M;J67Z;Erkrankungen der Mamma auﬂer bˆsartige Neubildung oder leichte bis†moderate Hauterkrankungen
+09 ;M;J68A;Erkrankungen der Haut, ein†Belegungstag, mit komplexer Diagnose
+09 ;M;J68B;Erkrankungen der Haut, ein†Belegungstag, ohne komplexe Diagnose
+09 ;M;J77Z;Komplexbehandlung bei multiresistenten Erregern bei Krankheiten und Stˆrungen an Haut, Unterhaut und Mamma
+10 ;O;K01Z;Verschiedene Eingriffe bei Diabetes mellitus mit Komplikationen, mit Fr¸hrehabilitation oder geriatrischer fr¸hrehabilitativer Komplexbehandlung
+10 ;O;K03A;Eingriffe an der Nebenniere bei bˆsartiger Neubildung oder Eingriff an der Hypophyse, Alter†<†18†Jahre
+10 ;O;K03B;Eingriffe an der Nebenniere bei bˆsartiger Neubildung oder Eingriff an der Hypophyse, Alter†>†17†Jahre
+10 ;O;K04A;Groﬂe Eingriffe bei Adipositas mit komplexem Eingriff
+10 ;O;K04B;Groﬂe Eingriffe bei Adipositas ohne komplexen Eingriff
+10 ;O;K06A;Eingriffe an Schilddr¸se, Nebenschilddr¸se und Ductus thyreoglossus bei bˆsartiger Neubildung mit ‰uﬂerst schweren CC oder Parathyreoidektomie oder ‰uﬂerst schwere oder schwere CC, mit Thyreoidektomie durch Sternotomie
+10 ;O;K06B;Eingriffe an Schilddr¸se, Nebenschilddr¸se und Ductus thyreoglossus ohne ‰uﬂerst schwere CC, bei bˆsartiger Neubildung
+10 ;O;K06C;Eingriffe an Schilddr¸se, Nebenschilddr¸se und Ductus thyreoglossus, mit Parathyreoidektomie oder ‰uﬂ. schw. oder schw. CC, ohne Thyreoidektomie durch Sternotomie, auﬂer bei bˆsartiger Neubildung
+10 ;O;K06D;Eingriffe an Schilddr¸se, Nebenschilddr¸se und Ductus thyreoglossus, auﬂer bei bˆsartiger Neubildung, ohne Parathyreoidektomie, ohne ‰uﬂerst schwere oder schwere CC
+10 ;O;K07Z;Andere Eingriffe bei Adipositas
+10 ;O;K09A;Andere Prozeduren bei endokrinen, Ern‰hrungs- und Stoffwechselkrankheiten mit hochkomplexem Eingriff oder mit bestimmtem Eingriff und Alter†<†7†Jahre oder ‰uﬂerst schwere CC
+10 ;O;K09B;Andere Prozeduren bei endokrinen, Ern‰hrungs- und Stoffwechselkrankheiten, ohne hochkomplexen Eingriff, ohne bestimmten Eingriff, mit komplexem Eingriff
+10 ;O;K09C;Andere Prozeduren bei endokrinen, Ern‰hrungs- und Stoffwechselkrankheiten, ohne hochkomplexen Eingriff, ohne bestimmten Eingriff, ohne komplexen Eingriff
+10 ;O;K14Z;Eingriffe an der Nebenniere auﬂer bei bˆsartiger Neubildung und ausgedehnte Lymphadenektomie
+10 ;O;K15A;Strahlentherapie bei endokrinen, Ern‰hrungs- und Stoffwechselkrankheiten, mehr als ein†Belegungstag, auﬂer Radiojodtherapie
+10 ;O;K15B;Strahlentherapie bei endokrinen, Ern‰hrungs- und Stoffwechselkrankheiten, mehr als ein†Belegungstag, mit hochkomplexer Radiojodtherapie
+10 ;O;K15C;Strahlentherapie bei endokrinen, Ern‰hrungs- und Stoffwechselkrankheiten, mehr als ein†Belegungstag, mit m‰ﬂig komplexer Radiojodtherapie
+10 ;O;K15D;Strahlentherapie bei endokrinen, Ern‰hrungs- und Stoffwechselkrankheiten, mehr als ein†Belegungstag, mit anderer Radiojodtherapie
+10 ;O;K25Z;Komplexbehandlung bei multiresistenten Erregern mit OR-Prozedur bei endokrinen, Ern‰hrungs- und Stoffwechselkrankheiten
+10 ;O;K33Z;Mehrzeitige komplexe OR-Prozeduren bei endokrinen, Ern‰hrungs- und Stoffwechselkrankheiten
+10 ;O;K38Z;H‰mophagozyt‰re Erkrankungen
+10 ;A;K43Z;Fr¸hrehabilitation bei endokrinen, Ern‰hrungs- und Stoffwechselkrankheiten
+10 ;A;K44Z;Geriatrische fr¸hrehabilitative Komplexbehandlung bei endokrinen, Ern‰hrungs- und Stoffwechselkrankheiten
+10 ;M;K60A;Diabetes mellitus und schwere Ern‰hrungsstˆrungen, Alter†<†16†Jahre, mit multimodaler Komplexbehandlung bei Diabetes mellitus
+10 ;M;K60B;Diabetes mellitus mit ‰uﬂerst schweren CC oder schwere Ern‰hrungsstˆrungen, ohne multimodale Komplexbehandlung bei Diabetes mellitus
+10 ;M;K60C;Diabetes mellitus ohne ‰uﬂerst schwere CC, Alter†<†11†Jahre oder Alter†<†16†Jahre mit schweren CC oder multiplen Komplikationen oder Ketoazidose, ohne multimodale Komplexbehandlung bei Diabetes mellitus
+10 ;M;K60D;Diabetes mellitus mit schweren CC oder mit multiplen Komplikationen oder Ketoazidose, Alter†>†15†Jahre
+10 ;M;K60E;Diabetes mellitus, Alter†>†10†Jahre, ohne ‰uﬂerst schwere oder schwere CC, ohne multiple Komplikationen, ohne Ketoazidose, ohne multimodale Komplexbehandlung bei Diabetes mellitus
+10 ;M;K62A;Verschiedene Stoffwechselerkrankungen bei Para-†/†Tetraplegie oder mit komplizierender Diagnose oder endoskopischer Einlage eines Magenballons oder ‰uﬂerst schweren CC
+10 ;M;K62B;Verschiedene Stoffwechselerkrankungen auﬂer bei Para-†/†Tetraplegie, ohne komplizierende Diagnose, ohne endoskopische Einlage eines Magenballons, ohne ‰uﬂerst schwere CC
+10 ;M;K63A;Angeborene Stoffwechselstˆrungen, mehr als ein†Belegungstag, Alter†<†6†Jahre oder mit komplexer Diagnose
+10 ;M;K63B;Angeborene Stoffwechselstˆrungen, mehr als ein†Belegungstag, Alter†>†5†Jahre, ohne komplexe Diagnose
+10 ;M;K63C;Angeborene Stoffwechselstˆrungen, ein†Belegungstag
+10 ;M;K64A;Endokrinopathien, mit komplexer Diagnose und ‰uﬂerst schweren CC
+10 ;M;K64B;Endokrinopathien mit komplexer Diagnose oder ‰uﬂerst schweren CC, Alter†<†6†Jahre
+10 ;M;K64C;Endokrinopathien mit komplexer Diagnose oder ‰uﬂerst schweren CC, Alter†>†5†Jahre oder mit bestimmter Diagnose
+10 ;M;K64D;Endokrinopathien ohne komplexe Diagnose, ohne bestimmte Diagnose, ohne ‰uﬂerst schwere CC
+10 ;M;K77Z;Komplexbehandlung bei multiresistenten Erregern bei endokrinen, Ern‰hrungs- und Stoffwechselkrankheiten
+11 ;O;L02A;Operatives Einbringen eines Peritonealdialysekatheters, Alter†<†10†Jahre oder Blasenrekonstruktion und kontinenter Pouch bei Neubildung mit Multiviszeraleingriff oder Verschluss einer Blasenekstrophie
+11 ;O;L02B;Operatives Einbringen eines Peritonealdialysekatheters, Alter†>†9†Jahre mit akuter Niereninsuffizienz, oder mit chronischer Niereninsuffizienz mit Dialyse
+11 ;O;L02C;Operatives Einbringen eines Peritonealdialysekatheters, Alter†>†9†Jahre, ohne akute Niereninsuffizienz, ohne chronische Niereninsuffizienz mit Dialyse
+11 ;O;L03Z;Nieren-, Ureter- und groﬂe Harnblaseneingriffe bei Neubildung, Alter†<†19†Jahre oder mit ‰uﬂerst schweren CC oder Kombinationseingriff, ohne groﬂen Eingriff am Darm
+11 ;O;L04A;Nieren-, Ureter- und groﬂe Harnblaseneingriffe auﬂer bei Neubildung, ohne ‰uﬂerst schwere CC, ohne Kombinationseingriff, Alter†<†16†Jahre
+11 ;O;L04B;Nieren-, Ureter- und groﬂe Harnblaseneingriffe auﬂer bei Neubildung, ohne ‰uﬂerst schwere CC, ohne Kombinationseingriff, Alter†>†15†Jahre
+11 ;O;L05A;Transurethrale Prostataresektion mit ‰uﬂerst schweren CC
+11 ;O;L05B;Transurethrale Prostataresektion ohne ‰uﬂerst schwere CC
+11 ;O;L06A;Kleine Eingriffe an der Harnblase mit ‰uﬂerst schweren CC
+11 ;O;L06B;Kleine Eingriffe an der Harnblase ohne ‰uﬂerst schwere CC
+11 ;O;L08A;Komplexe Eingriffe an der Urethra, Alter†<†6†Jahre
+11 ;O;L08B;Komplexe Eingriffe an der Urethra, Alter†>†5†Jahre
+11 ;O;L09A;Andere Eingriffe bei Erkr. der Harnorgane mit Anlage eines Dialyseshunts bei akuter Niereninsuff. od. bei chron. Niereninsuff. mit Dialyse od. auﬂ. Anl. e. Dialyseshunts, m. Kalziphylaxie, kompl. OR-Proz. od. kompl. Eingr., Alter†<†2†J. od. ‰uﬂ. schw. CC
+11 ;O;L09B;Andere Eingriffe bei Erkrankungen der Harnorgane mit Anlage eines Dialyseshunts bei akuter Niereninsuffizienz od. bei chronischer Niereninsuff. mit Dialyse oder auﬂer Anlage e. Dialyseshunts, m. Kalziphylaxie, Alter†>†1†Jahr, ohne ‰uﬂerst schwere CC
+11 ;O;L09C;Andere Eingriffe bei Erkrankungen der Harnorgane auﬂer Anlage eines Dialyseshunts, ohne Kalziphylaxie, Alter†<†2†Jahre oder ‰uﬂerst schw. CC, ohne kompl. OR-Prozedur, ohne kompl. Eingriff, Alter†>†1†Jahr, ohne ‰uﬂ. schw. CC, mit Schilddr¸senresektion
+11 ;O;L09D;Andere Eingriffe bei Erkrankungen der Harnorgane ohne Anlage eines Dialyseshunts bei akuter Niereninsuffizienz od. bei chronischer Niereninsuff. mit Dialyse, ohne Kalziphylaxie, ohne Schilddr¸senresektion
+11 ;O;L10Z;Blasenrekonstruktion und kontinenter Pouch bei Neubildung ohne Multiviszeraleingriff oder Nieren-, Ureter- und groﬂe Harnblaseneingriffe bei Neubildung, Alter†<†19†Jahre oder mit ‰uﬂerst schweren CC oder Kombinationseingriff, mit groﬂem Eingriff am Darm
+11 ;O;L11Z;Komplexe transurethrale, perkutan-transrenale und andere retroperitoneale Eingriffe mit extrakorporaler Stoﬂwellenlithotripsie (ESWL), ohne ‰uﬂerst schwere CC
+11 ;O;L12Z;Strahlentherapie bei Krankheiten und Stˆrungen der Harnorgane, mehr als ein†Belegungstag
+11 ;O;L13A;Nieren-, Ureter- und groﬂe Harnblaseneingriffe bei Neubildung, Alter†>†18†Jahre, ohne Kombinationseingriff, mit CC
+11 ;O;L13B;Nieren-, Ureter- und groﬂe Harnblaseneingriffe bei Neubildung, Alter†>†18†Jahre, ohne Kombinationseingriff, ohne CC
+11 ;O;L17A;Andere Eingriffe an der Urethra auﬂer bei Para-†/†Tetraplegie, Alter†<†16†Jahre
+11 ;O;L17B;Andere Eingriffe an der Urethra auﬂer bei Para-†/†Tetraplegie, Alter†>†15†Jahre
+11 ;O;L18A;Komplexe transurethrale, perkutan-transrenale und andere retroperitoneale Eingriffe mit ‰uﬂerst schweren CC
+11 ;O;L18B;Komplexe transurethrale, perkutan-transrenale u. and. retroperitoneale Eingr. oh. ESWL, ohne ‰uﬂ. schw. CC od. transurethr. Eingr. auﬂer Prostatares. u. kompl. Ureterorenoskopien, b. Para-†/†Tetrapl., m. ‰uﬂ. schw. CC
+11 ;O;L19Z;Transurethrale Eingriffe auﬂer Prostataresektion und komplexe Ureterorenoskopien mit extrakorporaler Stoﬂwellenlithotripsie (ESWL), ohne ‰uﬂerst schwere CC oder perkutane Thermoablation der Niere
+11 ;O;L20A;Transurethrale Eingriffe auﬂer Prostataresektion und komplexe Ureterorenoskopien, auﬂer bei Para-†/†Tetraplegie oder andere Eingriffe an der Urethra bei Para-†/†Tetraplegie, mit ‰uﬂerst schweren CC
+11 ;O;L20B;Transurethrale Eingriffe auﬂer Prostataresektion und komplexe Ureterorenoskopien ohne ESWL, mit komplexem Eingriff oder fluoreszenzgest¸tzter TUR der Harnblase oder andere Eingriffe an der Urethra bei Para-†/†Tetraplegie, ohne ‰uﬂerst schwere CC
+11 ;O;L20C;Transurethrale Eingriffe auﬂer Prostataresektion und komplexe Ureterorenoskopien ohne ESWL, ohne komplexen Eingriff, ohne fluoreszenzgest¸tzte TUR der Harnblase oder andere Eingriffe an der Urethra auﬂer bei Para-†/†Tetraplegie, ohne ‰uﬂerst schwere CC
+11 ;O;L33Z;Mehrzeitige komplexe OR-Prozeduren oder hochaufw‰ndiges Implantat bei Krankheiten und Stˆrungen der Harnorgane
+11 ;O;L36Z;Intensivmedizinische Komplexbehandlung >†588 / 552†Aufwandspunkte bei Krankheiten und Stˆrungen der Harnorgane
+11 ;O;L37Z;Multiviszeraleingriff bei Krankheiten und Stˆrungen der Harnorgane
+11 ;O;L38Z;Komplizierende Konstellation mit bestimmtem operativen Eingriff bei Krankheiten und Stˆrungen der Harnorgane
+11 ;A;L40Z;Diagnostische Ureterorenoskopie
+11 ;A;L42A;Extrakorporale Stoﬂwellenlithotripsie (ESWL) bei Harnsteinen mit auxili‰ren Maﬂnahmen oder bei Para-†/†Tetraplegie
+11 ;A;L42B;Extrakorporale Stoﬂwellenlithotripsie (ESWL) bei Harnsteinen ohne auxili‰re Maﬂnahmen, auﬂer bei Para-†/†Tetraplegie
+11 ;A;L44Z;Geriatrische fr¸hrehabilitative Komplexbehandlung bei Krankheiten und Stˆrungen der Harnorgane
+11 ;M;L60A;Niereninsuffizienz, mehr als ein†Belegungstag, mit Dialyse, akutem Nierenversagen und ‰uﬂerst schweren CC oder mit Dialyse, mit akutem Nierenversagen oder ‰uﬂerst schweren CC oder mit Kalziphylaxie, mit Dialyse oder ‰uﬂerst schweren CC, Alter†<†16†Jahre
+11 ;M;L60B;Niereninsuffizienz, mehr als ein†Belegungstag, mit Dialyse, mit akutem Nierenversagen oder ‰uﬂerst schweren CC oder mit Kalziphylaxie, mit Dialyse oder ‰uﬂerst schweren CC, Alter†>†15†Jahre
+11 ;M;L60C;Niereninsuffizienz, mehr als ein†Belegungstag, mit Dialyse oder ‰uﬂerst schweren CC, ohne Kalziphylaxie
+11 ;M;L60D;Niereninsuffizienz, mehr als ein†Belegungstag, ohne Dialyse, ohne ‰uﬂerst schwere CC
+11 ;M;L61Z;Station‰re Aufnahme zur Dialyse
+11 ;M;L62A;Neubildungen der Harnorgane mit ‰uﬂerst schweren CC
+11 ;M;L62B;Neubildungen der Harnorgane ohne ‰uﬂerst schwere CC, Alter†<†16†Jahre
+11 ;M;L62C;Neubildungen der Harnorgane ohne ‰uﬂerst schwere CC, Alter†>†15†Jahre
+11 ;M;L63A;Infektionen der Harnorgane mit ‰uﬂerst schweren CC, mit Komplexbehandlung bei multiresistenten Erregern
+11 ;M;L63B;Infektionen der Harnorgane mit ‰uﬂerst schweren CC, ohne Komplexbehandlung bei multiresistenten Erregern, Alter†<†6†Jahre
+11 ;M;L63C;Infektionen der Harnorgane mit ‰uﬂerst schweren CC, ohne Komplexbehandlung bei multiresistenten Erregern, Alter†>†5†Jahre oder ohne ‰uﬂerst schwere CC, mit Komplexbehandlung bei multiresistenten Erregern
+11 ;M;L63D;Infektionen der Harnorgane ohne ‰uﬂerst schwere CC, ohne Komplexbehandlung bei multiresistenten Erregern, Alter†<†3†Jahre
+11 ;M;L63E;Infektionen der Harnorgane ohne ‰uﬂerst schwere CC, ohne Komplexbehandlung bei multiresistenten Erregern, Alter†>†2†Jahre und Alter†<†6†Jahre
+11 ;M;L63F;Infektionen der Harnorgane ohne ‰uﬂerst schwere CC, ohne Komplexbehandlung bei multiresistenten Erregern, Alter†>†5†Jahre
+11 ;M;L64A;Harnsteine und Harnwegsobstruktion mit ‰uﬂerst schweren oder schweren CC oder Urethrastriktur, andere leichte bis†moderate Erkr. der Harnorgane, mehr als ein†Beleg.tag oder Beschw. und Symptome der Harnorgane oder Urethrozystoskopie
+11 ;M;L64B;Harnsteine und Harnwegsobstruktion ohne ‰uﬂerst schwere oder schwere CC
+11 ;M;L68A;Andere m‰ﬂig schwere Erkrankungen der Harnorgane, Alter†<†6†Jahre
+11 ;M;L68B;Andere m‰ﬂig schwere Erkrankungen der Harnorgane, Alter†>†5†Jahre
+11 ;M;L69A;Andere schwere Erkrankungen der Harnorgane, mehr als ein†Belegungstag, Alter†<†16†Jahre
+11 ;M;L69B;Andere schwere Erkrankungen der Harnorgane, mehr als ein†Belegungstag, Alter†>†15†Jahre
+11 ;M;L70A;Krankheiten und Stˆrungen der Harnorgane, ein†Belegungstag, Alter†<†6†Jahre
+11 ;M;L70B;Krankheiten und Stˆrungen der Harnorgane, ein†Belegungstag, Alter†>†5†Jahre
+11 ;M;L71Z;Niereninsuffizienz, ein†Belegungstag mit Dialyse
+11 ;M;L72Z;Thrombotische Mikroangiopathie oder H‰molytisch-ur‰misches Syndrom
+11 ;M;L73Z;Harnblasenl‰hmung, mehr als ein†Belegungstag
+11 ;M;L74Z;Bestimmte Krankheiten und Stˆrungen der Harnorgane bei Para-†/†Tetraplegie
+11 ;M;L90A;Niereninsuffizienz, teilstation‰r, Alter†<†15†Jahre
+11 ;M;L90B;Niereninsuffizienz, teilstation‰r, Alter†>†14†Jahre mit Peritonealdialyse
+11 ;M;L90C;Niereninsuffizienz, teilstation‰r, Alter†>†14†Jahre ohne Peritonealdialyse
+12 ;O;M01A;Groﬂe Eingriffe an den Beckenorganen beim Mann mit ‰uﬂerst schweren CC
+12 ;O;M01B;Groﬂe Eingriffe an den Beckenorganen beim Mann ohne ‰uﬂerst schwere CC oder bestimmte Eingriffe an den Beckenorganen beim Mann mit ‰uﬂerst schweren CC
+12 ;O;M02A;Transurethrale Prostataresektion mit ‰uﬂerst schweren CC
+12 ;O;M02B;Transurethrale Prostataresektion ohne ‰uﬂerst schwere CC
+12 ;O;M03A;Eingriffe am Penis, Alter†<†6†Jahre
+12 ;O;M03B;Eingriffe am Penis, Alter†>†5†Jahre und Alter†<†18†Jahre
+12 ;O;M03C;Eingriffe am Penis, Alter†>†17†Jahre
+12 ;O;M04A;Eingriffe am Hoden bei Fournier-Gangr‰n oder mit ‰uﬂerst schweren CC
+12 ;O;M04B;Eingriffe am Hoden auﬂer bei Fournier-Gangr‰n, ohne ‰uﬂerst schwere CC, mit bestimmtem Eingriff am Hoden
+12 ;O;M04C;Eingriffe am Hoden auﬂer bei Fournier-Gangr‰n, ohne ‰uﬂerst schwere CC, Alter†<†3†Jahre
+12 ;O;M04D;Eingriffe am Hoden auﬂer bei Fournier-Gangr‰n, ohne ‰uﬂerst schwere CC, Alter†>†2†Jahre, ohne bestimmten Eingriff am Hoden
+12 ;O;M05Z;Zirkumzision, andere Eingriffe am Penis und groﬂfl‰chige Ablationen der Haut
+12 ;O;M06Z;Andere OR-Prozeduren an den m‰nnlichen Geschlechtsorganen
+12 ;O;M07Z;Brachytherapie bei Krankheiten und Stˆrungen der m‰nnlichen Geschlechtsorgane, Implantation von >†10†Seeds
+12 ;O;M09A;OR-Prozeduren an den m‰nnlichen Geschlechtsorganen bei bˆsartiger Neubildung mit ‰uﬂerst schweren CC oder bestimmte Eingriffe an den Beckenorganen beim Mann ohne ‰uﬂerst schwere CC
+12 ;O;M09B;OR-Prozeduren an den m‰nnlichen Geschlechtsorganen bei bˆsartiger Neubildung ohne ‰uﬂerst schwere CC
+12 ;O;M10A;Strahlentherapie bei Krankheiten und Stˆrungen der m‰nnlichen Geschlechtsorgane, mehr als ein†Belegungstag, mehr als 9†Bestrahlungen
+12 ;O;M10B;Strahlentherapie bei Krankheiten und Stˆrungen der m‰nnlichen Geschlechtsorgane, mehr als ein†Belegungstag, weniger als 10†Bestrahlungen oder interstitielle Brachytherapie
+12 ;O;M11Z;Transurethrale Laserdestruktion und -resektion der Prostata
+12 ;O;M37Z;Groﬂe Eingriffe an Darm oder Harnblase bei Erkrankungen und Stˆrungen der m‰nnlichen Geschlechtsorgane oder Eingriffe am Hoden bei Fournier-Gangr‰n mit ‰uﬂerst schweren CC
+12 ;O;M38Z;Komplizierende Konstellation mit operativem Eingriff bei Krankheiten und Stˆrungen der m‰nnlichen Geschlechtsorgane
+12 ;M;M60A;Bˆsartige Neubildungen der m‰nnlichen Geschlechtsorgane, mehr als ein†Belegungstag, Alter†<†11†Jahre oder mit ‰uﬂerst schweren CC
+12 ;M;M60B;Bˆsartige Neubildungen der m‰nnlichen Geschlechtsorgane, ein†Belegungstag oder Alter†>†10†Jahre, ohne ‰uﬂerst schwere CC, mit hoch- und mittelgradig komplexer Chemotherapie
+12 ;M;M60C;Bˆsartige Neubildungen der m‰nnlichen Geschlechtsorgane, ein†Belegungstag oder Alter†>†10†Jahre, ohne ‰uﬂerst schwere CC, ohne hoch- und mittelgradig komplexe Chemotherapie
+12 ;M;M61Z;Benigne Prostatahyperplasie
+12 ;M;M62Z;Infektion / Entz¸ndung der m‰nnlichen Geschlechtsorgane
+12 ;M;M64Z;Andere Krankheiten der m‰nnlichen Geschlechtsorgane und Sterilisation beim Mann
+13 ;O;N01A;Beckeneviszeration bei der Frau und radikale Vulvektomie oder bestimmte Lymphadenektomie mit ‰uﬂerst schweren CC, mit komplexem Eingriff oder komplizierender Konstellation
+13 ;O;N01B;Beckeneviszeration bei der Frau und radikale Vulvektomie oder bestimmte Lymphadenektomie mit ‰uﬂerst schweren CC, ohne komplexen Eingriff, ohne komplizierende Konstellation, mit Multiviszeraleingriff
+13 ;O;N01C;Beckeneviszeration bei der Frau und radikale Vulvektomie oder bestimmte Lymphadenektomie mit ‰uﬂerst schweren CC, ohne komplexen Eingriff, ohne komplizierende Konstellation, ohne Multiviszeraleingriff
+13 ;O;N01D;Beckeneviszeration bei der Frau und radikale Vulvektomie oder bestimmte Lymphadenektomie mit schweren CC
+13 ;O;N01E;Beckeneviszeration bei der Frau und radikale Vulvektomie oder bestimmte Lymphadenektomie ohne ‰uﬂerst schwere oder schwere CC
+13 ;O;N02A;Eingriffe an Uterus und Adnexen und groﬂe operative Eingriffe an Vagina, Zervix und Vulva bei bˆsartiger Neubildung der weiblichen Geschlechtsorgane od. best. laparoskop. Resektion an Sigma und Rektum od.Rekonstr. von Vagina und Vulva, mit ‰uﬂ. schw. CC
+13 ;O;N02B;Eingriffe an Uterus und Adnexen und groﬂe operative Eingriffe an Vagina, Zervix und Vulva bei bˆsartiger Neubildung der weiblichen Geschlechtsorgane, mit CC oder best. laparoskopische Resektion an Sigma und Rektum od. Rekonstruktion von Vagina und Vulva
+13 ;O;N02C;Eingriffe an Uterus und Adnexen und groﬂe operative Eingriffe an Vagina, Zervix und Vulva bei bˆsartiger Neubildung der weiblichen Geschlechtsorgane, ohne CC
+13 ;O;N04Z;Hysterektomie auﬂer bei bˆsartiger Neubildung, mit ‰uﬂerst schweren oder schweren CC oder komplexem Eingriff oder selektive Embolisation an anderen abdominalen Gef‰ﬂen
+13 ;O;N05A;Ovariektomien und komplexe Eingriffe an den Tubae uterinae auﬂer bei bˆsartiger Neubildung, mit ‰uﬂerst schweren oder schweren CC
+13 ;O;N05B;Ovariektomien und komplexe Eingriffe an den Tubae uterinae auﬂer bei bˆsartiger Neubildung, ohne ‰uﬂerst schwere oder schwere CC
+13 ;O;N06Z;Komplexe rekonstruktive Eingriffe an den weiblichen Geschlechtsorganen
+13 ;O;N07Z;Andere Eingriffe an Uterus und Adnexen auﬂer bei bˆsartiger Neubildung, mit komplexer Diagnose
+13 ;O;N08Z;Endoskopische Eingriffe an den weiblichen Geschlechtsorganen
+13 ;O;N09A;Brachytherapie bei Krankheiten und Stˆrungen der weiblichen Geschlechtsorgane, ein†Belegungstag
+13 ;O;N09B;Andere Eingriffe an Vagina, Zervix und Vulva
+13 ;O;N10Z;Diagnostische K¸rettage, Hysteroskopie, Sterilisation, Pertubation
+13 ;O;N11A;Andere OR-Prozeduren an den weiblichen Geschlechtsorganen mit bestimmtem Eingriff
+13 ;O;N11B;Andere OR-Prozeduren an den weiblichen Geschlechtsorganen ohne bestimmten Eingriff
+13 ;O;N13A;Groﬂe Eingriffe an Vagina, Zervix und Vulva auﬂer bei bˆsartiger Neubildung, Alter†>†80†Jahre oder ‰uﬂerst schwere oder schwere CC
+13 ;O;N13B;Groﬂe Eingriffe an Vagina, Zervix und Vulva auﬂer bei bˆsartiger Neubildung, Alter†<†81†Jahre, ohne ‰uﬂerst schwere oder schwere CC
+13 ;O;N14Z;Hysterektomie auﬂer bei bˆsartiger Neubildung mit Beckenbodenplastik oder Brachytherapie bei Krankheiten und Stˆrungen der weiblichen Geschlechtsorgane, mehr als ein†Belegungstag, mit ‰uﬂerst schweren CC
+13 ;O;N15Z;Strahlentherapie bei Krankheiten und Stˆrungen der weiblichen Geschlechtsorgane, mehr als ein†Belegungstag, mehr als 9†Bestrahlungen
+13 ;O;N16Z;Strahlentherapie, weniger als 10†Bestrahlungen oder Brachytherapie bei Krankheiten und Stˆrungen der weiblichen Geschlechtsorgane, mehr als ein†Belegungstag
+13 ;O;N21Z;Hysterektomie auﬂer bei bˆsartiger Neubildung, ohne ‰uﬂerst schwere oder schwere CC, ohne komplexen Eingriff, ohne Beckenbodenplastik oder komplexe Myomenukleation
+13 ;O;N23Z;Andere rekonstruktive Eingriffe an den weiblichen Geschlechtsorganen oder andere Myomenukleation
+13 ;O;N25Z;Andere Eingriffe an Uterus und Adnexen auﬂer bei bˆsartiger Neubildung, ohne komplexe Diagnose, oder diagnostische Laparoskopie, oder best. Eingriff an den Parametrien
+13 ;O;N33Z;Mehrzeitige komplexe OR-Prozeduren bei Krankheiten und Stˆrungen der weiblichen Geschlechtsorgane
+13 ;O;N34Z;Groﬂe Eingriffe an Darm oder Harnblase bei Krankheiten und Stˆrungen der weiblichen Geschlechtsorgane
+13 ;O;N38Z;Komplizierende Konstellation mit bestimmtem operativen Eingriff bei Krankheiten und Stˆrungen der weiblichen Geschlechtsorgane
+13 ;M;N60A;Bˆsartige Neubildung der weiblichen Geschlechtsorgane, mehr als ein†Belegungstag, Alter†<†19†Jahre oder ‰uﬂerst schwere CC
+13 ;M;N60B;Bˆsartige Neubildung der weiblichen Geschlechtsorgane, ein†Belegungstag oder Alter†>†18†Jahre, ohne ‰uﬂerst schwere CC
+13 ;M;N61Z;Infektion und Entz¸ndung der weiblichen Geschlechtsorgane
+13 ;M;N62A;Menstruationsstˆrungen und andere Erkrankungen der weiblichen Geschlechtsorgane mit komplexer Diagnose
+13 ;M;N62B;Menstruationsstˆrungen und andere Erkrankungen der weiblichen Geschlechtsorgane ohne komplexe Diagnose
+14 ;O;O01A;Sectio caesarea mit mehreren komplizierenden Diagnosen, Schwangerschaftsdauer bis†25†vollendete Wochen (SSW) oder mit intrauteriner Therapie oder komplizierender Konstellation oder Mehrlingsschwangerschaft
+14 ;O;O01B;Sectio caesarea mit mehreren kompliz. Diagnosen, Schwangerschaftsdauer >†25†vollend. Wochen (SSW), ohne intraut. Ther., oh. kompliz. Konstell., oh. Mehrlingsschw. od. bis†33†SSW od. mit kompl. Diag., mit od. oh. kompliz. Diag., mit ‰uﬂ. schw. CC
+14 ;O;O01C;Sectio caesarea mit mehreren kompliz. Diag., Schwangerschaftsdauer 26 bis†33†SSW, oh. intraut. Ther., oh. kompliz. Konstell.,oh. Mehrlingsschw. od. mit kompliz. Diag., bis†25†SSW od. Thromboembolie in Gestationsperiode m. OR-Proz., oh. ‰uﬂ. schw. CC
+14 ;O;O01D;Sekund‰re Sectio caesarea m. mehrer. kompliz. Diagn., Schwangerschaftsdauer >†33†vollendete Wochen (SSW), oh. intraut. Ther., oh. kompliz. Konst., ohne Mehrlingsschw. od. bis†33†SSW od. m. kompl. Diag., mit od. ohne kompliz. Diag., oh. ‰uﬂ. schw. CC
+14 ;O;O01E;Sekund‰re Sectio caesarea mit komplizierender Diagnose, Schwangerschaftsdauer mehr als 33†vollendete Wochen (SSW), ohne komplexe Diagnose
+14 ;O;O01F;Prim‰re Sectio caesarea ohne ‰uﬂ. schwere CC, mit komplizierender oder komplexer Diagnose oder Schwangerschaftsdauer bis†33†vollendete Wochen (SSW) oder sekund‰re Sectio caesarea, ohne komplizierende oder komplexe Diagnose,†SSW >†33†vollendete Wochen
+14 ;O;O01G;Prim‰re Sectio caesarea mit komplizierender Diagnose, Schwangerschaftsdauer mehr als 33†vollendete Wochen (SSW), ohne komplexe Diagnose
+14 ;O;O01H;Prim‰re Sectio caesarea ohne komplizierende Diagnose, Schwangerschaftsdauer mehr als 33†vollendete Wochen (SSW), ohne komplexe Diagnose
+14 ;O;O02A;Vaginale Entbindung mit kompl. OR-Prozedur, Schwangerschaftsdauer bis†33†vollend. Wochen od. mit intrauteriner Therapie od. kompliz. Konstellation od. best. Operation am Uterus od. Nephrektomie
+14 ;O;O02B;Vaginale Entbindung mit komplizierender OR-Prozedur, Schwangerschaftsdauer mehr als 33†vollendete Wochen, ohne intrauterine Therapie, ohne komplizierende Konstellation, ohne best. Operation am Uterus, ohne Nephrektomie
+14 ;O;O03Z;Extrauteringravidit‰t
+14 ;O;O04A;Station‰re Aufnahme nach Entbindung oder Abort mit OR-Prozedur mit komplexem Eingriff
+14 ;O;O04B;Station‰re Aufnahme nach Entbindung oder Abort mit OR-Prozedur ohne komplexen Eingriff
+14 ;O;O05A;Cerclage und Muttermundverschluss oder komplexe OR-Prozedur oder bestimmte intrauterine Operation am Feten
+14 ;O;O05B;Bestimmte OR-Prozeduren in der Schwangerschaft ohne Cerclage, ohne Muttermundverschluss, ohne komplexe OR-Prozedur, ohne bestimmte intrauterine Operation am Feten
+14 ;O;O06Z;Intrauterine Therapie des Feten
+14 ;A;O40Z;Abort mit Dilatation und K¸rettage, Aspirationsk¸rettage oder Hysterotomie
+14 ;M;O60A;Vaginale Entbindung mit mehreren komplizierenden Diagnosen, mindestens eine schwer, Schwangerschaftsdauer bis†33†vollendete Wochen oder mit komplizierender Konstellation
+14 ;M;O60B;Vaginale Entbindung mit mehreren komplizierenden Diagnosen, mindestens eine schwer, Schwangerschaftsdauer mehr als 33†vollendete Wochen, ohne komplizierende Konstellation oder Thromboembolie w‰hrend der Gestationsperiode ohne OR-Prozedur
+14 ;M;O60C;Vaginale Entbindung mit schwerer oder m‰ﬂig schwerer komplizierender Diagnose
+14 ;M;O60D;Vaginale Entbindung ohne komplizierende Diagnose
+14 ;M;O61Z;Station‰re Aufnahme nach Entbindung oder Abort ohne OR-Prozedur
+14 ;M;O63Z;Abort ohne Dilatation und K¸rettage, Aspirationsk¸rettage oder Hysterotomie
+14 ;M;O65A;Andere vorgeburtliche station‰re Aufnahme mit ‰uﬂerst schweren CC oder komplexer Diagnose oder best. Placenta praevia mit schweren CC, Schwangerschaftsdauer 20 bis†33†vollendete Wochen
+14 ;M;O65B;Andere vorgeburtliche station‰re Aufnahme mit ‰uﬂerst schweren CC oder komplexer Diagnose oder best. Placenta praevia mit schweren CC, Schwangerschaftsdauer bis 19 oder mehr als†33†vollendete Wochen (SSW) oder mit schweren CC oder 26 bis†33†SSW
+14 ;M;O65C;Andere vorgeburtliche station‰re Aufnahme ohne ‰uﬂerst schwere oder schwere CC, ohne komplexe Diagnose, ohne best. Placenta praevia oder ohne schwere CC, Schwangerschaftsdauer bis†25 oder mehr als 33†vollendete Wochen
+15 ;O;P01Z;Neugeborenes, verstorben†<†5†Tage nach Aufnahme mit signifikanter OR-Prozedur
+15 ;O;P02A;Kardiothorakale oder Gef‰ﬂeingriffe bei Neugeborenen, Beatmung†>†480†Stunden
+15 ;O;P02B;Kardiothorakale oder Gef‰ﬂeingriffe bei Neugeborenen, Beatmung†>†143 und <†481†Stunden oder Eingriff bei univentrikul‰rem Herzen
+15 ;O;P02C;Kardiothorakale oder Gef‰ﬂeingriffe bei Neugeborenen ohne Beatmung†>†143†Stunden, ohne Eingriffe bei univentrikul‰rem Herzen
+15 ;O;P03A;Neugeborenes, Aufnahmegewicht†1000†-†1499†g mit signifikanter OR-Prozedur oder Beatmung†>†95†Stunden, mit mehreren schweren Problemen oder mehrzeitigen komplexen OR-Prozeduren, mit Beatmung†>†479†Stunden
+15 ;O;P03B;Neugeborenes, Aufnahmegewicht†1000†-†1499†g mit signifikanter OR-Prozedur oder Beatmung†>†95†Stunden, mit mehreren schweren Problemen, mit Beatmung†>†120 und <†480†Stunden oder mit mehrzeitigen komplexen OR-Prozeduren, ohne Beatmung†>†479†Stunden
+15 ;O;P03C;Neugeborenes, Aufnahmegewicht†1000†-†1499†g mit signifikanter OR-Prozedur oder Beatmung†>†95†Stunden, ohne Beatmung†>†120†Stunden oder ohne mehrere schwere Probleme, ohne mehrzeitige komplexe OR-Prozeduren
+15 ;O;P04A;Neugeborenes, Aufnahmegewicht†1500†-†1999†g mit signifikanter OR-Prozedur oder Beatmung†>†95†Stunden, mit mehreren schweren Problemen oder mehrzeitigen komplexen OR-Prozeduren, mit Beatmung†>†240†Stunden
+15 ;O;P04B;Neugeborenes, Aufnahmegewicht†1500†-†1999†g mit signifikanter OR-Prozedur oder Beatmung†>†95†Stunden, mit mehreren schweren Problemen oder mehrzeitigen komplexen OR-Prozeduren, ohne Beatmung†>†240†Stunden
+15 ;O;P04C;Neugeborenes, Aufnahmegewicht†1500†-†1999†g mit signifikanter OR-Prozedur oder Beatmung†>†95†Stunden, ohne mehrere schwere Probleme, ohne mehrzeitige komplexe OR-Prozeduren
+15 ;O;P05A;Neugeborenes, Aufnahmegewicht†2000†-†2499†g mit signifikanter OR-Prozedur oder Beatmung†>†95†Stunden, mit mehreren schweren Problemen, mit Beatmung†>†120†Stunden oder mit mehrzeitigen komplexen OR-Prozeduren
+15 ;O;P05B;Neugeborenes, Aufnahmegewicht†2000†-†2499†g mit signifikanter OR-Prozedur oder Beatmung†>†95†Stunden, mit mehreren schweren Problemen, ohne Beatmung†>†120†Stunden, ohne mehrzeitige komplexe OR-Prozeduren
+15 ;O;P05C;Neugeborenes, Aufnahmegewicht†2000†-†2499†g mit signifikanter OR-Prozedur oder Beatmung†>†95†Stunden, ohne mehrere schwere Probleme, ohne mehrzeitige komplexe OR-Prozeduren
+15 ;O;P06A;Neugeborenes, Aufnahmegewicht†>†2499†g mit signifikanter OR-Prozedur oder Beatmung†>†95†Stunden, mit mehreren schweren Problemen, mit Beatmung†>†120†Stunden oder mehrzeitigen komplexen OR-Prozeduren
+15 ;O;P06B;Neugeborenes, Aufnahmegewicht†>†2499†g mit signifikanter OR-Prozedur oder Beatmung†>†95†Stunden, mit mehreren schweren Problemen, ohne Beatmung†>†120†Stunden, ohne mehrzeitige komplexe OR-Prozeduren
+15 ;O;P06C;Neugeborenes, Aufnahmegewicht†>†2499†g mit signifikanter OR-Prozedur oder Beatmung†>†95†Stunden, ohne mehrere schwere Probleme
+15 ;M;P60A;Neugeborenes, verstorben†<†5†Tage nach Aufnahme ohne signifikante OR-Prozedur
+15 ;M;P60B;Neugeborenes, verlegt†<†5†Tage nach Aufnahme ohne signifikante OR-Prozedur, zuverlegt oder Beatmung†>†24†Stunden
+15 ;M;P60C;Neugeborenes, verlegt†<†5†Tage nach Aufnahme ohne signifikante OR-Prozedur, nicht zuverlegt, ohne Beatmung†>†24†Stunden (Mindestverweildauer 24 Stunden f¸r das Krankenhaus, in dem die Geburt stattfindet)
+15 ;M;P61A;Neugeborenes, Aufnahmegewicht†<†600†g mit signifikanter OR-Prozedur
+15 ;M;P61B;Neugeborenes, Aufnahmegewicht†<†600†g ohne signifikante OR-Prozedur
+15 ;M;P61C;Neugeborenes, Aufnahmegewicht†600†-†749†g mit signifikanter OR-Prozedur
+15 ;M;P61D;Neugeborenes, Aufnahmegewicht†600†-†749†g ohne signifikante OR-Prozedur
+15 ;M;P61E;Neugeborenes, Aufnahmegewicht†<†750 g, verstorben†<†29†Tage nach Aufnahme
+15 ;M;P62A;Neugeborenes, Aufnahmegewicht†750†-†999†g mit signifikanter OR-Prozedur
+15 ;M;P62B;Neugeborenes, Aufnahmegewicht†750†-†874†g ohne signifikante OR-Prozedur
+15 ;M;P62C;Neugeborenes, Aufnahmegewicht†875†-†999†g ohne signifikante OR-Prozedur
+15 ;M;P62D;Neugeborenes, Aufnahmegewicht†750†-†999 g, verstorben†<†29†Tage nach Aufnahme
+15 ;M;P63Z;Neugeborenes, Aufnahmegewicht†1000†-†1249†g ohne signifikante OR-Prozedur, ohne Beatmung†>†95†Stunden
+15 ;M;P64Z;Neugeborenes, Aufnahmegewicht†1250†-†1499†g ohne signifikante OR-Prozedur, ohne Beatmung†>†95†Stunden
+15 ;M;P65A;Neugeborenes, Aufnahmegewicht†1500†-†1999†g ohne signifikante OR-Prozedur, ohne Beatmung†>†95†Stunden, mit mehreren schweren Problemen
+15 ;M;P65B;Neugeborenes, Aufnahmegewicht†1500†-†1999†g ohne signifikante OR-Prozedur, ohne Beatmung†>†95†Stunden, mit schwerem Problem
+15 ;M;P65C;Neugeborenes, Aufnahmegewicht†1500†-†1999†g ohne signifikante OR-Prozedur, ohne Beatmung†>†95†Stunden, mit anderem Problem
+15 ;M;P65D;Neugeborenes, Aufnahmegewicht†1500†-†1999†g ohne signifikante OR-Prozedur, ohne Beatmung†>†95†Stunden, ohne Problem
+15 ;M;P66A;Neugeborenes, Aufnahmegewicht†2000†-†2499†g ohne signifikante OR-Prozedur, ohne Beatmung†>†95†Std., mit mehreren schweren Problemen od. Ng., Aufnahmegew. >†2499†g oh. OR-Proz., oh. Beatmung†>†95†Std., m. mehreren schw. Probl., mit Hypothermiebehandlung
+15 ;M;P66B;Neugeborenes, Aufnahmegewicht†2000†-†2499†g ohne signifikante OR-Prozedur, ohne Beatmung†>†95†Stunden, mit schwerem Problem
+15 ;M;P66C;Neugeborenes, Aufnahmegewicht†2000†-†2499†g ohne signifikante OR-Prozedur, ohne Beatmung†>†95†Stunden, mit anderem Problem
+15 ;M;P66D;Neugeborenes, Aufnahmegewicht†2000†-†2499†g ohne signifikante OR-Prozedur, ohne Beatmung†>†95†Stunden, ohne Problem oder neugeborener Mehrling, Aufnahmegewicht†>†2499†g ohne OR-Prozedur, ohne Beatmung†>†95†Stunden, ohne Problem oder ein†Belegungstag
+15 ;M;P67A;Neugeborenes, Aufnahmegewicht†>†2499†g ohne signifikante OR-Prozedur, ohne Beatmung†>†95†Stunden, mit mehreren schweren Problemen oder mit schwerem Problem, mit Hypothermiebehandlung
+15 ;M;P67B;Neugeborenes, Aufnahmegewicht†>†2499†g ohne signifikante OR-Prozedur, ohne Beatmung†>†95†Std., mit schwerem Problem, ohne Hypothermiebehandlung oder mit anderem Problem, mehr als ein†Belegungstag oder mit nicht signifikanter OR-Proz., mit kompliz. Diagn.
+15 ;M;P67C;Neugeborenes, Aufnahmegewicht†>†2499†g ohne signifikante OR-Prozedur, ohne Beatmung†>†95†Stunden, mit anderem Problem, mehr als ein†Belegungstag oder mit nicht signifikanter OR-Prozedur, ohne komplizierende Diagnose
+15 ;M;P67D;Neugeborener Einling, Aufnahmegewicht†>†2499†g ohne OR-Prozedur, ohne Beatmung†>†95†Stunden, ohne schweres Problem, ohne anderes Problem oder ein†Belegungstag
+16 ;O;Q01Z;Eingriffe an der Milz
+16 ;O;Q02A;Verschiedene OR-Prozeduren bei Krankheiten des Blutes, der blutbildenden Organe und des Immunsystems mit ‰uﬂerst schweren CC
+16 ;O;Q02B;Verschiedene OR-Prozeduren bei Krankheiten des Blutes, der blutbildenden Organe und des Immunsystems ohne ‰uﬂerst schwere CC, Alter†<†6†Jahre
+16 ;O;Q02C;Verschiedene OR-Prozeduren bei Krankheiten des Blutes, der blutbildenden Organe und des Immunsystems ohne ‰uﬂerst schwere CC, Alter†>†5†Jahre
+16 ;O;Q03A;Kleine Eingriffe bei Krankheiten des Blutes, der blutbildenden Organe und des Immunsystems, Alter†<†10†Jahre
+16 ;O;Q03B;Kleine Eingriffe bei Krankheiten des Blutes, der blutbildenden Organe und des Immunsystems, Alter†>†9†Jahre
+16 ;M;Q60A;Erkrankungen des retikuloendothelialen Systems, des Immunsystems und Gerinnungsstˆrungen mit komplexer Diagnose oder ‰uﬂerst schweren oder schweren CC, mit Milzverletzung oder Granulozytenstˆrung, Alter†<†16†Jahre
+16 ;M;Q60B;Erkrankungen des retikuloendothelialen Systems, des Immunsystems und Gerinnungsstˆrungen mit komplexer Diagnose oder ‰uﬂerst schweren oder schweren CC, ohne Milzverletzung, ohne Granulozytenstˆrung, Alter†<†1†Jahr
+16 ;M;Q60C;Erkrankungen des retikuloendothelialen Systems, des Immunsystems und Gerinnungsstˆrungen mit komplexer Diagnose oder ‰uﬂerst schweren oder schweren CC, ohne Milzverletzung, ohne Granulozytenstˆrung oder Alter†>†15†Jahre
+16 ;M;Q60D;Erkrankungen des retikuloendothelialen Systems, des Immunsystems und Gerinnungsstˆrungen ohne komplexe Diagnose, ohne ‰uﬂerst schwere oder schwere CC, Alter†<†16†Jahre
+16 ;M;Q60E;Erkrankungen des retikuloendothelialen Systems, des Immunsystems und Gerinnungsstˆrungen ohne komplexe Diagnose, ohne ‰uﬂerst schwere oder schwere CC, Alter†>†15†Jahre
+16 ;M;Q61A;Erkrankungen der Erythrozyten ohne komplexe Diagnose, ohne aplastische An‰mie, mit ‰uﬂerst schweren CC
+16 ;M;Q61B;Erkrankungen der Erythrozyten mit komplexer Diagnose
+16 ;M;Q61C;Erkrankungen der Erythrozyten ohne komplexe Diagnose, mit aplastischer An‰mie, Alter†<†16†Jahre
+16 ;M;Q61D;Erkrankungen der Erythrozyten ohne komplexe Diagnose, mit aplastischer An‰mie, Alter†>†15†Jahre
+16 ;M;Q61E;Erkrankungen der Erythrozyten ohne komplexe Diagnose, ohne aplastische An‰mie, ohne ‰uﬂerst schwere CC
+17 ;O;R01A;Lymphom und Leuk‰mie mit groﬂen OR-Prozeduren, mit ‰uﬂerst schweren CC, mit komplexer OR-Prozedur
+17 ;O;R01B;Lymphom und Leuk‰mie mit groﬂen OR-Prozeduren, mit ‰uﬂerst schweren CC, ohne komplexe OR-Prozedur
+17 ;O;R01C;Lymphom und Leuk‰mie mit groﬂen OR-Prozeduren, ohne ‰uﬂerst schwere CC, mit komplexer OR-Prozedur
+17 ;O;R01D;Lymphom und Leuk‰mie mit groﬂen OR-Prozeduren, ohne ‰uﬂerst schwere CC, ohne komplexe OR-Prozedur
+17 ;O;R02Z;Groﬂe OR-Prozeduren mit ‰uﬂerst schweren CC, mit komplexer OR-Prozedur bei h‰matologischen und soliden Neubildungen
+17 ;O;R03Z;Lymphom und Leuk‰mie mit bestimmter OR-Prozedur, mit ‰uﬂerst schweren CC, oder mit bestimmter OR-Prozedur mit schweren CC oder mit anderen OR-Prozeduren mit ‰uﬂerst schweren CC, Alter†<†16†Jahre
+17 ;O;R04A;Andere h‰matologische und solide Neubildungen mit bestimmter OR-Prozedur, mit ‰uﬂerst schweren oder schweren CC
+17 ;O;R04B;Andere h‰matologische und solide Neubildungen mit anderer OR-Prozedur, mit ‰uﬂerst schweren oder schweren CC
+17 ;O;R05Z;Strahlentherapie bei h‰matologischen und soliden Neubildungen, mehr als 9†Bestrahlungen oder bei akuter myeloischer Leuk‰mie, Alter†<†19†Jahre oder mit ‰uﬂerst schweren CC
+17 ;O;R06Z;Strahlentherapie bei h‰matologischen und soliden Neubildungen, mehr als 9†Bestrahlungen oder bei akuter myeloischer Leuk‰mie, Alter†>†18†Jahre, ohne ‰uﬂerst schwere CC
+17 ;O;R07A;Strahlentherapie bei h‰matologischen und soliden Neubildungen, weniger als 10†Bestrahlungen, auﬂer bei akuter myeloischer Leuk‰mie, Alter†<†19†Jahre oder mit ‰uﬂerst schweren CC
+17 ;O;R07B;Strahlentherapie bei h‰matologischen und soliden Neubildungen, weniger als 10†Bestrahlungen, auﬂer bei akuter myeloischer Leuk‰mie, Alter†>†18†Jahre, ohne ‰uﬂerst schwere CC
+17 ;O;R11A;Lymphom und Leuk‰mie mit bestimmter OR-Prozedur, mit schweren CC oder mit anderen OR-Prozeduren, mit ‰uﬂerst schweren CC, Alter†>†15†Jahre
+17 ;O;R11B;Lymphom und Leuk‰mie mit bestimmter OR-Prozedur, ohne ‰uﬂerst schwere oder schwere CC oder mit anderen OR-Prozeduren, mit schweren CC
+17 ;O;R11C;Lymphom und Leuk‰mie mit anderen OR-Prozeduren ohne ‰uﬂerst schwere oder schwere CC
+17 ;O;R12A;Andere h‰matologische und solide Neubildungen mit groﬂen OR-Prozeduren, mit ‰uﬂerst schweren CC oder bestimmtem kardiothorakalen Eingriff, ohne komplexe OR-Prozedur
+17 ;O;R12B;Andere h‰matologische und solide Neubildungen mit groﬂen OR-Prozeduren ohne ‰uﬂerst schwere CC, ohne bestimmten kardiothorakalen Eingriff, mit komplexer OR-Prozedur
+17 ;O;R12C;Andere h‰matologische und solide Neubildungen mit groﬂen OR-Prozeduren ohne ‰uﬂerst schwere CC, ohne bestimmten kardiothorakalen Eingriff, ohne komplexe OR-Prozedur
+17 ;O;R13Z;Andere h‰matologische und solide Neubildungen mit bestimmter OR-Prozedur, ohne ‰uﬂerst schwere oder schwere CC
+17 ;O;R14Z;Andere h‰matologische und solide Neubildungen mit anderen OR-Prozeduren ohne ‰uﬂerst schwere oder schwere CC oder Therapie mit offenen Nukliden bei h‰matologischen und soliden Neubildungen, mehr als ein†Belegungstag
+17 ;O;R16Z;Hochkomplexe Chemotherapie mit operativem Eingriff bei h‰matologischen und soliden Neubildungen
+17 ;O;R36Z;Intensivmedizinische Komplexbehandlung >†784 / 828†Aufwandspunkte bei h‰matologischen und soliden Neubildungen
+17 ;M;R60A;Akute myeloische Leuk‰mie mit hochkomplexer Chemotherapie
+17 ;M;R60B;Akute myeloische Leuk‰mie mit intensiver Chemotherapie mit komplizierender Diagnose oder Dialyse oder Portimplantation
+17 ;M;R60C;Akute myeloische Leuk‰mie mit intensiver Chemoth., mit ‰uﬂ. schw. CC oder kompl. Diagnostik bei Leuk‰mie oder mit m‰ﬂig kompl. Chemoth. mit komplizierender Diagnose oder Dialyse oder Portimplant. oder mit ‰uﬂ. schw. CC mit kompl. Diagnostik bei Leuk‰mie
+17 ;M;R60D;Akute myeloische Leuk‰mie mit intensiver Chemoth. ohne komplizierende Diagnose, Dialyse, Portimpl., ‰uﬂ. schw. CC oder mit m‰ﬂig kompl. Chemoth. mit ‰uﬂ. schw. CC oder mit Dialyse oder ‰uﬂ. schw. CC, Alter†<†16†Jahre ohne kompl. Diagnostik bei Leuk‰mie
+17 ;M;R60E;Akute myeloische Leuk‰mie mit intensiver Chemoth. ohne komplizierende Diagnose, Dialyse, Portimpl., ‰uﬂ. schw. CC oder mit m‰ﬂig kompl. Chemoth. mit ‰uﬂ. schw. CC oder mit Dialyse oder ‰uﬂ. schw. CC, Alter†>†15†Jahre ohne kompl. Diagnostik bei Leuk‰mie
+17 ;M;R60F;Akute myeloische Leuk‰mie mit m‰ﬂig komplexer Chemotherapie, ohne komplizierende Diagnose, ohne Dialyse, ohne Portimplantation, ohne ‰uﬂerst schwere CC oder mit lokaler Chemotherapie
+17 ;M;R60G;Akute myeloische Leuk‰mie ohne Chemotherapie, ohne Dialyse, ohne ‰uﬂerst schwere CC
+17 ;M;R61A;Lymphom und nicht akute Leuk‰mie, mit Sepsis oder komplizierender Konstellation oder mit Agranulozytose, intrakranieller Metastase oder Portimplantation, mit ‰uﬂ. schw. CC, Alter†>†15†Jahre, mit hochkompl. Chemotherapie
+17 ;M;R61B;Lymphom und nicht akute Leuk‰mie mit Agranulozytose, intrakranieller Metastase oder Portimplantation, mit ‰uﬂerst schweren CC, Alter†>†15†Jahre, oder mit ‰uﬂerst schweren CC od. Tumorlyse-Syndrom od. Blastenkrise, mit komplexer Diagnostik bei Leuk‰mie
+17 ;M;R61C;Lymphom und nicht akute Leuk‰mie, ohne Sepsis, ohne komplizierende Konstellation, mit Agranulozytose oder Portimplantation, Alter†<†16†Jahre
+17 ;M;R61D;Lymphom und nicht akute Leuk‰mie, ohne Sepsis, ohne komplizierende Konstellation, ohne Agranulozytose, ohne Portimplantation, mit ‰uﬂerst schweren CC od. Tumorlyse-Syndrom od. Blastenkrise, ohne komplexe Diagnostik bei Leuk‰mie
+17 ;M;R61E;Lymphom und nicht akute Leuk‰mie, ohne Sepsis, ohne komplizierende Konstellation, mit Agranulozytose oder Portimplantation, ohne ‰uﬂerst schwere CC, Alter†>†15†Jahre
+17 ;M;R61F;Lymphom und nicht akute Leuk‰mie, ohne Sepsis, ohne komplizierende Konstellation, ohne Agranulozytose, ohne Portimplantation, ohne ‰uﬂerst schwere CC, mit komplexer Diagnose oder Knochenaffektionen, Alter†<†16†Jahre
+17 ;M;R61G;Lymphom und nicht akute Leuk‰mie mit komplexer Diagnose oder Knochenaffektionen, Alter†>†15†Jahre oder ohne komplexe Diagnose, ohne Knochenaffektionen, mit komplexer Diagnostik bei Leuk‰mie
+17 ;M;R61H;Lymphom und nicht akute Leuk‰mie, ohne Sepsis, ohne komplizierende Konstellation, ohne Agranulozytose, ohne Portimplantation, ohne ‰uﬂerst schwere CC, ohne komplexe Diagnose, ohne Knochenaffektionen, ohne komplexe Diagnostik bei Leuk‰mie
+17 ;M;R62A;Andere h‰matologische und solide Neubildungen mit komplizierender Diagnose oder Dialyse oder Portimplantation oder mit Knochenaffektionen oder bestimmten Metastasen oder ‰uﬂerst schweren CC oder Alter†<†1†Jahr, mit komplexer Diagnose
+17 ;M;R62B;Andere h‰matologische und solide Neubildungen ohne komplizierende Diagnose, ohne Dialyse, ohne Portimplantation, mit Knochenaffektionen oder bestimmten Metastasen oder ‰uﬂerst schweren CC oder Alter†<†1†Jahr, ohne komplexe Diagnose
+17 ;M;R62C;Andere h‰matologische und solide Neubildungen ohne komplizierende Diagnose, ohne Dialyse, ohne Portimplantation, ohne Knochenaffektionen, ohne bestimmte Metastasen, ohne ‰uﬂerst schwere CC, Alter†>†0†Jahre
+17 ;M;R63A;Andere akute Leuk‰mie mit hochkomplexer Chemotherapie
+17 ;M;R63B;Andere akute Leuk‰mie mit intensiver Chemotherapie, mit Dialyse oder Sepsis oder mit Agranulozytose oder Portimplantation, Alter†<†16†Jahre
+17 ;M;R63C;Andere akute Leuk‰mie mit intensiver Chemotherapie, mit Dialyse oder Sepsis oder mit Agranulozytose oder Portimplantation, Alter†> 15†Jahre, mit ‰uﬂerst schweren CC
+17 ;M;R63D;Andere akute Leuk‰mie mit m‰ﬂig komplexer Chemotherapie, mit Dialyse oder Sepsis oder mit Agranulozytose oder Portimplantation oder mit lokaler Chemotherapie, mit Dialyse od. Sepsis od. mit Agranulozytose od. Portimplantation oder mit ‰uﬂerst schw. CC
+17 ;M;R63E;Andere akute Leuk‰mie mit intensiver oder m‰ﬂig komplexer Chemotherapie, ohne Dialyse, ohne Sepsis, ohne Agranulozytose, ohne Portimplantation, mit ‰uﬂerst schweren CC
+17 ;M;R63F;Andere akute Leuk‰mie ohne Chemotherapie, mit Dialyse oder Sepsis oder mit Agranulozytose oder Portimplantation oder mit ‰uﬂerst schweren CC
+17 ;M;R63G;Andere akute Leuk‰mie mit intensiver Chemotherapie, ohne Dialyse, ohne Sepsis, ohne Agranulozytose, ohne Portimplantation, ohne ‰uﬂerst schwere CC
+17 ;M;R63H;Andere akute Leuk‰mie mit m‰ﬂig komplexer Chemotherapie, ohne Dialyse, ohne Sepsis, ohne Agranulozytose, ohne Portimplantation, ohne ‰uﬂerst schwere CC
+17 ;M;R63I;Andere akute Leuk‰mie mit lokaler Chemotherapie oder ohne Chemotherapie, ohne Dialyse, ohne Sepsis, ohne Agranulozytose, ohne Portimplantation, ohne ‰uﬂerst schwere CC
+17 ;M;R65A;H‰matologische und solide Neubildungen, ein†Belegungstag, Alter†<†16†Jahre
+17 ;M;R65B;H‰matologische und solide Neubildungen, ein†Belegungstag, Alter†>†15†Jahre
+18A;O;S01Z;HIV-Krankheit mit OR-Prozedur
+18A;M;S60Z;HIV-Krankheit, ein†Belegungstag
+18A;M;S62Z;Bˆsartige Neubildung bei HIV-Krankheit
+18A;M;S63A;Infektion bei HIV-Krankheit mit komplexer Diagnose und ‰uﬂerst schweren CC oder mit komplizierender Konstellation
+18A;M;S63B;Infektion bei HIV-Krankheit ohne komplexe Diagnose oder ohne ‰uﬂerst schwere CC, ohne komplizierende Konstellation
+18A;M;S65A;Andere Erkrankungen bei HIV-Krankheit oder andere HIV-Krankheit mit Herzinfarkt oder bei chronisch isch‰mischer Herzkrankheit oder ‰uﬂerst schweren CC
+18A;M;S65B;Andere Erkrankungen bei HIV-Krankheit oder andere HIV-Krankheit ohne Herzinfarkt, auﬂer bei chronisch isch‰mischer Herzkrankheit, ohne ‰uﬂerst schwere CC
+18B;O;T01A;OR-Prozedur bei infektiˆsen und parasit‰ren Krankheiten mit komplexer OR-Prozedur, komplizierender Konstellation oder bei Zustand nach Organtransplantation
+18B;O;T01B;OR-Prozedur bei infektiˆsen und parasit‰ren Krankheiten ohne komplexe OR-Prozedur, ohne komplizierende Konstellation, auﬂer bei Zustand nach Organtransplantation, bei Sepsis
+18B;O;T01C;OR-Prozedur bei infektiˆsen und parasit‰ren Krankheiten ohne komplexe OR-Prozedur, ohne komplizierende Konstellation, auﬂer bei Zustand nach Organtransplantation, auﬂer bei Sepsis
+18B;O;T36Z;Intensivmedizinische Komplexbehandlung >†588 / 552†Aufwandspunkte bei infektiˆsen und parasit‰ren Krankheiten
+18B;A;T44Z;Geriatrische fr¸hrehabilitative Komplexbehandlung bei infektiˆsen und parasit‰ren Krankheiten
+18B;M;T60A;Sepsis mit komplizierender Konstellation oder bei Zustand nach Organtransplantation, mit ‰uﬂerst schweren CC
+18B;M;T60B;Sepsis mit kompliz. Konstell. od. b. Z. n. Organtransplantation, ohne ‰uﬂ. schw. CC, Alter†<†16†J. od. m. Para-/Tetraplegie od. ohne kompliz. Konst., auﬂ. b. Z. n. Organtranspl., m. kompl. Diagn. od. ‰uﬂ. schw. CC, Alter†<†16†J. od. m. Para-/Tetraplegie
+18B;M;T60C;Sepsis mit kompliz. Konstell. oder b. Z. n. Organtranspl., ohne ‰uﬂ. schw. CC, Alter†>†15†J. od. ohne Para-†/†Tetraplegie od. ohne kompliz. Konst. auﬂ. b. Z. n. Organtranspl., m. kompl. Diagn. od. ‰uﬂ. schw. CC, Alter†>†15†J. od. ohne Para-/Tetraplegie
+18B;M;T60D;Sepsis ohne komplizierende Konstellation, auﬂer bei Zustand nach Organtransplantation, ohne komplexe Diagnose, ohne ‰uﬂerst schwere CC, Alter†<†10†Jahre
+18B;M;T60E;Sepsis ohne komplizierende Konstellation, auﬂer bei Zustand nach Organtransplantation, ohne komplexe Diagnose, ohne ‰uﬂerst schwere CC, Alter†>†9†Jahre
+18B;M;T60F;Sepsis, verstorben†<†5†Tage nach Aufnahme
+18B;M;T61Z;Postoperative und posttraumatische Infektionen
+18B;M;T62A;Fieber unbekannter Ursache mit ‰uﬂerst schweren oder schweren CC, Alter†>†5†Jahre
+18B;M;T62B;Fieber unbekannter Ursache ohne ‰uﬂerst schwere oder schwere CC oder Alter†<†6†Jahre
+18B;M;T63A;Virale Erkrankung bei Zustand nach Organtransplantation
+18B;M;T63B;Bestimmte virale Erkrankung, auﬂer bei Zustand nach Organtransplantation
+18B;M;T63C;Andere virale Erkrankung, auﬂer bei Zustand nach Organtransplantation
+18B;M;T64A;Andere infektiˆse und parasit‰re Krankheiten mit komplexer Diagnose, Alter†<†16†Jahre
+18B;M;T64B;Andere infektiˆse und parasit‰re Krankheiten mit komplexer Diagnose, Alter†>†15†Jahre
+18B;M;T64C;Andere infektiˆse und parasit‰re Krankheiten ohne komplexe Diagnose
+18B;M;T77Z;Komplexbehandlung bei multiresistenten Erregern bei infektiˆsen und parasit‰ren Krankheiten
+19 ;O;U01Z;Geschlechtsumwandelnde Operation
+19 ;A;U40Z;Geriatrische fr¸hrehabilitative Komplexbehandlung bei psychischen Krankheiten und Stˆrungen
+19 ;A;U41Z;Sozial- und neurop‰diatrische und p‰diatrisch-psychosomatische Therapie bei psychischen Krankheiten und Stˆrungen
+19 ;A;U42Z;Multimodale Schmerztherapie bei psychischen Krankheiten und Stˆrungen
+19 ;A;U43Z;Psychosomatische Therapie, Alter†<†18†Jahre
+19 ;M;U60A;Psychiatrische Behandlung, ein†Belegungstag, Alter†<†16†Jahre
+19 ;M;U60B;Psychiatrische Behandlung, ein†Belegungstag, Alter†>†15†Jahre
+19 ;M;U61Z;Schizophrene, wahnhafte und akut psychotische Stˆrungen
+19 ;M;U63Z;Schwere affektive Stˆrungen
+19 ;M;U64Z;Angststˆrungen oder andere affektive und somatoforme Stˆrungen
+19 ;M;U66Z;Ess-, Zwangs- und Persˆnlichkeitsstˆrungen und akute psychische Reaktionen oder psychische Stˆrungen in der Kindheit
+20 ;A;V40Z;Qualifizierter Entzug
+20 ;M;V60A;Alkoholintoxikation und Alkoholentzug oder Stˆrungen durch Alkoholmissbrauch und Alkoholabh‰ngigkeit mit psychotischem Syndrom oder HIV-Krankheit
+20 ;M;V60B;Alkoholintoxikation und Alkoholentzug oder Stˆrungen durch Alkoholmissbrauch und Alkoholabh‰ngigkeit ohne psychotisches Syndrom, ohne HIV-Krankheit
+20 ;M;V61Z;Drogenintoxikation und -entzug
+20 ;M;V63Z;Stˆrungen durch Opioidgebrauch und Opioidabh‰ngigkeit
+20 ;M;V64Z;Stˆrungen durch anderen Drogengebrauch und Medikamentenmissbrauch und andere Drogen- und Medikamentenabh‰ngigkeit
+21A;O;W01A;Polytrauma mit Beatmung†oder bestimmten Eingriffen, mit Fr¸hrehabilitation
+21A;O;W01B;Polytrauma mit Beatmung†oder bestimmten Eingriffen, ohne Fr¸hrehabilitation, ohne endovaskul‰re Implantation von Stent-Prothesen an der Aorta, mit Beatmung†>†263†Stunden oder mit komplexer Vakuumbehandlung
+21A;O;W01C;Polytrauma mit Beatmung†oder bestimmten Eingriffen, ohne Fr¸hrehabilitation, ohne endovaskul‰re Implantation von Stent-Prothesen an der Aorta, ohne Beatmung†>†263†Stunden, ohne komplexe Vakuumbehandlung
+21A;O;W02A;Polytrauma mit Eingriffen an H¸ftgelenk, Femur, Extremit‰ten und Wirbels‰ule oder komplexen Eingriffen am Abdomen mit komplizierender Konstellation oder Eingriffen an mehreren Lokalisationen
+21A;O;W02B;Polytrauma mit Eingriffen an H¸ftgelenk, Femur, Extremit‰ten und Wirbels‰ule oder komplexen Eingriffen am Abdomen, ohne komplizierende Konstellation, ohne Eingriffe an mehreren Lokalisationen
+21A;O;W04A;Polytrauma mit anderen OR-Prozeduren, mit komplizierender Konstellation oder Eingriffen an mehreren Lokalisationen
+21A;O;W04B;Polytrauma mit anderen OR-Prozeduren, ohne komplizierende Konstellation, ohne Eingriffe an mehreren Lokalisationen
+21A;O;W05Z;Fr¸hrehabilitation bei Polytrauma mit OR-Prozedur
+21A;O;W36Z;Intensivmedizinische Komplexbehandlung >†784 / 828†Aufwandspunkte bei Polytrauma oder Polytrauma mit Beatmung†oder Kraniotomie mit endovaskul‰rer Implantation von Stent-Prothesen an der Aorta
+21A;A;W40Z;Fr¸hrehabilitation bei Polytrauma
+21A;M;W60Z;Polytrauma, verstorben†<†5†Tage nach Aufnahme
+21A;M;W61A;Polytrauma ohne signifikante Eingriffe mit komplizierender Diagnose
+21A;M;W61B;Polytrauma ohne signifikante Eingriffe, ohne komplizierende Diagnose
+21B;O;X01A;Rekonstruktive Operation bei Verletzungen mit komplizierender Konstellation, Eingriff an mehreren Lokalisationen, freier Lappenplastik mit mikrovaskul‰rer Anastomosierung oder komplizierender Diagnose oder komplexer Prozedur, mit ‰uﬂerst schweren CC
+21B;O;X01B;Rekonstruktive Operation bei Verletzungen ohne komplizierende Konstellation, ohne Eingriff an mehreren Lokalisationen, ohne freie Lappenplastik mit mikrovaskul‰rer Anastomosierung, mit komplizierender Diagnose, komplexer Prozedur oder ‰uﬂerst schw. CC
+21B;O;X01C;Rekonstruktive Operation bei Verletzungen ohne komplizierende Konstellation, ohne Eingriff an mehreren Lokalisationen, ohne freie Lappenplastik mit mikrovaskul‰rer Anastomosierung, ohne kompliz. Diagnose, ohne komplexe Prozedur, ohne ‰uﬂerst schw. CC
+21B;O;X04Z;Andere Eingriffe bei Verletzungen der unteren Extremit‰t
+21B;O;X05A;Andere Eingriffe bei Verletzungen der Hand, mit komplexem Eingriff
+21B;O;X05B;Andere Eingriffe bei Verletzungen der Hand, ohne komplexen Eingriff
+21B;O;X06A;Andere Eingriffe bei anderen Verletzungen mit ‰uﬂerst schweren CC
+21B;O;X06B;Andere Eingriffe bei anderen Verletzungen ohne ‰uﬂerst schwere CC, Alter†>†65†Jahre oder mit schweren CC oder mit komplexem Eingriff
+21B;O;X06C;Andere Eingriffe bei anderen Verletzungen ohne ‰uﬂerst schwere oder schwere CC, Alter†<†66†Jahre, ohne komplexen Eingriff
+21B;O;X07A;Replantation bei traumatischer Amputation, mit Replantation mehr als einer Zehe oder mehr als eines Fingers
+21B;O;X07B;Replantation bei traumatischer Amputation, mit Replantation eines Fingers oder einer Zehe
+21B;O;X33Z;Mehrzeitige komplexe OR-Prozeduren bei Verletzungen, Vergiftungen und toxischen Wirkungen von Drogen und Medikamenten
+21B;M;X60Z;Verletzungen und allergische Reaktionen
+21B;M;X62Z;Vergiftungen / Toxische Wirkungen von Drogen, Medikamenten und anderen Substanzen oder Folgen einer medizinischen Behandlung oder bestimmte Erfrierungen und andere Traumata
+21B;M;X64Z;Andere Krankheit verursacht durch Verletzung, Vergiftung oder toxische Wirkung
+22 ;O;Y01Z;Operative Eingriffe bei schweren Verbrennungen oder Beatmung†>†95†Stunden bei Verbrennungen oder intensivmedizinische Komplexbehandlung >†1176 / 1104†Aufwandspunkte bei Verbrennungen
+22 ;O;Y02A;Andere Verbrennungen mit Hauttransplantation bei Sepsis oder mit komplizierender Konstellation, hochkomplexem Eingriff, vierzeitigen bestimmten OR-Prozeduren oder intensivmedizinischer Komplexbehandlung >†588 / 552†Aufwandspunkte
+22 ;O;Y02B;Andere Verbrennungen mit Hauttransplantation auﬂer b. Sepsis, ohne kompliz. Konst., oh. hochkompl. Eingr., oh. vierzeitige best. OR-Proz., oh. intens. Komplexb. >†588 / 552†P., m. ‰uﬂ. schw. CC, kompliz. Diagn., kompl. Proz., Dialyse od. Beatm.†>†24†Std.
+22 ;O;Y02C;Andere Verbrennungen mit Hauttransplantation ohne ‰uﬂerst schwere CC, ohne komplizierende Diagnose, ohne komplexe Prozedur, ohne Dialyse, ohne Beatmung†>†24†Stunden, ohne komplizier. Konstellation, ohne intensivmed. Komplexbehandlung >†588 / 552†Punkte
+22 ;O;Y03A;Andere Verbrennungen mit anderen Eingriffen, Alter†<†16†Jahre
+22 ;O;Y03B;Andere Verbrennungen mit anderen Eingriffen, Alter†>†15†Jahre
+22 ;M;Y61Z;Schwere Verbrennungen
+22 ;M;Y62A;Andere Verbrennungen, Alter†<†6†Jahre
+22 ;M;Y62B;Andere Verbrennungen, Alter†>†5†Jahre
+22 ;M;Y63Z;Verbrennungen, ein†Belegungstag
+23 ;O;Z01A;OR-Prozeduren bei anderen Zust‰nden, die zur Inanspruchnahme des Gesundheitswesens f¸hren, mit komplexem Eingriff oder komplizierender Konstellation
+23 ;O;Z01B;OR-Prozeduren bei anderen Zust‰nden, die zur Inanspruchnahme des Gesundheitswesens f¸hren, ohne komplexen Eingriff, ohne komplizierende Konstellation
+23 ;O;Z02Z;Leberspende (Lebendspende)
+23 ;O;Z03Z;Nierenspende (Lebendspende)
+23 ;O;Z04Z;Lungenspende (Lebendspende)
+23 ;A;Z41Z;Knochenmarkentnahme bei Eigenspender
+23 ;A;Z42Z;Stammzellentnahme bei Fremdspender
+23 ;A;Z43Z;Knochenmarkentnahme bei Fremdspender
+23 ;A;Z44Z;Multimodale Schmerztherapie bei Faktoren, die den Gesundheitszustand beeinflussen, und anderer Inanspruchnahme des Gesundheitswesens
+23 ;M;Z64A;Andere Faktoren, die den Gesundheitszustand beeinflussen und Nachbehandlung nach abgeschlossener Behandlung mit komplexer Radiojoddiagnostik
+23 ;M;Z64B;Andere Faktoren, die den Gesundheitszustand beeinflussen und Nachbehandlung nach abgeschlossener Behandlung mit bestimmter Radiojoddiagnostik
+23 ;M;Z64C;Andere Faktoren, die den Gesundheitszustand beeinflussen und Nachbehandlung nach abgeschlossener Behandlung ohne Radiojoddiagnostik, mit bestimmtem Kontaktanlass
+23 ;M;Z64D;Andere Faktoren, die den Gesundheitszustand beeinflussen und Nachbehandlung nach abgeschlossener Behandlung ohne Radiojoddiagnostik, ohne bestimmten Kontaktanlass
+23 ;M;Z65Z;Beschwerden, Symptome, andere Anomalien und Nachbehandlung
+23 ;M;Z66Z;Vorbereitung zur Lebendspende

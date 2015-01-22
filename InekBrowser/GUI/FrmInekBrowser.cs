@@ -91,6 +91,27 @@ namespace org.inek.InekBrowser.GUI {
                 helpProvider1.HelpNamespace = "PeppBrowser.chm";
                 peppData.CatalogueActive = false;
                 this.Text = "PEPP-Browser " + Program.Year;
+            } else if (Program.SystemBrowser == Program.System.P21) {
+                titleBar.BackColor = BrowserColors.DrgTitleBar;
+                mnuMain.BackColor = BrowserColors.DrgMenuBand;
+                BackColor = BrowserColors.DrgBrowser;
+                pnlContentBackground.BackColor = BrowserColors.DrgBackgroundPanel;
+                peppData.BackColor = BrowserColors.DrgDataBackground;
+                peppData.ColorTextFields(BrowserColors.DrgDataTextField);
+                titleBar.Title = "P21-Report-Browser " + Program.Year;
+                pnlContentBackground.Controls.Remove(peppData);
+                pnlContentBackground.Controls.Remove(selectionPepp);
+                tabControl.TabPages.Remove(tabCosts);
+                initDrgSelection();
+                selectionDrg.BackColor = BrowserColors.DrgSelection;
+                lblSystem.Text = "DRG:";
+                mnuCategories.Text = "MDCs";
+                mnuSystem.Text = "DRGs";
+                initDrgData();
+                tabCosts.Text = "Kosten";
+                mnuCatalogue.Visible = false;
+                this.Text = "P21-Report-Browser " + Program.Year;
+                helpProvider1.HelpNamespace = "P21Browser.chm";
             }
         }
 
@@ -147,7 +168,7 @@ namespace org.inek.InekBrowser.GUI {
                 var q = CsvData.Context().System.Select(p => new { pe_SK = p.Category, pe_Pepp = p.Code, pe_Text = p.Text });
                 dlg.SetDataSource(q);
                 dlg.Text = "PEPPs";
-            } else if (Program.SystemBrowser == Program.System.Drg) {
+            } else if (Program.SystemBrowser == Program.System.Drg || Program.SystemBrowser == Program.System.P21) {
                 var q =
                     CsvData.Context()
                         .System.Select(
@@ -619,7 +640,7 @@ namespace org.inek.InekBrowser.GUI {
         private void cbxSystem_ButtonClicked(object sender, EventArgs e) {
             if(Program.SystemBrowser == Program.System.Pepp)
                 ClickedPeppCbx();
-            else if (Program.SystemBrowser == Program.System.Drg)
+            else if (Program.SystemBrowser == Program.System.Drg || Program.SystemBrowser == Program.System.P21)
                 ClickedDrgCbx();
         }
 
@@ -823,10 +844,10 @@ namespace org.inek.InekBrowser.GUI {
                                 AnteilFälle = d.Fraction
                             });
                     grdMainDiagnosis.DataSource = Helper.ConvertToDataTable(q);
-                } else if (Program.SystemBrowser == Program.System.Drg) {
+                } else if (Program.SystemBrowser == Program.System.Drg || Program.SystemBrowser == Program.System.P21) {
                     var q =
                     dataContext.PrimaryDiagnoses.Where(d => d.SystemCode == SystemCode)
-                        .Join(dataContext.Recherche.Where(r => r.PrimaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
+                        .Join(dataContext.Recherche.Where(r => r.PrimaryDiagnosis == 1), d => d.DiagCodeF, r => r.CodeF,
                             (d, r) => new {
                                 DRG = d.SystemCode,
                                 Kode = d.DiagCodeF,
@@ -852,9 +873,9 @@ namespace org.inek.InekBrowser.GUI {
                                 AnteilNennungen = d.EntryFraction
                             });
                     grdSecondaryDiagnosis.DataSource = Helper.ConvertToDataTable(q);
-                } else if (Program.SystemBrowser == Program.System.Drg) {
+                } else if (Program.SystemBrowser == Program.System.Drg || Program.SystemBrowser == Program.System.P21) {
                     var q = dataContext.SecondaryDiagnoses.Where(d => d.System == SystemCode)
-                        .Join(dataContext.Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
+                        .Join(dataContext.Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.CodeF, r => r.CodeF,
                             (d, r) => new {
                                 DRG = d.System,
                                 Kode = d.CodeF,
@@ -882,9 +903,9 @@ namespace org.inek.InekBrowser.GUI {
                                               AnteilNennungen = d.EntryFraction
                                           });
                     grdProcedures.DataSource = Helper.ConvertToDataTable(q);
-                } else if (Program.SystemBrowser == Program.System.Drg) {
+                } else if (Program.SystemBrowser == Program.System.Drg || Program.SystemBrowser == Program.System.P21) {
                     var q = dataContext.Procedures.Where(d => d.System == SystemCode)
-                        .Join(dataContext.Recherche.Where(r => r.Procedure == 1), d => d.ProcCode, r => r.Code,
+                        .Join(dataContext.Recherche.Where(r => r.Procedure == 1), d => d.CodeF, r => r.CodeF,
                             (d, r) => new {
                                 DRG = d.System,
                                 Kode = d.CodeF,
@@ -1512,7 +1533,7 @@ namespace org.inek.InekBrowser.GUI {
                     search.StartPosition = FormStartPosition.CenterParent;
                     search.Text = "PEPPs zu Hauptdiagnose";
                     search.SetDataSource(q);
-                } else if (Program.SystemBrowser == Program.System.Drg) {
+                } else if (Program.SystemBrowser == Program.System.Drg || Program.SystemBrowser == Program.System.P21) {
                     List<string> drgs =
                         CsvData.Context()
                             .PrimaryDiagnoses
@@ -1567,7 +1588,7 @@ namespace org.inek.InekBrowser.GUI {
                                           });
                     search.Text = "PEPPs zu Nebendiagnosen";
                     search.SetDataSource(q);
-                } else if (Program.SystemBrowser == Program.System.Drg) {
+                } else if (Program.SystemBrowser == Program.System.Drg || Program.SystemBrowser == Program.System.P21) {
                     List<string> drgs =
                         CsvData.Context()
                             .SecondaryDiagnoses
@@ -1625,7 +1646,7 @@ namespace org.inek.InekBrowser.GUI {
                         });
                     search.SetDataSource(q);
                     search.Text = "PEPPs zu Prozeduren";
-                } else if (Program.SystemBrowser == Program.System.Drg) {
+                } else if (Program.SystemBrowser == Program.System.Drg || Program.SystemBrowser == Program.System.P21) {
                     List<string> drgs =
                                 CsvData.Context()
                                     .Procedures

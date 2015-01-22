@@ -6,8 +6,9 @@ using System.Text;
 namespace org.inek.InekBrowser.Data {
     class ResourceController {
 
-        public const string PEPP_RESOURCE_FILES_HASH = "5FE57F631EC793D69BD98C47270A028EA31B14A777AD5608ED67CDB52411F5";
-        public const string DRG_RESOURCE_FILES_HASH = "F4E25812AA32650D6572339DABCE3EE9D44C62A709C328EACBC2F6451E014";
+        private const string PEPP_RESOURCE_FILES_HASH = "5FE57F631EC793D69BD98C47270A028EA31B14A777AD5608ED67CDB52411F5";
+        private const string DRG_RESOURCE_FILES_HASH = "F4E25812AA32650D6572339DABCE3EE9D44C62A709C328EACBC2F6451E014";
+        private const string P21_RESOURCE_FILES_HASH = "98FD31F336BCF7133DA703880D470FF7BB3B047E0DCB15971B740E619623DD";
 
         public enum DrgResourceFilesIndex {
             Drg,
@@ -40,6 +41,31 @@ namespace org.inek.InekBrowser.Data {
             Strukturkategorie,
             Katalog
         };
+
+        public enum P21TsResourceFilesIndex {
+            Hauptdiagnose,
+            Kopfdaten,
+            Mdc,
+            Nebendiagnose,
+            Prozeduren,
+            Recherche,
+            
+            HauptdiagnoseDrgHa,
+            ProzedurenDrgHa,
+            KopfdatenDrgHa,
+            MdcDrgHa,
+            NebendiagnosenDrgHa,
+            RechercheDrgHa,
+
+            HauptdiagnoseDrgBa,
+            KopfdatenDrgBa,
+            MdcDrgBa,
+            NebendiagnosenDrgBa,
+            ProzedurenDrgBa,
+            RechercheDrgBa,
+
+            Drg
+        }
         
         public static string RESOURCE_DIR = @"Data\";
 
@@ -74,6 +100,31 @@ namespace org.inek.InekBrowser.Data {
                                                      "RepBrPepp_13_15_Strukturkategorie.csv",
                                                      "RepBrPepp_13_15_Katalog.csv"
                                                  };
+
+        public static string[] P21_RESOURCE_FILES = {
+                                                        "P21BrDrg_TS_13_14_Hauptdiagnose.csv",
+                                                        "P21BrDrg_TS_13_14_Kopfdaten.csv",
+                                                        "P21BrDrg_TS_13_14_Mdc.csv",
+                                                        "P21BrDrg_TS_13_14_Nebendiagnosen.csv",
+                                                        "P21BrDrg_TS_13_14_Prozeduren.csv",
+                                                        "P21BrDrg_TS_13_14_Recherche.csv",
+                                                        
+                                                        "P21BrDrg_HA_13_14_Hauptdiagnose.csv",
+                                                        "P21BrDrg_HA_13_14_Prozeduren.csv",
+                                                        "P21BrDrg_HA_13_14_Kopfdaten.csv",
+                                                        "P21BrDrg_HA_13_14_Mdc.csv",
+                                                        "P21BrDrg_HA_13_14_Nebendiagnosen.csv",
+                                                        "P21BrDrg_HA_13_14_Recherche.csv",
+                                                        
+                                                        "P21BrDrg_BA_13_14_Hauptdiagnose.csv",
+                                                        "P21BrDrg_BA_13_14_Kopfdaten.csv",
+                                                        "P21BrDrg_BA_13_14_Mdc.csv",
+                                                        "P21BrDrg_BA_13_14_Nebendiagnosen.csv",
+                                                        "P21BrDrg_BA_13_14_Prozeduren.csv",
+                                                        "P21BrDrg_BA_13_14_Recherche.csv",
+
+                                                        "P21BrDrg_13_14_Drg.csv"
+                                                    };
 
         public static string[] DRG_RESOURCE_HEADERS = {
                                                           "ID_MDC;ID_Partition;ID_DRG;ID_Text;ID_BA_Kalkuliert",
@@ -132,6 +183,31 @@ namespace org.inek.InekBrowser.Data {
                                                       "ka_Pepp;ka_Verguetungsklasse;ka_Relgew"
                                                   };
 
+        public static string[] P21_RESOURCE_HEADERS = {
+                                                          "IH_DRG;IH_CodeF;IH_Anzahl;IH_Prozent",
+                                                          "IK_MDC;IK_DRG;IK_Faelle_Anzahl;IK_PCCL0;IK_PCCL1;IK_PCCL2;IK_PCCL3;IK_PCCL4;IK_GeschlechtM;IK_GeschlechtW;IK_GeschlechtU;IK_AlterU28T;IK_AlterU01;IK_AlterU03;IK_AlterU06;IK_AlterU10;IK_AlterU16;IK_AlterU18;IK_AlterU30;IK_AlterU40;IK_AlterU50;IK_AlterU55;IK_AlterU60;IK_AlterU65;IK_AlterU75;IK_AlterU80;IK_AlterU99;IK_VWD_Kurz;IK_VWD_Norm;IK_VWD_Lang;IK_uGVD;IK_oGVD;IK_VWD_MW;IK_Bewertungsrelation;IK_Gesamt;IK_VWD_STD",
+                                                          "IM_MDC;IM_Text;IM_DRG_Anzahl;IM_Faelle_Anzahl",
+                                                          "IN_DRG;IN_CodeF;IN_Anzahl;IN_Prozent;IN_AnzahlN;IN_ProzentN",
+                                                          "IP_DRG;IP_CodeF;IP_Anzahl;IP_Prozent;IP_AnzahlN;IP_ProzentN",
+                                                          "IC_CodeF;IC_Text;IC_ANZHDI;IC_ANZNDI;IC_AnzProzI",
+
+                                                          "IH_DRG;IH_CodeF;IH_Anzahl;IH_Prozent",
+                                                          "IP_DRG;IP_CodeF;IP_Anzahl;IP_Prozent;IP_AnzahlN;IP_ProzentN",
+                                                          "IK_MDC;IK_DRG;IK_Faelle_Anzahl;IK_PCCL0;IK_PCCL1;IK_PCCL2;IK_PCCL3;IK_PCCL4;IK_GeschlechtM;IK_GeschlechtW;IK_GeschlechtU;IK_AlterU28T;IK_AlterU01;IK_AlterU03;IK_AlterU06;IK_AlterU10;IK_AlterU16;IK_AlterU18;IK_AlterU30;IK_AlterU40;IK_AlterU50;IK_AlterU55;IK_AlterU60;IK_AlterU65;IK_AlterU75;IK_AlterU80;IK_AlterU99;IK_VWD_Kurz;IK_VWD_Norm;IK_VWD_Lang;IK_uGVD;IK_oGVD;IK_VWD_MW;IK_Bewertungsrelation;IK_Gesamt;IK_VWD_STD",
+                                                          "IM_MDC;IM_Text;IM_DRG_Anzahl;IM_Faelle_Anzahl",
+                                                          "IN_DRG;IN_CodeF;IN_Anzahl;IN_Prozent;IN_AnzahlN;IN_ProzentN",
+                                                          "IC_CodeF;IC_Text;IC_ANZHDI;IC_ANZNDI;IC_AnzProzI",
+
+                                                          "IH_DRG;IH_CodeF;IH_Anzahl;IH_Prozent",
+                                                          "IK_MDC;IK_DRG;IK_Faelle_Anzahl;IK_PCCL0;IK_PCCL1;IK_PCCL2;IK_PCCL3;IK_PCCL4;IK_GeschlechtM;IK_GeschlechtW;IK_GeschlechtU;IK_AlterU28T;IK_AlterU01;IK_AlterU03;IK_AlterU06;IK_AlterU10;IK_AlterU16;IK_AlterU18;IK_AlterU30;IK_AlterU40;IK_AlterU50;IK_AlterU55;IK_AlterU60;IK_AlterU65;IK_AlterU75;IK_AlterU80;IK_AlterU99;IK_VWD_Kurz;IK_VWD_Norm;IK_VWD_Lang;IK_uGVD;IK_oGVD;IK_VWD_MW;IK_Bewertungsrelation;IK_Gesamt;IK_VWD_STD",
+                                                          "IM_MDC;IM_Text;IM_DRG_Anzahl;IM_Faelle_Anzahl",
+                                                          "IN_DRG;IN_CodeF;IN_Anzahl;IN_Prozent;IN_AnzahlN;IN_ProzentN",
+                                                          "IP_DRG;IP_CodeF;IP_Anzahl;IP_Prozent;IP_AnzahlN;IP_ProzentN",
+                                                          "IC_CodeF;IC_Text;IC_ANZHDI;IC_ANZNDI;IC_AnzProzI",
+
+                                                          "ID_MDC;ID_Partition;ID_DRG;ID_Text"
+                                                      };
+
         /// <summary>
         /// Throws an exception, if the resource folder doesnt exist.
         /// </summary>
@@ -153,6 +229,9 @@ namespace org.inek.InekBrowser.Data {
                 if (Program.SystemBrowser == Program.System.Drg && !File.Exists(RESOURCE_DIR + Program.Year + "\\" + DRG_RESOURCE_FILES[i])) {
                     throw new Exception("Fehler: Die Resource-Datei " + DRG_RESOURCE_FILES[i] + " fehlt. Bitte downloaden Sie den DRG-Browser erneut.");
                 }
+                if (Program.SystemBrowser == Program.System.P21 && !File.Exists(RESOURCE_DIR + Program.Year + "\\" + P21_RESOURCE_FILES[i])) {
+                    throw new Exception("Fehler: Die Resource-Datei " + P21_RESOURCE_FILES[i] + " fehlt. Bitte downloaden Sie den DRG-Browser erneut.");
+                }
             }
         }
 
@@ -166,10 +245,10 @@ namespace org.inek.InekBrowser.Data {
             byte[] masterHashByte = sha.ComputeHash(hashesBytes);
             string masterHash = "";
             masterHash = HashBytesToHexString(masterHashByte, masterHash);
-            if (masterHash != PEPP_RESOURCE_FILES_HASH && Program.SystemBrowser == Program.System.Pepp) {
-                throw new Exception("Fehler: Die Resource-Dateien wurden verändert. Bitte laden Sie den PEPP-Browser erneut auf unserer Website (http://g-drg.de) herunter.");
-            } 
-            if (masterHash != DRG_RESOURCE_FILES_HASH && Program.SystemBrowser == Program.System.Drg) {
+            bool hashDifferent = masterHash != PEPP_RESOURCE_FILES_HASH && Program.SystemBrowser == Program.System.Pepp 
+                || masterHash != DRG_RESOURCE_FILES_HASH && Program.SystemBrowser == Program.System.Drg 
+                || masterHash != P21_RESOURCE_FILES_HASH && Program.SystemBrowser == Program.System.P21;
+            if (hashDifferent) {
                 throw new Exception("Fehler: Die Resource-Dateien wurden verändert. Bitte laden Sie den DRG-Browser erneut auf unserer Website (http://g-drg.de) herunter.");
             }
         }
@@ -188,6 +267,14 @@ namespace org.inek.InekBrowser.Data {
             } else if (Program.SystemBrowser == Program.System.Drg) {
                 for (int i = 0; i < DRG_RESOURCE_FILES.Length; i++) {
                     FileStream stream = File.OpenRead(RESOURCE_DIR + Program.Year + "\\" + DRG_RESOURCE_FILES[i]);
+                    byte[] fileBuffer = new byte[(int)stream.Length];
+                    stream.Read(fileBuffer, 0, (int)stream.Length);
+                    byte[] hash = sha.ComputeHash(fileBuffer);
+                    concatResourceHash = HashBytesToHexString(hash, concatResourceHash);
+                }
+            } else if (Program.SystemBrowser == Program.System.P21) {
+                for (int i = 0; i < P21_RESOURCE_FILES.Length; i++) {
+                    FileStream stream = File.OpenRead(RESOURCE_DIR + Program.Year + "\\" + P21_RESOURCE_FILES[i]);
                     byte[] fileBuffer = new byte[(int)stream.Length];
                     stream.Read(fileBuffer, 0, (int)stream.Length);
                     byte[] hash = sha.ComputeHash(fileBuffer);

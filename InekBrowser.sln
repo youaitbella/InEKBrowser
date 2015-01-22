@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InekBrowser", "InekBrowser\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeppBrowser", "PeppBrowser\PeppBrowser.csproj", "{536611F7-0226-45A9-BD96-EBBE3B663915}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P21Browser", "P21Browser\P21Browser.csproj", "{10DB4BDA-D9D6-4BD9-B852-F3857AACED4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,6 +48,12 @@ Global
 		{536611F7-0226-45A9-BD96-EBBE3B663915}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{536611F7-0226-45A9-BD96-EBBE3B663915}.Release|Any CPU.Build.0 = Release|Any CPU
 		{536611F7-0226-45A9-BD96-EBBE3B663915}.Release|x86.ActiveCfg = Release|Any CPU
+		{10DB4BDA-D9D6-4BD9-B852-F3857AACED4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10DB4BDA-D9D6-4BD9-B852-F3857AACED4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10DB4BDA-D9D6-4BD9-B852-F3857AACED4B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{10DB4BDA-D9D6-4BD9-B852-F3857AACED4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10DB4BDA-D9D6-4BD9-B852-F3857AACED4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10DB4BDA-D9D6-4BD9-B852-F3857AACED4B}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

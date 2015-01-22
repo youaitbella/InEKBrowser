@@ -122,7 +122,7 @@
             this.titleBar.Size = new System.Drawing.Size(325, 30);
             this.titleBar.TabIndex = 4;
             this.titleBar.ClickedExit += new System.EventHandler(this.titleBar_ClickedExit);
-            this.titleBar.MouseMoveTitleBar += new System.Windows.Forms.MouseEventHandler(this.titleBar_MouseMove);
+            this.titleBar.MouseMoveTitleBar += new System.Windows.Forms.MouseEventHandler(this.TitleBarMouseMove);
             // 
             // FrmSplash
             // 

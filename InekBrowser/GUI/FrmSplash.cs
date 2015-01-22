@@ -4,6 +4,7 @@ using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using org.inek.controls.util;
 using org.inek.InekBrowser.Data;
+using Application = System.Windows.Forms.Application;
 
 namespace org.inek.InekBrowser.GUI {
     public partial class FrmSplash : Form {
@@ -15,7 +16,7 @@ namespace org.inek.InekBrowser.GUI {
         private const int HT_CAPTION = 0x2;
 
         [DllImport("user32.dll")]
-        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        public static extern int SendMessage(IntPtr hWnd, int msg, int wParam, int lParam);
 
         [DllImport("user32.dll")]
         public static extern bool ReleaseCapture();
@@ -34,14 +35,20 @@ namespace org.inek.InekBrowser.GUI {
             if (Program.SystemBrowser == Program.System.Drg) {
                 titleBar.BackColor = BrowserColors.DrgSplashScreenTitleBar;
                 titleBar.Title = "DRG-Browser " + Program.Year;
-                this.BackColor = BrowserColors.DrgSplashScreen;
+                BackColor = BrowserColors.DrgSplashScreen;
                 label1.Text = "DRG-Browser\nVersion " + Program.Year + ".1\n© InEK GmbH";
             } else if (Program.SystemBrowser == Program.System.Pepp) {
                 titleBar.BackColor = BrowserColors.PeppSplashScreenTitleBar;
-                titleBar.Title = "Code-Browser " + Program.Year;
-                this.BackColor = BrowserColors.PeppSplashScreen;
-                label1.Text = "Code-Browser\nVersion " + Program.Year + ".1\n© InEK GmbH";
-            } else if(Program.SystemBrowser == Program.System.Unknown)
+                titleBar.Title = "PEPP-Browser " + Program.Year;
+                BackColor = BrowserColors.PeppSplashScreen;
+                label1.Text = "PEPP-Browser\nVersion " + Program.Year + ".1\n© InEK GmbH";
+            } else if (Program.SystemBrowser == Program.System.P21) {
+                titleBar.BackColor = BrowserColors.DrgSplashScreenTitleBar;
+                titleBar.Title = "P21-Browser " + Program.Year;
+                BackColor = BrowserColors.DrgSplashScreen;
+                label1.Text = "P21-Browser\nVersion " + Program.Year + ".1\n© InEK GmbH";
+            } 
+            else if (Program.SystemBrowser == Program.System.Unknown)
                 Application.Exit();
         }
 
@@ -50,11 +57,13 @@ namespace org.inek.InekBrowser.GUI {
                 Program.SystemBrowser = Program.System.Drg;
             else if (system.ToUpper() == "PEPP")
                 Program.SystemBrowser = Program.System.Pepp;
+            else if(system.ToUpper() == "P21")
+                Program.SystemBrowser = Program.System.P21;
             else
                 Program.SystemBrowser = Program.System.Unknown;
         }
 
-        private void titleBar_MouseMove(object sender, MouseEventArgs e) {
+        private void TitleBarMouseMove(object sender, MouseEventArgs e) {
             if (e.Button == MouseButtons.Left) {
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
@@ -70,7 +79,7 @@ namespace org.inek.InekBrowser.GUI {
                 ResourceController.CheckResourceFilesWithSHA256();
                 if (Program.SystemBrowser == Program.System.Pepp) {
                     CsvData.Context().LoadPeppDataToMemory();
-                } else if (Program.SystemBrowser == Program.System.Drg) {
+                } else if (Program.SystemBrowser == Program.System.Drg || Program.SystemBrowser == Program.System.P21) {
                     CsvData.Context().LoadDrgDataToMemory(CsvData.DrgType.HA);
                 }
                 _printLoader.LoadPrintLibrarys();
@@ -96,7 +105,7 @@ namespace org.inek.InekBrowser.GUI {
                     lblProgressState.Text = "Lade PEPPs...";
                     break;
                 case 30:
-                    lblProgressState.Text = "Lade Code-Details...";
+                    lblProgressState.Text = "Lade PEPP-Details...";
                     break;
                 case 40:
                     lblProgressState.Text = "Lade Hauptdiagnosen...";
