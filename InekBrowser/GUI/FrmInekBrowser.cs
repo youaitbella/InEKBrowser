@@ -1512,7 +1512,7 @@ namespace org.inek.InekBrowser.GUI {
             }
             else if (Program.SystemBrowser == Program.System.P21) {
                 Reporter reporter = new Reporter();
-                reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Design, "drgDruck", setReportData(SystemCode), "data");
+                reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Design, "p21Druck", setReportData(SystemCode), "data");
             }
         }
 
@@ -1820,6 +1820,56 @@ namespace org.inek.InekBrowser.GUI {
                     }).ToList();
 
                 return new List<SystemData> { drgData};
+            }
+
+            if(Program.SystemBrowser == Program.System.P21){
+                SystemInfo info = CsvData.Context().SystemInfo.Single(drg => drg.Code == systemCode);
+                string mdcTag = CsvData.Context().System.Where(drg => drg.Code == SystemCode).Select(drg => drg.Category).Single().Trim();
+                info.MdcCat = CsvData.Context().Mdcs.Where(mdc => mdc.MDC.Trim() == mdcTag).Select(mdc => mdc.Text).Single();
+                info.DrgTxt = cbxSystem.Text;
+                var p21Data = new SystemData(info);
+                var q2 = CsvData.Context().Mdcs.Where(mdc => mdc.MDC.Trim() == p21Data.MDC.Trim());
+                p21Data.casesMDC = q2.Select(mdc => mdc.CaseCount).Single();
+                p21Data.fromMDC = (((decimal)p21Data.CaseCount / (decimal)p21Data.casesMDC)*100).ToString();
+                p21Data.casesDrgMDC  = q2.Select(mdc => mdc.DrgCount).Single();
+                //Primary Diagnoses
+                p21Data.PrimDiag = CsvData.Context().PrimaryDiagnoses.Where(p => p.SystemCode == systemCode)
+                    .Join(CsvData.Context().Recherche.Where(r => r.PrimaryDiagnosis == 1), d => d.DiagCode, r => r.CodeF,
+                                (d, r) => new PrimaryDiagnosis() {
+                                    SystemCode = d.SystemCode,
+                                    DiagCode = d.DiagCode,
+                                    Hauptdiagnose = r.Text,
+                                    DiagCodeF = d.DiagCodeF,
+                                    Count = d.Count,
+                                    Fraction = d.Fraction
+                                }).ToList();
+                //Secondary Diagnoses
+                p21Data.SecDiag = CsvData.Context().SecondaryDiagnoses.Where(p => p.System == systemCode)
+                    .Join(CsvData.Context().Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.CodeF, r => r.CodeF,
+                                (d, r) => new SecondaryDiagnosis() {
+                                    System = d.System,
+                                    DiagCode = d.DiagCode,
+                                    CodeF = d.CodeF,
+                                    Nebendiagnose = r.Text,
+                                    CaseCount = d.CaseCount,
+                                    CaseFraction = d.CaseFraction,
+                                    EntryCount = d.EntryCount,
+                                    EntryFraction = d.EntryFraction
+                                }).ToList();
+                //Procedures
+                p21Data.Proc = CsvData.Context().Procedures.Where(p => p.System == systemCode)
+                     .Join(CsvData.Context().Recherche.Where(r => r.Procedure == 1), d => d.CodeF, r => r.CodeF,
+                                (d, r) => new Procedure() {
+                                    System = d.System,
+                                    ProcCode = d.ProcCode,
+                                    CodeF = d.CodeF,
+                                    Prozedur = r.Text,
+                                    CaseCount = d.CaseCount,
+                                    CaseFraction = d.CaseFraction,
+                                    EntryCount = d.EntryCount,
+                                    EntryFraction = d.EntryFraction
+                                }).ToList();
+                return new List<SystemData> {p21Data};
             }
             return new List<SystemData> { };
         }
