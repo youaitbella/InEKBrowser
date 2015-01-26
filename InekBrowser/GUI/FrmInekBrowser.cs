@@ -1497,12 +1497,20 @@ namespace org.inek.InekBrowser.GUI {
                 MessageBox.Show("Keine DRG gewählt. Druck nicht möglich!");
                 return;
             }
-            
+            if (string.IsNullOrEmpty(SystemCode) && Program.SystemBrowser == Program.System.P21) {
+                MessageBox.Show("Keine DRG gewählt. Druck nicht möglich!");
+                return;
+            }
+
             if(Program.SystemBrowser == Program.System.Pepp) {
             Reporter reporter = new Reporter();
                 reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Design, "peppDruck", setReportData(SystemCode), "data");    
             }
             else if (Program.SystemBrowser == Program.System.Drg) {
+                Reporter reporter = new Reporter();
+                reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Design, "drgDruck", setReportData(SystemCode), "data");
+            }
+            else if (Program.SystemBrowser == Program.System.P21) {
                 Reporter reporter = new Reporter();
                 reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Design, "drgDruck", setReportData(SystemCode), "data");
             }
