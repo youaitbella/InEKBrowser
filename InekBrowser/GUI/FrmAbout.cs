@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using org.inek.InekBrowser.Data;
 
 namespace org.inek.InekBrowser.GUI {
     public partial class FrmAbout : Form {
@@ -44,10 +36,10 @@ namespace org.inek.InekBrowser.GUI {
                 BackColor = BrowserColors.DrgSplashScreen;
                 label1.Text = "G-DRG-Report-Browser\nVersion " + Program.Year + ".1\n© InEK GmbH";
             } else if (Program.SystemBrowser == Program.System.P21) {
-                titleBar.BackColor = BrowserColors.DrgSplashScreenTitleBar;
-                titleBar.Title = "P21-Report-Browser " + Program.Year;
-                BackColor = BrowserColors.DrgSplashScreen;
-                label1.Text = "P21-Report-Browser\nVersion " + Program.Year + ".1\n© InEK GmbH";
+                titleBar.BackColor = BrowserColors.P21SplashScreenTitleBar;
+                titleBar.Title = "§-21-Browser Daten " + (int.Parse(Program.Year) - 2) + " V" + (int.Parse(Program.Year) - 1);
+                BackColor = BrowserColors.P21SplashScreen;
+                label1.Text = "§-21-Browser Daten " + (int.Parse(Program.Year) - 2) + " V" + (int.Parse(Program.Year) - 1)+"\nVersion " + Program.Year + ".1\n© InEK GmbH";
             }
         }
 

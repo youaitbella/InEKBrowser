@@ -74,7 +74,7 @@ namespace org.inek.InekBrowser.GUI {
                 initDrgData();
                 tabCosts.Text = "Kosten";
                 mnuCatalogue.Visible = false;
-                this.Text = "G-DRG-Report-Browser " + Program.Year;
+                Text = "G-DRG-Report-Browser " + Program.Year;
                 helpProvider1.HelpNamespace = "DrgBrowser.chm";
             } else if (Program.SystemBrowser == Program.System.Pepp) {
                 titleBar.BackColor = BrowserColors.PeppTitleBar;
@@ -90,28 +90,32 @@ namespace org.inek.InekBrowser.GUI {
                 mnuSystem.Text = "PEPP";
                 helpProvider1.HelpNamespace = "PeppBrowser.chm";
                 peppData.CatalogueActive = false;
-                this.Text = "PEPP-Browser " + Program.Year;
+                Text = "PEPP-Browser " + Program.Year;
             } else if (Program.SystemBrowser == Program.System.P21) {
-                titleBar.BackColor = BrowserColors.DrgTitleBar;
-                mnuMain.BackColor = BrowserColors.DrgMenuBand;
-                BackColor = BrowserColors.DrgBrowser;
-                pnlContentBackground.BackColor = BrowserColors.DrgBackgroundPanel;
-                peppData.BackColor = BrowserColors.DrgDataBackground;
-                peppData.ColorTextFields(BrowserColors.DrgDataTextField);
-                titleBar.Title = "P21-Report-Browser " + Program.Year;
+                titleBar.BackColor = BrowserColors.P21TitleBar;
+                mnuMain.BackColor = BrowserColors.P21MenuBand;
+                BackColor = BrowserColors.P21Browser;
+                pnlContentBackground.BackColor = BrowserColors.P21BackgroundPanel;
+                titleBar.Title = "§-21-Browser Daten " + (int.Parse(Program.Year) - 2) + " V" + (int.Parse(Program.Year) - 1);
                 pnlContentBackground.Controls.Remove(peppData);
                 pnlContentBackground.Controls.Remove(selectionPepp);
                 tabControl.TabPages.Remove(tabCosts);
                 initDrgSelection();
-                selectionDrg.BackColor = BrowserColors.DrgSelection;
+                selectionDrg.BackColor = BrowserColors.P21Selection;
                 lblSystem.Text = "DRG:";
                 mnuCategories.Text = "MDCs";
                 mnuSystem.Text = "DRGs";
                 initDrgData();
+                drgData.BackColor = BrowserColors.P21DatBackground;
+                drgData.BackgroundColor(BrowserColors.P21DatBackground);
+                drgData.ColorTextFields(BrowserColors.P21DataTextField, Color.Black);
                 tabCosts.Text = "Kosten";
                 mnuCatalogue.Visible = false;
-                this.Text = "P21-Report-Browser " + Program.Year;
-                helpProvider1.HelpNamespace = "P21Browser.chm";
+                mnuCosts.Visible = false;
+                mnuCostDomain.Visible = false;
+                Text = "§-21-Browser Daten " + (int.Parse(Program.Year) - 2) + " V" + (int.Parse(Program.Year) - 1);
+                helpProvider1.HelpNamespace = "§21Browser.chm";
+                drgData.ShowCaseCosts = false;
             }
         }
 
@@ -168,7 +172,7 @@ namespace org.inek.InekBrowser.GUI {
                 var q = CsvData.Context().System.Select(p => new { pe_SK = p.Category, pe_Pepp = p.Code, pe_Text = p.Text });
                 dlg.SetDataSource(q);
                 dlg.Text = "PEPPs";
-            } else if (Program.SystemBrowser == Program.System.Drg || Program.SystemBrowser == Program.System.P21) {
+            } else if (Program.SystemBrowser == Program.System.Drg) {
                 var q =
                     CsvData.Context()
                         .System.Select(
@@ -180,6 +184,19 @@ namespace org.inek.InekBrowser.GUI {
                                         ID_Text = drg.Text,
                                         ID_BA_Kalkuliert = drg.Calculated
                                     });
+                dlg.SetDataSource(q);
+                dlg.Text = "DRGs";
+            } else if (Program.SystemBrowser == Program.System.P21) {
+                var q =
+                    CsvData.Context()
+                        .System.Select(
+                            drg =>
+                                new {
+                                    ID_MDC = drg.Category,
+                                    ID_Partition = drg.Partition,
+                                    ID_DRG = drg.Code,
+                                    ID_Text = drg.Text
+                                });
                 dlg.SetDataSource(q);
                 dlg.Text = "DRGs";
             }
@@ -206,7 +223,7 @@ namespace org.inek.InekBrowser.GUI {
                                               st_TageAnzahl = sk.DayCount
                                           });
                 dlg.SetDataSource(q);
-            } else if (Program.SystemBrowser == Program.System.Drg) {
+            } else if (Program.SystemBrowser == Program.System.Drg || Program.SystemBrowser == Program.System.P21) {
                 dlg.Text = "MDCs";
                 var q =
                     CsvData.Context()
@@ -307,6 +324,47 @@ namespace org.inek.InekBrowser.GUI {
                                                                        });
                 dlg.SetDataSource(q);
                 dlg.Text = "Kopfdaten";
+            } else if (Program.SystemBrowser == Program.System.P21) {
+                var q = CsvData.Context().SystemInfo.Select(drg => new {
+                    IK_MDC = drg.MDC,
+                    IK_DRG = drg.Code,
+                    IK_Faelle_Anzahl = drg.CaseCount,
+                    IK_PCCL0 = drg.PCCL0,
+                    IK_PCCL1 = drg.PCCL1,
+                    IK_PCCL2 = drg.PCCL2,
+                    IK_PCCL3 = drg.PCCL3,
+                    IK_PCCL4 = drg.PCCL4,
+                    IK_GeschlechtM = drg.GenderMale,
+                    IK_GeschlechtW = drg.GenderFemale,
+                    IK_GeschlechtU = drg.GenderUnknown,
+                    IK_AlterU28T = drg.AgeBelow28Days,
+                    IK_AlterU01 = drg.AgeBelow1Year,
+                    IK_AlterU03 = drg.AgeBelow3Years,
+                    IK_AlterU06 = drg.AgeBelow6Years,
+                    IK_AlterU10 = drg.AgeBelow10Years,
+                    IK_AlterU16 = drg.AgeBelow16Years,
+                    IK_AlterU18 = drg.AgeBelow18Years,
+                    IK_AlterU30 = drg.AgeBelow30Years,
+                    IK_AlterU40 = drg.AgeBelow40Years,
+                    IK_AlterU50 = drg.AgeBelow50Years,
+                    IK_AlterU55 = drg.AgeBelow55Years,
+                    IK_AlterU60 = drg.AgeBelow60Years,
+                    IK_AlterU65 = drg.AgeBelow65Years,
+                    IK_AlterU75 = drg.AgeBelow75Years,
+                    IK_AlterU80 = drg.AgeBelow80Years,
+                    IK_AlterU99 = drg.AgeBelow99Years,
+                    IK_VWD_Kurz = drg.LosShort,
+                    IK_VWD_Normal = drg.LosNormal,
+                    IK_VWD_Lang = drg.LosLong,
+                    IK_uGVD = drg.Day1Reduction,
+                    IK_oGVD = drg.Day1Remuneration,
+                    IK_VWD_MW = drg.LosAverage,
+                    IK_Bewertungsrelation = drg.ValuationRatio,
+                    IK_Gesamt = drg.FractionAllCases,
+                    IK_VWD_STD = drg.LosStandard
+                });
+                dlg.SetDataSource(q);
+                dlg.Text = "Kopfdaten";
             }
             dlg.ShowDialog(this);
             Cursor = DefaultCursor;
@@ -332,6 +390,18 @@ namespace org.inek.InekBrowser.GUI {
                                         IH_CodeF = drg.DiagCodeF,
                                         IH_Anzahl = drg.Count
                                     });
+                dlg.SetDataSource(q);
+            } else if (Program.SystemBrowser == Program.System.P21) {
+                var q =
+                    CsvData.Context()
+                        .PrimaryDiagnoses.Select(
+                            drg =>
+                                new {
+                                    IH_DRG = drg.SystemCode,
+                                    IH_CodeF = drg.DiagCodeF,
+                                    IH_Anzahl = drg.Count,
+                                    IH_Prozent = drg.Fraction
+                                });
                 dlg.SetDataSource(q);
             }
             dlg.Text = "Hauptdiagnosen";
@@ -373,13 +443,27 @@ namespace org.inek.InekBrowser.GUI {
                                         IN_AnzahlN = drg.EntryCount
                                     });
                 dlg.SetDataSource(q);
+            } else if (Program.SystemBrowser == Program.System.P21) {
+                var q =
+                    CsvData.Context()
+                        .SecondaryDiagnoses.Select(
+                            drg =>
+                                new {
+                                    IN_DRG = drg.System,
+                                    IN_CodeF = drg.CodeF,
+                                    IN_Anzahl = drg.CaseCount,
+                                    IN_Prozent = drg.CaseFraction,
+                                    IN_AnzahlN = drg.EntryCount,
+                                    IN_ProzentN = drg.EntryFraction
+                                });
+                dlg.SetDataSource(q);
             }
             dlg.Text = "Nebendiagnosen";
             dlg.ShowDialog(this);
             Cursor = DefaultCursor;
         }
 
-        private void mnuProcedures_Click(object sender, System.EventArgs e) {
+        private void mnuProcedures_Click(object sender, EventArgs e) {
             Cursor = Cursors.WaitCursor;
             dlg = new FrmList();
             SetDataHelpProvider(dlg);
@@ -403,6 +487,16 @@ namespace org.inek.InekBrowser.GUI {
                     IP_Anzahl = p.CaseCount,
                     IP_ProzentN = p.EntryFraction,
                     IP_AnzahlN = p.EntryCount
+                });
+                dlg.SetDataSource(q);
+            } else if (Program.SystemBrowser == Program.System.P21) {
+                var q = CsvData.Context().Procedures.Select(p => new {
+                    IP_DRG = p.System,
+                    IP_CodeF = p.CodeF,
+                    IP_Anzahl = p.CaseCount,
+                    IP_Prozent = p.CaseFraction,
+                    IP_AnzahlN = p.EntryCount,
+                    IP_ProzentN = p.EntryFraction
                 });
                 dlg.SetDataSource(q);
             }
@@ -494,6 +588,15 @@ namespace org.inek.InekBrowser.GUI {
                     IC_Code = d.Code,
                     IC_Text = d.Text,
                     IC_CodeF = d.CodeF,
+                    IC_ANZHDI = d.PrimaryDiagnosis,
+                    IC_ANZNDI = d.SecondaryDiagnosis,
+                    IC_AnzProzI = d.Procedure
+                });
+                dlg.SetDataSource(q);
+            } else if (Program.SystemBrowser == Program.System.P21) {
+                var q = CsvData.Context().Recherche.Select(d => new {
+                    IC_CodeF = d.CodeF,
+                    IC_Text = d.Text,
                     IC_ANZHDI = d.PrimaryDiagnosis,
                     IC_ANZNDI = d.SecondaryDiagnosis,
                     IC_AnzProzI = d.Procedure
@@ -1464,6 +1567,9 @@ namespace org.inek.InekBrowser.GUI {
                 } else if (Program.SystemBrowser == Program.System.Pepp) {
                     reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, outputType, "peppDruck.lst",
                         setReportData(SystemCode), "data");
+                } else if (Program.SystemBrowser == Program.System.P21) {
+                    reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, outputType, "p21Druck.lst",
+                        setReportData(SystemCode), "data");
                 }
             } catch (Exception ex) {
                 MessageBox.Show(
@@ -1474,7 +1580,7 @@ namespace org.inek.InekBrowser.GUI {
 
         private void pDFExportToolStripMenuItem_Click(object sender, EventArgs e) {
             if (string.IsNullOrEmpty(SystemCode)) {
-                if(Program.SystemBrowser == Program.System.Drg){
+                if (Program.SystemBrowser == Program.System.Drg || Program.SystemBrowser == Program.System.P21) {
                     MessageBox.Show("Keine DRG gewählt. PDF-Export nicht möglich!");
                     return;
                 }
@@ -1493,15 +1599,11 @@ namespace org.inek.InekBrowser.GUI {
                 MessageBox.Show("Keine PEPP gewählt. Druck nicht möglich!");
                 return;
             }
-            if (string.IsNullOrEmpty(SystemCode) && Program.SystemBrowser == Program.System.Drg) {
+            if (string.IsNullOrEmpty(SystemCode) && (Program.SystemBrowser == Program.System.Drg || Program.SystemBrowser == Program.System.P21)) {
                 MessageBox.Show("Keine DRG gewählt. Druck nicht möglich!");
                 return;
             }
-            if (string.IsNullOrEmpty(SystemCode) && Program.SystemBrowser == Program.System.P21) {
-                MessageBox.Show("Keine DRG gewählt. Druck nicht möglich!");
-                return;
-            }
-
+            
             if(Program.SystemBrowser == Program.System.Pepp) {
             Reporter reporter = new Reporter();
                 reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Design, "peppDruck", setReportData(SystemCode), "data");    
@@ -1509,10 +1611,6 @@ namespace org.inek.InekBrowser.GUI {
             else if (Program.SystemBrowser == Program.System.Drg) {
                 Reporter reporter = new Reporter();
                 reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Design, "drgDruck", setReportData(SystemCode), "data");
-            }
-            else if (Program.SystemBrowser == Program.System.P21) {
-                Reporter reporter = new Reporter();
-                reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Design, "p21Druck", setReportData(SystemCode), "data");
             }
         }
 
@@ -1820,20 +1918,18 @@ namespace org.inek.InekBrowser.GUI {
                     }).ToList();
 
                 return new List<SystemData> { drgData};
-            }
-
-            if(Program.SystemBrowser == Program.System.P21){
+            } if (Program.SystemBrowser == Program.System.P21) {
                 SystemInfo info = CsvData.Context().SystemInfo.Single(drg => drg.Code == systemCode);
                 string mdcTag = CsvData.Context().System.Where(drg => drg.Code == SystemCode).Select(drg => drg.Category).Single().Trim();
                 info.MdcCat = CsvData.Context().Mdcs.Where(mdc => mdc.MDC.Trim() == mdcTag).Select(mdc => mdc.Text).Single();
                 info.DrgTxt = cbxSystem.Text;
-                var p21Data = new SystemData(info);
-                var q2 = CsvData.Context().Mdcs.Where(mdc => mdc.MDC.Trim() == p21Data.MDC.Trim());
-                p21Data.casesMDC = q2.Select(mdc => mdc.CaseCount).Single();
-                p21Data.fromMDC = (((decimal)p21Data.CaseCount / (decimal)p21Data.casesMDC)*100).ToString();
-                p21Data.casesDrgMDC  = q2.Select(mdc => mdc.DrgCount).Single();
+                var drgData = new SystemData(info);
+                var q2 = CsvData.Context().Mdcs.Where(mdc => mdc.MDC.Trim() == drgData.MDC.Trim());
+                drgData.casesMDC = q2.Select(mdc => mdc.CaseCount).Single();
+                drgData.fromMDC = (((decimal)drgData.CaseCount / (decimal)drgData.casesMDC) * 100).ToString();
+                drgData.casesDrgMDC = q2.Select(mdc => mdc.DrgCount).Single();
                 //Primary Diagnoses
-                p21Data.PrimDiag = CsvData.Context().PrimaryDiagnoses.Where(p => p.SystemCode == systemCode)
+                drgData.PrimDiag = CsvData.Context().PrimaryDiagnoses.Where(p => p.SystemCode == systemCode)
                     .Join(CsvData.Context().Recherche.Where(r => r.PrimaryDiagnosis == 1), d => d.DiagCode, r => r.CodeF,
                                 (d, r) => new PrimaryDiagnosis() {
                                     SystemCode = d.SystemCode,
@@ -1844,7 +1940,7 @@ namespace org.inek.InekBrowser.GUI {
                                     Fraction = d.Fraction
                                 }).ToList();
                 //Secondary Diagnoses
-                p21Data.SecDiag = CsvData.Context().SecondaryDiagnoses.Where(p => p.System == systemCode)
+                drgData.SecDiag = CsvData.Context().SecondaryDiagnoses.Where(p => p.System == systemCode)
                     .Join(CsvData.Context().Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.CodeF, r => r.CodeF,
                                 (d, r) => new SecondaryDiagnosis() {
                                     System = d.System,
@@ -1857,7 +1953,7 @@ namespace org.inek.InekBrowser.GUI {
                                     EntryFraction = d.EntryFraction
                                 }).ToList();
                 //Procedures
-                p21Data.Proc = CsvData.Context().Procedures.Where(p => p.System == systemCode)
+                drgData.Proc = CsvData.Context().Procedures.Where(p => p.System == systemCode)
                      .Join(CsvData.Context().Recherche.Where(r => r.Procedure == 1), d => d.CodeF, r => r.CodeF,
                                 (d, r) => new Procedure() {
                                     System = d.System,
@@ -1869,7 +1965,25 @@ namespace org.inek.InekBrowser.GUI {
                                     EntryCount = d.EntryCount,
                                     EntryFraction = d.EntryFraction
                                 }).ToList();
-                return new List<SystemData> {p21Data};
+                drgData.Cost = CsvData.Context().Costs.Where(p => p.Code == systemCode)
+                    .Join(CsvData.Context().CostDomains, c => c.CostDomain, d => d.DomainId,
+                    (c, d) => new Cost() {
+                        Code = c.Code,
+                        CostDomain = c.CostDomain,
+                        CostType1 = c.CostType1,
+                        CostType2 = c.CostType2,
+                        CostType3 = c.CostType3,
+                        CostType4a = c.CostType4a,
+                        CostType4b = c.CostType4b,
+                        CostType5 = c.CostType5,
+                        CostType6a = c.CostType6a,
+                        CostType6b = c.CostType6b,
+                        CostType7 = c.CostType7,
+                        CostType8 = c.CostType8,
+                        TxtBez = d.DomainText
+                    }).ToList();
+
+                return new List<SystemData> { drgData };
             }
             return new List<SystemData> { };
         }
@@ -1882,7 +1996,7 @@ namespace org.inek.InekBrowser.GUI {
             if (Program.SystemBrowser == Program.System.Pepp) {
                 selectionPepp.ClearSelection();
                 LoadPeppData();
-            } else if (Program.SystemBrowser == Program.System.Drg) {
+            } else if (Program.SystemBrowser == Program.System.Drg || Program.SystemBrowser == Program.System.P21) {
                 selectionDrg.ClearSelection();
                 LoadDrgData();   
             }

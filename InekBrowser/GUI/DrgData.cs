@@ -179,28 +179,42 @@ namespace org.inek.InekBrowser.GUI {
             InitializeComponent();
         }
 
-        public void ColorTextFields(Color color) {
+        public void ColorTextFields(Color color, Color font) {
             foreach (Control tb in Controls) {
-                ColorTextFields(color, tb);
+                ColorTextFields(color, font, tb);
             }
         }
 
-        private void ColorTextFields(Color color, Control control) {
+        public void ColorTextFieldsAndFont(Color background, Color font) {
+            
+        }
+
+        public void BackgroundColor(Color c) {
+            pnlData.BackColor = c;
+        }
+
+        private void ColorTextFields(Color color, Color font, Control control) {
             foreach (Control tb in control.Controls) {
                 var grp = typeof(GroupBox);
                 var p = typeof(Panel);
                 if (tb.GetType() == grp || tb.GetType() == p)
-                    ColorTextFields(color, tb);
+                    ColorTextFields(color, font, tb);
                 var t = typeof(TextBox);
                 if (tb.GetType() != t) continue;
                 var box = (TextBox)tb;
                 box.BackColor = color;
+                box.ForeColor = font;
             }
         }
 
-        private void btnCatalog_Click(object sender, System.EventArgs e) {
+        private void btnCatalog_Click(object sender, EventArgs e) {
             if (ClickedCatalogue != null)
                 ClickedCatalogue(sender, e);
+        }
+
+        public bool ShowCaseCosts {
+            get { return grpCaseCosts.Visible; }
+            set { grpCaseCosts.Visible = value; }
         }
     }
 }

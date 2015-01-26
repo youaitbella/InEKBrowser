@@ -1,4 +1,3 @@
-D:\Projects\InekBrowser\P21Browser\bin\Release\P21Browser.exe.config
 D:\Projects\InekBrowser\P21Browser\bin\Release\drgDruck.lst
 D:\Projects\InekBrowser\P21Browser\bin\Release\peppDruck.lst
 D:\Projects\InekBrowser\P21Browser\bin\Release\Print\cmbr20.dll
@@ -17,8 +16,6 @@ D:\Projects\InekBrowser\P21Browser\bin\Release\Print\cmls2001.lng
 D:\Projects\InekBrowser\P21Browser\bin\Release\inek_icon.ico
 D:\Projects\InekBrowser\P21Browser\bin\Release\PeppBrowser.chm
 D:\Projects\InekBrowser\P21Browser\bin\Release\PeppBrowser.pdf
-D:\Projects\InekBrowser\P21Browser\bin\Release\P21Browser.exe
-D:\Projects\InekBrowser\P21Browser\bin\Release\P21Browser.pdb
 D:\Projects\InekBrowser\P21Browser\bin\Release\InEK-Browser.dll
 D:\Projects\InekBrowser\P21Browser\bin\Release\combit.ListLabel20.dll
 D:\Projects\InekBrowser\P21Browser\bin\Release\InekControls.dll
@@ -29,8 +26,6 @@ D:\Projects\InekBrowser\P21Browser\bin\Release\EntityFramework.xml
 D:\Projects\InekBrowser\P21Browser\obj\Release\P21Browser.csprojResolveAssemblyReference.cache
 D:\Projects\InekBrowser\P21Browser\obj\Release\P21Browser.Properties.Resources.resources
 D:\Projects\InekBrowser\P21Browser\obj\Release\P21Browser.csproj.GenerateResource.Cache
-D:\Projects\InekBrowser\P21Browser\obj\Release\P21Browser.exe
-D:\Projects\InekBrowser\P21Browser\obj\Release\P21Browser.pdb
 D:\Projects\InekBrowser\P21Browser\bin\Release\Data\2015\P21BrDrg_13_14_Drg.csv
 D:\Projects\InekBrowser\P21Browser\bin\Release\Data\2015\P21BrDrg_BA_13_14_Hauptdiagnose.csv
 D:\Projects\InekBrowser\P21Browser\bin\Release\Data\2015\P21BrDrg_BA_13_14_Kopfdaten.csv
@@ -50,3 +45,11 @@ D:\Projects\InekBrowser\P21Browser\bin\Release\Data\2015\P21BrDrg_TS_13_14_Mdc.c
 D:\Projects\InekBrowser\P21Browser\bin\Release\Data\2015\P21BrDrg_TS_13_14_Nebendiagnosen.csv
 D:\Projects\InekBrowser\P21Browser\bin\Release\Data\2015\P21BrDrg_TS_13_14_Prozeduren.csv
 D:\Projects\InekBrowser\P21Browser\bin\Release\Data\2015\P21BrDrg_TS_13_14_Recherche.csv
+D:\Projects\InekBrowser\P21Browser\bin\Release\§-21-Browser Daten 2013 V2014.exe.config
+D:\Projects\InekBrowser\P21Browser\bin\Release\§-21-Browser Daten 2013 V2014.exe
+D:\Projects\InekBrowser\P21Browser\bin\Release\§-21-Browser Daten 2013 V2014.pdb
+D:\Projects\InekBrowser\P21Browser\obj\Release\§-21-Browser Daten 2013 V2014.exe
+D:\Projects\InekBrowser\P21Browser\obj\Release\§-21-Browser Daten 2013 V2014.pdb
+D:\Projects\InekBrowser\P21Browser\bin\Release\Properties\Settings.Designer.cs
+D:\Projects\InekBrowser\P21Browser\bin\Release\Properties\Settings.settings
+D:\Projects\InekBrowser\P21Browser\bin\Release\p21Druck.lst

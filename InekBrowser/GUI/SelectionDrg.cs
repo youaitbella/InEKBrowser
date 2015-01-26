@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using combit.ListLabel20.Dom;
 using org.inek.controls.gui;
 using org.inek.InekBrowser.Data;
 
@@ -40,6 +41,8 @@ namespace org.inek.InekBrowser.GUI {
 
         public SelectionDrg() {
             InitializeComponent();
+            if (Program.SystemBrowser == Program.System.P21)
+                cbxDepartment.Items.Add("Teilstationär");
             Category = "";
             CategoryText = "";
             Code = "";
@@ -206,6 +209,8 @@ namespace org.inek.InekBrowser.GUI {
                 CsvData.Context().LoadDrgDataToMemory(CsvData.DrgType.HA);
             else if (cbxDepartment.Text == "Belegabteilung")
                 CsvData.Context().LoadDrgDataToMemory(CsvData.DrgType.BA);
+            else if (cbxDepartment.Text == "Teilstationär")
+                CsvData.Context().LoadDrgDataToMemory(CsvData.DrgType.TS);
 
             Parent.TextCode = "";
             cbxMainDiagnosis.Text = "";

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("P21Browser")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("§-21-Browser Daten 2013 V2014")]
+[assembly: AssemblyDescription("§-21-Browser Daten 2013 V2014")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("P21Browser")]
+[assembly: AssemblyCompany("Institut für das Entgeltsystem im Krankenhaus GmbH (InEK)")]
+[assembly: AssemblyProduct("§-21-Browser Daten 2013 V2014")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
