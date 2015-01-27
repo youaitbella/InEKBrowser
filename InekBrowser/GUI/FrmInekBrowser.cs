@@ -1930,7 +1930,7 @@ namespace org.inek.InekBrowser.GUI {
                 drgData.casesDrgMDC = q2.Select(mdc => mdc.DrgCount).Single();
                 //Primary Diagnoses
                 drgData.PrimDiag = CsvData.Context().PrimaryDiagnoses.Where(p => p.SystemCode == systemCode)
-                    .Join(CsvData.Context().Recherche.Where(r => r.PrimaryDiagnosis == 1), d => d.DiagCode, r => r.CodeF,
+                    .Join(CsvData.Context().Recherche.Where(r => r.PrimaryDiagnosis == 1), d => d.DiagCodeF, r => r.CodeF,
                                 (d, r) => new PrimaryDiagnosis() {
                                     SystemCode = d.SystemCode,
                                     DiagCode = d.DiagCode,
