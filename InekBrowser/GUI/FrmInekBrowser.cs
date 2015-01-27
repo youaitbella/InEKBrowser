@@ -1612,6 +1612,11 @@ namespace org.inek.InekBrowser.GUI {
                 Reporter reporter = new Reporter();
                 reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Design, "drgDruck", setReportData(SystemCode), "data");
             }
+
+            else if (Program.SystemBrowser == Program.System.P21) {
+                Reporter reporter = new Reporter();
+                reporter.Perform(LlProject.List, LlAutoMasterMode.AsVariables, OutputType.Design, "p21Druck", setReportData(SystemCode), "data");
+            }
         }
 
 
