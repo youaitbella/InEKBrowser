@@ -252,6 +252,7 @@
             this.designerToolStripMenuItem.Name = "designerToolStripMenuItem";
             this.designerToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.designerToolStripMenuItem.Text = "Designer";
+            this.designerToolStripMenuItem.Visible = false;
             this.designerToolStripMenuItem.Click += new System.EventHandler(this.designerToolStripMenuItem_Click);
             // 
             // mnuQuestionTag

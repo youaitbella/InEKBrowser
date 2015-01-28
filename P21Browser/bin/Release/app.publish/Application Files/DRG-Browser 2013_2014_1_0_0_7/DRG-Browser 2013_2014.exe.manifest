@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="DRG-Browser 2013_2014.exe" version="1.0.0.7" publicKeyToken="893185d24c35e7e9" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="inek_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="DRG-Browser 2013_2014" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="DRG-Browser 2013_2014.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="combit.ListLabel20.dll" size="986624">
+      <assemblyIdentity name="combit.ListLabel20" version="20.0.5406.15490" publicKeyToken="A7A30592CB4A94BE" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>CYUOZVZlUBcDhsMA0rKvJtVRJMA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DRG-Browser 2013_2014.exe" size="19456">
+      <assemblyIdentity name="DRG-Browser 2013_2014" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>EXPy/zxUQCkhNf4fq3PUs+UBOj0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.dll" size="4842656">
+      <assemblyIdentity name="EntityFramework" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>viy4gdYEHsmkkeizhPOV8G4SbUQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="InEK-Browser.dll" size="900096">
+      <assemblyIdentity name="InEK-Browser" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>wqtLDQoz/5OALj6wldylYYIDbEE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="InekControls.dll" size="119808">
+      <assemblyIdentity name="InekControls" version="13.9.16.29572" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>0fH+RCBtuG/pavc3CWvNMarZfFY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Data\2015\P21BrDrg_13_14_Drg.csv" size="177345">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>laZXS3US9nQtcH35RgkQo2eaFwo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2015\P21BrDrg_BA_13_14_Hauptdiagnose.csv" size="139909">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ouhgqcHuTt/vLfDrKFjp6xxKPMc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2015\P21BrDrg_BA_13_14_Kopfdaten.csv" size="150713">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ZANDQbQtuFzZp/b6dko9iP6LdBw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2015\P21BrDrg_BA_13_14_Mdc.csv" size="1828">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>SOiJ4l+4Xr3DwuX/yKYtBgNmzro=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2015\P21BrDrg_BA_13_14_Nebendiagnosen.csv" size="1451674">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>cn7HnjNF2s0eQBow/k91gcVZ0u4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2015\P21BrDrg_BA_13_14_Prozeduren.csv" size="561533">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>iB1e3pA0eLqZEDHvcXU/CqfLu2k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2015\P21BrDrg_BA_13_14_Recherche.csv" size="723754">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>f6vjkygvsBUrZfVepPgDxl8GNnY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2015\P21BrDrg_HA_13_14_Hauptdiagnose.csv" size="1265555">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>lpasYUV5JzyQxrG7yHqpQMt1L9Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2015\P21BrDrg_HA_13_14_Kopfdaten.csv" size="228165">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>e74DLgFgQCPBdt1sLjz5gBbX6uE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2015\P21BrDrg_HA_13_14_Mdc.csv" size="1878">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>O2va/qeWfhCw0jjbZpsZzGVZAnk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2015\P21BrDrg_HA_13_14_Nebendiagnosen.csv" size="26383143">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>vemJDeY7pmUJx0WIkoyd/McUyhs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2015\P21BrDrg_HA_13_14_Prozeduren.csv" size="10671474">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>XNWuBD5/ol2K3v/1AkAjNIGxgOQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2015\P21BrDrg_HA_13_14_Recherche.csv" size="2631947">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4cNhcFOmkLqH/JZJ/m6stXYvtsI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2015\P21BrDrg_TS_13_14_Hauptdiagnose.csv" size="105634">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Us1IzwmxSmLXl0emJfa0L3WYpaU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2015\P21BrDrg_TS_13_14_Kopfdaten.csv" size="105589">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>6blsfhB5plEpoh36pKbCRB3GsfY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2015\P21BrDrg_TS_13_14_Mdc.csv" size="1830">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ZCje5k4BSBYrrN4dU+JDgX9CaDU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2015\P21BrDrg_TS_13_14_Nebendiagnosen.csv" size="573037">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>3aFBxzw9lqGhbzDQFDp+wN9EDyE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2015\P21BrDrg_TS_13_14_Prozeduren.csv" size="305297">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>e9NIIDtViIAxF7wN1LtSnBV8Ug4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2015\P21BrDrg_TS_13_14_Recherche.csv" size="460453">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>FmnCmTjcXr9vmIxzrv0Kc+K+xWA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DRG-Browser 2013_2014.exe.config" size="184">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>06MAsbgFUGlKhu1U3KJ4fh8CRLU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrgBrowser.chm" size="1255055">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>fHics6rmdS5YNlXo9em1X15dz+c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrgBrowser.pdf" size="2880375">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>QhQWlHzvHmJsRUV7xJ7oIMEjoM0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="inek_icon.ico" size="12862">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>V1WoifXwNR7oSUUpCdORAVlYMq4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="p21Druck.lst" size="401862">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>XuGwJivet7fs8bv7ruoIbFlclkE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\cmbr20.dll" size="1588752">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>nJ7YB4ulPvQCIN8E2YnJ6JUqiG8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\cmct20.dll" size="2371088">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>48c2AblKGeMed9oQLZsH+bWlA6U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\cmdw20.dll" size="1221648">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>sW++rsb2PlIMujJo9rVCVxWeCq8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\cmll20.dll" size="11880976">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Y56Y4Ht7jaLLLPZBOYMh6UYOZs4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\cmLL2001.chm" size="3177677">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>0gky6MsVzSKXul3BN1LwSlM7SMo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\cmll2001.lng" size="2275856">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TXJBPOrxWAOiN3dX31XhVE/fZsc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\Cmll20ex.llx" size="7288336">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>yyZl9aU2/HoHUCNCujxiqLO/+OA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\cmll20pr.dll" size="5273616">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>MOP5ezoWaCQ+MmXLdLqc6Vav/X8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\cmll20xl.dll" size="5998408">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>sDAf1LcgWlLOcxAgfxOr2Lnfcc4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\cmls20.dll" size="3350032">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>2cMlX64bbnyDLGo9DEV8sRQFAkg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\cmls2001.lng" size="127504">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>lp6yrahkKWYU4mI3+Ur8PwqPuDA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\cmmx20.dll" size="1316880">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>hsMBImewKs0I7kJEUCGwsNdBxvU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\cmut20.dll" size="1007120">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>flkPKR8YBBXqG7qUVr5VZd8810E=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Institut fuer das Entgeltsystem im Krankenhaus GmbH (InEK), OU=Institut fuer das Entgeltsystem im Krankenhaus GmbH (InEK), O=Institut fuer das Entgeltsystem im Krankenhaus GmbH (InEK), L=Siegburg, S=NRW, C=DE" issuerKeyHash="d40d653f7abd34c6fe47e74c0dc0bdf2de15ab71" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>R21Dx2azRByl9WG8onqedLeP8sU=</DigestValue></Reference></SignedInfo><SignatureValue>S8cd8xgkt/Qjaz4GBKhVYe1WHBRMAQ/BnZJSHU1h7gKe+gfR/LbvUITcGDHmfH+oQKKGpmk+5QClQS3x2h18+GGRT6FdhfbBKbOw6eipQ507XmMN3CjEPGFIjk0rawuslorBemvJTRH6fuPLS2YXbvyyAj+FS0V8eIQjflXDQylYfqxKr7x4MiQTkmw3OQhXjRTOh6hoaObaXB6yAJcfrxyb3AiyM0dvF8Vp/kxRtK0T4rc1c7wYdLGoHvaqwDQdz7eOHCxqIo8nZAHM0zsAPEGdxdoleO2KBirZXUBPhqiy5zgW8mJQeqBec3WuHAdkkqgsAFrNbWU2I26WsRvW7Q==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>juknSZVRbaxWiCWHMP5EQAfXtn/1L4/1kp9PCHa4fLP1iZT7Qpq6yyYaknyBrLcywEXr/+F3tOqjMk6jZD12VQDNe4VJOL4FA6jTKKn1ppV5dX/LtRpMGC18HNj7KjSVp28n+r9gN8M5Tck2rHOrG4V0Xyz6A21XrL1sY9c6IpNeIjSXiB9YTVAB8rcutidB20m45WYqfB7n3eopHFPw+BUJtzLt8vXpbTYjPZk2qQTOm9mCwC00blK0iUgxnTL2kKBgyeDj2zIiZC0I0KDTL0Xhtcx5iTw/wkpilScFX0/Um6U77ERKSDANv9kAkzusmkvqzmgDvQKe5zvECYjiZw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c5f28fb7749e7aa2bc61f5a51c44b366c7436d47" Description="" Url=""><as:assemblyIdentity name="DRG-Browser 2013_2014.exe" version="1.0.0.7" publicKeyToken="893185d24c35e7e9" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Institut fuer das Entgeltsystem im Krankenhaus GmbH (InEK), OU=Institut fuer das Entgeltsystem im Krankenhaus GmbH (InEK), O=Institut fuer das Entgeltsystem im Krankenhaus GmbH (InEK), L=Siegburg, S=NRW, C=DE</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>bPXMKYtSCAxAOGseI6SQe58V26A=</DigestValue></Reference></SignedInfo><SignatureValue>iYrQfougs4JbHnbTM0uJWLyh8bnj2GhuQFTVYXGcG/LZJ85Cm0rbQk0G75INW5/IRTv88G8loKFB3ffXYP7YSh6DS+Y2FNSAZYLiWRyUgJhnqswvTxNHu47oNVaHoAiESUsptSRt5UUIyYQVJo0dPBN5HXYtcvtBFLXVEsCmCUAzdu9wsKXxsL3bRTTW91Uuwbe3XCtqBn8EtzzDuCkZGoMiQFtp+xNQPj6E1jYcOXRjGhCY3lky6GTj9aPELVbCan0i/Ln6R0chYXLQVIfFj1773favi8wKIAxkDniae/h6tEUVIlz9lVNATN2dseCwVP6VeH++RFe1I5tyPYsPfg==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>juknSZVRbaxWiCWHMP5EQAfXtn/1L4/1kp9PCHa4fLP1iZT7Qpq6yyYaknyBrLcywEXr/+F3tOqjMk6jZD12VQDNe4VJOL4FA6jTKKn1ppV5dX/LtRpMGC18HNj7KjSVp28n+r9gN8M5Tck2rHOrG4V0Xyz6A21XrL1sY9c6IpNeIjSXiB9YTVAB8rcutidB20m45WYqfB7n3eopHFPw+BUJtzLt8vXpbTYjPZk2qQTOm9mCwC00blK0iUgxnTL2kKBgyeDj2zIiZC0I0KDTL0Xhtcx5iTw/wkpilScFX0/Um6U77ERKSDANv9kAkzusmkvqzmgDvQKe5zvECYjiZw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIEqDCCA5CgAwIBAgIQZJ+cUYy1xKXr24+v0NKeMjANBgkqhkiG9w0BAQUFADBKMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMVGhhd3RlLCBJbmMuMSQwIgYDVQQDExtUaGF3dGUgQ29kZSBTaWduaW5nIENBIC0gRzIwHhcNMTQwMjA1MDAwMDAwWhcNMTYwMjA0MjM1OTU5WjCB/TELMAkGA1UEBhMCREUxDDAKBgNVBAgTA05SVzERMA8GA1UEBxMIU2llZ2J1cmcxQzBBBgNVBAoUOkluc3RpdHV0IGZ1ZXIgZGFzIEVudGdlbHRzeXN0ZW0gaW0gS3JhbmtlbmhhdXMgR21iSCAoSW5FSykxQzBBBgNVBAsUOkluc3RpdHV0IGZ1ZXIgZGFzIEVudGdlbHRzeXN0ZW0gaW0gS3JhbmtlbmhhdXMgR21iSCAoSW5FSykxQzBBBgNVBAMUOkluc3RpdHV0IGZ1ZXIgZGFzIEVudGdlbHRzeXN0ZW0gaW0gS3JhbmtlbmhhdXMgR21iSCAoSW5FSykwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCO6SdJlVFtrFaIJYcw/kRAB9e2f/Uvj/WSn08Idrh8s/WJlPtCmrrLJhqSfIGstzLARev/4Xe06qMyTqNkPXZVAM17hUk4vgUDqNMoqfWmlXl1f8u1GkwYLXwc2PsqNJWnbyf6v2A3wzlNyTasc6sbhXRfLPoDbVesvWxj1zoik14iNJeIH1hNUAHyty62J0HbSbjlZip8Hufd6ikcU/D4FQm3Mu3y9eltNiM9mTapBM6b2YLALTRuUrSJSDGdMvaQoGDJ4OPbMiJkLQjQoNMvReG1zHmJPD/CSmKVJwVfT9SbpTvsREpIMA2/2QCTO6yaS+rOaAO9Ap7nO8QJiOJnAgMBAAGjgdUwgdIwDAYDVR0TAQH/BAIwADA7BgNVHR8ENDAyMDCgLqAshipodHRwOi8vY3MtZzItY3JsLnRoYXd0ZS5jb20vVGhhd3RlQ1NHMi5jcmwwHwYDVR0lBBgwFgYIKwYBBQUHAwMGCisGAQQBgjcCARYwHQYDVR0EBBYwFDAOMAwGCisGAQQBgjcCARYDAgeAMDIGCCsGAQUFBwEBBCYwJDAiBggrBgEFBQcwAYYWaHR0cDovL29jc3AudGhhd3RlLmNvbTARBglghkgBhvhCAQEEBAMCBBAwDQYJKoZIhvcNAQEFBQADggEBALCohS/L7Ng0MVkm3YU1is6ALaY5lbsxSIqdjzfD18t8mkZWQKXEsNhOnUxXd5AeyJN+DshsXYgW1P4XzYllodRJrNXIoK9A/nyXez7EMMtlns0oxepbcp8U606EZubypGHumsN7T+UrHS4bgEL+K74ASBV20CwLW/nEevPfjuvDYxhFvoxn6mQaC6WDnIemgBkGdlQPyi4OrbGw7iksoRzbS4WDlmDI5p12DAwVld6HrSI+KgbG4xt7roeanVoLI4B0k51Eo+zcC7611LxbEYZeyfzzFtUN6zMMHXHtCPR98qHvAMzkZ+AmlDkGLkhiwroeVnxt0JU1akmMt14aesQ=</X509Certificate><X509Certificate>MIIEnDCCA4SgAwIBAgIQR5dNeHOlvKsNL7NwGS/OXjANBgkqhkiG9w0BAQUFADCBqTELMAkGA1UEBhMCVVMxFTATBgNVBAoTDHRoYXd0ZSwgSW5jLjEoMCYGA1UECxMfQ2VydGlmaWNhdGlvbiBTZXJ2aWNlcyBEaXZpc2lvbjE4MDYGA1UECxMvKGMpIDIwMDYgdGhhd3RlLCBJbmMuIC0gRm9yIGF1dGhvcml6ZWQgdXNlIG9ubHkxHzAdBgNVBAMTFnRoYXd0ZSBQcmltYXJ5IFJvb3QgQ0EwHhcNMTAwMjA4MDAwMDAwWhcNMjAwMjA3MjM1OTU5WjBKMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMVGhhd3RlLCBJbmMuMSQwIgYDVQQDExtUaGF3dGUgQ29kZSBTaWduaW5nIENBIC0gRzIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC3i891W58l2n45sJPbONOpI9CC+ukkflwLjoP45npZ5qPFmKeZ0kT/AKalOQSK2imI6tui8xyZFSbCsfT84QxHqQkRBgogkrnHoASMXJQZq1slLB1ifnANzmFs3SuCyc5dSF/3wr68QSMeTyld10+89MUq/GPmfCZOmad5QZ4QSnp5ycaG94aV0ibOPBgq1nzOr82tu/eCLHAmN0XlD0cixgEovS6DXGqkR8Hn0NhrgUY/IRf1B8VDWqZnLLh7YBG1g+71dApycUQ9WP7oGqs4w1nbf244fXbHcmmYNpZX02Yc0lSRBC5UGbDcPbUiXobVKn4g313merFl/sUCTjEtAgMBAAGjggEcMIIBGDASBgNVHRMBAf8ECDAGAQH/AgEAMDQGA1UdHwQtMCswKaAnoCWGI2h0dHA6Ly9jcmwudGhhd3RlLmNvbS9UaGF3dGVQQ0EuY3JsMA4GA1UdDwEB/wQEAwIBBjAyBggrBgEFBQcBAQQmMCQwIgYIKwYBBQUHMAGGFmh0dHA6Ly9vY3NwLnRoYXd0ZS5jb20wHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMDMCkGA1UdEQQiMCCkHjAcMRowGAYDVQQDExFWZXJpU2lnbk1QS0ktMi0xMDAdBgNVHQ4EFgQU1A1lP3q9NMb+R+dMDcC98t4Vq3EwHwYDVR0jBBgwFoAUe1tFz6/Oy3r9MZIaarbzRutXSFAwDQYJKoZIhvcNAQEFBQADggEBAFb+U1zhx568p+1+U21qFEtRjEBegF+qpOgv7zjIBMnKPs/fOlhOsNS2Y8UpV/oCBZpFTWjbKhvUND2fAMNay5VJpW7hsMX8QU1BSm/Td8jXOI3kGd4Y8x8VZYNtRQxT+QqaLqVdv28ygRiSGWpVAK1jHFIGflXZKWiuSnwYmnmIayMj2Cc4KimHdsr7x7ZiIx/telZM3ZwyW/U9DEYYlTsqI2iDZEHZAG0PGSQVaHK9xXFnbqxM25DrUaUaYgfQvmoARzxyL+xPYT5zhc5aCre6wBwTdeMiOSjdbR0JRp1PuuhAgZHGpM6UchsBzypuFWeVia59t7fN+Qo9dbZrPCU=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

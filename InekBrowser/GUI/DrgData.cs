@@ -216,5 +216,9 @@ namespace org.inek.InekBrowser.GUI {
             get { return grpCaseCosts.Visible; }
             set { grpCaseCosts.Visible = value; }
         }
+
+        private void lblStdAbw_Click(object sender, EventArgs e) {
+
+        }
     }
 }

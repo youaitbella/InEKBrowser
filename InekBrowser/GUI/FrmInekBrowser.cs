@@ -96,7 +96,7 @@ namespace org.inek.InekBrowser.GUI {
                 mnuMain.BackColor = BrowserColors.P21MenuBand;
                 BackColor = BrowserColors.P21Browser;
                 pnlContentBackground.BackColor = BrowserColors.P21BackgroundPanel;
-                titleBar.Title = "§-21-Browser Daten " + (int.Parse(Program.Year) - 2) + " V" + (int.Parse(Program.Year) - 1);
+                titleBar.Title = "DRG-Browser " + (int.Parse(Program.Year) - 2) + "_" + (int.Parse(Program.Year) - 1);
                 pnlContentBackground.Controls.Remove(peppData);
                 pnlContentBackground.Controls.Remove(selectionPepp);
                 tabControl.TabPages.Remove(tabCosts);
@@ -113,8 +113,8 @@ namespace org.inek.InekBrowser.GUI {
                 mnuCatalogue.Visible = false;
                 mnuCosts.Visible = false;
                 mnuCostDomain.Visible = false;
-                Text = "§-21-Browser Daten " + (int.Parse(Program.Year) - 2) + " V" + (int.Parse(Program.Year) - 1);
-                helpProvider1.HelpNamespace = "§21Browser.chm";
+                Text = "DRG-Browser " + (int.Parse(Program.Year) - 2) + "_" + (int.Parse(Program.Year) - 1);
+                helpProvider1.HelpNamespace = "DrgBrowser.chm";
                 drgData.ShowCaseCosts = false;
             }
         }
@@ -720,7 +720,7 @@ namespace org.inek.InekBrowser.GUI {
             try {
                 if(Program.SystemBrowser == Program.System.Pepp) 
                     Process.Start("PeppBrowser.pdf");
-                else if (Program.SystemBrowser == Program.System.Drg)
+                else if (Program.SystemBrowser == Program.System.Drg || Program.SystemBrowser == Program.System.P21)
                     Process.Start("DrgBrowser.pdf");
             } catch (Exception) {
                 MessageBox.Show("Kein Handbuch verfügbar.");
@@ -732,7 +732,7 @@ namespace org.inek.InekBrowser.GUI {
             try {
                 if (Program.SystemBrowser == Program.System.Pepp) 
                     Process.Start("PeppBrowser.chm");
-                else if (Program.SystemBrowser == Program.System.Drg)
+                else if (Program.SystemBrowser == Program.System.Drg || Program.SystemBrowser == Program.System.P21)
                     Process.Start("DrgBrowser.chm");
             } catch (Exception) {
                 MessageBox.Show("Keine Hilfe verfügbar.");
@@ -762,7 +762,7 @@ namespace org.inek.InekBrowser.GUI {
                                     drg.Text,
                                 });
             List<string> calcDrgs = new List<string>();
-            if (CsvData.DrgSystemType == CsvData.DrgType.BA) {
+            if (CsvData.DrgSystemType == CsvData.DrgType.BA && Program.SystemBrowser == Program.System.Drg) {
                 calcDrgs = CsvData.Context().System.Where(drg => drg.Calculated == 1).Select(drg => drg.Code).ToList();
                 q = q.Where(drg => calcDrgs.Contains(drg.DRG));
             }
@@ -1621,6 +1621,7 @@ namespace org.inek.InekBrowser.GUI {
 
 
         private void grdMainDiagnosis_CellDoubleClick(object sender, DataGridViewCellEventArgs e) {
+            Cursor = Cursors.WaitCursor;
             if (grdMainDiagnosis.SelectedRows.Count > 0) {
                 SetRechercheHelp();
                 string hd = grdMainDiagnosis.SelectedRows[0].Cells[1].Value.ToString();
@@ -1674,9 +1675,11 @@ namespace org.inek.InekBrowser.GUI {
                     LoadSystemDataByTabControl(search);
                 }
             }
+            Cursor = DefaultCursor;
         }
 
         private void grdSecondaryDiagnosis_CellDoubleClick(object sender, DataGridViewCellEventArgs e) {
+            Cursor = Cursors.WaitCursor;
             if (grdSecondaryDiagnosis.SelectedRows.Count > 0) {
                 SetRechercheHelp();
                 string sd = grdSecondaryDiagnosis.SelectedRows[0].Cells[1].Value.ToString();
@@ -1733,9 +1736,11 @@ namespace org.inek.InekBrowser.GUI {
                     LoadSystemDataByTabControl(search);
                 }
             }
+            Cursor = DefaultCursor;
         }
 
         private void grdProcedures_CellDoubleClick(object sender, DataGridViewCellEventArgs e) {
+            Cursor = Cursors.WaitCursor;
             if (grdProcedures.SelectedRows.Count > 0) {
                 SetRechercheHelp();
                 string proc = grdProcedures.SelectedRows[0].Cells[1].Value.ToString();
@@ -1790,6 +1795,7 @@ namespace org.inek.InekBrowser.GUI {
                     LoadSystemDataByTabControl(search);
                 }
             }
+            Cursor = DefaultCursor;
         }
 
         private IEnumerable<SystemData> setReportData(string systemCode)
@@ -1803,7 +1809,7 @@ namespace org.inek.InekBrowser.GUI {
                 //Primary Diagnoses
                 peppData.PrimDiag = CsvData.Context().PrimaryDiagnoses.Where(p => p.SystemCode == systemCode)
                     .Join(CsvData.Context().Recherche.Where(r => r.PrimaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
-                                (d, r) => new PrimaryDiagnosis() {
+                                (d, r) => new PrimaryDiagnosis {
                                     SystemCode = d.SystemCode,
                                     DiagCode = d.DiagCode,
                                     Hauptdiagnose = r.Text,
@@ -1813,7 +1819,7 @@ namespace org.inek.InekBrowser.GUI {
                 //Secondary Diagnoses
                 peppData.SecDiag = CsvData.Context().SecondaryDiagnoses.Where(p => p.System == systemCode)
                     .Join(CsvData.Context().Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
-                                (d, r) => new SecondaryDiagnosis() {
+                                (d, r) => new SecondaryDiagnosis {
                                     System = d.System,
                                     DiagCode = d.DiagCode,
                                     Nebendiagnose = r.Text,
@@ -1825,7 +1831,7 @@ namespace org.inek.InekBrowser.GUI {
                 //Procedures
                 peppData.Proc = CsvData.Context().Procedures.Where(p => p.System == systemCode)
                      .Join(CsvData.Context().Recherche.Where(r => r.Procedure == 1), d => d.ProcCode, r => r.Code,
-                                (d, r) => new Procedure() {
+                                (d, r) => new Procedure {
                                     System = d.System,
                                     ProcCode = d.ProcCode,
                                     Prozedur = r.Text,
@@ -1836,7 +1842,7 @@ namespace org.inek.InekBrowser.GUI {
                                 }).ToList();
                 peppData.Cost = CsvData.Context().Costs.Where(p => p.Code == systemCode)
                     .Join(CsvData.Context().CostDomains, c => c.CostDomain, d => d.DomainId,
-                    (c, d) => new Cost() {
+                    (c, d) => new Cost {
                         Code = c.Code,
                         CostDomain = c.CostDomain,
                         CostType1 = c.CostType1,
@@ -1906,7 +1912,7 @@ namespace org.inek.InekBrowser.GUI {
                                 }).ToList();
                 drgData.Cost = CsvData.Context().Costs.Where(p => p.Code == systemCode)
                     .Join(CsvData.Context().CostDomains, c => c.CostDomain, d => d.DomainId,
-                    (c, d) => new Cost() {
+                    (c, d) => new Cost {
                         Code = c.Code,
                         CostDomain = c.CostDomain,
                         CostType1 = c.CostType1,
@@ -1922,7 +1928,7 @@ namespace org.inek.InekBrowser.GUI {
                         TxtBez = d.DomainText
                     }).ToList();
 
-                return new List<SystemData> { drgData};
+                return new List<SystemData> { drgData };
             } if (Program.SystemBrowser == Program.System.P21) {
                 SystemInfo info = CsvData.Context().SystemInfo.Single(drg => drg.Code == systemCode);
                 string mdcTag = CsvData.Context().System.Where(drg => drg.Code == SystemCode).Select(drg => drg.Category).Single().Trim();
@@ -1936,7 +1942,7 @@ namespace org.inek.InekBrowser.GUI {
                 //Primary Diagnoses
                 drgData.PrimDiag = CsvData.Context().PrimaryDiagnoses.Where(p => p.SystemCode == systemCode)
                     .Join(CsvData.Context().Recherche.Where(r => r.PrimaryDiagnosis == 1), d => d.DiagCodeF, r => r.CodeF,
-                                (d, r) => new PrimaryDiagnosis() {
+                                (d, r) => new PrimaryDiagnosis {
                                     SystemCode = d.SystemCode,
                                     DiagCode = d.DiagCode,
                                     Hauptdiagnose = r.Text,
@@ -1947,7 +1953,7 @@ namespace org.inek.InekBrowser.GUI {
                 //Secondary Diagnoses
                 drgData.SecDiag = CsvData.Context().SecondaryDiagnoses.Where(p => p.System == systemCode)
                     .Join(CsvData.Context().Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.CodeF, r => r.CodeF,
-                                (d, r) => new SecondaryDiagnosis() {
+                                (d, r) => new SecondaryDiagnosis {
                                     System = d.System,
                                     DiagCode = d.DiagCode,
                                     CodeF = d.CodeF,
@@ -1960,7 +1966,7 @@ namespace org.inek.InekBrowser.GUI {
                 //Procedures
                 drgData.Proc = CsvData.Context().Procedures.Where(p => p.System == systemCode)
                      .Join(CsvData.Context().Recherche.Where(r => r.Procedure == 1), d => d.CodeF, r => r.CodeF,
-                                (d, r) => new Procedure() {
+                                (d, r) => new Procedure {
                                     System = d.System,
                                     ProcCode = d.ProcCode,
                                     CodeF = d.CodeF,
@@ -1972,7 +1978,7 @@ namespace org.inek.InekBrowser.GUI {
                                 }).ToList();
                 drgData.Cost = CsvData.Context().Costs.Where(p => p.Code == systemCode)
                     .Join(CsvData.Context().CostDomains, c => c.CostDomain, d => d.DomainId,
-                    (c, d) => new Cost() {
+                    (c, d) => new Cost {
                         Code = c.Code,
                         CostDomain = c.CostDomain,
                         CostType1 = c.CostType1,

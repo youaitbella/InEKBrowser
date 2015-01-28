@@ -37,9 +37,9 @@ namespace org.inek.InekBrowser.GUI {
                 label1.Text = "G-DRG-Report-Browser\nVersion " + Program.Year + ".1\n© InEK GmbH";
             } else if (Program.SystemBrowser == Program.System.P21) {
                 titleBar.BackColor = BrowserColors.P21SplashScreenTitleBar;
-                titleBar.Title = "§-21-Browser Daten " + (int.Parse(Program.Year) - 2) + " V" + (int.Parse(Program.Year) - 1);
+                titleBar.Title = "DRG-Browser " + (int.Parse(Program.Year) - 2) + "_" + (int.Parse(Program.Year) - 1);
                 BackColor = BrowserColors.P21SplashScreen;
-                label1.Text = "§-21-Browser Daten " + (int.Parse(Program.Year) - 2) + " V" + (int.Parse(Program.Year) - 1)+"\nVersion " + Program.Year + ".1\n© InEK GmbH";
+                label1.Text = "DRG-Browser " + (int.Parse(Program.Year) - 2) + "_" + (int.Parse(Program.Year) - 1) + "\nVersion " + Program.Year + ".1\n© InEK GmbH";
             }
         }
 

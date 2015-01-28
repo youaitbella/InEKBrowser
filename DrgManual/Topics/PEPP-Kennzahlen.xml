@@ -51,5 +51,11 @@
     <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
       <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true"> &#160; &lt; 28 Tage, …, 80 Jahre u. älter: Häufigkeitsverteilung in 16 &#160;Klassen (in Prozent)</text></li>
     </list>
+    <para styleclass="Bullet Text"></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Fallkosten</text></para>
+    <list id="9" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li><text styleclass="Normal" translate="true">Arithmetischer Mittelwert: Arithmetischer Mittelwert der Kosten (Basis: Normallieger)</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Normal" translate="true">Standardabweichung: Standardabweichung der Kosten (Basis: Normallieger)</text></li>
+    </list>
   </body>
 </topic>

@@ -247,11 +247,12 @@
             this.txtMdcNum.Location = new System.Drawing.Point(9, 12);
             this.txtMdcNum.Name = "txtMdcNum";
             this.txtMdcNum.ReadOnly = true;
-            this.txtMdcNum.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtMdcNum.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtMdcNum, true);
             this.txtMdcNum.Size = new System.Drawing.Size(51, 21);
             this.txtMdcNum.TabIndex = 51;
             this.txtMdcNum.Text = "0";
+            this.txtMdcNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // grpValutationRatio
             // 
@@ -825,9 +826,10 @@
             this.lblStdAbw.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStdAbw.Location = new System.Drawing.Point(6, 42);
             this.lblStdAbw.Name = "lblStdAbw";
-            this.lblStdAbw.Size = new System.Drawing.Size(130, 15);
+            this.lblStdAbw.Size = new System.Drawing.Size(127, 15);
             this.lblStdAbw.TabIndex = 17;
-            this.lblStdAbw.Text = "Standard Abweichung:";
+            this.lblStdAbw.Text = "Standardabweichung:";
+            this.lblStdAbw.Click += new System.EventHandler(this.lblStdAbw_Click);
             // 
             // lblArithMw
             // 
