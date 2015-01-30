@@ -7,7 +7,7 @@
         <export-tasks>
           <export-task name="Exportieren als CHM" format="CHM">
             <task-config-group name="settings">
-              <task-config-value name="outputfile">..\DrgBrowser\DrgBrowser.chm</task-config-value>
+              <task-config-value name="outputfile">..\P21Browser\DrgBrowser.chm</task-config-value>
               <task-config-value name="deletetemp">1</task-config-value>
               <task-config-value name="make0include">CHM</task-config-value>
               <task-config-value name="make0status">*</task-config-value>
@@ -15,7 +15,7 @@
           </export-task>
           <export-task name="Exportieren als PDF" format="PDF">
             <task-config-group name="settings">
-              <task-config-value name="outputfile">..\DrgBrowser\DrgBrowser.pdf</task-config-value>
+              <task-config-value name="outputfile">..\P21Browser\DrgBrowser.pdf</task-config-value>
               <task-config-value name="template">.\template\DrgToollManual.mnl</task-config-value>
               <task-config-value name="make4include">PDF,USER1</task-config-value>
               <task-config-value name="make4status">*</task-config-value>
@@ -455,13 +455,13 @@ nsrInit();
     <variables>
       <variable id="FIGURE" type="text" translate="true">Abb. &lt;%FIGURE++%&gt;:</variable>
       <variable id="FIGURE++" type="text" translate="true">0</variable>
-      <variable id="FILE_DRG" type="text" translate="true">RepBrDrg_13_14_Drg.csv</variable>
-      <variable id="FILE_HD" type="text" translate="true">RepBrDrg_*_13_14_Hauptdiagnose.csv</variable>
-      <variable id="FILE_HEADDATA" type="text" translate="true">RepBrDrg_*_13_14_Kopfdaten.csv</variable>
-      <variable id="FILE_MDCS" type="text" translate="true">RepBrDrg_*_13_14_Mdc.csv</variable>
-      <variable id="FILE_ND" type="text" translate="true">RepBrDrg_*_13_14_Nebendiagnosen.csv</variable>
-      <variable id="FILE_PROC" type="text" translate="true">RepBrDrg_*_13_14_Prozeduren.csv</variable>
-      <variable id="FILE_RECHERCHE" type="text" translate="true">RepBrDrg_*_13_14_Recherche.csv</variable>
+      <variable id="FILE_DRG" type="text" translate="true">P21BrDrg_13_14_Drg.csv</variable>
+      <variable id="FILE_HD" type="text" translate="true">P21BrDrg_*_13_14_Hauptdiagnose.csv</variable>
+      <variable id="FILE_HEADDATA" type="text" translate="true">P21BrDrg_*_13_14_Kopfdaten.csv</variable>
+      <variable id="FILE_MDCS" type="text" translate="true">P21BrDrg_*_13_14_Mdc.csv</variable>
+      <variable id="FILE_ND" type="text" translate="true">P21BrDrg_*_13_14_Nebendiagnosen.csv</variable>
+      <variable id="FILE_PROC" type="text" translate="true">P21BrDrg_*_13_14_Prozeduren.csv</variable>
+      <variable id="FILE_RECHERCHE" type="text" translate="true">P21BrDrg_*_13_14_Recherche.csv</variable>
       <variable id="TITLE2" type="text" translate="true">DRG-Browser</variable>
     </variables>
     <helpcontext-numbers/>

@@ -6,7 +6,7 @@
     <header>
       <para styleclass="Heading1"><text styleclass="Heading1" translate="true">DRG-Kennzahlen</text></para>
     </header>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Nach Auswahl einer DRG werden folgende zur G-DRG-Version 2015 gehörende Kennzahlen je DRG ausgewiesen:</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Nach Auswahl einer DRG werden folgende zur G-DRG-Version 2014 gehörende Kennzahlen je DRG ausgewiesen:</text></para>
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">MDC-Information</text></para>
     <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">

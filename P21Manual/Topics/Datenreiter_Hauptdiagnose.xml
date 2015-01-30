@@ -14,6 +14,6 @@
     </list>
     <para styleclass="Normal"></para>
     <para styleclass="Image Caption"><image src="drgMaindiag.png" scale="100.00%" styleclass="Image Caption"></image></para>
-    <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Darstellung der Hauptdiagnosen-Tabelle zu einer ausgewählten DRG. Die Tabellen werden erst befüllt, wenn Sie eine DRG ausgewählt haben.</text></para>
+    <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Darstellung der Hauptdiagnosen-Tabelle zu einer ausgewählten DRG.</text></para>
   </body>
 </topic>

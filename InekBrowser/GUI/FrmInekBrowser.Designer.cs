@@ -139,7 +139,7 @@
             this.mnuCategories.Name = "mnuCategories";
             this.mnuCategories.Size = new System.Drawing.Size(185, 22);
             this.mnuCategories.Text = "Strukturkategorien";
-            this.mnuCategories.Click += new System.EventHandler(this.mnuCategories_Click);
+            this.mnuCategories.Click += new System.EventHandler(this.MnuCategoriesClick);
             // 
             // mnuSystem
             // 
@@ -155,7 +155,7 @@
             this.mnuPeppInfo.Name = "mnuPeppInfo";
             this.mnuPeppInfo.Size = new System.Drawing.Size(185, 22);
             this.mnuPeppInfo.Text = "Kopfdaten";
-            this.mnuPeppInfo.Click += new System.EventHandler(this.mnuSystemInfo_Click);
+            this.mnuPeppInfo.Click += new System.EventHandler(this.MnuSystemInfoClick);
             // 
             // mnuPrimaryDiagnoses
             // 

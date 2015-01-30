@@ -41,7 +41,7 @@ namespace org.inek.InekBrowser.GUI {
         public static Color P21Browser = InekLogoBlue;
         public static Color P21Selection = InekLogoBlue;
         public static Color P21BackgroundPanel = InekLogoBlue;
-        public static Color P21DatBackground = InekLogoBlue;
+        public static Color P21DataBackground = InekLogoBlue;
         public static Color P21DataTextField = Color.White;
         #endregion
     }

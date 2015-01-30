@@ -66,12 +66,12 @@ namespace org.inek.InekBrowser.GUI {
                 titleBar.Title = "G-DRG-Report-Browser " + Program.Year;
                 pnlContentBackground.Controls.Remove(peppData);
                 pnlContentBackground.Controls.Remove(selectionPepp);
-                initDrgSelection();
+                InitDrgSelection();
                 selectionDrg.BackColor = BrowserColors.DrgSelection;
                 lblSystem.Text = "DRG:";
                 mnuCategories.Text = "MDCs";
                 mnuSystem.Text = "DRGs";
-                initDrgData();
+                InitDrgData();
                 tabCosts.Text = "Kosten";
                 mnuCatalogue.Visible = false;
                 Text = "G-DRG-Report-Browser " + Program.Year;
@@ -100,14 +100,14 @@ namespace org.inek.InekBrowser.GUI {
                 pnlContentBackground.Controls.Remove(peppData);
                 pnlContentBackground.Controls.Remove(selectionPepp);
                 tabControl.TabPages.Remove(tabCosts);
-                initDrgSelection();
+                InitDrgSelection();
                 selectionDrg.BackColor = BrowserColors.P21Selection;
                 lblSystem.Text = "DRG:";
                 mnuCategories.Text = "MDCs";
                 mnuSystem.Text = "DRGs";
-                initDrgData();
-                drgData.BackColor = BrowserColors.P21DatBackground;
-                drgData.BackgroundColor(BrowserColors.P21DatBackground);
+                InitDrgData();
+                drgData.BackColor = BrowserColors.P21DataBackground;
+                drgData.BackgroundColor(BrowserColors.P21DataBackground);
                 drgData.ColorTextFields(BrowserColors.P21DataTextField, Color.Black);
                 tabCosts.Text = "Kosten";
                 mnuCatalogue.Visible = false;
@@ -120,7 +120,7 @@ namespace org.inek.InekBrowser.GUI {
         }
 
         private DrgData drgData;
-        private void initDrgData() {
+        private void InitDrgData() {
             drgData = new DrgData {
                                       BackColor = Color.SeaGreen,
                                       BackgroundImageLayout = ImageLayout.Zoom,
@@ -135,7 +135,7 @@ namespace org.inek.InekBrowser.GUI {
             pnlContentBackground.Controls.Add(drgData);
         }
 
-        private void initDrgSelection() {
+        private void InitDrgSelection() {
             selectionDrg = new SelectionDrg {
                                                 Anchor = (((AnchorStyles.Top | AnchorStyles.Left)
                                                            | AnchorStyles.Right)),
@@ -204,7 +204,7 @@ namespace org.inek.InekBrowser.GUI {
             Cursor = DefaultCursor;
         }
 
-        private void mnuCategories_Click(object sender, EventArgs e) {
+        private void MnuCategoriesClick(object sender, EventArgs e) {
             Cursor = Cursors.WaitCursor;
             dlg = new FrmList(); 
             SetDataHelpProvider(dlg);
@@ -242,7 +242,7 @@ namespace org.inek.InekBrowser.GUI {
             Cursor = DefaultCursor;
         }
 
-        private void mnuSystemInfo_Click(object sender, EventArgs e) {
+        private void MnuSystemInfoClick(object sender, EventArgs e) {
             Cursor = Cursors.WaitCursor;
             dlg = new FrmList();
             SetDataHelpProvider(dlg);
@@ -1542,6 +1542,17 @@ namespace org.inek.InekBrowser.GUI {
                     CreateReport(OutputType.Print);
                 }
             } else if (Program.SystemBrowser == Program.System.Drg) {
+                if (string.IsNullOrEmpty(SystemCode)) {
+                    MessageBox.Show("Keine DRG gewählt. Druck nicht möglich!");
+                    return;
+                }
+                if (MessageBox.Show(this, "Wollen Sie die DRG " + SystemCode + " jetzt ausdrucken?\n\n" +
+                                          "Hinweis: Es wird die komplette DRG ausgedruckt. Um einzelne Seiten auszudrucken, " +
+                                          "benutzen Sie bitte den PDF-Export und einen geeigneten PDF-Reader (z.B. Adobe Acrobat Reader)",
+                                          "Drucken - " + SystemCode, MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK) {
+                    CreateReport(OutputType.Print);
+                }
+            } else if (Program.SystemBrowser == Program.System.P21) {
                 if (string.IsNullOrEmpty(SystemCode)) {
                     MessageBox.Show("Keine DRG gewählt. Druck nicht möglich!");
                     return;

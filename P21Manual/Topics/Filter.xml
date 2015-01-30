@@ -14,10 +14,10 @@
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Wenn Sie keinen Filter setzen, können Sie im Listenfeld DRG alle DRGs sehen.</text></para>
     <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Der Filter „MDC“ ist dabei unabhängig von den drei Kode-Filtern Hauptdiagnose, Nebendiagnose- bzw. Prozeduren verwendbar. Im sich öffnenden Datenfenster bei Auswahl des Filters „MDC“ werden nachrichtlich auch die Anzahl der Fälle je MDC angezeigt.</text></para>
+    <para style="text-align:justify;"></para>
     <para styleclass="Image Caption"><image src="drgFilterSearch.png" scale="100.00%" styleclass="Image Caption"></image></para>
     <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Leerer DRG-Filter ermöglicht das Anzeigen aller vorhandener DRGs.</text></para>
-    <para styleclass="Normal"></para>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Der Filter „MDC“ ist dabei unabhängig von den drei Kode-Filtern Hauptdiagnose, Nebendiagnose- bzw. Prozeduren verwendbar. Im sich öffnenden Datenfenster bei Auswahl des Filters „MDC“ werden nachrichtlich auch die Anzahl der Fälle je MDC angezeigt.</text></para>
     <para style="text-align:justify;"></para>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Durch das Setzen etwa einer MDC und einer Hauptdiagnose können Sie die DRG-Auswahl stärker einschränken. So werden Ihnen nur DRGs angezeigt, die zu der ausgewählten MDC gehören und für die (mindestens vier) Fälle mit der ausgewählten Hauptdiagnose vorhanden sind. </text></para>
     <para styleclass="Normal"></para>
