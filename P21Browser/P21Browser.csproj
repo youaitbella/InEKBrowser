@@ -12,10 +12,10 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>\\vFileserver01\company%24\Common\Datenbrowser\Par21Browser\GDRG_V2014_Browser_Par21_2013\Prüfung\</PublishUrl>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>D:\tmp\DrgBrowser\2015\</PublishUrl>
     <Install>true</Install>
-    <InstallFrom>Unc</InstallFrom>
+    <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
@@ -23,11 +23,11 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>\\vFileserver01\company%24\Common\Datenbrowser\Par21Browser\GDRG_V2014_Browser_Par21_2013\Prüfung\</InstallUrl>
+    <InstallUrl>http://g-drg.de/DrgBrowser/2015/</InstallUrl>
     <ProductName>G-DRG-Browser 2013_2014</ProductName>
     <PublisherName>Institut für das Entgeltsystem im Krankenhaus GmbH %28InEK%29</PublisherName>
     <SuiteName>G-DRG-Browser</SuiteName>
-    <ApplicationRevision>8</ApplicationRevision>
+    <ApplicationRevision>10</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
