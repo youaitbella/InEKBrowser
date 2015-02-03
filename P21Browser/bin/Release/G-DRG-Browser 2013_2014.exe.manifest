@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="DRG-Browser 2013_2014.exe" version="1.0.0.10" publicKeyToken="893185d24c35e7e9" language="neutral" processorArchitecture="x86" type="win32" />
+  <asmv1:assemblyIdentity name="G-DRG-Browser 2013_2014.exe" version="1.0.0.8" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
   <description asmv2:iconFile="inek_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="DRG-Browser 2013_2014" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
-    <commandLine file="DRG-Browser 2013_2014.exe" parameters="" />
+    <assemblyIdentity name="G-DRG-Browser 2013_2014" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="G-DRG-Browser 2013_2014.exe" parameters="" />
   </entryPoint>
   <trustInfo>
     <security>
@@ -55,18 +55,6 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DRG-Browser 2013_2014.exe" size="19456">
-      <assemblyIdentity name="DRG-Browser 2013_2014" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>295dnh9MDIUETSHiC7nmgxglAzg=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.dll" size="4842656">
       <assemblyIdentity name="EntityFramework" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -79,6 +67,18 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="G-DRG-Browser 2013_2014.exe" size="19456">
+      <assemblyIdentity name="G-DRG-Browser 2013_2014" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>atwecPYYLHzjXjGlr0SnfFLS4uk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="InEK-Browser.dll" size="900096">
       <assemblyIdentity name="InEK-Browser" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
@@ -86,19 +86,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>f6tFKwerfs/zBUkwiFfU/6A4H/4=</dsig:DigestValue>
+        <dsig:DigestValue>LElnA0nQa/jBzAODL40C7ZGDLIY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="InekControls.dll" size="119808">
-      <assemblyIdentity name="InekControls" version="13.9.16.18754" language="neutral" processorArchitecture="x86" />
+      <assemblyIdentity name="InekControls" version="13.9.16.30216" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>nOppnO6mWd2JUeEZRKgWhnkLzXo=</dsig:DigestValue>
+        <dsig:DigestValue>9RktAbLR+GKHK54Wr6vucYG0K9c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -273,31 +273,31 @@
       <dsig:DigestValue>FmnCmTjcXr9vmIxzrv0Kc+K+xWA=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="DRG-Browser 2013_2014.exe.config" size="184">
+  <file name="DrgBrowser.chm" size="1234637">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>JXixIR97cMEJ3FsjwTMrLhtkuC0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrgBrowser.pdf" size="2836827">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>eEz0ml/Uz05QBQOdUw8xO/Ab7Kk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="G-DRG-Browser 2013_2014.exe.config" size="184">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>06MAsbgFUGlKhu1U3KJ4fh8CRLU=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="DrgBrowser.chm" size="1254929">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>zm9PqeZiXnSsl8mAY7SzW3dWYN0=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="DrgBrowser.pdf" size="2880292">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>LYvJf/WX4lPaqmXD17ter11sl7o=</dsig:DigestValue>
     </hash>
   </file>
   <file name="inek_icon.ico" size="12862">
@@ -435,4 +435,4 @@
       <dsig:DigestValue>flkPKR8YBBXqG7qUVr5VZd8810E=</dsig:DigestValue>
     </hash>
   </file>
-<publisherIdentity name="CN=Institut fuer das Entgeltsystem im Krankenhaus GmbH (InEK), OU=Institut fuer das Entgeltsystem im Krankenhaus GmbH (InEK), O=Institut fuer das Entgeltsystem im Krankenhaus GmbH (InEK), L=Siegburg, S=NRW, C=DE" issuerKeyHash="d40d653f7abd34c6fe47e74c0dc0bdf2de15ab71" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>UOnws2q3Ga2S27wi/K/T9juw/Aw=</DigestValue></Reference></SignedInfo><SignatureValue>JLvAW+s5Qn4YSDM1sCUIopEwiVnG/tFr4KgYifGasPofBfe6VbgI3oAZM0s/fq30L01dilBs6Tdqp5TZgBP/poSGuiVrcOPPVoW1jDT5N5+Yw2bEV/DtYcY7EVEkeihhOMmwmAqK4Lly0aPJ3KdEUKV4N0+p/MhDBlJ7xrwIXUf+aqVEHrXAQdrXn+jRuRoTmxAQKQZacbKxdGq9OxZvvl5RH4nOv5C6TYCMp3VkfdM3sFrAxJHO97DLFPm4LMx13OskIb4MBuU+D0KJNSOUadz+YBSZ35x+w6GXNusgAoZPdAI80aWu5+3nxAC1HuLNEY9fv+UBr4HEnXzKjJdVHw==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>juknSZVRbaxWiCWHMP5EQAfXtn/1L4/1kp9PCHa4fLP1iZT7Qpq6yyYaknyBrLcywEXr/+F3tOqjMk6jZD12VQDNe4VJOL4FA6jTKKn1ppV5dX/LtRpMGC18HNj7KjSVp28n+r9gN8M5Tck2rHOrG4V0Xyz6A21XrL1sY9c6IpNeIjSXiB9YTVAB8rcutidB20m45WYqfB7n3eopHFPw+BUJtzLt8vXpbTYjPZk2qQTOm9mCwC00blK0iUgxnTL2kKBgyeDj2zIiZC0I0KDTL0Xhtcx5iTw/wkpilScFX0/Um6U77ERKSDANv9kAkzusmkvqzmgDvQKe5zvECYjiZw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="0cfcb03bf6d3affc22bcdb92ad19b76ab3f0e950" Description="" Url=""><as:assemblyIdentity name="DRG-Browser 2013_2014.exe" version="1.0.0.10" publicKeyToken="893185d24c35e7e9" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Institut fuer das Entgeltsystem im Krankenhaus GmbH (InEK), OU=Institut fuer das Entgeltsystem im Krankenhaus GmbH (InEK), O=Institut fuer das Entgeltsystem im Krankenhaus GmbH (InEK), L=Siegburg, S=NRW, C=DE</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>XqOrQQaI7WMCMjM8euyT1usm1sk=</DigestValue></Reference></SignedInfo><SignatureValue>OWk5T3H2LHPeCDj/Sk2zTpfxRO4XqQNMbLBeoagSHcIHLvvfnk4+adlWS61thZAcIfu+p6HF/mMHCPx12Hy1BJ/K9Z2EWY0Odun1fQu0s7JPIQog6trI4ToS/w2sENPtrrh+jStD9od4RK3T2Oaqhuf0YEl7S1KCtWjVa3DMeNhyyMqkt5d2SqHv11WYyr8GKmq9IZKuCv51QMQ9wZpWjHA2wTDFsyvvVBOqZX67R1Yrs6veBsBttwTBROZchiyQDgKrx46nht59oBrwo1c1O6zrBWBlBGM4a5nHCLI0cONWOyXcIYWZkWs5+fExmS1hSMU2hIyGpvAZvSvHmKYdTw==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>juknSZVRbaxWiCWHMP5EQAfXtn/1L4/1kp9PCHa4fLP1iZT7Qpq6yyYaknyBrLcywEXr/+F3tOqjMk6jZD12VQDNe4VJOL4FA6jTKKn1ppV5dX/LtRpMGC18HNj7KjSVp28n+r9gN8M5Tck2rHOrG4V0Xyz6A21XrL1sY9c6IpNeIjSXiB9YTVAB8rcutidB20m45WYqfB7n3eopHFPw+BUJtzLt8vXpbTYjPZk2qQTOm9mCwC00blK0iUgxnTL2kKBgyeDj2zIiZC0I0KDTL0Xhtcx5iTw/wkpilScFX0/Um6U77ERKSDANv9kAkzusmkvqzmgDvQKe5zvECYjiZw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIEqDCCA5CgAwIBAgIQZJ+cUYy1xKXr24+v0NKeMjANBgkqhkiG9w0BAQUFADBKMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMVGhhd3RlLCBJbmMuMSQwIgYDVQQDExtUaGF3dGUgQ29kZSBTaWduaW5nIENBIC0gRzIwHhcNMTQwMjA1MDAwMDAwWhcNMTYwMjA0MjM1OTU5WjCB/TELMAkGA1UEBhMCREUxDDAKBgNVBAgTA05SVzERMA8GA1UEBxMIU2llZ2J1cmcxQzBBBgNVBAoUOkluc3RpdHV0IGZ1ZXIgZGFzIEVudGdlbHRzeXN0ZW0gaW0gS3JhbmtlbmhhdXMgR21iSCAoSW5FSykxQzBBBgNVBAsUOkluc3RpdHV0IGZ1ZXIgZGFzIEVudGdlbHRzeXN0ZW0gaW0gS3JhbmtlbmhhdXMgR21iSCAoSW5FSykxQzBBBgNVBAMUOkluc3RpdHV0IGZ1ZXIgZGFzIEVudGdlbHRzeXN0ZW0gaW0gS3JhbmtlbmhhdXMgR21iSCAoSW5FSykwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCO6SdJlVFtrFaIJYcw/kRAB9e2f/Uvj/WSn08Idrh8s/WJlPtCmrrLJhqSfIGstzLARev/4Xe06qMyTqNkPXZVAM17hUk4vgUDqNMoqfWmlXl1f8u1GkwYLXwc2PsqNJWnbyf6v2A3wzlNyTasc6sbhXRfLPoDbVesvWxj1zoik14iNJeIH1hNUAHyty62J0HbSbjlZip8Hufd6ikcU/D4FQm3Mu3y9eltNiM9mTapBM6b2YLALTRuUrSJSDGdMvaQoGDJ4OPbMiJkLQjQoNMvReG1zHmJPD/CSmKVJwVfT9SbpTvsREpIMA2/2QCTO6yaS+rOaAO9Ap7nO8QJiOJnAgMBAAGjgdUwgdIwDAYDVR0TAQH/BAIwADA7BgNVHR8ENDAyMDCgLqAshipodHRwOi8vY3MtZzItY3JsLnRoYXd0ZS5jb20vVGhhd3RlQ1NHMi5jcmwwHwYDVR0lBBgwFgYIKwYBBQUHAwMGCisGAQQBgjcCARYwHQYDVR0EBBYwFDAOMAwGCisGAQQBgjcCARYDAgeAMDIGCCsGAQUFBwEBBCYwJDAiBggrBgEFBQcwAYYWaHR0cDovL29jc3AudGhhd3RlLmNvbTARBglghkgBhvhCAQEEBAMCBBAwDQYJKoZIhvcNAQEFBQADggEBALCohS/L7Ng0MVkm3YU1is6ALaY5lbsxSIqdjzfD18t8mkZWQKXEsNhOnUxXd5AeyJN+DshsXYgW1P4XzYllodRJrNXIoK9A/nyXez7EMMtlns0oxepbcp8U606EZubypGHumsN7T+UrHS4bgEL+K74ASBV20CwLW/nEevPfjuvDYxhFvoxn6mQaC6WDnIemgBkGdlQPyi4OrbGw7iksoRzbS4WDlmDI5p12DAwVld6HrSI+KgbG4xt7roeanVoLI4B0k51Eo+zcC7611LxbEYZeyfzzFtUN6zMMHXHtCPR98qHvAMzkZ+AmlDkGLkhiwroeVnxt0JU1akmMt14aesQ=</X509Certificate><X509Certificate>MIIEnDCCA4SgAwIBAgIQR5dNeHOlvKsNL7NwGS/OXjANBgkqhkiG9w0BAQUFADCBqTELMAkGA1UEBhMCVVMxFTATBgNVBAoTDHRoYXd0ZSwgSW5jLjEoMCYGA1UECxMfQ2VydGlmaWNhdGlvbiBTZXJ2aWNlcyBEaXZpc2lvbjE4MDYGA1UECxMvKGMpIDIwMDYgdGhhd3RlLCBJbmMuIC0gRm9yIGF1dGhvcml6ZWQgdXNlIG9ubHkxHzAdBgNVBAMTFnRoYXd0ZSBQcmltYXJ5IFJvb3QgQ0EwHhcNMTAwMjA4MDAwMDAwWhcNMjAwMjA3MjM1OTU5WjBKMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMVGhhd3RlLCBJbmMuMSQwIgYDVQQDExtUaGF3dGUgQ29kZSBTaWduaW5nIENBIC0gRzIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC3i891W58l2n45sJPbONOpI9CC+ukkflwLjoP45npZ5qPFmKeZ0kT/AKalOQSK2imI6tui8xyZFSbCsfT84QxHqQkRBgogkrnHoASMXJQZq1slLB1ifnANzmFs3SuCyc5dSF/3wr68QSMeTyld10+89MUq/GPmfCZOmad5QZ4QSnp5ycaG94aV0ibOPBgq1nzOr82tu/eCLHAmN0XlD0cixgEovS6DXGqkR8Hn0NhrgUY/IRf1B8VDWqZnLLh7YBG1g+71dApycUQ9WP7oGqs4w1nbf244fXbHcmmYNpZX02Yc0lSRBC5UGbDcPbUiXobVKn4g313merFl/sUCTjEtAgMBAAGjggEcMIIBGDASBgNVHRMBAf8ECDAGAQH/AgEAMDQGA1UdHwQtMCswKaAnoCWGI2h0dHA6Ly9jcmwudGhhd3RlLmNvbS9UaGF3dGVQQ0EuY3JsMA4GA1UdDwEB/wQEAwIBBjAyBggrBgEFBQcBAQQmMCQwIgYIKwYBBQUHMAGGFmh0dHA6Ly9vY3NwLnRoYXd0ZS5jb20wHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMDMCkGA1UdEQQiMCCkHjAcMRowGAYDVQQDExFWZXJpU2lnbk1QS0ktMi0xMDAdBgNVHQ4EFgQU1A1lP3q9NMb+R+dMDcC98t4Vq3EwHwYDVR0jBBgwFoAUe1tFz6/Oy3r9MZIaarbzRutXSFAwDQYJKoZIhvcNAQEFBQADggEBAFb+U1zhx568p+1+U21qFEtRjEBegF+qpOgv7zjIBMnKPs/fOlhOsNS2Y8UpV/oCBZpFTWjbKhvUND2fAMNay5VJpW7hsMX8QU1BSm/Td8jXOI3kGd4Y8x8VZYNtRQxT+QqaLqVdv28ygRiSGWpVAK1jHFIGflXZKWiuSnwYmnmIayMj2Cc4KimHdsr7x7ZiIx/telZM3ZwyW/U9DEYYlTsqI2iDZEHZAG0PGSQVaHK9xXFnbqxM25DrUaUaYgfQvmoARzxyL+xPYT5zhc5aCre6wBwTdeMiOSjdbR0JRp1PuuhAgZHGpM6UchsBzypuFWeVia59t7fN+Qo9dbZrPCU=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+</asmv1:assembly>

@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>P21Browser</RootNamespace>
-    <AssemblyName>DRG-Browser 2013_2014</AssemblyName>
+    <AssemblyName>G-DRG-Browser 2013_2014</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -23,10 +23,11 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ProductName>DRG-Browser 2013_2014</ProductName>
+    <InstallUrl>\\vFileserver01\company%24\Common\Datenbrowser\Par21Browser\GDRG_V2014_Browser_Par21_2013\Prüfung\</InstallUrl>
+    <ProductName>G-DRG-Browser 2013_2014</ProductName>
     <PublisherName>Institut für das Entgeltsystem im Krankenhaus GmbH %28InEK%29</PublisherName>
-    <SuiteName>DRG-Browser</SuiteName>
-    <ApplicationRevision>10</ApplicationRevision>
+    <SuiteName>G-DRG-Browser</SuiteName>
+    <ApplicationRevision>8</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>

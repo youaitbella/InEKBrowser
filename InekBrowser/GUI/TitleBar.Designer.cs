@@ -49,7 +49,7 @@
             this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlTitle.Location = new System.Drawing.Point(0, 0);
             this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(521, 30);
+            this.pnlTitle.Size = new System.Drawing.Size(381, 30);
             this.pnlTitle.TabIndex = 3;
             this.pnlTitle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlTitle_MouseMove);
             // 

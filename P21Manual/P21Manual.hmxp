@@ -110,7 +110,7 @@
       </tablestyleclass>
     </styleclasses>
     <config-group name="project">
-      <config-value name="title" translate="true">DRG-Browser 2013_2014</config-value>
+      <config-value name="title" translate="true">G-DRG-Browser 2013_2014</config-value>
       <config-value name="author" translate="true">InEK GmbH</config-value>
       <config-value name="copyright" translate="true">© 2015 InEK GmbH, Siegburg</config-value>
       <config-value name="versionmajor">2015</config-value>
@@ -159,7 +159,7 @@
       </config-group>
       <config-value name="make6include">EBOOK</config-value>
       <config-value name="make6status">*</config-value>
-      <config-value name="summary" translate="true">DRG-Browser 2013_2014</config-value>
+      <config-value name="summary" translate="true">G-DRG-Browser 2013_2014</config-value>
       <config-value name="versionbuild">0</config-value>
       <config-group name="bookmarks"/>
     </config-group>
@@ -462,7 +462,7 @@ nsrInit();
       <variable id="FILE_ND" type="text" translate="true">P21BrDrg_*_13_14_Nebendiagnosen.csv</variable>
       <variable id="FILE_PROC" type="text" translate="true">P21BrDrg_*_13_14_Prozeduren.csv</variable>
       <variable id="FILE_RECHERCHE" type="text" translate="true">P21BrDrg_*_13_14_Recherche.csv</variable>
-      <variable id="TITLE2" type="text" translate="true">DRG-Browser</variable>
+      <variable id="TITLE2" type="text" translate="true">G-DRG-Browser</variable>
     </variables>
     <helpcontext-numbers/>
   </config>

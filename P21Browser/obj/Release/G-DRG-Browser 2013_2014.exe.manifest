@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="DRG-Browser 2013_2014.exe" version="1.0.0.10" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
+  <asmv1:assemblyIdentity name="G-DRG-Browser 2013_2014.exe" version="1.0.0.8" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
   <description asmv2:iconFile="inek_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="DRG-Browser 2013_2014" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
-    <commandLine file="DRG-Browser 2013_2014.exe" parameters="" />
+    <assemblyIdentity name="G-DRG-Browser 2013_2014" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="G-DRG-Browser 2013_2014.exe" parameters="" />
   </entryPoint>
   <trustInfo>
     <security>
@@ -55,18 +55,6 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DRG-Browser 2013_2014.exe" size="19456">
-      <assemblyIdentity name="DRG-Browser 2013_2014" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>295dnh9MDIUETSHiC7nmgxglAzg=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.dll" size="4842656">
       <assemblyIdentity name="EntityFramework" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -79,6 +67,18 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="G-DRG-Browser 2013_2014.exe" size="19456">
+      <assemblyIdentity name="G-DRG-Browser 2013_2014" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>atwecPYYLHzjXjGlr0SnfFLS4uk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="InEK-Browser.dll" size="900096">
       <assemblyIdentity name="InEK-Browser" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
@@ -86,19 +86,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>f6tFKwerfs/zBUkwiFfU/6A4H/4=</dsig:DigestValue>
+        <dsig:DigestValue>LElnA0nQa/jBzAODL40C7ZGDLIY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="InekControls.dll" size="119808">
-      <assemblyIdentity name="InekControls" version="13.9.16.18754" language="neutral" processorArchitecture="x86" />
+      <assemblyIdentity name="InekControls" version="13.9.16.30216" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>nOppnO6mWd2JUeEZRKgWhnkLzXo=</dsig:DigestValue>
+        <dsig:DigestValue>9RktAbLR+GKHK54Wr6vucYG0K9c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -273,31 +273,31 @@
       <dsig:DigestValue>FmnCmTjcXr9vmIxzrv0Kc+K+xWA=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="DRG-Browser 2013_2014.exe.config" size="184">
+  <file name="DrgBrowser.chm" size="1234637">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>JXixIR97cMEJ3FsjwTMrLhtkuC0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrgBrowser.pdf" size="2836827">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>eEz0ml/Uz05QBQOdUw8xO/Ab7Kk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="G-DRG-Browser 2013_2014.exe.config" size="184">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>06MAsbgFUGlKhu1U3KJ4fh8CRLU=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="DrgBrowser.chm" size="1254929">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>zm9PqeZiXnSsl8mAY7SzW3dWYN0=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="DrgBrowser.pdf" size="2880292">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>LYvJf/WX4lPaqmXD17ter11sl7o=</dsig:DigestValue>
     </hash>
   </file>
   <file name="inek_icon.ico" size="12862">

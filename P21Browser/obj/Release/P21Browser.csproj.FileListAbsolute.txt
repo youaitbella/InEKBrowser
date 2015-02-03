@@ -48,14 +48,14 @@ D:\Projects\InekBrowser\P21Browser\bin\Release\Data\2015\P21BrDrg_TS_13_14_Reche
 D:\Projects\InekBrowser\P21Browser\bin\Release\Properties\Settings.Designer.cs
 D:\Projects\InekBrowser\P21Browser\bin\Release\Properties\Settings.settings
 D:\Projects\InekBrowser\P21Browser\bin\Release\p21Druck.lst
-D:\Projects\InekBrowser\P21Browser\bin\Release\DRG-Browser 2013_2014.exe.config
-D:\Projects\InekBrowser\P21Browser\bin\Release\DRG-Browser 2013_2014.exe.manifest
-D:\Projects\InekBrowser\P21Browser\bin\Release\DRG-Browser 2013_2014.application
-D:\Projects\InekBrowser\P21Browser\bin\Release\DRG-Browser 2013_2014.exe
-D:\Projects\InekBrowser\P21Browser\bin\Release\DRG-Browser 2013_2014.pdb
-D:\Projects\InekBrowser\P21Browser\obj\Release\DRG-Browser 2013_2014.exe.manifest
-D:\Projects\InekBrowser\P21Browser\obj\Release\DRG-Browser 2013_2014.application
-D:\Projects\InekBrowser\P21Browser\obj\Release\DRG-Browser 2013_2014.exe
-D:\Projects\InekBrowser\P21Browser\obj\Release\DRG-Browser 2013_2014.pdb
 D:\Projects\InekBrowser\P21Browser\bin\Release\DrgBrowser.chm
 D:\Projects\InekBrowser\P21Browser\bin\Release\DrgBrowser.pdf
+D:\Projects\InekBrowser\P21Browser\bin\Release\G-DRG-Browser 2013_2014.exe.config
+D:\Projects\InekBrowser\P21Browser\bin\Release\G-DRG-Browser 2013_2014.exe.manifest
+D:\Projects\InekBrowser\P21Browser\bin\Release\G-DRG-Browser 2013_2014.application
+D:\Projects\InekBrowser\P21Browser\bin\Release\G-DRG-Browser 2013_2014.exe
+D:\Projects\InekBrowser\P21Browser\bin\Release\G-DRG-Browser 2013_2014.pdb
+D:\Projects\InekBrowser\P21Browser\obj\Release\G-DRG-Browser 2013_2014.exe.manifest
+D:\Projects\InekBrowser\P21Browser\obj\Release\G-DRG-Browser 2013_2014.application
+D:\Projects\InekBrowser\P21Browser\obj\Release\G-DRG-Browser 2013_2014.exe
+D:\Projects\InekBrowser\P21Browser\obj\Release\G-DRG-Browser 2013_2014.pdb

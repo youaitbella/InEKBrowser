@@ -96,7 +96,7 @@ namespace org.inek.InekBrowser.GUI {
                 mnuMain.BackColor = BrowserColors.P21MenuBand;
                 BackColor = BrowserColors.P21Browser;
                 pnlContentBackground.BackColor = BrowserColors.P21BackgroundPanel;
-                titleBar.Title = "DRG-Browser " + (int.Parse(Program.Year) - 2) + "_" + (int.Parse(Program.Year) - 1);
+                titleBar.Title = "G-DRG-Browser " + (int.Parse(Program.Year) - 2) + "_" + (int.Parse(Program.Year) - 1);
                 pnlContentBackground.Controls.Remove(peppData);
                 pnlContentBackground.Controls.Remove(selectionPepp);
                 tabControl.TabPages.Remove(tabCosts);
@@ -113,7 +113,7 @@ namespace org.inek.InekBrowser.GUI {
                 mnuCatalogue.Visible = false;
                 mnuCosts.Visible = false;
                 mnuCostDomain.Visible = false;
-                Text = "DRG-Browser " + (int.Parse(Program.Year) - 2) + "_" + (int.Parse(Program.Year) - 1);
+                Text = "G-DRG-Browser " + (int.Parse(Program.Year) - 2) + "_" + (int.Parse(Program.Year) - 1);
                 helpProvider1.HelpNamespace = "DrgBrowser.chm";
                 drgData.ShowCaseCosts = false;
             }
@@ -701,7 +701,7 @@ namespace org.inek.InekBrowser.GUI {
         }
 
         private void titleBar_ClickedExit(object sender, EventArgs e) {
-            Application.Exit();
+            Environment.Exit(0);
         }
 
         private void titleBar_ClickedIconify(object sender, EventArgs e) {
@@ -1448,7 +1448,7 @@ namespace org.inek.InekBrowser.GUI {
                 if (i == grdCosts.Columns["KostenArt1"].Index) {
                     grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Ärztlicher Dienst";
                 } else if (i == grdCosts.Columns["KostenArt2"].Index) {
-                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Pflege-/Erziehungsdienst";
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Pflegedienst";
                 } else if (i == grdCosts.Columns["KostenArt3"].Index) {
                     grdCosts.Rows[0].Cells[i].ToolTipText = "Personalkosten Med.-techn. Dienst/Funktionsdienst";
                 } else if (i == grdCosts.Columns["KostenArt4a"].Index) {
@@ -1525,7 +1525,7 @@ namespace org.inek.InekBrowser.GUI {
 
 
         private void beendenToolStripMenuItem_Click(object sender, EventArgs e) {
-            Application.Exit();
+            Environment.Exit(0);
         }
 
 

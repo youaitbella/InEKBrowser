@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>\\vFileserver01\company%24\Common\Datenbrowser\Par21Browser\GDRG_V2014_Browser_Par21_2013\Prüfung\|\\vFileserver01\Common\Datenbrowser\Par21Browser\GDRG_V2014_Browser_Par21_2013\Prüfung\|\\server9\Common\Datenbrowser\Par21Browser\GDRG_V2014_Browser_Par21_2013\Prüfung\|W:\Common\Datenbrowser\Par21Browser\GDRG_V2014_Browser_Par21_2013\Prüfung\|publish\</PublishUrlHistory>
-    <InstallUrlHistory />
+    <PublishUrlHistory>\\vFileserver01\company%24\Common\Datenbrowser\Par21Browser\GDRG_V2014_Browser_Par21_2013\Prüfung\|D:\tmp\DrgBrowser\2015\|D:\tmpDrgBrowser\2015\|\\vFileserver01\Common\Datenbrowser\Par21Browser\GDRG_V2014_Browser_Par21_2013\Prüfung\|\\server9\Common\Datenbrowser\Par21Browser\GDRG_V2014_Browser_Par21_2013\Prüfung\</PublishUrlHistory>
+    <InstallUrlHistory>\\vFileserver01\company%24\Common\Datenbrowser\Par21Browser\GDRG_V2014_Browser_Par21_2013\Prüfung\|http://g-drg.de/DrgBrowser/2015/</InstallUrlHistory>
     <SupportUrlHistory />
     <UpdateUrlHistory />
     <BootstrapperUrlHistory />

@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <assemblyIdentity name="DRG-Browser 2013_2014.application" version="1.0.0.10" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" xmlns="urn:schemas-microsoft-com:asm.v1" />
-  <description asmv2:publisher="Institut für das Entgeltsystem im Krankenhaus GmbH (InEK)" co.v1:suiteName="DRG-Browser" asmv2:product="DRG-Browser 2013_2014" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <assemblyIdentity name="G-DRG-Browser 2013_2014.application" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <description asmv2:publisher="Institut für das Entgeltsystem im Krankenhaus GmbH (InEK)" co.v1:suiteName="G-DRG-Browser" asmv2:product="G-DRG-Browser 2013_2014" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" mapFileExtensions="true">
     <subscription>
       <update>
         <beforeApplicationStartup />
       </update>
     </subscription>
-    <deploymentProvider codebase="file://vfileserver01/company$/Common/Datenbrowser/Par21Browser/GDRG_V2014_Browser_Par21_2013/Pr%C3%BCfung/DRG-Browser%202013_2014.application" />
+    <deploymentProvider codebase="http://g-drg.de/DrgBrowser/2015/G-DRG-Browser%202013_2014.application" />
   </deployment>
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
     <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="DRG-Browser 2013_2014.exe.manifest" size="20290">
-      <assemblyIdentity name="DRG-Browser 2013_2014.exe" version="1.0.0.10" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
+    <dependentAssembly dependencyType="install" codebase="G-DRG-Browser 2013_2014.exe.manifest" size="20301">
+      <assemblyIdentity name="G-DRG-Browser 2013_2014.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>9V2a7dcYfOJ4mQv6q/+yGEHxqXE=</dsig:DigestValue>
+        <dsig:DigestValue>A9hvuJXHmYSoEw1QOkOZWwCyO5M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
