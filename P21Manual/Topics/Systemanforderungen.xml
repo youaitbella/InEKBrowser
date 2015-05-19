@@ -19,7 +19,7 @@
       <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Tastatur und Maus</text></li>
     </list>
     <para styleclass="Normal"></para>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Das Setup-Programm des </text><var styleclass="Normal">&lt;%TITLE2%&gt;s</var><text styleclass="Normal" translate="true"> ist über Ihren Webbrowser unter der URL </text><link displaytype="text" defaultstyle="true" type="weblink" href="http://g-drg.de/DrgBrowser/2015/DrgBrowserSetup.exe" target="_blank" styleclass="Normal" translate="true">http://g-drg.de/DrgBrowser/2015/DrgBrowserSetup.exe</link><text styleclass="Normal" translate="true"> erreichbar. Einen entsprechenden Link finden Sie auch auf der Internetseite des InEK. </text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Das Setup-Programm des </text><var styleclass="Normal">&lt;%TITLE2%&gt;s</var><text styleclass="Normal" translate="true"> ist über Ihren Webbrowser unter der URL </text><link displaytype="text" defaultstyle="true" type="weblink" href="http://g-drg.de/DrgBrowser/2015/G-DrgBrowserSetup.exe" target="_blank" styleclass="Normal" translate="true">http://g-drg.de/DrgBrowser/2015/G-DrgBrowserSetup.exe</link><text styleclass="Normal" translate="true"> erreichbar. Einen entsprechenden Link finden Sie auch auf der Internetseite des InEK. </text></para>
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Nach dem Download des Setup-Programms führen Sie dies aus. Es werden alle notwendigen Daten - soweit erforderlich, inkl. des dotNetFramworks - &#160;heruntergeladen und auf Ihrem Rechner installiert. </text></para>
     <para styleclass="Hinweis"><text styleclass="Hinweis" translate="true">Für die Installation von Programmen, benötigen Sie die entsprechenden Rechte. Kontaktieren Sie im Bedarfsfall Ihren Administrator.</text></para>
@@ -39,5 +39,7 @@
     <para styleclass="Normal"></para>
     <para styleclass="Image Caption"><image src="drgUpdate.png" scale="100.00%" styleclass="Image Caption"></image></para>
     <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Ein Update ist verfügbar, wenn dieses Fenster erscheint.</text></para>
+    <para styleclass="Image Caption"></para>
+    <para styleclass="Image Caption"></para>
   </body>
 </topic>

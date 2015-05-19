@@ -20,6 +20,9 @@
     <topicref type="topic" id="416772392051322" build="ALL" modified="2014-02-07T09:22:44.662Z" icon="0" href="DownloadProblems">
       <caption translate="true">Probleme beim Download</caption>
     </topicref>
+    <topicref type="topic" id="421432555275022" build="ALL" modified="2015-05-19T10:45:47.016Z" icon="0" href="FontDpi">
+      <caption translate="true">Probleme beim Browser</caption>
+    </topicref>
   </topicref>
   <topicref type="topic" id="402753149688023" build="ALL" modified="2014-01-10T17:06:58.016Z" icon="0" href="Background">
     <caption translate="true">Datengrundlage</caption>
