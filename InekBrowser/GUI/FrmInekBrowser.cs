@@ -56,9 +56,14 @@ namespace org.inek.InekBrowser.GUI {
         }
 
         private void UpdateGuiForSystem() {
+            CheckFontDpi();
             if (Program.SystemBrowser == Program.System.Drg) {
                 titleBar.BackColor = BrowserColors.DrgTitleBar;
                 mnuMain.BackColor = BrowserColors.DrgMenuBand;
+                mnuFile.BackColor = BrowserColors.DrgMenuBand;
+                mnuData.BackColor = BrowserColors.DrgMenuBand;
+                mnuReport.BackColor = BrowserColors.DrgMenuBand;
+                mnuQuestionTag.BackColor = BrowserColors.DrgMenuBand;
                 BackColor = BrowserColors.DrgBrowser;
                 pnlContentBackground.BackColor = BrowserColors.DrgBackgroundPanel;
                 peppData.BackColor = BrowserColors.DrgDataBackground;
@@ -94,6 +99,10 @@ namespace org.inek.InekBrowser.GUI {
             } else if (Program.SystemBrowser == Program.System.P21) {
                 titleBar.BackColor = BrowserColors.P21TitleBar;
                 mnuMain.BackColor = BrowserColors.P21MenuBand;
+                mnuFile.BackColor = BrowserColors.P21MenuBand;
+                mnuData.BackColor = BrowserColors.P21MenuBand;
+                mnuReport.BackColor = BrowserColors.P21MenuBand;
+                mnuQuestionTag.BackColor = BrowserColors.P21MenuBand;
                 BackColor = BrowserColors.P21Browser;
                 pnlContentBackground.BackColor = BrowserColors.P21BackgroundPanel;
                 titleBar.Title = "G-DRG-Browser " + (int.Parse(Program.Year) - 2) + "_" + (int.Parse(Program.Year) - 1);
@@ -119,6 +128,18 @@ namespace org.inek.InekBrowser.GUI {
             }
         }
 
+        private void CheckFontDpi() {
+            float dpiX = CreateGraphics().DpiX;
+            if (dpiX > 96) {
+                MessageBox.Show(this, "Sie benutzen Ihr Betriebssystem mit einer vergrößerten Schrift." +
+                                      " Dies kann zu einer fehlerhaften Darstellung des Browsers führen." +
+                                      " Weitere Informationen entnehmen Sie bitte dem Handbuch (\"Probleme beim Browser\").",
+                                      "Vergrößerte Schrift",
+                                      MessageBoxButtons.OK,
+                                      MessageBoxIcon.Information);
+            }
+        }
+            
         private DrgData drgData;
         private void InitDrgData() {
             drgData = new DrgData {
