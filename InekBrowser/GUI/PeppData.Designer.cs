@@ -124,7 +124,7 @@
             this.pnlData.ForeColor = System.Drawing.Color.White;
             this.pnlData.Location = new System.Drawing.Point(0, 0);
             this.pnlData.Name = "pnlData";
-            this.pnlData.Size = new System.Drawing.Size(1182, 272);
+            this.pnlData.Size = new System.Drawing.Size(1182, 170);
             this.pnlData.TabIndex = 0;
             this.pnlData.TabStop = false;
             this.pnlData.Text = "Kennzahlen";
@@ -200,7 +200,7 @@
             // 
             // lblGtYear79
             // 
-            this.lblGtYear79.AutoSize = true;
+            this.lblGtYear79.AutoEllipsis = true;
             this.lblGtYear79.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGtYear79.Location = new System.Drawing.Point(386, 98);
             this.lblGtYear79.Name = "lblGtYear79";
@@ -227,7 +227,7 @@
             // 
             // lblBt75Year79
             // 
-            this.lblBt75Year79.AutoSize = true;
+            this.lblBt75Year79.AutoEllipsis = true;
             this.lblBt75Year79.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBt75Year79.Location = new System.Drawing.Point(388, 71);
             this.lblBt75Year79.Name = "lblBt75Year79";
@@ -254,7 +254,7 @@
             // 
             // lblBt65Year74
             // 
-            this.lblBt65Year74.AutoSize = true;
+            this.lblBt65Year74.AutoEllipsis = true;
             this.lblBt65Year74.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBt65Year74.Location = new System.Drawing.Point(388, 44);
             this.lblBt65Year74.Name = "lblBt65Year74";
@@ -281,7 +281,7 @@
             // 
             // lblBt60Year64
             // 
-            this.lblBt60Year64.AutoSize = true;
+            this.lblBt60Year64.AutoEllipsis = true;
             this.lblBt60Year64.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBt60Year64.Location = new System.Drawing.Point(388, 17);
             this.lblBt60Year64.Name = "lblBt60Year64";
@@ -308,7 +308,7 @@
             // 
             // lblBt55Year59
             // 
-            this.lblBt55Year59.AutoSize = true;
+            this.lblBt55Year59.AutoEllipsis = true;
             this.lblBt55Year59.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBt55Year59.Location = new System.Drawing.Point(259, 98);
             this.lblBt55Year59.Name = "lblBt55Year59";
@@ -335,7 +335,7 @@
             // 
             // lblBt50Year54
             // 
-            this.lblBt50Year54.AutoSize = true;
+            this.lblBt50Year54.AutoEllipsis = true;
             this.lblBt50Year54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBt50Year54.Location = new System.Drawing.Point(258, 72);
             this.lblBt50Year54.Name = "lblBt50Year54";
@@ -362,7 +362,7 @@
             // 
             // lblBt40Year49
             // 
-            this.lblBt40Year49.AutoSize = true;
+            this.lblBt40Year49.AutoEllipsis = true;
             this.lblBt40Year49.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBt40Year49.Location = new System.Drawing.Point(258, 44);
             this.lblBt40Year49.Name = "lblBt40Year49";
@@ -389,7 +389,7 @@
             // 
             // lblBt30Year39
             // 
-            this.lblBt30Year39.AutoSize = true;
+            this.lblBt30Year39.AutoEllipsis = true;
             this.lblBt30Year39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBt30Year39.Location = new System.Drawing.Point(259, 17);
             this.lblBt30Year39.Name = "lblBt30Year39";
@@ -416,7 +416,7 @@
             // 
             // lblBt18Year29
             // 
-            this.lblBt18Year29.AutoSize = true;
+            this.lblBt18Year29.AutoEllipsis = true;
             this.lblBt18Year29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBt18Year29.Location = new System.Drawing.Point(132, 98);
             this.lblBt18Year29.Name = "lblBt18Year29";
@@ -443,7 +443,7 @@
             // 
             // lblBt16Year17
             // 
-            this.lblBt16Year17.AutoSize = true;
+            this.lblBt16Year17.AutoEllipsis = true;
             this.lblBt16Year17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBt16Year17.Location = new System.Drawing.Point(132, 71);
             this.lblBt16Year17.Name = "lblBt16Year17";
@@ -470,7 +470,7 @@
             // 
             // lblBt10Year15
             // 
-            this.lblBt10Year15.AutoSize = true;
+            this.lblBt10Year15.AutoEllipsis = true;
             this.lblBt10Year15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBt10Year15.Location = new System.Drawing.Point(132, 44);
             this.lblBt10Year15.Name = "lblBt10Year15";
@@ -497,7 +497,7 @@
             // 
             // lblBt6Year9
             // 
-            this.lblBt6Year9.AutoSize = true;
+            this.lblBt6Year9.AutoEllipsis = true;
             this.lblBt6Year9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBt6Year9.Location = new System.Drawing.Point(134, 17);
             this.lblBt6Year9.Name = "lblBt6Year9";
@@ -524,7 +524,7 @@
             // 
             // lblBt3Year5
             // 
-            this.lblBt3Year5.AutoSize = true;
+            this.lblBt3Year5.AutoEllipsis = true;
             this.lblBt3Year5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBt3Year5.Location = new System.Drawing.Point(6, 98);
             this.lblBt3Year5.Name = "lblBt3Year5";
@@ -551,7 +551,7 @@
             // 
             // lblBt1Year2
             // 
-            this.lblBt1Year2.AutoSize = true;
+            this.lblBt1Year2.AutoEllipsis = true;
             this.lblBt1Year2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBt1Year2.Location = new System.Drawing.Point(6, 71);
             this.lblBt1Year2.Name = "lblBt1Year2";
@@ -578,7 +578,7 @@
             // 
             // lblBt28Days1Year
             // 
-            this.lblBt28Days1Year.AutoSize = true;
+            this.lblBt28Days1Year.AutoEllipsis = true;
             this.lblBt28Days1Year.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBt28Days1Year.Location = new System.Drawing.Point(6, 44);
             this.lblBt28Days1Year.Name = "lblBt28Days1Year";
@@ -606,7 +606,7 @@
             // 
             // lblLT28Days
             // 
-            this.lblLT28Days.AutoSize = true;
+            this.lblLT28Days.AutoEllipsis = true;
             this.lblLT28Days.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLT28Days.Location = new System.Drawing.Point(6, 17);
             this.lblLT28Days.Name = "lblLT28Days";
@@ -616,6 +616,7 @@
             // 
             // grpGender
             // 
+            this.grpGender.AutoSize = true;
             this.grpGender.BackColor = System.Drawing.Color.Transparent;
             this.grpGender.Controls.Add(this.label2);
             this.grpGender.Controls.Add(this.txtGenderFemale);
@@ -624,7 +625,7 @@
             this.grpGender.ForeColor = System.Drawing.Color.White;
             this.grpGender.Location = new System.Drawing.Point(578, 21);
             this.grpGender.Name = "grpGender";
-            this.grpGender.Size = new System.Drawing.Size(72, 100);
+            this.grpGender.Size = new System.Drawing.Size(72, 105);
             this.grpGender.TabIndex = 17;
             this.grpGender.TabStop = false;
             this.grpGender.Text = "Geschl.";
@@ -632,7 +633,7 @@
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
+            this.label2.AutoEllipsis = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(6, 17);
@@ -677,7 +678,7 @@
             // 
             // lblFemale
             // 
-            this.lblFemale.AutoSize = true;
+            this.lblFemale.AutoEllipsis = true;
             this.lblFemale.BackColor = System.Drawing.Color.Transparent;
             this.lblFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFemale.Location = new System.Drawing.Point(515, 87);
@@ -685,10 +686,11 @@
             this.lblFemale.Size = new System.Drawing.Size(57, 15);
             this.lblFemale.TabIndex = 16;
             this.lblFemale.Text = "Weiblich:";
+            this.lblFemale.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // lblMale
             // 
-            this.lblMale.AutoSize = true;
+            this.lblMale.AutoEllipsis = true;
             this.lblMale.BackColor = System.Drawing.Color.Transparent;
             this.lblMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMale.Location = new System.Drawing.Point(511, 60);
@@ -696,6 +698,7 @@
             this.lblMale.Size = new System.Drawing.Size(61, 15);
             this.lblMale.TabIndex = 15;
             this.lblMale.Text = "Männlich:";
+            this.lblMale.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // grpAge
             // 
@@ -714,7 +717,7 @@
             // 
             // lblYears
             // 
-            this.lblYears.AutoSize = true;
+            this.lblYears.AutoEllipsis = true;
             this.lblYears.BackColor = System.Drawing.Color.Transparent;
             this.lblYears.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYears.Location = new System.Drawing.Point(6, 17);
@@ -776,7 +779,7 @@
             // 
             // lblDayCostsEuro
             // 
-            this.lblDayCostsEuro.AutoSize = true;
+            this.lblDayCostsEuro.AutoEllipsis = true;
             this.lblDayCostsEuro.BackColor = System.Drawing.Color.Transparent;
             this.lblDayCostsEuro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDayCostsEuro.Location = new System.Drawing.Point(21, 17);
@@ -838,7 +841,7 @@
             // 
             // lblHomogeneityCoefficient
             // 
-            this.lblHomogeneityCoefficient.AutoSize = true;
+            this.lblHomogeneityCoefficient.AutoEllipsis = true;
             this.lblHomogeneityCoefficient.BackColor = System.Drawing.Color.Transparent;
             this.lblHomogeneityCoefficient.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHomogeneityCoefficient.Location = new System.Drawing.Point(174, 119);
@@ -846,11 +849,12 @@
             this.lblHomogeneityCoefficient.Size = new System.Drawing.Size(96, 15);
             this.lblHomogeneityCoefficient.TabIndex = 12;
             this.lblHomogeneityCoefficient.Text = "Homogenitätsk.:";
+            this.lblHomogeneityCoefficient.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.toolTip.SetToolTip(this.lblHomogeneityCoefficient, "Homogenitätskoeffizient");
             // 
             // lblStandardDeviation
             // 
-            this.lblStandardDeviation.AutoSize = true;
+            this.lblStandardDeviation.AutoEllipsis = true;
             this.lblStandardDeviation.BackColor = System.Drawing.Color.Transparent;
             this.lblStandardDeviation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStandardDeviation.Location = new System.Drawing.Point(184, 92);
@@ -858,11 +862,12 @@
             this.lblStandardDeviation.Size = new System.Drawing.Size(86, 15);
             this.lblStandardDeviation.TabIndex = 11;
             this.lblStandardDeviation.Text = "Standardabw.:";
+            this.lblStandardDeviation.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.toolTip.SetToolTip(this.lblStandardDeviation, "Standardabweichung");
             // 
             // lblAverage
             // 
-            this.lblAverage.AutoSize = true;
+            this.lblAverage.AutoEllipsis = true;
             this.lblAverage.BackColor = System.Drawing.Color.Transparent;
             this.lblAverage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAverage.Location = new System.Drawing.Point(207, 65);
@@ -870,6 +875,7 @@
             this.lblAverage.Size = new System.Drawing.Size(63, 15);
             this.lblAverage.TabIndex = 10;
             this.lblAverage.Text = "Mittelwert:";
+            this.lblAverage.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // groupBox1
             // 
@@ -889,7 +895,7 @@
             // 
             // lblVwdDaysSmall
             // 
-            this.lblVwdDaysSmall.AutoSize = true;
+            this.lblVwdDaysSmall.AutoEllipsis = true;
             this.lblVwdDaysSmall.BackColor = System.Drawing.Color.Transparent;
             this.lblVwdDaysSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVwdDaysSmall.Location = new System.Drawing.Point(25, 17);
@@ -1002,7 +1008,7 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
+            this.label1.AutoEllipsis = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 14);
@@ -1086,13 +1092,13 @@
             // 
             // PeppData
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.SeaGreen;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Controls.Add(this.pnlData);
+            this.MinimumSize = new System.Drawing.Size(0, 170);
             this.Name = "PeppData";
-            this.Size = new System.Drawing.Size(1182, 272);
+            this.Size = new System.Drawing.Size(1182, 170);
             this.pnlData.ResumeLayout(false);
             this.pnlData.PerformLayout();
             this.grpBigAge.ResumeLayout(false);

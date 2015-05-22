@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InekControls", "..\InekControls\InekControls.csproj", "{25475440-D19F-42BC-8D5F-C0DE452526D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InekControls", "..\InekControls32\InekControls.csproj", "{25475440-D19F-42BC-8D5F-C0DE452526D0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrgBrowser", "DrgBrowser\DrgBrowser.csproj", "{B116E629-656A-4F76-98F7-0CEBBD24F75F}"
 EndProject

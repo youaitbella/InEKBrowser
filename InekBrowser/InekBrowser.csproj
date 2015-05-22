@@ -344,7 +344,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\InekControls\InekControls.csproj">
+    <ProjectReference Include="..\..\InekControls32\InekControls.csproj">
       <Project>{25475440-d19f-42bc-8d5f-c0de452526d0}</Project>
       <Name>InekControls</Name>
     </ProjectReference>

@@ -44,13 +44,13 @@
             this.grpPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grpPanel.Location = new System.Drawing.Point(0, 30);
             this.grpPanel.Name = "grpPanel";
-            this.grpPanel.Size = new System.Drawing.Size(461, 516);
+            this.grpPanel.Size = new System.Drawing.Size(326, 516);
             this.grpPanel.TabIndex = 3;
             this.grpPanel.TabStop = false;
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(178, 472);
+            this.btnClose.Location = new System.Drawing.Point(113, 472);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(95, 32);
             this.btnClose.TabIndex = 4;
@@ -63,7 +63,7 @@
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Location = new System.Drawing.Point(12, 394);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(437, 72);
+            this.groupBox2.Size = new System.Drawing.Size(300, 72);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             // 
@@ -73,7 +73,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(6, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(425, 48);
+            this.label1.Size = new System.Drawing.Size(288, 48);
             this.label1.TabIndex = 2;
             this.label1.Text = "Code-Browser\r\nVersion 2014.1\r\n© InEK GmbH";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -84,7 +84,7 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(12, 19);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(437, 369);
+            this.pictureBox1.Size = new System.Drawing.Size(300, 369);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -97,7 +97,7 @@
             this.titleBar.Name = "titleBar";
             this.titleBar.ShowIconify = false;
             this.titleBar.ShowMinMax = false;
-            this.titleBar.Size = new System.Drawing.Size(461, 30);
+            this.titleBar.Size = new System.Drawing.Size(326, 30);
             this.titleBar.TabIndex = 2;
             this.titleBar.ClickedExit += new System.EventHandler(this.btnClose_Click);
             this.titleBar.MouseMoveTitleBar += new System.Windows.Forms.MouseEventHandler(this.titleBar_MouseMove);
@@ -105,10 +105,10 @@
             // 
             // FrmAbout
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.SeaGreen;
-            this.ClientSize = new System.Drawing.Size(461, 546);
+            this.ClientSize = new System.Drawing.Size(326, 546);
             this.Controls.Add(this.grpPanel);
             this.Controls.Add(this.titleBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

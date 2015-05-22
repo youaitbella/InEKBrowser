@@ -1,7 +1,9 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using org.inek.controls.helper;
 using org.inek.controls.util;
 using org.inek.InekBrowser.Data;
 using Application = System.Windows.Forms.Application;
@@ -82,11 +84,14 @@ namespace org.inek.InekBrowser.GUI {
                 } else if (Program.SystemBrowser == Program.System.Drg || Program.SystemBrowser == Program.System.P21) {
                     CsvData.Context().LoadDrgDataToMemory(CsvData.DrgType.HA);
                 }
-                _printLoader.LoadPrintLibrarys();
+                bool success = _printLoader.LoadPrintLibrarys(PrintLibraryLoader.FailureOption.ReturnFalse);
+                if (!success) {
+                    MessageBox.Show("Fehler beim Laden der Druck-Bibliothek. Es sind keine Reports möglich.");
+                }
                 new FrmInekBrowser().Visible = true;
             } catch (Exception ex) {
                 MessageBox.Show(this, ex.Message, "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Application.Exit();
+                    Application.Exit();
             }
             Cursor = DefaultCursor;
         }

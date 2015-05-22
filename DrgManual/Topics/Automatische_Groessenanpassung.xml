@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="muellermi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Automatische Größenanpassung</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Automatische Größenanpassung</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Sie können den </text><var styleclass="Normal">&lt;%TITLE2%&gt;</var><text styleclass="Normal" translate="true"> wahlweise als Vollbild wie auch in einem Fenster anzeigen. Die einzelnen Elemente passen sich in ihrer Größe an das Fenster an. Bei einer Verkleinerung ist dies geschieht jedoch nur in einem vorgegebenen Rahmen möglich. Hier sichert eine Mindestgröße die vernünftige Darstellung der Daten.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Diese automatische Größenanpassung funktioniert bestens, wenn Sie in Windows die Standardeinstellungen für die Schriftgröße belassen (100%). Sofern Sie bei Windows eine größere Schriftart einstellen, z.B. wegen Verwendung eines extrem hochauflösenden (&quot;4K&quot;) Monitors, werden einzelne Elemente nicht mehr optimal in ihrer Größe angepasst. Dies kann bei diesen Bildschirmelementen zu einer unschönen oder gar verzerrten bzw. überlappenden Darstellung führen. Dieses Problem soll mit Windows 10 besser gelöst werden. Für die Verwendung des </text><var styleclass="Normal">&lt;%TITLE2%&gt;s</var><text styleclass="Normal" translate="true"> empfiehlt das InEK derzeit, die Schriftgröße in Windows auf 100% zu belassen. Sofern Sie davon abweichen, gibt der </text><var styleclass="Normal">&lt;%TITLE2%&gt;</var><text styleclass="Normal" translate="true"> zu Ihrer Information einen entsprechenden Hinweis aus.</text></para>
+  </body>
+</topic>

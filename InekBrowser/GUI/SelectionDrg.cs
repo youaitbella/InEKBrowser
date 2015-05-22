@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-using combit.ListLabel20.Dom;
+using org.inek.controls.CommonControls;
 using org.inek.controls.gui;
 using org.inek.InekBrowser.Data;
 

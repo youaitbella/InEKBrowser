@@ -69,8 +69,8 @@ namespace org.inek.InekBrowser.GUI {
                 peppData.BackColor = BrowserColors.DrgDataBackground;
                 peppData.ColorTextFields(BrowserColors.DrgDataTextField);
                 titleBar.Title = "G-DRG-Report-Browser " + Program.Year;
-                pnlContentBackground.Controls.Remove(peppData);
-                pnlContentBackground.Controls.Remove(selectionPepp);
+                tableLayoutPanel1.Controls.Remove(peppData);
+                tableLayoutPanel1.Controls.Remove(selectionPepp);
                 InitDrgSelection();
                 selectionDrg.BackColor = BrowserColors.DrgSelection;
                 lblSystem.Text = "DRG:";
@@ -106,8 +106,8 @@ namespace org.inek.InekBrowser.GUI {
                 BackColor = BrowserColors.P21Browser;
                 pnlContentBackground.BackColor = BrowserColors.P21BackgroundPanel;
                 titleBar.Title = "G-DRG-Browser " + (int.Parse(Program.Year) - 2) + "_" + (int.Parse(Program.Year) - 1);
-                pnlContentBackground.Controls.Remove(peppData);
-                pnlContentBackground.Controls.Remove(selectionPepp);
+                tableLayoutPanel1.Controls.Remove(peppData);
+                tableLayoutPanel1.Controls.Remove(selectionPepp);
                 tabControl.TabPages.Remove(tabCosts);
                 InitDrgSelection();
                 selectionDrg.BackColor = BrowserColors.P21Selection;
@@ -143,17 +143,15 @@ namespace org.inek.InekBrowser.GUI {
         private DrgData drgData;
         private void InitDrgData() {
             drgData = new DrgData {
-                                      BackColor = Color.SeaGreen,
+                                      BackColor = Color.SteelBlue,
                                       BackgroundImageLayout = ImageLayout.Zoom,
-                                      Location = new Point(0, 114),
+                                      Location = new Point(3,91),
+                                      Dock = DockStyle.Fill,
                                       Name = "drgData",
-                                      Size = new Size(1182, 270),
-                                      TabIndex = 1
+                                      Size = new Size(1190, 163),
+                                      TabIndex = 12
                                   };
-            tabControl.Location = new Point(tabControl.Location.X, tabControl.Location.Y + (tabControl.Height - 340));
-            tabControl.Height = 340;
-            tabControl.Anchor = AnchorStyles.Right | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Top; 
-            pnlContentBackground.Controls.Add(drgData);
+            tableLayoutPanel1.Controls.Add(drgData, 0, 2);
         }
 
         private void InitDrgSelection() {
@@ -162,12 +160,13 @@ namespace org.inek.InekBrowser.GUI {
                                                            | AnchorStyles.Right)),
                                                 BackColor = Color.Transparent,
                                                 Location = new Point(0, 27),
+                                                Dock = DockStyle.Fill,
                                                 Name = "selectionDrg",
-                                                Size = new Size(1182, 52),
-                                                TabIndex = 13
+                                                Size = new Size(1190, 52),
+                                                TabIndex = 11
                                             };
             SelectionDrg.Parent = this;
-            pnlContentBackground.Controls.Add(selectionDrg);
+            tableLayoutPanel1.Controls.Add(selectionDrg, 0, 0);
         }
 
         private void SetRechercheHelp() {

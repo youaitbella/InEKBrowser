@@ -165,7 +165,7 @@
     <config-group name="user">
       <config-group name="muellermi">
         <config-group name="project">
-          <config-value name="lastexport">0</config-value>
+          <config-value name="lastexport">4</config-value>
           <config-value name="mapfile">C:\Dokumente und Einstellungen\muellermi\Desktop\topics.txt</config-value>
           <config-value name="mapfileformat">2</config-value>
           <config-value name="mapfileformat_topic">&lt;%TOPICID%&gt; = &lt;%TOPIC_CAPTION%&gt;</config-value>
@@ -432,7 +432,7 @@ nsrInit();
       <config-value name="activehyperlinks">1</config-value>
     </config-group>
     <config-group name="pdf">
-      <config-value name="outputfile">..\PeppBrowser\PeppBrowser.pdf</config-value>
+      <config-value name="outputfile">..\DrgBrowser\DrgBrowser.pdf</config-value>
       <config-value name="template">.\template\DrgToollManual.mnl</config-value>
       <config-value name="style">0</config-value>
       <config-value name="createoutline">1</config-value>

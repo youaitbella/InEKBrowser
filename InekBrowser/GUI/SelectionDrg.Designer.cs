@@ -24,6 +24,7 @@
         /// </summary>
         private void InitializeComponent() {
             this.grpFilter = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.cbxDepartment = new System.Windows.Forms.ComboBox();
             this.lblDepartment = new System.Windows.Forms.Label();
             this.picClearProc = new System.Windows.Forms.PictureBox();
@@ -39,7 +40,6 @@
             this.cbxCategory = new org.inek.controls.CommonControls.ComboField();
             this.lblSk = new System.Windows.Forms.Label();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.grpFilter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClearProc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picClearSecondaryDiag)).BeginInit();
@@ -74,6 +74,15 @@
             this.grpFilter.TabIndex = 2;
             this.grpFilter.TabStop = false;
             this.grpFilter.Text = "DRG-Filter";
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(806, 8);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1, 44);
+            this.panel1.TabIndex = 22;
             // 
             // cbxDepartment
             // 
@@ -256,19 +265,9 @@
             // 
             this.helpProvider1.HelpNamespace = "DrgBrowser.chm";
             // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(806, 8);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1, 44);
-            this.panel1.TabIndex = 22;
-            // 
             // SelectionDrg
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.grpFilter);
             this.Name = "SelectionDrg";

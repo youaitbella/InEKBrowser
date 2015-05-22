@@ -1,23 +1,25 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
-<topic template="Default" status="Under Construction" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+<topic template="Default" status="Under Construction" lasteditedby="muellermi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
   <title translate="true">Datengrundlage</title>
   <body>
     <header>
       <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Datengrundlage</text></para>
     </header>
     <para style="text-align:justify;"><text styleclass="Bullet Text" translate="true">Dem Browser liegen die plausibilisierten Daten </text></para>
-    <para style="margin-left:24px;"><text styleclass="Bullet Text" translate="true">a) bei Versorgung durch Hauptabteilungen </text></para>
-    <para style="margin-left:24px;"><text styleclass="Bullet Text" translate="true">b) </text><text styleclass="Normal" translate="true">bei Versorgung durch Belegabteilungen (eingeschränkt auf ausschließlich die 76 DRGs, für die die Berechnung der Bewertungsrelationen eigenständig aus den Kalkulationsdaten der Fälle in belegärztlicher Versorgung möglich war, siehe Abschlussbericht zur Weiterentwicklung des G-DRG-Systems 2015, Kap. 3.3.1.2 und Tab. A-2 im Anhang)</text></para>
+    <list id="40" type="ol" listtype="lower-alpha" formatstring="&#37;&#48;&#58;&#115;&#41;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Arial; font-size:11pt; color:#000000;">
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">bei Versorgung durch Hauptabteilungen</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">bei Versorgung durch Belegabteilungen (eingeschränkt auf ausschließlich die 76 DRGs, für die die Berechnung der Bewertungsrelationen eigenständig aus den Kalkulationsdaten der Fälle in belegärztlicher Versorgung möglich war, siehe Abschlussbericht zur Weiterentwicklung des G-DRG-Systems 2015, Kap. 3.3.1.2 und Tab. A-2 im Anhang)</text></li>
+    </list>
     <para style="text-align:justify;"><text styleclass="Bullet Text" translate="true">des Jahres 2013 aus den an der Kalkulation zur Weiterentwicklung des G-DRG-Systems teilnehmenden Krankenhäusern zu Grunde. </text></para>
     <para style="text-align:justify;"><text styleclass="Bullet Text" translate="true">Die Gruppierung erfolgte nach den Regeln der G-DRG-Version 2013/2015.</text></para>
     <para style="text-align:justify;"><text styleclass="Bullet Text" translate="true">Die Haupt- und Nebendiagnosen sind gemäß ICD-10-GM Version 2013, die Prozeduren gemäß OPS Version 2013 angegeben. </text></para>
     <para></para>
     <para><text styleclass="Bullet Text" translate="true">Nicht berücksichtigt sind folgende Fallgruppen:</text></para>
-    <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" style="text-indent:-24px; margin-left:48px; font-family:Symbol; font-size:11pt; color:#000000;">
-      <li style="text-indent:-24px; margin-left:48px;"><text styleclass="Bullet Text" translate="true">Begleitpersonen, </text></li>
-      <li style="text-indent:-24px; margin-left:48px;"><text styleclass="Bullet Text" translate="true">rein vorstationäre Fälle,</text></li>
-      <li style="text-indent:-24px; margin-left:48px;"><text styleclass="Bullet Text" translate="true">Fälle der Entgeltbereiche „PSY“ und „PIA“.</text></li>
+    <list id="41" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Begleitpersonen, </text></li>
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">rein vorstationäre Fälle,</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Fälle der Entgeltbereiche „PSY“ und „PIA“.</text></li>
     </list>
     <para style="margin-left:24px;"></para>
     <para style="text-align:justify;"><text styleclass="Bullet Text" translate="true">Verlegte Fälle sind definiert gemäß der Zuordnungsregel auf Basis der Analyse des Kostenmittelwerts je DRG und Verlegungsart (siehe Kap. 3.3.1.5 des Abschlussberichts zur Weiterentwicklung des G-DRG-Systems für das Jahr 2015 und Tab. A-4-1 bis A-4-3 im Anhang).</text></para>
