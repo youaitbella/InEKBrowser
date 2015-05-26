@@ -154,7 +154,7 @@ namespace org.inek.InekBrowser.GUI {
                 if (control is ComboField || control.Name == "grpMdc") { return false; }
                 if (control is TextBoxBase) {
                     Size size = control.Size;
-                    size.Width = (int)(size.Width*fact);
+                    size.Width = (int)(size.Width * fact);
                     control.Size = size;
                 }
                 return true;
