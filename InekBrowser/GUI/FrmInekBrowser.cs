@@ -7,6 +7,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using combit.ListLabel20;
+using org.inek.controls.CommonControls;
 using org.inek.InekBrowser.Data;
 using org.inek.controls.gui;
 using org.inek.controls.helper;
@@ -144,25 +145,28 @@ namespace org.inek.InekBrowser.GUI {
         private void InitDrgData() {
             drgData = new DrgData {
                                       BackColor = Color.SteelBlue,
-                                      BackgroundImageLayout = ImageLayout.Zoom,
-                                      Location = new Point(3,91),
                                       Dock = DockStyle.Fill,
                                       Name = "drgData",
-                                      Size = new Size(1190, 163),
                                       TabIndex = 12
                                   };
+            float fact = CreateGraphics().DpiX / 96;
+            GuiTools.ApplyControlCommand(drgData.Controls, delegate(Control control) {
+                if (control is ComboField || control.Name == "grpMdc") { return false; }
+                if (control is TextBoxBase) {
+                    Size size = control.Size;
+                    size.Width = (int)(size.Width*fact);
+                    control.Size = size;
+                }
+                return true;
+            });
             tableLayoutPanel1.Controls.Add(drgData, 0, 2);
         }
 
         private void InitDrgSelection() {
             selectionDrg = new SelectionDrg {
-                                                Anchor = (((AnchorStyles.Top | AnchorStyles.Left)
-                                                           | AnchorStyles.Right)),
                                                 BackColor = Color.Transparent,
-                                                Location = new Point(0, 27),
                                                 Dock = DockStyle.Fill,
                                                 Name = "selectionDrg",
-                                                Size = new Size(1190, 52),
                                                 TabIndex = 11
                                             };
             SelectionDrg.Parent = this;
