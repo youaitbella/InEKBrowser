@@ -6,7 +6,7 @@ using System.Text;
 namespace org.inek.InekBrowser.Data {
     class ResourceController {
 
-        private const string PEPP_RESOURCE_FILES_HASH = "5FE57F631EC793D69BD98C47270A028EA31B14A777AD5608ED67CDB52411F5";
+        private const string PEPP_RESOURCE_FILES_HASH = "93A416D94443104574B49CB6C3863F26A7D676453084A8BA26AD71C2E4E3D9";
         private const string DRG_RESOURCE_FILES_HASH = "F4E25812AA32650D6572339DABCE3EE9D44C62A709C328EACBC2F6451E014";
         private const string P21_RESOURCE_FILES_HASH = "F11B51C155BD667B7E2915A913897EC955D43C8F80CA25594E5E44558C5DE";
 
@@ -89,16 +89,16 @@ namespace org.inek.InekBrowser.Data {
                                                     };
 
         public static string[] PEPP_RESOURCE_FILES = {
-                                                     "RepBrPepp_13_15_Hauptdiagnose.csv", 
-                                                     "RepBrPepp_13_15_Kopfdaten.csv",
-                                                     "RepBrPepp_13_15_Kosten.csv", 
-                                                     "RepBrPepp_13_15_Kostenbereich.csv",
-                                                     "RepBrPepp_13_15_Nebendiagnosen.csv", 
-                                                     "RepBrPepp_13_15_Pepp.csv",
-                                                     "RepBrPepp_13_15_Prozeduren.csv", 
-                                                     "RepBrPepp_13_15_Recherche.csv",
-                                                     "RepBrPepp_13_15_Strukturkategorie.csv",
-                                                     "RepBrPepp_13_15_Katalog.csv"
+                                                     "RepBrPepp_14_16_Hauptdiagnose.csv", 
+                                                     "RepBrPepp_14_16_Kopfdaten.csv",
+                                                     "RepBrPepp_14_16_Kosten.csv", 
+                                                     "RepBrPepp_14_16_Kostenbereich.csv",
+                                                     "RepBrPepp_14_16_Nebendiagnosen.csv", 
+                                                     "RepBrPepp_14_16_Pepp.csv",
+                                                     "RepBrPepp_14_16_Prozeduren.csv", 
+                                                     "RepBrPepp_14_16_Recherche.csv",
+                                                     "RepBrPepp_14_16_Strukturkategorie.csv",
+                                                     "RepBrPepp_14_16_Katalog.csv"
                                                  };
 
         public static string[] P21_RESOURCE_FILES = {
@@ -194,7 +194,7 @@ namespace org.inek.InekBrowser.Data {
                                                           "IH_DRG;IH_CodeF;IH_Anzahl;IH_Prozent",
                                                           "IP_DRG;IP_CodeF;IP_Anzahl;IP_Prozent;IP_AnzahlN;IP_ProzentN",
                                                           "IK_MDC;IK_DRG;IK_Faelle_Anzahl;IK_PCCL0;IK_PCCL1;IK_PCCL2;IK_PCCL3;IK_PCCL4;IK_GeschlechtM;IK_GeschlechtW;IK_GeschlechtU;IK_AlterU28T;IK_AlterU01;IK_AlterU03;IK_AlterU06;IK_AlterU10;IK_AlterU16;IK_AlterU18;IK_AlterU30;IK_AlterU40;IK_AlterU50;IK_AlterU55;IK_AlterU60;IK_AlterU65;IK_AlterU75;IK_AlterU80;IK_AlterU99;IK_VWD_Kurz;IK_VWD_Norm;IK_VWD_Lang;IK_uGVD;IK_oGVD;IK_VWD_MW;IK_Bewertungsrelation;IK_Gesamt;IK_VWD_STD",
-                                                          "IM_MDC;IM_Text;IM_DRG_Anzahl;IM_Faelle_Anzahl",
+                                                          "IM_MDC;IM_Text;IM_DRG_Anzahl;IM_Faelle_A nzahl",
                                                           "IN_DRG;IN_CodeF;IN_Anzahl;IN_Prozent;IN_AnzahlN;IN_ProzentN",
                                                           "IC_CodeF;IC_Text;IC_ANZHDI;IC_ANZNDI;IC_AnzProzI",
 

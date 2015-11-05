@@ -1,4 +1,6 @@
-﻿namespace org.inek.InekBrowser.GUI {
+﻿using org.inek.controls.CommonControls;
+
+namespace org.inek.InekBrowser.GUI {
     partial class FrmInekBrowser {
         /// <summary>
         /// Required designer variable.
@@ -106,7 +108,7 @@
             this.mnuFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.beendenToolStripMenuItem});
             this.mnuFile.Name = "mnuFile";
-            this.mnuFile.Size = new System.Drawing.Size(46, 20);
+            this.mnuFile.Size = new System.Drawing.Size(44, 20);
             this.mnuFile.Text = "Datei";
             // 
             // beendenToolStripMenuItem
@@ -114,7 +116,7 @@
             this.beendenToolStripMenuItem.Image = global::org.inek.InekBrowser.Properties.Resources.peppo_quit;
             this.beendenToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.White;
             this.beendenToolStripMenuItem.Name = "beendenToolStripMenuItem";
-            this.beendenToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.beendenToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.beendenToolStripMenuItem.Text = "Beenden";
             this.beendenToolStripMenuItem.Click += new System.EventHandler(this.beendenToolStripMenuItem_Click);
             // 
@@ -134,14 +136,14 @@
             this.mnuRecherche,
             this.mnuDataDir});
             this.mnuData.Name = "mnuData";
-            this.mnuData.Size = new System.Drawing.Size(50, 20);
+            this.mnuData.Size = new System.Drawing.Size(48, 20);
             this.mnuData.Text = "Daten";
             // 
             // mnuCategories
             // 
             this.mnuCategories.BackColor = System.Drawing.SystemColors.Control;
             this.mnuCategories.Name = "mnuCategories";
-            this.mnuCategories.Size = new System.Drawing.Size(185, 22);
+            this.mnuCategories.Size = new System.Drawing.Size(176, 22);
             this.mnuCategories.Text = "Strukturkategorien";
             this.mnuCategories.Click += new System.EventHandler(this.MnuCategoriesClick);
             // 
@@ -149,7 +151,7 @@
             // 
             this.mnuSystem.BackColor = System.Drawing.SystemColors.Control;
             this.mnuSystem.Name = "mnuSystem";
-            this.mnuSystem.Size = new System.Drawing.Size(185, 22);
+            this.mnuSystem.Size = new System.Drawing.Size(176, 22);
             this.mnuSystem.Text = "Code";
             this.mnuSystem.Click += new System.EventHandler(this.MnuSystemClick);
             // 
@@ -157,7 +159,7 @@
             // 
             this.mnuPeppInfo.BackColor = System.Drawing.SystemColors.Control;
             this.mnuPeppInfo.Name = "mnuPeppInfo";
-            this.mnuPeppInfo.Size = new System.Drawing.Size(185, 22);
+            this.mnuPeppInfo.Size = new System.Drawing.Size(176, 22);
             this.mnuPeppInfo.Text = "Kopfdaten";
             this.mnuPeppInfo.Click += new System.EventHandler(this.MnuSystemInfoClick);
             // 
@@ -165,7 +167,7 @@
             // 
             this.mnuPrimaryDiagnoses.BackColor = System.Drawing.SystemColors.Control;
             this.mnuPrimaryDiagnoses.Name = "mnuPrimaryDiagnoses";
-            this.mnuPrimaryDiagnoses.Size = new System.Drawing.Size(185, 22);
+            this.mnuPrimaryDiagnoses.Size = new System.Drawing.Size(176, 22);
             this.mnuPrimaryDiagnoses.Text = "Hauptdiagnosen";
             this.mnuPrimaryDiagnoses.Click += new System.EventHandler(this.mnuPrimaryDiagnoses_Click);
             // 
@@ -173,7 +175,7 @@
             // 
             this.mnuSecondaryDiagnoses.BackColor = System.Drawing.SystemColors.Control;
             this.mnuSecondaryDiagnoses.Name = "mnuSecondaryDiagnoses";
-            this.mnuSecondaryDiagnoses.Size = new System.Drawing.Size(185, 22);
+            this.mnuSecondaryDiagnoses.Size = new System.Drawing.Size(176, 22);
             this.mnuSecondaryDiagnoses.Text = "Nebendiagnosen";
             this.mnuSecondaryDiagnoses.Click += new System.EventHandler(this.mnuSecondaryDiagnoses_Click);
             // 
@@ -181,7 +183,7 @@
             // 
             this.mnuProcedures.BackColor = System.Drawing.SystemColors.Control;
             this.mnuProcedures.Name = "mnuProcedures";
-            this.mnuProcedures.Size = new System.Drawing.Size(185, 22);
+            this.mnuProcedures.Size = new System.Drawing.Size(176, 22);
             this.mnuProcedures.Text = "Prozeduren";
             this.mnuProcedures.Click += new System.EventHandler(this.mnuProcedures_Click);
             // 
@@ -189,21 +191,21 @@
             // 
             this.mnuCosts.BackColor = System.Drawing.SystemColors.Control;
             this.mnuCosts.Name = "mnuCosts";
-            this.mnuCosts.Size = new System.Drawing.Size(185, 22);
+            this.mnuCosts.Size = new System.Drawing.Size(176, 22);
             this.mnuCosts.Text = "Kosten";
             this.mnuCosts.Click += new System.EventHandler(this.mnuCosts_Click);
             // 
             // mnuCostDomain
             // 
             this.mnuCostDomain.Name = "mnuCostDomain";
-            this.mnuCostDomain.Size = new System.Drawing.Size(185, 22);
+            this.mnuCostDomain.Size = new System.Drawing.Size(176, 22);
             this.mnuCostDomain.Text = "Kostenbereich";
             this.mnuCostDomain.Click += new System.EventHandler(this.kostenbereichToolStripMenuItem_Click);
             // 
             // mnuCatalogue
             // 
             this.mnuCatalogue.Name = "mnuCatalogue";
-            this.mnuCatalogue.Size = new System.Drawing.Size(185, 22);
+            this.mnuCatalogue.Size = new System.Drawing.Size(176, 22);
             this.mnuCatalogue.Text = "Katalog";
             this.mnuCatalogue.Click += new System.EventHandler(this.mnuCatalogue_Click);
             // 
@@ -211,7 +213,7 @@
             // 
             this.mnuRecherche.BackColor = System.Drawing.SystemColors.Control;
             this.mnuRecherche.Name = "mnuRecherche";
-            this.mnuRecherche.Size = new System.Drawing.Size(185, 22);
+            this.mnuRecherche.Size = new System.Drawing.Size(176, 22);
             this.mnuRecherche.Text = "Recherche";
             this.mnuRecherche.Click += new System.EventHandler(this.mnuRecherche_Click);
             // 
@@ -219,7 +221,7 @@
             // 
             this.mnuDataDir.Image = global::org.inek.InekBrowser.Properties.Resources.folder_document_icon;
             this.mnuDataDir.Name = "mnuDataDir";
-            this.mnuDataDir.Size = new System.Drawing.Size(185, 22);
+            this.mnuDataDir.Size = new System.Drawing.Size(176, 22);
             this.mnuDataDir.Text = "Daten-Ordner öffnen";
             this.mnuDataDir.Click += new System.EventHandler(this.mnuDataDir_Click);
             // 
@@ -231,7 +233,7 @@
             this.pDFExportToolStripMenuItem,
             this.designerToolStripMenuItem});
             this.mnuReport.Name = "mnuReport";
-            this.mnuReport.Size = new System.Drawing.Size(54, 20);
+            this.mnuReport.Size = new System.Drawing.Size(52, 20);
             this.mnuReport.Text = "Report";
             // 
             // druckenToolStripMenuItem
@@ -239,7 +241,7 @@
             this.druckenToolStripMenuItem.Image = global::org.inek.InekBrowser.Properties.Resources.peppo_print;
             this.druckenToolStripMenuItem.Name = "druckenToolStripMenuItem";
             this.druckenToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.druckenToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.druckenToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.druckenToolStripMenuItem.Text = "Drucken";
             this.druckenToolStripMenuItem.Click += new System.EventHandler(this.druckenToolStripMenuItem_Click);
             // 
@@ -247,14 +249,14 @@
             // 
             this.pDFExportToolStripMenuItem.Image = global::org.inek.InekBrowser.Properties.Resources.doc_pdf_icon;
             this.pDFExportToolStripMenuItem.Name = "pDFExportToolStripMenuItem";
-            this.pDFExportToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.pDFExportToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.pDFExportToolStripMenuItem.Text = "PDF-Export";
             this.pDFExportToolStripMenuItem.Click += new System.EventHandler(this.pDFExportToolStripMenuItem_Click);
             // 
             // designerToolStripMenuItem
             // 
             this.designerToolStripMenuItem.Name = "designerToolStripMenuItem";
-            this.designerToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.designerToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.designerToolStripMenuItem.Text = "Designer";
             this.designerToolStripMenuItem.Visible = false;
             this.designerToolStripMenuItem.Click += new System.EventHandler(this.designerToolStripMenuItem_Click);
@@ -274,7 +276,7 @@
             // 
             this.mnuManual.Image = global::org.inek.InekBrowser.Properties.Resources.peppo_manual;
             this.mnuManual.Name = "mnuManual";
-            this.mnuManual.Size = new System.Drawing.Size(130, 22);
+            this.mnuManual.Size = new System.Drawing.Size(122, 22);
             this.mnuManual.Text = "Handbuch";
             this.mnuManual.Click += new System.EventHandler(this.mnuManual_Click);
             // 
@@ -282,7 +284,7 @@
             // 
             this.mnuHelp.Image = global::org.inek.InekBrowser.Properties.Resources.peppo_help;
             this.mnuHelp.Name = "mnuHelp";
-            this.mnuHelp.Size = new System.Drawing.Size(130, 22);
+            this.mnuHelp.Size = new System.Drawing.Size(122, 22);
             this.mnuHelp.Text = "Hilfe";
             this.mnuHelp.Click += new System.EventHandler(this.mnuHelp_Click);
             // 
@@ -290,7 +292,7 @@
             // 
             this.mnuInfo.Image = global::org.inek.InekBrowser.Properties.Resources.peppo_info;
             this.mnuInfo.Name = "mnuInfo";
-            this.mnuInfo.Size = new System.Drawing.Size(130, 22);
+            this.mnuInfo.Size = new System.Drawing.Size(122, 22);
             this.mnuInfo.Text = "Info";
             this.mnuInfo.Click += new System.EventHandler(this.mnuInfo_Click);
             // 
@@ -349,10 +351,10 @@
             this.tabControl.Controls.Add(this.tabSecondaryDiagnosis);
             this.tabControl.Controls.Add(this.tabProcedures);
             this.tabControl.Controls.Add(this.tabCosts);
-            this.tabControl.Location = new System.Drawing.Point(3, 260);
+            this.tabControl.Location = new System.Drawing.Point(3, 267);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(1190, 374);
+            this.tabControl.Size = new System.Drawing.Size(1190, 367);
             this.tabControl.TabIndex = 8;
             this.tabControl.SelectedIndexChanged += new System.EventHandler(this.tabControl_SelectedIndexChanged);
             this.tabControl.Click += new System.EventHandler(this.tabControl_Click);
@@ -363,7 +365,7 @@
             this.tabMainDiagnosis.Location = new System.Drawing.Point(4, 22);
             this.tabMainDiagnosis.Name = "tabMainDiagnosis";
             this.tabMainDiagnosis.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMainDiagnosis.Size = new System.Drawing.Size(1182, 348);
+            this.tabMainDiagnosis.Size = new System.Drawing.Size(1182, 341);
             this.tabMainDiagnosis.TabIndex = 0;
             this.tabMainDiagnosis.Text = "Hauptdiagnosen";
             this.tabMainDiagnosis.UseVisualStyleBackColor = true;
@@ -386,7 +388,7 @@
             this.grdMainDiagnosis.RowHeadersVisible = false;
             this.grdMainDiagnosis.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.helpProvider1.SetShowHelp(this.grdMainDiagnosis, true);
-            this.grdMainDiagnosis.Size = new System.Drawing.Size(1176, 342);
+            this.grdMainDiagnosis.Size = new System.Drawing.Size(1176, 335);
             this.grdMainDiagnosis.TabIndex = 0;
             this.grdMainDiagnosis.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdMainDiagnosis_CellDoubleClick);
             // 
@@ -396,7 +398,7 @@
             this.tabSecondaryDiagnosis.Location = new System.Drawing.Point(4, 22);
             this.tabSecondaryDiagnosis.Name = "tabSecondaryDiagnosis";
             this.tabSecondaryDiagnosis.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSecondaryDiagnosis.Size = new System.Drawing.Size(1182, 348);
+            this.tabSecondaryDiagnosis.Size = new System.Drawing.Size(1182, 341);
             this.tabSecondaryDiagnosis.TabIndex = 1;
             this.tabSecondaryDiagnosis.Text = "Nebendiagnosen";
             this.tabSecondaryDiagnosis.UseVisualStyleBackColor = true;
@@ -405,12 +407,10 @@
             // 
             this.grdSecondaryDiagnosis.AllowUserToAddRows = false;
             this.grdSecondaryDiagnosis.AllowUserToDeleteRows = false;
-            this.grdSecondaryDiagnosis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.grdSecondaryDiagnosis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdSecondaryDiagnosis.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.grdSecondaryDiagnosis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdSecondaryDiagnosis.Dock = System.Windows.Forms.DockStyle.Fill;
             this.helpProvider1.SetHelpKeyword(this.grdSecondaryDiagnosis, "Datenreiter_Nebendiagnosen.htm");
             this.helpProvider1.SetHelpNavigator(this.grdSecondaryDiagnosis, System.Windows.Forms.HelpNavigator.Topic);
             this.grdSecondaryDiagnosis.Location = new System.Drawing.Point(3, 3);
@@ -421,7 +421,7 @@
             this.grdSecondaryDiagnosis.RowHeadersVisible = false;
             this.grdSecondaryDiagnosis.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.helpProvider1.SetShowHelp(this.grdSecondaryDiagnosis, true);
-            this.grdSecondaryDiagnosis.Size = new System.Drawing.Size(1162, 419);
+            this.grdSecondaryDiagnosis.Size = new System.Drawing.Size(1176, 335);
             this.grdSecondaryDiagnosis.TabIndex = 1;
             this.grdSecondaryDiagnosis.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdSecondaryDiagnosis_CellDoubleClick);
             // 
@@ -431,7 +431,7 @@
             this.tabProcedures.Location = new System.Drawing.Point(4, 22);
             this.tabProcedures.Name = "tabProcedures";
             this.tabProcedures.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProcedures.Size = new System.Drawing.Size(1182, 348);
+            this.tabProcedures.Size = new System.Drawing.Size(1182, 341);
             this.tabProcedures.TabIndex = 2;
             this.tabProcedures.Text = "Prozeduren";
             this.tabProcedures.UseVisualStyleBackColor = true;
@@ -454,7 +454,7 @@
             this.grdProcedures.RowHeadersVisible = false;
             this.grdProcedures.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.helpProvider1.SetShowHelp(this.grdProcedures, true);
-            this.grdProcedures.Size = new System.Drawing.Size(1176, 342);
+            this.grdProcedures.Size = new System.Drawing.Size(1176, 335);
             this.grdProcedures.TabIndex = 2;
             this.grdProcedures.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdProcedures_CellDoubleClick);
             // 
@@ -466,7 +466,7 @@
             this.tabCosts.Location = new System.Drawing.Point(4, 22);
             this.tabCosts.Name = "tabCosts";
             this.tabCosts.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCosts.Size = new System.Drawing.Size(1182, 348);
+            this.tabCosts.Size = new System.Drawing.Size(1182, 341);
             this.tabCosts.TabIndex = 3;
             this.tabCosts.Text = "Tageskosten";
             // 
@@ -488,7 +488,7 @@
             this.grdCosts.RowHeadersVisible = false;
             this.grdCosts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.helpProvider1.SetShowHelp(this.grdCosts, true);
-            this.grdCosts.Size = new System.Drawing.Size(1176, 342);
+            this.grdCosts.Size = new System.Drawing.Size(1176, 335);
             this.grdCosts.TabIndex = 3;
             this.grdCosts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdCosts_CellClick);
             // 
@@ -500,8 +500,9 @@
             this.peppData.Degression = "0";
             this.peppData.Dock = System.Windows.Forms.DockStyle.Fill;
             this.peppData.Location = new System.Drawing.Point(3, 91);
+            this.peppData.MinimumSize = new System.Drawing.Size(0, 170);
             this.peppData.Name = "peppData";
-            this.peppData.Size = new System.Drawing.Size(1190, 163);
+            this.peppData.Size = new System.Drawing.Size(1190, 170);
             this.peppData.TabIndex = 12;
             this.peppData.ClickedCatalogue += new System.EventHandler(this.peppData_ClickedCatalogue);
             // 

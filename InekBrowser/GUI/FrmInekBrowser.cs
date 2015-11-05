@@ -196,6 +196,7 @@ namespace org.inek.InekBrowser.GUI {
                 var q = CsvData.Context().System.Select(p => new { pe_SK = p.Category, pe_Pepp = p.Code, pe_Text = p.Text });
                 dlg.SetDataSource(q);
                 dlg.Text = "PEPPs";
+                dlg.ToolTips(new [] {"Strukturkategorie", "PEPP", "Text"});
             } else if (Program.SystemBrowser == Program.System.Drg) {
                 var q =
                     CsvData.Context()
@@ -210,6 +211,7 @@ namespace org.inek.InekBrowser.GUI {
                                     });
                 dlg.SetDataSource(q);
                 dlg.Text = "DRGs";
+                dlg.ToolTips(new[] {"MDC", "Partition", "DRG", "Text", "Belegabteilung Kalkuliert"});
             } else if (Program.SystemBrowser == Program.System.P21) {
                 var q =
                     CsvData.Context()
@@ -223,6 +225,7 @@ namespace org.inek.InekBrowser.GUI {
                                 });
                 dlg.SetDataSource(q);
                 dlg.Text = "DRGs";
+                dlg.ToolTips(new[] { "MDC", "Partition", "DRG", "Text" });
             }
             dlg.Show();
             Cursor = DefaultCursor;
@@ -247,6 +250,7 @@ namespace org.inek.InekBrowser.GUI {
                                               st_TageAnzahl = sk.DayCount
                                           });
                 dlg.SetDataSource(q);
+                dlg.ToolTips(new[] {"Strukturkategorie", "Sortierung", "Text", "Anzahl PEPPs", "Anzahl Fälle", "Anzahl Tage"});
             } else if (Program.SystemBrowser == Program.System.Drg || Program.SystemBrowser == Program.System.P21) {
                 dlg.Text = "MDCs";
                 var q =
@@ -260,6 +264,7 @@ namespace org.inek.InekBrowser.GUI {
                                         IM_Faelle_Anzahl = mdc.CaseCount
                                     });
                 dlg.SetDataSource(q);
+                dlg.ToolTips(new [] {"MDC", "Text", "Anzahl DRGs", "Anzahl Fälle"});
             }
             
             dlg.ShowDialog(this);
@@ -278,7 +283,7 @@ namespace org.inek.InekBrowser.GUI {
                                                                           kd_VwdSummeTage = pi.LosSumDays,
                                                                           kd_VwdMw = pi.LosAverage,
                                                                           kd_VwdStd = pi.LosStandard,
-                                                                          kd_VwdHK = pi.LosStandard,
+                                                                          kd_VwdHK = pi.LosHc,
                                                                           kd_GeschlechtM = pi.GenderMale,
                                                                           kd_GeschlechtW = pi.GenderFemale,
                                                                           kd_AlterMw = pi.AgeAverage,
@@ -305,6 +310,12 @@ namespace org.inek.InekBrowser.GUI {
                                                                       });
                 dlg.SetDataSource(q);
                 dlg.Text = "Kopfdaten";
+                dlg.ToolTips(new[] {
+                                       "PEPP", "Anzahl Fälle", "Summe Verweildauertage", "Mittelwert Verweildauertage", "Standardabweichung Verweildauertage", "Homogenitätskoeffizient Verweildauertage", "Geschlecht Männlich", "Geschlecht Weiblich",
+                                       "Mittelwert Alter", "Standardabweichung Alter", "Alter unter 28 Tage", "Alter unter 1 Jahr", "Alter unter 3 Jahre", "Alter unter 6 Jahre", "Alter unter 10 Jahre", "Alter unter 16 Jahre", "Alter unter 18 Jahre", "Alter unter 30 Jahre",
+                                       "Alter unter 40 Jahre", "Alter unter 50 Jahre", "Alter unter 55 Jahre", "Alter unter 60 Jahre", "Alter unter 65 Jahre", "Alter unter 75 Jahre", "Alter unter 80 Jahre", "Alter unter 99 Jahre",
+                                       "Mittelwert Tageskosten", "Standardabweichung Tageskosten", "Homogenitätskoeffizient Tageskosten"
+                                   });
             } else if (Program.SystemBrowser == Program.System.Drg) {
                 var q = CsvData.Context().SystemInfo.Select(drg => new {
                                                                            IK_MDC = drg.MDC,
@@ -348,6 +359,12 @@ namespace org.inek.InekBrowser.GUI {
                                                                        });
                 dlg.SetDataSource(q);
                 dlg.Text = "Kopfdaten";
+                dlg.ToolTips(new [] {
+                                        "MDC", "DRG", "Anzahl Fälle", "PCCL 0", "PCCL 1", "PCCL 2", "PCCL 3", "PCCL 4", "Geschlecht Männlich", "Geschlecht Weiblich", "Geschlecht Unbestimmt",
+                                        "Alter unter 28 Tage", "Alter unter 1 Jahr", "Alter unter 3 Jahre", "Alter unter 6 Jahre", "Alter unter 10 Jahre", "Alter unter 16 Jahre", "Alter unter 18 Jahre", "Alter unter 30 Jahre",
+                                        "Alter unter 40 Jahre", "Alter unter 50 Jahre", "Alter unter 55 Jahre", "Alter unter 60 Jahre", "Alter unter 65 Jahre", "Alter unter 75 Jahre", "Alter unter 80 Jahre", "Alter unter 99 Jahre",
+                                        "Kurze Verweildauer", "Normale Verweildauer", "Lange Verweildauer", "", "", "Mittelwert Verweildauer", "Bewertungsrelation", "Gesamt", "Standardabweichung Verweildauer", "Mittelwert Kosten", "Standardabweichung Kosten"
+                                    });
             } else if (Program.SystemBrowser == Program.System.P21) {
                 var q = CsvData.Context().SystemInfo.Select(drg => new {
                     IK_MDC = drg.MDC,
@@ -389,6 +406,12 @@ namespace org.inek.InekBrowser.GUI {
                 });
                 dlg.SetDataSource(q);
                 dlg.Text = "Kopfdaten";
+                dlg.ToolTips(new[] {
+                                        "MDC", "DRG", "Anzahl Fälle", "PCCL 0", "PCCL 1", "PCCL 2", "PCCL 3", "PCCL 4", "Geschlecht Männlich", "Geschlecht Weiblich", "Geschlecht Unbestimmt",
+                                        "Alter unter 28 Tage", "Alter unter 1 Jahr", "Alter unter 3 Jahre", "Alter unter 6 Jahre", "Alter unter 10 Jahre", "Alter unter 16 Jahre", "Alter unter 18 Jahre", "Alter unter 30 Jahre",
+                                        "Alter unter 40 Jahre", "Alter unter 50 Jahre", "Alter unter 55 Jahre", "Alter unter 60 Jahre", "Alter unter 65 Jahre", "Alter unter 75 Jahre", "Alter unter 80 Jahre", "Alter unter 99 Jahre",
+                                        "Kurze Verweildauer", "Normale Verweildauer", "Lange Verweildauer", "", "", "Mittelwert Verweildauer", "Bewertungsrelation", "Gesamt", "Standardabweichung Verweildauer", "Mittelwert Kosten", "Standardabweichung Kosten"
+                                    });
             }
             dlg.ShowDialog(this);
             Cursor = DefaultCursor;
@@ -415,6 +438,7 @@ namespace org.inek.InekBrowser.GUI {
                                         IH_Anzahl = drg.Count
                                     });
                 dlg.SetDataSource(q);
+                dlg.ToolTips(new []{"DRG", "Code", "Prozent", "Formatierter Code", "Anzahl"});
             } else if (Program.SystemBrowser == Program.System.P21) {
                 var q =
                     CsvData.Context()
@@ -427,6 +451,7 @@ namespace org.inek.InekBrowser.GUI {
                                     IH_Prozent = drg.Fraction
                                 });
                 dlg.SetDataSource(q);
+                dlg.ToolTips(new []{"DRG", "Formatierter Code", "Anzahl", "Prozent"});
             }
             dlg.Text = "Hauptdiagnosen";
             dlg.ShowDialog(this);
@@ -452,6 +477,7 @@ namespace org.inek.InekBrowser.GUI {
                                         nd_NennungenAnteil = s.EntryFraction
                                     });
                 dlg.SetDataSource(q);
+                dlg.ToolTips(new []{"PEPP", "Code", "Anzahl Fälle", "Anteil Fälle", "Anzahl Nennungen", "Anteil Nennungen"});
             } else if (Program.SystemBrowser == Program.System.Drg) {
                 var q =
                     CsvData.Context()
@@ -467,6 +493,7 @@ namespace org.inek.InekBrowser.GUI {
                                         IN_AnzahlN = drg.EntryCount
                                     });
                 dlg.SetDataSource(q);
+                dlg.ToolTips(new []{"DRG", "Code", "Anteil Fälle", "Formatierter Code", "Anzahl Fälle", "Anteil Nennungen", "Anzahl Nennungen"});
             } else if (Program.SystemBrowser == Program.System.P21) {
                 var q =
                     CsvData.Context()
@@ -481,6 +508,7 @@ namespace org.inek.InekBrowser.GUI {
                                     IN_ProzentN = drg.EntryFraction
                                 });
                 dlg.SetDataSource(q);
+                dlg.ToolTips(new[] { "DRG", "Formatierter Code", "Anzahl Fälle", "Anteil Fälle", "Anzahl Nennungen", "Anteil Nennungen" });
             }
             dlg.Text = "Nebendiagnosen";
             dlg.ShowDialog(this);
@@ -502,6 +530,7 @@ namespace org.inek.InekBrowser.GUI {
                                                                          pr_NennungenAnteil = p.EntryFraction
                                                                      });
                 dlg.SetDataSource(q);
+                dlg.ToolTips(new[] { "PEPP", "Code", "Anzahl Fälle", "Anteil Fälle", "Anzahl Nennungen", "Anteil Nennungen" });
             } else if (Program.SystemBrowser == Program.System.Drg) {
                 var q = CsvData.Context().Procedures.Select(p => new {
                     IP_DRG = p.System,
@@ -513,6 +542,7 @@ namespace org.inek.InekBrowser.GUI {
                     IP_AnzahlN = p.EntryCount
                 });
                 dlg.SetDataSource(q);
+                dlg.ToolTips(new[] { "DRG", "Code", "Anteil Fälle", "Formatierter Code", "Anzahl Fälle", "Anteil Nennungen", "Anzahl Nennungen" });
             } else if (Program.SystemBrowser == Program.System.P21) {
                 var q = CsvData.Context().Procedures.Select(p => new {
                     IP_DRG = p.System,
@@ -523,6 +553,7 @@ namespace org.inek.InekBrowser.GUI {
                     IP_ProzentN = p.EntryFraction
                 });
                 dlg.SetDataSource(q);
+                dlg.ToolTips(new[] { "DRG", "Formatierter Code", "Anzahl Fälle", "Anteil Fälle", "Anzahl Nennungen", "Anteil Nennungen" });
             }
             dlg.Text = "Prozeduren";
             dlg.ShowDialog();
@@ -553,6 +584,11 @@ namespace org.inek.InekBrowser.GUI {
                                                                     ko_KArt8 = c.CostType8
                                                                 });
                 dlg.SetDataSource(q);
+                dlg.ToolTips(new[] {
+                                       "PEPP", "Kostenbereich",
+                                       "Personalkosten Ärztlicher Dienst", "Personalkosten Pflege-/ Erziehungsdienst", "Personalkosten Psychologen", "Personalkosten Sozialarbeiter/ Sozial-/Heilpädagogen", "Personalkosten Spezialtherapeuten", "Personalkosten Med. -techn. Dienst/Funktionsdienst",
+                                       "Sachkosten Arzneimittel", "Sachkosten Arzneimittel", "Sachkosten Implantate/Transplantate", "Sachkosten Übriger medizinischer Bedarf", "Sachkosten Übriger medizinischer Bedarf", "Personal- u. Sachkosten med. Infrastruktur", "Personal- u. Sachkosten nicht med. Infrastruktur"
+                                   });
             } else if (Program.SystemBrowser == Program.System.Drg) {
                 var q = CsvData.Context().Costs.Select(c => new {
                     IO_DRG = c.Code,
@@ -570,6 +606,10 @@ namespace org.inek.InekBrowser.GUI {
                     IO_Summe = c.CostSum
                 });
                 dlg.SetDataSource(q);
+                dlg.ToolTips(new [] {
+                                        "DRG", "Kostenbereich", "Personalkosten Ärztlicher Dienst", "Personalkosten Pflegedienst", "Personalkosten Med.-techn. Dienst/Funktionsdienst", "Sachkosten Arzneimittel", "Sachkosten Arzneimittel",
+                                        "Sachkosten Implantate/Transplantate", "Sachkosten Übriger medizinischer Bedarf", "Sachkosten Übriger medizinischer Bedarf", "Personal- und Sachkosten med. Infrastruktur", "Personal- und Sachkosten nicht med. Infrastruktur", "Summe"
+                                    });
             }
             dlg.Text = "Kosten";
             dlg.ShowDialog(this);
@@ -589,6 +629,7 @@ namespace org.inek.InekBrowser.GUI {
             dlg.SetDataSource(q);
             dlg.FormatColumn(2, "#0.0000");
             dlg.Text = "Katalog";
+            dlg.ToolTips(new []{"PEPP", "Vergütungsklasse", "Relativgewicht"});
             dlg.ShowDialog();
             Cursor = DefaultCursor;
         }
@@ -607,6 +648,7 @@ namespace org.inek.InekBrowser.GUI {
                                                                         re_Prozedur = d.Procedure
                                                                     });
                 dlg.SetDataSource(q);
+                dlg.ToolTips(new []{"Code", "Text", "Hauptdiagnosen", "Nebendiagnosen", "Prozeduren"});
             } else if (Program.SystemBrowser == Program.System.Drg) {
                 var q = CsvData.Context().Recherche.Select(d => new {
                     IC_Code = d.Code,
@@ -617,6 +659,7 @@ namespace org.inek.InekBrowser.GUI {
                     IC_AnzProzI = d.Procedure
                 });
                 dlg.SetDataSource(q);
+                dlg.ToolTips(new []{"Code", "Text", "Formatierter Code", "Hauptdiagnosen", "Nebendiagnosen", "Prozeduren"});
             } else if (Program.SystemBrowser == Program.System.P21) {
                 var q = CsvData.Context().Recherche.Select(d => new {
                     IC_CodeF = d.CodeF,
@@ -626,6 +669,7 @@ namespace org.inek.InekBrowser.GUI {
                     IC_AnzProzI = d.Procedure
                 });
                 dlg.SetDataSource(q);
+                dlg.ToolTips(new []{"Formatierter Code", "Text", "Hauptdiagnosen", "Nebendiagnosen", "Prozeduren"});
             }
             dlg.Text = "Recherche";
             dlg.ShowDialog();
@@ -641,6 +685,7 @@ namespace org.inek.InekBrowser.GUI {
                 var q =
                     CsvData.Context().CostDomains.Select(drg => new {IB_Nr = drg.DomainId, IB_Bereich = drg.DomainText});
                 dlg.SetDataSource(q);
+            dlg.ToolTips(new []{"ID Kostenbereich", "Kostenbereich"});
             } else if (Program.SystemBrowser == Program.System.Pepp) {
                 var q =
                     CsvData.Context()
@@ -648,6 +693,7 @@ namespace org.inek.InekBrowser.GUI {
                             pepp =>
                                 new {kb_Nr = pepp.DomainId, kb_BereichOrder = pepp.Order, kb_Bereich = pepp.DomainText});
                 dlg.SetDataSource(q);
+                dlg.ToolTips(new []{"ID Kostenbereich", "Sortierung", "Kostenbereich"});
             }
             dlg.Text = "Kostenbereich";
             dlg.ShowDialog();
@@ -1677,7 +1723,7 @@ namespace org.inek.InekBrowser.GUI {
                                         AnzahlFälle = pd.Count,
                                         AnteilFälle = pd.Fraction
                                     });
-                    search.StartPosition = FormStartPosition.CenterParent;
+                    search.StartPosition = FormStartPosition.CenterScreen;
                     search.Text = "PEPPs zu Hauptdiagnose";
                     search.SetDataSource(q);
                 } else if (Program.SystemBrowser == Program.System.Drg || Program.SystemBrowser == Program.System.P21) {
@@ -1697,7 +1743,7 @@ namespace org.inek.InekBrowser.GUI {
                                     AnzahlFälle = pd.Count,
                                     AnteilFälle = pd.Fraction
                                 });
-                    search.StartPosition = FormStartPosition.CenterParent;
+                    search.StartPosition = FormStartPosition.CenterScreen;
                     search.Text = "DRGs zu Hauptdiagnose";
                     search.SetDataSource(q);
                 }
@@ -1757,7 +1803,7 @@ namespace org.inek.InekBrowser.GUI {
                     search.Text = "DRGs zu Nebendiagnose";
                     search.SetDataSource(q);
                 }
-                search.StartPosition = FormStartPosition.CenterParent;
+                search.StartPosition = FormStartPosition.CenterScreen;
                 search.ButtonShowIsVisible = false;
                 search.ColumnTextAlign(2, DataGridViewContentAlignment.MiddleRight);
                 search.ColumnFormat("##,##0", 2);
@@ -1816,7 +1862,7 @@ namespace org.inek.InekBrowser.GUI {
                     search.SetDataSource(q);
                     search.Text = "DRGs zu Prozedur";
                 }
-                search.StartPosition = FormStartPosition.CenterParent;
+                search.StartPosition = FormStartPosition.CenterScreen;
                 search.ButtonShowIsVisible = false;
                 search.ColumnTextAlign(2, DataGridViewContentAlignment.MiddleRight);
                 search.ColumnFormat("##,##0", 2);

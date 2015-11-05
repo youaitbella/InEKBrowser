@@ -10,6 +10,6 @@ namespace org.inek.InekBrowser {
         }
 
         public static System SystemBrowser { get; set; }
-        public const string Year = "2015";
+        public const string Year = "2016";
     }
 }

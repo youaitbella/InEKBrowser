@@ -884,7 +884,7 @@
             this.groupBox1.Controls.Add(this.txtLosHomogeneityCoeff);
             this.groupBox1.Controls.Add(this.txtLosStandardDeviation);
             this.groupBox1.Controls.Add(this.txtLosAverage);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(276, 21);
             this.groupBox1.Name = "groupBox1";
@@ -1021,7 +1021,7 @@
             // 
             this.grpCases.BackColor = System.Drawing.Color.Transparent;
             this.grpCases.Controls.Add(this.txtCasesSummary);
-            this.grpCases.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpCases.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpCases.ForeColor = System.Drawing.Color.White;
             this.grpCases.Location = new System.Drawing.Point(6, 21);
             this.grpCases.Name = "grpCases";
@@ -1053,7 +1053,7 @@
             // 
             this.grpLos.BackColor = System.Drawing.Color.Transparent;
             this.grpLos.Controls.Add(this.txtDaysSummary);
-            this.grpLos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpLos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpLos.ForeColor = System.Drawing.Color.White;
             this.grpLos.Location = new System.Drawing.Point(84, 21);
             this.grpLos.Name = "grpLos";

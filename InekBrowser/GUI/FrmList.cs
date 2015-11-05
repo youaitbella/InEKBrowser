@@ -78,5 +78,11 @@ namespace org.inek.InekBrowser.GUI {
                 Dispose();
         }
 
+        public void ToolTips(string[] toolTips) {
+            for (int i = 0; i < toolTips.Length; i++) {
+                grdData.Columns[i].HeaderCell.ToolTipText = toolTips[i];
+            }
+        }
+
     }
 }

@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Globalization;
 using System.IO;
+using System.Security;
 using System.Windows.Forms;
 using org.inek.InekBrowser.Data.Entities;
 
@@ -359,7 +361,8 @@ namespace org.inek.InekBrowser.Data {
             string relativeName = "Data\\" + Program.Year + "\\" + filename;
 
             try {
-                foreach (string line in File.ReadLines(relativeName)) {
+                foreach (string fileLine in File.ReadLines(relativeName)) {
+                    string line = fileLine.Replace(",", CultureInfo.CurrentCulture.NumberFormat.CurrencyDecimalSeparator);
                     if (isFirstLine) {
                         isFirstLine = false;
                         if (line != headline) {
