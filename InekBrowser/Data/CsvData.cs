@@ -358,7 +358,7 @@ namespace org.inek.InekBrowser.Data {
                 names.Add(header[i], i);
             }
             bool isFirstLine = true;
-            string relativeName = "Data\\" + Program.Year + "\\" + filename;
+            string relativeName = Path.Combine("Data",Program.Year,filename);
 
             try {
                 foreach (string fileLine in File.ReadLines(relativeName)) {
@@ -366,7 +366,7 @@ namespace org.inek.InekBrowser.Data {
                     if (isFirstLine) {
                         isFirstLine = false;
                         if (line != headline) {
-                            throw new DataException("Wrong headline");
+                            throw new DataException("Wrong headline. File: "+filename+"\nRead line:"+line+"\n"+headline);
                         }
                     } else {
                         string[] tokens = line.Split(new[] {";"}, StringSplitOptions.None);
@@ -517,12 +517,11 @@ namespace org.inek.InekBrowser.Data {
 
         private void MapRechercheDrg(string[] tokens) {
             var r = new Recherche {
-                                      Code = tokens[0],
-                                      Text = tokens[1],
-                                      CodeF = tokens[2],
-                                      PrimaryDiagnosis = int.Parse(tokens[3]),
-                                      SecondaryDiagnosis = int.Parse(tokens[4]),
-                                      Procedure = int.Parse(tokens[5])
+                CodeF = tokens[0],
+                Text = tokens[1],
+                PrimaryDiagnosis = int.Parse(tokens[2]),
+                SecondaryDiagnosis = int.Parse(tokens[3]),
+                Procedure = int.Parse(tokens[4])
                                   };
             _recherche.Add(r);
         }
@@ -541,12 +540,11 @@ namespace org.inek.InekBrowser.Data {
         private void MapProcedureDrg(string[] tokens) {
             var p = new Procedure {
                                       System = tokens[0],
-                                      ProcCode = tokens[1],
-                                      CaseFraction = decimal.Parse(tokens[2]),
-                                      CodeF = tokens[3],
-                                      CaseCount = int.Parse(tokens[4]),
-                                      EntryFraction = decimal.Parse(tokens[5]),
-                                      EntryCount = int.Parse(tokens[6])
+                                      CodeF = tokens[1],
+                                      CaseCount = int.Parse(tokens[2]),
+                                      CaseFraction = decimal.Parse(tokens[3]),
+                                      EntryCount = int.Parse(tokens[4]),
+                                      EntryFraction = decimal.Parse(tokens[5])
                                   };
             _procedures.Add(p);
         }
@@ -566,13 +564,12 @@ namespace org.inek.InekBrowser.Data {
         private void MapSecondaryDiagnosisDrg(string[] tokens) {
             var sd = new SecondaryDiagnosis {
                                                 System = tokens[0],
-                                                DiagCode = tokens[1],
-                                                CaseFraction = decimal.Parse(tokens[2]),
-                                                CodeF = tokens[3],
-                                                CaseCount = int.Parse(tokens[4]),
-                                                EntryFraction = decimal.Parse(tokens[5]),
-                                                EntryCount = int.Parse(tokens[6])
-                                            };
+                                                CodeF = tokens[1],
+                                                CaseCount = int.Parse(tokens[2]),
+                                                CaseFraction = decimal.Parse(tokens[3]),
+                                                EntryCount = int.Parse(tokens[4]),
+                                                EntryFraction = decimal.Parse(tokens[5])
+            };
             _secondaryDiagnoses.Add(sd);
         }
 
@@ -621,46 +618,48 @@ namespace org.inek.InekBrowser.Data {
             for(int i = 0; i < tokens.Length; i++)
                 if (tokens[i] == "")
                     tokens[i] = 0 + "";
-            var si = new SystemInfo {
-                                        MDC = tokens[0],
-                                        Code = tokens[1],
-                                        CaseCount = int.Parse(tokens[2]),
-                                        PCCL0 = decimal.Parse(tokens[3]),
-                                        PCCL1 = decimal.Parse(tokens[4]),
-                                        PCCL2 = decimal.Parse(tokens[5]),
-                                        PCCL3 = decimal.Parse(tokens[6]),
-                                        PCCL4 = decimal.Parse(tokens[7]),
-                                        GenderMale = decimal.Parse(tokens[8]),
-                                        GenderFemale = decimal.Parse(tokens[9]),
-                                        GenderUnknown = decimal.Parse(tokens[10]),
-                                        AgeBelow28Days = decimal.Parse(tokens[11]),
-                                        AgeBelow1Year = decimal.Parse(tokens[12]),
-                                        AgeBelow3Years = decimal.Parse(tokens[13]),
-                                        AgeBelow6Years = decimal.Parse(tokens[14]),
-                                        AgeBelow10Years = decimal.Parse(tokens[15]),
-                                        AgeBelow16Years = decimal.Parse(tokens[16]),
-                                        AgeBelow18Years = decimal.Parse(tokens[17]),
-                                        AgeBelow30Years = decimal.Parse(tokens[18]),
-                                        AgeBelow40Years = decimal.Parse(tokens[19]),
-                                        AgeBelow50Years = decimal.Parse(tokens[20]),
-                                        AgeBelow55Years = decimal.Parse(tokens[21]),
-                                        AgeBelow60Years = decimal.Parse(tokens[22]),
-                                        AgeBelow65Years = decimal.Parse(tokens[23]),
-                                        AgeBelow75Years = decimal.Parse(tokens[24]),
-                                        AgeBelow80Years = decimal.Parse(tokens[25]),
-                                        AgeBelow99Years = decimal.Parse(tokens[26]),
-                                        LosShort = decimal.Parse(tokens[27]),
-                                        LosNormal = decimal.Parse(tokens[28]),
-                                        LosLong = decimal.Parse(tokens[29]),
-                                        Day1Reduction = int.Parse(tokens[30]),
-                                        Day1Remuneration = int.Parse(tokens[31]),
-                                        LosAverage = decimal.Parse(tokens[32]),
-                                        ValuationRatio = decimal.Parse(tokens[33]),
-                                        FractionAllCases = decimal.Parse(tokens[34]),
-                                        LosStandard = decimal.Parse(tokens[35]),
-                                        CostAverage = decimal.Parse(tokens[36]),
-                                        CostStandard = decimal.Parse(tokens[37])
-                                    };
+            var si = new SystemInfo();
+            si.MDC = tokens[0];
+            si.Code = tokens[1];
+            si.CaseCount = int.Parse(tokens[2]);
+            si.PCCL0 = decimal.Parse(tokens[3]);
+            si.PCCL1 = decimal.Parse(tokens[4]);
+            si.PCCL2 = decimal.Parse(tokens[5]);
+            si.PCCL3 = decimal.Parse(tokens[6]);
+            si.PCCL4 = decimal.Parse(tokens[7]);
+            si.PCCL5 = decimal.Parse(tokens[8]);
+            si.PCCL6 = decimal.Parse(tokens[9]);
+            si.PCCL7 = decimal.Parse(tokens[10]);
+            si.GenderMale = decimal.Parse(tokens[11]);
+            si.GenderFemale = decimal.Parse(tokens[12]);
+            si.GenderUnknown = decimal.Parse(tokens[13]);
+            si.AgeBelow28Days = decimal.Parse(tokens[14]);
+            si.AgeBelow1Year = decimal.Parse(tokens[15]);
+            si.AgeBelow3Years = decimal.Parse(tokens[16]);
+            si.AgeBelow6Years = decimal.Parse(tokens[17]);
+            si.AgeBelow10Years = decimal.Parse(tokens[18]);
+            si.AgeBelow16Years = decimal.Parse(tokens[19]);
+            si.AgeBelow18Years = decimal.Parse(tokens[20]);
+            si.AgeBelow30Years = decimal.Parse(tokens[21]);
+            si.AgeBelow40Years = decimal.Parse(tokens[22]);
+            si.AgeBelow50Years = decimal.Parse(tokens[23]);
+            si.AgeBelow55Years = decimal.Parse(tokens[24]);
+            si.AgeBelow60Years = decimal.Parse(tokens[25]);
+            si.AgeBelow65Years = decimal.Parse(tokens[26]);
+            si.AgeBelow75Years = decimal.Parse(tokens[27]);
+            si.AgeBelow80Years = decimal.Parse(tokens[28]);
+            si.AgeBelow99Years = decimal.Parse(tokens[29]);
+            si.LosShort = decimal.Parse(tokens[30]);
+            si.LosNormal = decimal.Parse(tokens[31]);
+            si.LosLong = decimal.Parse(tokens[32]);
+            si.Day1Reduction = int.Parse(tokens[33]);
+            si.Day1Remuneration = int.Parse(tokens[34]);
+            si.LosAverage = decimal.Parse(tokens[35]);
+            si.ValuationRatio = decimal.Parse(tokens[36]);
+            si.FractionAllCases = decimal.Parse(tokens[37]);
+            si.LosStandard = decimal.Parse(tokens[38]);
+            si.CostAverage = decimal.Parse(tokens[39]);
+            si.CostStandard = decimal.Parse(tokens[40]);
             _systemInfo.Add(si);
         }
 
@@ -712,11 +711,10 @@ namespace org.inek.InekBrowser.Data {
         private void MapPrimaryDiagnosisDrg(string[] tokens) {
             var pd = new PrimaryDiagnosis {
                                               SystemCode = tokens[0],
-                                              DiagCode = tokens[1],
-                                              Fraction = decimal.Parse(tokens[2]),
-                                              DiagCodeF = tokens[3],
-                                              Count = int.Parse(tokens[4])
-                                          };
+                                              DiagCodeF = tokens[1],
+                                              Count = int.Parse(tokens[2]),
+                                              Fraction = decimal.Parse(tokens[3])
+            };
             _primaryDiagnoses.Add(pd);
         }
 

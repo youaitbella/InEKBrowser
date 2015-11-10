@@ -326,6 +326,9 @@ namespace org.inek.InekBrowser.GUI {
                                                                            IK_PCCL2 = drg.PCCL2,
                                                                            IK_PCCL3 = drg.PCCL3,
                                                                            IK_PCCL4 = drg.PCCL4,
+                                                                           IK_PCCL5 = drg.PCCL5,
+                                                                           IK_PCCL6 = drg.PCCL6,   
+                                                                           IK_PCCL7 = drg.PCCL7,
                                                                            IK_GeschlechtM = drg.GenderMale,
                                                                            IK_GeschlechtW = drg.GenderFemale,
                                                                            IK_GeschlechtU = drg.GenderUnknown,
@@ -375,6 +378,9 @@ namespace org.inek.InekBrowser.GUI {
                     IK_PCCL2 = drg.PCCL2,
                     IK_PCCL3 = drg.PCCL3,
                     IK_PCCL4 = drg.PCCL4,
+                    IK_PCCL5 = drg.PCCL5,
+                    IK_PCCL6 = drg.PCCL6,
+                    IK_PCCL7 = drg.PCCL7,
                     IK_GeschlechtM = drg.GenderMale,
                     IK_GeschlechtW = drg.GenderFemale,
                     IK_GeschlechtU = drg.GenderUnknown,
@@ -425,6 +431,7 @@ namespace org.inek.InekBrowser.GUI {
             if (Program.SystemBrowser == Program.System.Pepp) {
                 var q = CsvData.Context().PrimaryDiagnoses.Select(p => new { hd_Pepp = p.SystemCode, hd_Code = p.DiagCode, hd_FaelleAnzahl = p.Count, hd_FaelleAnteil = p.Fraction });
                 dlg.SetDataSource(q);
+                dlg.FormatColumn(3, "P");
             } else if (Program.SystemBrowser == Program.System.Drg) {
                 var q =
                     CsvData.Context()
@@ -432,13 +439,13 @@ namespace org.inek.InekBrowser.GUI {
                             drg =>
                                 new {
                                         IH_DRG = drg.SystemCode,
-                                        IH_Code = drg.DiagCode,
-                                        IH_Prozent = drg.Fraction,
                                         IH_CodeF = drg.DiagCodeF,
+                                        IH_Prozent = drg.Fraction,
                                         IH_Anzahl = drg.Count
                                     });
                 dlg.SetDataSource(q);
-                dlg.ToolTips(new []{"DRG", "Code", "Prozent", "Formatierter Code", "Anzahl"});
+                dlg.ToolTips(new []{"DRG", "Code", "Prozent", "Anzahl"});
+                dlg.FormatColumn(2, "P");
             } else if (Program.SystemBrowser == Program.System.P21) {
                 var q =
                     CsvData.Context()
@@ -451,7 +458,8 @@ namespace org.inek.InekBrowser.GUI {
                                     IH_Prozent = drg.Fraction
                                 });
                 dlg.SetDataSource(q);
-                dlg.ToolTips(new []{"DRG", "Formatierter Code", "Anzahl", "Prozent"});
+                dlg.ToolTips(new []{"DRG", "Code", "Anzahl", "Prozent"});
+                dlg.FormatColumn(3, "P");
             }
             dlg.Text = "Hauptdiagnosen";
             dlg.ShowDialog(this);
@@ -478,6 +486,8 @@ namespace org.inek.InekBrowser.GUI {
                                     });
                 dlg.SetDataSource(q);
                 dlg.ToolTips(new []{"PEPP", "Code", "Anzahl Fälle", "Anteil Fälle", "Anzahl Nennungen", "Anteil Nennungen"});
+                dlg.FormatColumn(3, "P");
+                dlg.FormatColumn(5, "P");
             } else if (Program.SystemBrowser == Program.System.Drg) {
                 var q =
                     CsvData.Context()
@@ -485,15 +495,16 @@ namespace org.inek.InekBrowser.GUI {
                             drg =>
                                 new {
                                         IN_DRG = drg.System,
-                                        IN_Code = drg.DiagCode,
-                                        IN_Prozent = drg.CaseFraction,
                                         IN_CodeF = drg.CodeF,
+                                        IN_Prozent = drg.CaseFraction,
                                         IN_Anzahl = drg.CaseCount,
                                         IN_ProzentN = drg.EntryFraction,
                                         IN_AnzahlN = drg.EntryCount
                                     });
                 dlg.SetDataSource(q);
-                dlg.ToolTips(new []{"DRG", "Code", "Anteil Fälle", "Formatierter Code", "Anzahl Fälle", "Anteil Nennungen", "Anzahl Nennungen"});
+                dlg.ToolTips(new []{"DRG", "Code", "Anteil Fälle", "Anzahl Fälle", "Anteil Nennungen", "Anzahl Nennungen"});
+                dlg.FormatColumn(2, "P");
+                dlg.FormatColumn(4, "P");
             } else if (Program.SystemBrowser == Program.System.P21) {
                 var q =
                     CsvData.Context()
@@ -508,7 +519,9 @@ namespace org.inek.InekBrowser.GUI {
                                     IN_ProzentN = drg.EntryFraction
                                 });
                 dlg.SetDataSource(q);
-                dlg.ToolTips(new[] { "DRG", "Formatierter Code", "Anzahl Fälle", "Anteil Fälle", "Anzahl Nennungen", "Anteil Nennungen" });
+                dlg.ToolTips(new[] { "DRG", "Code", "Anzahl Fälle", "Anteil Fälle", "Anzahl Nennungen", "Anteil Nennungen" });
+                dlg.FormatColumn(3, "P");
+                dlg.FormatColumn(5, "P");
             }
             dlg.Text = "Nebendiagnosen";
             dlg.ShowDialog(this);
@@ -531,18 +544,21 @@ namespace org.inek.InekBrowser.GUI {
                                                                      });
                 dlg.SetDataSource(q);
                 dlg.ToolTips(new[] { "PEPP", "Code", "Anzahl Fälle", "Anteil Fälle", "Anzahl Nennungen", "Anteil Nennungen" });
+                dlg.FormatColumn(3, "P");
+                dlg.FormatColumn(5, "P");
             } else if (Program.SystemBrowser == Program.System.Drg) {
                 var q = CsvData.Context().Procedures.Select(p => new {
                     IP_DRG = p.System,
-                    IP_Code = p.ProcCode,
-                    IP_Prozent = p.CaseFraction,
                     IP_CodeF = p.CodeF,
+                    IP_Prozent = p.CaseFraction,
                     IP_Anzahl = p.CaseCount,
                     IP_ProzentN = p.EntryFraction,
                     IP_AnzahlN = p.EntryCount
                 });
                 dlg.SetDataSource(q);
-                dlg.ToolTips(new[] { "DRG", "Code", "Anteil Fälle", "Formatierter Code", "Anzahl Fälle", "Anteil Nennungen", "Anzahl Nennungen" });
+                dlg.ToolTips(new[] { "DRG", "Code", "Anteil Fälle", "Anzahl Fälle", "Anteil Nennungen", "Anzahl Nennungen" });
+                dlg.FormatColumn(2, "P");
+                dlg.FormatColumn(4, "P");
             } else if (Program.SystemBrowser == Program.System.P21) {
                 var q = CsvData.Context().Procedures.Select(p => new {
                     IP_DRG = p.System,
@@ -553,7 +569,9 @@ namespace org.inek.InekBrowser.GUI {
                     IP_ProzentN = p.EntryFraction
                 });
                 dlg.SetDataSource(q);
-                dlg.ToolTips(new[] { "DRG", "Formatierter Code", "Anzahl Fälle", "Anteil Fälle", "Anzahl Nennungen", "Anteil Nennungen" });
+                dlg.ToolTips(new[] { "DRG", "Code", "Anzahl Fälle", "Anteil Fälle", "Anzahl Nennungen", "Anteil Nennungen" });
+                dlg.FormatColumn(3, "P");
+                dlg.FormatColumn(5, "P");
             }
             dlg.Text = "Prozeduren";
             dlg.ShowDialog();
@@ -651,15 +669,14 @@ namespace org.inek.InekBrowser.GUI {
                 dlg.ToolTips(new []{"Code", "Text", "Hauptdiagnosen", "Nebendiagnosen", "Prozeduren"});
             } else if (Program.SystemBrowser == Program.System.Drg) {
                 var q = CsvData.Context().Recherche.Select(d => new {
-                    IC_Code = d.Code,
-                    IC_Text = d.Text,
                     IC_CodeF = d.CodeF,
+                    IC_Text = d.Text,
                     IC_ANZHDI = d.PrimaryDiagnosis,
                     IC_ANZNDI = d.SecondaryDiagnosis,
                     IC_AnzProzI = d.Procedure
                 });
                 dlg.SetDataSource(q);
-                dlg.ToolTips(new []{"Code", "Text", "Formatierter Code", "Hauptdiagnosen", "Nebendiagnosen", "Prozeduren"});
+                dlg.ToolTips(new []{"Code", "Text", "Hauptdiagnosen", "Nebendiagnosen", "Prozeduren"});
             } else if (Program.SystemBrowser == Program.System.P21) {
                 var q = CsvData.Context().Recherche.Select(d => new {
                     IC_CodeF = d.CodeF,
@@ -669,7 +686,7 @@ namespace org.inek.InekBrowser.GUI {
                     IC_AnzProzI = d.Procedure
                 });
                 dlg.SetDataSource(q);
-                dlg.ToolTips(new []{"Formatierter Code", "Text", "Hauptdiagnosen", "Nebendiagnosen", "Prozeduren"});
+                dlg.ToolTips(new []{"Code", "Text", "Hauptdiagnosen", "Nebendiagnosen", "Prozeduren"});
             }
             dlg.Text = "Recherche";
             dlg.ShowDialog();
@@ -967,6 +984,9 @@ namespace org.inek.InekBrowser.GUI {
             drgData.PCCL2 = q.Select(dh => dh.PCCL2).Single().ToString("P");
             drgData.PCCL3 = q.Select(dh => dh.PCCL3).Single().ToString("P");
             drgData.PCCL4 = q.Select(dh => dh.PCCL4).Single().ToString("P");
+            drgData.PCCL5 = q.Select(dh => dh.PCCL5).Single().ToString("P");
+            drgData.PCCL6 = q.Select(dh => dh.PCCL6).Single().ToString("P");
+            drgData.PCCL7 = q.Select(dh => dh.PCCL7).Single().ToString("P");
             drgData.GenderMale = q.Select(dh => dh.GenderMale).Single().ToString("P");
             drgData.GenderFemale = q.Select(dh => dh.GenderFemale).Single().ToString("P");
             drgData.GenderUnknown = q.Select(dh => dh.GenderUnknown).Single().ToString("P");

@@ -36,10 +36,10 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -116,54 +116,22 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Content Include="Data\2015\RepBrDrg_13_15_Drg.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\RepBrDrg_13_15_Kostenbereich.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\RepBrDrg_BA_13_15_Hauptdiagnose.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\RepBrDrg_BA_13_15_Kopfdaten.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\RepBrDrg_BA_13_15_Kosten.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\RepBrDrg_BA_13_15_Mdc.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\RepBrDrg_BA_13_15_Nebendiagnosen.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\RepBrDrg_BA_13_15_Prozeduren.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\RepBrDrg_BA_13_15_Recherche.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\RepBrDrg_HA_13_15_Hauptdiagnose.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\RepBrDrg_HA_13_15_Kopfdaten.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\RepBrDrg_HA_13_15_Kosten.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\RepBrDrg_HA_13_15_Mdc.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\RepBrDrg_HA_13_15_Nebendiagnosen.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\RepBrDrg_HA_13_15_Prozeduren.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\RepBrDrg_HA_13_15_Recherche.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <None Include="Data\2015\RepBrDrg_13_15_Drg.csv" />
+    <None Include="Data\2015\RepBrDrg_13_15_Kostenbereich.csv" />
+    <None Include="Data\2015\RepBrDrg_BA_13_15_Hauptdiagnose.csv" />
+    <None Include="Data\2015\RepBrDrg_BA_13_15_Kopfdaten.csv" />
+    <None Include="Data\2015\RepBrDrg_BA_13_15_Kosten.csv" />
+    <None Include="Data\2015\RepBrDrg_BA_13_15_Mdc.csv" />
+    <None Include="Data\2015\RepBrDrg_BA_13_15_Nebendiagnosen.csv" />
+    <None Include="Data\2015\RepBrDrg_BA_13_15_Prozeduren.csv" />
+    <None Include="Data\2015\RepBrDrg_BA_13_15_Recherche.csv" />
+    <None Include="Data\2015\RepBrDrg_HA_13_15_Hauptdiagnose.csv" />
+    <None Include="Data\2015\RepBrDrg_HA_13_15_Kopfdaten.csv" />
+    <None Include="Data\2015\RepBrDrg_HA_13_15_Kosten.csv" />
+    <None Include="Data\2015\RepBrDrg_HA_13_15_Mdc.csv" />
+    <None Include="Data\2015\RepBrDrg_HA_13_15_Nebendiagnosen.csv" />
+    <None Include="Data\2015\RepBrDrg_HA_13_15_Prozeduren.csv" />
+    <None Include="Data\2015\RepBrDrg_HA_13_15_Recherche.csv" />
     <Content Include="Print\cmLL2001.chm">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -181,6 +149,54 @@
     </Content>
     <Content Include="DrgBrowser.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2016\RepBrDrg_14_16_Drg.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2016\RepBrDrg_14_16_Kostenbereich.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2016\RepBrDrg_BA_14_16_Hauptdiagnose.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2016\RepBrDrg_BA_14_16_Kopfdaten.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2016\RepBrDrg_BA_14_16_Kosten.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2016\RepBrDrg_BA_14_16_Mdc.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2016\RepBrDrg_BA_14_16_Nebendiagnosen.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2016\RepBrDrg_BA_14_16_Prozeduren.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2016\RepBrDrg_BA_14_16_Recherche.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2016\RepBrDrg_HA_14_16_Hauptdiagnose.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2016\RepBrDrg_HA_14_16_Kopfdaten.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2016\RepBrDrg_HA_14_16_Kosten.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2016\RepBrDrg_HA_14_16_Mdc.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2016\RepBrDrg_HA_14_16_Nebendiagnosen.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2016\RepBrDrg_HA_14_16_Prozeduren.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2016\RepBrDrg_HA_14_16_Recherche.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -285,6 +301,7 @@
       <FileType>Assembly</FileType>
     </PublishFile>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

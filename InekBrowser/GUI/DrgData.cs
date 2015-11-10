@@ -47,6 +47,21 @@ namespace org.inek.InekBrowser.GUI {
             set { txtPCCL4.Text = value; }
         }
 
+        public string PCCL5
+        {
+            set { txtPCCL5.Text = value; }
+        }
+
+        public string PCCL6
+        {
+            set { txtPCCL6.Text = value; }
+        }
+
+        public string PCCL7
+        {
+            set { txtPCCL7.Text = value; }
+        }
+
         public string LosShort {
             set { txtLosShort.Text = value; }
         }

@@ -10,6 +10,9 @@ namespace org.inek.InekBrowser.Data.Entities {
         public decimal PCCL2 { get; set; } // DRG only
         public decimal PCCL3 { get; set; } // DRG only
         public decimal PCCL4 { get; set; } // DRG only
+        public decimal PCCL5 { get; set; } // DRG only
+        public decimal PCCL6 { get; set; } // DRG only
+        public decimal PCCL7 { get; set; } // DRG only
         public decimal LosShort { get; set; } // DRG only
         public decimal LosNormal { get; set; } // DRG only
         public decimal LosLong { get; set; } // DRG only
