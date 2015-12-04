@@ -1976,21 +1976,20 @@ namespace org.inek.InekBrowser.GUI {
                 drgData.casesDrgMDC  = q2.Select(mdc => mdc.DrgCount).Single();
                 //Primary Diagnoses
                 drgData.PrimDiag = CsvData.Context().PrimaryDiagnoses.Where(p => p.SystemCode == systemCode)
-                    .Join(CsvData.Context().Recherche.Where(r => r.PrimaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
+                    .Join(CsvData.Context().Recherche.Where(r => r.PrimaryDiagnosis == 1), d => d.DiagCodeF, r => r.CodeF,
                                 (d, r) => new PrimaryDiagnosis() {
                                     SystemCode = d.SystemCode,
-                                    DiagCode = d.DiagCode,
-                                    Hauptdiagnose = r.Text,
                                     DiagCodeF = d.DiagCodeF,
+                                    Hauptdiagnose = r.Text,
+                                    DiagCode = d.DiagCode,
                                     Count = d.Count,
                                     Fraction = d.Fraction
                                 }).ToList();
                 //Secondary Diagnoses
                 drgData.SecDiag = CsvData.Context().SecondaryDiagnoses.Where(p => p.System == systemCode)
-                    .Join(CsvData.Context().Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.DiagCode, r => r.Code,
+                    .Join(CsvData.Context().Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.CodeF, r => r.CodeF,
                                 (d, r) => new SecondaryDiagnosis() {
                                     System = d.System,
-                                    DiagCode = d.DiagCode,
                                     CodeF = d.CodeF,
                                     Nebendiagnose = r.Text,
                                     CaseCount = d.CaseCount,
@@ -2000,10 +1999,9 @@ namespace org.inek.InekBrowser.GUI {
                                 }).ToList();
                 //Procedures
                 drgData.Proc = CsvData.Context().Procedures.Where(p => p.System == systemCode)
-                     .Join(CsvData.Context().Recherche.Where(r => r.Procedure == 1), d => d.ProcCode, r => r.Code,
+                     .Join(CsvData.Context().Recherche.Where(r => r.Procedure == 1), d => d.CodeF, r => r.CodeF,
                                 (d, r) => new Procedure() {
                                     System = d.System,
-                                    ProcCode = d.ProcCode,
                                     CodeF = d.CodeF,
                                     Prozedur = r.Text,
                                     CaseCount = d.CaseCount,
