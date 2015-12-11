@@ -47,6 +47,9 @@
   </topicref>
   <topicref type="topic" id="416486050145445" build="ALL" modified="2014-01-09T10:28:42.999Z" icon="0" href="Filter">
     <caption translate="true">Filter</caption>
+    <topicref type="topic" id="423414981776966" build="ALL" modified="2015-12-04T09:24:18.456Z" icon="0" href="Haupt_Nebendiagnose_u._Prozedu">
+      <caption translate="true">Fallanteil für gefilterten Kode</caption>
+    </topicref>
     <topicref type="topic" id="416486680913627" build="ALL" modified="2014-01-09T11:10:37.493Z" icon="0" href="Tabellen-Filter">
       <caption translate="true">Tabellen-Filter</caption>
     </topicref>

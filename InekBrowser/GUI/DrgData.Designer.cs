@@ -25,8 +25,6 @@
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
             this.pnlData = new System.Windows.Forms.GroupBox();
-            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.grpMdc = new System.Windows.Forms.GroupBox();
             this.txtN = new System.Windows.Forms.TextBox();
             this.lblN = new System.Windows.Forms.Label();
@@ -105,22 +103,22 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblMale = new System.Windows.Forms.Label();
             this.grpPCCL = new System.Windows.Forms.GroupBox();
+            this.txtPCCL6 = new System.Windows.Forms.TextBox();
+            this.lblPCCL5 = new System.Windows.Forms.Label();
+            this.txtPCCL5 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtPCCL4 = new System.Windows.Forms.TextBox();
             this.txtPCCL3 = new System.Windows.Forms.TextBox();
             this.txtPCCL2 = new System.Windows.Forms.TextBox();
             this.txtPCCL1 = new System.Windows.Forms.TextBox();
             this.txtPCCL0 = new System.Windows.Forms.TextBox();
-            this.lblPCCL4 = new System.Windows.Forms.Label();
+            this.lblPCCL6 = new System.Windows.Forms.Label();
             this.lblPCCL1 = new System.Windows.Forms.Label();
             this.lblPCCL2 = new System.Windows.Forms.Label();
             this.lblPCCL3 = new System.Windows.Forms.Label();
             this.lblPCCL0 = new System.Windows.Forms.Label();
-            this.txtPCCL5 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtPCCL6 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtPCCL7 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.pnlData.SuspendLayout();
             this.grpMdc.SuspendLayout();
             this.grpCaseNormal.SuspendLayout();
@@ -155,17 +153,6 @@
             this.pnlData.TabIndex = 0;
             this.pnlData.TabStop = false;
             this.pnlData.Text = "Kennzahlen";
-            // 
-            // toolTip
-            // 
-            this.toolTip.AutomaticDelay = 200;
-            this.toolTip.AutoPopDelay = 5000;
-            this.toolTip.InitialDelay = 200;
-            this.toolTip.ReshowDelay = 40;
-            // 
-            // helpProvider1
-            // 
-            this.helpProvider1.HelpNamespace = "DrgBrowser.chm";
             // 
             // grpMdc
             // 
@@ -366,6 +353,7 @@
             this.txtCasesNormal.Size = new System.Drawing.Size(91, 21);
             this.txtCasesNormal.TabIndex = 48;
             this.txtCasesNormal.Text = "0";
+            this.txtCasesNormal.TextChanged += new System.EventHandler(this.txtCasesNormal_TextChanged);
             // 
             // lblFromMdc
             // 
@@ -386,7 +374,7 @@
             this.grpValutationRatio.Controls.Add(this.txtValutationRatio);
             this.grpValutationRatio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpValutationRatio.ForeColor = System.Drawing.Color.White;
-            this.grpValutationRatio.Location = new System.Drawing.Point(9, 247);
+            this.grpValutationRatio.Location = new System.Drawing.Point(9, 244);
             this.grpValutationRatio.Name = "grpValutationRatio";
             this.grpValutationRatio.Size = new System.Drawing.Size(179, 66);
             this.grpValutationRatio.TabIndex = 32;
@@ -1359,10 +1347,8 @@
             // 
             this.grpPCCL.AutoSize = true;
             this.grpPCCL.BackColor = System.Drawing.Color.Transparent;
-            this.grpPCCL.Controls.Add(this.txtPCCL7);
-            this.grpPCCL.Controls.Add(this.label5);
             this.grpPCCL.Controls.Add(this.txtPCCL6);
-            this.grpPCCL.Controls.Add(this.label4);
+            this.grpPCCL.Controls.Add(this.lblPCCL5);
             this.grpPCCL.Controls.Add(this.txtPCCL5);
             this.grpPCCL.Controls.Add(this.label3);
             this.grpPCCL.Controls.Add(this.txtPCCL4);
@@ -1370,7 +1356,7 @@
             this.grpPCCL.Controls.Add(this.txtPCCL2);
             this.grpPCCL.Controls.Add(this.txtPCCL1);
             this.grpPCCL.Controls.Add(this.txtPCCL0);
-            this.grpPCCL.Controls.Add(this.lblPCCL4);
+            this.grpPCCL.Controls.Add(this.lblPCCL6);
             this.grpPCCL.Controls.Add(this.lblPCCL1);
             this.grpPCCL.Controls.Add(this.lblPCCL2);
             this.grpPCCL.Controls.Add(this.lblPCCL3);
@@ -1379,10 +1365,68 @@
             this.grpPCCL.ForeColor = System.Drawing.Color.White;
             this.grpPCCL.Location = new System.Drawing.Point(747, 63);
             this.grpPCCL.Name = "grpPCCL";
-            this.grpPCCL.Size = new System.Drawing.Size(86, 223);
+            this.grpPCCL.Size = new System.Drawing.Size(86, 197);
             this.grpPCCL.TabIndex = 28;
             this.grpPCCL.TabStop = false;
             this.grpPCCL.Text = "PCCL";
+            // 
+            // txtPCCL6
+            // 
+            this.txtPCCL6.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtPCCL6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPCCL6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPCCL6.ForeColor = System.Drawing.Color.White;
+            this.helpProvider1.SetHelpKeyword(this.txtPCCL6, "Code-Kennzahlen.htm");
+            this.helpProvider1.SetHelpNavigator(this.txtPCCL6, System.Windows.Forms.HelpNavigator.Topic);
+            this.txtPCCL6.Location = new System.Drawing.Point(29, 156);
+            this.txtPCCL6.Name = "txtPCCL6";
+            this.txtPCCL6.ReadOnly = true;
+            this.txtPCCL6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.helpProvider1.SetShowHelp(this.txtPCCL6, true);
+            this.txtPCCL6.Size = new System.Drawing.Size(51, 21);
+            this.txtPCCL6.TabIndex = 52;
+            this.txtPCCL6.Text = "0";
+            // 
+            // lblPCCL5
+            // 
+            this.lblPCCL5.AutoEllipsis = true;
+            this.lblPCCL5.AutoSize = true;
+            this.lblPCCL5.BackColor = System.Drawing.Color.Transparent;
+            this.lblPCCL5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPCCL5.Location = new System.Drawing.Point(6, 135);
+            this.lblPCCL5.Name = "lblPCCL5";
+            this.lblPCCL5.Size = new System.Drawing.Size(17, 15);
+            this.lblPCCL5.TabIndex = 51;
+            this.lblPCCL5.Text = "5:";
+            // 
+            // txtPCCL5
+            // 
+            this.txtPCCL5.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtPCCL5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPCCL5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPCCL5.ForeColor = System.Drawing.Color.White;
+            this.helpProvider1.SetHelpKeyword(this.txtPCCL5, "Code-Kennzahlen.htm");
+            this.helpProvider1.SetHelpNavigator(this.txtPCCL5, System.Windows.Forms.HelpNavigator.Topic);
+            this.txtPCCL5.Location = new System.Drawing.Point(29, 133);
+            this.txtPCCL5.Name = "txtPCCL5";
+            this.txtPCCL5.ReadOnly = true;
+            this.txtPCCL5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.helpProvider1.SetShowHelp(this.txtPCCL5, true);
+            this.txtPCCL5.Size = new System.Drawing.Size(51, 21);
+            this.txtPCCL5.TabIndex = 50;
+            this.txtPCCL5.Text = "0";
+            // 
+            // label3
+            // 
+            this.label3.AutoEllipsis = true;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 112);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(17, 15);
+            this.label3.TabIndex = 49;
+            this.label3.Text = "4:";
             // 
             // txtPCCL4
             // 
@@ -1469,17 +1513,17 @@
             this.txtPCCL0.TabIndex = 44;
             this.txtPCCL0.Text = "0";
             // 
-            // lblPCCL4
+            // lblPCCL6
             // 
-            this.lblPCCL4.AutoEllipsis = true;
-            this.lblPCCL4.AutoSize = true;
-            this.lblPCCL4.BackColor = System.Drawing.Color.Transparent;
-            this.lblPCCL4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPCCL4.Location = new System.Drawing.Point(6, 158);
-            this.lblPCCL4.Name = "lblPCCL4";
-            this.lblPCCL4.Size = new System.Drawing.Size(17, 15);
-            this.lblPCCL4.TabIndex = 21;
-            this.lblPCCL4.Text = "6:";
+            this.lblPCCL6.AutoEllipsis = true;
+            this.lblPCCL6.AutoSize = true;
+            this.lblPCCL6.BackColor = System.Drawing.Color.Transparent;
+            this.lblPCCL6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPCCL6.Location = new System.Drawing.Point(6, 158);
+            this.lblPCCL6.Name = "lblPCCL6";
+            this.lblPCCL6.Size = new System.Drawing.Size(17, 15);
+            this.lblPCCL6.TabIndex = 21;
+            this.lblPCCL6.Text = "6:";
             // 
             // lblPCCL1
             // 
@@ -1529,92 +1573,16 @@
             this.lblPCCL0.TabIndex = 17;
             this.lblPCCL0.Text = "0:";
             // 
-            // txtPCCL5
+            // toolTip
             // 
-            this.txtPCCL5.BackColor = System.Drawing.Color.SteelBlue;
-            this.txtPCCL5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPCCL5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPCCL5.ForeColor = System.Drawing.Color.White;
-            this.helpProvider1.SetHelpKeyword(this.txtPCCL5, "Code-Kennzahlen.htm");
-            this.helpProvider1.SetHelpNavigator(this.txtPCCL5, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtPCCL5.Location = new System.Drawing.Point(29, 133);
-            this.txtPCCL5.Name = "txtPCCL5";
-            this.txtPCCL5.ReadOnly = true;
-            this.txtPCCL5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.helpProvider1.SetShowHelp(this.txtPCCL5, true);
-            this.txtPCCL5.Size = new System.Drawing.Size(51, 21);
-            this.txtPCCL5.TabIndex = 50;
-            this.txtPCCL5.Text = "0";
+            this.toolTip.AutomaticDelay = 200;
+            this.toolTip.AutoPopDelay = 5000;
+            this.toolTip.InitialDelay = 200;
+            this.toolTip.ReshowDelay = 40;
             // 
-            // label3
+            // helpProvider1
             // 
-            this.label3.AutoEllipsis = true;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 112);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(17, 15);
-            this.label3.TabIndex = 49;
-            this.label3.Text = "4:";
-            // 
-            // txtPCCL6
-            // 
-            this.txtPCCL6.BackColor = System.Drawing.Color.SteelBlue;
-            this.txtPCCL6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPCCL6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPCCL6.ForeColor = System.Drawing.Color.White;
-            this.helpProvider1.SetHelpKeyword(this.txtPCCL6, "Code-Kennzahlen.htm");
-            this.helpProvider1.SetHelpNavigator(this.txtPCCL6, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtPCCL6.Location = new System.Drawing.Point(29, 156);
-            this.txtPCCL6.Name = "txtPCCL6";
-            this.txtPCCL6.ReadOnly = true;
-            this.txtPCCL6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.helpProvider1.SetShowHelp(this.txtPCCL6, true);
-            this.txtPCCL6.Size = new System.Drawing.Size(51, 21);
-            this.txtPCCL6.TabIndex = 52;
-            this.txtPCCL6.Text = "0";
-            // 
-            // label4
-            // 
-            this.label4.AutoEllipsis = true;
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 135);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(17, 15);
-            this.label4.TabIndex = 51;
-            this.label4.Text = "5:";
-            // 
-            // txtPCCL7
-            // 
-            this.txtPCCL7.BackColor = System.Drawing.Color.SteelBlue;
-            this.txtPCCL7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPCCL7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPCCL7.ForeColor = System.Drawing.Color.White;
-            this.helpProvider1.SetHelpKeyword(this.txtPCCL7, "Code-Kennzahlen.htm");
-            this.helpProvider1.SetHelpNavigator(this.txtPCCL7, System.Windows.Forms.HelpNavigator.Topic);
-            this.txtPCCL7.Location = new System.Drawing.Point(29, 179);
-            this.txtPCCL7.Name = "txtPCCL7";
-            this.txtPCCL7.ReadOnly = true;
-            this.txtPCCL7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.helpProvider1.SetShowHelp(this.txtPCCL7, true);
-            this.txtPCCL7.Size = new System.Drawing.Size(51, 21);
-            this.txtPCCL7.TabIndex = 54;
-            this.txtPCCL7.Text = "0";
-            // 
-            // label5
-            // 
-            this.label5.AutoEllipsis = true;
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 181);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(17, 15);
-            this.label5.TabIndex = 53;
-            this.label5.Text = "7:";
+            this.helpProvider1.HelpNamespace = "DrgBrowser.chm";
             // 
             // DrgData
             // 
@@ -1733,10 +1701,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblMale;
         private System.Windows.Forms.GroupBox grpPCCL;
-        private System.Windows.Forms.TextBox txtPCCL7;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtPCCL6;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblPCCL5;
         private System.Windows.Forms.TextBox txtPCCL5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtPCCL4;
@@ -1744,7 +1710,7 @@
         private System.Windows.Forms.TextBox txtPCCL2;
         private System.Windows.Forms.TextBox txtPCCL1;
         private System.Windows.Forms.TextBox txtPCCL0;
-        private System.Windows.Forms.Label lblPCCL4;
+        private System.Windows.Forms.Label lblPCCL6;
         private System.Windows.Forms.Label lblPCCL1;
         private System.Windows.Forms.Label lblPCCL2;
         private System.Windows.Forms.Label lblPCCL3;

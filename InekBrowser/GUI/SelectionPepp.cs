@@ -99,8 +99,7 @@ namespace org.inek.InekBrowser.GUI {
             dlg.StartPosition = FormStartPosition.CenterParent;
             dlg.ButtonShowIsVisible = false;
             var q = CsvData.Context()
-                .Recherche.Where(md => md.PrimaryDiagnosis == 1)
-                .Select(md => new {Hauptdiagnose = md.Code, Text = md.Text});
+                .Recherche.Where(md => md.PrimaryDiagnosis == 1).Select(pd => new { Hauptdiagnose = pd.Code, Text = pd.Text });
             dlg.SetDataSource(q);
             dlg.Text = "Hauptdiagnosen";
             dlg.KeyColumns = new[] {"Hauptdiagnose"};

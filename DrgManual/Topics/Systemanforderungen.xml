@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
-<topic template="Default" status="Complete" lasteditedby="muellermi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+<topic template="Default" status="Complete" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
   <title translate="true">Systemanforderungen &amp; Installation</title>
   <body>
     <header>
@@ -10,7 +10,7 @@
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Zum Ausführen des </text><var styleclass="Normal">&lt;%TITLE2%&gt;s</var><text styleclass="Normal" translate="true"> sollte Ihr System mindestens folgende Anforderungen erfüllen:</text></para>
     <para styleclass="Normal"></para>
-    <list id="1" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
       <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Microsoft Windows XP, Vista, 7 oder 8</text></li>
       <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Microsoft .NET-Framework 4</text></li>
       <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Prozessor: 1GHz</text></li>
@@ -19,9 +19,9 @@
       <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Tastatur und Maus</text></li>
     </list>
     <para styleclass="Normal"></para>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Das Setup-Programm des </text><var styleclass="Normal">&lt;%TITLE2%&gt;s</var><text styleclass="Normal" translate="true"> ist über Ihren Webbrowser unter der URL </text><link displaytype="text" defaultstyle="true" type="weblink" href="http://g-drg.de/GDrgReportBrowser/2015/G-Drg-Report-Browser2015Setup.exe" target="_blank" styleclass="Normal" translate="true">http://g-drg.de/GDrgReportBrowser/2015/G-DRG-Report-Browser2015Setup.exe</link><text styleclass="Normal" translate="true"> erreichbar. Einen entsprechenden Link finden Sie auch auf der Internetseite des InEK. </text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Das Setup-Programm des </text><var styleclass="Normal">&lt;%TITLE2%&gt;s</var><text styleclass="Normal" translate="true"> ist über Ihren Webbrowser unter der URL </text><link displaytype="text" defaultstyle="true" type="weblink" href="http://g-drg.de/GDrgReportBrowser/2016/G-Drg-Report-Browser2016Setup.exe" target="_blank" styleclass="Normal" translate="true">http://g-drg.de/GDrgReportBrowser/2016/G-DRG-Report-Browser2016Setup.exe</link><text styleclass="Normal" translate="true"> erreichbar. Einen entsprechenden Link finden Sie auch auf der Internetseite des InEK. </text></para>
     <para styleclass="Normal"></para>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Nach dem Download des Setup-Programms führen Sie dies aus. Es werden alle notwendigen Daten - soweit erforderlich, inkl. des .NETFramworks -  heruntergeladen und auf Ihrem Rechner installiert. </text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Nach dem Download des Setup-Programms führen Sie dies aus. Es werden alle notwendigen Daten - soweit erforderlich, inkl. des .NETFramworks - &#160;heruntergeladen und auf Ihrem Rechner installiert. </text></para>
     <para styleclass="Hinweis"><text styleclass="Hinweis" translate="true">Für die Installation von Programmen, benötigen Sie die entsprechenden Rechte. Kontaktieren Sie im Bedarfsfall Ihren Administrator.</text></para>
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Nach der Installation wird der </text><var styleclass="Normal">&lt;%TITLE2%&gt;</var><text styleclass="Normal" translate="true"> automatisch gestartet. Zum ersten Start erfolgt die Abfrage, ob Sie die Programmausführung erlauben möchten.</text></para>

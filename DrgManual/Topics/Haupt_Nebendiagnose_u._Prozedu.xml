@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Fallanteil für gefilterten Kode</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Fallanteil für gefilterten Kode</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Sollten Sie in dem Filter eine Hauptdiagnose, Nebendiagnose oder eine Prozedur auswählen und die DRG-Auswahl öffnen, wird für alle betroffenen DRGs der jeweilige Fallanteil für die ausgewählte Hauptdiagnose, Nebendiagnose oder Prozedur angezeigt.</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">In der Anzeige ist auch eine Sortierung nach diesem Fallanteil möglich.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal" style="text-align:center;"><image src="filter-diag.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Auswahl einer Nebendiagnose. Dadurch wird eine zusätzliche Spalte in der DRG-Auswahl dargestellt.</text></para>
+    <para styleclass="Normal"></para>
+  </body>
+</topic>

@@ -57,11 +57,6 @@ namespace org.inek.InekBrowser.GUI {
             set { txtPCCL6.Text = value; }
         }
 
-        public string PCCL7
-        {
-            set { txtPCCL7.Text = value; }
-        }
-
         public string LosShort {
             set { txtLosShort.Text = value; }
         }
@@ -190,6 +185,25 @@ namespace org.inek.InekBrowser.GUI {
             set { txtN.Text = value; }
         }
 
+        public bool PCCL5Visible
+        {
+            get { return txtPCCL5.Visible; }
+            set
+            {
+                txtPCCL5.Visible = value;
+                lblPCCL5.Visible = value;
+            }
+        }
+
+        public bool PCCL6Visible {
+            get { return txtPCCL6.Visible; }
+            set
+            {
+                txtPCCL6.Visible = value;
+                lblPCCL6.Visible = value;
+            }
+        }
+
         public DrgData() {
             InitializeComponent();
         }
@@ -233,6 +247,10 @@ namespace org.inek.InekBrowser.GUI {
         }
 
         private void lblStdAbw_Click(object sender, EventArgs e) {
+
+        }
+
+        private void txtCasesNormal_TextChanged(object sender, EventArgs e) {
 
         }
     }

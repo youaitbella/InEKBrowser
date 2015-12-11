@@ -26,6 +26,9 @@ namespace org.inek.InekBrowser.GUI {
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInekBrowser));
             this.mnuMain = new System.Windows.Forms.MenuStrip();
             this.mnuFile = new System.Windows.Forms.ToolStripMenuItem();
@@ -108,7 +111,7 @@ namespace org.inek.InekBrowser.GUI {
             this.mnuFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.beendenToolStripMenuItem});
             this.mnuFile.Name = "mnuFile";
-            this.mnuFile.Size = new System.Drawing.Size(44, 20);
+            this.mnuFile.Size = new System.Drawing.Size(46, 20);
             this.mnuFile.Text = "Datei";
             // 
             // beendenToolStripMenuItem
@@ -116,7 +119,7 @@ namespace org.inek.InekBrowser.GUI {
             this.beendenToolStripMenuItem.Image = global::org.inek.InekBrowser.Properties.Resources.peppo_quit;
             this.beendenToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.White;
             this.beendenToolStripMenuItem.Name = "beendenToolStripMenuItem";
-            this.beendenToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.beendenToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.beendenToolStripMenuItem.Text = "Beenden";
             this.beendenToolStripMenuItem.Click += new System.EventHandler(this.beendenToolStripMenuItem_Click);
             // 
@@ -136,14 +139,14 @@ namespace org.inek.InekBrowser.GUI {
             this.mnuRecherche,
             this.mnuDataDir});
             this.mnuData.Name = "mnuData";
-            this.mnuData.Size = new System.Drawing.Size(48, 20);
+            this.mnuData.Size = new System.Drawing.Size(50, 20);
             this.mnuData.Text = "Daten";
             // 
             // mnuCategories
             // 
             this.mnuCategories.BackColor = System.Drawing.SystemColors.Control;
             this.mnuCategories.Name = "mnuCategories";
-            this.mnuCategories.Size = new System.Drawing.Size(176, 22);
+            this.mnuCategories.Size = new System.Drawing.Size(185, 22);
             this.mnuCategories.Text = "Strukturkategorien";
             this.mnuCategories.Click += new System.EventHandler(this.MnuCategoriesClick);
             // 
@@ -151,7 +154,7 @@ namespace org.inek.InekBrowser.GUI {
             // 
             this.mnuSystem.BackColor = System.Drawing.SystemColors.Control;
             this.mnuSystem.Name = "mnuSystem";
-            this.mnuSystem.Size = new System.Drawing.Size(176, 22);
+            this.mnuSystem.Size = new System.Drawing.Size(185, 22);
             this.mnuSystem.Text = "Code";
             this.mnuSystem.Click += new System.EventHandler(this.MnuSystemClick);
             // 
@@ -159,7 +162,7 @@ namespace org.inek.InekBrowser.GUI {
             // 
             this.mnuPeppInfo.BackColor = System.Drawing.SystemColors.Control;
             this.mnuPeppInfo.Name = "mnuPeppInfo";
-            this.mnuPeppInfo.Size = new System.Drawing.Size(176, 22);
+            this.mnuPeppInfo.Size = new System.Drawing.Size(185, 22);
             this.mnuPeppInfo.Text = "Kopfdaten";
             this.mnuPeppInfo.Click += new System.EventHandler(this.MnuSystemInfoClick);
             // 
@@ -167,7 +170,7 @@ namespace org.inek.InekBrowser.GUI {
             // 
             this.mnuPrimaryDiagnoses.BackColor = System.Drawing.SystemColors.Control;
             this.mnuPrimaryDiagnoses.Name = "mnuPrimaryDiagnoses";
-            this.mnuPrimaryDiagnoses.Size = new System.Drawing.Size(176, 22);
+            this.mnuPrimaryDiagnoses.Size = new System.Drawing.Size(185, 22);
             this.mnuPrimaryDiagnoses.Text = "Hauptdiagnosen";
             this.mnuPrimaryDiagnoses.Click += new System.EventHandler(this.mnuPrimaryDiagnoses_Click);
             // 
@@ -175,7 +178,7 @@ namespace org.inek.InekBrowser.GUI {
             // 
             this.mnuSecondaryDiagnoses.BackColor = System.Drawing.SystemColors.Control;
             this.mnuSecondaryDiagnoses.Name = "mnuSecondaryDiagnoses";
-            this.mnuSecondaryDiagnoses.Size = new System.Drawing.Size(176, 22);
+            this.mnuSecondaryDiagnoses.Size = new System.Drawing.Size(185, 22);
             this.mnuSecondaryDiagnoses.Text = "Nebendiagnosen";
             this.mnuSecondaryDiagnoses.Click += new System.EventHandler(this.mnuSecondaryDiagnoses_Click);
             // 
@@ -183,7 +186,7 @@ namespace org.inek.InekBrowser.GUI {
             // 
             this.mnuProcedures.BackColor = System.Drawing.SystemColors.Control;
             this.mnuProcedures.Name = "mnuProcedures";
-            this.mnuProcedures.Size = new System.Drawing.Size(176, 22);
+            this.mnuProcedures.Size = new System.Drawing.Size(185, 22);
             this.mnuProcedures.Text = "Prozeduren";
             this.mnuProcedures.Click += new System.EventHandler(this.mnuProcedures_Click);
             // 
@@ -191,21 +194,21 @@ namespace org.inek.InekBrowser.GUI {
             // 
             this.mnuCosts.BackColor = System.Drawing.SystemColors.Control;
             this.mnuCosts.Name = "mnuCosts";
-            this.mnuCosts.Size = new System.Drawing.Size(176, 22);
+            this.mnuCosts.Size = new System.Drawing.Size(185, 22);
             this.mnuCosts.Text = "Kosten";
             this.mnuCosts.Click += new System.EventHandler(this.mnuCosts_Click);
             // 
             // mnuCostDomain
             // 
             this.mnuCostDomain.Name = "mnuCostDomain";
-            this.mnuCostDomain.Size = new System.Drawing.Size(176, 22);
+            this.mnuCostDomain.Size = new System.Drawing.Size(185, 22);
             this.mnuCostDomain.Text = "Kostenbereich";
             this.mnuCostDomain.Click += new System.EventHandler(this.kostenbereichToolStripMenuItem_Click);
             // 
             // mnuCatalogue
             // 
             this.mnuCatalogue.Name = "mnuCatalogue";
-            this.mnuCatalogue.Size = new System.Drawing.Size(176, 22);
+            this.mnuCatalogue.Size = new System.Drawing.Size(185, 22);
             this.mnuCatalogue.Text = "Katalog";
             this.mnuCatalogue.Click += new System.EventHandler(this.mnuCatalogue_Click);
             // 
@@ -213,7 +216,7 @@ namespace org.inek.InekBrowser.GUI {
             // 
             this.mnuRecherche.BackColor = System.Drawing.SystemColors.Control;
             this.mnuRecherche.Name = "mnuRecherche";
-            this.mnuRecherche.Size = new System.Drawing.Size(176, 22);
+            this.mnuRecherche.Size = new System.Drawing.Size(185, 22);
             this.mnuRecherche.Text = "Recherche";
             this.mnuRecherche.Click += new System.EventHandler(this.mnuRecherche_Click);
             // 
@@ -221,7 +224,7 @@ namespace org.inek.InekBrowser.GUI {
             // 
             this.mnuDataDir.Image = global::org.inek.InekBrowser.Properties.Resources.folder_document_icon;
             this.mnuDataDir.Name = "mnuDataDir";
-            this.mnuDataDir.Size = new System.Drawing.Size(176, 22);
+            this.mnuDataDir.Size = new System.Drawing.Size(185, 22);
             this.mnuDataDir.Text = "Daten-Ordner öffnen";
             this.mnuDataDir.Click += new System.EventHandler(this.mnuDataDir_Click);
             // 
@@ -233,7 +236,7 @@ namespace org.inek.InekBrowser.GUI {
             this.pDFExportToolStripMenuItem,
             this.designerToolStripMenuItem});
             this.mnuReport.Name = "mnuReport";
-            this.mnuReport.Size = new System.Drawing.Size(52, 20);
+            this.mnuReport.Size = new System.Drawing.Size(54, 20);
             this.mnuReport.Text = "Report";
             // 
             // druckenToolStripMenuItem
@@ -241,7 +244,7 @@ namespace org.inek.InekBrowser.GUI {
             this.druckenToolStripMenuItem.Image = global::org.inek.InekBrowser.Properties.Resources.peppo_print;
             this.druckenToolStripMenuItem.Name = "druckenToolStripMenuItem";
             this.druckenToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.druckenToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.druckenToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.druckenToolStripMenuItem.Text = "Drucken";
             this.druckenToolStripMenuItem.Click += new System.EventHandler(this.druckenToolStripMenuItem_Click);
             // 
@@ -249,15 +252,16 @@ namespace org.inek.InekBrowser.GUI {
             // 
             this.pDFExportToolStripMenuItem.Image = global::org.inek.InekBrowser.Properties.Resources.doc_pdf_icon;
             this.pDFExportToolStripMenuItem.Name = "pDFExportToolStripMenuItem";
-            this.pDFExportToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.pDFExportToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.pDFExportToolStripMenuItem.Text = "PDF-Export";
             this.pDFExportToolStripMenuItem.Click += new System.EventHandler(this.pDFExportToolStripMenuItem_Click);
             // 
             // designerToolStripMenuItem
             // 
             this.designerToolStripMenuItem.Name = "designerToolStripMenuItem";
-            this.designerToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.designerToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.designerToolStripMenuItem.Text = "Designer";
+            this.designerToolStripMenuItem.Visible = false;
             this.designerToolStripMenuItem.Click += new System.EventHandler(this.designerToolStripMenuItem_Click);
             // 
             // mnuQuestionTag
@@ -275,7 +279,7 @@ namespace org.inek.InekBrowser.GUI {
             // 
             this.mnuManual.Image = global::org.inek.InekBrowser.Properties.Resources.peppo_manual;
             this.mnuManual.Name = "mnuManual";
-            this.mnuManual.Size = new System.Drawing.Size(122, 22);
+            this.mnuManual.Size = new System.Drawing.Size(130, 22);
             this.mnuManual.Text = "Handbuch";
             this.mnuManual.Click += new System.EventHandler(this.mnuManual_Click);
             // 
@@ -283,7 +287,7 @@ namespace org.inek.InekBrowser.GUI {
             // 
             this.mnuHelp.Image = global::org.inek.InekBrowser.Properties.Resources.peppo_help;
             this.mnuHelp.Name = "mnuHelp";
-            this.mnuHelp.Size = new System.Drawing.Size(122, 22);
+            this.mnuHelp.Size = new System.Drawing.Size(130, 22);
             this.mnuHelp.Text = "Hilfe";
             this.mnuHelp.Click += new System.EventHandler(this.mnuHelp_Click);
             // 
@@ -291,7 +295,7 @@ namespace org.inek.InekBrowser.GUI {
             // 
             this.mnuInfo.Image = global::org.inek.InekBrowser.Properties.Resources.peppo_info;
             this.mnuInfo.Name = "mnuInfo";
-            this.mnuInfo.Size = new System.Drawing.Size(122, 22);
+            this.mnuInfo.Size = new System.Drawing.Size(130, 22);
             this.mnuInfo.Text = "Info";
             this.mnuInfo.Click += new System.EventHandler(this.mnuInfo_Click);
             // 
@@ -375,7 +379,23 @@ namespace org.inek.InekBrowser.GUI {
             this.grdMainDiagnosis.AllowUserToDeleteRows = false;
             this.grdMainDiagnosis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdMainDiagnosis.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdMainDiagnosis.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.grdMainDiagnosis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grdMainDiagnosis.DefaultCellStyle = dataGridViewCellStyle2;
             this.grdMainDiagnosis.Dock = System.Windows.Forms.DockStyle.Fill;
             this.helpProvider1.SetHelpKeyword(this.grdMainDiagnosis, "Datenreiter_Hauptdiagnose.htm");
             this.helpProvider1.SetHelpNavigator(this.grdMainDiagnosis, System.Windows.Forms.HelpNavigator.Topic);
@@ -384,6 +404,14 @@ namespace org.inek.InekBrowser.GUI {
             this.grdMainDiagnosis.Name = "grdMainDiagnosis";
             this.grdMainDiagnosis.ReadOnly = true;
             this.grdMainDiagnosis.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdMainDiagnosis.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.grdMainDiagnosis.RowHeadersVisible = false;
             this.grdMainDiagnosis.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.helpProvider1.SetShowHelp(this.grdMainDiagnosis, true);

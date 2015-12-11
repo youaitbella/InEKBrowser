@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>D:\tmp\PeppBrowser\2015\|D:\tmp\PEPP\|http://g-drg.de/PeppBrowser/2015/Pepp-Browser2015Setup.exe/|W:\Common\Datenbrowser\PeppBrowser\PeppBrowser_2015\|W:\EDV\Users\DV\Offline Browser\2015\PEPP\</PublishUrlHistory>
+    <PublishUrlHistory>\\vFileserver01\company%24\Common\Datenbrowser\PeppBrowser\PeppBrowser_2016\|\\vFileserver01\company%24\EDV\Projekte\InEK-Browsers\PEPP-Browser\2016\|W:\EDV\Projekte\InEK-Browsers\PEPP-Browser\2016\|D:\tmp\PeppBrowser\2015\|D:\tmp\PEPP\</PublishUrlHistory>
     <InstallUrlHistory>http://g-drg.de/PeppBrowser/2015/|http://g-drg.de/PeppBrowser/2015/Pepp-Browser2015Setup.exe/|\\vFileserver01\company%24\Common\Datenbrowser\PeppBrowser\PeppBrowser_2015\|\\vFileserver01\company%24\EDV\Users\DV\Offline Browser\2015\PEPP\|\\vFileserver01\EDV\Users\DV\Offline Browser\2015\PEPP\</InstallUrlHistory>
     <SupportUrlHistory />
     <UpdateUrlHistory />
@@ -9,5 +9,8 @@
     <ErrorReportUrlHistory />
     <FallbackCulture>en-US</FallbackCulture>
     <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
   </PropertyGroup>
 </Project>

@@ -8,14 +8,14 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DrgBrowser</RootNamespace>
-    <AssemblyName>G-DRG-Report-Browser 2015</AssemblyName>
+    <AssemblyName>G-DRG-Report-Browser 2016</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
-    <IsWebBootstrapper>true</IsWebBootstrapper>
-    <PublishUrl>D:\tmp\GDrgBrowser\2015\</PublishUrl>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\vFileserver01\company%24\Common\Datenbrowser\ReportBrowser\Reportbrowser_V2014_2016\Prüfung\</PublishUrl>
     <Install>true</Install>
-    <InstallFrom>Web</InstallFrom>
+    <InstallFrom>Unc</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
@@ -23,12 +23,13 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>http://g-drg.de/GDrgReportBrowser/2015/</InstallUrl>
-    <ProductName>G-DRG-Report-Browser 2015</ProductName>
+    <ProductName>G-DRG-Report-Browser 2016</ProductName>
     <PublisherName>Institut für das Entgeltsystem im Krankenhaus GmbH %28InEK%29</PublisherName>
     <SuiteName>G-DRG-Report-Browser</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>32</ApplicationRevision>
+    <ApplicationRevision>11</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>

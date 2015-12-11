@@ -126,6 +126,8 @@ namespace org.inek.InekBrowser.GUI {
                 Text = "G-DRG-Browser " + (int.Parse(Program.Year) - 2) + "_" + (int.Parse(Program.Year) - 1);
                 helpProvider1.HelpNamespace = "DrgBrowser.chm";
                 drgData.ShowCaseCosts = false;
+                drgData.PCCL5Visible = false;
+                drgData.PCCL6Visible = false;
             }
         }
 
@@ -432,6 +434,7 @@ namespace org.inek.InekBrowser.GUI {
                 var q = CsvData.Context().PrimaryDiagnoses.Select(p => new { hd_Pepp = p.SystemCode, hd_Code = p.DiagCode, hd_FaelleAnzahl = p.Count, hd_FaelleAnteil = p.Fraction });
                 dlg.SetDataSource(q);
                 dlg.FormatColumn(3, "P");
+                dlg.ToolTips(new[] { "PEPP", "Code", "Anzahl Fälle", "Anteil Fälle" });
             } else if (Program.SystemBrowser == Program.System.Drg) {
                 var q =
                     CsvData.Context()
@@ -444,7 +447,7 @@ namespace org.inek.InekBrowser.GUI {
                                         IH_Anzahl = drg.Count
                                     });
                 dlg.SetDataSource(q);
-                dlg.ToolTips(new []{"DRG", "Code", "Prozent", "Anzahl"});
+                dlg.ToolTips(new []{"DRG", "Code", "Anteil Fälle", "Anzahl Fälle"});
                 dlg.FormatColumn(2, "P");
             } else if (Program.SystemBrowser == Program.System.P21) {
                 var q =
@@ -458,7 +461,7 @@ namespace org.inek.InekBrowser.GUI {
                                     IH_Prozent = drg.Fraction
                                 });
                 dlg.SetDataSource(q);
-                dlg.ToolTips(new []{"DRG", "Code", "Anzahl", "Prozent"});
+                dlg.ToolTips(new []{"DRG", "Code", "Anzahl Fälle", "Anteil Fälle"});
                 dlg.FormatColumn(3, "P");
             }
             dlg.Text = "Hauptdiagnosen";
@@ -882,7 +885,45 @@ namespace org.inek.InekBrowser.GUI {
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            dlg.SetDataSource(q);
+            if (SelectionDrg.PrimaryDiagnosis != "") {
+                dlg.SetDataSource(q.Join(
+                    CsvData.Context().PrimaryDiagnoses.Where(pd => pd.DiagCodeF == SelectionDrg.PrimaryDiagnosis),
+                    d => d.DRG, r => r.SystemCode,
+                    (d, r) => new {
+                        d.MDC,
+                        d.DRG,
+                        d.Text,
+                        r.Fraction
+                    }));
+                dlg.ColumnFormat("P", 3);
+                dlg.SetHeader("Anteil Fälle mit Hauptdiagnose " + SelectionDrg.PrimaryDiagnosis, 3);
+            } else if (SelectionDrg.SecondaryDiagnosis != "") {
+                dlg.SetDataSource(q.Join(
+                    CsvData.Context().SecondaryDiagnoses.Where(pd => pd.CodeF == SelectionDrg.SecondaryDiagnosis),
+                    d => d.DRG, r => r.System,
+                    (d, r) => new {
+                        d.MDC,
+                        d.DRG,
+                        d.Text,
+                        r.CaseFraction
+                    }));
+                dlg.ColumnFormat("P", 3);
+                dlg.SetHeader("Anteil Fälle mit Nebendiagnose " + SelectionDrg.SecondaryDiagnosis, 3);
+            } else if (SelectionDrg.Procedure != "") {
+                dlg.SetDataSource(q.Join(
+                    CsvData.Context().Procedures.Where(pd => pd.CodeF == SelectionDrg.Procedure),
+                    d => d.DRG, r => r.System,
+                    (d, r) => new {
+                        d.MDC,
+                        d.DRG,
+                        d.Text,
+                        r.CaseFraction
+                    }));
+                dlg.ColumnFormat("P", 3);
+                dlg.SetHeader("Anteil Fälle mit Prozedur " + SelectionDrg.Procedure, 3);
+            } else {
+                dlg.SetDataSource(q);
+            }
             dlg.KeyColumns = new[] { "DRG", "Text" };
             dlg.ButtonShowIsVisible = false;
             if (dlg.ShowDialog() == DialogResult.OK) {
@@ -904,6 +945,7 @@ namespace org.inek.InekBrowser.GUI {
             var q =
                 CsvData.Context()
                     .System.Select(pepp => new {Strukturkategorie = pepp.Category, PEPP = pepp.Code, Text = pepp.Text});
+            
             if (SelectionPepp.Category != "") {
                 q = q.Where(pepp => pepp.Strukturkategorie == SelectionPepp.Category);
             }
@@ -934,7 +976,47 @@ namespace org.inek.InekBrowser.GUI {
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            dlg.SetDataSource(q);
+            if(SelectionPepp.PrimaryDiagnosis != "") {
+                dlg.SetDataSource(q.Join(
+                    CsvData.Context().PrimaryDiagnoses.Where(pd => pd.DiagCode == SelectionPepp.PrimaryDiagnosis),
+                    d => d.PEPP, r => r.SystemCode,
+                    (d, r) => new {
+                                      d.Strukturkategorie,
+                                      d.PEPP,
+                                      d.Text,
+                                      PrimärdiagnoseAnteil = r.Fraction
+                                  }));
+                dlg.ColumnFormat("P", 3);
+                dlg.SetHeader("Anteil Fälle mit Hauptdiagnose " + SelectionPepp.PrimaryDiagnosis, 3);
+            }
+            else if(SelectionPepp.SecondaryDiagnosis != "") {
+                dlg.SetDataSource(q.Join(
+                    CsvData.Context().SecondaryDiagnoses.Where(pd => pd.DiagCode == SelectionPepp.SecondaryDiagnosis),
+                    d => d.PEPP, r => r.System,
+                    (d, r) => new {
+                                      d.Strukturkategorie,
+                                      d.PEPP,
+                                      d.Text,
+                                      SekundärdiagnoseAnteil = r.CaseFraction
+                                  }));
+                dlg.ColumnFormat("P", 3);
+                dlg.SetHeader("Anteil Fälle mit Nebendiagnose " + SelectionPepp.SecondaryDiagnosis, 3);
+            }
+            else if (SelectionPepp.Procedure != "") {
+                dlg.SetDataSource(q.Join(
+                    CsvData.Context().Procedures.Where(pd => pd.ProcCode == SelectionPepp.Procedure),
+                    d => d.PEPP, r => r.System,
+                    (d, r) => new {
+                                      d.Strukturkategorie,
+                                      d.PEPP,
+                                      d.Text,
+                                      ProzedurAnteil = r.CaseFraction
+                                  }));
+                dlg.ColumnFormat("P", 3);
+                dlg.SetHeader("Anteil Fälle mit Prozedur " + SelectionPepp.Procedure, 3);
+            } else {
+                dlg.SetDataSource(q);
+            }
             dlg.KeyColumns = new[] {"Pepp", "Text"};
             dlg.ButtonShowIsVisible = false;
             if (dlg.ShowDialog() == DialogResult.OK) {
@@ -986,7 +1068,6 @@ namespace org.inek.InekBrowser.GUI {
             drgData.PCCL4 = q.Select(dh => dh.PCCL4).Single().ToString("P");
             drgData.PCCL5 = q.Select(dh => dh.PCCL5).Single().ToString("P");
             drgData.PCCL6 = q.Select(dh => dh.PCCL6).Single().ToString("P");
-            drgData.PCCL7 = q.Select(dh => dh.PCCL7).Single().ToString("P");
             drgData.GenderMale = q.Select(dh => dh.GenderMale).Single().ToString("P");
             drgData.GenderFemale = q.Select(dh => dh.GenderFemale).Single().ToString("P");
             drgData.GenderUnknown = q.Select(dh => dh.GenderUnknown).Single().ToString("P");
@@ -1743,7 +1824,7 @@ namespace org.inek.InekBrowser.GUI {
                                         AnzahlFälle = pd.Count,
                                         AnteilFälle = pd.Fraction
                                     });
-                    search.StartPosition = FormStartPosition.CenterScreen;
+                    search.StartPosition = FormStartPosition.CenterParent;
                     search.Text = "PEPPs zu Hauptdiagnose";
                     search.SetDataSource(q);
                 } else if (Program.SystemBrowser == Program.System.Drg || Program.SystemBrowser == Program.System.P21) {
@@ -1763,7 +1844,7 @@ namespace org.inek.InekBrowser.GUI {
                                     AnzahlFälle = pd.Count,
                                     AnteilFälle = pd.Fraction
                                 });
-                    search.StartPosition = FormStartPosition.CenterScreen;
+                    search.StartPosition = FormStartPosition.CenterParent;
                     search.Text = "DRGs zu Hauptdiagnose";
                     search.SetDataSource(q);
                 }
@@ -1823,7 +1904,7 @@ namespace org.inek.InekBrowser.GUI {
                     search.Text = "DRGs zu Nebendiagnose";
                     search.SetDataSource(q);
                 }
-                search.StartPosition = FormStartPosition.CenterScreen;
+                search.StartPosition = FormStartPosition.CenterParent;
                 search.ButtonShowIsVisible = false;
                 search.ColumnTextAlign(2, DataGridViewContentAlignment.MiddleRight);
                 search.ColumnFormat("##,##0", 2);
@@ -1882,7 +1963,7 @@ namespace org.inek.InekBrowser.GUI {
                     search.SetDataSource(q);
                     search.Text = "DRGs zu Prozedur";
                 }
-                search.StartPosition = FormStartPosition.CenterScreen;
+                search.StartPosition = FormStartPosition.CenterParent;
                 search.ButtonShowIsVisible = false;
                 search.ColumnTextAlign(2, DataGridViewContentAlignment.MiddleRight);
                 search.ColumnFormat("##,##0", 2);
@@ -1977,7 +2058,7 @@ namespace org.inek.InekBrowser.GUI {
                 //Primary Diagnoses
                 drgData.PrimDiag = CsvData.Context().PrimaryDiagnoses.Where(p => p.SystemCode == systemCode)
                     .Join(CsvData.Context().Recherche.Where(r => r.PrimaryDiagnosis == 1), d => d.DiagCodeF, r => r.CodeF,
-                                (d, r) => new PrimaryDiagnosis() {
+                                (d, r) => new PrimaryDiagnosis {
                                     SystemCode = d.SystemCode,
                                     DiagCodeF = d.DiagCodeF,
                                     Hauptdiagnose = r.Text,
@@ -1988,7 +2069,7 @@ namespace org.inek.InekBrowser.GUI {
                 //Secondary Diagnoses
                 drgData.SecDiag = CsvData.Context().SecondaryDiagnoses.Where(p => p.System == systemCode)
                     .Join(CsvData.Context().Recherche.Where(r => r.SecondaryDiagnosis == 1), d => d.CodeF, r => r.CodeF,
-                                (d, r) => new SecondaryDiagnosis() {
+                                (d, r) => new SecondaryDiagnosis {
                                     System = d.System,
                                     CodeF = d.CodeF,
                                     Nebendiagnose = r.Text,
@@ -2000,7 +2081,7 @@ namespace org.inek.InekBrowser.GUI {
                 //Procedures
                 drgData.Proc = CsvData.Context().Procedures.Where(p => p.System == systemCode)
                      .Join(CsvData.Context().Recherche.Where(r => r.Procedure == 1), d => d.CodeF, r => r.CodeF,
-                                (d, r) => new Procedure() {
+                                (d, r) => new Procedure {
                                     System = d.System,
                                     CodeF = d.CodeF,
                                     Prozedur = r.Text,

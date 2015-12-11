@@ -6,9 +6,9 @@ using System.Text;
 namespace org.inek.InekBrowser.Data {
     class ResourceController {
 
-        private const string PEPP_RESOURCE_FILES_HASH = "93A416D94443104574B49CB6C3863F26A7D676453084A8BA26AD71C2E4E3D9";
-        private const string DRG_RESOURCE_FILES_HASH = "9BCF5FCDA630A487B9779157FEB734FAE3D62D03695A390A92639BB18165F34";
-        private const string P21_RESOURCE_FILES_HASH = "F11B51C155BD667B7E2915A913897EC955D43C8F80CA25594E5E44558C5DE";
+        private const string PEPP_RESOURCE_FILES_HASH = "5826D4CC64F6A74A5AF98C3F1A121F3A536B8D6C49C6410864CE1FC9ADBF7";
+        private const string DRG_RESOURCE_FILES_HASH = "DB2E8EA96F5616486178236E5CF6EB4FCB3970585068FF65C7AE51C8EB5C65C1";
+        private const string P21_RESOURCE_FILES_HASH = "61B864565CCCC664CC5428A23BB476773F5513D49EE51B52619B32958B2E62";
 
         public enum DrgResourceFilesIndex {
             Drg,
@@ -102,28 +102,28 @@ namespace org.inek.InekBrowser.Data {
                                                  };
 
         public static string[] P21_RESOURCE_FILES = {
-                                                        "P21BrDrg_TS_13_14_Hauptdiagnose.csv",
-                                                        "P21BrDrg_TS_13_14_Kopfdaten.csv",
-                                                        "P21BrDrg_TS_13_14_Mdc.csv",
-                                                        "P21BrDrg_TS_13_14_Nebendiagnosen.csv",
-                                                        "P21BrDrg_TS_13_14_Prozeduren.csv",
-                                                        "P21BrDrg_TS_13_14_Recherche.csv",
+                                                        "P21BrDrg_TS_14_15_Hauptdiagnose.csv",
+                                                        "P21BrDrg_TS_14_15_Kopfdaten.csv",
+                                                        "P21BrDrg_TS_14_15_Mdc.csv",
+                                                        "P21BrDrg_TS_14_15_Nebendiagnosen.csv",
+                                                        "P21BrDrg_TS_14_15_Prozeduren.csv",
+                                                        "P21BrDrg_TS_14_15_Recherche.csv",
                                                         
-                                                        "P21BrDrg_HA_13_14_Hauptdiagnose.csv",
-                                                        "P21BrDrg_HA_13_14_Prozeduren.csv",
-                                                        "P21BrDrg_HA_13_14_Kopfdaten.csv",
-                                                        "P21BrDrg_HA_13_14_Mdc.csv",
-                                                        "P21BrDrg_HA_13_14_Nebendiagnosen.csv",
-                                                        "P21BrDrg_HA_13_14_Recherche.csv",
+                                                        "P21BrDrg_HA_14_15_Hauptdiagnose.csv",
+                                                        "P21BrDrg_HA_14_15_Prozeduren.csv",
+                                                        "P21BrDrg_HA_14_15_Kopfdaten.csv",
+                                                        "P21BrDrg_HA_14_15_Mdc.csv",
+                                                        "P21BrDrg_HA_14_15_Nebendiagnosen.csv",
+                                                        "P21BrDrg_HA_14_15_Recherche.csv",
                                                         
-                                                        "P21BrDrg_BA_13_14_Hauptdiagnose.csv",
-                                                        "P21BrDrg_BA_13_14_Kopfdaten.csv",
-                                                        "P21BrDrg_BA_13_14_Mdc.csv",
-                                                        "P21BrDrg_BA_13_14_Nebendiagnosen.csv",
-                                                        "P21BrDrg_BA_13_14_Prozeduren.csv",
-                                                        "P21BrDrg_BA_13_14_Recherche.csv",
+                                                        "P21BrDrg_BA_14_15_Hauptdiagnose.csv",
+                                                        "P21BrDrg_BA_14_15_Kopfdaten.csv",
+                                                        "P21BrDrg_BA_14_15_Mdc.csv",
+                                                        "P21BrDrg_BA_14_15_Nebendiagnosen.csv",
+                                                        "P21BrDrg_BA_14_15_Prozeduren.csv",
+                                                        "P21BrDrg_BA_14_15_Recherche.csv",
 
-                                                        "P21BrDrg_13_14_Drg.csv"
+                                                        "P21BrDrg_14_15_Drg.csv"
                                                     };
 
         public static string[] DRG_RESOURCE_HEADERS = {
@@ -131,7 +131,7 @@ namespace org.inek.InekBrowser.Data {
                                                           "IB_Nr;IB_Bereich",
                                                           "IH_DRG;IH_CodeF;IH_Anzahl;IH_Prozent",
 
-                                                          "IK_MDC;IK_DRG;IK_Faelle_Anzahl;IK_PCCL0;IK_PCCL1;IK_PCCL2;IK_PCCL3;IK_PCCL4;IK_PCCL5;IK_PCCL6;IK_PCCL7;" +
+                                                          "IK_MDC;IK_DRG;IK_Faelle_Anzahl;IK_PCCL0;IK_PCCL1;IK_PCCL2;IK_PCCL3;IK_PCCL4;IK_PCCL5;IK_PCCL6;" +
                                                           "IK_GeschlechtM;IK_GeschlechtW;IK_GeschlechtU;IK_AlterU28T;" +
                                                           "IK_AlterU01;IK_AlterU03;IK_AlterU06;IK_AlterU10;IK_AlterU16;IK_AlterU18;" +
                                                           "IK_AlterU30;IK_AlterU40;IK_AlterU50;IK_AlterU55;IK_AlterU60;IK_AlterU65;" +
@@ -149,7 +149,7 @@ namespace org.inek.InekBrowser.Data {
                                                           "IH_DRG;IH_CodeF;IH_Anzahl;IH_Prozent",
 
                                                           "IK_MDC;IK_DRG;IK_Faelle_Anzahl;IK_PCCL0;IK_PCCL1;IK_PCCL2;" +
-                                                          "IK_PCCL3;IK_PCCL4;IK_PCCL5;IK_PCCL6;IK_PCCL7;IK_GeschlechtM;IK_GeschlechtW;IK_GeschlechtU;" +
+                                                          "IK_PCCL3;IK_PCCL4;IK_PCCL5;IK_PCCL6;IK_GeschlechtM;IK_GeschlechtW;IK_GeschlechtU;" +
                                                           "IK_AlterU28T;IK_AlterU01;IK_AlterU03;IK_AlterU06;IK_AlterU10;" +
                                                           "IK_AlterU16;IK_AlterU18;IK_AlterU30;IK_AlterU40;IK_AlterU50;" +
                                                           "IK_AlterU55;IK_AlterU60;IK_AlterU65;IK_AlterU75;IK_AlterU80;" +
@@ -194,7 +194,7 @@ namespace org.inek.InekBrowser.Data {
                                                           "IH_DRG;IH_CodeF;IH_Anzahl;IH_Prozent",
                                                           "IP_DRG;IP_CodeF;IP_Anzahl;IP_Prozent;IP_AnzahlN;IP_ProzentN",
                                                           "IK_MDC;IK_DRG;IK_Faelle_Anzahl;IK_PCCL0;IK_PCCL1;IK_PCCL2;IK_PCCL3;IK_PCCL4;IK_GeschlechtM;IK_GeschlechtW;IK_GeschlechtU;IK_AlterU28T;IK_AlterU01;IK_AlterU03;IK_AlterU06;IK_AlterU10;IK_AlterU16;IK_AlterU18;IK_AlterU30;IK_AlterU40;IK_AlterU50;IK_AlterU55;IK_AlterU60;IK_AlterU65;IK_AlterU75;IK_AlterU80;IK_AlterU99;IK_VWD_Kurz;IK_VWD_Norm;IK_VWD_Lang;IK_uGVD;IK_oGVD;IK_VWD_MW;IK_Bewertungsrelation;IK_Gesamt;IK_VWD_STD",
-                                                          "IM_MDC;IM_Text;IM_DRG_Anzahl;IM_Faelle_A nzahl",
+                                                          "IM_MDC;IM_Text;IM_DRG_Anzahl;IM_Faelle_Anzahl",
                                                           "IN_DRG;IN_CodeF;IN_Anzahl;IN_Prozent;IN_AnzahlN;IN_ProzentN",
                                                           "IC_CodeF;IC_Text;IC_ANZHDI;IC_ANZNDI;IC_AnzProzI",
 

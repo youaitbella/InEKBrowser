@@ -110,10 +110,10 @@
       </tablestyleclass>
     </styleclasses>
     <config-group name="project">
-      <config-value name="title" translate="true">G-DRG-Report-Browser 2015</config-value>
+      <config-value name="title" translate="true">G-DRG-Report-Browser 2016</config-value>
       <config-value name="author" translate="true">InEK GmbH</config-value>
       <config-value name="copyright" translate="true">© 2015 InEK GmbH, Siegburg</config-value>
-      <config-value name="versionmajor">2015</config-value>
+      <config-value name="versionmajor">2016</config-value>
       <config-value name="versionminor">1</config-value>
       <config-value name="lcid" translate="true">de-de</config-value>
       <config-value name="charset" translate="true">ANSI_CHARSET</config-value>
@@ -159,7 +159,7 @@
       </config-group>
       <config-value name="make6include">EBOOK</config-value>
       <config-value name="make6status">*</config-value>
-      <config-value name="summary" translate="true">G-DRG-Report-Browser 2015</config-value>
+      <config-value name="summary" translate="true">G-DRG-Report-Browser 2016</config-value>
       <config-value name="versionbuild">0</config-value>
     </config-group>
     <config-group name="user">
@@ -454,15 +454,15 @@ nsrInit();
     <variables>
       <variable id="FIGURE" type="text" translate="true">Abb. &lt;%FIGURE++%&gt;:</variable>
       <variable id="FIGURE++" type="text" translate="true">0</variable>
-      <variable id="FILE_COST" type="text" translate="true">RepBrDrg_BA_13_15_Kosten.csv, RepBrDrg_HA_13_15_Kosten.csv</variable>
-      <variable id="FILE_COST_DOMAIN" type="text" translate="true">RepBrDrg_13_15_Kostenbereich.csv</variable>
-      <variable id="FILE_DRG" type="text" translate="true">RepBrDrg_13_15_Drg.csv</variable>
-      <variable id="FILE_HD" type="text" translate="true">RepBrDrg_BA_13_15_Hauptdiagnose.csv bzw. RepBrDrg_HA_13_15_Hauptdiagnose.csv</variable>
-      <variable id="FILE_HEADDATA" type="text" translate="true">RepBrDrg_BA_13_15_Kopfdaten.csv bzw. RepBrDrg_HA_13_15_Kopfdaten.csv</variable>
-      <variable id="FILE_MDCS" type="text" translate="true">RepBrDrg_BA_13_15_Mdc.csv bzw. RepBrDrg_HA_13_15_Mdc.csv</variable>
-      <variable id="FILE_ND" type="text" translate="true">RepBrDrg_BA_13_15_Nebendiagnosen.csv bzw. RepBrDrg_HA_13_15_Nebendiagnosen.csv</variable>
-      <variable id="FILE_PROC" type="text" translate="true">RepBrDrg_BA_13_15_Prozeduren.csv bzw. RepBrDrg_HA_13_15_Prozeduren.csv</variable>
-      <variable id="FILE_RECHERCHE" type="text" translate="true">RepBrDrg_BA_13_15_Recherche.csv bzw. RepBrDrg_HA_13_15_Recherche.csv</variable>
+      <variable id="FILE_COST" type="text" translate="true">RepBrDrg_BA_14_16_Kosten.csv, RepBrDrg_HA_14_16_Kosten.csv</variable>
+      <variable id="FILE_COST_DOMAIN" type="text" translate="true">RepBrDrg_14_16_Kostenbereich.csv</variable>
+      <variable id="FILE_DRG" type="text" translate="true">RepBrDrg_14_16_Drg.csv</variable>
+      <variable id="FILE_HD" type="text" translate="true">RepBrDrg_BA_14_16_Hauptdiagnose.csv bzw. RepBrDrg_HA_14_16_Hauptdiagnose.csv</variable>
+      <variable id="FILE_HEADDATA" type="text" translate="true">RepBrDrg_BA_14_16_Kopfdaten.csv bzw. RepBrDrg_HA_14_16_Kopfdaten.csv</variable>
+      <variable id="FILE_MDCS" type="text" translate="true">RepBrDrg_BA_14_16_Mdc.csv bzw. RepBrDrg_HA_14_16_Mdc.csv</variable>
+      <variable id="FILE_ND" type="text" translate="true">RepBrDrg_BA_14_16_Nebendiagnosen.csv bzw. RepBrDrg_HA_14_16_Nebendiagnosen.csv</variable>
+      <variable id="FILE_PROC" type="text" translate="true">RepBrDrg_BA_14_16_Prozeduren.csv bzw. RepBrDrg_HA_14_16_Prozeduren.csv</variable>
+      <variable id="FILE_RECHERCHE" type="text" translate="true">RepBrDrg_BA_14_16_Recherche.csv bzw. RepBrDrg_HA_14_16_Recherche.csv</variable>
       <variable id="TITLE2" type="text" translate="true">G-DRG-Report-Browser</variable>
     </variables>
     <helpcontext-numbers/>
