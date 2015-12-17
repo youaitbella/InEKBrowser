@@ -13,7 +13,7 @@
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>\\vFileserver01\company%24\EDV\Users\DV\Offline Browser\2015\P21\</PublishUrl>
+    <PublishUrl>\\vFileserver01\company%24\Common\Datenbrowser\Par21Browser\GDRG_V2015_Browser_Par21_2014\Prüfung\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Unc</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -23,11 +23,11 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ProductName>G-DRG-Browser 2013_2014</ProductName>
+    <ProductName>G-DRG-Browser 2014_2015</ProductName>
     <PublisherName>Institut für das Entgeltsystem im Krankenhaus GmbH %28InEK%29</PublisherName>
     <SuiteName>G-DRG-Browser</SuiteName>
-    <ApplicationRevision>5</ApplicationRevision>
-    <ApplicationVersion>1.0.1.%2a</ApplicationVersion>
+    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -55,7 +55,7 @@
     <StartupObject>P21Browser.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>1498CC5E6B41806024D0736F6CA7249E579A0EDE</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>FDC8F2E5AB86A6AE964068AD2BE1269F136FE8A3</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>
@@ -126,63 +126,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Content Include="Data\2015\P21BrDrg_13_14_Drg.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\P21BrDrg_BA_13_14_Hauptdiagnose.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\P21BrDrg_BA_13_14_Kopfdaten.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\P21BrDrg_BA_13_14_Mdc.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\P21BrDrg_BA_13_14_Nebendiagnosen.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\P21BrDrg_BA_13_14_Prozeduren.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\P21BrDrg_BA_13_14_Recherche.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\P21BrDrg_HA_13_14_Hauptdiagnose.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\P21BrDrg_HA_13_14_Kopfdaten.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\P21BrDrg_HA_13_14_Mdc.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\P21BrDrg_HA_13_14_Nebendiagnosen.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\P21BrDrg_HA_13_14_Prozeduren.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\P21BrDrg_HA_13_14_Recherche.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\P21BrDrg_TS_13_14_Hauptdiagnose.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\P21BrDrg_TS_13_14_Kopfdaten.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\P21BrDrg_TS_13_14_Mdc.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\P21BrDrg_TS_13_14_Nebendiagnosen.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\P21BrDrg_TS_13_14_Prozeduren.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2015\P21BrDrg_TS_13_14_Recherche.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Print\cmLL2001.chm">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -253,6 +196,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\2016\P21BrDrg_TS_14_15_Recherche.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DrgBrowser.pdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="P21Browser_TemporaryKey.pfx" />

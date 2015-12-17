@@ -13,15 +13,15 @@
       <topicref type="topic" id="41650178086392" build="ALL" modified="2014-01-09T10:20:35.545Z" icon="0" href="Hotkeys">
         <caption translate="true">Hotkeys</caption>
       </topicref>
+      <topicref type="topic" id="423496332116772" build="ALL" modified="2015-05-22T09:18:09.725Z" icon="0" href="Automatische_Groessenanpassung">
+        <caption translate="true">Automatische Größenanpassung</caption>
+      </topicref>
     </topicref>
   </topicref>
   <topicref type="topic" id="416499051576363" build="ALL" modified="2014-01-20T08:44:52.031Z" icon="0" href="Systemanforderungen">
     <caption translate="true">Systemanforderungen &amp; Installation</caption>
     <topicref type="topic" id="416772392051322" build="ALL" modified="2014-02-07T09:22:44.662Z" icon="0" href="DownloadProblems">
       <caption translate="true">Probleme beim Download</caption>
-    </topicref>
-    <topicref type="topic" id="421432555275022" build="ALL" modified="2015-05-19T10:45:47.016Z" icon="0" href="FontDpi">
-      <caption translate="true">Probleme beim Browser</caption>
     </topicref>
   </topicref>
   <topicref type="topic" id="402753149688023" build="ALL" modified="2014-01-10T17:06:58.016Z" icon="0" href="Background">
@@ -47,6 +47,9 @@
   </topicref>
   <topicref type="topic" id="416486050145445" build="ALL" modified="2014-01-09T10:28:42.999Z" icon="0" href="Filter">
     <caption translate="true">Filter</caption>
+    <topicref type="topic" id="423492905362209" build="ALL" modified="2015-12-04T09:24:18.456Z" icon="0" href="Haupt_Nebendiagnose_u._Prozedu">
+      <caption translate="true">Fallanteil für gefilterten Kode</caption>
+    </topicref>
     <topicref type="topic" id="416486680913627" build="ALL" modified="2014-01-09T11:10:37.493Z" icon="0" href="Tabellen-Filter">
       <caption translate="true">Tabellen-Filter</caption>
     </topicref>
