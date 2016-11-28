@@ -1,0 +1,62 @@
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\G-DRG-Browser 2014_2015.exe.config
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\drgDruck.lst
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\peppDruck.lst
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Print\cmbr20.dll
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Print\cmct20.dll
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Print\cmdw20.dll
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Print\cmll20.dll
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Print\cmll20pr.dll
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Print\cmll20xl.dll
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Print\cmls20.dll
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Print\cmmx20.dll
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Print\cmut20.dll
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Print\cmLL2001.chm
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Print\cmll2001.lng
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Print\Cmll20ex.llx
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Print\cmls2001.lng
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\p21Druck.lst
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\DrgBrowser.chm
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\DrgBrowser.pdf
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Data\2017\P21BrDrg_15_16_Drg.csv
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Data\2017\P21BrDrg_BA_15_16_Hauptdiagnose.csv
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Data\2017\P21BrDrg_BA_15_16_Kopfdaten.csv
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Data\2017\P21BrDrg_BA_15_16_Mdc.csv
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Data\2017\P21BrDrg_BA_15_16_Nebendiagnosen.csv
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Data\2017\P21BrDrg_BA_15_16_Prozeduren.csv
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Data\2017\P21BrDrg_BA_15_16_Recherche.csv
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Data\2017\P21BrDrg_HA_15_16_Hauptdiagnose.csv
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Data\2017\P21BrDrg_HA_15_16_Kopfdaten.csv
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Data\2017\P21BrDrg_HA_15_16_Mdc.csv
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Data\2017\P21BrDrg_HA_15_16_Nebendiagnosen.csv
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Data\2017\P21BrDrg_HA_15_16_Prozeduren.csv
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Data\2017\P21BrDrg_HA_15_16_Recherche.csv
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Data\2017\P21BrDrg_TS_15_16_Hauptdiagnose.csv
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Data\2017\P21BrDrg_TS_15_16_Kopfdaten.csv
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Data\2017\P21BrDrg_TS_15_16_Mdc.csv
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Data\2017\P21BrDrg_TS_15_16_Nebendiagnosen.csv
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Data\2017\P21BrDrg_TS_15_16_Prozeduren.csv
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Data\2017\P21BrDrg_TS_15_16_Recherche.csv
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Properties\Settings.Designer.cs
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\Properties\Settings.settings
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\inek_icon.ico
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\PeppBrowser.chm
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\PeppBrowser.pdf
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\G-DRG-Browser 2014_2015.exe.manifest
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\G-DRG-Browser 2014_2015.application
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\G-DRG-Browser 2014_2015.exe
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\G-DRG-Browser 2014_2015.pdb
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\InEK-Browser.dll
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\InekControls.dll
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\combit.ListLabel20.dll
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\EntityFramework.dll
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\ADODB.dll
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\InEK-Browser.pdb
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\InekControls.pdb
+D:\Projects\InEKBrowser_\P21Browser\bin\Debug\EntityFramework.xml
+D:\Projects\InEKBrowser_\P21Browser\obj\Debug\P21Browser.csprojResolveAssemblyReference.cache
+D:\Projects\InEKBrowser_\P21Browser\obj\Debug\P21Browser.Properties.Resources.resources
+D:\Projects\InEKBrowser_\P21Browser\obj\Debug\P21Browser.csproj.GenerateResource.Cache
+D:\Projects\InEKBrowser_\P21Browser\obj\Debug\G-DRG-Browser 2014_2015.exe.manifest
+D:\Projects\InEKBrowser_\P21Browser\obj\Debug\G-DRG-Browser 2014_2015.application
+D:\Projects\InEKBrowser_\P21Browser\obj\Debug\G-DRG-Browser 2014_2015.exe
+D:\Projects\InEKBrowser_\P21Browser\obj\Debug\G-DRG-Browser 2014_2015.pdb

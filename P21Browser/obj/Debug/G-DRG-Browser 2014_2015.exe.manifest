@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="G-DRG-Browser 2014_2015.exe" version="1.0.0.7" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="inek_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="G-DRG-Browser 2014_2015" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="G-DRG-Browser 2014_2015.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="combit.ListLabel20.dll" size="986624">
+      <assemblyIdentity name="combit.ListLabel20" version="20.0.5406.15490" publicKeyToken="A7A30592CB4A94BE" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>CYUOZVZlUBcDhsMA0rKvJtVRJMA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.dll" size="4842656">
+      <assemblyIdentity name="EntityFramework" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>viy4gdYEHsmkkeizhPOV8G4SbUQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="G-DRG-Browser 2014_2015.exe" size="22744">
+      <assemblyIdentity name="G-DRG-Browser 2014_2015" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>jzHWQczz5rXJrDZ5LcUYhIfF10w=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="InEK-Browser.dll" size="942592">
+      <assemblyIdentity name="InEK-Browser" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ZOmdEql29Vemu8NQRdpYltGmNFQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="InekControls.dll" size="139776">
+      <assemblyIdentity name="InekControls" version="15.5.4.30438" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Ak7l8y4+f8+y9twDXJlmfa2rc+0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Data\2017\P21BrDrg_15_16_Drg.csv" size="186580">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>JPkWe/T+idB0Mez98xNUtE4BLio=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2017\P21BrDrg_BA_15_16_Hauptdiagnose.csv" size="128932">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Z63mo64wFHlspQWOPAGNoiriAKk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2017\P21BrDrg_BA_15_16_Kopfdaten.csv" size="179080">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>1ZAKdbVEs1DsFdkjZjPujVpdH1o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2017\P21BrDrg_BA_15_16_Mdc.csv" size="1809">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>lP0jUBp9yb9tx89osGCK/rhdsu8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2017\P21BrDrg_BA_15_16_Nebendiagnosen.csv" size="1399914">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>5HP0pOEmdQbBXDsT8Mm+3IrcVjc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2017\P21BrDrg_BA_15_16_Prozeduren.csv" size="523147">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>3KHsYxjjlWtKIb50z1ZwD+9tCkY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2017\P21BrDrg_BA_15_16_Recherche.csv" size="699448">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>FoCYkPSSboGQqFmCsN9wnkiWL8U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2017\P21BrDrg_HA_15_16_Hauptdiagnose.csv" size="1313836">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>6qe8UWLGuMj3z2GiMhfvOupvEA4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2017\P21BrDrg_HA_15_16_Kopfdaten.csv" size="262200">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>CaAsbEbJhiXlL4e3cd9//WCOjRI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2017\P21BrDrg_HA_15_16_Mdc.csv" size="1860">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>fgb5YDoNkL2s7GUV2jcoLQ8GmKs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2017\P21BrDrg_HA_15_16_Nebendiagnosen.csv" size="28769436">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>rhRlm8symq9T7DpamCo6QNtNYiA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2017\P21BrDrg_HA_15_16_Prozeduren.csv" size="11484254">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>l8wvGIX/uEVoM+o9J3kOKymBObo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2017\P21BrDrg_HA_15_16_Recherche.csv" size="2673585">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>zfu/06GEMPc4GhYJ0Q2ivYEnlCU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2017\P21BrDrg_TS_15_16_Hauptdiagnose.csv" size="112422">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>X8FJJu90pA1WlDqkeV/hC7JsiqQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2017\P21BrDrg_TS_15_16_Kopfdaten.csv" size="139843">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>pqR3HAz76zQ9aF+orGJhkT/joUE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2017\P21BrDrg_TS_15_16_Mdc.csv" size="1814">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ZetW09bOkKhvCRamaSVW16rFCAU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2017\P21BrDrg_TS_15_16_Nebendiagnosen.csv" size="638235">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>yHx3mxVTnbp6Xy6jIO55EC9p7z8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2017\P21BrDrg_TS_15_16_Prozeduren.csv" size="330141">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>eYy4smceuAnp+o2cdi1Bf05wWtk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Data\2017\P21BrDrg_TS_15_16_Recherche.csv" size="472531">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>tCgZ1R3cn2O3RKs0vLUnIMlVxBA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrgBrowser.chm" size="1568999">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>d6J7OZwigJZj7jA5dIBixML8gG4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrgBrowser.pdf" size="3157323">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>MbO/50gHix+uuAKwZWkmec/znhs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="G-DRG-Browser 2014_2015.exe.config" size="291">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>T+TmArt6ZyDCxTljvQy0IpIduXw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="inek_icon.ico" size="12862">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>V1WoifXwNR7oSUUpCdORAVlYMq4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="p21Druck.lst" size="401448">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>VG9d1BQA3zTUdd0nav6vPpmfmM4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\cmbr20.dll" size="1588752">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>nJ7YB4ulPvQCIN8E2YnJ6JUqiG8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\cmct20.dll" size="2371088">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>48c2AblKGeMed9oQLZsH+bWlA6U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\cmdw20.dll" size="1221648">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>sW++rsb2PlIMujJo9rVCVxWeCq8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\cmll20.dll" size="11880976">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Y56Y4Ht7jaLLLPZBOYMh6UYOZs4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\cmLL2001.chm" size="3177677">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>0gky6MsVzSKXul3BN1LwSlM7SMo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\cmll2001.lng" size="2275856">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TXJBPOrxWAOiN3dX31XhVE/fZsc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\Cmll20ex.llx" size="7288336">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>yyZl9aU2/HoHUCNCujxiqLO/+OA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\cmll20pr.dll" size="5273616">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>MOP5ezoWaCQ+MmXLdLqc6Vav/X8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\cmll20xl.dll" size="5998408">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>sDAf1LcgWlLOcxAgfxOr2Lnfcc4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\cmls20.dll" size="3350032">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>2cMlX64bbnyDLGo9DEV8sRQFAkg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\cmls2001.lng" size="127504">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>lp6yrahkKWYU4mI3+Ur8PwqPuDA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\cmmx20.dll" size="1316880">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>hsMBImewKs0I7kJEUCGwsNdBxvU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Print\cmut20.dll" size="1007120">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>flkPKR8YBBXqG7qUVr5VZd8810E=</dsig:DigestValue>
+    </hash>
+  </file>
+</asmv1:assembly>
