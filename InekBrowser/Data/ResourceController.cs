@@ -6,8 +6,8 @@ using System.Text;
 namespace org.inek.InekBrowser.Data {
     class ResourceController {
 
-        private const string PEPP_RESOURCE_FILES_HASH = "5826D4CC64F6A74A5AF98C3F1A121F3A536B8D6C49C6410864CE1FC9ADBF7";
-        private const string DRG_RESOURCE_FILES_HASH = "18262279D2EF4D52DACE0C3964F80E37EFFC01AB3D5769030CBFC15754ABF6";
+        private const string PEPP_RESOURCE_FILES_HASH = "7A40391B254FBC6AA2E7758B7E4B87BE77E07531A05B58E8894213F86449A1";
+        private const string DRG_RESOURCE_FILES_HASH = "54EB613536D799D5779944792302BFB5E3CAD7CD6D2421B98DC64C1EAB919";
         private const string P21_RESOURCE_FILES_HASH = "F3191B9FE9AB5E88D43D55A3243D48368D77D2C66F37DCFD34683EF7B9CF7";
 
         public enum DrgResourceFilesIndex {
@@ -70,35 +70,35 @@ namespace org.inek.InekBrowser.Data {
         public static string RESOURCE_DIR = @"Data\";
 
         public static string[] DRG_RESOURCE_FILES = {
-                                                        "RepBrDrg_14_16_Drg.csv",
-                                                        "RepBrDrg_14_16_Kostenbereich.csv",
-                                                        "RepBrDrg_BA_14_16_Hauptdiagnose.csv",
-                                                        "RepBrDrg_BA_14_16_Kopfdaten.csv",
-                                                        "RepBrDrg_BA_14_16_Kosten.csv",
-                                                        "RepBrDrg_BA_14_16_Mdc.csv",
-                                                        "RepBrDrg_BA_14_16_Nebendiagnosen.csv",
-                                                        "RepBrDrg_BA_14_16_Prozeduren.csv",
-                                                        "RepBrDrg_BA_14_16_Recherche.csv",
-                                                        "RepBrDrg_HA_14_16_Hauptdiagnose.csv",
-                                                        "RepBrDrg_HA_14_16_Kopfdaten.csv",
-                                                        "RepBrDrg_HA_14_16_Kosten.csv",
-                                                        "RepBrDrg_HA_14_16_Mdc.csv",
-                                                        "RepBrDrg_HA_14_16_Nebendiagnosen.csv",
-                                                        "RepBrDrg_HA_14_16_Prozeduren.csv",
-                                                        "RepBrDrg_HA_14_16_Recherche.csv"
+                                                        "RepBrDrg_15_17_Drg.csv",
+                                                        "RepBrDrg_15_17_Kostenbereich.csv",
+                                                        "RepBrDrg_BA_15_17_Hauptdiagnose.csv",
+                                                        "RepBrDrg_BA_15_17_Kopfdaten.csv",
+                                                        "RepBrDrg_BA_15_17_Kosten.csv",
+                                                        "RepBrDrg_BA_15_17_Mdc.csv",
+                                                        "RepBrDrg_BA_15_17_Nebendiagnosen.csv",
+                                                        "RepBrDrg_BA_15_17_Prozeduren.csv",
+                                                        "RepBrDrg_BA_15_17_Recherche.csv",
+                                                        "RepBrDrg_HA_15_17_Hauptdiagnose.csv",
+                                                        "RepBrDrg_HA_15_17_Kopfdaten.csv",
+                                                        "RepBrDrg_HA_15_17_Kosten.csv",
+                                                        "RepBrDrg_HA_15_17_Mdc.csv",
+                                                        "RepBrDrg_HA_15_17_Nebendiagnosen.csv",
+                                                        "RepBrDrg_HA_15_17_Prozeduren.csv",
+                                                        "RepBrDrg_HA_15_17_Recherche.csv"
                                                     };
 
         public static string[] PEPP_RESOURCE_FILES = {
-                                                     "RepBrPepp_14_16_Hauptdiagnose.csv", 
-                                                     "RepBrPepp_14_16_Kopfdaten.csv",
-                                                     "RepBrPepp_14_16_Kosten.csv", 
-                                                     "RepBrPepp_14_16_Kostenbereich.csv",
-                                                     "RepBrPepp_14_16_Nebendiagnosen.csv", 
-                                                     "RepBrPepp_14_16_Pepp.csv",
-                                                     "RepBrPepp_14_16_Prozeduren.csv", 
-                                                     "RepBrPepp_14_16_Recherche.csv",
-                                                     "RepBrPepp_14_16_Strukturkategorie.csv",
-                                                     "RepBrPepp_14_16_Katalog.csv"
+                                                     "RepBrPepp_15_17_Hauptdiagnose.csv", 
+                                                     "RepBrPepp_15_17_Kopfdaten.csv",
+                                                     "RepBrPepp_15_17_Kosten.csv", 
+                                                     "RepBrPepp_15_17_Kostenbereich.csv",
+                                                     "RepBrPepp_15_17_Nebendiagnosen.csv", 
+                                                     "RepBrPepp_15_17_Pepp.csv",
+                                                     "RepBrPepp_15_17_Prozeduren.csv", 
+                                                     "RepBrPepp_15_17_Recherche.csv",
+                                                     "RepBrPepp_15_17_Strukturkategorie.csv",
+                                                     "RepBrPepp_15_17_Katalog.csv"
                                                  };
 
         public static string[] P21_RESOURCE_FILES = {

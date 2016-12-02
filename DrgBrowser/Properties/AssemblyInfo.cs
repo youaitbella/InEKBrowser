@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("G-DRG-Report-Browser 2016")]
+[assembly: AssemblyTitle("G-DRG-Report-Browser 2017")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("G-DRG-Report-Browser 2016")]
-[assembly: AssemblyCopyright("Copyright © 2015 InEK GmbH")]
+[assembly: AssemblyProduct("G-DRG-Report-Browser 2017")]
+[assembly: AssemblyCopyright("Copyright © 2016 InEK GmbH")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

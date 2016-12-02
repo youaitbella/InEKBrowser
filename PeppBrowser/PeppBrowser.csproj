@@ -8,12 +8,12 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PeppBrowser</RootNamespace>
-    <AssemblyName>PEPP-Browser 2016</AssemblyName>
+    <AssemblyName>PEPP-Browser 2017</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>\\vFileserver01\company%24\Common\Datenbrowser\PeppBrowser\PeppBrowser_2016\</PublishUrl>
+    <PublishUrl>\\vFileserver01\company%24\Common\Datenbrowser\PeppBrowser\PeppBrowser_2017\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Unc</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -23,13 +23,13 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ProductName>PEPP-Browser 2016</ProductName>
+    <ProductName>PEPP-Browser 2017</ProductName>
     <PublisherName>Institut für das Entgeltsystem im Krankenhaus GmbH %28InEK%29</PublisherName>
     <SuiteName>PEPP-Browser</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>9</ApplicationRevision>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -159,41 +159,51 @@
     <Content Include="Print\cmls2001.lng">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Data\2016\RepBrPepp_14_16_Hauptdiagnose.csv" />
+    <None Include="Data\2016\RepBrPepp_14_16_Katalog.csv" />
+    <None Include="Data\2016\RepBrPepp_14_16_Kopfdaten.csv" />
+    <None Include="Data\2016\RepBrPepp_14_16_Kosten.csv" />
+    <None Include="Data\2016\RepBrPepp_14_16_Kostenbereich.csv" />
+    <None Include="Data\2016\RepBrPepp_14_16_Nebendiagnosen.csv" />
+    <None Include="Data\2016\RepBrPepp_14_16_Pepp.csv" />
+    <None Include="Data\2016\RepBrPepp_14_16_Prozeduren.csv" />
+    <None Include="Data\2016\RepBrPepp_14_16_Recherche.csv" />
+    <None Include="Data\2016\RepBrPepp_14_16_Strukturkategorie.csv" />
+    <Content Include="Data\2017\RepBrPepp_15_17_Hauptdiagnose.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2017\RepBrPepp_15_17_Katalog.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2017\RepBrPepp_15_17_Kopfdaten.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2017\RepBrPepp_15_17_Kosten.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2017\RepBrPepp_15_17_Kostenbereich.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2017\RepBrPepp_15_17_Nebendiagnosen.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2017\RepBrPepp_15_17_Pepp.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2017\RepBrPepp_15_17_Prozeduren.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2017\RepBrPepp_15_17_Recherche.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2017\RepBrPepp_15_17_Strukturkategorie.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="PeppBrowser.chm">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="PeppBrowser.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2016\RepBrPepp_14_16_Hauptdiagnose.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2016\RepBrPepp_14_16_Katalog.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2016\RepBrPepp_14_16_Kopfdaten.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2016\RepBrPepp_14_16_Kosten.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2016\RepBrPepp_14_16_Kostenbereich.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2016\RepBrPepp_14_16_Nebendiagnosen.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2016\RepBrPepp_14_16_Pepp.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2016\RepBrPepp_14_16_Prozeduren.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2016\RepBrPepp_14_16_Recherche.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2016\RepBrPepp_14_16_Strukturkategorie.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
