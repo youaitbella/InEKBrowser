@@ -1,5 +1,3 @@
-D:\Projects\InEKBrowser_\InekBrowser\bin\x86\Debug\drgDruck.lst
-D:\Projects\InEKBrowser_\InekBrowser\bin\x86\Debug\peppDruck.lst
 D:\Projects\InEKBrowser_\InekBrowser\bin\x86\Debug\Print\cmbr20.dll
 D:\Projects\InEKBrowser_\InekBrowser\bin\x86\Debug\Print\cmct20.dll
 D:\Projects\InEKBrowser_\InekBrowser\bin\x86\Debug\Print\cmdw20.dll
@@ -13,6 +11,7 @@ D:\Projects\InEKBrowser_\InekBrowser\bin\x86\Debug\Print\cmLL2001.chm
 D:\Projects\InEKBrowser_\InekBrowser\bin\x86\Debug\Print\cmll2001.lng
 D:\Projects\InEKBrowser_\InekBrowser\bin\x86\Debug\Print\Cmll20ex.llx
 D:\Projects\InEKBrowser_\InekBrowser\bin\x86\Debug\Print\cmls2001.lng
+D:\Projects\InEKBrowser_\InekBrowser\bin\x86\Debug\drgDruck.lst_
 D:\Projects\InEKBrowser_\InekBrowser\bin\x86\Debug\inek_icon.ico
 D:\Projects\InEKBrowser_\InekBrowser\bin\x86\Debug\PeppBrowser.chm
 D:\Projects\InEKBrowser_\InekBrowser\bin\x86\Debug\PeppBrowser.pdf
@@ -39,4 +38,4 @@ D:\Projects\InEKBrowser_\InekBrowser\obj\x86\Debug\org.inek.InekBrowser.Properti
 D:\Projects\InEKBrowser_\InekBrowser\obj\x86\Debug\InekBrowser.csproj.GenerateResource.Cache
 D:\Projects\InEKBrowser_\InekBrowser\obj\x86\Debug\InEK-Browser.dll
 D:\Projects\InEKBrowser_\InekBrowser\obj\x86\Debug\InEK-Browser.pdb
-D:\Projects\InEKBrowser_\InekBrowser\obj\x86\Debug\InekBrowser.csprojResolveAssemblyReference.cache
+D:\Projects\InEKBrowser_\InekBrowser\bin\x86\Debug\peppDruck.lst_

@@ -1447,7 +1447,7 @@ namespace org.inek.InekBrowser.GUI {
                 cellStyle.Font = f;
             }
             int cellCol = grdCosts.Columns["rowSums"].Index;
-            grdCosts.Rows[grdCosts.Rows.Count - 1].Cells[cellCol].Value = sum.ToString("###,###,###.00");
+            grdCosts.Rows[grdCosts.Rows.Count - 1].Cells[cellCol].Value = sum.ToString("###,###,##0.00");
             grdCosts.Rows[grdCosts.Rows.Count - 1].Cells[cellCol].Style = cellStyle;
         }
 
@@ -1468,7 +1468,7 @@ namespace org.inek.InekBrowser.GUI {
                         sum += decimal.Parse(grdCosts.Rows[rows].Cells[cols].Value.ToString());
                     }
                 }
-                grdCosts.Rows[sumRow].Cells[cols].Value = sum.ToString("###,###,###.00");
+                grdCosts.Rows[sumRow].Cells[cols].Value = sum.ToString("###,###,##0.00");
                 grdCosts.Rows[sumRow].Cells[cols].Style = cellStyle;
                 sumsum += sum;
                 sum = 0;
@@ -1498,7 +1498,7 @@ namespace org.inek.InekBrowser.GUI {
                         sum += decimal.Parse(grdCosts.Rows[rows].Cells[cols].Value.ToString());   
                     }
                 }
-                grdCosts.Rows[rows].Cells[sumCol].Value = sum.ToString("###,###,###.00");
+                grdCosts.Rows[rows].Cells[sumCol].Value = sum.ToString("###,###,##0.00");
                 grdCosts.Rows[rows].Cells[sumCol].Style = cellStyle;
                 sum = 0;
             }
