@@ -6,3 +6,9 @@ PeppBrowser/obj/
 InekBrowser/bin/x86/Debug/drgDruck.lst_
 InekBrowser/bin/
 InekBrowser/obj/
+DrgBrowser/drgDruck.lsp
+DrgBrowser/drgDruck.lsv
+DrgBrowser/drgDruck.~lst
+PeppBrowser/peppDruck.lsp
+PeppBrowser/peppDruck.lsv
+PeppBrowser/peppDruck.~lst
