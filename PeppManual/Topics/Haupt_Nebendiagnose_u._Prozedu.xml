@@ -6,7 +6,7 @@
     <header>
       <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Fallanteil für gefilterten Kode</text></para>
     </header>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Sollten Sie in dem Filter eine Hauptdiagnose, Nebendiagnose oder eine Prozedur auswählen und die PEPP-Auswahl öffnen, wird für alle betroffenen PEPPs der jeweilige Fallanteil für die ausgewählte Hauptdiagnose, Nebendiagnose oder Prozedur angezeigt.</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Sollten Sie in dem Filter eine Hauptdiagnose, Nebendiagnose oder eine Prozedur auswählen und die PEPP-Auswahl öffnen, wird für alle betroffenen PEPP der jeweilige Fallanteil für die ausgewählte Hauptdiagnose, Nebendiagnose oder Prozedur angezeigt.</text></para>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">In dieser Anzeige ist auch eine Sortierung nach diesem Fallanteil möglich.</text></para>
     <para styleclass="Normal"></para>
     <para styleclass="Normal" style="text-align:center;"><image src="filter-diag.png" scale="100.00%" styleclass="Image Caption"></image></para>

@@ -1027,7 +1027,7 @@
 15 ;O;P06C;Neugeborenes, Aufnahmegewicht > 2499 g mit signifikanter OR-Prozedur oder Beatmung > 95 Stunden, ohne mehrere schwere Probleme;0
 15 ;M;P60A;Neugeborenes, verstorben < 5 Tage nach Aufnahme ohne signifikante OR-Prozedur;0
 15 ;M;P60B;Neugeborenes, verlegt < 5 Tage nach Aufnahme ohne signifikante OR-Prozedur, zuverlegt oder Beatmung > 24 Stunden;0
-15 ;M;P60C;Neugeborenes, verlegt < 5 Tage nach Aufnahme ohne signifikante OR-Prozedur, nicht zuverlegt, ohne Beatmung > 24 Stunden;1
+15 ;M;P60C;Neugeborenes, verlegt < 5 Tage nach Aufnahme ohne signifikante OR-Prozedur, nicht zuverlegt, ohne Beatmung > 24 Stunden (Mindestverweildauer 24 Stunden für das Krankenhaus, in dem die Geburt stattfindet);1
 15 ;M;P61A;Neugeborenes, Aufnahmegewicht < 600 g mit signifikanter OR-Prozedur;0
 15 ;M;P61B;Neugeborenes, Aufnahmegewicht < 600 g ohne signifikante OR-Prozedur;0
 15 ;M;P61C;Neugeborenes, Aufnahmegewicht 600 - 749 g mit signifikanter OR-Prozedur;0

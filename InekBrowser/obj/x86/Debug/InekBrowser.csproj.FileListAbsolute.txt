@@ -39,3 +39,4 @@ D:\Projects\InEKBrowser_\InekBrowser\obj\x86\Debug\InekBrowser.csproj.GenerateRe
 D:\Projects\InEKBrowser_\InekBrowser\obj\x86\Debug\InEK-Browser.dll
 D:\Projects\InEKBrowser_\InekBrowser\obj\x86\Debug\InEK-Browser.pdb
 D:\Projects\InEKBrowser_\InekBrowser\bin\x86\Debug\peppDruck.lst_
+D:\Projects\InEKBrowser_\InekBrowser\obj\x86\Debug\InekBrowser.csprojResolveAssemblyReference.cache
