@@ -2,7 +2,7 @@
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <PublishUrlHistory>D:\tmp\GDrgBrowser\2017\|D:\tmp\GDrgBrowser\2015\|\\vFileserver01\company%24\Common\Datenbrowser\ReportBrowser\Reportbrowser_V2015_2017\Prüfung\|\\vFileserver01\company%24\Common\Datenbrowser\ReportBrowser\Reportbrowser_V2014_2016\Prüfung\|\\vFileserver01\company%24\EDV\Projekte\InEK-Browsers\G-DRG-Report-Browser\2016\</PublishUrlHistory>
-    <InstallUrlHistory>http://g-drg.de/GDrgReportBrowser/2017/|http://g-drg.de/GDrgReportBrowser/2015/|\\vFileserver01\company%24\Common\Datenbrowser\ReportBrowser\Reportbrowser_V2013_2015\Prüfung\|\\vFileserver01\company%24\EDV\Users\DV\Offline Browser\2015\DRG\|\\vFileserver01\EDV\Users\DV\Offline Browser\2015\DRG\</InstallUrlHistory>
+    <InstallUrlHistory>http://download.g-drg.de/GDrgReportBrowser/2017/|http://g-drg.de/GDrgReportBrowser/2017/|http://g-drg.de/GDrgReportBrowser/2015/|\\vFileserver01\company%24\Common\Datenbrowser\ReportBrowser\Reportbrowser_V2013_2015\Prüfung\|\\vFileserver01\company%24\EDV\Users\DV\Offline Browser\2015\DRG\</InstallUrlHistory>
     <SupportUrlHistory />
     <UpdateUrlHistory />
     <BootstrapperUrlHistory />
