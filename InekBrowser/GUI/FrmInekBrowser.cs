@@ -810,8 +810,11 @@ namespace org.inek.InekBrowser.GUI {
             try {
                 if(Program.SystemBrowser == Program.System.Pepp) 
                     Process.Start("PeppBrowser.pdf");
-                else if (Program.SystemBrowser == Program.System.Drg || Program.SystemBrowser == Program.System.P21)
+                else if (Program.SystemBrowser == Program.System.Drg)
                     Process.Start("DrgBrowser.pdf");
+                else if (Program.SystemBrowser == Program.System.P21) {
+                    Process.Start("DrgP21Browser.pdf");
+                }
             } catch (Exception) {
                 MessageBox.Show("Kein Handbuch verfügbar.");
             }
@@ -822,8 +825,11 @@ namespace org.inek.InekBrowser.GUI {
             try {
                 if (Program.SystemBrowser == Program.System.Pepp) 
                     Process.Start("PeppBrowser.chm");
-                else if (Program.SystemBrowser == Program.System.Drg || Program.SystemBrowser == Program.System.P21)
+                else if (Program.SystemBrowser == Program.System.Drg)
                     Process.Start("DrgBrowser.chm");
+                else if (Program.SystemBrowser == Program.System.P21) {
+                    Process.Start("DrgP21Browser.chm");
+                }
             } catch (Exception) {
                 MessageBox.Show("Keine Hilfe verfügbar.");
             }
