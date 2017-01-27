@@ -7,7 +7,7 @@
         <export-tasks>
           <export-task name="Exportieren als CHM" format="CHM">
             <task-config-group name="settings">
-              <task-config-value name="outputfile">..\P21Browser\DrgBrowser.chm</task-config-value>
+              <task-config-value name="outputfile">..\P21Browser\DrgP21Browser.chm</task-config-value>
               <task-config-value name="deletetemp">1</task-config-value>
               <task-config-value name="make0include">CHM</task-config-value>
               <task-config-value name="make0status">*</task-config-value>
@@ -15,10 +15,13 @@
           </export-task>
           <export-task name="Exportieren als PDF" format="PDF">
             <task-config-group name="settings">
-              <task-config-value name="outputfile">..\P21Browser\DrgBrowser.pdf</task-config-value>
+              <task-config-value name="outputfile">..\P21Browser\DrgP21Browser.pdf</task-config-value>
               <task-config-value name="template">.\template\DrgToollManual.mnl</task-config-value>
               <task-config-value name="make4include">PDF,USER1</task-config-value>
               <task-config-value name="make4status">*</task-config-value>
+              <task-config-value name="deletetemp">1</task-config-value>
+              <task-config-value name="make0include">CHM</task-config-value>
+              <task-config-value name="make0status">*</task-config-value>
             </task-config-group>
           </export-task>
         </export-tasks>
