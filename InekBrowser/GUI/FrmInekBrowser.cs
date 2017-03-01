@@ -126,8 +126,6 @@ namespace org.inek.InekBrowser.GUI {
                 Text = "G-DRG-Browser " + (int.Parse(Program.Year) - 2) + "_" + (int.Parse(Program.Year) - 1);
                 helpProvider1.HelpNamespace = "DrgBrowser.chm";
                 drgData.ShowCaseCosts = false;
-                drgData.PCCL5Visible = false;
-                drgData.PCCL6Visible = false;
             }
         }
 
@@ -1101,7 +1099,12 @@ namespace org.inek.InekBrowser.GUI {
             drgData.MdcText = q2.Select(mdc => mdc.Text).Single();
             drgData.MdcCases = q2.Select(mdc => mdc.CaseCount).Single().ToString("##,###,###");
             drgData.NumDrgs = q2.Select(mdc => mdc.DrgCount).Single().ToString("##,###,###");
-            drgData.FromMdc = ((decimal)((decimal)q.Select(drg => drg.CaseCount).Single()/(decimal)q2.Select(mdc => mdc.CaseCount).Single())).ToString("P");
+            try {
+                drgData.FromMdc = ((decimal)((decimal)q.Select(drg => drg.CaseCount).Single() / (decimal)q2.Select(mdc => mdc.CaseCount).Single())).ToString("P");
+            } catch (Exception) {
+                drgData.FromMdc = "";
+            }
+            
         }
 
         private bool _mainLoaded = false;
