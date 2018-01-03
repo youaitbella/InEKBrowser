@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using combit.ListLabel20;
+using combit.ListLabel22;
 using org.inek.controls.CommonControls;
 using org.inek.InekBrowser.Data;
 using org.inek.controls.gui;
@@ -39,6 +39,9 @@ namespace org.inek.InekBrowser.GUI {
         private SelectionDrg selectionDrg;
 
         public static string SystemCode {
+            get; set;
+        }
+        public string Department{
             get; set;
         }
 
@@ -170,6 +173,7 @@ namespace org.inek.InekBrowser.GUI {
                                                 TabIndex = 11
                                             };
             SelectionDrg.Parent = this;
+            Department = "Hauptabteilung";
             tableLayoutPanel1.Controls.Add(selectionDrg, 0, 0);
         }
 
@@ -599,6 +603,7 @@ namespace org.inek.InekBrowser.GUI {
                                                                     ko_KArt5 = c.CostType5,
                                                                     ko_KArt6a = c.CostType6a,
                                                                     ko_KArt6b = c.CostType6b,
+                                                                    ko_Kart6c = c.CostType6c,
                                                                     ko_KArt7 = c.CostType7,
                                                                     ko_KArt8 = c.CostType8
                                                                 });
@@ -620,6 +625,7 @@ namespace org.inek.InekBrowser.GUI {
                     IO_KArt5 = c.CostType5,
                     IO_KArt6a = c.CostType6a,
                     IO_KArt6b = c.CostType6b,
+                    IO_Kart6c = c.CostType6c,
                     IO_KArt7 = c.CostType7,
                     IO_KArt8 = c.CostType8,
                     IO_Summe = c.CostSum
@@ -798,6 +804,7 @@ namespace org.inek.InekBrowser.GUI {
 
         private void titleBar_ClickedMinMax(object sender, EventArgs e) {
             if (WindowState == FormWindowState.Normal) {
+                MaximumSize = Screen.PrimaryScreen.WorkingArea.Size;
                 WindowState = FormWindowState.Maximized;
             } else {
                 WindowState = FormWindowState.Normal;
@@ -1340,6 +1347,10 @@ namespace org.inek.InekBrowser.GUI {
                                                  (c.CostType6b.ToString("F").Equals("0,00")
                                                      ? ""
                                                      : c.CostType6b.ToString("F")),
+                                             KostenArt6c =
+                                                 (c.CostType6c.ToString("F").Equals("0,00")
+                                                     ? ""
+                                                     : c.CostType6c.ToString("F")),
                                              KostenArt7 =
                                                  (c.CostType7.ToString("F").Equals("0,00")
                                                      ? ""
@@ -1396,6 +1407,10 @@ namespace org.inek.InekBrowser.GUI {
                             (c.CostType6b.ToString("F").Equals("0,00")
                                 ? ""
                                 : c.CostType6b.ToString("F")),
+                        KostenArt6c =
+                            (c.CostType6c.ToString("F").Equals("0,00")
+                                ? ""
+                                : c.CostType6c.ToString("F")),
                         KostenArt7 =
                             (c.CostType7.ToString("F").Equals("0,00")
                                 ? ""
@@ -1540,35 +1555,18 @@ namespace org.inek.InekBrowser.GUI {
 
         private static Dictionary<int, string> CreateCostCenterMapPepp() {
             Dictionary<int, string> rowMap = new Dictionary<int, string>();
-            rowMap.Add(21, "21. Station - Regelbehandlung");
-            rowMap.Add(22, "22. Station - Intensivbehandlung");
-            rowMap.Add(23, "23. Psychotherapie");
-            rowMap.Add(24, "24. Physikalische Therapie");
-            rowMap.Add(25, "25. Ergotherapie");
-            rowMap.Add(26, "26. Andere Therapie");
-            rowMap.Add(4, "04. OP-Bereich");
-            rowMap.Add(5, "05. Anästhesie");
-            rowMap.Add(7, "07. Kardiologische Diagnostik / Therapie");
-            rowMap.Add(8, "08. Endoskopische Diagnostik / Therapie");
-            rowMap.Add(9, "09. Radiologie");
-            rowMap.Add(10, "10. Laboratorien");
-            rowMap.Add(11, "11. Übrige diagnostische und therapeutische Bereiche");
+            CsvData.Context().CostDomains
+                .OrderBy(e => e.Order)
+                .ToList()
+                .ForEach(e => rowMap.Add(e.DomainId, e.DomainText));
             return rowMap;
         }
 
         private static Dictionary<int, string> CreateCostCenterMapDrg() {
             Dictionary<int, string> rowMap = new Dictionary<int, string>();
-            rowMap.Add(1, "01. Normalstation");
-            rowMap.Add(2, "02. Intensivstation");
-            rowMap.Add(3, "03. Dialyseabteilung");
-            rowMap.Add(4, "04. OP-Bereich");
-            rowMap.Add(5, "05. Anästhesie");
-            rowMap.Add(6, "06. Kreißsaal");
-            rowMap.Add(7, "07. Kardiologische Diagnostik / Therapie");
-            rowMap.Add(8, "08. Endoskopische Diagnostik / Therapie");
-            rowMap.Add(9, "09. Radiologie");
-            rowMap.Add(10, "10. Laboratorien");
-            rowMap.Add(11, "11. Übrige diagnostische und therapeutische Bereiche");
+            CsvData.Context().CostDomains
+                .ToList()
+                .ForEach(e => rowMap.Add(e.DomainId,e.DomainText));
             return rowMap;
         }
 
@@ -1577,10 +1575,10 @@ namespace org.inek.InekBrowser.GUI {
             DataRow row = table.NewRow();
             string[] headers = {
                       "1", "2", "3a", "3b", "3c", "3",
-                      "4a", "4b", "5", "6a", "6b", "7", "8"
+                      "4a", "4b", "5", "6a", "6b", "6c", "7", "8"
                   };
             if (Program.SystemBrowser == Program.System.Drg)
-                headers = new[] {"1", "2", "3", "4a", "4b", "5", "6a", "6b", "7", "8"};
+                headers = new[] {"1", "2", "3", "4a", "4b", "5", "6a", "6b", "6c", "7", "8"};
             for (int i = 0; i < headers.Length; i++) {
                 row[i] = headers[i];
             }
@@ -1619,6 +1617,8 @@ namespace org.inek.InekBrowser.GUI {
                     grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Übriger medizinischer Bedarf";
                 } else if (i == grdCosts.Columns["KostenArt6b"].Index) {
                     grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Übriger medizinischer Bedarf";
+                } else if (i == grdCosts.Columns["KostenArt6c"].Index) {
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Übriger medizinischer Bedarf";
                 } else if (i == grdCosts.Columns["KostenArt7"].Index) {
                     grdCosts.Rows[0].Cells[i].ToolTipText = "Personal- und Sachkosten med. Infrastruktur";
                 } else if (i == grdCosts.Columns["KostenArt8"].Index) {
@@ -1640,6 +1640,8 @@ namespace org.inek.InekBrowser.GUI {
                 } else if (i == grdCosts.Columns["KostenArt6a"].Index) {
                     grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Übriger medizinischer Bedarf";
                 } else if (i == grdCosts.Columns["KostenArt6b"].Index) {
+                    grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Übriger medizinischer Bedarf";
+                } else if (i == grdCosts.Columns["KostenArt6c"].Index) {
                     grdCosts.Rows[0].Cells[i].ToolTipText = "Sachkosten Übriger medizinischer Bedarf";
                 } else if (i == grdCosts.Columns["KostenArt7"].Index) {
                     grdCosts.Rows[0].Cells[i].ToolTipText = "Personal- und Sachkosten med. Infrastruktur";
@@ -2047,6 +2049,7 @@ namespace org.inek.InekBrowser.GUI {
                         CostType5 = c.CostType5,
                         CostType6a = c.CostType6a,
                         CostType6b = c.CostType6b,
+                        CostType6c = c.CostType6c,
                         CostType7 = c.CostType7,
                         CostType8 = c.CostType8,
                         TxtBez = d.DomainText
@@ -2059,6 +2062,7 @@ namespace org.inek.InekBrowser.GUI {
                 string mdcTag = CsvData.Context().System.Where(drg => drg.Code == SystemCode).Select(drg => drg.Category).Single().Trim();
                 info.MdcCat = CsvData.Context().Mdcs.Where(mdc => mdc.MDC.Trim() == mdcTag).Select(mdc => mdc.Text).Single();
                 info.DrgTxt = cbxSystem.Text;
+                info.Devision = Department;
                 var drgData = new SystemData(info);
                 var q2 = CsvData.Context().Mdcs.Where(mdc => mdc.MDC.Trim() == drgData.MDC.Trim());
                 drgData.casesMDC = q2.Select(mdc => mdc.CaseCount).Single();
@@ -2112,6 +2116,7 @@ namespace org.inek.InekBrowser.GUI {
                         CostType5 = c.CostType5,
                         CostType6a = c.CostType6a,
                         CostType6b = c.CostType6b,
+                        CostType6c = c.CostType6c,
                         CostType7 = c.CostType7,
                         CostType8 = c.CostType8,
                         TxtBez = d.DomainText
@@ -2123,6 +2128,7 @@ namespace org.inek.InekBrowser.GUI {
                 string mdcTag = CsvData.Context().System.Where(drg => drg.Code == SystemCode).Select(drg => drg.Category).Single().Trim();
                 info.MdcCat = CsvData.Context().Mdcs.Where(mdc => mdc.MDC.Trim() == mdcTag).Select(mdc => mdc.Text).Single();
                 info.DrgTxt = cbxSystem.Text;
+                info.Devision = Department;
                 var drgData = new SystemData(info);
                 var q2 = CsvData.Context().Mdcs.Where(mdc => mdc.MDC.Trim() == drgData.MDC.Trim());
                 drgData.casesMDC = q2.Select(mdc => mdc.CaseCount).Single();

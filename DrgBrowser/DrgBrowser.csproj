@@ -8,12 +8,12 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DrgBrowser</RootNamespace>
-    <AssemblyName>G-DRG-Report-Browser 2017</AssemblyName>
+    <AssemblyName>G-DRG-Report-Browser 2018</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <IsWebBootstrapper>true</IsWebBootstrapper>
-    <PublishUrl>D:\tmp\GDrgBrowser\2017\</PublishUrl>
+    <PublishUrl>D:\tmp\GDrgReportBrowser\2018\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -23,8 +23,8 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>http://download.g-drg.de/GDrgReportBrowser/2017/</InstallUrl>
-    <ProductName>G-DRG-Report-Browser 2017</ProductName>
+    <InstallUrl>http://download.g-drg.de/GDrgReportBrowser/2018/</InstallUrl>
+    <ProductName>G-DRG-Report-Browser 2018</ProductName>
     <PublisherName>Institut für das Entgeltsystem im Krankenhaus GmbH %28InEK%29</PublisherName>
     <SuiteName>G-DRG-Report-Browser</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
@@ -60,7 +60,7 @@
     <ApplicationIcon>inek_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>FDC8F2E5AB86A6AE964068AD2BE1269F136FE8A3</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>752DB60C9A303EA08F36216542329CEBCE9FA001</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>
@@ -93,19 +93,31 @@
     <Content Include="drgDruck.lst">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmll20pr.dll">
+    <Content Include="Print\cmbr22.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmll20xl.dll">
+    <Content Include="Print\cmct22.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmls20.dll">
+    <Content Include="Print\cmdw22.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmmx20.dll">
+    <Content Include="Print\cmll22.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmut20.dll">
+    <Content Include="Print\cmll22pr.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Print\cmll22xl.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Print\cmls22.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Print\cmmx22.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Print\cmut22.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -118,6 +130,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="cert050218.p12" />
     <None Include="Data\2015\RepBrDrg_13_15_Drg.csv" />
     <None Include="Data\2015\RepBrDrg_13_15_Kostenbereich.csv" />
     <None Include="Data\2015\RepBrDrg_BA_13_15_Hauptdiagnose.csv" />
@@ -134,18 +147,6 @@
     <None Include="Data\2015\RepBrDrg_HA_13_15_Nebendiagnosen.csv" />
     <None Include="Data\2015\RepBrDrg_HA_13_15_Prozeduren.csv" />
     <None Include="Data\2015\RepBrDrg_HA_13_15_Recherche.csv" />
-    <Content Include="Print\cmLL2001.chm">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Print\cmll2001.lng">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Print\Cmll20ex.llx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Print\cmls2001.lng">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="DrgBrowser.chm">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -168,52 +169,80 @@
     <None Include="Data\2016\RepBrDrg_HA_14_16_Nebendiagnosen.csv" />
     <None Include="Data\2016\RepBrDrg_HA_14_16_Prozeduren.csv" />
     <None Include="Data\2016\RepBrDrg_HA_14_16_Recherche.csv" />
-    <Content Include="Data\2017\RepBrDrg_15_17_Drg.csv">
+    <None Include="Data\2017\RepBrDrg_15_17_Drg.csv" />
+    <None Include="Data\2017\RepBrDrg_15_17_Kostenbereich.csv" />
+    <None Include="Data\2017\RepBrDrg_BA_15_17_Hauptdiagnose.csv" />
+    <None Include="Data\2017\RepBrDrg_BA_15_17_Kopfdaten.csv" />
+    <None Include="Data\2017\RepBrDrg_BA_15_17_Kosten.csv" />
+    <None Include="Data\2017\RepBrDrg_BA_15_17_Mdc.csv" />
+    <None Include="Data\2017\RepBrDrg_BA_15_17_Nebendiagnosen.csv" />
+    <None Include="Data\2017\RepBrDrg_BA_15_17_Prozeduren.csv" />
+    <None Include="Data\2017\RepBrDrg_BA_15_17_Recherche.csv" />
+    <None Include="Data\2017\RepBrDrg_HA_15_17_Hauptdiagnose.csv" />
+    <None Include="Data\2017\RepBrDrg_HA_15_17_Kopfdaten.csv" />
+    <None Include="Data\2017\RepBrDrg_HA_15_17_Kosten.csv" />
+    <None Include="Data\2017\RepBrDrg_HA_15_17_Mdc.csv" />
+    <None Include="Data\2017\RepBrDrg_HA_15_17_Nebendiagnosen.csv" />
+    <None Include="Data\2017\RepBrDrg_HA_15_17_Prozeduren.csv" />
+    <None Include="Data\2017\RepBrDrg_HA_15_17_Recherche.csv" />
+    <Content Include="Data\2018\RepBrDrg_16_18_Drg.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\RepBrDrg_15_17_Kostenbereich.csv">
+    <Content Include="Data\2018\RepBrDrg_16_18_Kostenbereich.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\RepBrDrg_BA_15_17_Hauptdiagnose.csv">
+    <Content Include="Data\2018\RepBrDrg_BA_16_18_Hauptdiagnose.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\RepBrDrg_BA_15_17_Kopfdaten.csv">
+    <Content Include="Data\2018\RepBrDrg_BA_16_18_Kopfdaten.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\RepBrDrg_BA_15_17_Kosten.csv">
+    <Content Include="Data\2018\RepBrDrg_BA_16_18_Kosten.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\RepBrDrg_BA_15_17_Mdc.csv">
+    <Content Include="Data\2018\RepBrDrg_BA_16_18_Mdc.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\RepBrDrg_BA_15_17_Nebendiagnosen.csv">
+    <Content Include="Data\2018\RepBrDrg_BA_16_18_Nebendiagnosen.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\RepBrDrg_BA_15_17_Prozeduren.csv">
+    <Content Include="Data\2018\RepBrDrg_BA_16_18_Prozeduren.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\RepBrDrg_BA_15_17_Recherche.csv">
+    <Content Include="Data\2018\RepBrDrg_BA_16_18_Recherche.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\RepBrDrg_HA_15_17_Hauptdiagnose.csv">
+    <Content Include="Data\2018\RepBrDrg_HA_16_18_Hauptdiagnose.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\RepBrDrg_HA_15_17_Kopfdaten.csv">
+    <Content Include="Data\2018\RepBrDrg_HA_16_18_Kopfdaten.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\RepBrDrg_HA_15_17_Kosten.csv">
+    <Content Include="Data\2018\RepBrDrg_HA_16_18_Kosten.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\RepBrDrg_HA_15_17_Mdc.csv">
+    <Content Include="Data\2018\RepBrDrg_HA_16_18_Mdc.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\RepBrDrg_HA_15_17_Nebendiagnosen.csv">
+    <Content Include="Data\2018\RepBrDrg_HA_16_18_Nebendiagnosen.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\RepBrDrg_HA_15_17_Prozeduren.csv">
+    <Content Include="Data\2018\RepBrDrg_HA_16_18_Prozeduren.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\RepBrDrg_HA_15_17_Recherche.csv">
+    <Content Include="Data\2018\RepBrDrg_HA_16_18_Recherche.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Print\cmll2200.chm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Print\cmLL2200.lng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Print\Cmll22ex.llx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Print\cmLS2201.lng">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Properties\Settings.settings">
@@ -238,7 +267,7 @@
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">
       <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <ProductName>Microsoft .NET Framework 4 %28x86 und x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -254,18 +283,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="inek_icon.ico" />
-    <Content Include="Print\cmbr20.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Print\cmct20.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Print\cmdw20.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Print\cmll20.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <PublishFile Include="ADODB">

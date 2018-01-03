@@ -8,12 +8,12 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>P21Browser</RootNamespace>
-    <AssemblyName>G-DRG-Browser 2015_2016</AssemblyName>
+    <AssemblyName>G-DRG-Browser 2016_2017</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>\\vFileserver01\company%24\Common\Datenbrowser\Par21Browser\GDRG_V2016_Browser_Par21_2015\Prüfung\</PublishUrl>
+    <PublishUrl>W:\Common\Datenbrowser\Par21Browser\GDRG_V2017_Browser_Par21_2016\Prüfung\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Unc</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -23,10 +23,11 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ProductName>G-DRG-Browser 2015_2016</ProductName>
+    <InstallUrl>\\vFileserver01\company%24\Common\Datenbrowser\Par21Browser\GDRG_V2017_Browser_Par21_2016\Prüfung\</InstallUrl>
+    <ProductName>G-DRG-Browser 2016_2017</ProductName>
     <PublisherName>Institut für das Entgeltsystem im Krankenhaus GmbH %28InEK%29</PublisherName>
     <SuiteName>G-DRG-Browser</SuiteName>
-    <ApplicationRevision>20</ApplicationRevision>
+    <ApplicationRevision>6</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -55,7 +56,7 @@
     <StartupObject>P21Browser.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>FDC8F2E5AB86A6AE964068AD2BE1269F136FE8A3</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>752DB60C9A303EA08F36216542329CEBCE9FA001</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>
@@ -72,7 +73,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -89,31 +92,31 @@
     <Content Include="p21Druck.lst">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmbr20.dll">
+    <Content Include="Print\cmbr22.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmct20.dll">
+    <Content Include="Print\cmct22.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmdw20.dll">
+    <Content Include="Print\cmdw22.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmll20.dll">
+    <Content Include="Print\cmll22.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmll20pr.dll">
+    <Content Include="Print\cmll22pr.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmll20xl.dll">
+    <Content Include="Print\cmll22xl.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmls20.dll">
+    <Content Include="Print\cmls22.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmmx20.dll">
+    <Content Include="Print\cmmx22.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmut20.dll">
+    <Content Include="Print\cmut22.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -126,82 +129,101 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Content Include="Print\cmLL2001.chm">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Print\cmll2001.lng">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Print\Cmll20ex.llx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Print\cmls2001.lng">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="DrgP21Browser.chm">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="DrgP21Browser.pdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\P21BrDrg_15_16_Drg.csv">
+    <None Include="Data\2017\P21BrDrg_15_16_Drg.csv" />
+    <None Include="Data\2017\P21BrDrg_BA_15_16_Hauptdiagnose.csv" />
+    <None Include="Data\2017\P21BrDrg_BA_15_16_Kopfdaten.csv" />
+    <None Include="Data\2017\P21BrDrg_BA_15_16_Mdc.csv" />
+    <None Include="Data\2017\P21BrDrg_BA_15_16_Nebendiagnosen.csv" />
+    <None Include="Data\2017\P21BrDrg_BA_15_16_Prozeduren.csv" />
+    <None Include="Data\2017\P21BrDrg_BA_15_16_Recherche.csv" />
+    <None Include="Data\2017\P21BrDrg_HA_15_16_Hauptdiagnose.csv" />
+    <None Include="Data\2017\P21BrDrg_HA_15_16_Kopfdaten.csv" />
+    <None Include="Data\2017\P21BrDrg_HA_15_16_Mdc.csv" />
+    <None Include="Data\2017\P21BrDrg_HA_15_16_Nebendiagnosen.csv" />
+    <None Include="Data\2017\P21BrDrg_HA_15_16_Prozeduren.csv" />
+    <None Include="Data\2017\P21BrDrg_HA_15_16_Recherche.csv" />
+    <None Include="Data\2017\P21BrDrg_TS_15_16_Hauptdiagnose.csv" />
+    <None Include="Data\2017\P21BrDrg_TS_15_16_Mdc.csv" />
+    <None Include="Data\2017\P21BrDrg_TS_15_16_Nebendiagnosen.csv" />
+    <None Include="Data\2017\P21BrDrg_TS_15_16_Prozeduren.csv" />
+    <None Include="Data\2017\P21BrDrg_TS_15_16_Recherche.csv" />
+    <None Include="Data\2017\P21BrDrg_TS_15_16_Kopfdaten.csv" />
+    <Content Include="Data\2018\P21BrDrg_16_17_Drg.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\P21BrDrg_BA_15_16_Hauptdiagnose.csv">
+    <Content Include="Data\2018\P21BrDrg_BA_16_17_Hauptdiagnose.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\P21BrDrg_BA_15_16_Kopfdaten.csv">
+    <Content Include="Data\2018\P21BrDrg_BA_16_17_Kopfdaten.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\P21BrDrg_BA_15_16_Mdc.csv">
+    <Content Include="Data\2018\P21BrDrg_BA_16_17_Mdc.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\P21BrDrg_BA_15_16_Nebendiagnosen.csv">
+    <Content Include="Data\2018\P21BrDrg_BA_16_17_Nebendiagnosen.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\P21BrDrg_BA_15_16_Prozeduren.csv">
+    <Content Include="Data\2018\P21BrDrg_BA_16_17_Prozeduren.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\P21BrDrg_BA_15_16_Recherche.csv">
+    <Content Include="Data\2018\P21BrDrg_BA_16_17_Recherche.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\P21BrDrg_HA_15_16_Hauptdiagnose.csv">
+    <Content Include="Data\2018\P21BrDrg_HA_16_17_Hauptdiagnose.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\P21BrDrg_HA_15_16_Kopfdaten.csv">
+    <Content Include="Data\2018\P21BrDrg_HA_16_17_Kopfdaten.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\P21BrDrg_HA_15_16_Mdc.csv">
+    <Content Include="Data\2018\P21BrDrg_HA_16_17_Mdc.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\P21BrDrg_HA_15_16_Nebendiagnosen.csv">
+    <Content Include="Data\2018\P21BrDrg_HA_16_17_Nebendiagnosen.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\P21BrDrg_HA_15_16_Prozeduren.csv">
+    <Content Include="Data\2018\P21BrDrg_HA_16_17_Prozeduren.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\P21BrDrg_HA_15_16_Recherche.csv">
+    <Content Include="Data\2018\P21BrDrg_HA_16_17_Recherche.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\P21BrDrg_TS_15_16_Hauptdiagnose.csv">
+    <Content Include="Data\2018\P21BrDrg_TS_16_17_Hauptdiagnose.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\P21BrDrg_TS_15_16_Mdc.csv">
+    <Content Include="Data\2018\P21BrDrg_TS_16_17_Kopfdaten.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\P21BrDrg_TS_15_16_Nebendiagnosen.csv">
+    <Content Include="Data\2018\P21BrDrg_TS_16_17_Mdc.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\P21BrDrg_TS_15_16_Prozeduren.csv">
+    <Content Include="Data\2018\P21BrDrg_TS_16_17_Nebendiagnosen.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\P21BrDrg_TS_15_16_Recherche.csv">
+    <Content Include="Data\2018\P21BrDrg_TS_16_17_Prozeduren.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2017\P21BrDrg_TS_15_16_Kopfdaten.csv">
+    <Content Include="Data\2018\P21BrDrg_TS_16_17_Recherche.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="P21Browser_TemporaryKey.pfx" />
+    <Content Include="Print\cmll2200.chm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Print\cmLL2200.lng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Print\Cmll22ex.llx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Print\cmLS2201.lng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -226,7 +248,7 @@
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">
       <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <ProductName>Microsoft .NET Framework 4 %28x86 und x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

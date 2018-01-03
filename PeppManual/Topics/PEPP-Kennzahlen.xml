@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
-<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+<topic template="Default" lasteditedby="lautenti" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
   <title translate="true">PEPP-Kennzahlen</title>
   <body>
     <header>
       <para styleclass="Heading1"><text styleclass="Heading1" translate="true">PEPP-Kennzahlen</text></para>
     </header>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Es werden folgende zur PEPP-Version 2017 gehörige Kennzahlen je PEPP ausgewiesen:</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Es werden folgende zur PEPP-Version 2018 gehörige Kennzahlen je PEPP ausgewiesen:</text></para>
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Fallzahl</text></para>
     <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
@@ -20,7 +20,7 @@
     <para styleclass="Bullet Text"></para>
     <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Katalog</text></para>
     <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
-      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Degressionsendpunkt: Zeigt die größte Vergütungsklasse (Tag) an, für die ein Relativgewicht im Katalog ausgewiesen wird. </text><text styleclass="Font Style" style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" translate="true">Ist die Behandlungsdauer länger als die letzte im PEPP-Entgeltkatalog ausgewiesene Anzahl der Berechnungstage, gilt die Bewertungsrelation der letzten ausgewiesenen Zeile (entspricht dem Degressionsendpunkt) innerhalb der PEPP.</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Degressionsendpunkt: Zeigt die größte Vergütungsklasse (Tag) an, für die ein Relativgewicht im Katalog ausgewiesen wird. </text><text style="font-family:Arial; font-size:11pt; color:#000000;" translate="true">Ist die Behandlungsdauer länger als die letzte im PEPP-Entgeltkatalog ausgewiesene Anzahl der Berechnungstage, gilt die Bewertungsrelation der letzten ausgewiesenen Zeile (entspricht dem Degressionsendpunkt) innerhalb der PEPP.</text></li>
     </list>
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Pflegetage bzw. Tagesk. (Tageskosten) bzw. Alter</text></para>

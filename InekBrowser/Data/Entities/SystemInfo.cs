@@ -64,6 +64,7 @@ namespace org.inek.InekBrowser.Data.Entities {
         public string PeppTxt { get; set; }
         public string DrgTxt { get; set; }
         public string MdcCat { get; set; }
+        public string Devision { get; set; }
         #endregion
     }
 }

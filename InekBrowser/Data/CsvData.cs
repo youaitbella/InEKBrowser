@@ -5,6 +5,7 @@ using System.Globalization;
 using System.IO;
 using System.Security;
 using System.Windows.Forms;
+using Irony.Parsing;
 using org.inek.InekBrowser.Data.Entities;
 
 namespace org.inek.InekBrowser.Data {
@@ -607,9 +608,10 @@ namespace org.inek.InekBrowser.Data {
                                  CostType5 = decimal.Parse(tokens[7]),
                                  CostType6a = decimal.Parse(tokens[8]),
                                  CostType6b = decimal.Parse(tokens[9]),
-                                 CostType7 = decimal.Parse(tokens[10]),
-                                 CostType8 = decimal.Parse(tokens[11]),
-                                 CostSum = decimal.Parse(tokens[12])
+                                 CostType6c = decimal.Parse(tokens[10]),
+                                 CostType7 = decimal.Parse(tokens[11]),
+                                 CostType8 = decimal.Parse(tokens[12]),
+                                 CostSum = decimal.Parse(tokens[13])
                              };
             _costs.Add(c);
         }
@@ -892,8 +894,9 @@ namespace org.inek.InekBrowser.Data {
                                  CostType5 = decimal.Parse(tokens[10]),
                                  CostType6a = decimal.Parse(tokens[11]),
                                  CostType6b = decimal.Parse(tokens[12]),
-                                 CostType7 = decimal.Parse(tokens[13]),
-                                 CostType8 = decimal.Parse(tokens[14])
+                                 CostType6c = decimal.Parse(tokens[13]),
+                                 CostType7 = decimal.Parse(tokens[14]),
+                                 CostType8 = decimal.Parse(tokens[15])
                              };
             list.Add(c);
         }

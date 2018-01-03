@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>D:\tmp\PeppBrowser\2017\|D:\tmp\PeppBrowser\2015\|\\vFileserver01\company%24\Common\Datenbrowser\PeppBrowser\PeppBrowser_2017\|\\vFileserver01\company%24\Common\Datenbrowser\PeppBrowser\PeppBrowser_2016\|\\vFileserver01\company%24\EDV\Projekte\InEK-Browsers\PEPP-Browser\2016\</PublishUrlHistory>
-    <InstallUrlHistory>http://download.g-drg.de/PeppBrowser/2017/|http://g-drg.de/PeppBrowser/2017/|http://g-drg.de/PeppBrowser/2015/|http://g-drg.de/PeppBrowser/2015/Pepp-Browser2015Setup.exe/|\\vFileserver01\company%24\Common\Datenbrowser\PeppBrowser\PeppBrowser_2015\</InstallUrlHistory>
+    <PublishUrlHistory>D:\tmp\PeppBrowser\2018\|W:\Common\Datenbrowser\PeppBrowser\PeppBrowser_2018\Prüfung\|D:\tmp\PeppBrowser\|D:\tmp\PeppBrowser\2017\|D:\tmp\PeppBrowser\2015\</PublishUrlHistory>
+    <InstallUrlHistory>http://download.g-drg.de/PeppBrowser/2018/|\\vFileserver01\company%24\Common\Datenbrowser\PeppBrowser\PeppBrowser_2018\Prüfung\|http://download.g-drg.de/PeppBrowser/2017/|http://g-drg.de/PeppBrowser/2017/|http://g-drg.de/PeppBrowser/2015/</InstallUrlHistory>
     <SupportUrlHistory />
     <UpdateUrlHistory />
     <BootstrapperUrlHistory />

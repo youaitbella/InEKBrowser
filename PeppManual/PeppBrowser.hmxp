@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<helpproject xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="helpproject.xsd" version="1.6" isskin="false" isrepository="false">
+<helpproject xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="helpproject.xsd" version="2.0" isskin="false" isrepository="false">
   <config>
     <namespaces/>
     <export-task-groups>
@@ -27,7 +27,6 @@
     <helpwindows>
       <helpwindow name="Main" left="-1" top="-1" width="-1" height="-1">
         <caption translate="true">&lt;%TITLE%&gt;</caption>
-        <window-options-hlp autosize="true" maximize="false" posabsolute="false" keepontop="false" buttons="0" headercolor="#F0F0F0" textcolor="#FFFFFF"/>
         <window-options-chm navigation="true" navigationwidth="200" search="true" favorite="true" saveregistry="true" buttons="12366">
           <user-button name="jump1">
             <caption translate="true">jump1</caption>
@@ -110,10 +109,10 @@
       </tablestyleclass>
     </styleclasses>
     <config-group name="project">
-      <config-value name="title" translate="true">PEPP-Browser 2017</config-value>
+      <config-value name="title" translate="true">PEPP-Browser 2018</config-value>
       <config-value name="author" translate="true">InEK GmbH</config-value>
-      <config-value name="copyright" translate="true">© 2016 InEK GmbH, Siegburg</config-value>
-      <config-value name="versionmajor">2017</config-value>
+      <config-value name="copyright" translate="true">© 2017 InEK GmbH, Siegburg</config-value>
+      <config-value name="versionmajor">2018</config-value>
       <config-value name="versionminor">1</config-value>
       <config-value name="lcid" translate="true">de-de</config-value>
       <config-value name="charset" translate="true">ANSI_CHARSET</config-value>
@@ -159,7 +158,7 @@
       </config-group>
       <config-value name="make6include">EBOOK</config-value>
       <config-value name="make6status">*</config-value>
-      <config-value name="summary" translate="true">PEPP-Browser 2017</config-value>
+      <config-value name="summary" translate="true">PEPP-Browser 2018</config-value>
       <config-value name="versionbuild">0</config-value>
     </config-group>
     <config-group name="user">
@@ -190,6 +189,11 @@
       <config-group name="rusertma">
         <config-group name="project">
           <config-value name="lastexport">4</config-value>
+        </config-group>
+      </config-group>
+      <config-group name="lautenti">
+        <config-group name="project">
+          <config-value name="lastexport">0</config-value>
         </config-group>
       </config-group>
     </config-group>
@@ -452,20 +456,21 @@ nsrInit();
       <config-value name="insertseealso">0</config-value>
     </config-group>
     <variables>
-      <variable id="DOWNLOAD_LINK" type="text" translate="true">http://g-drg.de/PeppBrowser/2017/Pepp-Browser2017Setup.exe</variable>
+      <variable id="DOWNLOAD_LINK" type="text" translate="true">http://g-drg.de/PeppBrowser/2018/setup.exe</variable>
       <variable id="FIGURE" type="text" translate="true">Abb. &lt;%FIGURE++%&gt;:</variable>
       <variable id="FIGURE++" type="text" translate="true">0</variable>
-      <variable id="FILE_CATALOGUE" type="text" translate="true">RepBrPepp_15_17_Katalog.csv</variable>
-      <variable id="FILE_COST" type="text" translate="true">PeppBr_15_17_Kosten.csv</variable>
-      <variable id="FILE_COST_DOMAIN" type="text" translate="true">PeppBr_15_17_Kostenbereich.csv</variable>
-      <variable id="FILE_HD" type="text" translate="true">PeppBr_15_17_Hauptdiagnose.csv</variable>
-      <variable id="FILE_HEADDATA" type="text" translate="true">PeppBr_15_17_Kopfdaten.csv</variable>
-      <variable id="FILE_ND" type="text" translate="true">PeppBr_15_17_Nebendiagnose.csv</variable>
-      <variable id="FILE_PEPP" type="text" translate="true">PeppBr_15_17_Pepp.csv</variable>
-      <variable id="FILE_PROC" type="text" translate="true">PeppBr_15_17_Prozeduren.csv</variable>
-      <variable id="FILE_RECHERCHE" type="text" translate="true">PeppBr_15_17_Recherche.csv</variable>
-      <variable id="FILE_SK" type="text" translate="true">PeppBr_15_17_Strukturkategorie.csv</variable>
+      <variable id="FILE_CATALOGUE" type="text" translate="true">RepBrPepp_16_18_Katalog.csv</variable>
+      <variable id="FILE_COST" type="text" translate="true">PeppBr_16_18_Kosten.csv</variable>
+      <variable id="FILE_COST_DOMAIN" type="text" translate="true">PeppBr_16_18_Kostenbereich.csv</variable>
+      <variable id="FILE_HD" type="text" translate="true">PeppBr_16_18_Hauptdiagnose.csv</variable>
+      <variable id="FILE_HEADDATA" type="text" translate="true">PeppBr_16_18_Kopfdaten.csv</variable>
+      <variable id="FILE_ND" type="text" translate="true">PeppBr_16_18_Nebendiagnose.csv</variable>
+      <variable id="FILE_PEPP" type="text" translate="true">PeppBr_16_18_Pepp.csv</variable>
+      <variable id="FILE_PROC" type="text" translate="true">PeppBr_16_18_Prozeduren.csv</variable>
+      <variable id="FILE_RECHERCHE" type="text" translate="true">PeppBr_16_18_Recherche.csv</variable>
+      <variable id="FILE_SK" type="text" translate="true">PeppBr_16_18_Strukturkategorie.csv</variable>
       <variable id="TITLE2" type="text" translate="true">PEPP-Browser</variable>
+      <variable id="DOWNLOAD" type="text" translate="true">http://g-drg.de/PeppBrowser/2018</variable>
     </variables>
     <helpcontext-numbers/>
   </config>

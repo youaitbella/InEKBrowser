@@ -8,12 +8,12 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PeppBrowser</RootNamespace>
-    <AssemblyName>PEPP-Browser 2017</AssemblyName>
+    <AssemblyName>PEPP-Browser 2018</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <IsWebBootstrapper>true</IsWebBootstrapper>
-    <PublishUrl>D:\tmp\PeppBrowser\2017\</PublishUrl>
+    <PublishUrl>D:\tmp\PeppBrowser\2018\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -23,14 +23,14 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>http://download.g-drg.de/PeppBrowser/2017/</InstallUrl>
-    <ProductName>PEPP-Browser 2017</ProductName>
+    <InstallUrl>http://download.g-drg.de/PeppBrowser/2018/</InstallUrl>
+    <ProductName>PEPP-Browser 2018</ProductName>
     <PublisherName>Institut für das Entgeltsystem im Krankenhaus GmbH %28InEK%29</PublisherName>
     <SuiteName>PEPP-Browser</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -60,7 +60,7 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>FDC8F2E5AB86A6AE964068AD2BE1269F136FE8A3</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>752DB60C9A303EA08F36216542329CEBCE9FA001</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>inek_icon.ico</ApplicationIcon>
@@ -91,31 +91,31 @@
     <Content Include="peppDruck.lst">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmbr20.dll">
+    <Content Include="Print\cmbr22.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmct20.dll">
+    <Content Include="Print\cmct22.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmdw20.dll">
+    <Content Include="Print\cmdw22.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmll20.dll">
+    <Content Include="Print\cmll22.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmll20pr.dll">
+    <Content Include="Print\cmll22pr.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmll20xl.dll">
+    <Content Include="Print\cmll22xl.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmls20.dll">
+    <Content Include="Print\cmls22.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmmx20.dll">
+    <Content Include="Print\cmmx22.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Print\cmut20.dll">
+    <Content Include="Print\cmut22.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -148,18 +148,6 @@
     <None Include="Data\2015\RepBrPepp_13_15_Prozeduren.csv" />
     <None Include="Data\2015\RepBrPepp_13_15_Recherche.csv" />
     <None Include="Data\2015\RepBrPepp_13_15_Strukturkategorie.csv" />
-    <Content Include="Print\cmLL2001.chm">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Print\cmll2001.lng">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Print\Cmll20ex.llx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Print\cmls2001.lng">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <None Include="Data\2016\RepBrPepp_14_16_Hauptdiagnose.csv" />
     <None Include="Data\2016\RepBrPepp_14_16_Katalog.csv" />
     <None Include="Data\2016\RepBrPepp_14_16_Kopfdaten.csv" />
@@ -170,41 +158,83 @@
     <None Include="Data\2016\RepBrPepp_14_16_Prozeduren.csv" />
     <None Include="Data\2016\RepBrPepp_14_16_Recherche.csv" />
     <None Include="Data\2016\RepBrPepp_14_16_Strukturkategorie.csv" />
-    <Content Include="Data\2017\RepBrPepp_15_17_Hauptdiagnose.csv">
+    <None Include="Data\2017\RepBrPepp_15_17_Hauptdiagnose.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2017\RepBrPepp_15_17_Katalog.csv">
+    </None>
+    <None Include="Data\2017\RepBrPepp_15_17_Katalog.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2017\RepBrPepp_15_17_Kopfdaten.csv">
+    </None>
+    <None Include="Data\2017\RepBrPepp_15_17_Kopfdaten.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2017\RepBrPepp_15_17_Kosten.csv">
+    </None>
+    <None Include="Data\2017\RepBrPepp_15_17_Kosten.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2017\RepBrPepp_15_17_Kostenbereich.csv">
+    </None>
+    <None Include="Data\2017\RepBrPepp_15_17_Kostenbereich.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2017\RepBrPepp_15_17_Nebendiagnosen.csv">
+    </None>
+    <None Include="Data\2017\RepBrPepp_15_17_Nebendiagnosen.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2017\RepBrPepp_15_17_Pepp.csv">
+    </None>
+    <None Include="Data\2017\RepBrPepp_15_17_Pepp.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2017\RepBrPepp_15_17_Prozeduren.csv">
+    </None>
+    <None Include="Data\2017\RepBrPepp_15_17_Prozeduren.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2017\RepBrPepp_15_17_Recherche.csv">
+    </None>
+    <None Include="Data\2017\RepBrPepp_15_17_Recherche.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\2017\RepBrPepp_15_17_Strukturkategorie.csv">
+    </None>
+    <None Include="Data\2017\RepBrPepp_15_17_Strukturkategorie.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    </None>
     <Content Include="PeppBrowser.chm">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="PeppBrowser.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2018\RepBrPepp_16_18_Hauptdiagnose.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2018\RepBrPepp_16_18_Katalog.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2018\RepBrPepp_16_18_Kopfdaten.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2018\RepBrPepp_16_18_Kosten.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2018\RepBrPepp_16_18_Kostenbereich.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2018\RepBrPepp_16_18_Nebendiagnosen.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2018\RepBrPepp_16_18_Pepp.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2018\RepBrPepp_16_18_Prozeduren.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2018\RepBrPepp_16_18_Recherche.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2018\RepBrPepp_16_18_Strukturkategorie.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Print\cmll2200.chm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Print\cmLL2200.lng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Print\Cmll22ex.llx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Print\cmLS2201.lng">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -230,7 +260,7 @@
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">
       <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <ProductName>Microsoft .NET Framework 4 %28x86 und x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

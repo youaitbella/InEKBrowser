@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
-<topic template="Default" status="Under Construction" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+<topic template="Default" status="Under Construction" lasteditedby="lautenti" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
   <title translate="true">Datengrundlage</title>
   <body>
     <header>
       <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Datengrundlage</text></para>
     </header>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Dem Browser liegen die plausibilisierten voll- und teilstationären Daten des Jahres 2015 nach Fallzusammenführung aus den an der Kalkulation zur Weiterentwicklung des PEPP-Systems teilnehmenden Krankenhäusern zu Grunde.</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Dem Browser liegen die plausibilisierten voll- und teilstationären Daten des Jahres 2016 nach Fallzusammenführung aus den an der Kalkulation zur Weiterentwicklung des PEPP-Systems teilnehmenden Krankenhäusern zu Grunde.</text></para>
     <para styleclass="Normal"></para>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Die Gruppierung erfolgte nach der PEPP-Version 2016. Die Haupt- und Nebendiagnosen sind gemäß ICD-10-GM Version 2015, die Prozeduren gemäß OPS Version 2015 angegeben. </text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Die Gruppierung erfolgte nach der PEPP-Version 2018. Die Haupt- und Nebendiagnosen sind gemäß ICD-10-GM Version 2016, die Prozeduren gemäß OPS Version 2016 angegeben. </text></para>
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Nicht berücksichtigt sind folgende Fallgruppen:</text></para>
     <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
@@ -21,6 +21,6 @@
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Die Reiter bezüglich Hauptdiagnose, Nebendiagnosen und Prozeduren zeigen</text><text styleclass="Normal" style="font-weight:bold;" translate="true"> alle Diagnose- bzw. Prozedurenkodes, die je PEPP mindestens vier Fälle repräsentieren</text><text styleclass="Normal" translate="true">. </text></para>
     <para styleclass="Normal"></para>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Nicht bewertete PEPP (Anlage 1b und Anlage 2b des PEPP-Entgeltkatalogs der PEPP-Version 2017) sowie die PEPP der Strukturkategorie „Fehler-PEPP und sonstige PEPP“ sind nicht im </text><var styleclass="Normal">&lt;%TITLE2%&gt;</var><text styleclass="Normal" translate="true"> ausgewiesen.</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Nicht bewertete PEPP (Anlage 1b und Anlage 2b des PEPP-Entgeltkatalogs der PEPP-Version 2018) sowie die PEPP der Strukturkategorie „Fehler-PEPP und sonstige PEPP“ sind nicht im </text><var styleclass="Normal">&lt;%TITLE2%&gt;</var><text styleclass="Normal" translate="true"> ausgewiesen.</text></para>
   </body>
 </topic>

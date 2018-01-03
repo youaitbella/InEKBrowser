@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>D:\tmp\GDrgBrowser\2017\|D:\tmp\GDrgBrowser\2015\|\\vFileserver01\company%24\Common\Datenbrowser\ReportBrowser\Reportbrowser_V2015_2017\Prüfung\|\\vFileserver01\company%24\Common\Datenbrowser\ReportBrowser\Reportbrowser_V2014_2016\Prüfung\|\\vFileserver01\company%24\EDV\Projekte\InEK-Browsers\G-DRG-Report-Browser\2016\</PublishUrlHistory>
-    <InstallUrlHistory>http://download.g-drg.de/GDrgReportBrowser/2017/|http://g-drg.de/GDrgReportBrowser/2017/|http://g-drg.de/GDrgReportBrowser/2015/|\\vFileserver01\company%24\Common\Datenbrowser\ReportBrowser\Reportbrowser_V2013_2015\Prüfung\|\\vFileserver01\company%24\EDV\Users\DV\Offline Browser\2015\DRG\</InstallUrlHistory>
+    <PublishUrlHistory>D:\tmp\GDrgReportBrowser\2018\|W:\Common\Datenbrowser\ReportBrowser\Reportbrowser_V2016_2018\Prüfung\|D:\tmp\GDrgBrowser\2018\|D:\tmp\GDrgBrowser\2017\|D:\tmp\GDrgBrowser\2015\</PublishUrlHistory>
+    <InstallUrlHistory>http://download.g-drg.de/GDrgReportBrowser/2018/|\\vFileserver01\company%24\Common\Datenbrowser\ReportBrowser\Reportbrowser_V2016_2018\Prüfung\|\\vFileserver01\company%24\Common\Datenbrowser\PeppBrowser\PeppBrowser_2018\Prüfung\|\\vFileserver01\company%24\Common\Datenbrowser\ReportBrowser\Reportbrowser_V2013_2015\Prüfung\|http://download.g-drg.de/GDrgReportBrowser/2017/</InstallUrlHistory>
     <SupportUrlHistory />
     <UpdateUrlHistory />
     <BootstrapperUrlHistory />

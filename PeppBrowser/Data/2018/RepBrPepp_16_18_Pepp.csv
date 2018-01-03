@@ -1,0 +1,44 @@
+﻿pe_SK;pe_Pepp;pe_Text
+PRE;P002Z;Erhöhter Betreuungsaufwand bei Kindern und Jugendlichen, Einzelbetreuung mit hohem Aufwand
+PRE;P003A;Erhöhter Betreuungsaufwand bei Erwachsenen, 1:1-Betreuung, Krisenintervention und komplexer Entlassaufwand mit äußerst hohem Aufwand
+PRE;P003B;Erhöhter Betreuungsaufwand bei Erwachsenen, 1:1-Betreuung, Krisenintervention und komplexer Entlassaufwand mit sehr hohem Aufwand
+PRE;P003C;Erhöhter Betreuungsaufwand bei Erwachsenen, 1:1-Betreuung, Krisenintervention und komplexer Entlassaufwand mit deutlich erhöhtem Aufwand
+PSY;PA01A;Intelligenzstörungen, tief greifende Entwicklungsstörungen, Ticstörungen und andere Störungen mit Beginn in der Kindheit und Jugend, mit komplizierender Konstellation
+PSY;PA01B;Intelligenzstörungen, tief greifende Entwicklungsstörungen, Ticstörungen und andere Störungen mit Beginn in der Kindheit und Jugend, ohne komplizierende Konstellation
+PSY;PA02A;Psychische und Verhaltensstörungen durch psychotrope Substanzen, mit Heroinkonsum oder intravenösem Gebrauch sonstiger Substanzen oder mit schwerer Begleiterkrankung bei Opiatabhängigkeit oder mit schwerer oder schwerster Pflegebedürftigkeit
+PSY;PA02B;Psychische und Verhaltensstörungen durch psychotrope Substanzen, mit komplizierender Konstellation oder mit multiplem Substanzmissbrauch bei Opiat- oder Kokainkonsum oder mit hoher Therapieintensität oder mit Mutter/Vater-Kind-Setting
+PSY;PA02C;Psychische und Verhaltensstörungen durch psychotrope Substanzen, Alter > 64 Jahre oder mit Qualifiziertem Entzug ab mehr als 14 Behandlungstagen oder mit komplizierender Konstellation oder mit multiplem Substanzmissbrauch außer bei Opiat- und Kokainkonsum
+PSY;PA02D;Psychische und Verhaltensstörungen durch psychotrope Substanzen, Alter < 65 Jahre, ohne komplizierende Konstellation, ohne Heroinkonsum oder intravenösen Gebrauch sonstiger Substanzen, ohne Qualifizierten Entzug ab mehr als 14 Behandlungstagen
+PSY;PA03A;Schizophrenie, schizotype und wahnhafte Störungen oder andere psychotische Störungen, Alter > 64 Jahre oder mit komplizierender Konstellation oder mit hoher Therapieintensität oder mit Mutter/Vater-Kind-Setting
+PSY;PA03B;Schizophrenie, schizotype und wahnhafte Störungen oder andere psychotische Störungen, Alter < 65 Jahre, ohne komplizierende Konstellation
+PSY;PA04A;Affektive, neurotische, Belastungs-, somatoforme und Schlafstörungen, Alter > 84 Jahre oder mit komplizierender Diagnose und Alter > 64 Jahre, oder mit komplizierender Konstellation oder mit hoher Therapieintensität
+PSY;PA04B;Affektive, neurotische, Belastungs-, somatoforme und Schlafstörungen, Alter < 85 Jahre, ohne komplizierende Konstellation, mit Mutter/Vater-Kind-Setting oder mit komplizierender Diagnose oder mit erheblicher Pflegebedürftigkeit oder Alter > 64 Jahre
+PSY;PA04C;Affektive, neurotische, Belastungs-, somatoforme und Schlafstörungen, Alter < 65 Jahre, ohne komplizierende Konstellation, ohne komplizierende Diagnose, ohne erhebliche Pflegebedürftigkeit
+PSY;PA14A;Persönlichkeits- und Verhaltensstörungen, Essstörungen und andere Störungen, Alter > 64 Jahre oder mit komplizierender Konstellation oder mit hoher Therapieintensität
+PSY;PA14B;Persönlichkeits- und Verhaltensstörungen, Essstörungen und andere Störungen, Alter < 65 Jahre, ohne komplizierende Konstellation
+PSY;PA15A;Organische Störungen, amnestisches Syndrom, Alzheimer-Krankheit und sonstige degenerative Krankheiten des Nervensystems, mit komplizierender Konstellation oder mit hoher Therapieintensität oder 1:1-Betreuung mit erhöhtem Aufwand
+PSY;PA15B;Organische Störungen, amnestisches Syndrom, Alzheimer-Krankheit und sonstige degenerative Krankheiten des Nervensystems, mit bestimmten Demenzerkrankungen oder mit komplizierender Konstellation oder Alter > 84 Jahre
+PSY;PA15C;Organische Störungen, amnestisches Syndrom, Alzheimer-Krankheit und sonstige degenerative Krankheiten des Nervensystems, Alter < 85 Jahre, ohne bestimmte Demenzerkrankungen, ohne komplizierende Konstellation
+PKJ;PK01A;Intelligenzstörungen, tief greifende Entwicklungsstörungen, Ticstörungen und andere Störungen mit Beginn in der Kindheit und Jugend, mit komplizierender Konstellation
+PKJ;PK01B;Intelligenzstörungen, tief greifende Entwicklungsstörungen, Ticstörungen und andere Störungen mit Beginn in der Kindheit und Jugend, ohne komplizierende Konstellation
+PKJ;PK02A;Psychische und Verhaltensstörungen durch psychotrope Substanzen, Alter < 14 Jahre oder mit komplizierender Konstellation, mit erhöhtem Betreuungsaufwand oder mit Behandlung im besonderen Setting
+PKJ;PK02B;Psychische und Verhaltensstörungen durch psychotrope Substanzen, Alter > 13 Jahre, ohne komplizierende Konstellation, ohne erhöhten Betreuungsaufwand, ohne Behandlung im besonderen Setting
+PKJ;PK03Z;Schizophrenie, schizotype und wahnhafte Störungen oder andere psychotische Störungen
+PKJ;PK04A;Affektive, neurotische, Belastungs-, somatoforme und Schlafstörungen, mit komplizierender Nebendiagnose oder mit erhöhtem Betreuungsaufwand
+PKJ;PK04B;Affektive, neurotische, Belastungs-, somatoforme und Schlafstörungen, ohne komplizierende Nebendiagnose, ohne erhöhten Betreuungsaufwand
+PKJ;PK10Z;Ess- und Fütterstörungen
+PKJ;PK14A;Verhaltensstörungen mit Beginn in der Kindheit und Jugend, Persönlichkeits- und Verhaltensstörungen oder andere Störungen, Alter < 8 Jahre oder mit komplizierender Nebendiagnose oder mit erhöhtem Betreuungsaufwand
+PKJ;PK14B;Verhaltensstörungen mit Beginn in der Kindheit und Jugend, Persönlichkeits- und Verhaltensstörungen oder andere Störungen, Alter 8-13 Jahre, ohne komplizierende Nebendiagnose, ohne erhöhten Betreuungsaufwand
+PKJ;PK14C;Verhaltensstörungen mit Beginn in der Kindheit und Jugend, Persönlichkeits- und Verhaltensstörungen oder andere Störungen, Alter > 13 Jahre, ohne komplizierende Nebendiagnose, ohne erhöhten Betreuungsaufwand
+PSO;PP04A;Affektive, neurotische, Belastungs-, somatoforme und Schlafstörungen, Alter > 64 Jahre oder mit komplizierender Konstellation oder mit hoher Therapieintensität oder mit Mutter/Vater-Kind-Setting
+PSO;PP04B;Affektive, neurotische, Belastungs-, somatoforme und Schlafstörungen, Alter < 65 Jahre, ohne komplizierende Konstellation, ohne hohe Therapieintensität, ohne Mutter/Vater-Kind-Setting
+PSO;PP10A;Anorexia nervosa oder Ess- und Fütterstörungen mit komplizierender Konstellation oder mit hoher Therapieintensität
+PSO;PP10B;Ess- und Fütterstörungen außer bei Anorexia nervosa, ohne komplizierende Konstellation, ohne hohe Therapieintensität
+PSO;PP14Z;Persönlichkeits- und Verhaltensstörungen oder andere Störungen
+TPY;TA02Z;Psychische und Verhaltensstörungen durch psychotrope Substanzen
+TPY;TA15Z;Organische Störungen, amnestisches Syndrom, Alzheimer-Krankheit und sonstige degenerative Krankheiten des Nervensystems
+TPY;TA19Z;Psychotische, affektive, neurotische, Belastungs-, somatoforme, Schlaf-, Persönlichkeits- und Verhaltensstörungen oder andere Störungen, Alter > 64 Jahre oder mit komplizierender Diagnose
+TPY;TA20Z;Psychotische, affektive, neurotische, Belastungs-, somatoforme, Schlaf-, Persönlichkeits- und Verhaltensstörungen oder andere Störungen, Alter < 65 Jahre, ohne komplizierende Diagnose
+TKJ;TK04Z;Affektive, neurotische, Belastungs-, somatoforme und Schlafstörungen ohne komplizierende Nebendiagnose
+TKJ;TK14Z;Affektive, neurotische, Belastungs-, somatoforme und Schlafstörungen mit komplizierender Nebendiagnose oder Verhaltensstörungen mit Beginn in der Kindheit und Jugend, Persönlichkeits- und Verhaltensstörungen oder andere Störungen
+TPO;TP20Z;Psychosomatische oder psychiatrische Störungen

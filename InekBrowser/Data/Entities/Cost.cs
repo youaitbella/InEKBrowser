@@ -15,6 +15,7 @@ namespace org.inek.InekBrowser.Data.Entities {
         public decimal CostType5 { get; set; }
         public decimal CostType6a { get; set; }
         public decimal CostType6b { get; set; }
+        public decimal CostType6c { get; set; }
         public decimal CostType7 { get; set; }
         public decimal CostType8 { get; set; }
         public decimal CostSum { get; set; } // DRG only

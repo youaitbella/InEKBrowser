@@ -221,7 +221,7 @@ namespace org.inek.InekBrowser.GUI {
             Procedure = "";
             cbxCategory.Text = "";
             Category = "";
-
+            Parent.Department = cbxDepartment.Text;
             Parent.Cursor = DefaultCursor;
         }
     }

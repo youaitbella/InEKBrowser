@@ -4,8 +4,8 @@ using System.Data;
 using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
-using combit.ListLabel20;
-using combit.ListLabel20.DataProviders;
+using combit.ListLabel22;
+using combit.ListLabel22.DataProviders;
 
 namespace org.inek.InekBrowser.Data {
     public enum OutputType {
@@ -25,7 +25,8 @@ namespace org.inek.InekBrowser.Data {
 
         private void InitLL() {
             _ll = new ListLabel();
-            _ll.LicensingInfo = "soNLEQ";
+            //_ll.LicensingInfo = "XwdqEQ";   //tx5vDg
+            _ll.LicensingInfo = "tx5vDg";
             _ll.MaxRTFVersion = 65280;
             _ll.PreviewControl = null;
             _ll.Unit = LlUnits.Millimeter_1_100;

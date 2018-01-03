@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XInclude">
+  <topicref type="topic" id="402755696962648" modified="2010-04-07T08:53:45.954Z" icon="0" href="Hinweise_zur_Erstellung">
+    <caption translate="true">Hinweise zur Erstellung</caption>
+  </topicref>
+  <topicref type="topic" id="402752161736847" build="ALL" modified="2010-04-07T08:38:44.674Z" icon="0" href="Introduction">
+    <caption translate="true">Einleitung</caption>
+    <topicref type="topic" id="414047110825400" build="ALL" modified="2013-05-10T15:28:39.704Z" icon="0" href="CommonUsage">
+      <caption translate="true">Allgemeine Bedienung</caption>
+      <topicref type="topic" id="416475006377856" build="ALL" modified="2014-01-08T10:29:46.858Z" icon="0" href="Tooltips">
+        <caption translate="true">Tooltips</caption>
+      </topicref>
+      <topicref type="topic" id="41650178086392" build="ALL" modified="2014-01-09T10:20:35.545Z" icon="0" href="Hotkeys">
+        <caption translate="true">Hotkeys</caption>
+      </topicref>
+      <topicref type="topic" id="421464800830519" build="ALL" modified="2015-05-22T09:18:09.725Z" icon="0" href="Automatische_Groessenanpassung">
+        <caption translate="true">Automatische Größenanpassung</caption>
+      </topicref>
+    </topicref>
+  </topicref>
+  <topicref type="topic" id="416499051576363" build="ALL" modified="2014-01-20T08:44:52.031Z" icon="0" href="Systemanforderungen">
+    <caption translate="true">Systemanforderungen &amp; Installation</caption>
+    <topicref type="topic" id="416772392051322" build="ALL" modified="2014-02-07T09:22:44.662Z" icon="0" href="DownloadProblems">
+      <caption translate="true">Probleme beim Download</caption>
+    </topicref>
+  </topicref>
+  <topicref type="topic" id="402753149688023" build="ALL" modified="2014-01-10T17:06:58.016Z" icon="0" href="Background">
+    <caption translate="true">Datengrundlage</caption>
+    <topicref type="topic" id="416498113846128" build="ALL" modified="2014-01-10T17:33:56.392Z" icon="0" href="Rundungen">
+      <caption translate="true">Rundungen</caption>
+    </topicref>
+  </topicref>
+  <topicref type="topic" id="402772762282526" build="ALL" modified="2010-04-09T11:16:58.306Z" icon="0" href="mnuMain">
+    <caption translate="true">Menü</caption>
+    <topicref type="topic" id="416464611638161" build="ALL" modified="2014-01-07T14:40:55.701Z" icon="0" href="Datei">
+      <caption translate="true">Datei</caption>
+    </topicref>
+    <topicref type="topic" id="416468138058808" build="ALL" modified="2014-01-07T14:52:32.968Z" icon="0" href="Daten">
+      <caption translate="true">Daten</caption>
+    </topicref>
+    <topicref type="topic" id="416467443891375" build="ALL" modified="2014-01-07T15:16:10.224Z" icon="0" href="Report">
+      <caption translate="true">Report</caption>
+    </topicref>
+    <topicref type="topic" id="416466064927594" build="ALL" modified="2014-01-07T15:25:13.248Z" icon="0" href="Topic">
+      <caption translate="true">?</caption>
+    </topicref>
+  </topicref>
+  <topicref type="topic" id="416486050145445" build="ALL" modified="2014-01-09T10:28:42.999Z" icon="0" href="Filter">
+    <caption translate="true">Filter</caption>
+    <topicref type="topic" id="423414981776966" build="ALL" modified="2015-12-04T09:24:18.456Z" icon="0" href="Haupt_Nebendiagnose_u._Prozedu">
+      <caption translate="true">Fallanteil für gefilterten Kode</caption>
+    </topicref>
+    <topicref type="topic" id="416486680913627" build="ALL" modified="2014-01-09T11:10:37.493Z" icon="0" href="Tabellen-Filter">
+      <caption translate="true">Tabellen-Filter</caption>
+    </topicref>
+  </topicref>
+  <topicref type="topic" id="419837119579971" build="ALL" modified="2014-12-10T15:23:45.639Z" icon="0" href="PEPP-Kennzahlen">
+    <caption translate="true">DRG-Kennzahlen</caption>
+  </topicref>
+  <topicref type="topic" id="416486291574921" build="ALL" modified="2014-01-16T10:43:39.697Z" icon="0" href="Tabellen">
+    <caption translate="true">Datenreiter</caption>
+    <topicref type="topic" id="416554856467092" build="ALL" modified="2014-01-16T10:45:21.886Z" icon="0" href="Datenreiter_Hauptdiagnose">
+      <caption translate="true">Datenreiter Hauptdiagnose</caption>
+    </topicref>
+    <topicref type="topic" id="416554528245932" build="ALL" modified="2014-01-16T10:47:59.510Z" icon="0" href="Datenreiter_Nebendiagnosen">
+      <caption translate="true">Datenreiter Nebendiagnosen bzw. Prozeduren</caption>
+    </topicref>
+    <topicref type="topic" id="416553655075337" build="ALL" modified="2014-12-15T15:09:32.946Z" icon="0" href="Datenreiter_Tageskosten">
+      <caption translate="true">Datenreiter Kosten</caption>
+    </topicref>
+    <topicref type="topic" id="416485862093341" build="ALL" modified="2014-01-10T17:38:27.778Z" icon="0" href="Navigieren">
+      <caption translate="true">Navigieren/Recherche</caption>
+    </topicref>
+  </topicref>
+  <topicref type="topic" id="416536997024245" build="ALL" modified="2014-01-14T15:08:38.145Z" icon="0" href="Drucken">
+    <caption translate="true">Report</caption>
+  </topicref>
+</map>
