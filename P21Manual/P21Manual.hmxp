@@ -114,7 +114,7 @@
     <config-group name="project">
       <config-value name="title" translate="true">G-DRG-Browser 2016_2017</config-value>
       <config-value name="author" translate="true">InEK GmbH</config-value>
-      <config-value name="copyright" translate="true">© 2017 InEK GmbH, Siegburg</config-value>
+      <config-value name="copyright" translate="true">© 2018 InEK GmbH, Siegburg</config-value>
       <config-value name="versionmajor">2017</config-value>
       <config-value name="versionminor">1</config-value>
       <config-value name="lcid" translate="true">de-de</config-value>

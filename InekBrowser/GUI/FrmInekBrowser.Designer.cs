@@ -26,9 +26,9 @@ namespace org.inek.InekBrowser.GUI {
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInekBrowser));
             this.mnuMain = new System.Windows.Forms.MenuStrip();
             this.mnuFile = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,7 +55,6 @@ namespace org.inek.InekBrowser.GUI {
             this.mnuInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlContentBackground = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.selectionPepp = new org.inek.InekBrowser.GUI.SelectionPepp();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabMainDiagnosis = new System.Windows.Forms.TabPage();
             this.grdMainDiagnosis = new System.Windows.Forms.DataGridView();
@@ -65,14 +64,15 @@ namespace org.inek.InekBrowser.GUI {
             this.grdProcedures = new System.Windows.Forms.DataGridView();
             this.tabCosts = new System.Windows.Forms.TabPage();
             this.grdCosts = new System.Windows.Forms.DataGridView();
-            this.peppData = new org.inek.InekBrowser.GUI.PeppData();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cbxSystem = new org.inek.controls.CommonControls.ComboField();
             this.lblSystem = new System.Windows.Forms.Label();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.timerPeppBlink = new System.Windows.Forms.Timer(this.components);
             this.timerPrintWindow = new System.Windows.Forms.Timer(this.components);
+            this.selectionPepp = new org.inek.InekBrowser.GUI.SelectionPepp();
+            this.peppData = new org.inek.InekBrowser.GUI.PeppData();
+            this.cbxSystem = new org.inek.controls.CommonControls.ComboField();
             this.titleBar = new org.inek.InekBrowser.GUI.TitleBar();
             this.mnuMain.SuspendLayout();
             this.pnlContentBackground.SuspendLayout();
@@ -333,19 +333,6 @@ namespace org.inek.InekBrowser.GUI {
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1196, 637);
             this.tableLayoutPanel1.TabIndex = 14;
             // 
-            // selectionPepp
-            // 
-            this.selectionPepp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.selectionPepp.BackColor = System.Drawing.Color.SteelBlue;
-            this.helpProvider1.SetHelpKeyword(this.selectionPepp, "Filter.htm");
-            this.helpProvider1.SetHelpNavigator(this.selectionPepp, System.Windows.Forms.HelpNavigator.Topic);
-            this.selectionPepp.Location = new System.Drawing.Point(3, 3);
-            this.selectionPepp.Name = "selectionPepp";
-            this.helpProvider1.SetShowHelp(this.selectionPepp, true);
-            this.selectionPepp.Size = new System.Drawing.Size(1190, 52);
-            this.selectionPepp.TabIndex = 11;
-            // 
             // tabControl
             // 
             this.tabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -380,23 +367,23 @@ namespace org.inek.InekBrowser.GUI {
             this.grdMainDiagnosis.AllowUserToDeleteRows = false;
             this.grdMainDiagnosis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdMainDiagnosis.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdMainDiagnosis.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdMainDiagnosis.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.grdMainDiagnosis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grdMainDiagnosis.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grdMainDiagnosis.DefaultCellStyle = dataGridViewCellStyle11;
             this.grdMainDiagnosis.Dock = System.Windows.Forms.DockStyle.Fill;
             this.helpProvider1.SetHelpKeyword(this.grdMainDiagnosis, "Datenreiter_Hauptdiagnose.htm");
             this.helpProvider1.SetHelpNavigator(this.grdMainDiagnosis, System.Windows.Forms.HelpNavigator.Topic);
@@ -405,14 +392,14 @@ namespace org.inek.InekBrowser.GUI {
             this.grdMainDiagnosis.Name = "grdMainDiagnosis";
             this.grdMainDiagnosis.ReadOnly = true;
             this.grdMainDiagnosis.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdMainDiagnosis.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdMainDiagnosis.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.grdMainDiagnosis.RowHeadersVisible = false;
             this.grdMainDiagnosis.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.helpProvider1.SetShowHelp(this.grdMainDiagnosis, true);
@@ -520,20 +507,6 @@ namespace org.inek.InekBrowser.GUI {
             this.grdCosts.TabIndex = 3;
             this.grdCosts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdCosts_CellClick);
             // 
-            // peppData
-            // 
-            this.peppData.BackColor = System.Drawing.Color.SeaGreen;
-            this.peppData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.peppData.CatalogueActive = true;
-            this.peppData.Degression = "0";
-            this.peppData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.peppData.Location = new System.Drawing.Point(3, 91);
-            this.peppData.MinimumSize = new System.Drawing.Size(0, 170);
-            this.peppData.Name = "peppData";
-            this.peppData.Size = new System.Drawing.Size(1190, 170);
-            this.peppData.TabIndex = 12;
-            this.peppData.ClickedCatalogue += new System.EventHandler(this.peppData_ClickedCatalogue);
-            // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -544,25 +517,6 @@ namespace org.inek.InekBrowser.GUI {
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1190, 24);
             this.panel1.TabIndex = 13;
-            // 
-            // cbxSystem
-            // 
-            this.cbxSystem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.helpProvider1.SetHelpKeyword(this.cbxSystem, "Filter.htm");
-            this.helpProvider1.SetHelpNavigator(this.cbxSystem, System.Windows.Forms.HelpNavigator.Topic);
-            this.cbxSystem.Location = new System.Drawing.Point(106, 0);
-            this.cbxSystem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbxSystem.MinimumSize = new System.Drawing.Size(40, 21);
-            this.cbxSystem.MutltiLine = false;
-            this.cbxSystem.Name = "cbxSystem";
-            this.cbxSystem.ReadOnly = true;
-            this.helpProvider1.SetShowHelp(this.cbxSystem, true);
-            this.cbxSystem.Size = new System.Drawing.Size(1084, 21);
-            this.cbxSystem.TabIndex = 10;
-            this.toolTip.SetToolTip(this.cbxSystem, "Wählen Sie eine Code aus.");
-            this.cbxSystem.ButtonClicked += new System.EventHandler(this.cbxSystem_ButtonClicked);
-            this.cbxSystem.Load += new System.EventHandler(this.cbxPepp_Load);
             // 
             // lblSystem
             // 
@@ -595,6 +549,52 @@ namespace org.inek.InekBrowser.GUI {
             // 
             this.timerPrintWindow.Interval = 1000;
             this.timerPrintWindow.Tick += new System.EventHandler(this.timerPrintWindow_Tick);
+            // 
+            // selectionPepp
+            // 
+            this.selectionPepp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.selectionPepp.BackColor = System.Drawing.Color.SteelBlue;
+            this.helpProvider1.SetHelpKeyword(this.selectionPepp, "Filter.htm");
+            this.helpProvider1.SetHelpNavigator(this.selectionPepp, System.Windows.Forms.HelpNavigator.Topic);
+            this.selectionPepp.Location = new System.Drawing.Point(3, 3);
+            this.selectionPepp.Name = "selectionPepp";
+            this.helpProvider1.SetShowHelp(this.selectionPepp, true);
+            this.selectionPepp.Size = new System.Drawing.Size(1190, 52);
+            this.selectionPepp.TabIndex = 11;
+            // 
+            // peppData
+            // 
+            this.peppData.BackColor = System.Drawing.Color.SeaGreen;
+            this.peppData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.peppData.CatalogueActive = true;
+            this.peppData.Degression = "0";
+            this.peppData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.peppData.Location = new System.Drawing.Point(3, 91);
+            this.peppData.MinimumSize = new System.Drawing.Size(0, 170);
+            this.peppData.Name = "peppData";
+            this.peppData.Size = new System.Drawing.Size(1190, 170);
+            this.peppData.TabIndex = 12;
+            this.peppData.ClickedCatalogue += new System.EventHandler(this.peppData_ClickedCatalogue);
+            // 
+            // cbxSystem
+            // 
+            this.cbxSystem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.helpProvider1.SetHelpKeyword(this.cbxSystem, "Filter.htm");
+            this.helpProvider1.SetHelpNavigator(this.cbxSystem, System.Windows.Forms.HelpNavigator.Topic);
+            this.cbxSystem.Location = new System.Drawing.Point(106, 0);
+            this.cbxSystem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbxSystem.MinimumSize = new System.Drawing.Size(40, 21);
+            this.cbxSystem.MutltiLine = false;
+            this.cbxSystem.Name = "cbxSystem";
+            this.cbxSystem.ReadOnly = true;
+            this.helpProvider1.SetShowHelp(this.cbxSystem, true);
+            this.cbxSystem.Size = new System.Drawing.Size(1084, 21);
+            this.cbxSystem.TabIndex = 10;
+            this.toolTip.SetToolTip(this.cbxSystem, "Wählen Sie eine Code aus.");
+            this.cbxSystem.ButtonClicked += new System.EventHandler(this.cbxSystem_ButtonClicked);
+            this.cbxSystem.Load += new System.EventHandler(this.cbxPepp_Load);
             // 
             // titleBar
             // 
@@ -703,7 +703,6 @@ namespace org.inek.InekBrowser.GUI {
         private System.Windows.Forms.ToolStripMenuItem mnuCatalogue;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
-
     }
 }
 
