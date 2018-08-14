@@ -186,11 +186,12 @@
             this.txtN.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.txtN.Name = "txtN";
             this.txtN.ReadOnly = true;
-            this.txtN.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtN.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtN, true);
             this.txtN.Size = new System.Drawing.Size(61, 21);
             this.txtN.TabIndex = 56;
             this.txtN.Text = "0";
+            this.txtN.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblN
             // 
@@ -217,11 +218,12 @@
             this.txtNumDrgs.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.txtNumDrgs.Name = "txtNumDrgs";
             this.txtNumDrgs.ReadOnly = true;
-            this.txtNumDrgs.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtNumDrgs.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtNumDrgs, true);
             this.txtNumDrgs.Size = new System.Drawing.Size(61, 21);
             this.txtNumDrgs.TabIndex = 54;
             this.txtNumDrgs.Text = "0";
+            this.txtNumDrgs.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblNumDrgs
             // 
@@ -302,11 +304,12 @@
             this.txtFromAll.Location = new System.Drawing.Point(116, 77);
             this.txtFromAll.Name = "txtFromAll";
             this.txtFromAll.ReadOnly = true;
-            this.txtFromAll.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtFromAll.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtFromAll, true);
             this.txtFromAll.Size = new System.Drawing.Size(51, 21);
             this.txtFromAll.TabIndex = 51;
             this.txtFromAll.Text = "0";
+            this.txtFromAll.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtFromMdc
             // 
@@ -319,11 +322,12 @@
             this.txtFromMdc.Location = new System.Drawing.Point(116, 50);
             this.txtFromMdc.Name = "txtFromMdc";
             this.txtFromMdc.ReadOnly = true;
-            this.txtFromMdc.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtFromMdc.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtFromMdc, true);
             this.txtFromMdc.Size = new System.Drawing.Size(51, 21);
             this.txtFromMdc.TabIndex = 50;
             this.txtFromMdc.Text = "0";
+            this.txtFromMdc.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblFromAll
             // 
@@ -348,11 +352,12 @@
             this.txtCasesNormal.Location = new System.Drawing.Point(9, 21);
             this.txtCasesNormal.Name = "txtCasesNormal";
             this.txtCasesNormal.ReadOnly = true;
-            this.txtCasesNormal.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtCasesNormal.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtCasesNormal, true);
             this.txtCasesNormal.Size = new System.Drawing.Size(91, 21);
             this.txtCasesNormal.TabIndex = 48;
             this.txtCasesNormal.Text = "0";
+            this.txtCasesNormal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtCasesNormal.TextChanged += new System.EventHandler(this.txtCasesNormal_TextChanged);
             // 
             // lblFromMdc
@@ -392,11 +397,12 @@
             this.txtValutationRatio.Location = new System.Drawing.Point(9, 25);
             this.txtValutationRatio.Name = "txtValutationRatio";
             this.txtValutationRatio.ReadOnly = true;
-            this.txtValutationRatio.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtValutationRatio.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtValutationRatio, true);
             this.txtValutationRatio.Size = new System.Drawing.Size(158, 21);
             this.txtValutationRatio.TabIndex = 48;
             this.txtValutationRatio.Text = "0";
+            this.txtValutationRatio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // grpCaseCosts
             // 
@@ -426,11 +432,12 @@
             this.txtStdAbw.Location = new System.Drawing.Point(150, 40);
             this.txtStdAbw.Name = "txtStdAbw";
             this.txtStdAbw.ReadOnly = true;
-            this.txtStdAbw.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtStdAbw.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtStdAbw, true);
             this.txtStdAbw.Size = new System.Drawing.Size(87, 21);
             this.txtStdAbw.TabIndex = 44;
             this.txtStdAbw.Text = "0";
+            this.txtStdAbw.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtArithMw
             // 
@@ -443,11 +450,12 @@
             this.txtArithMw.Location = new System.Drawing.Point(150, 15);
             this.txtArithMw.Name = "txtArithMw";
             this.txtArithMw.ReadOnly = true;
-            this.txtArithMw.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtArithMw.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtArithMw, true);
             this.txtArithMw.Size = new System.Drawing.Size(87, 21);
             this.txtArithMw.TabIndex = 43;
             this.txtArithMw.Text = "0";
+            this.txtArithMw.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblStdAbw
             // 
@@ -532,11 +540,12 @@
             this.txtLosStd.Location = new System.Drawing.Point(222, 165);
             this.txtLosStd.Name = "txtLosStd";
             this.txtLosStd.ReadOnly = true;
-            this.txtLosStd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtLosStd.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtLosStd, true);
             this.txtLosStd.Size = new System.Drawing.Size(57, 21);
             this.txtLosStd.TabIndex = 50;
             this.txtLosStd.Text = "0";
+            this.txtLosStd.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblLosStd
             // 
@@ -574,11 +583,12 @@
             this.txtLosAvg.Location = new System.Drawing.Point(222, 138);
             this.txtLosAvg.Name = "txtLosAvg";
             this.txtLosAvg.ReadOnly = true;
-            this.txtLosAvg.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtLosAvg.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtLosAvg, true);
             this.txtLosAvg.Size = new System.Drawing.Size(57, 21);
             this.txtLosAvg.TabIndex = 51;
             this.txtLosAvg.Text = "0";
+            this.txtLosAvg.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblLosAvg
             // 
@@ -604,11 +614,12 @@
             this.txtLosShort.Location = new System.Drawing.Point(222, 3);
             this.txtLosShort.Name = "txtLosShort";
             this.txtLosShort.ReadOnly = true;
-            this.txtLosShort.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtLosShort.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtLosShort, true);
             this.txtLosShort.Size = new System.Drawing.Size(57, 21);
             this.txtLosShort.TabIndex = 48;
             this.txtLosShort.Text = "0";
+            this.txtLosShort.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtDay1Remuneration
             // 
@@ -622,11 +633,12 @@
             this.txtDay1Remuneration.Location = new System.Drawing.Point(222, 111);
             this.txtDay1Remuneration.Name = "txtDay1Remuneration";
             this.txtDay1Remuneration.ReadOnly = true;
-            this.txtDay1Remuneration.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtDay1Remuneration.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtDay1Remuneration, true);
             this.txtDay1Remuneration.Size = new System.Drawing.Size(57, 21);
             this.txtDay1Remuneration.TabIndex = 52;
             this.txtDay1Remuneration.Text = "0";
+            this.txtDay1Remuneration.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblDay1Renumeration
             // 
@@ -664,11 +676,12 @@
             this.txtDay1Reduction.Location = new System.Drawing.Point(222, 84);
             this.txtDay1Reduction.Name = "txtDay1Reduction";
             this.txtDay1Reduction.ReadOnly = true;
-            this.txtDay1Reduction.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtDay1Reduction.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtDay1Reduction, true);
             this.txtDay1Reduction.Size = new System.Drawing.Size(57, 21);
             this.txtDay1Reduction.TabIndex = 53;
             this.txtDay1Reduction.Text = "0";
+            this.txtDay1Reduction.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblDay1Reduction
             // 
@@ -694,11 +707,12 @@
             this.txtLosNormal.Location = new System.Drawing.Point(222, 30);
             this.txtLosNormal.Name = "txtLosNormal";
             this.txtLosNormal.ReadOnly = true;
-            this.txtLosNormal.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtLosNormal.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtLosNormal, true);
             this.txtLosNormal.Size = new System.Drawing.Size(57, 21);
             this.txtLosNormal.TabIndex = 55;
             this.txtLosNormal.Text = "0";
+            this.txtLosNormal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtLosLong
             // 
@@ -712,11 +726,12 @@
             this.txtLosLong.Location = new System.Drawing.Point(222, 57);
             this.txtLosLong.Name = "txtLosLong";
             this.txtLosLong.ReadOnly = true;
-            this.txtLosLong.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtLosLong.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtLosLong, true);
             this.txtLosLong.Size = new System.Drawing.Size(57, 21);
             this.txtLosLong.TabIndex = 54;
             this.txtLosLong.Text = "0";
+            this.txtLosLong.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblLosLong
             // 
@@ -786,11 +801,12 @@
             this.txtGt79Year.Location = new System.Drawing.Point(240, 182);
             this.txtGt79Year.Name = "txtGt79Year";
             this.txtGt79Year.ReadOnly = true;
-            this.txtGt79Year.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtGt79Year.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtGt79Year, true);
             this.txtGt79Year.Size = new System.Drawing.Size(56, 21);
             this.txtGt79Year.TabIndex = 31;
             this.txtGt79Year.Text = "0";
+            this.txtGt79Year.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblGtYear79
             // 
@@ -814,11 +830,12 @@
             this.txtBt75Year79.Location = new System.Drawing.Point(240, 159);
             this.txtBt75Year79.Name = "txtBt75Year79";
             this.txtBt75Year79.ReadOnly = true;
-            this.txtBt75Year79.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtBt75Year79.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtBt75Year79, true);
             this.txtBt75Year79.Size = new System.Drawing.Size(56, 21);
             this.txtBt75Year79.TabIndex = 29;
             this.txtBt75Year79.Text = "0";
+            this.txtBt75Year79.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblBt75Year79
             // 
@@ -842,11 +859,12 @@
             this.txtBt65Year74.Location = new System.Drawing.Point(240, 136);
             this.txtBt65Year74.Name = "txtBt65Year74";
             this.txtBt65Year74.ReadOnly = true;
-            this.txtBt65Year74.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtBt65Year74.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtBt65Year74, true);
             this.txtBt65Year74.Size = new System.Drawing.Size(56, 21);
             this.txtBt65Year74.TabIndex = 27;
             this.txtBt65Year74.Text = "0";
+            this.txtBt65Year74.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblBt65Year74
             // 
@@ -870,11 +888,12 @@
             this.txtBt60Year64.Location = new System.Drawing.Point(240, 113);
             this.txtBt60Year64.Name = "txtBt60Year64";
             this.txtBt60Year64.ReadOnly = true;
-            this.txtBt60Year64.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtBt60Year64.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtBt60Year64, true);
             this.txtBt60Year64.Size = new System.Drawing.Size(56, 21);
             this.txtBt60Year64.TabIndex = 25;
             this.txtBt60Year64.Text = "0";
+            this.txtBt60Year64.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblBt60Year64
             // 
@@ -898,11 +917,12 @@
             this.txtBt55Year59.Location = new System.Drawing.Point(240, 90);
             this.txtBt55Year59.Name = "txtBt55Year59";
             this.txtBt55Year59.ReadOnly = true;
-            this.txtBt55Year59.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtBt55Year59.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtBt55Year59, true);
             this.txtBt55Year59.Size = new System.Drawing.Size(56, 21);
             this.txtBt55Year59.TabIndex = 23;
             this.txtBt55Year59.Text = "0";
+            this.txtBt55Year59.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblBt55Year59
             // 
@@ -926,11 +946,12 @@
             this.txtBt50Year54.Location = new System.Drawing.Point(240, 67);
             this.txtBt50Year54.Name = "txtBt50Year54";
             this.txtBt50Year54.ReadOnly = true;
-            this.txtBt50Year54.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtBt50Year54.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtBt50Year54, true);
             this.txtBt50Year54.Size = new System.Drawing.Size(56, 21);
             this.txtBt50Year54.TabIndex = 21;
             this.txtBt50Year54.Text = "0";
+            this.txtBt50Year54.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblBt50Year54
             // 
@@ -954,11 +975,12 @@
             this.txtBt40Year49.Location = new System.Drawing.Point(240, 44);
             this.txtBt40Year49.Name = "txtBt40Year49";
             this.txtBt40Year49.ReadOnly = true;
-            this.txtBt40Year49.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtBt40Year49.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtBt40Year49, true);
             this.txtBt40Year49.Size = new System.Drawing.Size(56, 21);
             this.txtBt40Year49.TabIndex = 19;
             this.txtBt40Year49.Text = "0";
+            this.txtBt40Year49.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblBt40Year49
             // 
@@ -982,11 +1004,12 @@
             this.txtBt30Year39.Location = new System.Drawing.Point(240, 21);
             this.txtBt30Year39.Name = "txtBt30Year39";
             this.txtBt30Year39.ReadOnly = true;
-            this.txtBt30Year39.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtBt30Year39.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtBt30Year39, true);
             this.txtBt30Year39.Size = new System.Drawing.Size(56, 21);
             this.txtBt30Year39.TabIndex = 17;
             this.txtBt30Year39.Text = "0";
+            this.txtBt30Year39.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblBt30Year39
             // 
@@ -1010,11 +1033,12 @@
             this.txtBt18Year29.Location = new System.Drawing.Point(83, 181);
             this.txtBt18Year29.Name = "txtBt18Year29";
             this.txtBt18Year29.ReadOnly = true;
-            this.txtBt18Year29.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtBt18Year29.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtBt18Year29, true);
             this.txtBt18Year29.Size = new System.Drawing.Size(57, 21);
             this.txtBt18Year29.TabIndex = 15;
             this.txtBt18Year29.Text = "0";
+            this.txtBt18Year29.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblBt18Year29
             // 
@@ -1038,11 +1062,12 @@
             this.txtBt16Year17.Location = new System.Drawing.Point(83, 158);
             this.txtBt16Year17.Name = "txtBt16Year17";
             this.txtBt16Year17.ReadOnly = true;
-            this.txtBt16Year17.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtBt16Year17.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtBt16Year17, true);
             this.txtBt16Year17.Size = new System.Drawing.Size(57, 21);
             this.txtBt16Year17.TabIndex = 13;
             this.txtBt16Year17.Text = "0";
+            this.txtBt16Year17.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblBt16Year17
             // 
@@ -1066,11 +1091,12 @@
             this.txtBt10Year15.Location = new System.Drawing.Point(83, 135);
             this.txtBt10Year15.Name = "txtBt10Year15";
             this.txtBt10Year15.ReadOnly = true;
-            this.txtBt10Year15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtBt10Year15.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtBt10Year15, true);
             this.txtBt10Year15.Size = new System.Drawing.Size(57, 21);
             this.txtBt10Year15.TabIndex = 11;
             this.txtBt10Year15.Text = "0";
+            this.txtBt10Year15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblBt10Year15
             // 
@@ -1094,11 +1120,12 @@
             this.txtBt6Year9.Location = new System.Drawing.Point(83, 112);
             this.txtBt6Year9.Name = "txtBt6Year9";
             this.txtBt6Year9.ReadOnly = true;
-            this.txtBt6Year9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtBt6Year9.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtBt6Year9, true);
             this.txtBt6Year9.Size = new System.Drawing.Size(57, 21);
             this.txtBt6Year9.TabIndex = 9;
             this.txtBt6Year9.Text = "0";
+            this.txtBt6Year9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblBt6Year9
             // 
@@ -1122,11 +1149,12 @@
             this.txtBt3Year5.Location = new System.Drawing.Point(83, 89);
             this.txtBt3Year5.Name = "txtBt3Year5";
             this.txtBt3Year5.ReadOnly = true;
-            this.txtBt3Year5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtBt3Year5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtBt3Year5, true);
             this.txtBt3Year5.Size = new System.Drawing.Size(57, 21);
             this.txtBt3Year5.TabIndex = 7;
             this.txtBt3Year5.Text = "0";
+            this.txtBt3Year5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblBt3Year5
             // 
@@ -1150,11 +1178,12 @@
             this.txtBt1Year2.Location = new System.Drawing.Point(83, 66);
             this.txtBt1Year2.Name = "txtBt1Year2";
             this.txtBt1Year2.ReadOnly = true;
-            this.txtBt1Year2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtBt1Year2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtBt1Year2, true);
             this.txtBt1Year2.Size = new System.Drawing.Size(57, 21);
             this.txtBt1Year2.TabIndex = 5;
             this.txtBt1Year2.Text = "0";
+            this.txtBt1Year2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblBt1Year2
             // 
@@ -1178,11 +1207,12 @@
             this.txtBt28Days1Year.Location = new System.Drawing.Point(83, 43);
             this.txtBt28Days1Year.Name = "txtBt28Days1Year";
             this.txtBt28Days1Year.ReadOnly = true;
-            this.txtBt28Days1Year.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtBt28Days1Year.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtBt28Days1Year, true);
             this.txtBt28Days1Year.Size = new System.Drawing.Size(57, 21);
             this.txtBt28Days1Year.TabIndex = 3;
             this.txtBt28Days1Year.Text = "0";
+            this.txtBt28Days1Year.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblBt28Days1Year
             // 
@@ -1207,11 +1237,12 @@
             this.txtLT28Days.Location = new System.Drawing.Point(83, 20);
             this.txtLT28Days.Name = "txtLT28Days";
             this.txtLT28Days.ReadOnly = true;
-            this.txtLT28Days.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtLT28Days.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtLT28Days, true);
             this.txtLT28Days.Size = new System.Drawing.Size(57, 21);
             this.txtLT28Days.TabIndex = 1;
             this.txtLT28Days.Text = "0";
+            this.txtLT28Days.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblLT28Days
             // 
@@ -1255,11 +1286,12 @@
             this.txtGenderUnknown.Location = new System.Drawing.Point(186, 108);
             this.txtGenderUnknown.Name = "txtGenderUnknown";
             this.txtGenderUnknown.ReadOnly = true;
-            this.txtGenderUnknown.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtGenderUnknown.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtGenderUnknown, true);
             this.txtGenderUnknown.Size = new System.Drawing.Size(51, 21);
             this.txtGenderUnknown.TabIndex = 44;
             this.txtGenderUnknown.Text = "0";
+            this.txtGenderUnknown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label2
             // 
@@ -1284,11 +1316,12 @@
             this.txtGenderFemale.Location = new System.Drawing.Point(186, 82);
             this.txtGenderFemale.Name = "txtGenderFemale";
             this.txtGenderFemale.ReadOnly = true;
-            this.txtGenderFemale.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtGenderFemale.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtGenderFemale, true);
             this.txtGenderFemale.Size = new System.Drawing.Size(51, 21);
             this.txtGenderFemale.TabIndex = 43;
             this.txtGenderFemale.Text = "0";
+            this.txtGenderFemale.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtGenderMale
             // 
@@ -1301,11 +1334,12 @@
             this.txtGenderMale.Location = new System.Drawing.Point(186, 55);
             this.txtGenderMale.Name = "txtGenderMale";
             this.txtGenderMale.ReadOnly = true;
-            this.txtGenderMale.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtGenderMale.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtGenderMale, true);
             this.txtGenderMale.Size = new System.Drawing.Size(51, 21);
             this.txtGenderMale.TabIndex = 42;
             this.txtGenderMale.Text = "0";
+            this.txtGenderMale.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblFemale
             // 
@@ -1381,11 +1415,12 @@
             this.txtPCCL6.Location = new System.Drawing.Point(29, 156);
             this.txtPCCL6.Name = "txtPCCL6";
             this.txtPCCL6.ReadOnly = true;
-            this.txtPCCL6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtPCCL6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtPCCL6, true);
             this.txtPCCL6.Size = new System.Drawing.Size(51, 21);
             this.txtPCCL6.TabIndex = 52;
             this.txtPCCL6.Text = "0";
+            this.txtPCCL6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblPCCL5
             // 
@@ -1410,11 +1445,12 @@
             this.txtPCCL5.Location = new System.Drawing.Point(29, 133);
             this.txtPCCL5.Name = "txtPCCL5";
             this.txtPCCL5.ReadOnly = true;
-            this.txtPCCL5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtPCCL5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtPCCL5, true);
             this.txtPCCL5.Size = new System.Drawing.Size(51, 21);
             this.txtPCCL5.TabIndex = 50;
             this.txtPCCL5.Text = "0";
+            this.txtPCCL5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label3
             // 
@@ -1439,11 +1475,12 @@
             this.txtPCCL4.Location = new System.Drawing.Point(29, 110);
             this.txtPCCL4.Name = "txtPCCL4";
             this.txtPCCL4.ReadOnly = true;
-            this.txtPCCL4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtPCCL4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtPCCL4, true);
             this.txtPCCL4.Size = new System.Drawing.Size(51, 21);
             this.txtPCCL4.TabIndex = 48;
             this.txtPCCL4.Text = "0";
+            this.txtPCCL4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtPCCL3
             // 
@@ -1456,11 +1493,12 @@
             this.txtPCCL3.Location = new System.Drawing.Point(29, 87);
             this.txtPCCL3.Name = "txtPCCL3";
             this.txtPCCL3.ReadOnly = true;
-            this.txtPCCL3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtPCCL3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtPCCL3, true);
             this.txtPCCL3.Size = new System.Drawing.Size(51, 21);
             this.txtPCCL3.TabIndex = 47;
             this.txtPCCL3.Text = "0";
+            this.txtPCCL3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtPCCL2
             // 
@@ -1473,11 +1511,12 @@
             this.txtPCCL2.Location = new System.Drawing.Point(29, 64);
             this.txtPCCL2.Name = "txtPCCL2";
             this.txtPCCL2.ReadOnly = true;
-            this.txtPCCL2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtPCCL2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtPCCL2, true);
             this.txtPCCL2.Size = new System.Drawing.Size(51, 21);
             this.txtPCCL2.TabIndex = 46;
             this.txtPCCL2.Text = "0";
+            this.txtPCCL2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtPCCL1
             // 
@@ -1490,11 +1529,12 @@
             this.txtPCCL1.Location = new System.Drawing.Point(29, 41);
             this.txtPCCL1.Name = "txtPCCL1";
             this.txtPCCL1.ReadOnly = true;
-            this.txtPCCL1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtPCCL1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtPCCL1, true);
             this.txtPCCL1.Size = new System.Drawing.Size(51, 21);
             this.txtPCCL1.TabIndex = 45;
             this.txtPCCL1.Text = "0";
+            this.txtPCCL1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtPCCL0
             // 
@@ -1507,11 +1547,12 @@
             this.txtPCCL0.Location = new System.Drawing.Point(29, 18);
             this.txtPCCL0.Name = "txtPCCL0";
             this.txtPCCL0.ReadOnly = true;
-            this.txtPCCL0.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtPCCL0.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.helpProvider1.SetShowHelp(this.txtPCCL0, true);
             this.txtPCCL0.Size = new System.Drawing.Size(51, 21);
             this.txtPCCL0.TabIndex = 44;
             this.txtPCCL0.Text = "0";
+            this.txtPCCL0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblPCCL6
             // 
