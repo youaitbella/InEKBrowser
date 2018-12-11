@@ -23,6 +23,29 @@
           </export-task>
         </export-tasks>
       </export-task-group>
+      <export-task-group name="Recent Publishes">
+        <export-tasks>
+          <export-task name="Publish as PDF" format="PDF">
+            <task-config-group name="settings">
+              <task-config-value name="outputfile">..\DrgBrowser\DrgBrowser.pdf</task-config-value>
+              <task-config-value name="template">.\template\DrgToollManual.mnl</task-config-value>
+              <task-config-value name="highlighthotspots">0</task-config-value>
+              <task-config-value name="exportcomments">0</task-config-value>
+              <task-config-value name="exportcommentsdate">36526</task-config-value>
+              <task-config-value name="make4include">PDF,USER1</task-config-value>
+              <task-config-value name="make4status">*</task-config-value>
+            </task-config-group>
+          </export-task>
+          <export-task name="Publish as CHM" format="CHM">
+            <task-config-group name="settings">
+              <task-config-value name="outputfile">..\DrgBrowser\DrgBrowser.chm</task-config-value>
+              <task-config-value name="deletetemp">1</task-config-value>
+              <task-config-value name="make0include">CHM</task-config-value>
+              <task-config-value name="make0status">*</task-config-value>
+            </task-config-group>
+          </export-task>
+        </export-tasks>
+      </export-task-group>
     </export-task-groups>
     <helpwindows>
       <helpwindow name="Main" left="-1" top="-1" width="-1" height="-1">
@@ -109,10 +132,10 @@
       </tablestyleclass>
     </styleclasses>
     <config-group name="project">
-      <config-value name="title" translate="true">G-DRG-Report-Browser 2018</config-value>
+      <config-value name="title" translate="true">G-DRG-Report-Browser 2019</config-value>
       <config-value name="author" translate="true">InEK GmbH</config-value>
-      <config-value name="copyright" translate="true">© 2017 InEK GmbH, Siegburg</config-value>
-      <config-value name="versionmajor">2018</config-value>
+      <config-value name="copyright" translate="true">© 2018 InEK GmbH, Siegburg</config-value>
+      <config-value name="versionmajor">2019</config-value>
       <config-value name="versionminor">1</config-value>
       <config-value name="lcid" translate="true">de-de</config-value>
       <config-value name="charset" translate="true">ANSI_CHARSET</config-value>
@@ -158,7 +181,7 @@
       </config-group>
       <config-value name="make6include">EBOOK</config-value>
       <config-value name="make6status">*</config-value>
-      <config-value name="summary" translate="true">G-DRG-Report-Browser 2018</config-value>
+      <config-value name="summary" translate="true">G-DRG-Report-Browser 2019</config-value>
       <config-value name="versionbuild">0</config-value>
     </config-group>
     <config-group name="user">
@@ -189,6 +212,11 @@
       <config-group name="rusertma">
         <config-group name="project">
           <config-value name="lastexport">4</config-value>
+        </config-group>
+      </config-group>
+      <config-group name="lautenti">
+        <config-group name="project">
+          <config-value name="lastexport">0</config-value>
         </config-group>
       </config-group>
     </config-group>
@@ -440,6 +468,9 @@ nsrInit();
       <config-value name="linkcolor">16711680</config-value>
       <config-value name="ignoreblank">1</config-value>
       <config-value name="outlinesnumbered">0</config-value>
+      <config-value name="highlighthotspots">0</config-value>
+      <config-value name="exportcomments">0</config-value>
+      <config-value name="exportcommentsdate">36526</config-value>
     </config-group>
     <config-group name="ebook">
       <config-value name="outputfile">DrgToolManual_Help.exe</config-value>
@@ -453,17 +484,18 @@ nsrInit();
     <variables>
       <variable id="FIGURE" type="text" translate="true">Abb. &lt;%FIGURE++%&gt;:</variable>
       <variable id="FIGURE++" type="text" translate="true">0</variable>
-      <variable id="FILE_COST" type="text" translate="true">RepBrDrg_BA_16_18_Kosten.csv, RepBrDrg_HA_16_18_Kosten.csv</variable>
-      <variable id="FILE_COST_DOMAIN" type="text" translate="true">RepBrDrg_16_18_Kostenbereich.csv</variable>
-      <variable id="FILE_DRG" type="text" translate="true">RepBrDrg_16_18_Drg.csv</variable>
-      <variable id="FILE_HD" type="text" translate="true">RepBrDrg_BA_16_18_Hauptdiagnose.csv bzw. RepBrDrg_HA_16_18_Hauptdiagnose.csv</variable>
-      <variable id="FILE_HEADDATA" type="text" translate="true">RepBrDrg_BA_16_18_Kopfdaten.csv bzw. RepBrDrg_HA_16_18_Kopfdaten.csv</variable>
-      <variable id="FILE_MDCS" type="text" translate="true">RepBrDrg_BA_16_18_Mdc.csv bzw. RepBrDrg_HA_16_18_Mdc.csv</variable>
-      <variable id="FILE_ND" type="text" translate="true">RepBrDrg_BA_16_18_Nebendiagnosen.csv bzw. RepBrDrg_HA_16_18_Nebendiagnosen.csv</variable>
-      <variable id="FILE_PROC" type="text" translate="true">RepBrDrg_BA_16_18_Prozeduren.csv bzw. RepBrDrg_HA_16_18_Prozeduren.csv</variable>
-      <variable id="FILE_RECHERCHE" type="text" translate="true">RepBrDrg_BA_16_18_Recherche.csv bzw. RepBrDrg_HA_16_18_Recherche.csv</variable>
+      <variable id="FILE_COST" type="text" translate="true">RepBrDrg_BA_16_18_Kosten.csv, RepBrDrg_HA_17_19_Kosten.csv</variable>
+      <variable id="FILE_COST_DOMAIN" type="text" translate="true">RepBrDrg_17_19_Kostenbereich.csv</variable>
+      <variable id="FILE_DRG" type="text" translate="true">RepBrDrg_17_19_Drg.csv</variable>
+      <variable id="FILE_HD" type="text" translate="true">RepBrDrg_BA_17_19_Hauptdiagnose.csv bzw. RepBrDrg_HA_17_19_Hauptdiagnose.csv</variable>
+      <variable id="FILE_HEADDATA" type="text" translate="true">RepBrDrg_BA_17_19_Kopfdaten.csv bzw. RepBrDrg_HA_17_19_Kopfdaten.csv</variable>
+      <variable id="FILE_MDCS" type="text" translate="true">RepBrDrg_BA_17_19_Mdc.csv bzw. RepBrDrg_HA_17_19_Mdc.csv</variable>
+      <variable id="FILE_ND" type="text" translate="true">RepBrDrg_BA_17_19_Nebendiagnosen.csv bzw. RepBrDrg_HA_17_19_Nebendiagnosen.csv</variable>
+      <variable id="FILE_PROC" type="text" translate="true">RepBrDrg_BA_17_19_Prozeduren.csv bzw. RepBrDrg_HA_17_19_Prozeduren.csv</variable>
+      <variable id="FILE_RECHERCHE" type="text" translate="true">RepBrDrg_BA_17_19_Recherche.csv bzw. RepBrDrg_HA_17_19_Recherche.csv</variable>
       <variable id="TITLE2" type="text" translate="true">G-DRG-Report-Browser</variable>
-      <variable id="DOWNLOAD" type="text" translate="true">http://g-drg.de/GDrgReportBrowser/2018/</variable>
+      <variable id="DOWNLOAD" type="text" translate="true">http://g-drg.de/GDrgReportBrowser/2019/</variable>
+      <variable id="DRG_VERSION" type="text" translate="true">2019</variable>
     </variables>
     <helpcontext-numbers/>
   </config>

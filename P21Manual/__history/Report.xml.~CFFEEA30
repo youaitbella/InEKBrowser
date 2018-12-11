@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Report</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Report</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Menüpunkt </text><text styleclass="Normal" style="font-weight:bold; font-style:italic;" translate="true">&quot;Report&quot;</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Image Caption"><image src="drgReport.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Menüpunkt &quot;Report&quot;</text></para>
+    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">Drucken</text></li>
+    </list>
+    <para styleclass="Normal" style="text-indent:13px; margin-right:5px; margin-left:5px; line-height:1.50; tabstops:none;"><text styleclass="Normal" translate="true">Startet einen Druckvorgang mit Ihrer ausgewählten DRG. Stellen Sie sicher, dass Sie einen Standarddrucker in Ihrem Betriebssystem ausgewählt haben.</text></para>
+    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="line-height:1.0; font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Normal" style="line-height:1.0;"><text styleclass="Normal" translate="true">PDF-Export</text></li>
+    </list>
+    <para styleclass="Normal" style="text-indent:13px; margin-right:5px; margin-left:5px; tabstops:none;"><text styleclass="Normal" translate="true">Sie können Ihre aktuell ausgewählte DRG hiermit als PDF-Dokument exportieren.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Nähere Informationen zum Drucken finden Sie in Kapitel 8 </text><link displaytype="text" defaultstyle="true" type="topiclink" href="Drucken" styleclass="Normal" translate="true">&quot;Report&quot;</link><text styleclass="Normal" translate="true">.</text></para>
+  </body>
+</topic>

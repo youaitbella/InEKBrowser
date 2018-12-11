@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("G-DRG-Browser 2016_2017")]
-[assembly: AssemblyDescription("G-DRG-Browser 2016_2017")]
+[assembly: AssemblyTitle("G-DRG-Browser 2017_2018")]
+[assembly: AssemblyDescription("G-DRG-Browser 2017_2018")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Institut für das Entgeltsystem im Krankenhaus GmbH (InEK)")]
-[assembly: AssemblyProduct("G-DRG-Browser 2016_2017")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
+[assembly: AssemblyProduct("G-DRG-Browser 2017_2018")]
+[assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

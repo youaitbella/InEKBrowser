@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
-<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+<topic template="Default" lasteditedby="lautenti" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
   <title translate="true">Daten</title>
   <body>
     <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold; font-style:normal;" translate="true">Menüpunkt </text><text styleclass="Normal" style="font-weight:bold; font-style:italic;" translate="true">&quot;Daten&quot;</text></para>
@@ -14,11 +14,11 @@
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Die leeren Textboxen oberhalb der Spaltenüberschriften können zur Filterung verwendet werden (siehe Kapitel 5.2 &quot;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="Tabellen-Filter" styleclass="Normal" translate="true">Tabellen-Filter</link><text styleclass="Normal" translate="true">&quot; inkl. Beispiele).</text></para>
     <para styleclass="Normal" style="text-align:left;"></para>
     <para styleclass="Image Caption"><image src="raw_data_view.png" scale="100.00%" styleclass="Image Caption"></image></para>
-    <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Beispiel Rohdatenansicht der Strukturkategorien (</text><var styleclass="Image Caption">&lt;%FILE_SK%&gt;)</var></para>
+    <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Beispiel Rohdatenansicht der Strukturkategorien</text></para>
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Die Dateien werden dem </text><var styleclass="Normal">&lt;%TITLE2%&gt;</var><text styleclass="Normal" translate="true"> als CSV-Dateien (Comma Separated Values) mitgeliefert und sind im Unterordner </text><text styleclass="Normal" style="font-style:italic;" translate="true">Data</text><text styleclass="Normal" translate="true"> zu finden. Sie können von dort aus bei Bedarf mit beliebigen Editoren angezeigt werden (z.B. Editor, Wordpad, Excel, usw.)</text></para>
     <para styleclass="Normal"></para>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Um die Funktionalität des </text><var styleclass="Normal">&lt;%TITLE2%&gt;s</var><text styleclass="Normal" translate="true"> gewährleisten zu können, </text><text styleclass="Normal" style="font-weight:bold;" translate="true">dürfen diese Dateien nicht entfernt, umbenannt oder manipuliert werden. </text><text styleclass="Normal" translate="true">Beim Start des &#160;</text><var styleclass="Normal">&lt;%TITLE2%&gt;s</var><text styleclass="Normal" translate="true"> werden alle csv-Dateien in die Zwischenablage des Computers geladen, um anschließend performant ausgewertet werden zu können. Sollten Sie eine Datei versehentlich geändert haben, so kann diese vom </text><var styleclass="Normal">&lt;%TITLE2%&gt;</var><text styleclass="Normal" translate="true"> nicht mehr genutzt werden. In einem solchen Fall können Sie die Original-Dateien zusammen mit dem Programm erneut von der Webseite des InEK beziehen.</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Um die Funktionalität des </text><var styleclass="Normal">&lt;%TITLE2%&gt;s</var><text styleclass="Normal" translate="true"> gewährleisten zu können, </text><text styleclass="Normal" style="font-weight:bold;" translate="true">dürfen diese Dateien nicht entfernt, umbenannt oder manipuliert werden. </text><text styleclass="Normal" translate="true">Beim Start des &#160;</text><var styleclass="Normal">&lt;%TITLE2%&gt;s</var><text styleclass="Normal" translate="true"> werden alle CSV-Dateien in die Zwischenablage des Computers geladen, um anschließend performant ausgewertet werden zu können. Sollten Sie eine Datei versehentlich geändert haben, so kann diese vom </text><var styleclass="Normal">&lt;%TITLE2%&gt;</var><text styleclass="Normal" translate="true"> nicht mehr genutzt werden. In einem solchen Fall können Sie die Original-Dateien zusammen mit dem Programm erneut von der Webseite des InEK beziehen.</text></para>
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Folgende Menüpunkte zur Dateiansicht sind vorhanden: </text></para>
     <para styleclass="Normal"></para>
@@ -45,6 +45,6 @@
       <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Recherche</text><br/><text styleclass="Bullet Text" translate="true">Zeigt die Daten der Datei </text><var styleclass="Bullet Text">&lt;%FILE_RECHERCHE%&gt;</var><text styleclass="Bullet Text" translate="true">: Datengrundlage für die Recherche-Funktion.</text></li>
       <li styleclass="Normal"><text styleclass="Normal" translate="true">Daten-Ordner öffnen</text></li>
     </list>
-    <para styleclass="Normal" style="text-indent:24px; margin-right:5px; margin-left:5px; tabstops:none;"><text styleclass="Normal" translate="true">Öffnet den Daten-Ordner indem sich alle relevanten PEPP-Daten befinden.</text></para>
+    <para styleclass="Normal" style="text-indent:24px; margin-right:5px; margin-left:5px; tabstops:none;"><text styleclass="Normal" translate="true">Öffnet den Daten-Ordner, in dem sich alle relevanten PEPP-Daten befinden.</text></para>
   </body>
 </topic>

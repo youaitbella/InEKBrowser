@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
-<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+<topic template="Default" lasteditedby="lautenti" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
   <title translate="true">Daten</title>
   <body>
     <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold; font-style:normal;" translate="true">Menüpunkt </text><text styleclass="Normal" style="font-weight:bold; font-style:italic;" translate="true">&quot;Daten&quot;</text></para>
@@ -40,6 +40,6 @@
       <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Recherche</text><br/><text styleclass="Bullet Text" translate="true">Zeigt die Daten der Datei </text><var styleclass="Bullet Text" style="font-style:italic;">&lt;%FILE_RECHERCHE%&gt;</var><text styleclass="Bullet Text" translate="true">: Datengrundlage für die Recherche-Funktion.</text></li>
       <li styleclass="Normal"><text styleclass="Normal" translate="true">Daten-Ordner öffnen</text></li>
     </list>
-    <para styleclass="Normal" style="text-indent:24px; margin-right:5px; margin-left:5px; tabstops:none;"><text styleclass="Normal" translate="true">Öffnet den Daten-Ordner indem sich alle relevanten DRG-Daten befinden.</text></para>
+    <para styleclass="Normal" style="text-indent:24px; margin-right:5px; margin-left:5px; tabstops:none;"><text styleclass="Normal" translate="true">Öffnet den Daten-Ordner, in dem sich alle relevanten DRG-Daten befinden.</text></para>
   </body>
 </topic>

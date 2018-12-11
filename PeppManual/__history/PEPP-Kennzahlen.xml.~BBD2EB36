@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="lautenti" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">PEPP-Kennzahlen</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">PEPP-Kennzahlen</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Es werden folgende zur PEPP-Version 2018 gehörige Kennzahlen je PEPP ausgewiesen:</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Fallzahl</text></para>
+    <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Fallzahl gesamt</text></li>
+    </list>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Pflegetage</text></para>
+    <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Anzahl </text><text styleclass="Normal" style="font-weight:normal;" translate="true">Pflegetage</text><text styleclass="Bullet Text" translate="true"> gesamt</text></li>
+    </list>
+    <para styleclass="Bullet Text"></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Katalog</text></para>
+    <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Degressionsendpunkt: Zeigt die größte Vergütungsklasse (Tag) an, für die ein Relativgewicht im Katalog ausgewiesen wird. </text><text style="font-family:Arial; font-size:11pt; color:#000000;" translate="true">Ist die Behandlungsdauer länger als die letzte im PEPP-Entgeltkatalog ausgewiesene Anzahl der Berechnungstage, gilt die Bewertungsrelation der letzten ausgewiesenen Zeile (entspricht dem Degressionsendpunkt) innerhalb der PEPP.</text></li>
+    </list>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Pflegetage bzw. Tagesk. (Tageskosten) bzw. Alter</text></para>
+    <list id="9" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Mittelwert: Arithmetischer Mittelwert (m)</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Standardabw.: Standardabweichung (s)</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Homogenitätsk.: Homogenitätskoeffizient = 1/(1+s/m). Es gilt: Je homogener desto näher an 1 bzw. 100%</text></li>
+    </list>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Geschlecht</text></para>
+    <list id="10" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Männlich: Anteil männlich je PEPP (in %)</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Weiblich: Anteil weiblich je PEPP (in %)</text></li>
+    </list>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Alter</text></para>
+    <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">&lt; 28 Tage, …, 80 Jahre u. älter: Häufigkeitsverteilung in 16 &#160;Klassen (in %)</text></li>
+    </list>
+    <para styleclass="Bullet Text"></para>
+    <para styleclass="Normal"></para>
+  </body>
+</topic>

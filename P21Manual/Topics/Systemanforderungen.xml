@@ -21,8 +21,8 @@
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Das Setup-Programm des </text><var styleclass="Normal">&lt;%TITLE2%&gt;s</var><text styleclass="Normal" translate="true"> ist über Ihren Webbrowser unter der URL </text><var styleclass="Normal">&lt;%DOWNLOAD%&gt;</var><text styleclass="Normal" translate="true"> erreichbar. Einen entsprechenden Link finden Sie auch auf der Internetseite des InEK. </text></para>
     <para styleclass="Normal"></para>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Nach dem Download des Setup-Programms führen Sie dies aus. Es werden alle notwendigen Daten - soweit erforderlich, inkl. des dotNetFramworks - &#160;heruntergeladen und auf Ihrem Rechner installiert. </text></para>
-    <para styleclass="Hinweis"><text styleclass="Hinweis" translate="true">Für die Installation von Programmen, benötigen Sie die entsprechenden Rechte. Kontaktieren Sie im Bedarfsfall Ihren Administrator.</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Nach dem Download des Setup-Programms führen Sie dies aus. Es werden alle notwendigen Daten - soweit erforderlich, inkl. des .Net-Framworks - &#160;heruntergeladen und auf Ihrem Rechner installiert. </text></para>
+    <para styleclass="Hinweis"><text styleclass="Hinweis" translate="true">Für die Installation von Programmen benötigen Sie die entsprechenden Rechte. Kontaktieren Sie im Bedarfsfall Ihren Administrator.</text></para>
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Nach der Installation wird der </text><var styleclass="Normal">&lt;%TITLE2%&gt;</var><text styleclass="Normal" translate="true"> automatisch gestartet. Zum ersten Start erfolgt die Abfrage, ob Sie die Programmausführung erlauben möchten.</text></para>
     <para styleclass="Normal"></para>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="lautenti" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Datenreiter Nebendiagnosen bzw. Prozeduren</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Datenreiter Nebendiagnosen bzw. Prozeduren</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Es werden die Nebendiagnose- bzw. Prozedurenkodes, die je PEPP mindestens vier Fälle repräsentieren, in absteigender Reihenfolge nach Anzahl der Fälle angezeigt. Hier werden neben dem Kode und dem Text vier Spalten ausgewiesen:</text></para>
+    <para styleclass="Normal"></para>
+    <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Anzahl Fälle: Anzahl Fälle mit entspr. Nebendiagnose bzw. Prozedur in der ausgewählten PEPP</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Anteil Fälle: Anteil der Fälle mit entspr. Nebendiagnose bzw. Prozedur an allen Fällen, in Prozent (D.h.: Zähler: „Fälle“, Nenner: Anzahl Fälle in der ausgewählten PEPP)</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Anzahl Nennungen: Anzahl Nennungen der entsprechenden Nebendiagnose bzw. Prozedur in der ausgewählten PEPP (Mehrfachnennungen pro Fall mitgezählt). D.h.: Die Zahl der Nennungen ist größer oder gleich der Zahl der Fälle.</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Anteil Nennungen: Anteil der Nennungen der entsprechenden Nebendiagnose bzw. Prozedur an allen Nennungen, in Prozent. (D.h.: Zähler: „Nennungen“, Nenner: Anzahl Nebendiagnose- bzw. Prozeduren-Nennungen insgesamt in der ausgewählten PEPP).</text></li>
+    </list>
+    <para styleclass="Normal"></para>
+    <para styleclass="Image Caption"><image src="tables_procedure.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Darstellung des Datenreiters für Prozeduren.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:47px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text style="font-family:Arial; font-size:12pt; font-weight:bold; color:#000000;" translate="true">Beispiel für die Unterscheidung Fälle vs. Nennungen:</text></para>
+    <para styleclass="" style="text-align:justify; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:47px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="Bullet Text" translate="true">PEPP PA03A, Registerblatt „Nebendiagnosen“: </text></para>
+    <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="" style="text-align:justify; text-indent:-24px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:71px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none; font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="" style="text-align:justify; text-indent:-24px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:71px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="Bullet Text" translate="true">296 der insgesamt 9.284 Fälle der PEPP PA03A weisen die Nebendiagnose N39.0 auf. Das entspricht einem Fallanteil von 296 / 9.284 = 3,19 Prozent.</text></li>
+      <li styleclass="" style="text-align:justify; text-indent:-24px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:71px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="Bullet Text" translate="true">Die Nebendiagnose N39.0 wird in den 9.284 Fällen insgesamt 351 mal genannt. Diese 351 Nennungen entsprechen einem Nennungsanteil von 351 / 43.371 = 0,8 Prozent. </text><br/><text styleclass="Bullet Text" translate="true">(Die Gesamtzahl 43.371 aller Nennungen der Normallieger der PEPP PA03A ist aus den Daten nicht ersichtlich, da die Nebendiagnosen, die weniger als 4 Fälle repräsentieren, nicht ausgewiesen werden; sie ist jedoch näherungsweise aus dem Dreisatz 351 / 0,081 = 43.333,3 zu errechnen.)</text></li>
+    </list>
+    <para styleclass="" style="text-align:justify; text-indent:-24px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:71px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"></para>
+  </body>
+</topic>

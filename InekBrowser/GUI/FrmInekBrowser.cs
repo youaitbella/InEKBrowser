@@ -23,6 +23,7 @@ namespace org.inek.InekBrowser.GUI {
         /* Use for window moving */
         private const int WM_NCLBUTTONDOWN = 0xA1;
         private const int HT_CAPTION = 0x2;
+        private const string NUMBER_FORMAT = "#,0.###";
 
         [DllImport("user32.dll")]
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
@@ -254,6 +255,8 @@ namespace org.inek.InekBrowser.GUI {
                                               st_TageAnzahl = sk.DayCount
                                           });
                 dlg.SetDataSource(q);
+                dlg.FormatColumn(4, NUMBER_FORMAT);
+                dlg.FormatColumn(5, NUMBER_FORMAT);
                 dlg.ToolTips(new[] {"Strukturkategorie", "Sortierung", "Text", "Anzahl PEPPs", "Anzahl Fälle", "Anzahl Tage"});
             } else if (Program.SystemBrowser == Program.System.Drg || Program.SystemBrowser == Program.System.P21) {
                 dlg.Text = "MDCs";
@@ -268,6 +271,8 @@ namespace org.inek.InekBrowser.GUI {
                                         IM_Faelle_Anzahl = mdc.CaseCount
                                     });
                 dlg.SetDataSource(q);
+                dlg.FormatColumn(2, NUMBER_FORMAT);
+                dlg.FormatColumn(3, NUMBER_FORMAT);
                 dlg.ToolTips(new [] {"MDC", "Text", "Anzahl DRGs", "Anzahl Fälle"});
             }
             
@@ -313,6 +318,8 @@ namespace org.inek.InekBrowser.GUI {
                                                                           kd_TageskostenHK = pi.DayCostsHc
                                                                       });
                 dlg.SetDataSource(q);
+                dlg.FormatColumn(1, NUMBER_FORMAT);
+                dlg.FormatColumn(2, NUMBER_FORMAT);
                 dlg.Text = "Kopfdaten";
                 dlg.ToolTips(new[] {
                                        "PEPP", "Anzahl Fälle", "Summe Verweildauertage", "Mittelwert Verweildauertage", "Standardabweichung Verweildauertage", "Homogenitätskoeffizient Verweildauertage", "Geschlecht Männlich", "Geschlecht Weiblich",
@@ -365,6 +372,7 @@ namespace org.inek.InekBrowser.GUI {
                                                                            IK_KOST_STD = drg.CostStandard
                                                                        });
                 dlg.SetDataSource(q);
+                dlg.FormatColumn(2, NUMBER_FORMAT);
                 dlg.Text = "Kopfdaten";
                 dlg.ToolTips(new [] {
                                         "MDC", "DRG", "Anzahl Fälle", "PCCL 0", "PCCL 1", "PCCL 2", "PCCL 3", "PCCL 4", "Geschlecht Männlich", "Geschlecht Weiblich", "Geschlecht Unbestimmt",
@@ -415,6 +423,7 @@ namespace org.inek.InekBrowser.GUI {
                     IK_VWD_STD = drg.LosStandard
                 });
                 dlg.SetDataSource(q);
+                dlg.FormatColumn(2, NUMBER_FORMAT);
                 dlg.Text = "Kopfdaten";
                 dlg.ToolTips(new[] {
                                         "MDC", "DRG", "Anzahl Fälle", "PCCL 0", "PCCL 1", "PCCL 2", "PCCL 3", "PCCL 4", "Geschlecht Männlich", "Geschlecht Weiblich", "Geschlecht Unbestimmt",
@@ -436,6 +445,7 @@ namespace org.inek.InekBrowser.GUI {
                 var q = CsvData.Context().PrimaryDiagnoses.Select(p => new { hd_Pepp = p.SystemCode, hd_Code = p.DiagCode, hd_FaelleAnzahl = p.Count, hd_FaelleAnteil = p.Fraction });
                 dlg.SetDataSource(q);
                 dlg.FormatColumn(3, "P");
+                dlg.FormatColumn(2, NUMBER_FORMAT);
                 dlg.ToolTips(new[] { "PEPP", "Code", "Anzahl Fälle", "Anteil Fälle" });
             } else if (Program.SystemBrowser == Program.System.Drg) {
                 var q =
@@ -451,6 +461,7 @@ namespace org.inek.InekBrowser.GUI {
                 dlg.SetDataSource(q);
                 dlg.ToolTips(new []{"DRG", "Code", "Anteil Fälle", "Anzahl Fälle"});
                 dlg.FormatColumn(2, "P");
+                dlg.FormatColumn(3, NUMBER_FORMAT);
             } else if (Program.SystemBrowser == Program.System.P21) {
                 var q =
                     CsvData.Context()
@@ -465,6 +476,7 @@ namespace org.inek.InekBrowser.GUI {
                 dlg.SetDataSource(q);
                 dlg.ToolTips(new []{"DRG", "Code", "Anzahl Fälle", "Anteil Fälle"});
                 dlg.FormatColumn(3, "P");
+                dlg.FormatColumn(2, NUMBER_FORMAT);
             }
             dlg.Text = "Hauptdiagnosen";
             dlg.ShowDialog(this);
@@ -492,6 +504,8 @@ namespace org.inek.InekBrowser.GUI {
                 dlg.SetDataSource(q);
                 dlg.ToolTips(new []{"PEPP", "Code", "Anzahl Fälle", "Anteil Fälle", "Anzahl Nennungen", "Anteil Nennungen"});
                 dlg.FormatColumn(3, "P");
+                dlg.FormatColumn(2, NUMBER_FORMAT);
+                dlg.FormatColumn(4, NUMBER_FORMAT);
                 dlg.FormatColumn(5, "P");
             } else if (Program.SystemBrowser == Program.System.Drg) {
                 var q =
@@ -510,6 +524,8 @@ namespace org.inek.InekBrowser.GUI {
                 dlg.ToolTips(new []{"DRG", "Code", "Anteil Fälle", "Anzahl Fälle", "Anteil Nennungen", "Anzahl Nennungen"});
                 dlg.FormatColumn(2, "P");
                 dlg.FormatColumn(4, "P");
+                dlg.FormatColumn(3, NUMBER_FORMAT);
+                dlg.FormatColumn(5, NUMBER_FORMAT);
             } else if (Program.SystemBrowser == Program.System.P21) {
                 var q =
                     CsvData.Context()
@@ -527,6 +543,8 @@ namespace org.inek.InekBrowser.GUI {
                 dlg.ToolTips(new[] { "DRG", "Code", "Anzahl Fälle", "Anteil Fälle", "Anzahl Nennungen", "Anteil Nennungen" });
                 dlg.FormatColumn(3, "P");
                 dlg.FormatColumn(5, "P");
+                dlg.FormatColumn(2, NUMBER_FORMAT);
+                dlg.FormatColumn(4, NUMBER_FORMAT);
             }
             dlg.Text = "Nebendiagnosen";
             dlg.ShowDialog(this);
@@ -550,6 +568,8 @@ namespace org.inek.InekBrowser.GUI {
                 dlg.SetDataSource(q);
                 dlg.ToolTips(new[] { "PEPP", "Code", "Anzahl Fälle", "Anteil Fälle", "Anzahl Nennungen", "Anteil Nennungen" });
                 dlg.FormatColumn(3, "P");
+                dlg.FormatColumn(2, NUMBER_FORMAT);
+                dlg.FormatColumn(4, NUMBER_FORMAT);
                 dlg.FormatColumn(5, "P");
             } else if (Program.SystemBrowser == Program.System.Drg) {
                 var q = CsvData.Context().Procedures.Select(p => new {
@@ -564,6 +584,8 @@ namespace org.inek.InekBrowser.GUI {
                 dlg.ToolTips(new[] { "DRG", "Code", "Anteil Fälle", "Anzahl Fälle", "Anteil Nennungen", "Anzahl Nennungen" });
                 dlg.FormatColumn(2, "P");
                 dlg.FormatColumn(4, "P");
+                dlg.FormatColumn(3, NUMBER_FORMAT);
+                dlg.FormatColumn(5, NUMBER_FORMAT);
             } else if (Program.SystemBrowser == Program.System.P21) {
                 var q = CsvData.Context().Procedures.Select(p => new {
                     IP_DRG = p.System,
@@ -577,6 +599,8 @@ namespace org.inek.InekBrowser.GUI {
                 dlg.ToolTips(new[] { "DRG", "Code", "Anzahl Fälle", "Anteil Fälle", "Anzahl Nennungen", "Anteil Nennungen" });
                 dlg.FormatColumn(3, "P");
                 dlg.FormatColumn(5, "P");
+                dlg.FormatColumn(2, NUMBER_FORMAT);
+                dlg.FormatColumn(4, NUMBER_FORMAT);
             }
             dlg.Text = "Prozeduren";
             dlg.ShowDialog();
@@ -828,12 +852,12 @@ namespace org.inek.InekBrowser.GUI {
 
         private void mnuHelp_Click(object sender, EventArgs e) {
             try {
-                if (Program.SystemBrowser == Program.System.Pepp) 
-                    Process.Start("PeppBrowser.chm");
+                if (Program.SystemBrowser == Program.System.Pepp)
+                    Help.ShowHelp(this,"PeppBrowser.chm");
                 else if (Program.SystemBrowser == Program.System.Drg)
-                    Process.Start("DrgBrowser.chm");
+                    Help.ShowHelp(this, "DrgBrowser.chm");
                 else if (Program.SystemBrowser == Program.System.P21) {
-                    Process.Start("DrgP21Browser.chm");
+                    Help.ShowHelp(this, "DrgP21Browser.chm");
                 }
             } catch (Exception) {
                 MessageBox.Show("Keine Hilfe verfügbar.");
@@ -1378,47 +1402,47 @@ namespace org.inek.InekBrowser.GUI {
                         KostenArt1 =
                             (c.CostType1.ToString("F").Equals("0,00")
                                 ? ""
-                                : c.CostType1.ToString("F")),
+                                : c.CostType1.ToString(NUMBER_FORMAT)),
                         KostenArt2 =
                             (c.CostType2.ToString("F").Equals("0,00")
                                 ? ""
-                                : c.CostType2.ToString("F")),
+                                : c.CostType2.ToString(NUMBER_FORMAT)),
                         KostenArt3 =
                             (c.CostType3.ToString("F").Equals("0,00")
                                 ? ""
-                                : c.CostType3.ToString("F")),
+                                : c.CostType3.ToString(NUMBER_FORMAT)),
                         KostenArt4a =
                             (c.CostType4a.ToString("F").Equals("0,00")
                                 ? ""
-                                : c.CostType4a.ToString("F")),
+                                : c.CostType4a.ToString(NUMBER_FORMAT)),
                         KostenArt4b =
                             (c.CostType4b.ToString("F").Equals("0,00")
                                 ? ""
-                                : c.CostType4b.ToString("F")),
+                                : c.CostType4b.ToString(NUMBER_FORMAT)),
                         KostenArt5 =
                             (c.CostType5.ToString("F").Equals("0,00")
                                 ? ""
-                                : c.CostType5.ToString("F")),
+                                : c.CostType5.ToString(NUMBER_FORMAT)),
                         KostenArt6a =
                             (c.CostType6a.ToString("F").Equals("0,00")
                                 ? ""
-                                : c.CostType6a.ToString("F")),
+                                : c.CostType6a.ToString(NUMBER_FORMAT)),
                         KostenArt6b =
                             (c.CostType6b.ToString("F").Equals("0,00")
                                 ? ""
-                                : c.CostType6b.ToString("F")),
+                                : c.CostType6b.ToString(NUMBER_FORMAT)),
                         KostenArt6c =
                             (c.CostType6c.ToString("F").Equals("0,00")
                                 ? ""
-                                : c.CostType6c.ToString("F")),
+                                : c.CostType6c.ToString(NUMBER_FORMAT)),
                         KostenArt7 =
                             (c.CostType7.ToString("F").Equals("0,00")
                                 ? ""
-                                : c.CostType7.ToString("F")),
+                                : c.CostType7.ToString(NUMBER_FORMAT)),
                         KostenArt8 =
                             (c.CostType8.ToString("F").Equals("0,00")
                                 ? ""
-                                : c.CostType8.ToString("F")),
+                                : c.CostType8.ToString(NUMBER_FORMAT)),
                     });
                 grdCosts.DataSource = Helper.ConvertToDataTable(q);
                 List<int> rowIds = CsvData.Context()
@@ -1998,6 +2022,7 @@ namespace org.inek.InekBrowser.GUI {
                 string skTag = CsvData.Context().System.Where(p => p.Code == SystemCode).Select(p => p.Category).Single();
                 info.StruCat = CsvData.Context().StructureCategories.Where(sk => sk.Category == skTag).Select(sk => sk.Text).Single();
                 info.PeppTxt = cbxSystem.Text;
+                info.Browser = "PEPP-Browser " + Program.Year;
                 var peppData = new SystemData(info);
                 //Primary Diagnoses
                 peppData.PrimDiag = CsvData.Context().PrimaryDiagnoses.Where(p => p.SystemCode == systemCode)
@@ -2063,6 +2088,7 @@ namespace org.inek.InekBrowser.GUI {
                 info.MdcCat = CsvData.Context().Mdcs.Where(mdc => mdc.MDC.Trim() == mdcTag).Select(mdc => mdc.Text).Single();
                 info.DrgTxt = cbxSystem.Text;
                 info.Devision = Department;
+                info.Browser = "G-DRG-Report-Browser " + Program.Year;
                 var drgData = new SystemData(info);
                 var q2 = CsvData.Context().Mdcs.Where(mdc => mdc.MDC.Trim() == drgData.MDC.Trim());
                 drgData.casesMDC = q2.Select(mdc => mdc.CaseCount).Single();
@@ -2129,6 +2155,7 @@ namespace org.inek.InekBrowser.GUI {
                 info.MdcCat = CsvData.Context().Mdcs.Where(mdc => mdc.MDC.Trim() == mdcTag).Select(mdc => mdc.Text).Single();
                 info.DrgTxt = cbxSystem.Text;
                 info.Devision = Department;
+                info.Browser = "G-DRG-Browser " + (int.Parse(Program.Year) - 2) + "_" + (int.Parse(Program.Year) - 1);
                 var drgData = new SystemData(info);
                 var q2 = CsvData.Context().Mdcs.Where(mdc => mdc.MDC.Trim() == drgData.MDC.Trim());
                 drgData.casesMDC = q2.Select(mdc => mdc.CaseCount).Single();

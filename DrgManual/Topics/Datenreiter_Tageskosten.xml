@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
-<topic template="Default" lasteditedby="vohldo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+<topic template="Default" lasteditedby="lautenti" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
   <title translate="true">Datenreiter Kosten</title>
   <body>
     <header>
@@ -8,6 +8,6 @@
     </header>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Der vierte Datenreiter „Kosten“ weist die </text><text styleclass="Normal" style="font-weight:bold;" translate="true">mittleren Kosten (Summe der Kosten dividiert durch die Anzahl der Inlier)</text><text styleclass="Normal" translate="true"> je Kostenmodul aus. </text></para>
     <para styleclass="Normal"></para>
-    <para style="text-align:justify;"><text styleclass="Font Style" style="font-family:Arial; font-size:12pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" translate="true">Das vierte Registerblatt „Kosten“ stellt die mittleren Kosten (arithmetischer Mittelwert (Basis: Normallieger) der Fallkosten) je Kostenmodul für die aus Anlage 5 des Handbuchs „Kalkulation von Fallkosten“, Version 3.0 bekannte Kostenmatrix dar.</text></para>
+    <para styleclass="" style="text-align:justify; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text style="font-family:Arial; font-size:12pt; color:#000000;" translate="true">Das vierte Registerblatt „Kosten“ stellt die mittleren Kosten (arithmetischer Mittelwert (Basis: Normallieger) der Fallkosten) je Kostenmodul für die aus Anlage 5 des Handbuchs „Kalkulation von Fallkosten“, Version 4.0 bekannte Kostenmatrix dar.</text></para>
   </body>
 </topic>

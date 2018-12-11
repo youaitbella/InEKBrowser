@@ -8,12 +8,12 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>P21Browser</RootNamespace>
-    <AssemblyName>G-DRG-Browser 2016_2017</AssemblyName>
+    <AssemblyName>G-DRG-Browser 2017_2018</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <IsWebBootstrapper>true</IsWebBootstrapper>
-    <PublishUrl>D:\tmp\DrgBrowser\2018\</PublishUrl>
+    <PublishUrl>D:\tmp\DrgBrowser\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -23,11 +23,11 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>http://download.g-drg.de/DrgBrowser/2018/</InstallUrl>
-    <ProductName>G-DRG-Browser 2016_2017</ProductName>
+    <InstallUrl>http://download.g-drg.de/DrgBrowser/2019/</InstallUrl>
+    <ProductName>G-DRG-Browser 2017_2018</ProductName>
     <PublisherName>Institut für das Entgeltsystem im Krankenhaus GmbH %28InEK%29</PublisherName>
     <SuiteName>G-DRG-Browser</SuiteName>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -154,62 +154,81 @@
     <None Include="Data\2017\P21BrDrg_TS_15_16_Prozeduren.csv" />
     <None Include="Data\2017\P21BrDrg_TS_15_16_Recherche.csv" />
     <None Include="Data\2017\P21BrDrg_TS_15_16_Kopfdaten.csv" />
-    <Content Include="Data\2018\P21BrDrg_16_17_Drg.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <None Include="Data\2018\P21BrDrg_16_17_Drg.csv" />
+    <None Include="Data\2018\P21BrDrg_BA_16_17_Hauptdiagnose.csv" />
+    <None Include="Data\2018\P21BrDrg_BA_16_17_Kopfdaten.csv" />
+    <None Include="Data\2018\P21BrDrg_BA_16_17_Mdc.csv" />
+    <None Include="Data\2018\P21BrDrg_BA_16_17_Nebendiagnosen.csv" />
+    <None Include="Data\2018\P21BrDrg_BA_16_17_Prozeduren.csv" />
+    <None Include="Data\2018\P21BrDrg_BA_16_17_Recherche.csv" />
+    <None Include="Data\2018\P21BrDrg_HA_16_17_Hauptdiagnose.csv" />
+    <None Include="Data\2018\P21BrDrg_HA_16_17_Kopfdaten.csv" />
+    <None Include="Data\2018\P21BrDrg_HA_16_17_Mdc.csv" />
+    <None Include="Data\2018\P21BrDrg_HA_16_17_Nebendiagnosen.csv" />
+    <None Include="Data\2018\P21BrDrg_HA_16_17_Prozeduren.csv" />
+    <None Include="Data\2018\P21BrDrg_HA_16_17_Recherche.csv" />
+    <None Include="Data\2018\P21BrDrg_TS_16_17_Hauptdiagnose.csv" />
+    <None Include="Data\2018\P21BrDrg_TS_16_17_Kopfdaten.csv" />
+    <None Include="Data\2018\P21BrDrg_TS_16_17_Mdc.csv" />
+    <None Include="Data\2018\P21BrDrg_TS_16_17_Nebendiagnosen.csv" />
+    <None Include="Data\2018\P21BrDrg_TS_16_17_Prozeduren.csv" />
+    <None Include="Data\2018\P21BrDrg_TS_16_17_Recherche.csv" />
+    <Content Include="Data\2019\P21BrDrg_17_18_Drg.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2018\P21BrDrg_BA_16_17_Hauptdiagnose.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="Data\2019\P21BrDrg_BA_17_18_Hauptdiagnose.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2018\P21BrDrg_BA_16_17_Kopfdaten.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="Data\2019\P21BrDrg_BA_17_18_Kopfdaten.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2018\P21BrDrg_BA_16_17_Mdc.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="Data\2019\P21BrDrg_BA_17_18_Mdc.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2018\P21BrDrg_BA_16_17_Nebendiagnosen.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="Data\2019\P21BrDrg_BA_17_18_Nebendiagnosen.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2018\P21BrDrg_BA_16_17_Prozeduren.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="Data\2019\P21BrDrg_BA_17_18_Prozeduren.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2018\P21BrDrg_BA_16_17_Recherche.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="Data\2019\P21BrDrg_BA_17_18_Recherche.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2018\P21BrDrg_HA_16_17_Hauptdiagnose.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="Data\2019\P21BrDrg_HA_17_18_Hauptdiagnose.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2018\P21BrDrg_HA_16_17_Kopfdaten.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="Data\2019\P21BrDrg_HA_17_18_Kopfdaten.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2018\P21BrDrg_HA_16_17_Mdc.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="Data\2019\P21BrDrg_HA_17_18_Mdc.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2018\P21BrDrg_HA_16_17_Nebendiagnosen.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="Data\2019\P21BrDrg_HA_17_18_Nebendiagnosen.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2018\P21BrDrg_HA_16_17_Prozeduren.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="Data\2019\P21BrDrg_HA_17_18_Prozeduren.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2018\P21BrDrg_HA_16_17_Recherche.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="Data\2019\P21BrDrg_HA_17_18_Recherche.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2018\P21BrDrg_TS_16_17_Hauptdiagnose.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="Data\2019\P21BrDrg_TS_17_18_Hauptdiagnose.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2018\P21BrDrg_TS_16_17_Kopfdaten.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="Data\2019\P21BrDrg_TS_17_18_Kopfdaten.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2018\P21BrDrg_TS_16_17_Mdc.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="Data\2019\P21BrDrg_TS_17_18_Mdc.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2018\P21BrDrg_TS_16_17_Nebendiagnosen.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="Data\2019\P21BrDrg_TS_17_18_Nebendiagnosen.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2018\P21BrDrg_TS_16_17_Prozeduren.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="Data\2019\P21BrDrg_TS_17_18_Prozeduren.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2018\P21BrDrg_TS_16_17_Recherche.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="Data\2019\P21BrDrg_TS_17_18_Recherche.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="P21Browser_TemporaryKey.pfx" />
     <Content Include="Print\cmll2200.chm">

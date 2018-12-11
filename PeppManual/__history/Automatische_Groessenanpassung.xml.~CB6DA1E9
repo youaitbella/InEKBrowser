@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="lautenti" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Automatische Größenanpassung</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Automatische Größenanpassung</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Sie können den </text><var styleclass="Normal">&lt;%TITLE2%&gt;</var><text styleclass="Normal" translate="true"> wahlweise als Vollbild wie auch in einem Fenster anzeigen. Die einzelnen Elemente passen sich in ihrer Größe an das Fenster an. Bei einer Verkleinerung ist dies jedoch nur in einem vorgegebenen Rahmen möglich. Hier sichert eine Mindestgröße die vernünftige Darstellung der Daten.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Diese automatische Größenanpassung funktioniert bestens, wenn Sie in Windows die Standardeinstellungen für die Schriftgröße belassen (100%). Sofern Sie bei Windows eine größere Schriftart einstellen, z.B. wegen Verwendung eines extrem hochauflösenden (&quot;4K&quot;) Monitors, werden einzelne Elemente möglicherweise nicht mehr optimal in ihrer Größe angepasst. Dies kann bei diesen Bildschirmelementen zu einer unschönen oder gar verzerrten bzw. überlappenden Darstellung führen. Dieses Problem tritt auf, sofern Sie als Betriebssystem noch Windows XP oder älter nutzen. Das Problem tritt bei jüngeren Versionen ebenfalls auf, sofern Sie dort die Skalierung im &quot;XP-Modus&quot; gewählt haben. Standardmäßig wird eine Größe von 125% im XP-Modus skaliert, während beispielsweise eine Schriftgröße von 150% proportional - und damit verzerrungsfrei - vergrößert wird.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Um eine optimale Darstellung zu erhalten, achten Sie bitte darauf, nicht den XP-Modus zu nutzen. Am Beispiel von Windows 7 wird im Folgenden erläutert, wie dies funktioniert:</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Auf dem Windows-Desktop (= freie Bildschirmfläche ohne Programmfenster) öffnen Sie mittels der sekundären (häufig rechten) Maustaste ein Kontextmenü. Wählen Sie </text><text styleclass="Normal" style="font-style:italic;" translate="true">Bildschirmauflösung</text><text styleclass="Normal" translate="true">. </text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Image Caption"><image src="WiindowsResolution.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Windows-Dialog Bildschirmauflösung</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Wählen Sie </text><text styleclass="Normal" style="font-style:italic;" translate="true">Text und weitere Elemente vergrößern oder verkleinern</text><text styleclass="Normal" translate="true">.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Image Caption"><image src="WindowsDisplay.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Windows Schriftgrößeneinstellung</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true"> Alternativ erreichen Sie diesen Dialog auch über </text><text styleclass="Normal" style="font-style:italic;" translate="true">Systemsteuerung</text><text styleclass="Normal" translate="true">, </text><text styleclass="Normal" style="font-style:italic;" translate="true">Anzeige</text><text styleclass="Normal" translate="true">.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Hier können Sie bereits die Schriftgröße ändern, aber damit wird u.U. die falsche Skalierung genutzt. Klicken Sie deshalb links auf </text><text styleclass="Normal" style="font-style:italic;" translate="true">Benutzerdefinierte Textgröße (DPI) festlegen</text><text styleclass="Normal" translate="true">. Es öffnete sich der folgende Dialog:</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Image Caption"><image src="WindowsDpiSetting.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Windows-Dialog DPI-Einstellung</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Auch hier können Sie die die gewünschte Größe in Prozent auswählen. Zusätzlich bietet dieser Dialog ein Ankreuzfeld</text><text styleclass="Normal" style="font-style:italic;" translate="true"> DPI-Skalierung im Stil von Windows XP verwenden</text><text styleclass="Normal" translate="true">. Achten Sie darauf, dass diese Einstellung </text><text styleclass="Normal" style="font-weight:bold;" translate="true">nicht</text><text styleclass="Normal" translate="true"> aktiviert ist!</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Sollte bei Ihnen die Vergrößerung im XP-Stil aktiviert sein, erhalten Sie beim Start des </text><var styleclass="Normal">&lt;%TITLE2%&gt;s</var><text styleclass="Normal" translate="true"> einen entsprechenden Hinweis.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"></para>
+  </body>
+</topic>

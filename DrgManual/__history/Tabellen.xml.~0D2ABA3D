@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="lautenti" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Datenreiter</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Datenreiter</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Im unteren Teil des </text><var styleclass="Normal">&lt;%TITLE2%&gt;s</var><text styleclass="Normal" translate="true"> befinden sich vier Datenreiter: Hauptdiagnosen, Nebendiagnosen, Prozeduren und Kosten. </text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Jeder dieser Reiter beinhaltet eine Tabelle, die wiederum DRG-bezogene Informationen bereitstellt.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Für die drei kodebezogenen Datenreiter besteht die Möglichkeit der Recherche bzw. des Navigierens innerhalb der möglichen DRGs, die mit einem bestimmten Kode in Verbindung stehen.</text></para>
+  </body>
+</topic>

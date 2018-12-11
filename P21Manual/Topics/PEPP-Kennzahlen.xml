@@ -6,7 +6,7 @@
     <header>
       <para styleclass="Heading1"><text styleclass="Heading1" translate="true">DRG-Kennzahlen</text></para>
     </header>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Nach Auswahl einer DRG werden folgende zur G-DRG-Version 2017 gehörende Kennzahlen je DRG ausgewiesen:</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Nach Auswahl einer DRG werden folgende zur G-DRG-Version </text><var styleclass="Normal">&lt;%DRG_VERSION%&gt;</var><text styleclass="Normal" translate="true"> gehörende Kennzahlen je DRG ausgewiesen:</text></para>
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">MDC-Information</text></para>
     <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
@@ -25,15 +25,15 @@
     <para styleclass="Bullet Text"></para>
     <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Bewertungsrelation</text></para>
     <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
-      <li styleclass="Bullet Text"><text styleclass="Normal" translate="true">Bewertungsrelation aus Fallpauschalen-Katalog der G-DRG-Version 2017</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Normal" translate="true">Bewertungsrelation aus Fallpauschalen-Katalog der G-DRG-Version </text><var styleclass="Normal">&lt;%DRG_VERSION%&gt;</var></li>
     </list>
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Verweildauer</text></para>
     <list id="9" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
       <li styleclass="Bullet Text"><text styleclass="Normal" translate="true">Kurzlieger, Normallieger, Langlieger: Anteil Kurzlieger bzw. Normallieger bzw. Langlieger an Gesamtfällen der DRG (in Prozent)</text></li>
-      <li styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="Normal" translate="true">Erster Tag mit Abschlag: Aus Fallpauschalen-Katalog der G-DRG-Version 2017</text></li>
-      <li styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="Normal" translate="true">Erster Tag zus. Entgelt: Aus Fallpauschalen-Katalog der G-DRG-Version 2017</text></li>
-      <li styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="Normal" translate="true">Mittlere arithmetische Verweildauer: Arithmetischer Mittelwert (Basis: Normallieger) der Verweildauer (aus Fallpauschalen-Katalog der G-DRG-Version 2017)</text></li>
+      <li styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="Normal" translate="true">Erster Tag mit Abschlag: Aus Fallpauschalen-Katalog der G-DRG-Version &#160;</text><var styleclass="Normal">&lt;%DRG_VERSION%&gt;</var></li>
+      <li styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="Normal" translate="true">Erster Tag zus. Entgelt: Aus Fallpauschalen-Katalog der G-DRG-Version &#160;</text><var styleclass="Normal">&lt;%DRG_VERSION%&gt;</var></li>
+      <li styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="Normal" translate="true">Mittlere arithmetische Verweildauer: Arithmetischer Mittelwert (Basis: Normallieger) der Verweildauer (aus Fallpauschalen-Katalog der G-DRG-Version &#160;</text><var styleclass="Normal">&lt;%DRG_VERSION%&gt;</var><text styleclass="Normal" translate="true">)</text></li>
       <li styleclass="Bullet Text"><text styleclass="Normal" translate="true">Standardabweichung Verweildauer: Standardabweichung (Basis: Normallieger) der Verweildauer</text></li>
     </list>
     <para styleclass="Normal"></para>
