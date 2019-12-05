@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="lautenti" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">DRG-Kennzahlen</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">DRG-Kennzahlen</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Nach Auswahl einer DRG werden folgende zur G-DRG-Version </text><var styleclass="Bullet Text">&lt;%DRG_VERSION%&gt;</var><text styleclass="Normal" translate="true"> gehörende Kennzahlen je DRG ausgewiesen:</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">MDC-Information</text></para>
+    <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Bullet Text"><text styleclass="Normal" translate="true">MDC-Nummer</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Normal" translate="true">MDC-Bezeichnung</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Normal" translate="true">Anz. DRGs: Anzahl DRGs in der MDC</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Normal" translate="true">N: Fallzahl Normallieger in der MDC</text></li>
+    </list>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Fallzahl Normallieger</text></para>
+    <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Bullet Text"><text styleclass="Normal" translate="true">Fallzahl Normallieger</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Normal" translate="true">von MDC: Anteil Normallieger DRG an Normallieger MDC (in Prozent)</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Normal" translate="true">von gesamt: Anteil Normallieger DRG an Normallieger gesamt (in Prozent)</text></li>
+    </list>
+    <para styleclass="Bullet Text"></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Bewertungsrelation</text></para>
+    <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Bullet Text"><text styleclass="Normal" translate="true">Bewertungsrelation aus Fallpauschalen-Katalog der G-DRG-Version </text><var styleclass="Normal">&lt;%DRG_VERSION%&gt;</var></li>
+    </list>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Verweildauer</text></para>
+    <list id="9" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Bullet Text"><text styleclass="Normal" translate="true">Kurzlieger, Normallieger, Langlieger: Anteil Kurzlieger bzw. Normallieger bzw. Langlieger an Gesamtfällen der DRG (in Prozent)</text></li>
+      <li styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="Normal" translate="true">Erster Tag mit Abschlag: Aus Fallpauschalen-Katalog der G-DRG-Version </text><var styleclass="Normal">&lt;%DRG_VERSION%&gt;</var></li>
+      <li styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="Normal" translate="true">Erster Tag zus. Entgelt: Aus Fallpauschalen-Katalog der G-DRG-Version </text><var styleclass="Normal">&lt;%DRG_VERSION%&gt;</var></li>
+      <li styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="Normal" translate="true">Mittlere arithmetische Verweildauer: Arithmetischer Mittelwert (Basis: Normallieger) der Verweildauer (aus Fallpauschalen-Katalog der G-DRG-Version </text><var styleclass="Normal">&lt;%DRG_VERSION%&gt;</var><text styleclass="Normal" translate="true">)</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Normal" translate="true">Standardabweichung Verweildauer: Standardabweichung (Basis: Normallieger) der Verweildauer</text></li>
+    </list>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Geschlecht</text></para>
+    <list id="10" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true"> &#160; Männlich, Weiblich, Unbestimmt: Häufigkeitsverteilung in 3 &#160;Klassen (Basis: Normallieger, in Prozent)</text></li>
+    </list>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">PCCL</text></para>
+    <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" style="font-weight:normal;" translate="true"> &#160; 0, 1, 2, 3, 4, 5, 6: Häufigkeitsverteilung in 7 &#160;Klassen (Basis: Normallieger, in Prozent)</text></li>
+    </list>
+    <para styleclass="Bullet Text"></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Alter</text></para>
+    <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true"> &#160; &lt; 28 Tage, …, 80 Jahre u. älter: Häufigkeitsverteilung in 16 &#160;Klassen (in Prozent)</text></li>
+    </list>
+    <para styleclass="Bullet Text"></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">Fallkosten</text></para>
+    <list id="9" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none; font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="Normal" translate="true">Arithmetischer Mittelwert: Arithmetischer Mittelwert der Kosten (Basis: Normallieger)</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Normal" translate="true">Standardabweichung: Standardabweichung der Kosten (Basis: Normallieger)</text></li>
+    </list>
+  </body>
+</topic>

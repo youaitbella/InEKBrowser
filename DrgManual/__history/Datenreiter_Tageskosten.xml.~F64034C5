@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="aitbellayo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Datenreiter Kosten</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Datenreiter Kosten</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Der vierte Datenreiter „Kosten“ weist die </text><text styleclass="Normal" style="font-weight:bold;" translate="true">mittleren Kosten (Summe der Kosten nach Ausgliederung der Pflegepersonalkosten dividiert durch die Anzahl der Normallieger)</text><text styleclass="Normal" translate="true"> je Kostenmodul</text><text style="font-family:Arial; font-size:12pt; color:#000000;" translate="true"> die aus Anlage 5 des Handbuchs „Kalkulation von Fallkosten“, Version 4.0 bekannte Kostenmatrix aus.</text></para>
+  </body>
+</topic>
