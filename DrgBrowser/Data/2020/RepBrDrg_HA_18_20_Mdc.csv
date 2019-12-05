@@ -1,0 +1,29 @@
+﻿IM_MDC;IM_Text;IM_DRG_Anzahl;IM_Faelle_Anzahl
+00;Prä-MDC;67;31603
+01;MDC 01 Krankheiten und Störungen des Nervensystems;106;291708
+02;MDC 02 Krankheiten und Störungen des Auges;31;78102
+03;MDC 03 Krankheiten und Störungen des Ohres, der Nase, des Mundes und des Halses;54;159409
+04;MDC 04 Krankheiten und Störungen der Atmungsorgane;62;262669
+05;MDC 05 Krankheiten und Störungen des Kreislaufsystems;147;467668
+06;MDC 06 Krankheiten und Störungen der Verdauungsorgane;89;337026
+07;MDC 07 Krankheiten und Störungen an hepatobiliärem System und Pankreas;49;106131
+08;MDC 08 Krankheiten und Störungen an Muskel-Skelett-System und Bindegewebe;173;533146
+09;MDC 09 Krankheiten und Störungen an Haut, Unterhaut und Mamma;53;185628
+10;MDC 10 Endokrine, Ernährungs- und Stoffwechselkrankheiten;40;104739
+11;MDC 11 Krankheiten und Störungen der Harnorgane;71;169522
+12;MDC 12 Krankheiten und Störungen der männlichen Geschlechtsorgane;29;46367
+13;MDC 13 Krankheiten und Störungen der weiblichen Geschlechtsorgane;39;59118
+14;MDC 14 Schwangerschaft, Geburt und Wochenbett;26;150128
+15;MDC 15 Neugeborene;41;174040
+16;MDC 16 Krankheiten des Blutes, der blutbildenden Organe und des Immunsystems;15;26042
+17;MDC 17 Hämatologische und solide Neubildungen;50;55182
+18A;MDC 18A HIV;7;766
+18B;MDC 18B Infektiöse und parasitäre Krankheiten;25;56488
+19;MDC 19 Psychische Krankheiten und Störungen;9;19487
+20;MDC 20 Alkohol- und Drogengebrauch und alkohol- und drogeninduzierte psychische Störungen;6;12692
+21A;MDC 21A Polytrauma;11;2757
+21B;MDC 21B Verletzungen, Vergiftungen und toxische Wirkungen von Drogen und Medikamenten;15;23437
+22;MDC 22 Verbrennungen;7;5174
+23;MDC 23 Faktoren, die den Gesundheitszustand beeinflussen, und andere Inanspruchnahme des Gesundheitswesens;10;16482
+24;MDC 24 Sonstige DRGs;10;5565
+-1;Fehler-DRGs;3;64

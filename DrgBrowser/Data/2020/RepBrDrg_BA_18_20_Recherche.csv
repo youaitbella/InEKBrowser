@@ -1,0 +1,1913 @@
+﻿IC_CodeF;IC_Text;IC_ANZHDI;IC_ANZNDI;IC_AnzProzI
+1-208.8;Registrierung evozierter Potentiale: Otoakustische Emissionen [OAE];0;0;1
+1-220.0;Messung des Augeninnendruckes: Tages- und Nachtdruckmessung über 24 Stunden;0;0;1
+1-242;Audiometrie;0;0;1
+1-336;Harnröhrenkalibrierung;0;0;1
+1-440.a;Endoskopische Biopsie an oberem Verdauungstrakt, Gallengängen und Pankreas: 1 bis 5 Biopsien am oberen Verdauungstrakt;0;0;1
+1-444.7;Endoskopische Biopsie am unteren Verdauungstrakt: 1 bis 5 Biopsien;0;0;1
+1-460.0;Transurethrale Biopsie an Harnorganen und Prostata: Nierenbecken;0;0;1
+1-460.1;Transurethrale Biopsie an Harnorganen und Prostata: Ureter;0;0;1
+1-460.2;Transurethrale Biopsie an Harnorganen und Prostata: Harnblase;0;0;1
+1-464.00;Transrektale Biopsie an männlichen Geschlechtsorganen: Stanzbiopsie der Prostata: Weniger als 20 Zylinder;0;0;1
+1-464.01;Transrektale Biopsie an männlichen Geschlechtsorganen: Stanzbiopsie der Prostata: 20 oder mehr Zylinder;0;0;1
+1-465.1;Perkutane Biopsie an Harnorganen und männlichen Geschlechtsorganen mit Steuerung durch bildgebende Verfahren: Prostata;0;0;1
+1-471.2;Biopsie ohne Inzision am Endometrium: Diagnostische fraktionierte Kürettage;0;0;1
+1-610.0;Diagnostische Laryngoskopie: Direkt;0;0;1
+1-610.2;Diagnostische Laryngoskopie: Mikrolaryngoskopie;0;0;1
+1-611.0;Diagnostische Pharyngoskopie: Direkt;0;0;1
+1-612;Diagnostische Rhinoskopie;0;0;1
+1-620.00;Diagnostische Tracheobronchoskopie: Mit flexiblem Instrument: Ohne weitere Maßnahmen;0;0;1
+1-630.0;Diagnostische Ösophagoskopie: Mit flexiblem Instrument;0;0;1
+1-630.1;Diagnostische Ösophagoskopie: Mit starrem Instrument;0;0;1
+1-632.0;Diagnostische Ösophagogastroduodenoskopie: Bei normalem Situs;0;0;1
+1-650.1;Diagnostische Koloskopie: Total, bis Zäkum;0;0;1
+1-650.2;Diagnostische Koloskopie: Total, mit Ileoskopie;0;0;1
+1-653;Diagnostische Proktoskopie;0;0;1
+1-654.1;Diagnostische Rektoskopie: Mit starrem Instrument;0;0;1
+1-661;Diagnostische Urethrozystoskopie;0;0;1
+1-665;Diagnostische Ureterorenoskopie;0;0;1
+1-672;Diagnostische Hysteroskopie;0;0;1
+1-694;Diagnostische Laparoskopie (Peritoneoskopie);0;0;1
+1-697.1;Diagnostische Arthroskopie: Schultergelenk;0;0;1
+1-697.3;Diagnostische Arthroskopie: Handgelenk;0;0;1
+1-697.7;Diagnostische Arthroskopie: Kniegelenk;0;0;1
+1-699.0;Andere diagnostische Endoskopie durch Punktion, Inzision und intraoperativ: Endoskopie der Nasennebenhöhlen;0;0;1
+1-853.1;Diagnostische (perkutane) Punktion und Aspiration der Bauchhöhle: Douglaspunktion;0;0;1
+1-999.1;Zusatzinformationen zu diagnostischen Maßnahmen: Fluoreszenzgestützte diagnostische Verfahren;0;0;1
+3-058;Endosonographie des Rektums;0;0;1
+3-05c.0;Endosonographie der männlichen Geschlechtsorgane: Transrektal;0;0;1
+3-131;Diskographie;0;0;1
+3-13d.0;Urographie: Intravenös;0;0;1
+3-13d.5;Urographie: Retrograd;0;0;1
+3-13e;Miktionszystourethrographie;0;0;1
+3-13f;Zystographie;0;0;1
+3-13g;Urethrographie;0;0;1
+3-200;Native Computertomographie des Schädels;0;0;1
+3-203;Native Computertomographie von Wirbelsäule und Rückenmark;0;0;1
+3-206;Native Computertomographie des Beckens;0;0;1
+3-207;Native Computertomographie des Abdomens;0;0;1
+3-221;Computertomographie des Halses mit Kontrastmittel;0;0;1
+3-222;Computertomographie des Thorax mit Kontrastmittel;0;0;1
+3-225;Computertomographie des Abdomens mit Kontrastmittel;0;0;1
+3-226;Computertomographie des Beckens mit Kontrastmittel;0;0;1
+3-800;Native Magnetresonanztomographie des Schädels;0;0;1
+3-802;Native Magnetresonanztomographie von Wirbelsäule und Rückenmark;0;0;1
+3-806;Native Magnetresonanztomographie des Muskel-Skelett-Systems;0;0;1
+3-823;Magnetresonanztomographie von Wirbelsäule und Rückenmark mit Kontrastmittel;0;0;1
+3-990;Computergestützte Bilddatenanalyse mit 3D-Auswertung;0;0;1
+3-992;Intraoperative Anwendung der Verfahren;0;0;1
+5-030.70;Zugang zum kraniozervikalen Übergang und zur Halswirbelsäule: HWS, ventral: 1 Segment;0;0;1
+5-032.00;Zugang zur Lendenwirbelsäule, zum Os sacrum und zum Os coccygis: LWS, dorsal: 1 Segment;0;0;1
+5-032.01;Zugang zur Lendenwirbelsäule, zum Os sacrum und zum Os coccygis: LWS, dorsal: 2 Segmente;0;0;1
+5-032.02;Zugang zur Lendenwirbelsäule, zum Os sacrum und zum Os coccygis: LWS, dorsal: Mehr als 2 Segmente;0;0;1
+5-032.10;Zugang zur Lendenwirbelsäule, zum Os sacrum und zum Os coccygis: Flavektomie LWS: 1 Segment;0;0;1
+5-032.11;Zugang zur Lendenwirbelsäule, zum Os sacrum und zum Os coccygis: Flavektomie LWS: 2 Segmente;0;0;1
+5-032.20;Zugang zur Lendenwirbelsäule, zum Os sacrum und zum Os coccygis: Laminotomie LWS: 1 Segment;0;0;1
+5-032.21;Zugang zur Lendenwirbelsäule, zum Os sacrum und zum Os coccygis: Laminotomie LWS: 2 Segmente;0;0;1
+5-032.30;Zugang zur Lendenwirbelsäule, zum Os sacrum und zum Os coccygis: Hemilaminektomie LWS: 1 Segment;0;0;1
+5-032.31;Zugang zur Lendenwirbelsäule, zum Os sacrum und zum Os coccygis: Hemilaminektomie LWS: 2 Segmente;0;0;1
+5-032.40;Zugang zur Lendenwirbelsäule, zum Os sacrum und zum Os coccygis: Laminektomie LWS: 1 Segment;0;0;1
+5-032.8;Zugang zur Lendenwirbelsäule, zum Os sacrum und zum Os coccygis: Os sacrum und Os coccygis, dorsal;0;0;1
+5-033.0;Inzision des Spinalkanals: Dekompression;0;0;1
+5-034.7;Inzision von Rückenmark und Rückenmarkhäuten: Durchtrennung einer Nervenwurzel (Rhizotomie, Radikulotomie);0;0;1
+5-036.6;Plastische Operationen an Rückenmark und Rückenmarkhäuten: Adhäsiolyse (Sekundäreingriff);0;0;1
+5-038.20;Operationen am spinalen Liquorsystem: Implantation oder Wechsel eines Katheters zur intrathekalen und/oder epiduralen Infusion: Temporärer Katheter zur Testinfusion;0;0;1
+5-038.21;Operationen am spinalen Liquorsystem: Implantation oder Wechsel eines Katheters zur intrathekalen und/oder epiduralen Infusion: Permanenter Katheter zur Dauerinfusion;0;0;1
+5-041.5;Exzision und Destruktion von (erkranktem) Gewebe von Nerven: Nerven Rumpf;0;0;1
+5-041.7;Exzision und Destruktion von (erkranktem) Gewebe von Nerven: Nerven Leiste und Beckenboden;0;0;1
+5-056.0;Neurolyse und Dekompression eines Nerven: Hirnnerven extrakraniell;0;0;1
+5-056.40;Neurolyse und Dekompression eines Nerven: Nerven Hand: Offen chirurgisch;0;0;1
+5-056.6;Neurolyse und Dekompression eines Nerven: Plexus lumbosacralis;0;0;1
+5-056.x;Neurolyse und Dekompression eines Nerven: Sonstige;0;0;1
+5-057.0;Neurolyse und Dekompression eines Nerven mit Transposition: Hirnnerven extrakraniell;0;0;1
+5-065.0;Exzision des Ductus thyreoglossus: Exzision einer medianen Halszyste, ohne Resektion des medialen Zungenbeines;0;0;1
+5-065.1;Exzision des Ductus thyreoglossus: Exzision einer medianen Halszyste, mit Resektion des medialen Zungenbeines;0;0;1
+5-091.31;Exzision und Destruktion von (erkranktem) Gewebe des Augenlides: Tiefe Exzision, histographisch kontrolliert (mikrographische Chirurgie): Mit Beteiligung der Lidkante;0;0;1
+5-113.4;Konjunktivaplastik: Transplantation von Amnionmembran;0;0;1
+5-115;Naht der Konjunktiva;0;0;1
+5-122.3;Operationen bei Pterygium: Mit medikamentöser Rezidivprophylaxe;0;0;1
+5-122.4;Operationen bei Pterygium: Exzision mit sonstiger Plastik oder freiem Transplantat;0;0;1
+5-125.00;Hornhauttransplantation und Keratoprothetik: Hornhauttransplantation, lamellär: Anterior;0;0;1
+5-125.01;Hornhauttransplantation und Keratoprothetik: Hornhauttransplantation, lamellär: Posterior;0;0;1
+5-125.10;Hornhauttransplantation und Keratoprothetik: Hornhauttransplantation, perforierend: Nicht HLA-typisiert;0;0;1
+5-131.00;Senkung des Augeninnendruckes durch filtrierende Operationen: Gedeckte Goniotrepanation oder Trabekulektomie: Ohne adjuvante medikamentöse Therapie;0;0;1
+5-131.01;Senkung des Augeninnendruckes durch filtrierende Operationen: Gedeckte Goniotrepanation oder Trabekulektomie: Mit Einbringen von Medikamenten zur Fibrosehemmung;0;0;1
+5-131.40;Senkung des Augeninnendruckes durch filtrierende Operationen: Revision einer Sklerafistel: Revision eines Sickerkissens;0;0;1
+5-131.42;Senkung des Augeninnendruckes durch filtrierende Operationen: Revision einer Sklerafistel: Öffnen eines Skleradeckelfadens;0;0;1
+5-131.60;Senkung des Augeninnendruckes durch filtrierende Operationen: Filtrationsoperation mit Implantat: Mit Abfluss unter die Bindehaut;0;0;1
+5-131.62;Senkung des Augeninnendruckes durch filtrierende Operationen: Filtrationsoperation mit Implantat: Mit Abfluss in den suprachoroidalen Raum;0;0;1
+5-131.x;Senkung des Augeninnendruckes durch filtrierende Operationen: Sonstige;0;0;1
+5-132.1;Senkung des Augeninnendruckes durch Operationen am Corpus ciliare: Zyklokryotherapie;0;0;1
+5-132.20;Senkung des Augeninnendruckes durch Operationen am Corpus ciliare: Zyklophotokoagulation: Offen chirurgisch;0;0;1
+5-132.2x;Senkung des Augeninnendruckes durch Operationen am Corpus ciliare: Zyklophotokoagulation: Sonstige;0;0;1
+5-133.0;Senkung des Augeninnendruckes durch Verbesserung der Kammerwasserzirkulation: Chirurgische Iridektomie;0;0;1
+5-133.7;Senkung des Augeninnendruckes durch Verbesserung der Kammerwasserzirkulation: Aspiration am Trabekelwerk bei Pseudoexfoliationsglaukom;0;0;1
+5-133.9;Senkung des Augeninnendruckes durch Verbesserung der Kammerwasserzirkulation: Trabekuläre Shunt-Implantation;0;0;1
+5-134.00;Senkung des Augeninnendruckes durch nicht filtrierende Operationen: Viskokanalostomie: Ohne Einbringen von Medikamenten zur Fibrosehemmung;0;0;1
+5-134.2;Senkung des Augeninnendruckes durch nicht filtrierende Operationen: Viskokanaloplastik;0;0;1
+5-137.4;Andere Operationen an der Iris: Lösung hinterer Synechien (zwischen Iris und Linse);0;0;1
+5-138.10;Operationen an der Sklera: Naht der Sklera: Primäre Naht;0;0;1
+5-138.13;Operationen an der Sklera: Naht der Sklera: Revision;0;0;1
+5-139.0;Andere Operationen an Sklera, vorderer Augenkammer, Iris und Corpus ciliare: Parazentese;0;0;1
+5-139.10;Andere Operationen an Sklera, vorderer Augenkammer, Iris und Corpus ciliare: Vorderkammerspülung: Ohne weitere Maßnahmen;0;0;1
+5-139.12;Andere Operationen an Sklera, vorderer Augenkammer, Iris und Corpus ciliare: Vorderkammerspülung: Mit Einbringen von Medikamenten;0;0;1
+5-139.2;Andere Operationen an Sklera, vorderer Augenkammer, Iris und Corpus ciliare: Einbringen von Gas in die Vorderkammer;0;0;1
+5-142.1;Kapsulotomie der Linse: Kapsulotomie, chirurgisch;0;0;1
+5-144.3a;Extrakapsuläre Extraktion der Linse [ECCE]: Linsenkernverflüssigung [Phakoemulsifikation] über sklero-kornealen Zugang: Mit Einführung einer kapselfixierten Hinterkammerlinse, monofokale Intraokularlinse;0;0;1
+5-144.5a;Extrakapsuläre Extraktion der Linse [ECCE]: Linsenkernverflüssigung [Phakoemulsifikation] über kornealen Zugang: Mit Einführung einer kapselfixierten Hinterkammerlinse, monofokale Intraokularlinse;0;0;1
+5-145.00;Andere Linsenextraktionen: Über die Pars plana: Ohne Implantation einer alloplastischen Linse;0;0;1
+5-145.05;Andere Linsenextraktionen: Über die Pars plana: Mit Einführung einer kammerwinkelgestützten Vorderkammerlinse;0;0;1
+5-146.2k;(Sekundäre) Einführung und Wechsel einer alloplastischen Linse: Wechsel: Mit Einführung einer irisfixierten Hinterkammerlinse, Sonderform der Intraokularlinse;0;0;1
+5-147.1;Revision und Entfernung einer alloplastischen Linse: Revision einer Hinterkammerlinse;0;0;1
+5-147.3;Revision und Entfernung einer alloplastischen Linse: Entfernung einer Hinterkammerlinse;0;0;1
+5-152.2;Fixation der Netzhaut durch eindellende Operationen: Durch Cerclage;0;0;1
+5-154.0;Andere Operationen zur Fixation der Netzhaut: Kryopexie;0;0;1
+5-154.2;Andere Operationen zur Fixation der Netzhaut: Laser-Retinopexie;0;0;1
+5-154.4;Andere Operationen zur Fixation der Netzhaut: Durch schwere Flüssigkeiten;0;0;1
+5-155.0;Destruktion von erkranktem Gewebe an Retina und Choroidea: Durch Diathermie;0;0;1
+5-155.1;Destruktion von erkranktem Gewebe an Retina und Choroidea: Durch Kryokoagulation;0;0;1
+5-155.3;Destruktion von erkranktem Gewebe an Retina und Choroidea: Durch lokale Laserkoagulation;0;0;1
+5-155.4;Destruktion von erkranktem Gewebe an Retina und Choroidea: Durch flächige Laserkoagulation;0;0;1
+5-156.0;Andere Operationen an der Retina: Retinotomie;0;0;1
+5-156.1;Andere Operationen an der Retina: Retinektomie;0;0;1
+5-156.9;Andere Operationen an der Retina: Injektion von Medikamenten in den hinteren Augenabschnitt;0;0;1
+5-157.0;Andere Operationen an der Choroidea: Subretinale Drainage;0;0;1
+5-158.10;Pars-plana-Vitrektomie: Ohne chirurgische Manipulation der Netzhaut: Elektrolytlösung;0;0;1
+5-158.11;Pars-plana-Vitrektomie: Ohne chirurgische Manipulation der Netzhaut: Luft;0;0;1
+5-158.12;Pars-plana-Vitrektomie: Ohne chirurgische Manipulation der Netzhaut: Andere Gase;0;0;1
+5-158.13;Pars-plana-Vitrektomie: Ohne chirurgische Manipulation der Netzhaut: Silikonölimplantation;0;0;1
+5-158.14;Pars-plana-Vitrektomie: Ohne chirurgische Manipulation der Netzhaut: Silikonölwechsel/-auffüllung;0;0;1
+5-158.15;Pars-plana-Vitrektomie: Ohne chirurgische Manipulation der Netzhaut: Silikonölentfernung;0;0;1
+5-158.20;Pars-plana-Vitrektomie: Mit Entfernung epiretinaler Membranen: Elektrolytlösung;0;0;1
+5-158.21;Pars-plana-Vitrektomie: Mit Entfernung epiretinaler Membranen: Luft;0;0;1
+5-158.22;Pars-plana-Vitrektomie: Mit Entfernung epiretinaler Membranen: Andere Gase;0;0;1
+5-158.25;Pars-plana-Vitrektomie: Mit Entfernung epiretinaler Membranen: Silikonölentfernung;0;0;1
+5-158.32;Pars-plana-Vitrektomie: Mit Entfernung subretinaler Membranen: Andere Gase;0;0;1
+5-158.40;Pars-plana-Vitrektomie: Mit Entfernung netzhautabhebender Membranen: Elektrolytlösung;0;0;1
+5-158.41;Pars-plana-Vitrektomie: Mit Entfernung netzhautabhebender Membranen: Luft;0;0;1
+5-158.42;Pars-plana-Vitrektomie: Mit Entfernung netzhautabhebender Membranen: Andere Gase;0;0;1
+5-158.43;Pars-plana-Vitrektomie: Mit Entfernung netzhautabhebender Membranen: Silikonölimplantation;0;0;1
+5-158.44;Pars-plana-Vitrektomie: Mit Entfernung netzhautabhebender Membranen: Silikonölwechsel/-auffüllung;0;0;1
+5-158.45;Pars-plana-Vitrektomie: Mit Entfernung netzhautabhebender Membranen: Silikonölentfernung;0;0;1
+5-158.46;Pars-plana-Vitrektomie: Mit Entfernung netzhautabhebender Membranen: Medikamente;0;0;1
+5-159.4;Vitrektomie über anderen Zugang und andere Operationen am Corpus vitreum: Nahtlose transkonjunktivale Vitrektomie mit Einmalinstrumenten;0;0;1
+5-185.0;Konstruktion und Rekonstruktion des äußeren Gehörganges: Erweiterung (z.B. bei Gehörgangsstenose);0;0;1
+5-185.1;Konstruktion und Rekonstruktion des äußeren Gehörganges: Konstruktion eines (nicht bestehenden) äußeren Gehörganges (z.B. bei Atresie);0;0;1
+5-185.2;Konstruktion und Rekonstruktion des äußeren Gehörganges: Rekonstruktion eines (bestehenden) äußeren Gehörganges;0;0;1
+5-189.0;Andere Operationen am äußeren Ohr: Entnahme von Ohrknorpel zur Transplantation;0;0;1
+5-194.0;Myringoplastik [Tympanoplastik Typ I]: Endaural;0;0;1
+5-194.1;Myringoplastik [Tympanoplastik Typ I]: Retroaurikulär;0;0;1
+5-195.90;Tympanoplastik (Verschluss einer Trommelfellperforation und Rekonstruktion der Gehörknöchelchen): Tympanoplastik Typ II bis V: Ohne Implantation einer Prothese;0;0;1
+5-195.91;Tympanoplastik (Verschluss einer Trommelfellperforation und Rekonstruktion der Gehörknöchelchen): Tympanoplastik Typ II bis V: Mit Implantation einer autogenen Prothese (z.B. Auto-Ossikel);0;0;1
+5-195.92;Tympanoplastik (Verschluss einer Trommelfellperforation und Rekonstruktion der Gehörknöchelchen): Tympanoplastik Typ II bis V: Mit Implantation einer alloplastischen Prothese;0;0;1
+5-195.a0;Tympanoplastik (Verschluss einer Trommelfellperforation und Rekonstruktion der Gehörknöchelchen): Tympanoplastik mit Attikotomie oder Attikoantrotomie: Ohne Implantation einer Prothese;0;0;1
+5-195.a1;Tympanoplastik (Verschluss einer Trommelfellperforation und Rekonstruktion der Gehörknöchelchen): Tympanoplastik mit Attikotomie oder Attikoantrotomie: Mit Implantation einer autogenen Prothese (z.B. Auto-Ossikel);0;0;1
+5-195.a2;Tympanoplastik (Verschluss einer Trommelfellperforation und Rekonstruktion der Gehörknöchelchen): Tympanoplastik mit Attikotomie oder Attikoantrotomie: Mit Implantation einer alloplastischen Prothese;0;0;1
+5-195.b0;Tympanoplastik (Verschluss einer Trommelfellperforation und Rekonstruktion der Gehörknöchelchen): Tympanoplastik mit Antrotomie oder Mastoidektomie: Ohne Implantation einer Prothese;0;0;1
+5-195.b1;Tympanoplastik (Verschluss einer Trommelfellperforation und Rekonstruktion der Gehörknöchelchen): Tympanoplastik mit Antrotomie oder Mastoidektomie: Mit Implantation einer autogenen Prothese (z.B. Auto-Ossikel);0;0;1
+5-195.b2;Tympanoplastik (Verschluss einer Trommelfellperforation und Rekonstruktion der Gehörknöchelchen): Tympanoplastik mit Antrotomie oder Mastoidektomie: Mit Implantation einer alloplastischen Prothese;0;0;1
+5-195.c1;Tympanoplastik (Verschluss einer Trommelfellperforation und Rekonstruktion der Gehörknöchelchen): Tympanoplastik mit Anlage einer Ohrradikalhöhle: Mit Implantation einer autogenen Prothese (z.B. Auto-Ossikel);0;0;1
+5-195.c2;Tympanoplastik (Verschluss einer Trommelfellperforation und Rekonstruktion der Gehörknöchelchen): Tympanoplastik mit Anlage einer Ohrradikalhöhle: Mit Implantation einer alloplastischen Prothese;0;0;1
+5-197.2;Stapesplastik: Mit Implantation einer alloplastischen Prothese (z.B. Piston);0;0;1
+5-200.4;Parazentese [Myringotomie]: Ohne Legen einer Paukendrainage;0;0;1
+5-200.5;Parazentese [Myringotomie]: Mit Einlegen einer Paukendrainage;0;0;1
+5-201;Entfernung einer Paukendrainage;0;0;1
+5-202.2;Inzision an Warzenfortsatz und Mittelohr: Explorative Tympanotomie;0;0;1
+5-203.1;Mastoidektomie: Radikale Mastoidektomie [Anlage einer Ohrradikalhöhle];0;0;1
+5-203.70;Mastoidektomie: Mit Freilegung des Fazialiskanals: Ohne Dekompression des Nerven;0;0;1
+5-204.2;Rekonstruktion des Mittelohres: Rekonstruktion der hinteren Gehörgangswand;0;0;1
+5-208.1;Inzision [Eröffnung] und Destruktion [Ausschaltung] des Innenohres: Dekompression oder Drainage des Saccus endolymphaticus (mit Shunt);0;0;1
+5-209.1;Andere Operationen am Mittel- und Innenohr: Operation an der Tuba auditiva;0;0;1
+5-209.x;Andere Operationen am Mittel- und Innenohr: Sonstige;0;0;1
+5-210.1;Operative Behandlung einer Nasenblutung: Elektrokoagulation;0;0;1
+5-211.41;Inzision der Nase: Durchtrennung von Synechien: Mit Einnähen von Septumstützfolien;0;0;1
+5-212.2;Exzision und Destruktion von erkranktem Gewebe der Nase: Exzision an der inneren Nase, endonasal;0;0;1
+5-214.0;Submuköse Resektion und plastische Rekonstruktion des Nasenseptums: Submuköse Resektion;0;0;1
+5-214.3;Submuköse Resektion und plastische Rekonstruktion des Nasenseptums: Septumunterfütterung (z.B. bei Ozaena);0;0;1
+5-214.4;Submuköse Resektion und plastische Rekonstruktion des Nasenseptums: Verschluss einer Septumperforation mit Schleimhaut-Verschiebelappen;0;0;1
+5-214.5;Submuköse Resektion und plastische Rekonstruktion des Nasenseptums: Plastische Korrektur ohne Resektion;0;0;1
+5-214.6;Submuköse Resektion und plastische Rekonstruktion des Nasenseptums: Plastische Korrektur mit Resektion;0;0;1
+5-214.70;Submuköse Resektion und plastische Rekonstruktion des Nasenseptums: Plastische Rekonstruktion des Nasenseptums: Mit lokalen autogenen Transplantaten (Austauschplastik);0;0;1
+5-214.71;Submuköse Resektion und plastische Rekonstruktion des Nasenseptums: Plastische Rekonstruktion des Nasenseptums: Mit distalen autogenen Transplantaten (z.B. Rippenknorpel);0;0;1
+5-215.00;Operationen an der unteren Nasenmuschel [Concha nasalis]: Destruktion: Diathermie;0;0;1
+5-215.01;Operationen an der unteren Nasenmuschel [Concha nasalis]: Destruktion: Kryokoagulation;0;0;1
+5-215.02;Operationen an der unteren Nasenmuschel [Concha nasalis]: Destruktion: Laserkoagulation;0;0;1
+5-215.0x;Operationen an der unteren Nasenmuschel [Concha nasalis]: Destruktion: Sonstige;0;0;1
+5-215.1;Operationen an der unteren Nasenmuschel [Concha nasalis]: Konchotomie und Abtragung von hinteren Enden;0;0;1
+5-215.2;Operationen an der unteren Nasenmuschel [Concha nasalis]: Konchektomie;0;0;1
+5-215.3;Operationen an der unteren Nasenmuschel [Concha nasalis]: Submuköse Resektion;0;0;1
+5-215.4;Operationen an der unteren Nasenmuschel [Concha nasalis]: Lateralisation;0;0;1
+5-215.5;Operationen an der unteren Nasenmuschel [Concha nasalis]: Medialisation;0;0;1
+5-215.x;Operationen an der unteren Nasenmuschel [Concha nasalis]: Sonstige;0;0;1
+5-216.0;Reposition einer Nasenfraktur: Geschlossen;0;0;1
+5-216.1;Reposition einer Nasenfraktur: Offen, endonasal;0;0;1
+5-217.0;Plastische Rekonstruktion der äußeren Nase: Nasensteg;0;0;1
+5-218.00;Plastische Rekonstruktion der inneren und äußeren Nase [Septorhinoplastik]: Septorhinoplastik mit Korrektur des Knorpels: Mit lokalen autogenen Transplantaten;0;0;1
+5-218.10;Plastische Rekonstruktion der inneren und äußeren Nase [Septorhinoplastik]: Septorhinoplastik mit Korrektur des Knochens: Mit lokalen autogenen Transplantaten;0;0;1
+5-218.20;Plastische Rekonstruktion der inneren und äußeren Nase [Septorhinoplastik]: Septorhinoplastik mit Korrektur des Knorpels und Knochens: Mit lokalen autogenen Transplantaten;0;0;1
+5-218.22;Plastische Rekonstruktion der inneren und äußeren Nase [Septorhinoplastik]: Septorhinoplastik mit Korrektur des Knorpels und Knochens: Mit allogenen oder xenogenen Transplantaten;0;0;1
+5-218.40;Plastische Rekonstruktion der inneren und äußeren Nase [Septorhinoplastik]: Komplexe plastische Rekonstruktion der inneren und äußeren Nase: Mit lokalen autogenen Transplantaten;0;0;1
+5-220.2;Nasennebenhöhlenpunktion: Kieferhöhlenpunktion über Fossa canina;0;0;1
+5-221.0;Operationen an der Kieferhöhle: Fensterung über unteren Nasengang;0;0;1
+5-221.1;Operationen an der Kieferhöhle: Fensterung über mittleren Nasengang;0;0;1
+5-221.4;Operationen an der Kieferhöhle: Radikaloperation (z.B. Operation nach Caldwell-Luc);0;0;1
+5-221.6;Operationen an der Kieferhöhle: Endonasal;0;0;1
+5-221.7;Operationen an der Kieferhöhle: Osteoplastische Operation, transoral;0;0;1
+5-222.0;Operation am Siebbein und an der Keilbeinhöhle: Infundibulotomie;0;0;1
+5-222.20;Operation am Siebbein und an der Keilbeinhöhle: Ethmoidektomie, endonasal: Ohne Darstellung der Schädelbasis;0;0;1
+5-222.21;Operation am Siebbein und an der Keilbeinhöhle: Ethmoidektomie, endonasal: Mit Darstellung der Schädelbasis;0;0;1
+5-222.4;Operation am Siebbein und an der Keilbeinhöhle: Sphenoidotomie, endonasal;0;0;1
+5-223.5;Operationen an der Stirnhöhle: Endonasale Stirnhöhlenoperation;0;0;1
+5-223.6;Operationen an der Stirnhöhle: Anlage einer Mediandrainage;0;0;1
+5-224.0;Operationen an mehreren Nasennebenhöhlen: Sanierung der Sinus maxillaris et ethmoidalis, kombiniert endonasal und transantral (Luc-de Lima);0;0;1
+5-224.2;Operationen an mehreren Nasennebenhöhlen: Sanierung der Sinus maxillaris, ethmoidalis et sphenoidalis, transmaxillo-ethmoidal;0;0;1
+5-224.3;Operationen an mehreren Nasennebenhöhlen: Ethmoidsphenoidektomie, endonasal;0;0;1
+5-224.4;Operationen an mehreren Nasennebenhöhlen: Mehrere Nasennebenhöhlen, radikal;0;0;1
+5-224.62;Operationen an mehreren Nasennebenhöhlen: Mehrere Nasennebenhöhlen, endonasal: Mit Entlastung eines Abszesses;0;0;1
+5-224.63;Operationen an mehreren Nasennebenhöhlen: Mehrere Nasennebenhöhlen, endonasal: Mit Darstellung der Schädelbasis (endonasale Pansinusoperation);0;0;1
+5-229;Andere Operationen an den Nasennebenhöhlen;0;0;1
+5-230.0;Zahnextraktion: Einwurzeliger Zahn;0;0;1
+5-230.3;Zahnextraktion: Mehrere Zähne verschiedener Quadranten;0;0;1
+5-231.00;Operative Zahnentfernung (durch Osteotomie): Tief zerstörter Zahn: Ein Zahn;0;0;1
+5-231.01;Operative Zahnentfernung (durch Osteotomie): Tief zerstörter Zahn: Mehrere Zähne eines Quadranten;0;0;1
+5-231.02;Operative Zahnentfernung (durch Osteotomie): Tief zerstörter Zahn: Mehrere Zähne eines Kiefers;0;0;1
+5-231.03;Operative Zahnentfernung (durch Osteotomie): Tief zerstörter Zahn: Mehrere Zähne beider Kiefer;0;0;1
+5-231.20;Operative Zahnentfernung (durch Osteotomie): Vollständig retinierter oder verlagerter (impaktierter) Zahn: Ein Zahn;0;0;1
+5-231.22;Operative Zahnentfernung (durch Osteotomie): Vollständig retinierter oder verlagerter (impaktierter) Zahn: Mehrere Zähne eines Kiefers;0;0;1
+5-231.23;Operative Zahnentfernung (durch Osteotomie): Vollständig retinierter oder verlagerter (impaktierter) Zahn: Mehrere Zähne beider Kiefer;0;0;1
+5-241.0;Gingivaplastik: Lappenoperation;0;0;1
+5-241.3;Gingivaplastik: Mit alloplastischem Implantat;0;0;1
+5-242.0;Andere Operationen am Zahnfleisch: Kürettage von Zahnfleischtaschen;0;0;1
+5-242.2;Andere Operationen am Zahnfleisch: Exzision von erkranktem Gewebe;0;0;1
+5-242.3;Andere Operationen am Zahnfleisch: Gingivektomie;0;0;1
+5-243.0;Exzision einer odontogenen pathologischen Veränderung des Kiefers: Am Oberkiefer ohne Eröffnung der Kieferhöhle;0;0;1
+5-243.1;Exzision einer odontogenen pathologischen Veränderung des Kiefers: Am Oberkiefer mit Eröffnung der Kieferhöhle;0;0;1
+5-243.3;Exzision einer odontogenen pathologischen Veränderung des Kiefers: Am Unterkiefer;0;0;1
+5-243.4;Exzision einer odontogenen pathologischen Veränderung des Kiefers: Am Unterkiefer mit Darstellung des N. alveolaris inferior;0;0;1
+5-244.00;Alveolarkammplastik und Vestibulumplastik: Alveolarkammplastik (Umschlagfalte): Ohne Transplantat;0;0;1
+5-244.20;Alveolarkammplastik und Vestibulumplastik: Vestibulumplastik: Ohne Transplantat;0;0;1
+5-249.0;Andere Operationen und Maßnahmen an Gebiss, Zahnfleisch und Alveolen: Operative Blutstillung;0;0;1
+5-249.3;Andere Operationen und Maßnahmen an Gebiss, Zahnfleisch und Alveolen: Operative Fixation einer Verbandplatte oder einer Gaumenplatte;0;0;1
+5-249.4;Andere Operationen und Maßnahmen an Gebiss, Zahnfleisch und Alveolen: Anpassung einer herausnehmbaren Verbandplatte;0;0;1
+5-259.1;Andere Operationen an der Zunge: Durchtrennung des Frenulum linguae;0;0;1
+5-262.02;Resektion einer Speicheldrüse: Parotidektomie, partiell: Ohne intraoperatives Fazialismonitoring, ohne Entfernung von erkranktem Gewebe im oberen Parapharyngeal- und/oder Infratemporalraum;0;0;1
+5-262.03;Resektion einer Speicheldrüse: Parotidektomie, partiell: Ohne intraoperatives Fazialismonitoring, mit Entfernung von erkranktem Gewebe im oberen Parapharyngeal- und/oder Infratemporalraum;0;0;1
+5-262.04;Resektion einer Speicheldrüse: Parotidektomie, partiell: Mit intraoperativem Fazialismonitoring, ohne Entfernung von erkranktem Gewebe im oberen Parapharyngeal- und/oder Infratemporalraum;0;0;1
+5-262.05;Resektion einer Speicheldrüse: Parotidektomie, partiell: Mit intraoperativem Fazialismonitoring, mit Entfernung von erkranktem Gewebe im oberen Parapharyngeal- und/oder Infratemporalraum;0;0;1
+5-262.0x;Resektion einer Speicheldrüse: Parotidektomie, partiell: Sonstige;0;0;1
+5-262.40;Resektion einer Speicheldrüse: Glandula submandibularis: Ohne intraoperatives Monitoring des Ramus marginalis des N. facialis;0;0;1
+5-262.41;Resektion einer Speicheldrüse: Glandula submandibularis: Mit intraoperativem Monitoring des Ramus marginalis des N. facialis;0;0;1
+5-270.5;Äußere Inzision und Drainage im Mund-, Kiefer- und Gesichtsbereich: Submandibulär;0;0;1
+5-270.6;Äußere Inzision und Drainage im Mund-, Kiefer- und Gesichtsbereich: Submandibulär, kieferwinkelnah;0;0;1
+5-272.0;Exzision und Destruktion des (erkrankten) harten und weichen Gaumens: Exzision, lokal;0;0;1
+5-274.1;Mundbodenplastik: Plastische Rekonstruktion;0;0;1
+5-275.8;Palatoplastik: Velopharyngoplastik;0;0;1
+5-279.0;Andere Operationen am Mund: Operative Blutstillung;0;0;1
+5-279.1;Andere Operationen am Mund: Frenulotomie;0;0;1
+5-280.0;Transorale Inzision und Drainage eines pharyngealen oder parapharyngealen Abszesses: (Peri)tonsillär;0;0;1
+5-281.0;Tonsillektomie (ohne Adenotomie): Mit Dissektionstechnik;0;0;1
+5-281.1;Tonsillektomie (ohne Adenotomie): Abszesstonsillektomie;0;0;1
+5-281.2;Tonsillektomie (ohne Adenotomie): Radikal, transoral;0;0;1
+5-281.4;Tonsillektomie (ohne Adenotomie): Rest-Tonsillektomie;0;0;1
+5-281.5;Tonsillektomie (ohne Adenotomie): Partiell, transoral;0;0;1
+5-282.0;Tonsillektomie mit Adenotomie: Mit Dissektionstechnik;0;0;1
+5-282.x;Tonsillektomie mit Adenotomie: Sonstige;0;0;1
+5-284.0;Exzision und Destruktion einer Zungengrundtonsille: Transoral;0;0;1
+5-285.0;Adenotomie (ohne Tonsillektomie): Primäreingriff;0;0;1
+5-285.1;Adenotomie (ohne Tonsillektomie): Readenotomie;0;0;1
+5-289.00;Andere Operationen an Gaumen- und Rachenmandeln: Destruktion von erkranktem Gewebe: Elektrokoagulation;0;0;1
+5-289.1;Andere Operationen an Gaumen- und Rachenmandeln: Operative Blutstillung nach Tonsillektomie;0;0;1
+5-289.2;Andere Operationen an Gaumen- und Rachenmandeln: Operative Blutstillung nach Adenotomie;0;0;1
+5-291.1;Operationen an Kiemengangsresten: Exzision einer lateralen Halszyste;0;0;1
+5-291.2;Operationen an Kiemengangsresten: Exzision einer lateralen Halsfistel;0;0;1
+5-292.0;Exzision und Destruktion von erkranktem Gewebe des Pharynx: Exzision, lokal;0;0;1
+5-292.x;Exzision und Destruktion von erkranktem Gewebe des Pharynx: Sonstige;0;0;1
+5-293.0;Pharyngoplastik: Mit lokaler Schleimhaut;0;0;1
+5-294.4;Andere Rekonstruktionen des Pharynx: (Uvulo-)Palatopharyngoplastik;0;0;1
+5-300.2;Exzision und Destruktion von erkranktem Gewebe des Larynx: Exzision, mikrolaryngoskopisch;0;0;1
+5-300.5;Exzision und Destruktion von erkranktem Gewebe des Larynx: Dekortikation einer Stimmlippe, mikrolaryngoskopisch;0;0;1
+5-300.7;Exzision und Destruktion von erkranktem Gewebe des Larynx: Stripping einer Stimmlippe, mikrolaryngoskopisch;0;0;1
+5-302.1;Andere partielle Laryngektomie: Chordektomie, endolaryngeal;0;0;1
+5-316.2;Rekonstruktion der Trachea: Verschluss eines Tracheostomas;0;0;1
+5-451.71;Lokale Exzision und Destruktion von erkranktem Gewebe des Dünndarmes: Exzision, endoskopisch, einfach (Push-Technik): Polypektomie von 1-2 Polypen mit Schlinge;0;0;1
+5-452.60;Lokale Exzision und Destruktion von erkranktem Gewebe des Dickdarmes: Exzision, endoskopisch, einfach (Push-Technik): Exzision ohne weitere Maßnahmen;0;0;1
+5-452.61;Lokale Exzision und Destruktion von erkranktem Gewebe des Dickdarmes: Exzision, endoskopisch, einfach (Push-Technik): Polypektomie von 1-2 Polypen mit Schlinge;0;0;1
+5-452.62;Lokale Exzision und Destruktion von erkranktem Gewebe des Dickdarmes: Exzision, endoskopisch, einfach (Push-Technik): Polypektomie von mehr als 2 Polypen mit Schlinge;0;0;1
+5-469.20;Andere Operationen am Darm: Adhäsiolyse: Offen chirurgisch;0;0;1
+5-469.21;Andere Operationen am Darm: Adhäsiolyse: Laparoskopisch;0;0;1
+5-469.d3;Andere Operationen am Darm: Clippen: Endoskopisch;0;0;1
+5-482.10;Peranale lokale Exzision und Destruktion von erkranktem Gewebe des Rektums: Submuköse Exzision: Peranal;0;0;1
+5-490.0;Inzision und Exzision von Gewebe der Perianalregion: Inzision;0;0;1
+5-490.1;Inzision und Exzision von Gewebe der Perianalregion: Exzision;0;0;1
+5-491.0;Operative Behandlung von Analfisteln: Inzision (Spaltung);0;0;1
+5-491.10;Operative Behandlung von Analfisteln: Exzision: Subkutan;0;0;1
+5-491.11;Operative Behandlung von Analfisteln: Exzision: Intersphinktär;0;0;1
+5-491.12;Operative Behandlung von Analfisteln: Exzision: Transsphinktär;0;0;1
+5-491.13;Operative Behandlung von Analfisteln: Exzision: Suprasphinktär;0;0;1
+5-491.14;Operative Behandlung von Analfisteln: Exzision: Extrasphinktär;0;0;1
+5-491.16;Operative Behandlung von Analfisteln: Exzision: Subanodermal;0;0;1
+5-491.2;Operative Behandlung von Analfisteln: Fadendrainage;0;0;1
+5-491.4;Operative Behandlung von Analfisteln: Exzision einer inter- oder transsphinktären Analfistel mit Verschluss durch Schleimhautlappen;0;0;1
+5-491.5;Operative Behandlung von Analfisteln: Exzision einer Analfistel mit Verschluss durch Muskel-Schleimhaut-Lappen;0;0;1
+5-492.00;Exzision und Destruktion von erkranktem Gewebe des Analkanals: Exzision: Lokal;0;0;1
+5-492.01;Exzision und Destruktion von erkranktem Gewebe des Analkanals: Exzision: Tief;0;0;1
+5-492.02;Exzision und Destruktion von erkranktem Gewebe des Analkanals: Exzision: Tief, mit Teilresektion des Muskels;0;0;1
+5-492.1;Exzision und Destruktion von erkranktem Gewebe des Analkanals: Destruktion, lokal;0;0;1
+5-493.2;Operative Behandlung von Hämorrhoiden: Exzision (z.B. nach Milligan-Morgan);0;0;1
+5-493.4;Operative Behandlung von Hämorrhoiden: Destruktion;0;0;1
+5-493.5;Operative Behandlung von Hämorrhoiden: Mit Stapler;0;0;1
+5-493.6;Operative Behandlung von Hämorrhoiden: Exzision mit plastischer Rekonstruktion (z.B. nach Fansler, Arnold, Parks);0;0;1
+5-493.71;Operative Behandlung von Hämorrhoiden: Ligatur einer A. haemorrhoidalis: Mit rektoanaler Rekonstruktion [Recto-anal-repair];0;0;1
+5-496.0;Rekonstruktion des Anus und des Sphinkterapparates: Naht (nach Verletzung);0;0;1
+5-496.3;Rekonstruktion des Anus und des Sphinkterapparates: Sphinkterplastik;0;0;1
+5-530.1;Verschluss einer Hernia inguinalis: Offen chirurgisch, mit plastischem Bruchpfortenverschluss;0;0;1
+5-530.32;Verschluss einer Hernia inguinalis: Mit alloplastischem, allogenem oder xenogenem Material: Endoskopisch total extraperitoneal [TEP];0;0;1
+5-530.33;Verschluss einer Hernia inguinalis: Mit alloplastischem, allogenem oder xenogenem Material: Offen chirurgisch, epifaszial (anterior);0;0;1
+5-530.34;Verschluss einer Hernia inguinalis: Mit alloplastischem, allogenem oder xenogenem Material: Offen chirurgisch, präperitoneal/retromuskulär (posterior);0;0;1
+5-530.5;Verschluss einer Hernia inguinalis: Bei Rezidiv, offen chirurgisch, mit plastischem Bruchpfortenverschluss;0;0;1
+5-530.73;Verschluss einer Hernia inguinalis: Bei Rezidiv, mit alloplastischem, allogenem oder xenogenem Material: Offen chirurgisch, epifaszial (anterior);0;0;1
+5-530.74;Verschluss einer Hernia inguinalis: Bei Rezidiv, mit alloplastischem, allogenem oder xenogenem Material: Offen chirurgisch, präperitoneal/retromuskulär (posterior);0;0;1
+5-534.03;Verschluss einer Hernia umbilicalis: Offen chirurgisch, ohne plastischen Bruchpfortenverschluss: Ohne weitere Maßnahmen;0;0;1
+5-534.1;Verschluss einer Hernia umbilicalis: Offen chirurgisch, mit plastischem Bruchpfortenverschluss;0;0;1
+5-534.34;Verschluss einer Hernia umbilicalis: Mit alloplastischem, allogenem oder xenogenem Material: Offen chirurgisch, mit Onlay-Technik;0;0;1
+5-534.35;Verschluss einer Hernia umbilicalis: Mit alloplastischem, allogenem oder xenogenem Material: Offen chirurgisch, mit Sublay-Technik;0;0;1
+5-535.1;Verschluss einer Hernia epigastrica: Offen chirurgisch, mit plastischem Bruchpfortenverschluss;0;0;1
+5-535.34;Verschluss einer Hernia epigastrica: Mit alloplastischem, allogenem oder xenogenem Material: Offen chirurgisch, mit Onlay-Technik;0;0;1
+5-535.35;Verschluss einer Hernia epigastrica: Mit alloplastischem, allogenem oder xenogenem Material: Offen chirurgisch, mit Sublay-Technik;0;0;1
+5-546.22;Plastische Rekonstruktion von Bauchwand und Peritoneum: Plastische Rekonstruktion der Bauchwand: Mit Implantation von alloplastischem, allogenem oder xenogenem Material in Sublay-Technik;0;0;1
+5-550.21;Perkutan-transrenale Nephrotomie, Nephrostomie, Steinentfernung, Pyeloplastik und ureterorenoskopische Steinentfernung: Entfernung eines Steines: Ureterorenoskopisch;0;0;1
+5-550.31;Perkutan-transrenale Nephrotomie, Nephrostomie, Steinentfernung, Pyeloplastik und ureterorenoskopische Steinentfernung: Entfernung eines Steines mit Desintegration (Lithotripsie): Ureterorenoskopisch;0;0;1
+5-560.0;Transurethrale und perkutan-transrenale Erweiterung des Ureters: Inzision, ureterorenoskopisch;0;0;1
+5-560.2;Transurethrale und perkutan-transrenale Erweiterung des Ureters: Bougierung, transurethral;0;0;1
+5-560.3x;Transurethrale und perkutan-transrenale Erweiterung des Ureters: Einlegen eines Stents, transurethral: Einlegen eines permanenten sonstigen Stents;0;0;1
+5-561.2;Inzision, Resektion und (andere) Erweiterung des Ureterostiums: Inzision, transurethral;0;0;1
+5-561.7;Inzision, Resektion und (andere) Erweiterung des Ureterostiums: Bougierung, transurethral;0;0;1
+5-562.4;Ureterotomie, perkutan-transrenale und transurethrale Steinbehandlung: Entfernung eines Steines, ureterorenoskopisch;0;0;1
+5-562.5;Ureterotomie, perkutan-transrenale und transurethrale Steinbehandlung: Entfernung eines Steines, ureterorenoskopisch, mit Desintegration (Lithotripsie);0;0;1
+5-562.8;Ureterotomie, perkutan-transrenale und transurethrale Steinbehandlung: Extraktion mit Dormia-Körbchen;0;0;1
+5-562.9;Ureterotomie, perkutan-transrenale und transurethrale Steinbehandlung: Steinreposition;0;0;1
+5-563.3;Exzision und Destruktion von erkranktem Gewebe des Ureters, Ureterresektion und Ureterektomie: Exzision von erkranktem Gewebe des Ureters, ureterorenoskopisch;0;0;1
+5-570.0;Endoskopische Entfernung von Steinen, Fremdkörpern und Tamponaden der Harnblase: Entfernung eines Steines, transurethral, mit Desintegration (Lithotripsie);0;0;1
+5-570.4;Endoskopische Entfernung von Steinen, Fremdkörpern und Tamponaden der Harnblase: Operative Ausräumung einer Harnblasentamponade, transurethral;0;0;1
+5-570.x;Endoskopische Entfernung von Steinen, Fremdkörpern und Tamponaden der Harnblase: Sonstige;0;0;1
+5-572.0;Zystostomie: Offen chirurgisch;0;0;1
+5-572.1;Zystostomie: Perkutan;0;0;1
+5-573.1;Transurethrale Inzision, Exzision, Destruktion und Resektion von (erkranktem) Gewebe der Harnblase: Inzision des Harnblasenhalses;0;0;1
+5-573.2;Transurethrale Inzision, Exzision, Destruktion und Resektion von (erkranktem) Gewebe der Harnblase: Exzision;0;0;1
+5-573.3;Transurethrale Inzision, Exzision, Destruktion und Resektion von (erkranktem) Gewebe der Harnblase: Destruktion;0;0;1
+5-573.40;Transurethrale Inzision, Exzision, Destruktion und Resektion von (erkranktem) Gewebe der Harnblase: Resektion: Nicht fluoreszenzgestützt;0;0;1
+5-573.41;Transurethrale Inzision, Exzision, Destruktion und Resektion von (erkranktem) Gewebe der Harnblase: Resektion: Fluoreszenzgestützt mit Hexaminolävulinsäure;0;0;1
+5-573.x;Transurethrale Inzision, Exzision, Destruktion und Resektion von (erkranktem) Gewebe der Harnblase: Sonstige;0;0;1
+5-579.42;Andere Operationen an der Harnblase: Operative Blutstillung: Transurethral;0;0;1
+5-579.52;Andere Operationen an der Harnblase: Operative Dehnung: Transurethral;0;0;1
+5-579.62;Andere Operationen an der Harnblase: Injektionsbehandlung: Transurethral;0;0;1
+5-581.0;Plastische Meatotomie der Urethra: Inzision;0;0;1
+5-581.1;Plastische Meatotomie der Urethra: Meatusplastik;0;0;1
+5-582.0;Exzision, Destruktion und Resektion von (erkranktem) Gewebe der Urethra: Exzision, offen chirurgisch;0;0;1
+5-582.1;Exzision, Destruktion und Resektion von (erkranktem) Gewebe der Urethra: Resektion, transurethral;0;0;1
+5-585.0;Transurethrale Inzision von (erkranktem) Gewebe der Urethra: Urethrotomia interna, ohne Sicht;0;0;1
+5-585.1;Transurethrale Inzision von (erkranktem) Gewebe der Urethra: Urethrotomia interna, unter Sicht;0;0;1
+5-593.20;Transvaginale Suspensionsoperation [Zügeloperation]: Mit alloplastischem Material: Spannungsfreies vaginales Band (TVT) oder transobturatorisches Band (TOT, TVT-O);0;0;1
+5-595.0;Abdominale retropubische und paraurethrale Suspensionsoperation: Urethropubopexie (z.B. nach Marshall-Marchetti-Krantz);0;0;1
+5-596.00;Andere Harninkontinenzoperationen: Paraurethrale Injektionsbehandlung: Mit Dextranomer-Hyaluronsäure-Gel;0;0;1
+5-596.01;Andere Harninkontinenzoperationen: Paraurethrale Injektionsbehandlung: Mit Polyacrylamid-Hydrogel;0;0;1
+5-600.0;Inzision der Prostata: Transurethral;0;0;1
+5-601.0;Transurethrale Exzision und Destruktion von Prostatagewebe: Elektroresektion;0;0;1
+5-601.1;Transurethrale Exzision und Destruktion von Prostatagewebe: Elektroresektion mit Trokarzystostomie;0;0;1
+5-601.6;Transurethrale Exzision und Destruktion von Prostatagewebe: Elektrische Vaporisation;0;0;1
+5-604.02;Radikale Prostatovesikulektomie: Retropubisch: Mit regionaler Lymphadenektomie;0;0;1
+5-604.12;Radikale Prostatovesikulektomie: Retropubisch, gefäß- und nervenerhaltend: Mit regionaler Lymphadenektomie;0;0;1
+5-609.0;Andere Operationen an der Prostata: Behandlung einer Prostatablutung, transurethral;0;0;1
+5-610.1;Inzision an Skrotum und Tunica vaginalis testis: Drainage;0;0;1
+5-611;Operation einer Hydrocele testis;0;0;1
+5-622.1;Orchidektomie: Skrotal, mit Epididymektomie;0;0;1
+5-624.5;Orchidopexie: Skrotal;0;0;1
+5-629.x;Andere Operationen am Hoden: Sonstige;0;0;1
+5-630.4;Operative Behandlung einer Varikozele und einer Hydrocele funiculi spermatici: Resektion der V. spermatica (und A. spermatica) [Varikozelenoperation], abdominal, laparoskopisch;0;0;1
+5-631.1;Exzision im Bereich der Epididymis: Spermatozele;0;0;1
+5-631.2;Exzision im Bereich der Epididymis: Morgagni-Hydatide;0;0;1
+5-633.1;Epididymektomie: Total;0;0;1
+5-636.2;Destruktion, Ligatur und Resektion des Ductus deferens: Resektion [Vasoresektion];0;0;1
+5-640.2;Operationen am Präputium: Zirkumzision;0;0;1
+5-640.3;Operationen am Präputium: Frenulum- und Präputiumplastik;0;0;1
+5-651.82;Lokale Exzision und Destruktion von Ovarialgewebe: Exzisionsbiopsie: Endoskopisch (laparoskopisch);0;0;1
+5-651.92;Lokale Exzision und Destruktion von Ovarialgewebe: Exzision einer Ovarialzyste: Endoskopisch (laparoskopisch);0;0;1
+5-651.a2;Lokale Exzision und Destruktion von Ovarialgewebe: Keilexzision des Ovars: Endoskopisch (laparoskopisch);0;0;1
+5-651.b2;Lokale Exzision und Destruktion von Ovarialgewebe: Destruktion von Endometrioseherden: Endoskopisch (laparoskopisch);0;0;1
+5-652.52;Ovariektomie: Partiell: Endoskopisch (laparoskopisch);0;0;1
+5-653.30;Salpingoovariektomie: Salpingoovariektomie (ohne weitere Maßnahmen): Offen chirurgisch (abdominal);0;0;1
+5-657.72;Adhäsiolyse an Ovar und Tuba uterina ohne mikrochirurgische Versorgung: Am Ovar: Endoskopisch (laparoskopisch);0;0;1
+5-657.82;Adhäsiolyse an Ovar und Tuba uterina ohne mikrochirurgische Versorgung: An der Tuba uterina: Endoskopisch (laparoskopisch);0;0;1
+5-657.92;Adhäsiolyse an Ovar und Tuba uterina ohne mikrochirurgische Versorgung: An Ovar und Tuba uterina, kombiniert: Endoskopisch (laparoskopisch);0;0;1
+5-661.60;Salpingektomie: Total: Offen chirurgisch (abdominal);0;0;1
+5-661.62;Salpingektomie: Total: Endoskopisch (laparoskopisch);0;0;1
+5-661.65;Salpingektomie: Total: Vaginal;0;0;1
+5-663.00;Destruktion und Verschluss der Tubae uterinae [Sterilisationsoperation]: Elektrokoagulation: Offen chirurgisch (abdominal);0;0;1
+5-665.42;Exzision und Destruktion von erkranktem Gewebe der Tuba uterina: Exzision: Endoskopisch (laparoskopisch);0;0;1
+5-667.1;Insufflation der Tubae uterinae: Chromopertubation;0;0;1
+5-681.4;Exzision und Destruktion von erkranktem Gewebe des Uterus: Morcellieren des Uterus als Vorbereitung zur Uterusexstirpation;0;0;1
+5-682.00;Subtotale Uterusexstirpation: Suprazervikal: Offen chirurgisch (abdominal);0;0;1
+5-683.00;Uterusexstirpation [Hysterektomie]: Ohne Salpingoovariektomie: Offen chirurgisch (abdominal);0;0;1
+5-683.01;Uterusexstirpation [Hysterektomie]: Ohne Salpingoovariektomie: Vaginal;0;0;1
+5-683.02;Uterusexstirpation [Hysterektomie]: Ohne Salpingoovariektomie: Vaginal, laparoskopisch assistiert;0;0;1
+5-683.03;Uterusexstirpation [Hysterektomie]: Ohne Salpingoovariektomie: Endoskopisch (laparoskopisch);0;0;1
+5-683.10;Uterusexstirpation [Hysterektomie]: Mit Salpingoovariektomie, einseitig: Offen chirurgisch (abdominal);0;0;1
+5-683.12;Uterusexstirpation [Hysterektomie]: Mit Salpingoovariektomie, einseitig: Vaginal, laparoskopisch assistiert;0;0;1
+5-683.20;Uterusexstirpation [Hysterektomie]: Mit Salpingoovariektomie, beidseitig: Offen chirurgisch (abdominal);0;0;1
+5-683.21;Uterusexstirpation [Hysterektomie]: Mit Salpingoovariektomie, beidseitig: Vaginal;0;0;1
+5-683.22;Uterusexstirpation [Hysterektomie]: Mit Salpingoovariektomie, beidseitig: Vaginal, laparoskopisch assistiert;0;0;1
+5-683.3;Uterusexstirpation [Hysterektomie]: Mit ausgedehnter retroperitonealer Präparation;0;0;1
+5-690.0;Therapeutische Kürettage [Abrasio uteri]: Ohne lokale Medikamentenapplikation;0;0;1
+5-702.2;Lokale Exzision und Destruktion von erkranktem Gewebe der Vagina und des Douglasraumes: Exzision von erkranktem Gewebe des Douglasraumes;0;0;1
+5-702.4;Lokale Exzision und Destruktion von erkranktem Gewebe der Vagina und des Douglasraumes: Destruktion von erkranktem Gewebe des Douglasraumes;0;0;1
+5-704.00;Vaginale Kolporrhaphie und Beckenbodenplastik: Vorderwandplastik (bei (Urethro-)Zystozele): Ohne alloplastisches Material;0;0;1
+5-704.01;Vaginale Kolporrhaphie und Beckenbodenplastik: Vorderwandplastik (bei (Urethro-)Zystozele): Mit alloplastischem Material;0;0;1
+5-704.10;Vaginale Kolporrhaphie und Beckenbodenplastik: Hinterwandplastik (bei Rektozele): Ohne alloplastisches Material;0;0;1
+5-704.11;Vaginale Kolporrhaphie und Beckenbodenplastik: Hinterwandplastik (bei Rektozele): Mit alloplastischem Material;0;0;1
+5-704.4f;Vaginale Kolporrhaphie und Beckenbodenplastik: Scheidenstumpffixation: Vaginal, ohne alloplastisches Material, mit Fixation am Lig. sacrospinale oder Lig. sacrotuberale;0;0;1
+5-707.1;Plastische Rekonstruktion des kleinen Beckens und des Douglasraumes: Douglasplastik;0;0;1
+5-707.21;Plastische Rekonstruktion des kleinen Beckens und des Douglasraumes: Enterozelenplastik ohne alloplastisches Material: Vaginal;0;0;1
+5-707.31;Plastische Rekonstruktion des kleinen Beckens und des Douglasraumes: Enterozelenplastik mit alloplastischem Material: Vaginal;0;0;1
+5-728.0;Vakuumentbindung: Aus Beckenausgang;0;0;1
+5-728.1;Vakuumentbindung: Aus Beckenmitte;0;0;1
+5-730;Künstliche Fruchtblasensprengung [Amniotomie];0;0;1
+5-738.0;Episiotomie und Naht: Episiotomie;0;0;1
+5-738.x;Episiotomie und Naht: Sonstige;0;0;1
+5-740.0;Klassische Sectio caesarea: Primär;0;0;1
+5-740.1;Klassische Sectio caesarea: Sekundär;0;0;1
+5-741.0;Sectio caesarea, suprazervikal und korporal: Primär, suprazervikal;0;0;1
+5-741.1;Sectio caesarea, suprazervikal und korporal: Sekundär, suprazervikal;0;0;1
+5-749.0;Andere Sectio caesarea: Resectio;0;0;1
+5-749.10;Andere Sectio caesarea: Misgav-Ladach-Sectio: Primär;0;0;1
+5-749.11;Andere Sectio caesarea: Misgav-Ladach-Sectio: Sekundär;0;0;1
+5-758.2;Rekonstruktion weiblicher Geschlechtsorgane nach Ruptur, post partum [Dammriss]: Vagina;0;0;1
+5-758.3;Rekonstruktion weiblicher Geschlechtsorgane nach Ruptur, post partum [Dammriss]: Naht an der Haut von Perineum und Vulva;0;0;1
+5-758.4;Rekonstruktion weiblicher Geschlechtsorgane nach Ruptur, post partum [Dammriss]: Naht an Haut und Muskulatur von Perineum und Vulva;0;0;1
+5-758.5;Rekonstruktion weiblicher Geschlechtsorgane nach Ruptur, post partum [Dammriss]: Naht an Haut und Muskulatur von Perineum und Vulva und Naht des Sphincter ani;0;0;1
+5-760.64;Reposition einer lateralen Mittelgesichtsfraktur: Jochbeinkörper und Jochbogen, offen: Osteosynthese durch Materialkombinationen;0;0;1
+5-762.13;Reposition einer zentrolateralen Mittelgesichtsfraktur: Offen: Osteosynthese durch Platte;0;0;1
+5-764.24;Reposition einer Fraktur des Corpus mandibulae und des Processus alveolaris mandibulae: Corpus mandibulae, offen, Mehrfachfraktur: Osteosynthese durch Materialkombinationen;0;0;1
+5-765.23;Reposition einer Fraktur des Ramus mandibulae und des Processus articularis mandibulae: Ramus mandibulae, offen transoral, Mehrfachfraktur: Osteosynthese durch Platte;0;0;1
+5-766.3;Reposition einer Orbitafraktur: Orbitaboden, offen, von außen;0;0;1
+5-769.2;Andere Operationen bei Gesichtsschädelfrakturen: Maßnahmen zur Okklusionssicherung an Maxilla und Mandibula;0;0;1
+5-769.6;Andere Operationen bei Gesichtsschädelfrakturen: Entfernung intermaxillärer Fixationsgeräte;0;0;1
+5-770.10;Inzision (Osteotomie), lokale Exzision und Destruktion (von erkranktem Gewebe) eines Gesichtsschädelknochens: Sequesterotomie (z.B. bei Kieferosteomyelitis): Mit Debridement und Drainage;0;0;1
+5-770.11;Inzision (Osteotomie), lokale Exzision und Destruktion (von erkranktem Gewebe) eines Gesichtsschädelknochens: Sequesterotomie (z.B. bei Kieferosteomyelitis): Mit Entfernung eines Sequesters;0;0;1
+5-770.4;Inzision (Osteotomie), lokale Exzision und Destruktion (von erkranktem Gewebe) eines Gesichtsschädelknochens: Exzision;0;0;1
+5-770.5;Inzision (Osteotomie), lokale Exzision und Destruktion (von erkranktem Gewebe) eines Gesichtsschädelknochens: Dekortikation (z.B. bei Kieferosteomyelitis);0;0;1
+5-770.7;Inzision (Osteotomie), lokale Exzision und Destruktion (von erkranktem Gewebe) eines Gesichtsschädelknochens: Abtragung (modellierende Osteotomie);0;0;1
+5-772.00;Partielle und totale Resektion der Mandibula: Resektion, partiell, ohne Kontinuitätsdurchtrennung: Ohne Rekonstruktion;0;0;1
+5-774.0;Plastische Rekonstruktion und Augmentation der Maxilla: Auflagerungsplastik, partiell;0;0;1
+5-774.2;Plastische Rekonstruktion und Augmentation der Maxilla: Interpositionsplastik, ohne Kontinuitätsdurchtrennung (horizontal);0;0;1
+5-775.1;Plastische Rekonstruktion und Augmentation der Mandibula: Auflagerungsplastik, partiell;0;0;1
+5-775.70;Plastische Rekonstruktion und Augmentation der Mandibula: Durch alloplastische Implantate: Mit einfachem Implantat (z.B. Knochenzement);0;0;1
+5-776.3;Osteotomie zur Verlagerung des Untergesichtes: Mit Kontinuitätsdurchtrennung am horizontalen Mandibulaast;0;0;1
+5-776.4;Osteotomie zur Verlagerung des Untergesichtes: Mit Kontinuitätsdurchtrennung am aufsteigenden Mandibulaast;0;0;1
+5-776.5;Osteotomie zur Verlagerung des Untergesichtes: Kinnverlagerung;0;0;1
+5-777.30;Osteotomie zur Verlagerung des Mittelgesichtes: In der Le-Fort-I-Ebene in einem Stück: Ohne Distraktion;0;0;1
+5-777.31;Osteotomie zur Verlagerung des Mittelgesichtes: In der Le-Fort-I-Ebene in einem Stück: Mit Distraktion;0;0;1
+5-777.40;Osteotomie zur Verlagerung des Mittelgesichtes: In der Le-Fort-I-Ebene in zwei Stücken: Ohne Distraktion;0;0;1
+5-777.41;Osteotomie zur Verlagerung des Mittelgesichtes: In der Le-Fort-I-Ebene in zwei Stücken: Mit Distraktion;0;0;1
+5-779.3;Andere Operationen an Kiefergelenk und Gesichtsschädelknochen: Entfernung von Osteosynthesematerial;0;0;1
+5-780.6j;Inzision am Knochen, septisch und aseptisch: Debridement: Patella;0;0;1
+5-781.39;Osteotomie und Korrekturosteotomie: Verkürzungsosteotomie: Ulna distal;0;0;1
+5-781.at;Osteotomie und Korrekturosteotomie: Osteotomie ohne Achsenkorrektur: Kalkaneus;0;0;1
+5-782.10;Exzision und Resektion von erkranktem Knochengewebe: Partielle Resektion mit Weichteilresektion: Klavikula;0;0;1
+5-782.1a;Exzision und Resektion von erkranktem Knochengewebe: Partielle Resektion mit Weichteilresektion: Karpale;0;0;1
+5-782.1h;Exzision und Resektion von erkranktem Knochengewebe: Partielle Resektion mit Weichteilresektion: Femur distal;0;0;1
+5-782.1k;Exzision und Resektion von erkranktem Knochengewebe: Partielle Resektion mit Weichteilresektion: Tibia proximal;0;0;1
+5-782.1t;Exzision und Resektion von erkranktem Knochengewebe: Partielle Resektion mit Weichteilresektion: Kalkaneus;0;0;1
+5-782.a0;Exzision und Resektion von erkranktem Knochengewebe: Partielle Resektion, offen chirurgisch: Klavikula;0;0;1
+5-782.at;Exzision und Resektion von erkranktem Knochengewebe: Partielle Resektion, offen chirurgisch: Kalkaneus;0;0;1
+5-782.b0;Exzision und Resektion von erkranktem Knochengewebe: Partielle Resektion, endoskopisch: Klavikula;0;0;1
+5-782.be;Exzision und Resektion von erkranktem Knochengewebe: Partielle Resektion, endoskopisch: Schenkelhals;0;0;1
+5-783.0d;Entnahme eines Knochentransplantates: Spongiosa, eine Entnahmestelle: Becken;0;0;1
+5-784.0d;Knochentransplantation und -transposition: Transplantation von Spongiosa, autogen, offen chirurgisch: Becken;0;0;1
+5-784.0f;Knochentransplantation und -transposition: Transplantation von Spongiosa, autogen, offen chirurgisch: Femur proximal;0;0;1
+5-784.0h;Knochentransplantation und -transposition: Transplantation von Spongiosa, autogen, offen chirurgisch: Femur distal;0;0;1
+5-784.0k;Knochentransplantation und -transposition: Transplantation von Spongiosa, autogen, offen chirurgisch: Tibia proximal;0;0;1
+5-784.7h;Knochentransplantation und -transposition: Transplantation von Spongiosa, allogen, offen chirurgisch: Femur distal;0;0;1
+5-786.0;Osteosyntheseverfahren: Durch Schraube;0;0;1
+5-786.1;Osteosyntheseverfahren: Durch Draht oder Zuggurtung/Cerclage;0;0;1
+5-786.2;Osteosyntheseverfahren: Durch Platte;0;0;1
+5-786.3;Osteosyntheseverfahren: Durch Winkelplatte/Kondylenplatte;0;0;1
+5-786.k;Osteosyntheseverfahren: Durch winkelstabile Platte;0;0;1
+5-787.1e;Entfernung von Osteosynthesematerial: Schraube: Schenkelhals;0;0;1
+5-787.1f;Entfernung von Osteosynthesematerial: Schraube: Femur proximal;0;0;1
+5-787.1g;Entfernung von Osteosynthesematerial: Schraube: Femurschaft;0;0;1
+5-787.1h;Entfernung von Osteosynthesematerial: Schraube: Femur distal;0;0;1
+5-787.1k;Entfernung von Osteosynthesematerial: Schraube: Tibia proximal;0;0;1
+5-787.1m;Entfernung von Osteosynthesematerial: Schraube: Tibiaschaft;0;0;1
+5-787.1n;Entfernung von Osteosynthesematerial: Schraube: Tibia distal;0;0;1
+5-787.1v;Entfernung von Osteosynthesematerial: Schraube: Metatarsale;0;0;1
+5-787.3h;Entfernung von Osteosynthesematerial: Platte: Femur distal;0;0;1
+5-787.3k;Entfernung von Osteosynthesematerial: Platte: Tibia proximal;0;0;1
+5-787.j1;Entfernung von Osteosynthesematerial: Internes Verlängerungs- oder Knochentransportsystem: Motorisiert;0;0;1
+5-788.00;Operationen an Metatarsale und Phalangen des Fußes: Resektion (Exostose): Os metatarsale I;0;0;1
+5-788.0a;Operationen an Metatarsale und Phalangen des Fußes: Resektion (Exostose): Digitus I;0;0;1
+5-788.40;Operationen an Metatarsale und Phalangen des Fußes: Weichteilkorrektur: In Höhe des 1. Zehenstrahles;0;0;1
+5-788.41;Operationen an Metatarsale und Phalangen des Fußes: Weichteilkorrektur: In Höhe des 2. bis 5. Zehenstrahles, 1 Zehenstrahl;0;0;1
+5-788.51;Operationen an Metatarsale und Phalangen des Fußes: Osteotomie: Os metatarsale I, Doppelosteotomie;0;0;1
+5-788.52;Operationen an Metatarsale und Phalangen des Fußes: Osteotomie: Os metatarsale II bis V, 1 Os metatarsale;0;0;1
+5-788.53;Operationen an Metatarsale und Phalangen des Fußes: Osteotomie: Os metatarsale II bis V, 2 Ossa metatarsalia;0;0;1
+5-788.56;Operationen an Metatarsale und Phalangen des Fußes: Osteotomie: Digitus I;0;0;1
+5-788.57;Operationen an Metatarsale und Phalangen des Fußes: Osteotomie: Digitus II bis V, 1 Phalanx;0;0;1
+5-788.5c;Operationen an Metatarsale und Phalangen des Fußes: Osteotomie: Os metatarsale I, distal;0;0;1
+5-788.5d;Operationen an Metatarsale und Phalangen des Fußes: Osteotomie: Os metatarsale I, proximal;0;0;1
+5-788.5e;Operationen an Metatarsale und Phalangen des Fußes: Osteotomie: Os metatarsale I, mehrdimensionale Osteotomie;0;0;1
+5-788.60;Operationen an Metatarsale und Phalangen des Fußes: Arthroplastik: Metatarsophalangealgelenk, Digitus I;0;0;1
+5-788.61;Operationen an Metatarsale und Phalangen des Fußes: Arthroplastik: Metatarsophalangealgelenk, Digitus II bis V, 1 Gelenk;0;0;1
+5-788.65;Operationen an Metatarsale und Phalangen des Fußes: Arthroplastik: Interphalangealgelenk, Digitus I;0;0;1
+5-788.66;Operationen an Metatarsale und Phalangen des Fußes: Arthroplastik: Interphalangealgelenk, Digitus II bis V, 1 Gelenk;0;0;1
+5-793.k6;Offene Reposition einer einfachen Fraktur im Gelenkbereich eines langen Röhrenknochens: Durch winkelstabile Platte: Radius distal;0;0;1
+5-794.k6;Offene Reposition einer Mehrfragment-Fraktur im Gelenkbereich eines langen Röhrenknochens: Durch winkelstabile Platte: Radius distal;0;0;1
+5-800.00;Offen chirurgische Operation eines Gelenkes: Arthrotomie: Humeroglenoidalgelenk;0;0;1
+5-800.0h;Offen chirurgische Operation eines Gelenkes: Arthrotomie: Kniegelenk;0;0;1
+5-800.1h;Offen chirurgische Operation eines Gelenkes: Gelenkspülung mit Drainage, aseptisch: Kniegelenk;0;0;1
+5-800.31;Offen chirurgische Operation eines Gelenkes: Debridement: Akromioklavikulargelenk;0;0;1
+5-800.4g;Offen chirurgische Operation eines Gelenkes: Synovialektomie, partiell: Hüftgelenk;0;0;1
+5-800.4h;Offen chirurgische Operation eines Gelenkes: Synovialektomie, partiell: Kniegelenk;0;0;1
+5-800.5g;Offen chirurgische Operation eines Gelenkes: Synovialektomie, total: Hüftgelenk;0;0;1
+5-800.5h;Offen chirurgische Operation eines Gelenkes: Synovialektomie, total: Kniegelenk;0;0;1
+5-800.6g;Offen chirurgische Operation eines Gelenkes: Gelenkmobilisation [Arthrolyse]: Hüftgelenk;0;0;1
+5-800.6h;Offen chirurgische Operation eines Gelenkes: Gelenkmobilisation [Arthrolyse]: Kniegelenk;0;0;1
+5-800.6q;Offen chirurgische Operation eines Gelenkes: Gelenkmobilisation [Arthrolyse]: Metatarsophalangealgelenk;0;0;1
+5-800.7g;Offen chirurgische Operation eines Gelenkes: Entfernung periartikulärer Verkalkungen: Hüftgelenk;0;0;1
+5-800.7h;Offen chirurgische Operation eines Gelenkes: Entfernung periartikulärer Verkalkungen: Kniegelenk;0;0;1
+5-800.8g;Offen chirurgische Operation eines Gelenkes: Entfernung freier Gelenkkörper: Hüftgelenk;0;0;1
+5-800.8h;Offen chirurgische Operation eines Gelenkes: Entfernung freier Gelenkkörper: Kniegelenk;0;0;1
+5-800.9x;Offen chirurgische Operation eines Gelenkes: Zystenexstirpation: Sonstige;0;0;1
+5-801.g1;Offen chirurgische Operation am Gelenkknorpel und an den Menisken: Knorpelglättung, mechanisch (Chondroplastik): Akromioklavikulargelenk;0;0;1
+5-804.0;Offen chirurgische Operationen an der Patella und ihrem Halteapparat: Retinakulumspaltung, lateral;0;0;1
+5-804.4;Offen chirurgische Operationen an der Patella und ihrem Halteapparat: Patellaosteotomie;0;0;1
+5-804.5;Offen chirurgische Operationen an der Patella und ihrem Halteapparat: Teilresektion der Patella;0;0;1
+5-804.8;Offen chirurgische Operationen an der Patella und ihrem Halteapparat: Rekonstruktion des medialen patellofemoralen Ligamentes [MPFL];0;0;1
+5-805.6;Offen chirurgische Refixation und Plastik am Kapselbandapparat des Schultergelenkes: Akromioplastik mit Durchtrennung des Ligamentum coracoacromiale;0;0;1
+5-805.7;Offen chirurgische Refixation und Plastik am Kapselbandapparat des Schultergelenkes: Rekonstruktion der Rotatorenmanschette durch Naht;0;0;1
+5-808.a4;Offen chirurgische Arthrodese: Fußwurzel und/oder Mittelfuß: Ein Gelenkfach;0;0;1
+5-808.a5;Offen chirurgische Arthrodese: Fußwurzel und/oder Mittelfuß: Zwei Gelenkfächer;0;0;1
+5-808.b0;Offen chirurgische Arthrodese: Zehengelenk: Großzehengrundgelenk;0;0;1
+5-808.b1;Offen chirurgische Arthrodese: Zehengelenk: Großzehenendgelenk;0;0;1
+5-808.b2;Offen chirurgische Arthrodese: Zehengelenk: Kleinzehengelenk, 1 Gelenk;0;0;1
+5-809.0h;Andere Gelenkoperationen: Durchtrennung eines Bandes, offen chirurgisch: Kniegelenk;0;0;1
+5-809.0q;Andere Gelenkoperationen: Durchtrennung eines Bandes, offen chirurgisch: Metatarsophalangealgelenk;0;0;1
+5-810.00;Arthroskopische Gelenkoperation: Gelenkspülung mit Drainage, aseptisch: Humeroglenoidalgelenk;0;0;1
+5-810.0h;Arthroskopische Gelenkoperation: Gelenkspülung mit Drainage, aseptisch: Kniegelenk;0;0;1
+5-810.20;Arthroskopische Gelenkoperation: Gelenkmobilisation [Arthrolyse]: Humeroglenoidalgelenk;0;0;1
+5-810.2g;Arthroskopische Gelenkoperation: Gelenkmobilisation [Arthrolyse]: Hüftgelenk;0;0;1
+5-810.2h;Arthroskopische Gelenkoperation: Gelenkmobilisation [Arthrolyse]: Kniegelenk;0;0;1
+5-810.40;Arthroskopische Gelenkoperation: Entfernung freier Gelenkkörper: Humeroglenoidalgelenk;0;0;1
+5-810.4h;Arthroskopische Gelenkoperation: Entfernung freier Gelenkkörper: Kniegelenk;0;0;1
+5-810.50;Arthroskopische Gelenkoperation: Entfernung periartikulärer Verkalkungen: Humeroglenoidalgelenk;0;0;1
+5-810.51;Arthroskopische Gelenkoperation: Entfernung periartikulärer Verkalkungen: Akromioklavikulargelenk;0;0;1
+5-810.5h;Arthroskopische Gelenkoperation: Entfernung periartikulärer Verkalkungen: Kniegelenk;0;0;1
+5-810.9h;Arthroskopische Gelenkoperation: Resektion von Bandanteilen und/oder Bandresten: Kniegelenk;0;0;1
+5-811.0h;Arthroskopische Operation an der Synovialis: Resektion einer Plica synovialis: Kniegelenk;0;0;1
+5-811.1h;Arthroskopische Operation an der Synovialis: Resektion an einem Fettkörper (z.B. Hoffa-Fettkörper): Kniegelenk;0;0;1
+5-811.20;Arthroskopische Operation an der Synovialis: Synovektomie, partiell: Humeroglenoidalgelenk;0;0;1
+5-811.21;Arthroskopische Operation an der Synovialis: Synovektomie, partiell: Akromioklavikulargelenk;0;0;1
+5-811.2g;Arthroskopische Operation an der Synovialis: Synovektomie, partiell: Hüftgelenk;0;0;1
+5-811.2h;Arthroskopische Operation an der Synovialis: Synovektomie, partiell: Kniegelenk;0;0;1
+5-811.30;Arthroskopische Operation an der Synovialis: Synovektomie, total: Humeroglenoidalgelenk;0;0;1
+5-811.31;Arthroskopische Operation an der Synovialis: Synovektomie, total: Akromioklavikulargelenk;0;0;1
+5-811.3h;Arthroskopische Operation an der Synovialis: Synovektomie, total: Kniegelenk;0;0;1
+5-811.4g;Arthroskopische Operation an der Synovialis: Elektrothermische Denervierung von Synovialis und Kapselgewebe: Hüftgelenk;0;0;1
+5-812.0g;Arthroskopische Operation am Gelenkknorpel und an den Menisken: Exzision von erkranktem Gewebe am Gelenkknorpel: Hüftgelenk;0;0;1
+5-812.0h;Arthroskopische Operation am Gelenkknorpel und an den Menisken: Exzision von erkranktem Gewebe am Gelenkknorpel: Kniegelenk;0;0;1
+5-812.5;Arthroskopische Operation am Gelenkknorpel und an den Menisken: Meniskusresektion, partiell;0;0;1
+5-812.6;Arthroskopische Operation am Gelenkknorpel und an den Menisken: Meniskusresektion, total;0;0;1
+5-812.7;Arthroskopische Operation am Gelenkknorpel und an den Menisken: Meniskusrefixation;0;0;1
+5-812.e0;Arthroskopische Operation am Gelenkknorpel und an den Menisken: Knorpelglättung (Chondroplastik): Humeroglenoidalgelenk;0;0;1
+5-812.eg;Arthroskopische Operation am Gelenkknorpel und an den Menisken: Knorpelglättung (Chondroplastik): Hüftgelenk;0;0;1
+5-812.eh;Arthroskopische Operation am Gelenkknorpel und an den Menisken: Knorpelglättung (Chondroplastik): Kniegelenk;0;0;1
+5-812.fh;Arthroskopische Operation am Gelenkknorpel und an den Menisken: Subchondrale Knocheneröffnung (z.B. nach Pridie, Mikrofrakturierung, Abrasionsarthroplastik): Kniegelenk;0;0;1
+5-812.k1;Arthroskopische Operation am Gelenkknorpel und an den Menisken: Resektion eines oder mehrerer Osteophyten: Akromioklavikulargelenk;0;0;1
+5-813.0;Arthroskopische Refixation und Plastik am Kapselbandapparat des Kniegelenkes: Naht eines vorderen Kreuzbandes;0;0;1
+5-813.2;Arthroskopische Refixation und Plastik am Kapselbandapparat des Kniegelenkes: Knöcherne Refixation eines Kreuzbandes;0;0;1
+5-813.4;Arthroskopische Refixation und Plastik am Kapselbandapparat des Kniegelenkes: Plastik vorderes Kreuzband mit sonstiger autogener Sehne;0;0;1
+5-813.9;Arthroskopische Refixation und Plastik am Kapselbandapparat des Kniegelenkes: Durchtrennung der Kniegelenkskapsel (Lateral release);0;0;1
+5-813.a;Arthroskopische Refixation und Plastik am Kapselbandapparat des Kniegelenkes: Naht des medialen Kapselbandapparates;0;0;1
+5-814.0;Arthroskopische Refixation und Plastik am Kapselbandapparat des Schultergelenkes: Refixation des Labrum glenoidale durch Naht;0;0;1
+5-814.1;Arthroskopische Refixation und Plastik am Kapselbandapparat des Schultergelenkes: Refixation des Labrum glenoidale durch sonstige Verfahren;0;0;1
+5-814.2;Arthroskopische Refixation und Plastik am Kapselbandapparat des Schultergelenkes: Refixation eines knöchernen Labrumabrisses (Bankart-Läsion);0;0;1
+5-814.3;Arthroskopische Refixation und Plastik am Kapselbandapparat des Schultergelenkes: Erweiterung des subakromialen Raumes;0;0;1
+5-814.4;Arthroskopische Refixation und Plastik am Kapselbandapparat des Schultergelenkes: Sonstige Rekonstruktion der Rotatorenmanschette;0;0;1
+5-814.7;Arthroskopische Refixation und Plastik am Kapselbandapparat des Schultergelenkes: Tenotomie der langen Bizepssehne;0;0;1
+5-814.9;Arthroskopische Refixation und Plastik am Kapselbandapparat des Schultergelenkes: Tenodese der langen Bizepssehne;0;0;1
+5-815.20;Arthroskopische Entfernung und arthroskopischer Wechsel eines Bandersatzes am Kniegelenk: Wechsel eines vorderen Kreuzbandtransplantates: Mit autogener Patellarsehne;0;0;1
+5-816.0;Arthroskopische Operationen am Labrum acetabulare: Naht oder sonstige Refixation;0;0;1
+5-816.1;Arthroskopische Operationen am Labrum acetabulare: Glättung und (Teil-)Resektion;0;0;1
+5-819.10;Andere arthroskopische Operationen: Debridement einer Sehne: Humeroglenoidalgelenk;0;0;1
+5-819.2h;Andere arthroskopische Operationen: Resektion eines Ganglions: Kniegelenk;0;0;1
+5-819.x1;Andere arthroskopische Operationen: Sonstige: Akromioklavikulargelenk;0;0;1
+5-820.00;Implantation einer Endoprothese am Hüftgelenk: Totalendoprothese: Nicht zementiert;0;0;1
+5-820.01;Implantation einer Endoprothese am Hüftgelenk: Totalendoprothese: Zementiert;0;0;1
+5-820.02;Implantation einer Endoprothese am Hüftgelenk: Totalendoprothese: Hybrid (teilzementiert);0;0;1
+5-820.82;Implantation einer Endoprothese am Hüftgelenk: Oberflächenersatzprothese: Hybrid (teilzementiert);0;0;1
+5-820.92;Implantation einer Endoprothese am Hüftgelenk: Kurzschaft-Femurkopfprothese: Ohne Pfannenprothese, nicht zementiert;0;0;1
+5-820.94;Implantation einer Endoprothese am Hüftgelenk: Kurzschaft-Femurkopfprothese: Mit Pfannenprothese, nicht zementiert;0;0;1
+5-822.00;Implantation einer Endoprothese am Kniegelenk: Unikondyläre Schlittenprothese: Nicht zementiert;0;0;1
+5-822.01;Implantation einer Endoprothese am Kniegelenk: Unikondyläre Schlittenprothese: Zementiert;0;0;1
+5-822.81;Implantation einer Endoprothese am Kniegelenk: Patellaersatz: Patellarückfläche, zementiert;0;0;1
+5-822.91;Implantation einer Endoprothese am Kniegelenk: Sonderprothese: Zementiert;0;0;1
+5-822.g0;Implantation einer Endoprothese am Kniegelenk: Bikondyläre Oberflächenersatzprothese: Nicht zementiert;0;0;1
+5-822.g1;Implantation einer Endoprothese am Kniegelenk: Bikondyläre Oberflächenersatzprothese: Zementiert;0;0;1
+5-822.g2;Implantation einer Endoprothese am Kniegelenk: Bikondyläre Oberflächenersatzprothese: Hybrid (teilzementiert);0;0;1
+5-822.h1;Implantation einer Endoprothese am Kniegelenk: Femoral und tibial schaftverankerte Prothese: Zementiert;0;0;1
+5-822.j1;Implantation einer Endoprothese am Kniegelenk: Endoprothese mit erweiterter Beugefähigkeit: Zementiert;0;0;1
+5-822.k1;Implantation einer Endoprothese am Kniegelenk: Bikompartimentelle Teilgelenkersatzprothese: Zementiert;0;0;1
+5-823.1b;Revision, Wechsel und Entfernung einer Endoprothese am Kniegelenk: Wechsel einer unikondylären Schlittenprothese: In bikondyläre Oberflächenprothese, zementiert;0;0;1
+5-823.1e;Revision, Wechsel und Entfernung einer Endoprothese am Kniegelenk: Wechsel einer unikondylären Schlittenprothese: In femoral und tibial schaftverankerte Prothese, zementiert;0;0;1
+5-823.22;Revision, Wechsel und Entfernung einer Endoprothese am Kniegelenk: Wechsel einer bikondylären Oberflächenersatzprothese: In eine andere Oberflächenersatzprothese, (teil-)zementiert;0;0;1
+5-823.2b;Revision, Wechsel und Entfernung einer Endoprothese am Kniegelenk: Wechsel einer bikondylären Oberflächenersatzprothese: In eine femoral und tibial schaftverankerte Prothese, (teil-)zementiert;0;0;1
+5-826.2;Implantation einer Endoprothese an Gelenken der unteren Extremität: Vorfuß- oder Zehenendoprothese;0;0;1
+5-829.e;Andere gelenkplastische Eingriffe: Verwendung von hypoallergenem Knochenersatz- und/oder Osteosynthesematerial;0;0;1
+5-829.jx;Andere gelenkplastische Eingriffe: Verwendung von beschichteten Endoprothesen oder beschichteten Abstandshaltern: Mit sonstiger Beschichtung;0;0;1
+5-829.k1;Implantation einer modularen Endoprothese oder (Teil-)Wechsel in eine modulare Endoprothese bei knöcherner Defektsituation und ggf. Knochen(teil)ersatz: Schaftkomponente ohne eine dem Knochendefekt entsprechende Länge und Dicke;0;0;1
+5-829.k2;Implantation einer modularen Endoprothese oder (Teil-)Wechsel in eine modulare Endoprothese bei knöcherner Defektsituation und ggf. Knochen(teil)ersatz: Schaftkomponente mit einer dem Knochendefekt entsprechenden Länge und Dicke;0;0;1
+5-829.m;Andere gelenkplastische Eingriffe: Implantation von oder (Teil-)Wechsel in ein patientenindividuell angefertigtes Implantat bei knöcherner Defektsituation oder angeborener oder erworbener Deformität;0;0;1
+5-829.p;Andere gelenkplastische Eingriffe: Implantation von oder (Teil-)Wechsel in ein patientenindividuell angefertigtes Implantat ohne knöcherne Defektsituation oder angeborene oder erworbene Deformität;0;0;1
+5-830.2;Inzision von erkranktem Knochen- und Gelenkgewebe der Wirbelsäule: Facettendenervation;0;0;1
+5-831.0;Exzision von erkranktem Bandscheibengewebe: Exzision einer Bandscheibe;0;0;1
+5-831.2;Exzision von erkranktem Bandscheibengewebe: Exzision einer Bandscheibe mit Radikulodekompression;0;0;1
+5-831.3;Exzision von erkranktem Bandscheibengewebe: Exzision von extraforaminal gelegenem Bandscheibengewebe;0;0;1
+5-831.5;Exzision von erkranktem Bandscheibengewebe: Exzision einer Bandscheibe, perkutan mit Endoskopie;0;0;1
+5-831.7;Exzision von erkranktem Bandscheibengewebe: Reoperation mit Radikulolyse bei Rezidiv;0;0;1
+5-831.9;Exzision von erkranktem Bandscheibengewebe: Entfernung eines freien Sequesters ohne Endoskopie;0;0;1
+5-831.a;Exzision von erkranktem Bandscheibengewebe: Entfernung eines freien Sequesters mit Endoskopie;0;0;1
+5-832.0;Exzision von erkranktem Knochen- und Gelenkgewebe der Wirbelsäule: Spondylophyt;0;0;1
+5-832.4;Exzision von erkranktem Knochen- und Gelenkgewebe der Wirbelsäule: Arthrektomie, partiell;0;0;1
+5-832.6;Exzision von erkranktem Knochen- und Gelenkgewebe der Wirbelsäule: Unkoforaminektomie;0;0;1
+5-832.7;Exzision von erkranktem Knochen- und Gelenkgewebe der Wirbelsäule: Mehrere Wirbelsegmente (und angrenzende Strukturen);0;0;1
+5-832.9;Exzision von erkranktem Knochen- und Gelenkgewebe der Wirbelsäule: Wirbelbogen (und angrenzende Strukturen);0;0;1
+5-839.5;Andere Operationen an der Wirbelsäule: Revision einer Wirbelsäulenoperation;0;0;1
+5-839.60;Andere Operationen an der Wirbelsäule: Knöcherne Dekompression des Spinalkanals: 1 Segment;0;0;1
+5-839.61;Andere Operationen an der Wirbelsäule: Knöcherne Dekompression des Spinalkanals: 2 Segmente;0;0;1
+5-83a.00;Minimalinvasive Behandlungsverfahren an der Wirbelsäule (zur Schmerztherapie): Facetten-Thermokoagulation oder Facetten-Kryodenervation: 1 Segment;0;0;1
+5-83a.01;Minimalinvasive Behandlungsverfahren an der Wirbelsäule (zur Schmerztherapie): Facetten-Thermokoagulation oder Facetten-Kryodenervation: 2 Segmente;0;0;1
+5-83a.02;Minimalinvasive Behandlungsverfahren an der Wirbelsäule (zur Schmerztherapie): Facetten-Thermokoagulation oder Facetten-Kryodenervation: 3 oder mehr Segmente;0;0;1
+5-83a.2;Minimalinvasive Behandlungsverfahren an der Wirbelsäule (zur Schmerztherapie): Thermokoagulation oder Kryodenervation des Iliosakralgelenkes;0;0;1
+5-83b.70;Osteosynthese (dynamische Stabilisierung) an der Wirbelsäule: Durch intervertebrale Cages: 1 Segment;0;0;1
+5-840.33;Operationen an Sehnen der Hand: Sehnenfachspaltung: Strecksehnen Handgelenk;0;0;1
+5-840.81;Operationen an Sehnen der Hand: Tenolyse: Beugesehnen Langfinger;0;0;1
+5-841.11;Operationen an Bändern der Hand: Durchtrennung: Retinaculum flexorum;0;0;1
+5-842.71;Operationen an Faszien der Hohlhand und der Finger: Fasziektomie mit mehreren Neurolysen und mehreren Arteriolysen: Mehrere Finger;0;0;1
+5-842.81;Operationen an Faszien der Hohlhand und der Finger: Fasziektomie mit Arthrolyse: Mehrere Finger;0;0;1
+5-844.62;Operation an Gelenken der Hand: Entfernung freier Gelenkkörper: Daumensattelgelenk;0;0;1
+5-845.3;Synovialektomie an der Hand: Handwurzelgelenk, mehrere;0;0;1
+5-847.32;Resektionsarthroplastik an Gelenken der Hand: Rekonstruktion mit autogenem Material, mit Sehneninterposition und Sehnenaufhängung: Daumensattelgelenk;0;0;1
+5-850.88;Inzision an Muskel, Sehne und Faszie: Fremdkörperentfernung aus einem Muskel: Oberschenkel und Knie;0;0;1
+5-850.89;Inzision an Muskel, Sehne und Faszie: Fremdkörperentfernung aus einem Muskel: Unterschenkel;0;0;1
+5-850.b7;Inzision an Muskel, Sehne und Faszie: Debridement eines Muskels: Leisten- und Genitalregion und Gesäß;0;0;1
+5-850.d7;Inzision an Muskel, Sehne und Faszie: Debridement einer Faszie: Leisten- und Genitalregion und Gesäß;0;0;1
+5-852.18;Exzision an Muskel, Sehne und Faszie: Exzision einer Sehne, total: Oberschenkel und Knie;0;0;1
+5-852.f8;Exzision an Muskel, Sehne und Faszie: Entnahme von Sehnengewebe zur Transplantation: Oberschenkel und Knie;0;0;1
+5-852.f9;Exzision an Muskel, Sehne und Faszie: Entnahme von Sehnengewebe zur Transplantation: Unterschenkel;0;0;1
+5-852.g0;Exzision an Muskel, Sehne und Faszie: Entnahme von Faszie zur Transplantation: Kopf und Hals;0;0;1
+5-854.09;Rekonstruktion von Sehnen: Verlängerung: Unterschenkel;0;0;1
+5-854.0c;Rekonstruktion von Sehnen: Verlängerung: Mittelfuß und Zehen;0;0;1
+5-854.29;Rekonstruktion von Sehnen: (Partielle) Transposition: Unterschenkel;0;0;1
+5-854.2c;Rekonstruktion von Sehnen: (Partielle) Transposition: Mittelfuß und Zehen;0;0;1
+5-854.31;Rekonstruktion von Sehnen: Augmentation: Schulter und Axilla;0;0;1
+5-854.39;Rekonstruktion von Sehnen: Augmentation: Unterschenkel;0;0;1
+5-854.78;Rekonstruktion von Sehnen: Transplantation: Oberschenkel und Knie;0;0;1
+5-855.01;Naht und andere Operationen an Sehnen und Sehnenscheide: Reinsertion einer Sehne: Schulter und Axilla;0;0;1
+5-855.08;Naht und andere Operationen an Sehnen und Sehnenscheide: Reinsertion einer Sehne: Oberschenkel und Knie;0;0;1
+5-855.19;Naht und andere Operationen an Sehnen und Sehnenscheide: Naht einer Sehne, primär: Unterschenkel;0;0;1
+5-855.21;Naht und andere Operationen an Sehnen und Sehnenscheide: Naht einer Sehne, sekundär: Schulter und Axilla;0;0;1
+5-855.41;Naht und andere Operationen an Sehnen und Sehnenscheide: Naht der Sehnenscheide, sekundär: Schulter und Axilla;0;0;1
+5-855.5a;Naht und andere Operationen an Sehnen und Sehnenscheide: Tenolyse, eine Sehne: Fuß;0;0;1
+5-855.63;Naht und andere Operationen an Sehnen und Sehnenscheide: Tenolyse, mehrere Sehnen: Unterarm;0;0;1
+5-855.71;Naht und andere Operationen an Sehnen und Sehnenscheide: Tenodese eine Sehne, primär: Schulter und Axilla;0;0;1
+5-855.72;Naht und andere Operationen an Sehnen und Sehnenscheide: Tenodese eine Sehne, primär: Oberarm und Ellenbogen;0;0;1
+5-856.38;Rekonstruktion von Faszien: Doppelung einer Faszie: Oberschenkel und Knie;0;0;1
+5-859.11;Andere Operationen an Muskeln, Sehnen, Faszien und Schleimbeuteln: Totale Resektion eines Schleimbeutels: Schulter und Axilla;0;0;1
+5-859.18;Andere Operationen an Muskeln, Sehnen, Faszien und Schleimbeuteln: Totale Resektion eines Schleimbeutels: Oberschenkel und Knie;0;0;1
+5-859.1a;Andere Operationen an Muskeln, Sehnen, Faszien und Schleimbeuteln: Totale Resektion eines Schleimbeutels: Fuß;0;0;1
+5-869.2;Andere Operationen an den Bewegungsorganen: Einbringen von Fixationsmaterial am Knochen bei Operationen am Weichteilgewebe;0;0;1
+5-86a.00;Zusatzinformationen zu Operationen an den Bewegungsorganen: Einzeitige Mehrfacheingriffe an Mittelhand- und/oder Fingerstrahlen: Zwei Mittelhand- und/oder Fingerstrahlen;0;0;1
+5-86a.10;Zusatzinformationen zu Operationen an den Bewegungsorganen: Einzeitige Mehrfacheingriffe an Mittelfuß- und/oder Zehenstrahlen: Zwei Mittelfuß- und/oder Zehenstrahlen;0;0;1
+5-86a.11;Zusatzinformationen zu Operationen an den Bewegungsorganen: Einzeitige Mehrfacheingriffe an Mittelfuß- und/oder Zehenstrahlen: Drei Mittelfuß- und/oder Zehenstrahlen;0;0;1
+5-86a.13;Zusatzinformationen zu Operationen an den Bewegungsorganen: Einzeitige Mehrfacheingriffe an Mittelfuß- und/oder Zehenstrahlen: Fünf Mittelfuß- und/oder Zehenstrahlen;0;0;1
+5-894.1e;Lokale Exzision von erkranktem Gewebe an Haut und Unterhaut: Exzision, lokal, mit primärem Wundverschluss: Oberschenkel und Knie;0;0;1
+5-895.2b;Radikale und ausgedehnte Exzision von erkranktem Gewebe an Haut und Unterhaut: Mit primärem Wundverschluss: Bauchregion;0;0;1
+5-895.54;Radikale und ausgedehnte Exzision von erkranktem Gewebe an Haut und Unterhaut: Mit Transplantation oder lokaler Lappenplastik, histographisch kontrolliert (mikrographische Chirurgie): Sonstige Teile Kopf;0;0;1
+5-896.0d;Chirurgische Wundtoilette [Wunddebridement] mit Entfernung von erkranktem Gewebe an Haut und Unterhaut: Kleinflächig: Gesäß;0;0;1
+5-897.0;Exzision und Rekonstruktion eines Sinus pilonidalis: Exzision;0;0;1
+5-897.1;Exzision und Rekonstruktion eines Sinus pilonidalis: Plastische Rekonstruktion;0;0;1
+5-903.1d;Lokale Lappenplastik an Haut und Unterhaut: Verschiebe-Rotationsplastik, kleinflächig: Gesäß;0;0;1
+5-903.54;Lokale Lappenplastik an Haut und Unterhaut: Dehnungsplastik, großflächig: Sonstige Teile Kopf;0;0;1
+5-903.99;Lokale Lappenplastik an Haut und Unterhaut: Z-Plastik, großflächig: Hand;0;0;1
+5-930.00;Art des Transplantates: Autogen: Ohne externe In-vitro-Aufbereitung;0;0;1
+5-930.3;Art des Transplantates: Xenogen;0;0;1
+5-931.0;Art des verwendeten Knorpelersatz-, Knochenersatz- und Osteosynthesematerials: Hypoallergenes Material;0;0;1
+5-932.10;Art des verwendeten Materials für Gewebeersatz und Gewebeverstärkung: (Teil-)resorbierbares synthetisches Material: Weniger als 10 cm²;0;0;1
+5-932.11;Art des verwendeten Materials für Gewebeersatz und Gewebeverstärkung: (Teil-)resorbierbares synthetisches Material: 10 cm² bis unter 50 cm²;0;0;1
+5-932.30;Art des verwendeten Materials für Gewebeersatz und Gewebeverstärkung: Biologisches Material: Weniger als 10 cm²;0;0;1
+5-932.31;Art des verwendeten Materials für Gewebeersatz und Gewebeverstärkung: Biologisches Material: 10 cm² bis unter 50 cm²;0;0;1
+5-932.40;Art des verwendeten Materials für Gewebeersatz und Gewebeverstärkung: Nicht resorbierbares Material, ohne Beschichtung: Weniger als 10 cm²;0;0;1
+5-932.41;Art des verwendeten Materials für Gewebeersatz und Gewebeverstärkung: Nicht resorbierbares Material, ohne Beschichtung: 10 cm² bis unter 50 cm²;0;0;1
+5-932.42;Art des verwendeten Materials für Gewebeersatz und Gewebeverstärkung: Nicht resorbierbares Material, ohne Beschichtung: 50 cm² bis unter 100 cm²;0;0;1
+5-932.43;Art des verwendeten Materials für Gewebeersatz und Gewebeverstärkung: Nicht resorbierbares Material, ohne Beschichtung: 100 cm² bis unter 200 cm²;0;0;1
+5-932.44;Art des verwendeten Materials für Gewebeersatz und Gewebeverstärkung: Nicht resorbierbares Material, ohne Beschichtung: 200 cm² bis unter 300 cm²;0;0;1
+5-983;Reoperation;0;0;1
+5-984;Mikrochirurgische Technik;0;0;1
+5-985.1;Lasertechnik: CO2-Laser;0;0;1
+5-985.2;Lasertechnik: Dioden-Laser;0;0;1
+5-985.6;Lasertechnik: Neodym-YAG-Laser;0;0;1
+5-985.9;Lasertechnik: Holmium-Laser;0;0;1
+5-985.x;Lasertechnik: Sonstige;0;0;1
+5-986.x;Minimalinvasive Technik: Sonstige;0;0;1
+5-988.3;Anwendung eines Navigationssystems: Optisch;0;0;1
+5-989;Fluoreszenzgestützte Therapieverfahren;0;0;1
+5-98b.x;Anwendung eines flexiblen Ureterorenoskops: Sonstige;0;0;1
+5-98d.0;Verwendung von patientenindividuell hergestelltem Instrumentarium: CAD-CAM-Schnittblöcke;0;0;1
+6-003.8;Applikation von Medikamenten, Liste 3: Botulinumtoxin;0;0;1
+8-010.3;Applikation von Medikamenten und Elektrolytlösungen über das Gefäßsystem bei Neugeborenen: Intravenös, kontinuierlich;0;0;1
+8-020.0;Therapeutische Injektion: Auge;0;0;1
+8-020.4;Therapeutische Injektion: Bänder, Sehnen oder Bindegewebe;0;0;1
+8-020.5;Therapeutische Injektion: Gelenk oder Schleimbeutel;0;0;1
+8-020.y;Therapeutische Injektion: N.n.bez.;0;0;1
+8-121;Darmspülung;0;0;1
+8-132.0;Manipulationen an der Harnblase: Instillation;0;0;1
+8-132.1;Manipulationen an der Harnblase: Spülung, einmalig;0;0;1
+8-132.2;Manipulationen an der Harnblase: Spülung, intermittierend;0;0;1
+8-132.3;Manipulationen an der Harnblase: Spülung, kontinuierlich;0;0;1
+8-132.x;Manipulationen an der Harnblase: Sonstige;0;0;1
+8-133.0;Wechsel und Entfernung eines suprapubischen Katheters: Wechsel;0;0;1
+8-133.1;Wechsel und Entfernung eines suprapubischen Katheters: Entfernung;0;0;1
+8-137.00;Einlegen, Wechsel und Entfernung einer Ureterschiene [Ureterkatheter]: Einlegen: Transurethral;0;0;1
+8-137.10;Einlegen, Wechsel und Entfernung einer Ureterschiene [Ureterkatheter]: Wechsel: Transurethral;0;0;1
+8-137.2;Einlegen, Wechsel und Entfernung einer Ureterschiene [Ureterkatheter]: Entfernung;0;0;1
+8-139.00;Andere Manipulationen am Harntrakt: Bougierung der Urethra: Ohne Durchleuchtung;0;0;1
+8-147.y;Therapeutische Drainage von Harnorganen: N.n.bez.;0;0;1
+8-158.g;Therapeutische perkutane Punktion eines Gelenkes: Hüftgelenk;0;0;1
+8-171.0;Therapeutische Spülung (Lavage) des Ohres: Äußerer Gehörgang;0;0;1
+8-191.5;Verband bei großflächigen und schwerwiegenden Hauterkrankungen: Hydrokolloidverband;0;0;1
+8-210;Brisement force;0;0;1
+8-390.3;Lagerungsbehandlung: Lagerung bei Schienen;0;0;1
+8-390.x;Lagerungsbehandlung: Sonstige;0;0;1
+8-500;Tamponade einer Nasenblutung;0;0;1
+8-502;Tamponade einer Rektumblutung;0;0;1
+8-504;Tamponade einer vaginalen Blutung;0;0;1
+8-506;Wechsel und Entfernung einer Tamponade bei Blutungen;0;0;1
+8-515;Partus mit Manualhilfe;0;0;1
+8-541.4;Instillation von und lokoregionale Therapie mit zytotoxischen Materialien und Immunmodulatoren: In die Harnblase;0;0;1
+8-543.53;Mittelgradig komplexe und intensive Blockchemotherapie: 5 Tage: 3 Medikamente;0;0;1
+8-560.2;Lichttherapie: Lichttherapie des Neugeborenen (bei Hyperbilirubinämie);0;0;1
+8-561.1;Funktionsorientierte physikalische Therapie: Funktionsorientierte physikalische Monotherapie;0;0;1
+8-561.2;Funktionsorientierte physikalische Therapie: Kombinierte funktionsorientierte physikalische Therapie;0;0;1
+8-650;Elektrotherapie;0;0;1
+8-800.0;Transfusion von Vollblut, Erythrozytenkonzentrat und Thrombozytenkonzentrat: Vollblut, 1-5 TE;0;0;1
+8-800.c0;Transfusion von Vollblut, Erythrozytenkonzentrat und Thrombozytenkonzentrat: Erythrozytenkonzentrat: 1 TE bis unter 6 TE;0;0;1
+8-811.1;Infusion von Volumenersatzmitteln bei Neugeborenen: Masseninfusion (> 5 Einheiten);0;0;1
+8-831.0;Legen und Wechsel eines Katheters in zentralvenöse Gefäße: Legen;0;0;1
+8-854.2;Hämodialyse: Intermittierend, Antikoagulation mit Heparin oder ohne Antikoagulation;0;0;1
+8-855.3;Hämodiafiltration: Intermittierend, Antikoagulation mit Heparin oder ohne Antikoagulation;0;0;1
+8-910;Epidurale Injektion und Infusion zur Schmerztherapie;0;0;1
+8-914.00;Injektion eines Medikamentes an Nervenwurzeln und wirbelsäulennahe Nerven zur Schmerztherapie: Ohne bildgebende Verfahren: An der Halswirbelsäule;0;0;1
+8-914.02;Injektion eines Medikamentes an Nervenwurzeln und wirbelsäulennahe Nerven zur Schmerztherapie: Ohne bildgebende Verfahren: An der Lendenwirbelsäule;0;0;1
+8-914.10;Injektion eines Medikamentes an Nervenwurzeln und wirbelsäulennahe Nerven zur Schmerztherapie: Mit bildgebenden Verfahren: An der Halswirbelsäule;0;0;1
+8-914.12;Injektion eines Medikamentes an Nervenwurzeln und wirbelsäulennahe Nerven zur Schmerztherapie: Mit bildgebenden Verfahren: An der Lendenwirbelsäule;0;0;1
+8-915;Injektion und Infusion eines Medikamentes an andere periphere Nerven zur Schmerztherapie;0;0;1
+8-917.03;Injektion eines Medikamentes in Gelenke der Wirbelsäule zur Schmerztherapie: Ohne bildgebende Verfahren: An den Gelenken der Lendenwirbelsäule;0;0;1
+8-917.13;Injektion eines Medikamentes in Gelenke der Wirbelsäule zur Schmerztherapie: Mit bildgebenden Verfahren: An den Gelenken der Lendenwirbelsäule;0;0;1
+8-919;Komplexe Akutschmerzbehandlung;0;0;1
+8-925.00;Intraoperatives neurophysiologisches Monitoring: Bis 4 Stunden: Mit Stimulationselektroden;0;0;1
+8-930;Monitoring von Atmung, Herz und Kreislauf ohne Messung des Pulmonalarteriendruckes und des zentralen Venendruckes;0;0;1
+8-987.10;Komplexbehandlung bei Besiedelung oder Infektion mit multiresistenten Erregern [MRE]: Komplexbehandlung nicht auf spezieller Isoliereinheit: Bis zu 6 Behandlungstage;0;0;1
+9-260;Überwachung und Leitung einer normalen Geburt;0;0;1
+9-261;Überwachung und Leitung einer Risikogeburt;0;0;1
+9-262.0;Postnatale Versorgung des Neugeborenen: Routineversorgung;0;0;1
+9-262.1;Postnatale Versorgung des Neugeborenen: Spezielle Versorgung (Risiko-Neugeborenes);0;0;1
+9-401.00;Psychosoziale Interventionen: Sozialrechtliche Beratung: Mindestens 50 Minuten bis 2 Stunden;0;0;1
+9-401.22;Psychosoziale Interventionen: Nachsorgeorganisation: Mindestens 50 Minuten bis 2 Stunden;0;0;1
+9-500.0;Patientenschulung: Basisschulung;0;0;1
+9-984.6;Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 1;0;0;1
+9-984.7;Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2;0;0;1
+9-984.8;Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 3;0;0;1
+9-984.9;Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 4;0;0;1
+9-984.a;Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 5;0;0;1
+9-984.b;Pflegebedürftigkeit: Erfolgter Antrag auf Einstufung in einen Pflegegrad;0;0;1
+A09.0;Sonstige und nicht näher bezeichnete Gastroenteritis und Kolitis infektiösen Ursprungs;0;1;0
+A09.9;Sonstige und nicht näher bezeichnete Gastroenteritis und Kolitis nicht näher bezeichneten Ursprungs;0;1;0
+A63.0;Anogenitale (venerische) Warzen;0;1;0
+B95.1;Streptokokken, Gruppe B, als Ursache von Krankheiten, die in anderen Kapiteln klassifiziert sind;0;1;0
+B95.2;Streptokokken, Gruppe D, und Enterokokken als Ursache von Krankheiten, die in anderen Kapiteln klassifiziert sind;0;1;0
+B95.48;Sonstige näher bezeichnete Streptokokken als Ursache von Krankheiten, die in anderen Kapiteln klassifiziert sind;0;1;0
+B95.6;Staphylococcus aureus als Ursache von Krankheiten, die in anderen Kapiteln klassifiziert sind;0;1;0
+B95.7;Sonstige Staphylokokken als Ursache von Krankheiten, die in anderen Kapiteln klassifiziert sind;0;1;0
+B95.91;Sonstige näher bezeichnete grampositive anaerobe, nicht sporenbildende Erreger als Ursache von Krankheiten, die in anderen Kapiteln klassifiziert sind;0;1;0
+B96.2;Escherichia coli [E. coli] und andere Enterobakteriazeen als Ursache von Krankheiten, die in anderen Kapiteln klassifiziert sind;0;1;0
+B96.5;Pseudomonas und andere Nonfermenter als Ursache von Krankheiten, die in anderen Kapiteln klassifiziert sind;0;1;0
+B96.8;Sonstige näher bezeichnete Bakterien als Ursache von Krankheiten, die in anderen Kapiteln klassifiziert sind;0;1;0
+C07;Bösartige Neubildung der Parotis;1;0;0
+C32.0;Bösartige Neubildung: Glottis;1;0;0
+C44.1;Sonstige bösartige Neubildungen: Haut des Augenlides, einschließlich Kanthus;1;0;0
+C44.3;Sonstige bösartige Neubildungen: Haut sonstiger und nicht näher bezeichneter Teile des Gesichtes;0;1;0
+C50.9;Bösartige Neubildung: Brustdrüse, nicht näher bezeichnet;0;1;0
+C56;Bösartige Neubildung des Ovars;0;1;0
+C61;Bösartige Neubildung der Prostata;1;1;0
+C62.9;Bösartige Neubildung: Hoden, nicht näher bezeichnet;1;0;0
+C66;Bösartige Neubildung des Ureters;1;0;0
+C67.0;Bösartige Neubildung: Trigonum vesicae;1;0;0
+C67.1;Bösartige Neubildung: Apex vesicae;1;0;0
+C67.2;Bösartige Neubildung: Laterale Harnblasenwand;1;1;0
+C67.3;Bösartige Neubildung: Vordere Harnblasenwand;1;0;0
+C67.4;Bösartige Neubildung: Hintere Harnblasenwand;1;1;0
+C67.5;Bösartige Neubildung: Harnblasenhals;1;0;0
+C67.6;Bösartige Neubildung: Ostium ureteris;1;1;0
+C67.8;Bösartige Neubildung: Harnblase, mehrere Teilbereiche überlappend;1;1;0
+C67.9;Bösartige Neubildung: Harnblase, nicht näher bezeichnet;1;1;0
+C68.9;Bösartige Neubildung: Harnorgan, nicht näher bezeichnet;1;0;0
+C76.0;Bösartige Neubildung ungenau bezeichneter Lokalisationen: Kopf, Gesicht und Hals;1;0;0
+C77.2;Sekundäre und nicht näher bezeichnete bösartige Neubildung: Intraabdominale Lymphknoten;0;1;0
+C77.5;Sekundäre und nicht näher bezeichnete bösartige Neubildung: Intrapelvine Lymphknoten;0;1;0
+C79.5;Sekundäre bösartige Neubildung des Knochens und des Knochenmarkes;0;1;0
+D09.0;Carcinoma in situ: Harnblase;1;0;0
+D10.5;Gutartige Neubildung: Sonstige Teile des Oropharynx;1;0;0
+D11.0;Gutartige Neubildung: Parotis;1;1;0
+D11.7;Gutartige Neubildung: Sonstige große Speicheldrüsen;1;0;0
+D12.0;Gutartige Neubildung: Zäkum;1;1;0
+D12.2;Gutartige Neubildung: Colon ascendens;1;1;0
+D12.3;Gutartige Neubildung: Colon transversum;1;1;0
+D12.4;Gutartige Neubildung: Colon descendens;0;1;0
+D12.5;Gutartige Neubildung: Colon sigmoideum;1;1;0
+D12.6;Gutartige Neubildung: Kolon, nicht näher bezeichnet;1;0;0
+D12.8;Gutartige Neubildung: Rektum;0;1;0
+D12.9;Gutartige Neubildung: Analkanal und Anus;1;1;0
+D14.0;Gutartige Neubildung: Mittelohr, Nasenhöhle und Nasennebenhöhlen;1;0;0
+D17.9;Gutartige Neubildung des Fettgewebes, nicht näher bezeichnet;0;1;0
+D21.5;Sonstige gutartige Neubildungen: Bindegewebe und andere Weichteilgewebe des Beckens;0;1;0
+D25.0;Submuköses Leiomyom des Uterus;1;1;0
+D25.1;Intramurales Leiomyom des Uterus;1;1;0
+D25.2;Subseröses Leiomyom des Uterus;1;1;0
+D25.9;Leiomyom des Uterus, nicht näher bezeichnet;1;1;0
+D27;Gutartige Neubildung des Ovars;1;1;0
+D29.1;Gutartige Neubildung: Prostata;1;1;0
+D30.3;Gutartige Neubildung: Harnblase;1;0;0
+D37.0;Neubildung unsicheren oder unbekannten Verhaltens: Lippe, Mundhöhle und Pharynx;1;0;0
+D37.5;Neubildung unsicheren oder unbekannten Verhaltens: Rektum;1;1;0
+D38.0;Neubildung unsicheren oder unbekannten Verhaltens: Larynx;1;0;0
+D40.0;Neubildung unsicheren oder unbekannten Verhaltens: Prostata;1;1;0
+D41.4;Neubildung unsicheren oder unbekannten Verhaltens: Harnblase;1;1;0
+D50.0;Eisenmangelanämie nach Blutverlust (chronisch);0;1;0
+D50.8;Sonstige Eisenmangelanämien;0;1;0
+D50.9;Eisenmangelanämie, nicht näher bezeichnet;0;1;0
+D62;Akute Blutungsanämie;0;1;0
+D63.0;Anämie bei Neubildungen;0;1;0
+D64.9;Anämie, nicht näher bezeichnet;0;1;0
+D65.2;Erworbene Fibrinolyseblutung;0;1;0
+D68.22;Hereditärer Faktor-V-Mangel;0;1;0
+D68.33;Hämorrhagische Diathese durch Cumarine (Vitamin-K-Antagonisten);0;1;0
+D68.34;Hämorrhagische Diathese durch Heparine;0;1;0
+D68.35;Hämorrhagische Diathese durch sonstige Antikoagulanzien;0;1;0
+D68.4;Erworbener Mangel an Gerinnungsfaktoren;0;1;0
+D68.5;Primäre Thrombophilie;0;1;0
+D69.80;Hämorrhagische Diathese durch Thrombozytenaggregationshemmer;0;1;0
+E03.1;Angeborene Hypothyreose ohne Struma;0;1;0
+E03.2;Hypothyreose durch Arzneimittel oder andere exogene Substanzen;0;1;0
+E03.8;Sonstige näher bezeichnete Hypothyreose;0;1;0
+E03.9;Hypothyreose, nicht näher bezeichnet;0;1;0
+E05.8;Sonstige Hyperthyreose;0;1;0
+E05.9;Hyperthyreose, nicht näher bezeichnet;0;1;0
+E06.3;Autoimmunthyreoiditis;0;1;0
+E07.9;Krankheit der Schilddrüse, nicht näher bezeichnet;0;1;0
+E10.30;Diabetes mellitus, Typ 1: Mit Augenkomplikationen: Nicht als entgleist bezeichnet;0;1;0
+E10.90;Diabetes mellitus, Typ 1: Ohne Komplikationen: Nicht als entgleist bezeichnet;0;1;0
+E11.20;Diabetes mellitus, Typ 2: Mit Nierenkomplikationen: Nicht als entgleist bezeichnet;0;1;0
+E11.21;Diabetes mellitus, Typ 2: Mit Nierenkomplikationen: Als entgleist bezeichnet;0;1;0
+E11.30;Diabetes mellitus, Typ 2: Mit Augenkomplikationen: Nicht als entgleist bezeichnet;0;1;0
+E11.40;Diabetes mellitus, Typ 2: Mit neurologischen Komplikationen: Nicht als entgleist bezeichnet;0;1;0
+E11.72;Diabetes mellitus, Typ 2: Mit multiplen Komplikationen: Mit sonstigen multiplen Komplikationen, nicht als entgleist bezeichnet;0;1;0
+E11.90;Diabetes mellitus, Typ 2: Ohne Komplikationen: Nicht als entgleist bezeichnet;0;1;0
+E11.91;Diabetes mellitus, Typ 2: Ohne Komplikationen: Als entgleist bezeichnet;0;1;0
+E13.30;Sonstiger näher bezeichneter Diabetes mellitus: Mit Augenkomplikationen: Nicht als entgleist bezeichnet;0;1;0
+E14.30;Nicht näher bezeichneter Diabetes mellitus: Mit Augenkomplikationen: Nicht als entgleist bezeichnet;0;1;0
+E28.2;Syndrom polyzystischer Ovarien;1;0;0
+E53.8;Mangel an sonstigen näher bezeichneten Vitaminen des Vitamin-B-Komplexes;0;1;0
+E66.00;Adipositas durch übermäßige Kalorienzufuhr: Adipositas Grad I (WHO) bei Patienten von 18 Jahren und älter;0;1;0
+E66.01;Adipositas durch übermäßige Kalorienzufuhr: Adipositas Grad II (WHO) bei Patienten von 18 Jahren und älter;0;1;0
+E66.02;Adipositas durch übermäßige Kalorienzufuhr: Adipositas Grad III (WHO) bei Patienten von 18 Jahren und älter;0;1;0
+E66.80;Sonstige Adipositas: Adipositas Grad I (WHO) bei Patienten von 18 Jahren und älter;0;1;0
+E66.81;Sonstige Adipositas: Adipositas Grad II (WHO) bei Patienten von 18 Jahren und älter;0;1;0
+E66.82;Sonstige Adipositas: Adipositas Grad III (WHO) bei Patienten von 18 Jahren und älter;0;1;0
+E66.90;Adipositas, nicht näher bezeichnet: Adipositas Grad I (WHO) bei Patienten von 18 Jahren und älter;0;1;0
+E66.91;Adipositas, nicht näher bezeichnet: Adipositas Grad II (WHO) bei Patienten von 18 Jahren und älter;0;1;0
+E66.92;Adipositas, nicht näher bezeichnet: Adipositas Grad III (WHO) bei Patienten von 18 Jahren und älter;0;1;0
+E73.9;Laktoseintoleranz, nicht näher bezeichnet;0;1;0
+E74.1;Störungen des Fruktosestoffwechsels;0;1;0
+E78.0;Reine Hypercholesterinämie;0;1;0
+E78.2;Gemischte Hyperlipidämie;0;1;0
+E78.4;Sonstige Hyperlipidämien;0;1;0
+E78.5;Hyperlipidämie, nicht näher bezeichnet;0;1;0
+E79.0;Hyperurikämie ohne Zeichen von entzündlicher Arthritis oder tophischer Gicht;0;1;0
+E86;Volumenmangel;0;1;0
+E87.1;Hypoosmolalität und Hyponatriämie;0;1;0
+E87.5;Hyperkaliämie;0;1;0
+E87.6;Hypokaliämie;0;1;0
+E89.0;Hypothyreose nach medizinischen Maßnahmen;0;1;0
+F00.1;Demenz bei Alzheimer-Krankheit, mit spätem Beginn (Typ 1);0;1;0
+F01.3;Gemischte kortikale und subkortikale vaskuläre Demenz;0;1;0
+F03;Nicht näher bezeichnete Demenz;0;1;0
+F05.1;Delir bei Demenz;0;1;0
+F05.8;Sonstige Formen des Delirs;0;1;0
+F10.2;Psychische und Verhaltensstörungen durch Alkohol: Abhängigkeitssyndrom;0;1;0
+F11.1;Psychische und Verhaltensstörungen durch Opioide: Schädlicher Gebrauch;0;1;0
+F11.2;Psychische und Verhaltensstörungen durch Opioide: Abhängigkeitssyndrom;0;1;0
+F17.1;Psychische und Verhaltensstörungen durch Tabak: Schädlicher Gebrauch;0;1;0
+F17.2;Psychische und Verhaltensstörungen durch Tabak: Abhängigkeitssyndrom;0;1;0
+F17.9;Psychische und Verhaltensstörungen durch Tabak: Nicht näher bezeichnete psychische und Verhaltensstörung;0;1;0
+F32.0;Leichte depressive Episode;0;1;0
+F32.1;Mittelgradige depressive Episode;0;1;0
+F32.8;Sonstige depressive Episoden;0;1;0
+F32.9;Depressive Episode, nicht näher bezeichnet;0;1;0
+F33.4;Rezidivierende depressive Störung, gegenwärtig remittiert;0;1;0
+F33.8;Sonstige rezidivierende depressive Störungen;0;1;0
+F33.9;Rezidivierende depressive Störung, nicht näher bezeichnet;0;1;0
+F34.1;Dysthymia;0;1;0
+F41.0;Panikstörung [episodisch paroxysmale Angst];0;1;0
+F41.2;Angst und depressive Störung, gemischt;0;1;0
+F41.9;Angststörung, nicht näher bezeichnet;0;1;0
+F43.2;Anpassungsstörungen;0;1;0
+F43.8;Sonstige Reaktionen auf schwere Belastung;0;1;0
+F45.40;Anhaltende somatoforme Schmerzstörung;0;1;0
+F45.41;Chronische Schmerzstörung mit somatischen und psychischen Faktoren;0;1;0
+F45.8;Sonstige somatoforme Störungen;0;1;0
+F93.0;Emotionale Störung mit Trennungsangst des Kindesalters;0;1;0
+G20.10;Primäres Parkinson-Syndrom mit mäßiger bis schwerer Beeinträchtigung: Ohne Wirkungsfluktuation;0;1;0
+G20.90;Primäres Parkinson-Syndrom, nicht näher bezeichnet: Ohne Wirkungsfluktuation;0;1;0
+G25.81;Syndrom der unruhigen Beine [Restless-Legs-Syndrom];0;1;0
+G30.1;Alzheimer-Krankheit mit spätem Beginn;0;1;0
+G35.9;Multiple Sklerose, nicht näher bezeichnet;0;1;0
+G40.3;Generalisierte idiopathische Epilepsie und epileptische Syndrome;0;1;0
+G40.8;Sonstige Epilepsien;0;1;0
+G40.9;Epilepsie, nicht näher bezeichnet;0;1;0
+G47.0;Ein- und Durchschlafstörungen;0;1;0
+G47.30;Zentrales Schlafapnoe-Syndrom;0;1;0
+G47.31;Obstruktives Schlafapnoe-Syndrom;1;1;0
+G47.32;Schlafbezogenes Hypoventilations-Syndrom;0;1;0
+G47.38;Sonstige Schlafapnoe;0;1;0
+G47.39;Schlafapnoe, nicht näher bezeichnet;0;1;0
+G47.8;Sonstige Schlafstörungen;0;1;0
+G47.9;Schlafstörung, nicht näher bezeichnet;0;1;0
+G50.1;Atypischer Gesichtsschmerz;0;1;0
+G55.1;Kompression von Nervenwurzeln und Nervenplexus bei Bandscheibenschäden;0;1;0
+G55.2;Kompression von Nervenwurzeln und Nervenplexus bei Spondylose;0;1;0
+G55.3;Kompression von Nervenwurzeln und Nervenplexus bei sonstigen Krankheiten der Wirbelsäule und des Rückens;0;1;0
+G56.0;Karpaltunnel-Syndrom;0;1;0
+G57.3;Läsion des N. fibularis (peronaeus) communis;0;1;0
+G62.88;Sonstige näher bezeichnete Polyneuropathien;0;1;0
+G62.9;Polyneuropathie, nicht näher bezeichnet;0;1;0
+G63.2;Diabetische Polyneuropathie;0;1;0
+G63.6;Polyneuropathie bei sonstigen Krankheiten des Muskel-Skelett-Systems;0;1;0
+G70.0;Myasthenia gravis;0;1;0
+G81.0;Schlaffe Hemiparese und Hemiplegie;0;1;0
+G81.1;Spastische Hemiparese und Hemiplegie;0;1;0
+G81.9;Hemiparese und Hemiplegie, nicht näher bezeichnet;0;1;0
+G90.2;Horner-Syndrom;0;1;0
+H05.2;Exophthalmus;0;1;0
+H11.0;Pterygium;1;0;0
+H11.2;Narben der Konjunktiva;0;1;0
+H11.3;Blutung der Konjunktiva;0;1;0
+H11.4;Sonstige Gefäßkrankheiten und Zysten der Konjunktiva;0;1;0
+H11.9;Affektion der Konjunktiva, nicht näher bezeichnet;0;1;0
+H16.0;Ulcus corneae;1;0;0
+H17.9;Hornhautnarbe und -trübung, nicht näher bezeichnet;0;1;0
+H18.2;Sonstiges Hornhautödem;0;1;0
+H18.3;Veränderungen an den Hornhautmembranen;0;1;0
+H18.5;Hereditäre Hornhautdystrophien;1;1;0
+H20.1;Chronische Iridozyklitis;0;1;0
+H21.0;Hyphäma;0;1;0
+H25.1;Cataracta nuclearis senilis;1;1;0
+H25.2;Cataracta senilis, Morgagni-Typ;1;1;0
+H25.8;Sonstige senile Kataraktformen;1;1;0
+H26.0;Infantile, juvenile und präsenile Katarakt;1;0;0
+H26.1;Cataracta traumatica;1;0;0
+H26.2;Cataracta complicata;1;1;0
+H26.8;Sonstige näher bezeichnete Kataraktformen;1;1;0
+H26.9;Katarakt, nicht näher bezeichnet;1;0;0
+H27.0;Aphakie;1;0;0
+H27.1;Luxation der Linse;1;0;0
+H27.8;Sonstige näher bezeichnete Affektionen der Linse;0;1;0
+H28.0;Diabetische Katarakt;0;1;0
+H31.3;Blutung und Ruptur der Aderhaut;1;0;0
+H31.4;Ablatio chorioideae;0;1;0
+H33.0;Netzhautablösung mit Netzhautriss;1;1;0
+H33.2;Seröse Netzhautablösung;1;1;0
+H33.3;Netzhautriss ohne Netzhautablösung;0;1;0
+H33.4;Traktionsablösung der Netzhaut;1;1;0
+H33.5;Sonstige Netzhautablösungen;1;1;0
+H34.8;Sonstiger Netzhautgefäßverschluss;0;1;0
+H35.2;Sonstige proliferative Retinopathie;1;0;0
+H35.3;Degeneration der Makula und des hinteren Poles;1;1;0
+H35.4;Periphere Netzhautdegeneration;0;1;0
+H35.6;Netzhautblutung;1;0;0
+H35.8;Sonstige näher bezeichnete Affektionen der Netzhaut;1;1;0
+H36.0;Retinopathia diabetica;0;1;0
+H40.0;Glaukomverdacht;0;1;0
+H40.1;Primäres Weitwinkelglaukom;1;1;0
+H40.2;Primäres Engwinkelglaukom;1;1;0
+H40.4;Glaukom (sekundär) nach Entzündung des Auges;1;1;0
+H40.5;Glaukom (sekundär) nach sonstigen Affektionen des Auges;1;1;0
+H40.8;Sonstiges Glaukom;1;1;0
+H40.9;Glaukom, nicht näher bezeichnet;0;1;0
+H43.1;Glaskörperblutung;1;1;0
+H43.3;Sonstige Glaskörpertrübungen;1;1;0
+H43.8;Sonstige Affektionen des Glaskörpers;1;1;0
+H44.4;Hypotonia bulbi;0;1;0
+H47.2;Optikusatrophie;0;1;0
+H50.1;Strabismus concomitans divergens;0;1;0
+H52.1;Myopie;0;1;0
+H53.0;Amblyopia ex anopsia;0;1;0
+H53.4;Gesichtsfelddefekte;0;1;0
+H54.0;Blindheit und hochgradige Sehbehinderung, binokular;0;1;0
+H54.1;Schwere Sehbeeinträchtigung, binokular;0;1;0
+H54.2;Mittelschwere Sehbeeinträchtigung, binokular;0;1;0
+H54.4;Blindheit und hochgradige Sehbehinderung, monokular;0;1;0
+H54.9;Nicht näher bezeichnete Sehbeeinträchtigung (binokular);0;1;0
+H57.1;Augenschmerzen;0;1;0
+H57.8;Sonstige näher bezeichnete Affektionen des Auges und der Augenanhangsgebilde;0;1;0
+H60.4;Cholesteatom im äußeren Ohr;1;0;0
+H61.2;Zeruminalpfropf;0;1;0
+H61.3;Erworbene Stenose des äußeren Gehörganges;1;1;0
+H61.8;Sonstige näher bezeichnete Krankheiten des äußeren Ohres;1;0;0
+H65.2;Chronische seröse Otitis media;0;1;0
+H65.3;Chronische muköse Otitis media;1;1;0
+H65.4;Sonstige chronische nichteitrige Otitis media;1;1;0
+H65.9;Nichteitrige Otitis media, nicht näher bezeichnet;0;1;0
+H66.0;Akute eitrige Otitis media;1;0;0
+H66.1;Chronische mesotympanale eitrige Otitis media;1;1;0
+H66.2;Chronische epitympanale Otitis media;1;1;0
+H66.9;Otitis media, nicht näher bezeichnet;0;1;0
+H68.1;Verschluss der Tuba auditiva;0;1;0
+H69.8;Sonstige näher bezeichnete Krankheiten der Tuba auditiva;0;1;0
+H70.1;Chronische Mastoiditis;1;1;0
+H71;Cholesteatom des Mittelohres;1;1;0
+H72.0;Zentrale Perforation des Trommelfells;1;0;0
+H72.2;Sonstige randständige Trommelfellperforationen;0;1;0
+H72.8;Sonstige Trommelfellperforationen;1;1;0
+H73.8;Sonstige näher bezeichnete Krankheiten des Trommelfells;0;1;0
+H74.0;Tympanosklerose;0;1;0
+H74.2;Kontinuitätsunterbrechung oder Dislokation der Gehörknöchelchenkette;1;0;0
+H74.3;Sonstige erworbene Anomalien der Gehörknöchelchen;1;1;0
+H80.0;Otosklerose mit Beteiligung der Fenestra vestibuli, nichtobliterierend;1;0;0
+H80.1;Otosklerose mit Beteiligung der Fenestra vestibuli, obliterierend;1;0;0
+H80.8;Sonstige Otosklerose;1;0;0
+H80.9;Otosklerose, nicht näher bezeichnet;1;0;0
+H81.0;Ménière-Krankheit;1;0;0
+H81.1;Benigner paroxysmaler Schwindel;1;1;0
+H81.2;Neuropathia vestibularis;1;1;0
+H81.8;Sonstige Störungen der Vestibularfunktion;1;0;0
+H90.1;Einseitiger Hörverlust durch Schallleitungsstörung bei nicht eingeschränktem Hörvermögen der anderen Seite;0;1;0
+H90.2;Hörverlust durch Schallleitungsstörung, nicht näher bezeichnet;0;1;0
+H90.5;Hörverlust durch Schallempfindungsstörung, nicht näher bezeichnet;0;1;0
+H91.0;Ototoxischer Hörverlust;1;1;0
+H91.1;Presbyakusis;0;1;0
+H91.2;Idiopathischer Hörsturz;1;1;0
+H91.9;Hörverlust, nicht näher bezeichnet;0;1;0
+H92.0;Otalgie;0;1;0
+H92.2;Blutung aus dem äußeren Gehörgang;0;1;0
+H93.1;Tinnitus aurium;1;1;0
+I10.00;Benigne essentielle Hypertonie: Ohne Angabe einer hypertensiven Krise;0;1;0
+I10.01;Benigne essentielle Hypertonie: Mit Angabe einer hypertensiven Krise;0;1;0
+I10.90;Essentielle Hypertonie, nicht näher bezeichnet: Ohne Angabe einer hypertensiven Krise;0;1;0
+I10.91;Essentielle Hypertonie, nicht näher bezeichnet: Mit Angabe einer hypertensiven Krise;0;1;0
+I11.00;Hypertensive Herzkrankheit mit (kongestiver) Herzinsuffizienz: Ohne Angabe einer hypertensiven Krise;0;1;0
+I11.90;Hypertensive Herzkrankheit ohne (kongestive) Herzinsuffizienz: Ohne Angabe einer hypertensiven Krise;0;1;0
+I12.00;Hypertensive Nierenkrankheit mit Niereninsuffizienz: Ohne Angabe einer hypertensiven Krise;0;1;0
+I25.0;Atherosklerotische Herz-Kreislauf-Krankheit, so beschrieben;0;1;0
+I25.10;Atherosklerotische Herzkrankheit: Ohne hämodynamisch wirksame Stenosen;0;1;0
+I25.11;Atherosklerotische Herzkrankheit: Ein-Gefäß-Erkrankung;0;1;0
+I25.12;Atherosklerotische Herzkrankheit: Zwei-Gefäß-Erkrankung;0;1;0
+I25.13;Atherosklerotische Herzkrankheit: Drei-Gefäß-Erkrankung;0;1;0
+I25.16;Atherosklerotische Herzkrankheit: Mit stenosierten Stents;0;1;0
+I25.19;Atherosklerotische Herzkrankheit: Nicht näher bezeichnet;0;1;0
+I25.22;Alter Myokardinfarkt: 1 Jahr und länger zurückliegend;0;1;0
+I25.29;Alter Myokardinfarkt: Nicht näher bezeichnet;0;1;0
+I25.8;Sonstige Formen der chronischen ischämischen Herzkrankheit;0;1;0
+I25.9;Chronische ischämische Herzkrankheit, nicht näher bezeichnet;0;1;0
+I34.0;Mitralklappeninsuffizienz;0;1;0
+I42.0;Dilatative Kardiomyopathie;0;1;0
+I44.0;Atrioventrikulärer Block 1. Grades;0;1;0
+I44.3;Sonstiger und nicht näher bezeichneter atrioventrikulärer Block;0;1;0
+I44.7;Linksschenkelblock, nicht näher bezeichnet;0;1;0
+I45.1;Sonstiger und nicht näher bezeichneter Rechtsschenkelblock;0;1;0
+I48.0;Vorhofflimmern, paroxysmal;0;1;0
+I48.1;Vorhofflimmern, persistierend;0;1;0
+I48.2;Vorhofflimmern, permanent;0;1;0
+I48.9;Vorhofflimmern und Vorhofflattern, nicht näher bezeichnet;0;1;0
+I49.3;Ventrikuläre Extrasystolie;0;1;0
+I49.4;Sonstige und nicht näher bezeichnete Extrasystolie;0;1;0
+I49.8;Sonstige näher bezeichnete kardiale Arrhythmien;0;1;0
+I49.9;Kardiale Arrhythmie, nicht näher bezeichnet;0;1;0
+I50.01;Sekundäre Rechtsherzinsuffizienz;0;1;0
+I50.11;Linksherzinsuffizienz: Ohne Beschwerden;0;1;0
+I50.12;Linksherzinsuffizienz: Mit Beschwerden bei stärkerer Belastung;0;1;0
+I50.13;Linksherzinsuffizienz: Mit Beschwerden bei leichterer Belastung;0;1;0
+I50.9;Herzinsuffizienz, nicht näher bezeichnet;0;1;0
+I51.6;Herz-Kreislauf-Krankheit, nicht näher bezeichnet;0;1;0
+I63.9;Hirninfarkt, nicht näher bezeichnet;0;1;0
+I65.2;Verschluss und Stenose der A. carotis;0;1;0
+I67.3;Progressive subkortikale vaskuläre Enzephalopathie;0;1;0
+I67.88;Sonstige näher bezeichnete zerebrovaskuläre Krankheiten;0;1;0
+I69.3;Folgen eines Hirninfarktes;0;1;0
+I69.4;Folgen eines Schlaganfalls, nicht als Blutung oder Infarkt bezeichnet;0;1;0
+I70.21;Atherosklerose der Extremitätenarterien: Becken-Bein-Typ, mit belastungsinduziertem Ischämieschmerz, Gehstrecke 200 m und mehr;0;1;0
+I70.22;Atherosklerose der Extremitätenarterien: Becken-Bein-Typ, mit belastungsinduziertem Ischämieschmerz, Gehstrecke weniger als 200 m;0;1;0
+I70.29;Atherosklerose der Extremitätenarterien: Sonstige und nicht näher bezeichnet;0;1;0
+I71.2;Aneurysma der Aorta thoracica, ohne Angabe einer Ruptur;0;1;0
+I79.2;Periphere Angiopathie bei anderenorts klassifizierten Krankheiten;0;1;0
+I80.28;Thrombose, Phlebitis und Thrombophlebitis sonstiger tiefer Gefäße der unteren Extremitäten;0;1;0
+I80.3;Thrombose, Phlebitis und Thrombophlebitis der unteren Extremitäten, nicht näher bezeichnet;0;1;0
+I83.1;Varizen der unteren Extremitäten mit Entzündung;0;1;0
+I83.9;Varizen der unteren Extremitäten ohne Ulzeration oder Entzündung;0;1;0
+I86.1;Skrotumvarizen;1;0;0
+I87.20;Venöse Insuffizienz (chronisch) (peripher) ohne Ulzeration;0;1;0
+I95.2;Hypotonie durch Arzneimittel;0;1;0
+I95.8;Sonstige Hypotonie;0;1;0
+I95.9;Hypotonie, nicht näher bezeichnet;0;1;0
+I97.89;Sonstige Kreislaufkomplikationen nach medizinischen Maßnahmen, anderenorts nicht klassifiziert;0;1;0
+I97.9;Kreislaufkomplikation nach medizinischer Maßnahme, nicht näher bezeichnet;0;1;0
+I99;Sonstige und nicht näher bezeichnete Krankheiten des Kreislaufsystems;0;1;0
+J01.0;Akute Sinusitis maxillaris;0;1;0
+J03.8;Akute Tonsillitis durch sonstige näher bezeichnete Erreger;1;0;0
+J03.9;Akute Tonsillitis, nicht näher bezeichnet;1;1;0
+J04.0;Akute Laryngitis;1;0;0
+J06.9;Akute Infektion der oberen Atemwege, nicht näher bezeichnet;0;1;0
+J10.1;Grippe mit sonstigen Manifestationen an den Atemwegen, saisonale Influenzaviren nachgewiesen;1;0;0
+J30.1;Allergische Rhinopathie durch Pollen;0;1;0
+J30.3;Sonstige allergische Rhinopathie;0;1;0
+J30.4;Allergische Rhinopathie, nicht näher bezeichnet;0;1;0
+J31.0;Chronische Rhinitis;1;1;0
+J31.2;Chronische Pharyngitis;0;1;0
+J32.0;Chronische Sinusitis maxillaris;1;1;0
+J32.1;Chronische Sinusitis frontalis;0;1;0
+J32.2;Chronische Sinusitis ethmoidalis;1;1;0
+J32.3;Chronische Sinusitis sphenoidalis;1;1;0
+J32.4;Chronische Pansinusitis;1;1;0
+J32.8;Sonstige chronische Sinusitis;1;1;0
+J32.9;Chronische Sinusitis, nicht näher bezeichnet;1;1;0
+J33.0;Polyp der Nasenhöhle;1;1;0
+J33.1;Polyposis nasalis deformans;0;1;0
+J33.8;Sonstige Polypen der Nasennebenhöhlen;1;1;0
+J33.9;Nasenpolyp, nicht näher bezeichnet;0;1;0
+J34.1;Zyste oder Mukozele der Nase und der Nasennebenhöhle;1;1;0
+J34.2;Nasenseptumdeviation;1;1;0
+J34.3;Hypertrophie der Nasenmuscheln;1;1;0
+J34.8;Sonstige näher bezeichnete Krankheiten der Nase und der Nasennebenhöhlen;1;1;0
+J35.0;Chronische Tonsillitis;1;1;0
+J35.1;Hyperplasie der Gaumenmandeln;1;1;0
+J35.2;Hyperplasie der Rachenmandel;1;1;0
+J35.3;Hyperplasie der Gaumenmandeln mit Hyperplasie der Rachenmandel;1;1;0
+J35.8;Sonstige chronische Krankheiten der Gaumenmandeln und der Rachenmandel;1;1;0
+J35.9;Chronische Krankheit der Gaumenmandeln und der Rachenmandel, nicht näher bezeichnet;0;1;0
+J36;Peritonsillarabszess;1;1;0
+J37.0;Chronische Laryngitis;1;1;0
+J38.1;Polyp der Stimmlippen und des Kehlkopfes;1;1;0
+J38.2;Stimmlippenknötchen;0;1;0
+J38.3;Sonstige Krankheiten der Stimmlippen;1;1;0
+J38.4;Larynxödem;1;1;0
+J38.7;Sonstige Krankheiten des Kehlkopfes;1;0;0
+J39.2;Sonstige Krankheiten des Rachenraumes;1;1;0
+J40;Bronchitis, nicht als akut oder chronisch bezeichnet;0;1;0
+J41.0;Einfache chronische Bronchitis;0;1;0
+J42;Nicht näher bezeichnete chronische Bronchitis;0;1;0
+J43.9;Emphysem, nicht näher bezeichnet;0;1;0
+J44.09;Chronische obstruktive Lungenkrankheit mit akuter Infektion der unteren Atemwege: FEV1 nicht näher bezeichnet;0;1;0
+J44.19;Chronische obstruktive Lungenkrankheit mit akuter Exazerbation, nicht näher bezeichnet: FEV1 nicht näher bezeichnet;0;1;0
+J44.83;Sonstige näher bezeichnete chronische obstruktive Lungenkrankheit: FEV1 >=70 % des Sollwertes;0;1;0
+J44.89;Sonstige näher bezeichnete chronische obstruktive Lungenkrankheit: FEV1 nicht näher bezeichnet;0;1;0
+J44.99;Chronische obstruktive Lungenkrankheit, nicht näher bezeichnet: FEV1 nicht näher bezeichnet;0;1;0
+J45.0;Vorwiegend allergisches Asthma bronchiale;0;1;0
+J45.1;Nichtallergisches Asthma bronchiale;0;1;0
+J45.8;Mischformen des Asthma bronchiale;0;1;0
+J45.9;Asthma bronchiale, nicht näher bezeichnet;0;1;0
+J95.2;Akute pulmonale Insuffizienz nach nicht am Thorax vorgenommener Operation;0;1;0
+J95.88;Sonstige Krankheiten der Atemwege nach medizinischen Maßnahmen;0;1;0
+J96.00;Akute respiratorische Insuffizienz, anderenorts nicht klassifiziert: Typ I [hypoxisch];0;1;0
+J96.10;Chronische respiratorische Insuffizienz, anderenorts nicht klassifiziert: Typ I [hypoxisch];0;1;0
+K01.0;Retinierte Zähne;1;1;0
+K01.1;Impaktierte Zähne;0;1;0
+K02.1;Karies des Dentins;0;1;0
+K02.8;Sonstige Zahnkaries;1;1;0
+K04.4;Akute apikale Parodontitis pulpalen Ursprungs;0;1;0
+K04.5;Chronische apikale Parodontitis;1;1;0
+K04.6;Periapikaler Abszess mit Fistel;1;0;0
+K04.8;Radikuläre Zyste;1;1;0
+K05.3;Chronische Parodontitis;1;1;0
+K07.0;Stärkere Anomalien der Kiefergröße;1;0;0
+K07.1;Anomalien des Kiefer-Schädelbasis-Verhältnisses;1;1;0
+K07.2;Anomalien des Zahnbogenverhältnisses;1;1;0
+K07.3;Zahnstellungsanomalien;0;1;0
+K07.4;Fehlerhafte Okklusion, nicht näher bezeichnet;0;1;0
+K08.0;Zahnverfall durch systemische Ursachen;1;0;0
+K08.2;Atrophie des zahnlosen Alveolarkammes;1;1;0
+K08.3;Verbliebene Zahnwurzel;1;1;0
+K09.0;Entwicklungsbedingte odontogene Zysten;1;1;0
+K09.2;Sonstige Kieferzysten;0;1;0
+K10.28;Sonstige näher bezeichnete entzündliche Zustände der Kiefer;1;1;0
+K10.3;Alveolitis der Kiefer;1;1;0
+K11.2;Sialadenitis;1;1;0
+K11.5;Sialolithiasis;1;1;0
+K12.22;Submandibularabszess mit Ausbreitung nach mediastinal, parapharyngeal oder zervikal;1;0;0
+K12.28;Sonstige Phlegmone und Abszess des Mundes;1;0;0
+K13.7;Sonstige und nicht näher bezeichnete Läsionen der Mundschleimhaut;0;1;0
+K14.0;Glossitis;1;0;0
+K14.8;Sonstige Krankheiten der Zunge;0;1;0
+K21.0;Gastroösophageale Refluxkrankheit mit Ösophagitis;0;1;0
+K21.9;Gastroösophageale Refluxkrankheit ohne Ösophagitis;0;1;0
+K22.4;Dyskinesie des Ösophagus;0;1;0
+K29.1;Sonstige akute Gastritis;0;1;0
+K29.7;Gastritis, nicht näher bezeichnet;0;1;0
+K40.30;Hernia inguinalis, einseitig oder ohne Seitenangabe, mit Einklemmung, ohne Gangrän: Nicht als Rezidivhernie bezeichnet;1;0;0
+K40.90;Hernia inguinalis, einseitig oder ohne Seitenangabe, ohne Einklemmung und ohne Gangrän: Nicht als Rezidivhernie bezeichnet;1;0;0
+K40.91;Hernia inguinalis, einseitig oder ohne Seitenangabe, ohne Einklemmung und ohne Gangrän: Rezidivhernie;1;0;0
+K42.0;Hernia umbilicalis mit Einklemmung, ohne Gangrän;1;0;0
+K42.9;Hernia umbilicalis ohne Einklemmung und ohne Gangrän;1;1;0
+K43.90;Epigastrische Hernie ohne Einklemmung und ohne Gangrän;1;0;0
+K43.99;Nicht näher bezeichnete Hernia ventralis ohne Einklemmung und ohne Gangrän;1;0;0
+K44.9;Hernia diaphragmatica ohne Einklemmung und ohne Gangrän;0;1;0
+K50.9;Crohn-Krankheit, nicht näher bezeichnet;0;1;0
+K51.9;Colitis ulcerosa, nicht näher bezeichnet;0;1;0
+K57.30;Divertikulose des Dickdarmes ohne Perforation, Abszess oder Angabe einer Blutung;0;1;0
+K57.90;Divertikulose des Darmes, Teil nicht näher bezeichnet, ohne Perforation, Abszess oder Angabe einer Blutung;0;1;0
+K59.0;Obstipation;0;1;0
+K59.8;Sonstige näher bezeichnete funktionelle Darmstörungen;0;1;0
+K60.0;Akute Analfissur;1;0;0
+K60.1;Chronische Analfissur;1;1;0
+K60.3;Analfistel;1;1;0
+K60.5;Anorektalfistel;1;1;0
+K61.0;Analabszess;1;1;0
+K62.0;Analpolyp;1;1;0
+K62.1;Rektumpolyp;0;1;0
+K62.2;Analprolaps;1;1;0
+K62.3;Rektumprolaps;0;1;0
+K62.4;Stenose des Anus und des Rektums;0;1;0
+K62.5;Hämorrhagie des Anus und des Rektums;0;1;0
+K62.8;Sonstige näher bezeichnete Krankheiten des Anus und des Rektums;1;1;0
+K63.4;Enteroptose;0;1;0
+K63.5;Polyp des Kolons;1;1;0
+K64.0;Hämorrhoiden 1. Grades;0;1;0
+K64.1;Hämorrhoiden 2. Grades;1;1;0
+K64.2;Hämorrhoiden 3. Grades;1;1;0
+K64.3;Hämorrhoiden 4. Grades;1;1;0
+K64.4;Marisken als Folgezustand von Hämorrhoiden;1;1;0
+K64.9;Hämorrhoiden, nicht näher bezeichnet;1;1;0
+K66.0;Peritoneale Adhäsionen;0;1;0
+K74.6;Sonstige und nicht näher bezeichnete Zirrhose der Leber;0;1;0
+K76.0;Fettleber [fettige Degeneration], anderenorts nicht klassifiziert;0;1;0
+K92.2;Gastrointestinale Blutung, nicht näher bezeichnet;0;1;0
+L05.0;Pilonidalzyste mit Abszess;1;1;0
+L05.9;Pilonidalzyste ohne Abszess;1;1;0
+L20.8;Sonstiges atopisches [endogenes] Ekzem;0;1;0
+L22;Windeldermatitis;1;0;0
+L23.0;Allergische Kontaktdermatitis durch Metalle;0;1;0
+L23.5;Allergische Kontaktdermatitis durch sonstige chemische Produkte;0;1;0
+L23.9;Allergische Kontaktdermatitis, nicht näher bezeichnete Ursache;0;1;0
+L40.9;Psoriasis, nicht näher bezeichnet;0;1;0
+L50.0;Allergische Urtikaria;0;1;0
+L73.2;Hidradenitis suppurativa;0;1;0
+L89.14;Dekubitus 2. Grades: Kreuzbein;0;1;0
+L91.0;Hypertrophe Narbe;0;1;0
+M06.90;Chronische Polyarthritis, nicht näher bezeichnet: Mehrere Lokalisationen;0;1;0
+M06.97;Chronische Polyarthritis, nicht näher bezeichnet: Knöchel und Fuß [Fußwurzel, Mittelfuß, Zehen, Sprunggelenk, sonstige Gelenke des Fußes];1;0;0
+M06.99;Chronische Polyarthritis, nicht näher bezeichnet: Nicht näher bezeichnete Lokalisation;0;1;0
+M10.99;Gicht, nicht näher bezeichnet: Nicht näher bezeichnete Lokalisation;0;1;0
+M12.83;Sonstige näher bezeichnete Arthropathien, anderenorts nicht klassifiziert: Unterarm [Radius, Ulna, Handgelenk];1;0;0
+M16.0;Primäre Koxarthrose, beidseitig;1;1;0
+M16.1;Sonstige primäre Koxarthrose;1;1;0
+M16.3;Sonstige dysplastische Koxarthrose;1;0;0
+M16.5;Sonstige posttraumatische Koxarthrose;1;0;0
+M16.7;Sonstige sekundäre Koxarthrose;1;0;0
+M16.9;Koxarthrose, nicht näher bezeichnet;1;0;0
+M17.0;Primäre Gonarthrose, beidseitig;1;1;0
+M17.1;Sonstige primäre Gonarthrose;1;1;0
+M17.2;Posttraumatische Gonarthrose, beidseitig;1;0;0
+M17.3;Sonstige posttraumatische Gonarthrose;1;0;0
+M17.5;Sonstige sekundäre Gonarthrose;1;0;0
+M17.9;Gonarthrose, nicht näher bezeichnet;1;1;0
+M18.1;Sonstige primäre Rhizarthrose;1;0;0
+M18.9;Rhizarthrose, nicht näher bezeichnet;1;0;0
+M19.01;Primäre Arthrose sonstiger Gelenke: Schulterregion [Klavikula, Skapula, Akromioklavikular-, Schulter-, Sternoklavikulargelenk];1;1;0
+M19.04;Primäre Arthrose sonstiger Gelenke: Hand [Finger, Handwurzel, Mittelhand, Gelenke zwischen diesen Knochen];0;1;0
+M19.05;Primäre Arthrose sonstiger Gelenke: Beckenregion und Oberschenkel [Becken, Femur, Gesäß, Hüfte, Hüftgelenk, Iliosakralgelenk];0;1;0
+M19.07;Primäre Arthrose sonstiger Gelenke: Knöchel und Fuß [Fußwurzel, Mittelfuß, Zehen, Sprunggelenk, sonstige Gelenke des Fußes];1;1;0
+M19.81;Sonstige näher bezeichnete Arthrose: Schulterregion [Klavikula, Skapula, Akromioklavikular-, Schulter-, Sternoklavikulargelenk];0;1;0
+M19.91;Arthrose, nicht näher bezeichnet: Schulterregion [Klavikula, Skapula, Akromioklavikular-, Schulter-, Sternoklavikulargelenk];1;1;0
+M19.94;Arthrose, nicht näher bezeichnet: Hand [Finger, Handwurzel, Mittelhand, Gelenke zwischen diesen Knochen];0;1;0
+M19.95;Arthrose, nicht näher bezeichnet: Beckenregion und Oberschenkel [Becken, Femur, Gesäß, Hüfte, Hüftgelenk, Iliosakralgelenk];0;1;0
+M19.97;Arthrose, nicht näher bezeichnet: Knöchel und Fuß [Fußwurzel, Mittelfuß, Zehen, Sprunggelenk, sonstige Gelenke des Fußes];1;1;0
+M19.99;Arthrose, nicht näher bezeichnet: Nicht näher bezeichnete Lokalisation;0;1;0
+M20.0;Deformität eines oder mehrerer Finger;0;1;0
+M20.1;Hallux valgus (erworben);1;1;0
+M20.2;Hallux rigidus;1;1;0
+M20.3;Sonstige Deformität der Großzehe (erworben);0;1;0
+M20.4;Sonstige Hammerzehe(n) (erworben);1;1;0
+M20.5;Sonstige Deformitäten der Zehe(n) (erworben);0;1;0
+M21.05;Valgusdeformität, anderenorts nicht klassifiziert: Beckenregion und Oberschenkel [Becken, Femur, Gesäß, Hüfte, Hüftgelenk, Iliosakralgelenk];0;1;0
+M21.06;Valgusdeformität, anderenorts nicht klassifiziert: Unterschenkel [Fibula, Tibia, Kniegelenk];1;1;0
+M21.16;Varusdeformität, anderenorts nicht klassifiziert: Unterschenkel [Fibula, Tibia, Kniegelenk];0;1;0
+M21.63;Erworbener Spreizfuß;0;1;0
+M21.75;Unterschiedliche Extremitätenlänge (erworben): Beckenregion und Oberschenkel [Becken, Femur, Gesäß, Hüfte, Hüftgelenk, Iliosakralgelenk];1;0;0
+M22.0;Habituelle Luxation der Patella;1;0;0
+M22.2;Krankheiten im Patellofemoralbereich;0;1;0
+M22.3;Sonstige Schädigungen der Patella;0;1;0
+M22.4;Chondromalacia patellae;1;1;0
+M22.8;Sonstige Krankheiten der Patella;0;1;0
+M22.9;Krankheit der Patella, nicht näher bezeichnet;0;1;0
+M23.21;Meniskusschädigung durch alten Riss oder alte Verletzung: Vorderhorn des Innenmeniskus;1;0;0
+M23.22;Meniskusschädigung durch alten Riss oder alte Verletzung: Hinterhorn des Innenmeniskus;1;0;0
+M23.29;Meniskusschädigung durch alten Riss oder alte Verletzung: Nicht näher bezeichneter Meniskus;1;0;0
+M23.30;Sonstige Meniskusschädigungen: Mehrere Lokalisationen;1;1;0
+M23.32;Sonstige Meniskusschädigungen: Hinterhorn des Innenmeniskus;1;1;0
+M23.33;Sonstige Meniskusschädigungen: Sonstiger und nicht näher bezeichneter Teil des Innenmeniskus;1;1;0
+M23.34;Sonstige Meniskusschädigungen: Vorderhorn des Außenmeniskus;1;1;0
+M23.35;Sonstige Meniskusschädigungen: Hinterhorn des Außenmeniskus;1;1;0
+M23.36;Sonstige Meniskusschädigungen: Sonstiger und nicht näher bezeichneter Teil des Außenmeniskus;0;1;0
+M23.39;Sonstige Meniskusschädigungen: Nicht näher bezeichneter Meniskus;1;1;0
+M23.4;Freier Gelenkkörper im Kniegelenk;1;1;0
+M23.51;Chronische Instabilität des Kniegelenkes: Vorderes Kreuzband;1;0;0
+M23.61;Sonstige Spontanruptur eines oder mehrerer Bänder des Kniegelenkes: Vorderes Kreuzband;1;0;0
+M23.80;Sonstige Binnenschädigungen des Kniegelenkes: Mehrere Lokalisationen;0;1;0
+M23.81;Sonstige Binnenschädigungen des Kniegelenkes: Vorderes Kreuzband;1;1;0
+M23.89;Sonstige Binnenschädigungen des Kniegelenkes: Nicht näher bezeichnetes Band;0;1;0
+M23.90;Binnenschädigung des Kniegelenkes, nicht näher bezeichnet: Mehrere Lokalisationen;1;1;0
+M23.99;Binnenschädigung des Kniegelenkes, nicht näher bezeichnet: Nicht näher bezeichnetes Band oder nicht näher bezeichneter Meniskus;0;1;0
+M24.04;Freier Gelenkkörper: Hand [Finger, Handwurzel, Mittelhand, Gelenke zwischen diesen Knochen];0;1;0
+M24.05;Freier Gelenkkörper: Beckenregion und Oberschenkel [Becken, Femur, Gesäß, Hüfte, Hüftgelenk, Iliosakralgelenk];0;1;0
+M24.25;Krankheiten der Bänder: Beckenregion und Oberschenkel [Becken, Femur, Gesäß, Hüfte, Hüftgelenk, Iliosakralgelenk];1;1;0
+M24.55;Gelenkkontraktur: Beckenregion und Oberschenkel [Becken, Femur, Gesäß, Hüfte, Hüftgelenk, Iliosakralgelenk];1;1;0
+M24.56;Gelenkkontraktur: Unterschenkel [Fibula, Tibia, Kniegelenk];0;1;0
+M24.59;Gelenkkontraktur: Nicht näher bezeichnete Lokalisation;0;1;0
+M24.65;Ankylose eines Gelenkes: Beckenregion und Oberschenkel [Becken, Femur, Gesäß, Hüfte, Hüftgelenk, Iliosakralgelenk];0;1;0
+M24.66;Ankylose eines Gelenkes: Unterschenkel [Fibula, Tibia, Kniegelenk];1;1;0
+M24.85;Sonstige näher bezeichnete Gelenkschädigungen, anderenorts nicht klassifiziert: Beckenregion und Oberschenkel [Becken, Femur, Gesäß, Hüfte, Hüftgelenk, Iliosakralgelenk];1;1;0
+M25.37;Sonstige Instabilität eines Gelenkes: Knöchel und Fuß [Fußwurzel, Mittelfuß, Zehen, Sprunggelenk, sonstige Gelenke des Fußes];1;1;0
+M25.46;Gelenkerguss: Unterschenkel [Fibula, Tibia, Kniegelenk];0;1;0
+M25.50;Gelenkschmerz: Mehrere Lokalisationen;0;1;0
+M25.51;Gelenkschmerz: Schulterregion [Klavikula, Skapula, Akromioklavikular-, Schulter-, Sternoklavikulargelenk];0;1;0
+M25.55;Gelenkschmerz: Beckenregion und Oberschenkel [Becken, Femur, Gesäß, Hüfte, Hüftgelenk, Iliosakralgelenk];0;1;0
+M25.56;Gelenkschmerz: Unterschenkel [Fibula, Tibia, Kniegelenk];0;1;0
+M25.57;Gelenkschmerz: Knöchel und Fuß [Fußwurzel, Mittelfuß, Zehen, Sprunggelenk, sonstige Gelenke des Fußes];0;1;0
+M25.58;Gelenkschmerz: Sonstige [Hals, Kopf, Rippen, Rumpf, Schädel, Wirbelsäule];0;1;0
+M25.59;Gelenkschmerz: Nicht näher bezeichnete Lokalisation;0;1;0
+M25.61;Gelenksteife, anderenorts nicht klassifiziert: Schulterregion [Klavikula, Skapula, Akromioklavikular-, Schulter-, Sternoklavikulargelenk];1;1;0
+M25.75;Osteophyt: Beckenregion und Oberschenkel [Becken, Femur, Gesäß, Hüfte, Hüftgelenk, Iliosakralgelenk];0;1;0
+M25.76;Osteophyt: Unterschenkel [Fibula, Tibia, Kniegelenk];0;1;0
+M25.85;Sonstige näher bezeichnete Gelenkkrankheiten: Beckenregion und Oberschenkel [Becken, Femur, Gesäß, Hüfte, Hüftgelenk, Iliosakralgelenk];0;1;0
+M35.3;Polymyalgia rheumatica;0;1;0
+M40.00;Kyphose als Haltungsstörung: Mehrere Lokalisationen der Wirbelsäule;0;1;0
+M41.86;Sonstige Formen der Skoliose: Lumbalbereich;0;1;0
+M41.96;Skoliose, nicht näher bezeichnet: Lumbalbereich;0;1;0
+M42.10;Osteochondrose der Wirbelsäule beim Erwachsenen: Mehrere Lokalisationen der Wirbelsäule;0;1;0
+M42.12;Osteochondrose der Wirbelsäule beim Erwachsenen: Zervikalbereich;0;1;0
+M42.16;Osteochondrose der Wirbelsäule beim Erwachsenen: Lumbalbereich;1;1;0
+M42.17;Osteochondrose der Wirbelsäule beim Erwachsenen: Lumbosakralbereich;0;1;0
+M42.92;Osteochondrose der Wirbelsäule, nicht näher bezeichnet: Zervikalbereich;0;1;0
+M42.96;Osteochondrose der Wirbelsäule, nicht näher bezeichnet: Lumbalbereich;0;1;0
+M42.97;Osteochondrose der Wirbelsäule, nicht näher bezeichnet: Lumbosakralbereich;0;1;0
+M43.16;Spondylolisthesis: Lumbalbereich;0;1;0
+M43.17;Spondylolisthesis: Lumbosakralbereich;0;1;0
+M43.26;Sonstige Wirbelfusion: Lumbalbereich;0;1;0
+M45.09;Spondylitis ankylosans: Nicht näher bezeichnete Lokalisation;0;1;0
+M47.16;Sonstige Spondylose mit Myelopathie: Lumbalbereich;0;1;0
+M47.20;Sonstige Spondylose mit Radikulopathie: Mehrere Lokalisationen der Wirbelsäule;0;1;0
+M47.22;Sonstige Spondylose mit Radikulopathie: Zervikalbereich;1;1;0
+M47.26;Sonstige Spondylose mit Radikulopathie: Lumbalbereich;1;1;0
+M47.27;Sonstige Spondylose mit Radikulopathie: Lumbosakralbereich;0;1;0
+M47.80;Sonstige Spondylose: Mehrere Lokalisationen der Wirbelsäule;0;1;0
+M47.82;Sonstige Spondylose: Zervikalbereich;1;1;0
+M47.86;Sonstige Spondylose: Lumbalbereich;1;1;0
+M47.87;Sonstige Spondylose: Lumbosakralbereich;0;1;0
+M47.99;Spondylose, nicht näher bezeichnet: Nicht näher bezeichnete Lokalisation;0;1;0
+M48.00;Spinal(kanal)stenose: Mehrere Lokalisationen der Wirbelsäule;0;1;0
+M48.02;Spinal(kanal)stenose: Zervikalbereich;1;1;0
+M48.06;Spinal(kanal)stenose: Lumbalbereich;1;1;0
+M48.07;Spinal(kanal)stenose: Lumbosakralbereich;0;1;0
+M48.09;Spinal(kanal)stenose: Nicht näher bezeichnete Lokalisation;0;1;0
+M48.26;Baastrup-Syndrom: Lumbalbereich;0;1;0
+M48.80;Sonstige näher bezeichnete Spondylopathien: Mehrere Lokalisationen der Wirbelsäule;0;1;0
+M50.1;Zervikaler Bandscheibenschaden mit Radikulopathie;1;1;0
+M50.2;Sonstige zervikale Bandscheibenverlagerung;0;1;0
+M51.0;Lumbale und sonstige Bandscheibenschäden mit Myelopathie;0;1;0
+M51.1;Lumbale und sonstige Bandscheibenschäden mit Radikulopathie;1;1;0
+M51.2;Sonstige näher bezeichnete Bandscheibenverlagerung;1;1;0
+M51.3;Sonstige näher bezeichnete Bandscheibendegeneration;1;1;0
+M53.0;Zervikozephales Syndrom;0;1;0
+M53.1;Zervikobrachial-Syndrom;1;1;0
+M53.26;Instabilität der Wirbelsäule: Lumbalbereich;0;1;0
+M54.10;Radikulopathie: Mehrere Lokalisationen der Wirbelsäule;0;1;0
+M54.12;Radikulopathie: Zervikalbereich;1;1;0
+M54.15;Radikulopathie: Thorakolumbalbereich;0;1;0
+M54.16;Radikulopathie: Lumbalbereich;1;1;0
+M54.17;Radikulopathie: Lumbosakralbereich;1;1;0
+M54.19;Radikulopathie: Nicht näher bezeichnete Lokalisation;0;1;0
+M54.2;Zervikalneuralgie;1;1;0
+M54.3;Ischialgie;0;1;0
+M54.4;Lumboischialgie;1;1;0
+M54.5;Kreuzschmerz;1;1;0
+M54.80;Sonstige Rückenschmerzen: Mehrere Lokalisationen der Wirbelsäule;1;1;0
+M54.82;Sonstige Rückenschmerzen: Zervikalbereich;1;0;0
+M54.85;Sonstige Rückenschmerzen: Thorakolumbalbereich;1;0;0
+M54.86;Sonstige Rückenschmerzen: Lumbalbereich;1;1;0
+M54.87;Sonstige Rückenschmerzen: Lumbosakralbereich;1;0;0
+M54.89;Sonstige Rückenschmerzen: Nicht näher bezeichnete Lokalisation;0;1;0
+M62.08;Muskeldiastase: Sonstige [Hals, Kopf, Rippen, Rumpf, Schädel, Wirbelsäule];1;0;0
+M62.88;Sonstige näher bezeichnete Muskelkrankheiten: Sonstige [Hals, Kopf, Rippen, Rumpf, Schädel, Wirbelsäule];0;1;0
+M62.98;Muskelkrankheit, nicht näher bezeichnet: Sonstige [Hals, Kopf, Rippen, Rumpf, Schädel, Wirbelsäule];0;1;0
+M62.99;Muskelkrankheit, nicht näher bezeichnet: Nicht näher bezeichnete Lokalisation;0;1;0
+M65.29;Tendinitis calcarea: Nicht näher bezeichnete Lokalisation;0;1;0
+M65.3;Schnellender Finger;0;1;0
+M65.4;Tendovaginitis stenosans [de Quervain];0;1;0
+M65.84;Sonstige Synovitis und Tenosynovitis: Hand [Finger, Handwurzel, Mittelhand, Gelenke zwischen diesen Knochen];0;1;0
+M65.85;Sonstige Synovitis und Tenosynovitis: Beckenregion und Oberschenkel [Becken, Femur, Gesäß, Hüfte, Hüftgelenk, Iliosakralgelenk];0;1;0
+M65.86;Sonstige Synovitis und Tenosynovitis: Unterschenkel [Fibula, Tibia, Kniegelenk];1;1;0
+M65.89;Sonstige Synovitis und Tenosynovitis: Nicht näher bezeichnete Lokalisation;0;1;0
+M65.91;Synovitis und Tenosynovitis, nicht näher bezeichnet: Schulterregion [Klavikula, Skapula, Akromioklavikular-, Schulter-, Sternoklavikulargelenk];0;1;0
+M65.95;Synovitis und Tenosynovitis, nicht näher bezeichnet: Beckenregion und Oberschenkel [Becken, Femur, Gesäß, Hüfte, Hüftgelenk, Iliosakralgelenk];0;1;0
+M65.96;Synovitis und Tenosynovitis, nicht näher bezeichnet: Unterschenkel [Fibula, Tibia, Kniegelenk];0;1;0
+M67.21;Hypertrophie der Synovialis, anderenorts nicht klassifiziert: Schulterregion [Klavikula, Skapula, Akromioklavikular-, Schulter-, Sternoklavikulargelenk];0;1;0
+M67.46;Ganglion: Unterschenkel [Fibula, Tibia, Kniegelenk];0;1;0
+M67.86;Sonstige näher bezeichnete Krankheiten der Synovialis und der Sehnen: Unterschenkel [Fibula, Tibia, Kniegelenk];0;1;0
+M70.4;Bursitis praepatellaris;0;1;0
+M70.6;Bursitis trochanterica;0;1;0
+M71.2;Synovialzyste im Bereich der Kniekehle [Baker-Zyste];0;1;0
+M72.0;Fibromatose der Palmarfaszie [Dupuytren-Kontraktur];1;0;0
+M75.0;Adhäsive Entzündung der Schultergelenkkapsel;0;1;0
+M75.1;Läsionen der Rotatorenmanschette;1;1;0
+M75.2;Tendinitis des M. biceps brachii;1;1;0
+M75.3;Tendinitis calcarea im Schulterbereich;1;1;0
+M75.4;Impingement-Syndrom der Schulter;1;1;0
+M75.5;Bursitis im Schulterbereich;0;1;0
+M75.8;Sonstige Schulterläsionen;0;1;0
+M76.6;Tendinitis der Achillessehne;0;1;0
+M76.8;Sonstige Enthesopathien der unteren Extremität mit Ausnahme des Fußes;0;1;0
+M77.3;Kalkaneussporn;1;0;0
+M77.4;Metatarsalgie;0;1;0
+M79.00;Rheumatismus, nicht näher bezeichnet: Mehrere Lokalisationen;0;1;0
+M79.09;Rheumatismus, nicht näher bezeichnet: Nicht näher bezeichnete Lokalisation;0;1;0
+M79.10;Myalgie: Mehrere Lokalisationen;0;1;0
+M79.18;Myalgie: Sonstige [Hals, Kopf, Rippen, Rumpf, Schädel, Wirbelsäule];0;1;0
+M79.46;Hypertrophie des Corpus adiposum (infrapatellare) [Hoffa-Kastert-Syndrom]: Unterschenkel [Fibula, Tibia, Kniegelenk];0;1;0
+M79.65;Schmerzen in den Extremitäten: Beckenregion und Oberschenkel [Becken, Femur, Gesäß, Hüfte, Hüftgelenk, Iliosakralgelenk];0;1;0
+M79.70;Fibromyalgie: Mehrere Lokalisationen;0;1;0
+M80.08;Postmenopausale Osteoporose mit pathologischer Fraktur: Sonstige [Hals, Kopf, Rippen, Rumpf, Schädel, Wirbelsäule];0;1;0
+M80.88;Sonstige Osteoporose mit pathologischer Fraktur: Sonstige [Hals, Kopf, Rippen, Rumpf, Schädel, Wirbelsäule];0;1;0
+M81.00;Postmenopausale Osteoporose: Mehrere Lokalisationen;0;1;0
+M81.88;Sonstige Osteoporose: Sonstige [Hals, Kopf, Rippen, Rumpf, Schädel, Wirbelsäule];0;1;0
+M81.99;Osteoporose, nicht näher bezeichnet: Nicht näher bezeichnete Lokalisation;0;1;0
+M84.86;Sonstige Veränderungen der Knochenkontinuität: Unterschenkel [Fibula, Tibia, Kniegelenk];0;1;0
+M85.65;Sonstige Knochenzyste: Beckenregion und Oberschenkel [Becken, Femur, Gesäß, Hüfte, Hüftgelenk, Iliosakralgelenk];0;1;0
+M85.66;Sonstige Knochenzyste: Unterschenkel [Fibula, Tibia, Kniegelenk];0;1;0
+M85.68;Sonstige Knochenzyste: Sonstige [Hals, Kopf, Rippen, Rumpf, Schädel, Wirbelsäule];0;1;0
+M85.86;Sonstige näher bezeichnete Veränderungen der Knochendichte und -struktur: Unterschenkel [Fibula, Tibia, Kniegelenk];0;1;0
+M86.68;Sonstige chronische Osteomyelitis: Sonstige [Hals, Kopf, Rippen, Rumpf, Schädel, Wirbelsäule];0;1;0
+M87.05;Idiopathische aseptische Knochennekrose: Beckenregion und Oberschenkel [Becken, Femur, Gesäß, Hüfte, Hüftgelenk, Iliosakralgelenk];1;1;0
+M87.85;Sonstige Knochennekrose: Beckenregion und Oberschenkel [Becken, Femur, Gesäß, Hüfte, Hüftgelenk, Iliosakralgelenk];1;1;0
+M87.95;Knochennekrose, nicht näher bezeichnet: Beckenregion und Oberschenkel [Becken, Femur, Gesäß, Hüfte, Hüftgelenk, Iliosakralgelenk];0;1;0
+M89.55;Osteolyse: Beckenregion und Oberschenkel [Becken, Femur, Gesäß, Hüfte, Hüftgelenk, Iliosakralgelenk];0;1;0
+M89.97;Knochenkrankheit, nicht näher bezeichnet: Knöchel und Fuß [Fußwurzel, Mittelfuß, Zehen, Sprunggelenk, sonstige Gelenke des Fußes];1;1;0
+M94.25;Chondromalazie: Beckenregion und Oberschenkel [Becken, Femur, Gesäß, Hüfte, Hüftgelenk, Iliosakralgelenk];0;1;0
+M94.26;Chondromalazie: Unterschenkel [Fibula, Tibia, Kniegelenk];1;1;0
+M94.85;Sonstige näher bezeichnete Knorpelkrankheiten: Beckenregion und Oberschenkel [Becken, Femur, Gesäß, Hüfte, Hüftgelenk, Iliosakralgelenk];0;1;0
+M94.86;Sonstige näher bezeichnete Knorpelkrankheiten: Unterschenkel [Fibula, Tibia, Kniegelenk];0;1;0
+M95.0;Erworbene Deformität der Nase;1;1;0
+M96.1;Postlaminektomie-Syndrom, anderenorts nicht klassifiziert;0;1;0
+M99.53;Stenose des Spinalkanals durch Bandscheiben: Lumbalbereich [lumbosakral];0;1;0
+M99.63;Stenose der Foramina intervertebralia, knöchern oder durch Subluxation: Lumbalbereich [lumbosakral];0;1;0
+M99.71;Stenose der Foramina intervertebralia, bindegewebig oder durch Bandscheiben: Zervikalbereich [zervikothorakal];0;1;0
+M99.73;Stenose der Foramina intervertebralia, bindegewebig oder durch Bandscheiben: Lumbalbereich [lumbosakral];0;1;0
+M99.81;Sonstige biomechanische Funktionsstörungen: Zervikalbereich [zervikothorakal];0;1;0
+M99.83;Sonstige biomechanische Funktionsstörungen: Lumbalbereich [lumbosakral];0;1;0
+M99.84;Sonstige biomechanische Funktionsstörungen: Sakralbereich [sakrokokzygeal, sakroiliakal];0;1;0
+N08.3;Glomeruläre Krankheiten bei Diabetes mellitus;0;1;0
+N10;Akute tubulointerstitielle Nephritis;1;1;0
+N13.0;Hydronephrose bei ureteropelviner Obstruktion;1;1;0
+N13.1;Hydronephrose bei Ureterstriktur, anderenorts nicht klassifiziert;1;1;0
+N13.2;Hydronephrose bei Obstruktion durch Nieren- und Ureterstein;1;1;0
+N13.3;Sonstige und nicht näher bezeichnete Hydronephrose;1;1;0
+N13.5;Abknickung und Striktur des Ureters ohne Hydronephrose;1;1;0
+N13.6;Pyonephrose;1;1;0
+N13.9;Obstruktive Uropathie und Refluxuropathie, nicht näher bezeichnet;0;1;0
+N18.2;Chronische Nierenkrankheit, Stadium 2;0;1;0
+N18.3;Chronische Nierenkrankheit, Stadium 3;0;1;0
+N18.4;Chronische Nierenkrankheit, Stadium 4;0;1;0
+N18.5;Chronische Nierenkrankheit, Stadium 5;0;1;0
+N18.9;Chronische Nierenkrankheit, nicht näher bezeichnet;0;1;0
+N19;Nicht näher bezeichnete Niereninsuffizienz;0;1;0
+N20.0;Nierenstein;1;1;0
+N20.1;Ureterstein;1;1;0
+N20.2;Nierenstein und Ureterstein gleichzeitig;1;0;0
+N21.0;Stein in der Harnblase;1;1;0
+N23;Nicht näher bezeichnete Nierenkolik;1;1;0
+N26;Schrumpfniere, nicht näher bezeichnet;0;1;0
+N27.0;Kleine Niere unbekannter Ursache, einseitig;0;1;0
+N28.1;Zyste der Niere;0;1;0
+N28.8;Sonstige näher bezeichnete Krankheiten der Niere und des Ureters;0;1;0
+N30.0;Akute Zystitis;1;1;0
+N30.1;Interstitielle Zystitis (chronisch);1;0;0
+N30.2;Sonstige chronische Zystitis;1;1;0
+N30.8;Sonstige Zystitis;1;1;0
+N30.9;Zystitis, nicht näher bezeichnet;1;1;0
+N32.0;Blasenhalsobstruktion;1;1;0
+N32.3;Harnblasendivertikel;0;1;0
+N32.8;Sonstige näher bezeichnete Krankheiten der Harnblase;1;1;0
+N34.1;Unspezifische Urethritis;0;1;0
+N34.2;Sonstige Urethritis;0;1;0
+N35.8;Sonstige Harnröhrenstriktur;1;1;0
+N35.9;Harnröhrenstriktur, nicht näher bezeichnet;1;1;0
+N36.2;Harnröhrenkarunkel;1;0;0
+N39.0;Harnwegsinfektion, Lokalisation nicht näher bezeichnet;1;1;0
+N39.3;Belastungsinkontinenz [Stressinkontinenz];1;1;0
+N39.41;Überlaufinkontinenz;1;1;0
+N39.42;Dranginkontinenz;0;1;0
+N40;Prostatahyperplasie;1;1;0
+N41.0;Akute Prostatitis;1;0;0
+N41.1;Chronische Prostatitis;0;1;0
+N41.3;Prostatazystitis;1;0;0
+N41.9;Entzündliche Krankheit der Prostata, nicht näher bezeichnet;1;1;0
+N42.0;Prostatastein;0;1;0
+N42.1;Kongestion und Blutung der Prostata;0;1;0
+N42.9;Krankheit der Prostata, nicht näher bezeichnet;0;1;0
+N43.0;Funikulozele;1;1;0
+N43.2;Sonstige Hydrozele;1;0;0
+N43.3;Hydrozele, nicht näher bezeichnet;1;1;0
+N43.4;Spermatozele;1;1;0
+N44.0;Hodentorsion;1;0;0
+N45.0;Orchitis, Epididymitis und Epididymoorchitis mit Abszess;1;0;0
+N45.9;Orchitis, Epididymitis und Epididymoorchitis ohne Abszess;1;1;0
+N46;Sterilität beim Mann;0;1;0
+N47;Vorhauthypertrophie, Phimose und Paraphimose;0;1;0
+N49.2;Entzündliche Krankheiten des Skrotums;1;0;0
+N50.8;Sonstige näher bezeichnete Krankheiten der männlichen Genitalorgane;0;1;0
+N70.1;Chronische Salpingitis und Oophoritis;1;0;0
+N72;Entzündliche Krankheit der Cervix uteri;0;1;0
+N73.6;Peritoneale Adhäsionen im weiblichen Becken;1;1;0
+N80.0;Endometriose des Uterus;1;1;0
+N80.1;Endometriose des Ovars;1;1;0
+N80.3;Endometriose des Beckenperitoneums;1;1;0
+N81.1;Zystozele;0;1;0
+N81.2;Partialprolaps des Uterus und der Vagina;1;1;0
+N81.3;Totalprolaps des Uterus und der Vagina;1;0;0
+N81.4;Uterovaginalprolaps, nicht näher bezeichnet;1;1;0
+N81.5;Vaginale Enterozele;0;1;0
+N81.6;Rektozele;0;1;0
+N83.0;Follikelzyste des Ovars;1;1;0
+N83.1;Zyste des Corpus luteum;1;0;0
+N83.2;Sonstige und nicht näher bezeichnete Ovarialzysten;1;1;0
+N84.0;Polyp des Corpus uteri;0;1;0
+N85.0;Glanduläre Hyperplasie des Endometriums;0;1;0
+N85.2;Hypertrophie des Uterus;1;1;0
+N86;Erosion und Ektropium der Cervix uteri;0;1;0
+N92.0;Zu starke oder zu häufige Menstruation bei regelmäßigem Menstruationszyklus;1;1;0
+N92.1;Zu starke oder zu häufige Menstruation bei unregelmäßigem Menstruationszyklus;1;1;0
+N94.5;Sekundäre Dysmenorrhoe;0;1;0
+N94.6;Dysmenorrhoe, nicht näher bezeichnet;0;1;0
+N97.1;Sterilität tubaren Ursprungs bei der Frau;0;1;0
+N99.1;Harnröhrenstriktur nach medizinischen Maßnahmen;1;1;0
+N99.8;Sonstige Krankheiten des Urogenitalsystems nach medizinischen Maßnahmen;1;0;0
+O09.1;Schwangerschaftsdauer: 5 bis 13 vollendete Wochen;0;1;0
+O09.2;Schwangerschaftsdauer: 14. Woche bis 19 vollendete Wochen;0;1;0
+O09.3;Schwangerschaftsdauer: 20. Woche bis 25 vollendete Wochen;0;1;0
+O09.4;Schwangerschaftsdauer: 26. Woche bis 33 vollendete Wochen;0;1;0
+O09.5;Schwangerschaftsdauer: 34. Woche bis 36 vollendete Wochen;0;1;0
+O09.6;Schwangerschaftsdauer: 37. Woche bis 41 vollendete Wochen;0;1;0
+O09.7;Schwangerschaftsdauer: Mehr als 41 vollendete Wochen;0;1;0
+O13;Gestationshypertonie [schwangerschaftsinduzierte Hypertonie];1;1;0
+O14.0;Leichte bis mäßige Präeklampsie;0;1;0
+O14.9;Präeklampsie, nicht näher bezeichnet;1;0;0
+O20.0;Drohender Abort;1;1;0
+O20.8;Sonstige Blutung in der Frühschwangerschaft;1;1;0
+O20.9;Blutung in der Frühschwangerschaft, nicht näher bezeichnet;1;0;0
+O21.0;Leichte Hyperemesis gravidarum;1;1;0
+O21.1;Hyperemesis gravidarum mit Stoffwechselstörung;1;1;0
+O21.2;Späterbrechen während der Schwangerschaft;1;0;0
+O23.3;Infektionen von sonstigen Teilen der Harnwege in der Schwangerschaft;1;1;0
+O23.4;Nicht näher bezeichnete Infektion der Harnwege in der Schwangerschaft;1;0;0
+O23.5;Infektionen des Genitaltraktes in der Schwangerschaft;0;1;0
+O24.4;Diabetes mellitus, während der Schwangerschaft auftretend;1;1;0
+O25;Fehl- und Mangelernährung in der Schwangerschaft;0;1;0
+O26.81;Nierenkrankheit, mit der Schwangerschaft verbunden;1;1;0
+O26.88;Sonstige näher bezeichnete Zustände, die mit der Schwangerschaft verbunden sind;1;1;0
+O28.8;Sonstige abnorme Befunde bei der pränatalen Screeninguntersuchung der Mutter;1;1;0
+O32.1;Betreuung der Mutter wegen Beckenendlage;1;1;0
+O32.4;Betreuung der Mutter bei Nichteintreten des Kopfes zum Termin;1;1;0
+O33.4;Betreuung der Mutter wegen Missverhältnis bei kombinierter mütterlicher und fetaler Ursache;1;1;0
+O34.2;Betreuung der Mutter bei Uterusnarbe durch vorangegangenen chirurgischen Eingriff;1;1;0
+O34.38;Betreuung der Mutter bei sonstiger Zervixinsuffizienz;1;1;0
+O34.39;Betreuung der Mutter bei Zervixinsuffizienz, nicht näher bezeichnet;1;1;0
+O36.0;Betreuung der Mutter wegen Rhesus-Isoimmunisierung;1;1;0
+O36.5;Betreuung der Mutter wegen fetaler Wachstumsretardierung;1;1;0
+O36.6;Betreuung der Mutter wegen fetaler Hypertrophie;0;1;0
+O41.0;Oligohydramnion;1;1;0
+O42.0;Vorzeitiger Blasensprung, Wehenbeginn innerhalb von 24 Stunden;1;1;0
+O42.9;Vorzeitiger Blasensprung, nicht näher bezeichnet;0;1;0
+O43.8;Sonstige pathologische Zustände der Plazenta;0;1;0
+O47.1;Frustrane Kontraktionen ab 37 oder mehr vollendeten Schwangerschaftswochen;1;0;0
+O48;Übertragene Schwangerschaft;1;1;0
+O60.0;Vorzeitige Wehen ohne Entbindung;1;1;0
+O60.1;Vorzeitige spontane Wehen mit vorzeitiger Entbindung;1;1;0
+O61.0;Misslungene medikamentöse Geburtseinleitung;1;1;0
+O62.0;Primäre Wehenschwäche;1;1;0
+O62.1;Sekundäre Wehenschwäche;1;1;0
+O62.2;Sonstige Wehenschwäche;1;1;0
+O63.0;Protrahiert verlaufende Eröffnungsperiode (bei der Geburt);1;1;0
+O63.1;Protrahiert verlaufende Austreibungsperiode (bei der Geburt);0;1;0
+O64.0;Geburtshindernis durch unvollständige Drehung des kindlichen Kopfes;1;1;0
+O64.1;Geburtshindernis durch Beckenendlage;1;1;0
+O64.3;Geburtshindernis durch Stirnlage;0;1;0
+O64.4;Geburtshindernis durch Querlage;0;1;0
+O65.4;Geburtshindernis durch Missverhältnis zwischen Fetus und Becken, nicht näher bezeichnet;1;1;0
+O65.5;Geburtshindernis durch Anomalie der mütterlichen Beckenorgane;1;1;0
+O66.0;Geburtshindernis durch Schulterdystokie;1;1;0
+O66.2;Geburtshindernis durch ungewöhnlich großen Fetus;0;1;0
+O66.8;Sonstiges näher bezeichnetes Geburtshindernis;1;1;0
+O68.0;Komplikationen bei Wehen und Entbindung durch abnorme fetale Herzfrequenz;1;1;0
+O68.1;Komplikationen bei Wehen und Entbindung durch Mekonium im Fruchtwasser;1;1;0
+O68.2;Komplikationen bei Wehen und Entbindung durch abnorme fetale Herzfrequenz mit Mekonium im Fruchtwasser;1;1;0
+O69.1;Komplikationen bei Wehen und Entbindung durch Nabelschnurumschlingung des Halses mit Kompression der Nabelschnur;1;1;0
+O69.2;Komplikationen bei Wehen und Entbindung durch sonstige Nabelschnurverschlingung, mit Kompression;1;1;0
+O69.3;Komplikationen bei Wehen und Entbindung durch zu kurze Nabelschnur;1;1;0
+O69.8;Komplikationen bei Wehen und Entbindung durch sonstige Nabelschnurkomplikationen;1;1;0
+O69.9;Komplikation bei Wehen und Entbindung durch Nabelschnurkomplikation, nicht näher bezeichnet;1;1;0
+O70.0;Dammriss 1. Grades unter der Geburt;1;1;0
+O70.1;Dammriss 2. Grades unter der Geburt;1;1;0
+O70.2;Dammriss 3. Grades unter der Geburt;1;1;0
+O71.4;Hoher Scheidenriss unter der Geburt;1;1;0
+O71.8;Sonstige näher bezeichnete Verletzungen unter der Geburt;1;1;0
+O72.0;Blutung in der Nachgeburtsperiode;0;1;0
+O72.1;Sonstige unmittelbar postpartal auftretende Blutung;0;1;0
+O75.6;Protrahierte Geburt nach spontanem oder nicht näher bezeichnetem Blasensprung;1;1;0
+O75.7;Vaginale Entbindung nach vorangegangener Schnittentbindung;1;1;0
+O75.8;Sonstige näher bezeichnete Komplikationen bei Wehentätigkeit und Entbindung;1;1;0
+O80;Spontangeburt eines Einlings;1;1;0
+O81;Geburt eines Einlings durch Zangen- oder Vakuumextraktion;1;1;0
+O82;Geburt eines Einlings durch Schnittentbindung [Sectio caesarea];1;1;0
+O87.2;Hämorrhoiden im Wochenbett;1;1;0
+O90.8;Sonstige Wochenbettkomplikationen, anderenorts nicht klassifiziert;0;1;0
+O92.10;Rhagade der Brustwarze im Zusammenhang mit der Gestation: Ohne Angabe von Schwierigkeiten beim Anlegen;0;1;0
+O92.50;Hemmung der Laktation: Ohne Angabe von Schwierigkeiten beim Anlegen;0;1;0
+O98.5;Sonstige Viruskrankheiten, die Schwangerschaft, Geburt und Wochenbett komplizieren;0;1;0
+O98.8;Sonstige infektiöse und parasitäre Krankheiten der Mutter, die Schwangerschaft, Geburt und Wochenbett komplizieren;1;0;0
+O99.0;Anämie, die Schwangerschaft, Geburt und Wochenbett kompliziert;1;1;0
+O99.1;Sonstige Krankheiten des Blutes und der blutbildenden Organe sowie bestimmte Störungen mit Beteiligung des Immunsystems, die Schwangerschaft, Geburt und Wochenbett komplizieren;0;1;0
+O99.2;Endokrine, Ernährungs- und Stoffwechselkrankheiten, die Schwangerschaft, Geburt und Wochenbett komplizieren;0;1;0
+O99.4;Krankheiten des Kreislaufsystems, die Schwangerschaft, Geburt und Wochenbett komplizieren;1;1;0
+O99.5;Krankheiten des Atmungssystems, die Schwangerschaft, Geburt und Wochenbett komplizieren;1;1;0
+O99.6;Krankheiten des Verdauungssystems, die Schwangerschaft, Geburt und Wochenbett komplizieren;1;0;0
+O99.8;Sonstige näher bezeichnete Krankheiten und Zustände, die Schwangerschaft, Geburt und Wochenbett komplizieren;1;1;0
+P05.0;Für das Gestationsalter zu leichte Neugeborene;1;0;0
+P05.1;Für das Gestationsalter zu kleine Neugeborene;1;0;0
+P07.3;Sonstige vor dem Termin Geborene;1;1;0
+P08.0;Übergewichtige Neugeborene;1;0;0
+P08.1;Sonstige für das Gestationsalter zu schwere Neugeborene;1;1;0
+P08.2;Nach dem Termin Geborenes, nicht zu schwer für das Gestationsalter;1;0;0
+P12.0;Kephalhämatom durch Geburtsverletzung;1;0;0
+P12.8;Sonstige Geburtsverletzungen der behaarten Kopfhaut;1;0;0
+P13.4;Klavikulafraktur durch Geburtsverletzung;1;0;0
+P15.8;Sonstige näher bezeichnete Geburtsverletzungen;1;0;0
+P21.0;Schwere Asphyxie unter der Geburt;1;0;0
+P21.1;Leichte oder mäßige Asphyxie unter der Geburt;1;0;0
+P39.1;Konjunktivitis und Dakryozystitis beim Neugeborenen;1;0;0
+P39.8;Sonstige näher bezeichnete Infektionen, die für die Perinatalperiode spezifisch sind;1;0;0
+P54.5;Hautblutung beim Neugeborenen;1;0;0
+P55.8;Sonstige hämolytische Krankheiten beim Fetus und Neugeborenen;1;0;0
+P59.0;Neugeborenenikterus in Verbindung mit vorzeitiger Geburt;1;0;0
+P59.8;Neugeborenenikterus durch sonstige näher bezeichnete Ursachen;1;0;0
+P59.9;Neugeborenenikterus, nicht näher bezeichnet;1;0;0
+P80.8;Sonstige Hypothermie beim Neugeborenen;0;1;0
+P83.8;Sonstige näher bezeichnete Krankheitszustände der Haut, die für den Fetus und das Neugeborene spezifisch sind;1;0;0
+P92.5;Schwierigkeit beim Neugeborenen bei Brusternährung;1;0;0
+P96.8;Sonstige näher bezeichnete Zustände, die ihren Ursprung in der Perinatalperiode haben;1;0;0
+Q18.0;Branchiogene(r) Sinus, Fistel und Zyste;1;0;0
+Q18.8;Sonstige näher bezeichnete angeborene Fehlbildungen des Gesichtes und des Halses;1;0;0
+Q38.1;Ankyloglosson;1;1;0
+Q38.5;Angeborene Fehlbildungen des Gaumens, anderenorts nicht klassifiziert;0;1;0
+Q43.8;Sonstige näher bezeichnete angeborene Fehlbildungen des Darmes;0;1;0
+Q50.4;Embryonale Zyste der Tuba uterina;0;1;0
+Q61.0;Angeborene solitäre Nierenzyste;0;1;0
+Q63.1;Gelappte Niere, verschmolzene Niere und Hufeisenniere;0;1;0
+Q65.8;Sonstige angeborene Deformitäten der Hüfte;0;1;0
+Q66.2;Pes adductus (congenitus);1;0;0
+Q66.8;Sonstige angeborene Deformitäten der Füße;1;1;0
+Q67.4;Sonstige angeborene Deformitäten des Schädels, des Gesichtes und des Kiefers;0;1;0
+Q72.4;Longitudinaler Reduktionsdefekt des Femurs;1;0;0
+Q72.5;Longitudinaler Reduktionsdefekt der Tibia;0;1;0
+Q72.6;Longitudinaler Reduktionsdefekt der Fibula;0;1;0
+R00.0;Tachykardie, nicht näher bezeichnet;0;1;0
+R00.1;Bradykardie, nicht näher bezeichnet;0;1;0
+R04.0;Epistaxis;1;1;0
+R04.1;Blutung aus dem Rachen;0;1;0
+R05;Husten;0;1;0
+R06.0;Dyspnoe;0;1;0
+R06.5;Mundatmung;1;1;0
+R06.7;Niesen;0;1;0
+R06.88;Sonstige und nicht näher bezeichnete Störungen der Atmung;0;1;0
+R07.0;Halsschmerzen;0;1;0
+R07.3;Sonstige Brustschmerzen;0;1;0
+R07.4;Brustschmerzen, nicht näher bezeichnet;0;1;0
+R10.1;Schmerzen im Bereich des Oberbauches;0;1;0
+R10.3;Schmerzen mit Lokalisation in anderen Teilen des Unterbauches;0;1;0
+R10.4;Sonstige und nicht näher bezeichnete Bauchschmerzen;0;1;0
+R11;Übelkeit und Erbrechen;0;1;0
+R12;Sodbrennen;0;1;0
+R13.0;Dysphagie mit Beaufsichtigungspflicht während der Nahrungsaufnahme;0;1;0
+R13.9;Sonstige und nicht näher bezeichnete Dysphagie;0;1;0
+R14;Flatulenz und verwandte Zustände;0;1;0
+R15;Stuhlinkontinenz;0;1;0
+R20.1;Hypästhesie der Haut;0;1;0
+R20.2;Parästhesie der Haut;0;1;0
+R20.8;Sonstige und nicht näher bezeichnete Sensibilitätsstörungen der Haut;0;1;0
+R22.0;Lokalisierte Schwellung, Raumforderung und Knoten der Haut und der Unterhaut am Kopf;0;1;0
+R22.1;Lokalisierte Schwellung, Raumforderung und Knoten der Haut und der Unterhaut am Hals;0;1;0
+R22.2;Lokalisierte Schwellung, Raumforderung und Knoten der Haut und der Unterhaut am Rumpf;0;1;0
+R22.3;Lokalisierte Schwellung, Raumforderung und Knoten der Haut und der Unterhaut an den oberen Extremitäten;0;1;0
+R22.4;Lokalisierte Schwellung, Raumforderung und Knoten der Haut und der Unterhaut an den unteren Extremitäten;0;1;0
+R22.9;Lokalisierte Schwellung, Raumforderung und Knoten der Haut und der Unterhaut, nicht näher bezeichnet;0;1;0
+R25.2;Krämpfe und Spasmen der Muskulatur;0;1;0
+R26.3;Immobilität;0;1;0
+R26.8;Sonstige und nicht näher bezeichnete Störungen des Ganges und der Mobilität;0;1;0
+R29.6;Sturzneigung, anderenorts nicht klassifiziert;0;1;0
+R30.0;Dysurie;0;1;0
+R30.1;Tenesmus vesicae;0;1;0
+R31;Nicht näher bezeichnete Hämaturie;1;1;0
+R32;Nicht näher bezeichnete Harninkontinenz;0;1;0
+R33;Harnverhaltung;1;1;0
+R35;Polyurie;0;1;0
+R39.1;Sonstige Miktionsstörungen;1;1;0
+R41.0;Orientierungsstörung, nicht näher bezeichnet;0;1;0
+R42;Schwindel und Taumel;0;1;0
+R43.0;Anosmie;0;1;0
+R47.0;Dysphasie und Aphasie;0;1;0
+R47.8;Sonstige und nicht näher bezeichnete Sprech- und Sprachstörungen;0;1;0
+R50.80;Fieber unbekannter Ursache;0;1;0
+R50.88;Sonstiges näher bezeichnetes Fieber;0;1;0
+R50.9;Fieber, nicht näher bezeichnet;0;1;0
+R51;Kopfschmerz;0;1;0
+R52.0;Akuter Schmerz;0;1;0
+R52.1;Chronischer unbeeinflussbarer Schmerz;0;1;0
+R52.2;Sonstiger chronischer Schmerz;0;1;0
+R52.9;Schmerz, nicht näher bezeichnet;0;1;0
+R53;Unwohlsein und Ermüdung;0;1;0
+R55;Synkope und Kollaps;0;1;0
+R60.0;Umschriebenes Ödem;0;1;0
+R63.0;Anorexie;0;1;0
+R63.3;Ernährungsprobleme und unsachgemäße Ernährung;0;1;0
+R63.4;Abnorme Gewichtsabnahme;0;1;0
+R77.80;Veränderung des prostataspezifischen Antigens [PSA];0;1;0
+R82.7;Abnorme Befunde bei der mikrobiologischen Urinuntersuchung;0;1;0
+S00.1;Prellung des Augenlides und der Periokularregion;0;1;0
+S02.2;Nasenbeinfraktur;1;1;0
+S02.3;Fraktur des Orbitabodens;0;1;0
+S02.4;Fraktur des Jochbeins und des Oberkiefers;1;0;0
+S02.60;Unterkieferfraktur: Teil nicht näher bezeichnet;1;0;0
+S02.69;Unterkieferfraktur: Mehrere Teile;1;0;0
+S04.3;Verletzung des N. trigeminus;0;1;0
+S22.06;Fraktur eines Brustwirbels: T11 und T12;0;1;0
+S43.01;Luxation des Humerus nach vorne;1;1;0
+S46.0;Verletzung der Muskeln und der Sehnen der Rotatorenmanschette;1;1;0
+S51.84;Weichteilschaden I. Grades bei geschlossener Fraktur oder Luxation des Unterarmes;0;1;0
+S51.85;Weichteilschaden II. Grades bei geschlossener Fraktur oder Luxation des Unterarmes;0;1;0
+S52.51;Distale Fraktur des Radius: Extensionsfraktur;1;0;0
+S70.82;Sonstige oberflächliche Verletzungen der Hüfte und des Oberschenkels: Blasenbildung (nichtthermisch);0;1;0
+S76.1;Verletzung des Muskels und der Sehne des M. quadriceps femoris;1;0;0
+S83.2;Meniskusriss, akut;1;1;0
+S83.50;Verstauchung und Zerrung des Kniegelenkes: Nicht näher bezeichnetes Kreuzband;1;0;0
+S83.53;Verstauchung und Zerrung des Kniegelenkes: Riss des vorderen Kreuzbandes;1;1;0
+S86.0;Verletzung der Achillessehne;1;0;0
+S91.84;Weichteilschaden I. Grades bei geschlossener Fraktur oder Luxation des Fußes;0;1;0
+T14.02;Oberflächliche Verletzung an einer nicht näher bezeichneten Körperregion: Blasenbildung (nichtthermisch);0;1;0
+T78.1;Sonstige Nahrungsmittelunverträglichkeit, anderenorts nicht klassifiziert;0;1;0
+T78.4;Allergie, nicht näher bezeichnet;0;1;0
+T81.0;Blutung und Hämatom als Komplikation eines Eingriffes, anderenorts nicht klassifiziert;1;1;0
+T81.1;Schock während oder als Folge eines Eingriffes, anderenorts nicht klassifiziert;0;1;0
+T81.8;Sonstige Komplikationen bei Eingriffen, anderenorts nicht klassifiziert;0;1;0
+T83.0;Mechanische Komplikation durch einen Harnwegskatheter (Verweilkatheter);1;1;0
+T83.1;Mechanische Komplikation durch sonstige Geräte oder Implantate im Harntrakt;1;0;0
+T83.4;Mechanische Komplikation durch sonstige Prothesen, Implantate oder Transplantate im Genitaltrakt;0;1;0
+T83.5;Infektion und entzündliche Reaktion durch Prothese, Implantat oder Transplantat im Harntrakt;0;1;0
+T83.8;Sonstige Komplikationen durch Prothesen, Implantate oder Transplantate im Urogenitaltrakt;1;0;0
+T84.05;Mechanische Komplikation durch eine Gelenkendoprothese: Kniegelenk;1;0;0
+T85.2;Mechanische Komplikation durch eine intraokulare Linse;1;1;0
+T85.3;Mechanische Komplikation durch sonstige Augenprothesen, -implantate oder -transplantate;0;1;0
+T86.83;Versagen und Abstoßung: Hornhauttransplantat des Auges;1;1;0
+T88.2;Schock durch Anästhesie;0;1;0
+T88.4;Misslungene oder schwierige Intubation;0;1;0
+T88.5;Sonstige Komplikationen infolge Anästhesie;0;1;0
+T88.7;Nicht näher bezeichnete unerwünschte Nebenwirkung eines Arzneimittels oder einer Droge;0;1;0
+T88.8;Sonstige näher bezeichnete Komplikationen bei chirurgischen Eingriffen und medizinischer Behandlung, anderenorts nicht klassifiziert;0;1;0
+U50.00;Keine oder geringe motorische Funktionseinschränkung: Barthel-Index: 100 Punkte;0;1;0
+U50.10;Leichte motorische Funktionseinschränkung: Barthel-Index: 80-95 Punkte;0;1;0
+U50.20;Mittlere motorische Funktionseinschränkung: Barthel-Index: 60-75 Punkte;0;1;0
+U50.30;Mittelschwere motorische Funktionseinschränkung: Barthel-Index: 40-55 Punkte;0;1;0
+U50.40;Schwere motorische Funktionseinschränkung: Barthel-Index: 20-35 Punkte;0;1;0
+U50.50;Sehr schwere motorische Funktionseinschränkung: Barthel-Index: 0-15 Punkte;0;1;0
+U51.00;Keine oder leichte kognitive Funktionseinschränkung: Erweiterter Barthel-Index: 70-90 Punkte;0;1;0
+U69.12;Temporäre Blutgerinnungsstörung;0;1;0
+U80.00;Staphylococcus aureus mit Resistenz gegen Oxacillin oder Methicillin [MRSA];0;1;0
+U81.20;Escherichia coli mit Multiresistenz 3MRGN;0;1;0
+Y57.9;Komplikationen durch Arzneimittel oder Drogen;0;1;0
+Y69;Zwischenfälle bei chirurgischem Eingriff und medizinischer Behandlung;0;1;0
+Y84.9;Zwischenfälle durch medizinische Maßnahmen, nicht näher bezeichnet;0;1;0
+Z01.7;Laboruntersuchung;0;1;0
+Z03.1;Beobachtung bei Verdacht auf bösartige Neubildung;0;1;0
+Z03.3;Beobachtung bei Verdacht auf neurologische Krankheit;0;1;0
+Z03.4;Beobachtung bei Verdacht auf Herzinfarkt;0;1;0
+Z03.8;Beobachtung bei sonstigen Verdachtsfällen;0;1;0
+Z03.9;Beobachtung bei Verdachtsfall, nicht näher bezeichnet;0;1;0
+Z04.8;Untersuchung und Beobachtung aus sonstigen näher bezeichneten Gründen;0;1;0
+Z11;Spezielle Verfahren zur Untersuchung auf infektiöse und parasitäre Krankheiten;0;1;0
+Z12.2;Spezielle Verfahren zur Untersuchung auf Neubildung der Atmungsorgane;0;1;0
+Z21;Asymptomatische HIV-Infektion [Humane Immundefizienz-Virusinfektion];0;1;0
+Z22.3;Keimträger anderer näher bezeichneter bakterieller Krankheiten;0;1;0
+Z22.5;Keimträger der Virushepatitis;0;1;0
+Z27.4;Notwendigkeit der Impfung gegen Masern-Mumps-Röteln [MMR];0;1;0
+Z29.0;Isolierung als prophylaktische Maßnahme;0;1;0
+Z29.21;Systemische prophylaktische Chemotherapie;0;1;0
+Z29.28;Sonstige prophylaktische Chemotherapie;0;1;0
+Z29.8;Sonstige näher bezeichnete prophylaktische Maßnahmen;0;1;0
+Z30.2;Sterilisierung;0;1;0
+Z35.0;Überwachung einer Schwangerschaft bei Infertilitätsanamnese;0;1;0
+Z35.1;Überwachung einer Schwangerschaft bei Abortanamnese;0;1;0
+Z35.4;Überwachung einer Schwangerschaft bei ausgeprägter Multiparität;0;1;0
+Z35.5;Überwachung einer älteren Erstschwangeren;0;1;0
+Z37.0;Lebendgeborener Einling;0;1;0
+Z38.0;Einling, Geburt im Krankenhaus;1;1;0
+Z43.0;Versorgung eines Tracheostomas;0;1;0
+Z43.3;Versorgung eines Kolostomas;0;1;0
+Z43.5;Versorgung eines Zystostomas;0;1;0
+Z43.6;Versorgung sonstiger künstlicher Körperöffnungen des Harntraktes;0;1;0
+Z45.1;Anpassung und Handhabung einer Infusionspumpe;0;1;0
+Z45.9;Anpassung und Handhabung eines implantierten medizinischen Gerätes, nicht näher bezeichnet;0;1;0
+Z46.3;Versorgen mit und Anpassen einer Zahnprothese;0;1;0
+Z46.6;Versorgen mit und Anpassen eines Gerätes im Harntrakt;0;1;0
+Z46.7;Versorgen mit und Anpassen eines orthopädischen Hilfsmittels;0;1;0
+Z47.0;Entfernung einer Metallplatte oder einer anderen inneren Fixationsvorrichtung;0;1;0
+Z48.0;Kontrolle von Verbänden und Nähten;0;1;0
+Z48.8;Sonstige näher bezeichnete Nachbehandlung nach chirurgischem Eingriff;0;1;0
+Z48.9;Nachbehandlung nach chirurgischem Eingriff, nicht näher bezeichnet;0;1;0
+Z50.1;Sonstige Physiotherapie;0;1;0
+Z53;Personen, die Einrichtungen des Gesundheitswesens wegen spezifischer Maßnahmen aufgesucht haben, die aber nicht durchgeführt wurden;0;1;0
+Z60;Kontaktanlässe mit Bezug auf die soziale Umgebung;0;1;0
+Z74.0;Probleme mit Bezug auf: Hilfsbedürftigkeit wegen eingeschränkter Mobilität;0;1;0
+Z74.1;Probleme mit Bezug auf: Notwendigkeit der Hilfestellung bei der Körperpflege;0;1;0
+Z74.2;Probleme mit Bezug auf: Notwendigkeit der Hilfeleistung im Haushalt, wenn kein anderer Haushaltsangehöriger die Betreuung übernehmen kann;0;1;0
+Z75.8;Sonstige Probleme mit Bezug auf medizinische Betreuungsmöglichkeiten oder andere Gesundheitsversorgung;0;1;0
+Z83.3;Diabetes mellitus in der Familienanamnese;1;1;0
+Z85.0;Bösartige Neubildung der Verdauungsorgane in der Eigenanamnese;0;1;0
+Z85.1;Bösartige Neubildung der Trachea, der Bronchien oder der Lunge in der Eigenanamnese;0;1;0
+Z85.3;Bösartige Neubildung der Brustdrüse [Mamma] in der Eigenanamnese;0;1;0
+Z85.4;Bösartige Neubildung der Genitalorgane in der Eigenanamnese;0;1;0
+Z85.5;Bösartige Neubildung der Harnorgane in der Eigenanamnese;0;1;0
+Z85.7;Andere bösartige Neubildungen des lymphatischen, blutbildenden oder verwandten Gewebes in der Eigenanamnese;0;1;0
+Z85.8;Bösartige Neubildungen sonstiger Organe oder Systeme in der Eigenanamnese;0;1;0
+Z86.1;Infektiöse oder parasitäre Krankheiten in der Eigenanamnese;0;1;0
+Z86.6;Krankheiten des Nervensystems oder der Sinnesorgane in der Eigenanamnese;0;1;0
+Z86.7;Krankheiten des Kreislaufsystems in der Eigenanamnese;0;1;0
+Z87.0;Krankheiten des Atmungssystems in der Eigenanamnese;0;1;0
+Z87.1;Krankheiten des Verdauungssystems in der Eigenanamnese;0;1;0
+Z87.4;Krankheiten des Urogenitalsystems in der Eigenanamnese;0;1;0
+Z87.5;Komplikationen der Schwangerschaft, der Geburt und des Wochenbettes in der Eigenanamnese;0;1;0
+Z87.8;Sonstige näher bezeichnete Krankheiten oder Zustände in der Eigenanamnese;0;1;0
+Z88.0;Allergie gegenüber Penicillin in der Eigenanamnese;0;1;0
+Z88.1;Allergie gegenüber anderen Antibiotika in der Eigenanamnese;0;1;0
+Z88.6;Allergie gegenüber Analgetikum in der Eigenanamnese;0;1;0
+Z88.8;Allergie gegenüber sonstigen Arzneimitteln, Drogen oder biologisch aktiven Substanzen in der Eigenanamnese;0;1;0
+Z88.9;Allergie gegenüber nicht näher bezeichneten Arzneimitteln, Drogen oder biologisch aktiven Substanzen in der Eigenanamnese;0;1;0
+Z90.4;Verlust anderer Teile des Verdauungstraktes;0;1;0
+Z90.5;Verlust der Niere(n);0;1;0
+Z90.6;Verlust anderer Teile des Harntraktes;0;1;0
+Z90.7;Verlust eines oder mehrerer Genitalorgane;0;1;0
+Z91.0;Allergie, ausgenommen Allergie gegenüber Arzneimitteln, Drogen oder biologisch aktiven Substanzen, in der Eigenanamnese;0;1;0
+Z91.1;Nichtbefolgung ärztlicher Anordnungen [Non-compliance] in der Eigenanamnese;0;1;0
+Z92.1;Dauertherapie (gegenwärtig) mit Antikoagulanzien in der Eigenanamnese;0;1;0
+Z92.2;Dauertherapie (gegenwärtig) mit anderen Arzneimitteln in der Eigenanamnese;0;1;0
+Z92.3;Bestrahlung in der Eigenanamnese;0;1;0
+Z92.4;Größerer operativer Eingriff in der Eigenanamnese, anderenorts nicht klassifiziert;0;1;0
+Z92.6;Zytostatische Chemotherapie wegen bösartiger Neubildung in der Eigenanamnese;0;1;0
+Z93.3;Vorhandensein eines Kolostomas;0;1;0
+Z93.5;Vorhandensein eines Zystostomas;0;1;0
+Z94.7;Zustand nach Keratoplastik;0;1;0
+Z95.0;Vorhandensein eines kardialen elektronischen Geräts;0;1;0
+Z95.1;Vorhandensein eines aortokoronaren Bypasses;0;1;0
+Z95.2;Vorhandensein einer künstlichen Herzklappe;0;1;0
+Z95.3;Vorhandensein einer xenogenen Herzklappe;0;1;0
+Z95.4;Vorhandensein eines anderen Herzklappenersatzes;0;1;0
+Z95.5;Vorhandensein eines Implantates oder Transplantates nach koronarer Gefäßplastik;0;1;0
+Z95.81;Vorhandensein eines operativ implantierten vaskulären Katheterverweilsystems;0;1;0
+Z95.88;Vorhandensein von sonstigen kardialen oder vaskulären Implantaten oder Transplantaten;0;1;0
+Z96.0;Vorhandensein von urogenitalen Implantaten;0;1;0
+Z96.1;Vorhandensein eines intraokularen Linsenimplantates;0;1;0
+Z96.60;Vorhandensein einer Schulterprothese;0;1;0
+Z96.64;Vorhandensein einer Hüftgelenkprothese;0;1;0
+Z96.65;Vorhandensein einer Kniegelenkprothese;0;1;0
+Z96.68;Vorhandensein von sonstigen näher bezeichneten orthopädischen Gelenkimplantaten;0;1;0
+Z97.8;Vorhandensein sonstiger und nicht näher bezeichneter medizinischer Geräte oder Hilfsmittel;0;1;0
+Z98.0;Zustand nach intestinalem Bypass oder intestinaler Anastomose;0;1;0
+Z98.1;Zustand nach Arthrodese;0;1;0
+Z98.8;Sonstige näher bezeichnete Zustände nach chirurgischen Eingriffen;0;1;0
+Z99.1;Abhängigkeit (langzeitig) vom Respirator;0;1;0
+Z99.3;Langzeitige Abhängigkeit vom Rollstuhl;0;1;0
+Z99.8;Langzeitige Abhängigkeit von sonstigen unterstützenden Apparaten, medizinischen Geräten oder Hilfsmitteln;0;1;0
+Z99.9;Langzeitige Abhängigkeit von einem nicht näher bezeichneten unterstützenden Apparat, medizinischen Gerät oder Hilfsmittel;0;1;0
