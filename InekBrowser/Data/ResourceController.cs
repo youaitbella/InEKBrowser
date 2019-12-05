@@ -6,9 +6,9 @@ using System.Text;
 namespace org.inek.InekBrowser.Data {
     class ResourceController {
 
-        private const string PEPP_RESOURCE_FILES_HASH = "1FD8C7403715D78CEADBDBD9E7BE962AA66229E7812F1A6D1F41115372B3";
-        private const string DRG_RESOURCE_FILES_HASH = "9129612EDD3912A857072B2204A99F2BB26680AC4E276DE513F4D35EF3";
-        private const string P21_RESOURCE_FILES_HASH = "A6FA6274BD33F072823334137171CFA9BD8888DE695810E6508D504EBB7493";
+        private const string PEPP_RESOURCE_FILES_HASH = "70D2AF69B35DEFBA49E48566F615C1F23B76EF1A76CA0164648ACEAF608DC6";
+        private const string DRG_RESOURCE_FILES_HASH = "5576F749D534DD030C275A12EB9B5AD1760FA8C1CA230BDD55745132EEE213";
+        private const string P21_RESOURCE_FILES_HASH = "3D1ED865B936AD10DAE58A9CCDB196B4E174DAFC866FD70EE18117E231C436C";
 
         public enum DrgResourceFilesIndex {
             Drg,
@@ -70,60 +70,60 @@ namespace org.inek.InekBrowser.Data {
         public static string RESOURCE_DIR = @"Data\";
 
         public static string[] DRG_RESOURCE_FILES = {
-                                                        "RepBrDrg_17_19_Drg.csv",
-                                                        "RepBrDrg_17_19_Kostenbereich.csv",
-                                                        "RepBrDrg_BA_17_19_Hauptdiagnose.csv",
-                                                        "RepBrDrg_BA_17_19_Kopfdaten.csv",
-                                                        "RepBrDrg_BA_17_19_Kosten.csv",
-                                                        "RepBrDrg_BA_17_19_Mdc.csv",
-                                                        "RepBrDrg_BA_17_19_Nebendiagnosen.csv",
-                                                        "RepBrDrg_BA_17_19_Prozeduren.csv",
-                                                        "RepBrDrg_BA_17_19_Recherche.csv",
-                                                        "RepBrDrg_HA_17_19_Hauptdiagnose.csv",
-                                                        "RepBrDrg_HA_17_19_Kopfdaten.csv",
-                                                        "RepBrDrg_HA_17_19_Kosten.csv",
-                                                        "RepBrDrg_HA_17_19_Mdc.csv",
-                                                        "RepBrDrg_HA_17_19_Nebendiagnosen.csv",
-                                                        "RepBrDrg_HA_17_19_Prozeduren.csv",
-                                                        "RepBrDrg_HA_17_19_Recherche.csv"
+                                                        "RepBrDrg_18_20_Drg.csv",
+                                                        "RepBrDrg_18_20_Kostenbereich.csv",
+                                                        "RepBrDrg_BA_18_20_Hauptdiagnose.csv",
+                                                        "RepBrDrg_BA_18_20_Kopfdaten.csv",
+                                                        "RepBrDrg_BA_18_20_Kosten.csv",
+                                                        "RepBrDrg_BA_18_20_Mdc.csv",
+                                                        "RepBrDrg_BA_18_20_Nebendiagnosen.csv",
+                                                        "RepBrDrg_BA_18_20_Prozeduren.csv",
+                                                        "RepBrDrg_BA_18_20_Recherche.csv",
+                                                        "RepBrDrg_HA_18_20_Hauptdiagnose.csv",
+                                                        "RepBrDrg_HA_18_20_Kopfdaten.csv",
+                                                        "RepBrDrg_HA_18_20_Kosten.csv",
+                                                        "RepBrDrg_HA_18_20_Mdc.csv",
+                                                        "RepBrDrg_HA_18_20_Nebendiagnosen.csv",
+                                                        "RepBrDrg_HA_18_20_Prozeduren.csv",
+                                                        "RepBrDrg_HA_18_20_Recherche.csv"
                                                     };
 
         public static string[] PEPP_RESOURCE_FILES = {
-                                                     "RepBrPepp_17_19_Hauptdiagnose.csv", 
-                                                     "RepBrPepp_17_19_Kopfdaten.csv",
-                                                     "RepBrPepp_17_19_Kosten.csv", 
-                                                     "RepBrPepp_17_19_Kostenbereich.csv",
-                                                     "RepBrPepp_17_19_Nebendiagnosen.csv", 
-                                                     "RepBrPepp_17_19_Pepp.csv",
-                                                     "RepBrPepp_17_19_Prozeduren.csv", 
-                                                     "RepBrPepp_17_19_Recherche.csv",
-                                                     "RepBrPepp_17_19_Strukturkategorie.csv",
-                                                     "RepBrPepp_17_19_Katalog.csv"
+                                                     "RepBrPepp_18_20_Hauptdiagnose.csv", 
+                                                     "RepBrPepp_18_20_Kopfdaten.csv",
+                                                     "RepBrPepp_18_20_Kosten.csv", 
+                                                     "RepBrPepp_18_20_Kostenbereich.csv",
+                                                     "RepBrPepp_18_20_Nebendiagnosen.csv", 
+                                                     "RepBrPepp_18_20_Pepp.csv",
+                                                     "RepBrPepp_18_20_Prozeduren.csv", 
+                                                     "RepBrPepp_18_20_Recherche.csv",
+                                                     "RepBrPepp_18_20_Strukturkategorie.csv",
+                                                     "RepBrPepp_18_20_Katalog.csv"
                                                  };
 
         public static string[] P21_RESOURCE_FILES = {
-                                                        "P21BrDrg_TS_17_18_Hauptdiagnose.csv",
-                                                        "P21BrDrg_TS_17_18_Kopfdaten.csv",
-                                                        "P21BrDrg_TS_17_18_Mdc.csv",
-                                                        "P21BrDrg_TS_17_18_Nebendiagnosen.csv",
-                                                        "P21BrDrg_TS_17_18_Prozeduren.csv",
-                                                        "P21BrDrg_TS_17_18_Recherche.csv",
+                                                        "P21BrDrg_TS_18_19_Hauptdiagnose.csv",
+                                                        "P21BrDrg_TS_18_19_Kopfdaten.csv",
+                                                        "P21BrDrg_TS_18_19_Mdc.csv",
+                                                        "P21BrDrg_TS_18_19_Nebendiagnosen.csv",
+                                                        "P21BrDrg_TS_18_19_Prozeduren.csv",
+                                                        "P21BrDrg_TS_18_19_Recherche.csv",
 
-                                                        "P21BrDrg_HA_17_18_Hauptdiagnose.csv",
-                                                        "P21BrDrg_HA_17_18_Prozeduren.csv",
-                                                        "P21BrDrg_HA_17_18_Kopfdaten.csv",
-                                                        "P21BrDrg_HA_17_18_Mdc.csv",
-                                                        "P21BrDrg_HA_17_18_Nebendiagnosen.csv",
-                                                        "P21BrDrg_HA_17_18_Recherche.csv",
+                                                        "P21BrDrg_HA_18_19_Hauptdiagnose.csv",
+                                                        "P21BrDrg_HA_18_19_Prozeduren.csv",
+                                                        "P21BrDrg_HA_18_19_Kopfdaten.csv",
+                                                        "P21BrDrg_HA_18_19_Mdc.csv",
+                                                        "P21BrDrg_HA_18_19_Nebendiagnosen.csv",
+                                                        "P21BrDrg_HA_18_19_Recherche.csv",
 
-                                                        "P21BrDrg_BA_17_18_Hauptdiagnose.csv",
-                                                        "P21BrDrg_BA_17_18_Kopfdaten.csv",
-                                                        "P21BrDrg_BA_17_18_Mdc.csv",
-                                                        "P21BrDrg_BA_17_18_Nebendiagnosen.csv",
-                                                        "P21BrDrg_BA_17_18_Prozeduren.csv",
-                                                        "P21BrDrg_BA_17_18_Recherche.csv",
+                                                        "P21BrDrg_BA_18_19_Hauptdiagnose.csv",
+                                                        "P21BrDrg_BA_18_19_Kopfdaten.csv",
+                                                        "P21BrDrg_BA_18_19_Mdc.csv",
+                                                        "P21BrDrg_BA_18_19_Nebendiagnosen.csv",
+                                                        "P21BrDrg_BA_18_19_Prozeduren.csv",
+                                                        "P21BrDrg_BA_18_19_Recherche.csv",
 
-                                                        "P21BrDrg_17_18_Drg.csv"
+                                                        "P21BrDrg_18_19_Drg.csv"
                                                     };
 
         public static string[] DRG_RESOURCE_HEADERS = {

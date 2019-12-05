@@ -8,14 +8,14 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>P21Browser</RootNamespace>
-    <AssemblyName>G-DRG-Browser 2017_2018</AssemblyName>
+    <AssemblyName>G-DRG-Browser 2018_2019</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
-    <IsWebBootstrapper>true</IsWebBootstrapper>
-    <PublishUrl>D:\tmp\DrgBrowser\</PublishUrl>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\vFileserver01\company%24\Common\Datenbrowser\Par21Browser\GDRG_V2019_Browser_Par21_2018\Prüfung\</PublishUrl>
     <Install>true</Install>
-    <InstallFrom>Web</InstallFrom>
+    <InstallFrom>Unc</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
@@ -23,11 +23,11 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>http://download.g-drg.de/DrgBrowser/2019/</InstallUrl>
-    <ProductName>G-DRG-Browser 2017_2018</ProductName>
+    <InstallUrl>\\vFileserver01\company%24\Common\Datenbrowser\Par21Browser\GDRG_V2019_Browser_Par21_2018\Prüfung\</InstallUrl>
+    <ProductName>G-DRG-Browser 2018_2019</ProductName>
     <PublisherName>Institut für das Entgeltsystem im Krankenhaus GmbH %28InEK%29</PublisherName>
     <SuiteName>G-DRG-Browser</SuiteName>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>2</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -229,6 +229,63 @@
     </Content>
     <Content Include="Data\2019\P21BrDrg_TS_17_18_Recherche.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2020\P21BrDrg_18_19_Drg.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2020\P21BrDrg_BA_18_19_Hauptdiagnose.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2020\P21BrDrg_BA_18_19_Kopfdaten.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2020\P21BrDrg_BA_18_19_Mdc.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2020\P21BrDrg_BA_18_19_Nebendiagnosen.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2020\P21BrDrg_BA_18_19_Prozeduren.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2020\P21BrDrg_BA_18_19_Recherche.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2020\P21BrDrg_HA_18_19_Hauptdiagnose.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2020\P21BrDrg_HA_18_19_Kopfdaten.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2020\P21BrDrg_HA_18_19_Mdc.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2020\P21BrDrg_HA_18_19_Nebendiagnosen.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2020\P21BrDrg_HA_18_19_Prozeduren.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2020\P21BrDrg_HA_18_19_Recherche.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2020\P21BrDrg_TS_18_19_Hauptdiagnose.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2020\P21BrDrg_TS_18_19_Kopfdaten.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2020\P21BrDrg_TS_18_19_Mdc.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2020\P21BrDrg_TS_18_19_Nebendiagnosen.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2020\P21BrDrg_TS_18_19_Prozeduren.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2020\P21BrDrg_TS_18_19_Recherche.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="P21Browser_TemporaryKey.pfx" />
     <Content Include="Print\cmll2200.chm">

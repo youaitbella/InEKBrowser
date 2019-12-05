@@ -5,7 +5,6 @@ using System.Globalization;
 using System.IO;
 using System.Security;
 using System.Windows.Forms;
-using Irony.Parsing;
 using org.inek.InekBrowser.Data.Entities;
 
 namespace org.inek.InekBrowser.Data {

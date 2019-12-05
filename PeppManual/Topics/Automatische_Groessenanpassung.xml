@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
-<topic template="Default" lasteditedby="lautenti" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+<topic template="Default" lasteditedby="aitbellayo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
   <title translate="true">Automatische Größenanpassung</title>
   <body>
     <header>
@@ -29,7 +29,7 @@
     <para styleclass="Image Caption"><image src="WindowsDpiSetting.png" scale="100.00%" styleclass="Image Caption"></image></para>
     <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Windows-Dialog DPI-Einstellung</text></para>
     <para styleclass="Normal"></para>
-    <para styleclass="Normal"><text styleclass="Normal" translate="true">Auch hier können Sie die die gewünschte Größe in Prozent auswählen. Zusätzlich bietet dieser Dialog ein Ankreuzfeld</text><text styleclass="Normal" style="font-style:italic;" translate="true"> DPI-Skalierung im Stil von Windows XP verwenden</text><text styleclass="Normal" translate="true">. Achten Sie darauf, dass diese Einstellung </text><text styleclass="Normal" style="font-weight:bold;" translate="true">nicht</text><text styleclass="Normal" translate="true"> aktiviert ist!</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Auch hier können Sie die gewünschte Größe in Prozent auswählen. Zusätzlich bietet dieser Dialog ein Ankreuzfeld</text><text styleclass="Normal" style="font-style:italic;" translate="true"> DPI-Skalierung im Stil von Windows XP verwenden</text><text styleclass="Normal" translate="true">. Achten Sie darauf, dass diese Einstellung </text><text styleclass="Normal" style="font-weight:bold;" translate="true">nicht</text><text styleclass="Normal" translate="true"> aktiviert ist!</text></para>
     <para styleclass="Normal"></para>
     <para styleclass="Normal"><text styleclass="Normal" translate="true">Sollte bei Ihnen die Vergrößerung im XP-Stil aktiviert sein, erhalten Sie beim Start des </text><var styleclass="Normal">&lt;%TITLE2%&gt;s</var><text styleclass="Normal" translate="true"> einen entsprechenden Hinweis.</text></para>
     <para styleclass="Normal"></para>

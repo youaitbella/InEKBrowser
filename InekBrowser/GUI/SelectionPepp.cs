@@ -127,8 +127,8 @@ namespace org.inek.InekBrowser.GUI {
                     .Recherche.Where(sd => sd.SecondaryDiagnosis == 1)
                     .Select(sd => new {Sekundärdiagnose = sd.Code, Text = sd.Text});
             dlg.SetDataSource(q);
-            dlg.Text = "Sekundärdiagnosen";
-            dlg.KeyColumns = new[] {"Sekundärdiagnose"};
+            dlg.Text = "Nebendiagnosen";
+            dlg.KeyColumns = new[] { "Nebendiagnose" };
             if (dlg.ShowDialog() == DialogResult.OK) {
                 Parent.TextCode = "";
                 cbxMainDiagnosis.Text = "";

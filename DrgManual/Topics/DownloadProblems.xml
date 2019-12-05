@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
-<topic template="Default" lasteditedby="lautenti" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+<topic template="Default" lasteditedby="aitbellayo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
   <title translate="true">Probleme beim Download</title>
   <body>
     <header>
@@ -29,7 +29,7 @@
     </list>
     <para styleclass="Normal"></para>
     <para styleclass="Image Caption"><image src="Frameworkdir.png" scale="100.00%" styleclass="Image Caption"></image></para>
-    <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Suche des NET-Frameworks mittels Windows-Explorer</text></para>
+    <para styleclass="Image Caption"><var styleclass="Image Caption">&lt;%FIGURE%&gt;</var><text styleclass="Image Caption" translate="true"> Suche des .NET-Frameworks mittels Windows-Explorer</text></para>
     <para styleclass="Normal"></para>
     <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullet Text" style="font-family:Arial; font-size:11pt; color:#000000;">
       <li styleclass="Bullet Text"><text styleclass="Bullet Text" translate="true">Installieren Sie das .NET-Framework, sofern es nicht in einer 4er-Version vorhanden ist.</text><br/><text styleclass="Bullet Text" translate="true">Die Installation des Frameworks setzt entsprechende Rechte auf Ihrem PC voraus. Falls Sie nicht über diese Rechte verfügen, bitten Sie Ihre IT-Abteilung, die Installation durchzuführen.</text><br/><text styleclass="Bullet Text" translate="true">Für Windows XP ist nur die Version 4 verfügbar. Bei den neueren Windows-Versionen können Sie wahlweise Version 4 oder 4.5 installieren. Microsoft stellt neben dem Framework auch eine Installationsanleitung zur Verfügung, beispielsweise unter </text><link displaytype="text" defaultstyle="true" type="weblink" href="http://www.microsoft.com/de-de/download/details.aspx?id=39257" target="_blank" styleclass="Bullet Text" translate="true">http://www.microsoft.com/de-de/download/details.aspx?id=39257</link><text styleclass="Bullet Text" translate="true">.</text></li>

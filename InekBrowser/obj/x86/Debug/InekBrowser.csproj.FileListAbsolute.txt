@@ -66,9 +66,10 @@ D:\projects\InEKBrowser\InekBrowser\bin\x86\Debug\EntityFramework.dll
 D:\projects\InEKBrowser\InekBrowser\bin\x86\Debug\EntityFramework.SqlServer.dll
 D:\projects\InEKBrowser\InekBrowser\bin\x86\Debug\InekControls.dll
 D:\projects\InEKBrowser\InekBrowser\bin\x86\Debug\InekControls.pdb
+D:\projects\InEKBrowser\InekBrowser\bin\x86\Debug\InekControls.dll.config
 D:\projects\InEKBrowser\InekBrowser\bin\x86\Debug\EntityFramework.xml
 D:\projects\InEKBrowser\InekBrowser\bin\x86\Debug\EntityFramework.SqlServer.xml
-D:\projects\InEKBrowser\InekBrowser\obj\x86\Debug\InekBrowser.csprojResolveAssemblyReference.cache
+D:\projects\InEKBrowser\InekBrowser\obj\x86\Debug\InekBrowser.csprojAssemblyReference.cache
 D:\projects\InEKBrowser\InekBrowser\obj\x86\Debug\org.inek.InekBrowser.GUI.FrmAbout.resources
 D:\projects\InEKBrowser\InekBrowser\obj\x86\Debug\org.inek.InekBrowser.GUI.DrgData.resources
 D:\projects\InEKBrowser\InekBrowser\obj\x86\Debug\org.inek.InekBrowser.GUI.PeppData.resources
@@ -79,6 +80,8 @@ D:\projects\InEKBrowser\InekBrowser\obj\x86\Debug\org.inek.InekBrowser.GUI.Selec
 D:\projects\InEKBrowser\InekBrowser\obj\x86\Debug\org.inek.InekBrowser.GUI.SelectionPepp.resources
 D:\projects\InEKBrowser\InekBrowser\obj\x86\Debug\org.inek.InekBrowser.GUI.TitleBar.resources
 D:\projects\InEKBrowser\InekBrowser\obj\x86\Debug\org.inek.InekBrowser.Properties.Resources.resources
-D:\projects\InEKBrowser\InekBrowser\obj\x86\Debug\InekBrowser.csproj.GenerateResource.Cache
+D:\projects\InEKBrowser\InekBrowser\obj\x86\Debug\InekBrowser.csproj.GenerateResource.cache
+D:\projects\InEKBrowser\InekBrowser\obj\x86\Debug\InekBrowser.csproj.CoreCompileInputs.cache
+D:\projects\InEKBrowser\InekBrowser\obj\x86\Debug\InekBrowser.csproj.CopyComplete
 D:\projects\InEKBrowser\InekBrowser\obj\x86\Debug\InEK-Browser.dll
 D:\projects\InEKBrowser\InekBrowser\obj\x86\Debug\InEK-Browser.pdb

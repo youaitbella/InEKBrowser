@@ -132,9 +132,9 @@
       </tablestyleclass>
     </styleclasses>
     <config-group name="project">
-      <config-value name="title" translate="true">PEPP-Browser 2019</config-value>
+      <config-value name="title" translate="true">PEPP-Browser 2020</config-value>
       <config-value name="author" translate="true">InEK GmbH</config-value>
-      <config-value name="copyright" translate="true">© 2018 InEK GmbH, Siegburg</config-value>
+      <config-value name="copyright" translate="true">© 2019 InEK GmbH, Siegburg</config-value>
       <config-value name="versionmajor">2019</config-value>
       <config-value name="versionminor">1</config-value>
       <config-value name="lcid" translate="true">de-de</config-value>
@@ -181,7 +181,7 @@
       </config-group>
       <config-value name="make6include">EBOOK</config-value>
       <config-value name="make6status">*</config-value>
-      <config-value name="summary" translate="true">PEPP-Browser 2019</config-value>
+      <config-value name="summary" translate="true">PEPP-Browser 2020</config-value>
       <config-value name="versionbuild">0</config-value>
     </config-group>
     <config-group name="user">
@@ -217,6 +217,11 @@
       <config-group name="lautenti">
         <config-group name="project">
           <config-value name="lastexport">4</config-value>
+        </config-group>
+      </config-group>
+      <config-group name="aitbellayo">
+        <config-group name="project">
+          <config-value name="lastexport">0</config-value>
         </config-group>
       </config-group>
     </config-group>
@@ -482,24 +487,24 @@ nsrInit();
       <config-value name="insertseealso">0</config-value>
     </config-group>
     <variables>
-      <variable id="DOWNLOAD_LINK" type="text" translate="true">http://g-drg.de/PeppBrowser/2019/setup.exe</variable>
+      <variable id="DOWNLOAD_LINK" type="text" translate="true">http://g-drg.de/PeppBrowser/2020/setup.exe</variable>
       <variable id="FIGURE" type="text" translate="true">Abb. &lt;%FIGURE++%&gt;:</variable>
       <variable id="FIGURE++" type="text" translate="true">0</variable>
-      <variable id="FILE_CATALOGUE" type="text" translate="true">RepBrPepp_17_19_Katalog.csv</variable>
-      <variable id="FILE_COST" type="text" translate="true">PeppBr_17_19_Kosten.csv</variable>
-      <variable id="FILE_COST_DOMAIN" type="text" translate="true">PeppBr_17_19_Kostenbereich.csv</variable>
-      <variable id="FILE_HD" type="text" translate="true">PeppBr_17_19_Hauptdiagnose.csv</variable>
-      <variable id="FILE_HEADDATA" type="text" translate="true">PeppBr_17_19_Kopfdaten.csv</variable>
-      <variable id="FILE_ND" type="text" translate="true">PeppBr_17_19_Nebendiagnose.csv</variable>
-      <variable id="FILE_PEPP" type="text" translate="true">PeppBr_17_19_Pepp.csv</variable>
-      <variable id="FILE_PROC" type="text" translate="true">PeppBr_17_19_Prozeduren.csv</variable>
-      <variable id="FILE_RECHERCHE" type="text" translate="true">PeppBr_17_19_Recherche.csv</variable>
-      <variable id="FILE_SK" type="text" translate="true">PeppBr_17_19_Strukturkategorie.csv</variable>
+      <variable id="FILE_CATALOGUE" type="text" translate="true">RepBrPepp_18_20_Katalog.csv</variable>
+      <variable id="FILE_COST" type="text" translate="true">PeppBr_18_20_Kosten.csv</variable>
+      <variable id="FILE_COST_DOMAIN" type="text" translate="true">PeppBr_18_20_Kostenbereich.csv</variable>
+      <variable id="FILE_HD" type="text" translate="true">PeppBr_18_20_Hauptdiagnose.csv</variable>
+      <variable id="FILE_HEADDATA" type="text" translate="true">PeppBr_18_20_Kopfdaten.csv</variable>
+      <variable id="FILE_ND" type="text" translate="true">PeppBr_18_20_Nebendiagnose.csv</variable>
+      <variable id="FILE_PEPP" type="text" translate="true">PeppBr_18_20_Pepp.csv</variable>
+      <variable id="FILE_PROC" type="text" translate="true">PeppBr_18_20_Prozeduren.csv</variable>
+      <variable id="FILE_RECHERCHE" type="text" translate="true">PeppBr_18_20_Recherche.csv</variable>
+      <variable id="FILE_SK" type="text" translate="true">PeppBr_18_20_Strukturkategorie.csv</variable>
       <variable id="TITLE2" type="text" translate="true">PEPP-Browser</variable>
-      <variable id="DOWNLOAD" type="text" translate="true">http://g-drg.de/PeppBrowser/2019</variable>
-      <variable id="PEPP_VERSION" type="text" translate="true">2019</variable>
-      <variable id="OPS_VERSION" type="text" translate="true">2017</variable>
-      <variable id="ICD_VERSION" type="text" translate="true">2017</variable>
+      <variable id="DOWNLOAD" type="text" translate="true">http://g-drg.de/PeppBrowser/2020</variable>
+      <variable id="PEPP_VERSION" type="text" translate="true">2020</variable>
+      <variable id="OPS_VERSION" type="text" translate="true">2018</variable>
+      <variable id="ICD_VERSION" type="text" translate="true">2018</variable>
     </variables>
     <helpcontext-numbers/>
   </config>

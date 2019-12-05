@@ -73,7 +73,7 @@ namespace org.inek.InekBrowser.GUI {
                 pnlContentBackground.BackColor = BrowserColors.DrgBackgroundPanel;
                 peppData.BackColor = BrowserColors.DrgDataBackground;
                 peppData.ColorTextFields(BrowserColors.DrgDataTextField);
-                titleBar.Title = "G-DRG-Report-Browser " + Program.Year;
+                titleBar.Title = "aG-DRG-Report-Browser " + Program.Year;
                 tableLayoutPanel1.Controls.Remove(peppData);
                 tableLayoutPanel1.Controls.Remove(selectionPepp);
                 InitDrgSelection();
@@ -84,7 +84,7 @@ namespace org.inek.InekBrowser.GUI {
                 InitDrgData();
                 tabCosts.Text = "Kosten";
                 mnuCatalogue.Visible = false;
-                Text = "G-DRG-Report-Browser " + Program.Year;
+                Text = "aG-DRG-Report-Browser " + Program.Year;
                 helpProvider1.HelpNamespace = "DrgBrowser.chm";
             } else if (Program.SystemBrowser == Program.System.Pepp) {
                 titleBar.BackColor = BrowserColors.PeppTitleBar;
@@ -2088,7 +2088,7 @@ namespace org.inek.InekBrowser.GUI {
                 info.MdcCat = CsvData.Context().Mdcs.Where(mdc => mdc.MDC.Trim() == mdcTag).Select(mdc => mdc.Text).Single();
                 info.DrgTxt = cbxSystem.Text;
                 info.Devision = Department;
-                info.Browser = "G-DRG-Report-Browser " + Program.Year;
+                info.Browser = "aG-DRG-Report-Browser " + Program.Year;
                 var drgData = new SystemData(info);
                 var q2 = CsvData.Context().Mdcs.Where(mdc => mdc.MDC.Trim() == drgData.MDC.Trim());
                 drgData.casesMDC = q2.Select(mdc => mdc.CaseCount).Single();

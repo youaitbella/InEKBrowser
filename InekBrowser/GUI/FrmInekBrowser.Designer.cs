@@ -55,6 +55,7 @@ namespace org.inek.InekBrowser.GUI {
             this.mnuInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlContentBackground = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.selectionPepp = new org.inek.InekBrowser.GUI.SelectionPepp();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabMainDiagnosis = new System.Windows.Forms.TabPage();
             this.grdMainDiagnosis = new System.Windows.Forms.DataGridView();
@@ -64,15 +65,14 @@ namespace org.inek.InekBrowser.GUI {
             this.grdProcedures = new System.Windows.Forms.DataGridView();
             this.tabCosts = new System.Windows.Forms.TabPage();
             this.grdCosts = new System.Windows.Forms.DataGridView();
+            this.peppData = new org.inek.InekBrowser.GUI.PeppData();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbxSystem = new org.inek.controls.CommonControls.ComboField();
             this.lblSystem = new System.Windows.Forms.Label();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.timerPeppBlink = new System.Windows.Forms.Timer(this.components);
             this.timerPrintWindow = new System.Windows.Forms.Timer(this.components);
-            this.selectionPepp = new org.inek.InekBrowser.GUI.SelectionPepp();
-            this.peppData = new org.inek.InekBrowser.GUI.PeppData();
-            this.cbxSystem = new org.inek.controls.CommonControls.ComboField();
             this.titleBar = new org.inek.InekBrowser.GUI.TitleBar();
             this.mnuMain.SuspendLayout();
             this.pnlContentBackground.SuspendLayout();
@@ -244,7 +244,7 @@ namespace org.inek.InekBrowser.GUI {
             this.druckenToolStripMenuItem.Image = global::org.inek.InekBrowser.Properties.Resources.peppo_print;
             this.druckenToolStripMenuItem.Name = "druckenToolStripMenuItem";
             this.druckenToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.druckenToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.druckenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.druckenToolStripMenuItem.Text = "Drucken";
             this.druckenToolStripMenuItem.Click += new System.EventHandler(this.druckenToolStripMenuItem_Click);
             // 
@@ -252,7 +252,7 @@ namespace org.inek.InekBrowser.GUI {
             // 
             this.pDFExportToolStripMenuItem.Image = global::org.inek.InekBrowser.Properties.Resources.doc_pdf_icon;
             this.pDFExportToolStripMenuItem.Name = "pDFExportToolStripMenuItem";
-            this.pDFExportToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.pDFExportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pDFExportToolStripMenuItem.Text = "PDF-Export";
             this.pDFExportToolStripMenuItem.Click += new System.EventHandler(this.pDFExportToolStripMenuItem_Click);
             // 
@@ -260,7 +260,7 @@ namespace org.inek.InekBrowser.GUI {
             // 
             this.designerToolStripMenuItem.Enabled = false;
             this.designerToolStripMenuItem.Name = "designerToolStripMenuItem";
-            this.designerToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.designerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.designerToolStripMenuItem.Text = "Designer";
             this.designerToolStripMenuItem.Visible = false;
             this.designerToolStripMenuItem.Click += new System.EventHandler(this.designerToolStripMenuItem_Click);
@@ -332,6 +332,19 @@ namespace org.inek.InekBrowser.GUI {
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1196, 637);
             this.tableLayoutPanel1.TabIndex = 14;
+            // 
+            // selectionPepp
+            // 
+            this.selectionPepp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.selectionPepp.BackColor = System.Drawing.Color.SteelBlue;
+            this.helpProvider1.SetHelpKeyword(this.selectionPepp, "Filter.htm");
+            this.helpProvider1.SetHelpNavigator(this.selectionPepp, System.Windows.Forms.HelpNavigator.Topic);
+            this.selectionPepp.Location = new System.Drawing.Point(3, 3);
+            this.selectionPepp.Name = "selectionPepp";
+            this.helpProvider1.SetShowHelp(this.selectionPepp, true);
+            this.selectionPepp.Size = new System.Drawing.Size(1190, 52);
+            this.selectionPepp.TabIndex = 11;
             // 
             // tabControl
             // 
@@ -507,6 +520,20 @@ namespace org.inek.InekBrowser.GUI {
             this.grdCosts.TabIndex = 3;
             this.grdCosts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdCosts_CellClick);
             // 
+            // peppData
+            // 
+            this.peppData.BackColor = System.Drawing.Color.SeaGreen;
+            this.peppData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.peppData.CatalogueActive = true;
+            this.peppData.Degression = "0";
+            this.peppData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.peppData.Location = new System.Drawing.Point(3, 91);
+            this.peppData.MinimumSize = new System.Drawing.Size(0, 170);
+            this.peppData.Name = "peppData";
+            this.peppData.Size = new System.Drawing.Size(1190, 170);
+            this.peppData.TabIndex = 12;
+            this.peppData.ClickedCatalogue += new System.EventHandler(this.peppData_ClickedCatalogue);
+            // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -517,6 +544,25 @@ namespace org.inek.InekBrowser.GUI {
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1190, 24);
             this.panel1.TabIndex = 13;
+            // 
+            // cbxSystem
+            // 
+            this.cbxSystem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.helpProvider1.SetHelpKeyword(this.cbxSystem, "Filter.htm");
+            this.helpProvider1.SetHelpNavigator(this.cbxSystem, System.Windows.Forms.HelpNavigator.Topic);
+            this.cbxSystem.Location = new System.Drawing.Point(106, 0);
+            this.cbxSystem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbxSystem.MinimumSize = new System.Drawing.Size(40, 21);
+            this.cbxSystem.MutltiLine = false;
+            this.cbxSystem.Name = "cbxSystem";
+            this.cbxSystem.ReadOnly = true;
+            this.helpProvider1.SetShowHelp(this.cbxSystem, true);
+            this.cbxSystem.Size = new System.Drawing.Size(1084, 21);
+            this.cbxSystem.TabIndex = 10;
+            this.toolTip.SetToolTip(this.cbxSystem, "Wählen Sie eine Code aus.");
+            this.cbxSystem.ButtonClicked += new System.EventHandler(this.cbxSystem_ButtonClicked);
+            this.cbxSystem.Load += new System.EventHandler(this.cbxPepp_Load);
             // 
             // lblSystem
             // 
@@ -549,52 +595,6 @@ namespace org.inek.InekBrowser.GUI {
             // 
             this.timerPrintWindow.Interval = 1000;
             this.timerPrintWindow.Tick += new System.EventHandler(this.timerPrintWindow_Tick);
-            // 
-            // selectionPepp
-            // 
-            this.selectionPepp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.selectionPepp.BackColor = System.Drawing.Color.SteelBlue;
-            this.helpProvider1.SetHelpKeyword(this.selectionPepp, "Filter.htm");
-            this.helpProvider1.SetHelpNavigator(this.selectionPepp, System.Windows.Forms.HelpNavigator.Topic);
-            this.selectionPepp.Location = new System.Drawing.Point(3, 3);
-            this.selectionPepp.Name = "selectionPepp";
-            this.helpProvider1.SetShowHelp(this.selectionPepp, true);
-            this.selectionPepp.Size = new System.Drawing.Size(1190, 52);
-            this.selectionPepp.TabIndex = 11;
-            // 
-            // peppData
-            // 
-            this.peppData.BackColor = System.Drawing.Color.SeaGreen;
-            this.peppData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.peppData.CatalogueActive = true;
-            this.peppData.Degression = "0";
-            this.peppData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.peppData.Location = new System.Drawing.Point(3, 91);
-            this.peppData.MinimumSize = new System.Drawing.Size(0, 170);
-            this.peppData.Name = "peppData";
-            this.peppData.Size = new System.Drawing.Size(1190, 170);
-            this.peppData.TabIndex = 12;
-            this.peppData.ClickedCatalogue += new System.EventHandler(this.peppData_ClickedCatalogue);
-            // 
-            // cbxSystem
-            // 
-            this.cbxSystem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.helpProvider1.SetHelpKeyword(this.cbxSystem, "Filter.htm");
-            this.helpProvider1.SetHelpNavigator(this.cbxSystem, System.Windows.Forms.HelpNavigator.Topic);
-            this.cbxSystem.Location = new System.Drawing.Point(106, 0);
-            this.cbxSystem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbxSystem.MinimumSize = new System.Drawing.Size(40, 21);
-            this.cbxSystem.MutltiLine = false;
-            this.cbxSystem.Name = "cbxSystem";
-            this.cbxSystem.ReadOnly = true;
-            this.helpProvider1.SetShowHelp(this.cbxSystem, true);
-            this.cbxSystem.Size = new System.Drawing.Size(1084, 21);
-            this.cbxSystem.TabIndex = 10;
-            this.toolTip.SetToolTip(this.cbxSystem, "Wählen Sie eine Code aus.");
-            this.cbxSystem.ButtonClicked += new System.EventHandler(this.cbxSystem_ButtonClicked);
-            this.cbxSystem.Load += new System.EventHandler(this.cbxPepp_Load);
             // 
             // titleBar
             // 

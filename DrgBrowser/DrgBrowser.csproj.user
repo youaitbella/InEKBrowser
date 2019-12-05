@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>D:\tmp\browser hp tmo\|\\vFileserver01\company%24\Common\Datenbrowser\ReportBrowser\Reportbrowser_V2017_2019\Prüfung\|D:\tmp\GDrgReportBrowser\2019\|D:\tmp\GDrgReportBrowser\2018\|W:\Common\Datenbrowser\ReportBrowser\Reportbrowser_V2016_2018\Prüfung\</PublishUrlHistory>
-    <InstallUrlHistory>http://download.g-drg.de/GDrgReportBrowser/2019/|http://download.g-drg.de/GDrgReportBrowser/2018/|\\vFileserver01\company%24\Common\Datenbrowser\ReportBrowser\Reportbrowser_V2017_2019\Prüfung\|\\vFileserver01\company%24\Common\Datenbrowser\ReportBrowser\Reportbrowser_V2016_2018\Prüfung\|\\vFileserver01\company%24\Common\Datenbrowser\PeppBrowser\PeppBrowser_2018\Prüfung\</InstallUrlHistory>
+    <PublishUrlHistory>\\vFileserver01\company%24\Common\Datenbrowser\ReportBrowser\Reportbrowser_V2018_2020\Prüfung\|D:\tmp\GDrgReportBrowser\2020\|D:\tmp\GDrgReportBrowser\2019\|D:\tmp\browser hp tmo\|\\vFileserver01\company%24\Common\Datenbrowser\ReportBrowser\Reportbrowser_V2017_2019\Prüfung\</PublishUrlHistory>
+    <InstallUrlHistory>\\vFileserver01\company%24\Common\Datenbrowser\ReportBrowser\Reportbrowser_V2018_2020\Prüfung\|\\vFileserver01\company%24\Common\Datenbrowser\ReportBrowser\Reportbrowser_V2017_2019\Prüfung\|http://download.g-drg.de/GDrgReportBrowser/2020/|http://download.g-drg.de/GDrgReportBrowser/2019/|http://download.g-drg.de/GDrgReportBrowser/2018/</InstallUrlHistory>
     <SupportUrlHistory />
     <UpdateUrlHistory />
     <BootstrapperUrlHistory />

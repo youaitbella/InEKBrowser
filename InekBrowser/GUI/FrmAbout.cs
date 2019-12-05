@@ -32,14 +32,14 @@ namespace org.inek.InekBrowser.GUI {
                 label1.Text = "PEPP-Browser\nVersion " + Program.Year + ".1\n© InEK GmbH";
             } else if (Program.SystemBrowser == Program.System.Drg) {
                 titleBar.BackColor = BrowserColors.DrgSplashScreenTitleBar;
-                titleBar.Title = "G-DRG-Report-Browser " + Program.Year;
+                titleBar.Title = "aG-DRG-Report-Browser " + Program.Year;
                 BackColor = BrowserColors.DrgSplashScreen;
-                label1.Text = "G-DRG-Report-Browser\nVersion " + Program.Year + ".1\n© InEK GmbH";
+                label1.Text = "aG-DRG-Report-Browser\nVersion " + Program.Year + ".1\n© InEK GmbH";
             } else if (Program.SystemBrowser == Program.System.P21) {
                 titleBar.BackColor = BrowserColors.P21SplashScreenTitleBar;
-                titleBar.Title = "G-DRG-Browser " + (int.Parse(Program.Year) - 2) + "_" + (int.Parse(Program.Year) - 1);
+                titleBar.Title = "aG-DRG-Browser " + (int.Parse(Program.Year) - 2) + "_" + (int.Parse(Program.Year) - 1);
                 BackColor = BrowserColors.P21SplashScreen;
-                label1.Text = "G-DRG-Browser " + (int.Parse(Program.Year) - 2) + "_" + (int.Parse(Program.Year) - 1) + "\nVersion " + Program.Year + ".1\n© InEK GmbH";
+                label1.Text = "aG-DRG-Browser " + (int.Parse(Program.Year) - 2) + "_" + (int.Parse(Program.Year) - 1) + "\nVersion " + Program.Year + ".1\n© InEK GmbH";
             }
         }
 

@@ -8,14 +8,14 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DrgBrowser</RootNamespace>
-    <AssemblyName>G-DRG-Report-Browser 2019</AssemblyName>
+    <AssemblyName>aG-DRG-Report-Browser 2020</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
-    <IsWebBootstrapper>true</IsWebBootstrapper>
-    <PublishUrl>D:\tmp\browser hp tmo\</PublishUrl>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\vFileserver01\company%24\Common\Datenbrowser\ReportBrowser\Reportbrowser_V2018_2020\Prüfung\</PublishUrl>
     <Install>true</Install>
-    <InstallFrom>Web</InstallFrom>
+    <InstallFrom>Unc</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
@@ -23,14 +23,14 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>http://download.g-drg.de/GDrgReportBrowser/2019/</InstallUrl>
-    <ProductName>G-DRG-Report-Browser 2019</ProductName>
+    <InstallUrl>\\vFileserver01\company%24\Common\Datenbrowser\ReportBrowser\Reportbrowser_V2018_2020\Prüfung\</InstallUrl>
+    <ProductName>aG-DRG-Report-Browser 2020</ProductName>
     <PublisherName>Institut für das Entgeltsystem im Krankenhaus GmbH %28InEK%29</PublisherName>
-    <SuiteName>G-DRG-Report-Browser</SuiteName>
+    <SuiteName>aG-DRG-Report-Browser</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -63,8 +63,7 @@
     <ManifestCertificateThumbprint>752DB60C9A303EA08F36216542329CEBCE9FA001</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>
-    </ManifestKeyFile>
+    <ManifestKeyFile>cert03022021.p12</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -132,6 +131,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="cert03022021.p12" />
     <None Include="cert050218.p12" />
     <None Include="Data\2015\RepBrDrg_13_15_Drg.csv" />
     <None Include="Data\2015\RepBrDrg_13_15_Kostenbereich.csv" />
@@ -215,53 +215,69 @@
     <Content Include="Print\cmLS2201.lng">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2019\RepBrDrg_17_19_Drg.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Data\2019\RepBrDrg_17_19_Drg.csv" />
+    <Content Include="Data\2019\RepBrDrg_17_19_Kostenbereich.csv" />
+    <Content Include="Data\2019\RepBrDrg_BA_17_19_Hauptdiagnose.csv" />
+    <Content Include="Data\2019\RepBrDrg_BA_17_19_Kopfdaten.csv" />
+    <Content Include="Data\2019\RepBrDrg_BA_17_19_Kosten.csv" />
+    <Content Include="Data\2019\RepBrDrg_BA_17_19_Mdc.csv" />
+    <Content Include="Data\2019\RepBrDrg_BA_17_19_Nebendiagnosen.csv" />
+    <Content Include="Data\2019\RepBrDrg_BA_17_19_Prozeduren.csv" />
+    <Content Include="Data\2019\RepBrDrg_BA_17_19_Recherche.csv" />
+    <Content Include="Data\2019\RepBrDrg_HA_17_19_Hauptdiagnose.csv" />
+    <Content Include="Data\2019\RepBrDrg_HA_17_19_Kopfdaten.csv" />
+    <Content Include="Data\2019\RepBrDrg_HA_17_19_Kosten.csv" />
+    <Content Include="Data\2019\RepBrDrg_HA_17_19_Mdc.csv" />
+    <Content Include="Data\2019\RepBrDrg_HA_17_19_Nebendiagnosen.csv" />
+    <Content Include="Data\2019\RepBrDrg_HA_17_19_Prozeduren.csv" />
+    <Content Include="Data\2019\RepBrDrg_HA_17_19_Recherche.csv" />
+    <Content Include="Data\2020\RepBrDrg_18_20_Drg.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2019\RepBrDrg_17_19_Kostenbereich.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Data\2020\RepBrDrg_18_20_Kostenbereich.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2019\RepBrDrg_BA_17_19_Hauptdiagnose.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Data\2020\RepBrDrg_BA_18_20_Hauptdiagnose.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2019\RepBrDrg_BA_17_19_Kopfdaten.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Data\2020\RepBrDrg_BA_18_20_Kopfdaten.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2019\RepBrDrg_BA_17_19_Kosten.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Data\2020\RepBrDrg_BA_18_20_Kosten.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2019\RepBrDrg_BA_17_19_Mdc.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Data\2020\RepBrDrg_BA_18_20_Mdc.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2019\RepBrDrg_BA_17_19_Nebendiagnosen.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Data\2020\RepBrDrg_BA_18_20_Nebendiagnosen.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2019\RepBrDrg_BA_17_19_Prozeduren.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Data\2020\RepBrDrg_BA_18_20_Prozeduren.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2019\RepBrDrg_BA_17_19_Recherche.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Data\2020\RepBrDrg_BA_18_20_Recherche.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2019\RepBrDrg_HA_17_19_Hauptdiagnose.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Data\2020\RepBrDrg_HA_18_20_Hauptdiagnose.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2019\RepBrDrg_HA_17_19_Kopfdaten.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Data\2020\RepBrDrg_HA_18_20_Kopfdaten.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2019\RepBrDrg_HA_17_19_Kosten.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Data\2020\RepBrDrg_HA_18_20_Kosten.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2019\RepBrDrg_HA_17_19_Mdc.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Data\2020\RepBrDrg_HA_18_20_Mdc.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2019\RepBrDrg_HA_17_19_Nebendiagnosen.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Data\2020\RepBrDrg_HA_18_20_Nebendiagnosen.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2019\RepBrDrg_HA_17_19_Prozeduren.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Data\2020\RepBrDrg_HA_18_20_Prozeduren.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\2019\RepBrDrg_HA_17_19_Recherche.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Data\2020\RepBrDrg_HA_18_20_Recherche.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -353,6 +369,9 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
