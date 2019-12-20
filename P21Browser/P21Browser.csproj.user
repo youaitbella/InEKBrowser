@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>\\vFileserver01\company%24\Common\Datenbrowser\Par21Browser\GDRG_V2019_Browser_Par21_2018\Prüfung\|\\vFileserver01\company%24\Common\Datenbrowser\Par21Browser\GDRG_V2019_Browser_Par21_2018\|\\vFileserver01\company%24\Common\Datenbrowser\Par21Browser\GDRG_V2018_Browser_Par21_2017\Prüfung\|D:\tmp\DrgBrowser\|D:\tmp\DrgBrowser\2018\</PublishUrlHistory>
-    <InstallUrlHistory>\\vFileserver01\company%24\Common\Datenbrowser\Par21Browser\GDRG_V2019_Browser_Par21_2018\Prüfung\|\\vFileserver01\company%24\Common\Datenbrowser\Par21Browser\GDRG_V2019_Browser_Par21_2018\|\\vFileserver01\company%24\Common\Datenbrowser\Par21Browser\GDRG_V2018_Browser_Par21_2017\Prüfung\|http://download.g-drg.de/DrgBrowser/2019/|http://download.g-drg.de/DrgBrowser/2018/</InstallUrlHistory>
+    <PublishUrlHistory>D:\browsertmp\p21\|\\vFileserver01\company%24\Common\Datenbrowser\Par21Browser\GDRG_V2019_Browser_Par21_2018\Prüfung\|\\vFileserver01\company%24\Common\Datenbrowser\Par21Browser\GDRG_V2019_Browser_Par21_2018\|\\vFileserver01\company%24\Common\Datenbrowser\Par21Browser\GDRG_V2018_Browser_Par21_2017\Prüfung\|D:\tmp\DrgBrowser\</PublishUrlHistory>
+    <InstallUrlHistory>http://download.g-drg.de/DrgBrowser/2020/|http://download.g-drg.de/DrgBrowser/2019/|\\vFileserver01\company%24\Common\Datenbrowser\Par21Browser\GDRG_V2019_Browser_Par21_2018\Prüfung\|\\vFileserver01\company%24\Common\Datenbrowser\Par21Browser\GDRG_V2019_Browser_Par21_2018\|\\vFileserver01\company%24\Common\Datenbrowser\Par21Browser\GDRG_V2018_Browser_Par21_2017\Prüfung\</InstallUrlHistory>
     <SupportUrlHistory />
     <UpdateUrlHistory />
     <BootstrapperUrlHistory />

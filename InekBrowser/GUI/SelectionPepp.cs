@@ -125,7 +125,7 @@ namespace org.inek.InekBrowser.GUI {
             var q =
                 CsvData.Context()
                     .Recherche.Where(sd => sd.SecondaryDiagnosis == 1)
-                    .Select(sd => new {Sekundärdiagnose = sd.Code, Text = sd.Text});
+                    .Select(sd => new {Nebendiagnose = sd.Code, Text = sd.Text});
             dlg.SetDataSource(q);
             dlg.Text = "Nebendiagnosen";
             dlg.KeyColumns = new[] { "Nebendiagnose" };

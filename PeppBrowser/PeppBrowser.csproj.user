@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>\\vFileserver01\company%24\Common\Datenbrowser\PeppBrowser\PeppBrowser_2020\Prüfung\|\\vFileserver01\company%24\Common\Datenbrowser\PeppBrowser\PeppBrowser_2020\|D:\tmp\PeppBrowser\|\\vFileserver01\company%24\Common\Datenbrowser\PeppBrowser\PeppBrowser_2019\Prüfung\|D:\tmp\PeppBrowser\2019\</PublishUrlHistory>
-    <InstallUrlHistory>\\vFileserver01\company%24\Common\Datenbrowser\PeppBrowser\PeppBrowser_2020\Prüfung\|\\vFileserver01\company%24\Common\Datenbrowser\PeppBrowser\PeppBrowser_2020\|\\vFileserver01\company%24\Common\Datenbrowser\PeppBrowser\PeppBrowser_2019\Prüfung\|http://download.g-drg.de/PeppBrowser/2019/|http://download.g-drg.de/PeppBrowser/2018/</InstallUrlHistory>
+    <PublishUrlHistory>D:\browsertmp\|\\vFileserver01\company%24\Common\Datenbrowser\PeppBrowser\PeppBrowser_2020\Prüfung\|\\vFileserver01\company%24\Common\Datenbrowser\PeppBrowser\PeppBrowser_2020\|D:\tmp\PeppBrowser\|\\vFileserver01\company%24\Common\Datenbrowser\PeppBrowser\PeppBrowser_2019\Prüfung\</PublishUrlHistory>
+    <InstallUrlHistory>http://download.g-drg.de/PeppBrowser/2020/|http://download.g-drg.de/PeppBrowser/2019/|\\vFileserver01\company%24\Common\Datenbrowser\PeppBrowser\PeppBrowser_2020\Prüfung\|\\vFileserver01\company%24\Common\Datenbrowser\PeppBrowser\PeppBrowser_2020\|\\vFileserver01\company%24\Common\Datenbrowser\PeppBrowser\PeppBrowser_2019\Prüfung\</InstallUrlHistory>
     <SupportUrlHistory />
     <UpdateUrlHistory />
     <BootstrapperUrlHistory />

@@ -108,7 +108,7 @@ namespace org.inek.InekBrowser.GUI {
             dlg.ButtonShowIsVisible = false;
             var q = CsvData.Context()
                 .Recherche.Where(pd => pd.PrimaryDiagnosis == 1)
-                    .Select(pd => new { Primärdiagnose = pd.CodeF, pd.Text });
+                    .Select(pd => new { Hauptdiagnose = pd.CodeF, pd.Text });
             dlg.SetDataSource(q);
             dlg.Text = "Hauptdiagnosen";
             dlg.KeyColumns = new[] {"Hauptdiagnose"};
@@ -134,7 +134,7 @@ namespace org.inek.InekBrowser.GUI {
             var q =
                 CsvData.Context()
                     .Recherche.Where(sd => sd.SecondaryDiagnosis == 1)
-                    .Select(sd => new {Sekundärdiagnose = sd.CodeF, sd.Text});
+                    .Select(sd => new {Nebendiagnose = sd.CodeF, sd.Text});
             dlg.SetDataSource(q);
             dlg.Text = "Nebendiagnosen";
             dlg.KeyColumns = new[] { "Nebendiagnose" };
