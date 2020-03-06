@@ -56,6 +56,7 @@
     <list id="9" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none; font-family:Symbol; font-size:11pt; color:#000000;">
       <li styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="Normal" translate="true">Arithmetischer Mittelwert: Arithmetischer Mittelwert der Kosten nach Ausgliederung der Pflegepersonalkosten (Basis: Normallieger)</text></li>
       <li styleclass="Bullet Text"><text styleclass="Normal" translate="true">Standardabweichung: Standardabweichung der Kosten nach Ausgliederung der Pflegepersonalkosten (Basis: Normallieger)</text></li>
+      <li styleclass="Bullet Text"><text styleclass="Normal" translate="true">Ausgegliederte Personalkosten: Mittelwert der ausgegliederten Pflegepersonal kosten je Verweildauertag je DRG</text></li>
     </list>
   </body>
 </topic>
